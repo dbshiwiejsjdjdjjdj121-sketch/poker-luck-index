@@ -71,7 +71,7 @@ export function TipDealer() {
               onClick={() => setIsOpen(true)}
               className="btn-primary inline-flex items-center justify-center"
             >
-              Tip with PayPal
+              Tip ${selectedAmount} with PayPal
             </button>
             <button
               type="button"
@@ -132,7 +132,7 @@ export function TipDealer() {
                 Copy Link
               </button>
               <a
-                href={DONATION_URL}
+                href={donationUrlWithAmount}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary inline-flex flex-1 items-center justify-center"
