@@ -13,6 +13,7 @@ import type { User } from "firebase/auth";
 import {
   clearStoredEmailLinkEmail,
   completeEmailSignInLink,
+  getFirebaseErrorCode,
   hasPendingEmailSignInLink,
   observeFirebaseUser,
   readStoredEmailLinkEmail,
@@ -95,6 +96,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setAuthMessage("Signed in successfully with your email link.");
       clearEmailLinkParams();
     } catch (error) {
+      const code = getFirebaseErrorCode(error);
+
+      if (code === "auth/invalid-action-code") {
+        clearStoredEmailLinkEmail();
+        setPendingEmailLink(false);
+        clearEmailLinkParams();
+      }
+
       setAuthError(
         error instanceof Error
           ? error.message

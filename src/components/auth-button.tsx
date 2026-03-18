@@ -70,6 +70,7 @@ export function AuthButton() {
 
     try {
       await signOut();
+      setOpen(false);
     } finally {
       setBusyAction("");
     }
@@ -77,19 +78,61 @@ export function AuthButton() {
 
   if (isSignedIn) {
     return (
-      <button
-        type="button"
-        onClick={() => void handleSignOut()}
-        disabled={loading || busyAction === "signout"}
-        className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2.5 text-xs uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:bg-white/8 disabled:cursor-not-allowed disabled:opacity-55"
-      >
-        <span>●</span>
-        <span>
-          {loading || busyAction === "signout"
-            ? "Loading"
-            : user?.displayName || user?.email || "Signed In"}
-        </span>
-      </button>
+      <div className="relative">
+        <button
+          type="button"
+          onClick={() => {
+            clearAuthFeedback();
+            setOpen((current) => !current);
+          }}
+          disabled={loading || busyAction === "signout"}
+          className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2.5 text-xs uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:bg-white/8 disabled:cursor-not-allowed disabled:opacity-55"
+        >
+          <span>●</span>
+          <span>
+            {loading || busyAction === "signout"
+              ? "Loading"
+              : user?.displayName || user?.email || "Signed In"}
+          </span>
+          <span>{open ? "−" : "+"}</span>
+        </button>
+
+        {open ? (
+          <div className="absolute right-0 top-full z-30 mt-3 w-[min(22rem,calc(100vw-2rem))] rounded-[24px] border border-[var(--border-strong)] bg-[rgba(6,18,16,0.96)] p-4 shadow-[0_24px_60px_rgba(0,0,0,0.35)] backdrop-blur">
+            <div className="space-y-2">
+              <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
+                Account
+              </p>
+              <p className="text-sm leading-6 text-white">
+                {user?.displayName || "Signed In"}
+              </p>
+              {user?.email ? (
+                <p className="text-sm leading-6 text-[var(--muted)]">
+                  {user.email}
+                </p>
+              ) : null}
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => void handleSignOut()}
+                disabled={loading || busyAction === "signout"}
+                className="btn-secondary disabled:cursor-not-allowed disabled:opacity-55"
+              >
+                {busyAction === "signout" ? "Signing Out..." : "Sign Out"}
+              </button>
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                className="btn-secondary"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        ) : null}
+      </div>
     );
   }
 

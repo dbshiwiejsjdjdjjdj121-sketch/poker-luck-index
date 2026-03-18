@@ -36,6 +36,14 @@ const DEFAULT_FIREBASE_WEB_CONFIG = {
 let cachedApp: FirebaseApp | null = null;
 export const FIREBASE_EMAIL_STORAGE_KEY = "poker-luck-index-email-link-email";
 
+export function getFirebaseErrorCode(error: unknown) {
+  if (!(error instanceof Error)) {
+    return "";
+  }
+
+  return String((error as { code?: string }).code || "");
+}
+
 export function getFirebaseClientApp() {
   if (cachedApp) {
     return cachedApp;
@@ -93,7 +101,7 @@ function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
     return new Error(fallbackMessage);
   }
 
-  const code = String((error as { code?: string }).code || "");
+  const code = getFirebaseErrorCode(error);
 
   if (code === "auth/operation-not-allowed") {
     return new Error(fallbackMessage);
@@ -112,7 +120,7 @@ function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
   }
 
   if (code === "auth/invalid-action-code") {
-    return new Error("This email sign-in link has expired or is no longer valid.");
+    return new Error("This sign-in link has already been used or expired. Request a fresh email link.");
   }
 
   if (code === "auth/invalid-email") {
