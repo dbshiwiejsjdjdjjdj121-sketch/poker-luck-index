@@ -10,7 +10,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "firebase": "^12.10.0",
+    "firebase-admin": "^13.7.0",
     "next": "16.1.6",
+    "nodemailer": "^8.0.3",
+    "openai": "^6.32.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-qr-code": "^2.0.18"

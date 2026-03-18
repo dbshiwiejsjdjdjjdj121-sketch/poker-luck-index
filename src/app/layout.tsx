@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Manrope } from "next/font/google";
+import { ClientShell } from "@/components/client-shell";
 import {
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
@@ -95,7 +96,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        {children}
+        <ClientShell>{children}</ClientShell>
       </body>
     </html>
   );

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { AuthButton } from "@/components/auth-button";
 import { HomeForm } from "@/components/home-form";
 import {
   SITE_DESCRIPTION,
@@ -42,10 +44,13 @@ export default function Home() {
 
           <div className="relative grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="space-y-7">
-              <div className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
-                <span>♠</span>
-                <span>Poker Luck Index</span>
-                <span>♥</span>
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
+                  <span>♠</span>
+                  <span>Poker Luck Index</span>
+                  <span>♥</span>
+                </div>
+                <AuthButton />
               </div>
 
               <div className="space-y-4">
@@ -78,8 +83,20 @@ export default function Home() {
 
               <div className="flex flex-wrap gap-4 text-sm text-[var(--muted)]">
                 <span>♣ 10-point table read</span>
-                <span>♦ Style + coin flip</span>
-                <span>♥ Hands to watch</span>
+                <span>♦ Free bankroll + manual upload</span>
+                <span>♥ Premium AI hand review</span>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                <Link href="/hand-review" className="btn-secondary">
+                  Upload A Real Hand
+                </Link>
+                <Link href="/bankroll" className="btn-secondary">
+                  Track Bankroll
+                </Link>
+                <Link href="/history" className="btn-secondary">
+                  View History
+                </Link>
               </div>
             </div>
 
