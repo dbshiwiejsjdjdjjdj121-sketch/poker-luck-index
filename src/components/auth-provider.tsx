@@ -6,9 +6,11 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import type { User } from "firebase/auth";
 import {
   clearStoredEmailLinkEmail,
@@ -21,6 +23,46 @@ import {
   signOutFirebaseUser,
   storeEmailLinkEmail,
 } from "@/lib/firebase-client";
+
+const POST_AUTH_REDIRECT_KEY = "poker-luck-index-post-auth-redirect";
+
+function readPostAuthRedirect() {
+  if (typeof window === "undefined") {
+    return "";
+  }
+
+  return window.sessionStorage.getItem(POST_AUTH_REDIRECT_KEY)?.trim() || "";
+}
+
+function storePostAuthRedirect(target: string) {
+  if (typeof window === "undefined" || !target) {
+    return;
+  }
+
+  window.sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, target);
+}
+
+function clearPostAuthRedirect() {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
+}
+
+function getPreferredAuthDestination() {
+  if (typeof window === "undefined") {
+    return "/hand-review";
+  }
+
+  const { pathname, search, hash } = window.location;
+
+  if (pathname === "/") {
+    return "/hand-review";
+  }
+
+  return `${pathname}${search}${hash}`;
+}
 
 type AuthContextValue = {
   user: User | null;
@@ -39,11 +81,14 @@ type AuthContextValue = {
 const AuthContext = createContext<AuthContextValue | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
+  const router = useRouter();
+  const pathname = usePathname();
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [authError, setAuthError] = useState("");
   const [authMessage, setAuthMessage] = useState("");
   const [pendingEmailLink, setPendingEmailLink] = useState(false);
+  const lastUserUidRef = useRef<string>("");
 
   useEffect(() => {
     const unsubscribe = observeFirebaseUser((nextUser) => {
@@ -65,7 +110,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (continueUrl) {
       try {
         const decoded = new URL(continueUrl);
-        window.history.replaceState({}, "", `${decoded.pathname}${decoded.search}${decoded.hash}`);
+        router.replace(`${decoded.pathname}${decoded.search}${decoded.hash}`);
         return;
       } catch {
         // Fall through to stripping Firebase params from the current URL.
@@ -82,8 +127,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       url.searchParams.delete(key);
     });
 
-    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
-  }, []);
+    router.replace(`${url.pathname}${url.search}${url.hash}`);
+  }, [router]);
 
   const completeEmailSignIn = useCallback(async (currentUrl: string, explicitEmail?: string) => {
     setLoading(true);
@@ -138,6 +183,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     void completeEmailSignIn(currentUrl, storedEmail);
   }, [completeEmailSignIn]);
 
+  useEffect(() => {
+    if (!user) {
+      lastUserUidRef.current = "";
+      return;
+    }
+
+    if (lastUserUidRef.current === user.uid) {
+      return;
+    }
+
+    lastUserUidRef.current = user.uid;
+    const target = readPostAuthRedirect();
+
+    if (!target) {
+      return;
+    }
+
+    clearPostAuthRedirect();
+
+    if (target !== pathname) {
+      router.replace(target);
+    }
+  }, [pathname, router, user]);
+
   const value = useMemo<AuthContextValue>(
     () => ({
       user,
@@ -148,7 +217,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       async signInWithGoogle() {
         setAuthError("");
         setAuthMessage("");
-        await signInWithGoogleClient();
+        const target = getPreferredAuthDestination();
+        storePostAuthRedirect(target);
+
+        try {
+          const method = await signInWithGoogleClient();
+
+          if (method === "popup") {
+            clearPostAuthRedirect();
+            router.replace(target);
+          }
+        } catch (error) {
+          clearPostAuthRedirect();
+          throw error;
+        }
       },
       async requestEmailSignInLink(email: string) {
         const normalizedEmail = email.trim().toLowerCase();
@@ -166,7 +248,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setAuthMessage("");
 
         try {
-          const continueUrl = `${window.location.origin}${window.location.pathname}`;
+          const continueUrl = new URL(
+            getPreferredAuthDestination(),
+            window.location.origin,
+          ).toString();
           const response = await fetch("/api/auth/email-link/request", {
             method: "POST",
             headers: {
@@ -218,6 +303,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       async signOut() {
         setAuthError("");
         setAuthMessage("");
+        clearPostAuthRedirect();
         clearStoredEmailLinkEmail();
         await signOutFirebaseUser();
       },
@@ -233,7 +319,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setAuthMessage("");
       },
     }),
-    [authError, authMessage, completeEmailSignIn, loading, pendingEmailLink, user],
+    [
+      authError,
+      authMessage,
+      completeEmailSignIn,
+      loading,
+      pendingEmailLink,
+      router,
+      user,
+    ],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

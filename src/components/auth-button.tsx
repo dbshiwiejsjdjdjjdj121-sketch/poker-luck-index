@@ -3,6 +3,29 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "@/components/auth-provider";
 
+function getAccountLabel(displayName?: string | null, email?: string | null) {
+  if (displayName?.trim()) {
+    return displayName.trim();
+  }
+
+  if (email?.trim()) {
+    return email.trim().split("@")[0] || email.trim();
+  }
+
+  return "Signed In";
+}
+
+function getInitials(displayName?: string | null, email?: string | null) {
+  const source = displayName?.trim() || email?.trim() || "P";
+  const parts = source.split(/\s+/).filter(Boolean);
+
+  if (parts.length >= 2) {
+    return `${parts[0][0]}${parts[1][0]}`.toUpperCase();
+  }
+
+  return source.slice(0, 2).toUpperCase();
+}
+
 export function AuthButton() {
   const {
     user,
@@ -22,6 +45,8 @@ export function AuthButton() {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const isSignedIn = Boolean(user);
+  const accountLabel = getAccountLabel(user?.displayName, user?.email);
+  const accountInitials = getInitials(user?.displayName, user?.email);
 
   useEffect(() => {
     if (pendingEmailLink) {
@@ -78,7 +103,7 @@ export function AuthButton() {
 
   if (isSignedIn) {
     return (
-      <div className="relative">
+      <div className="relative notranslate" translate="no">
         <button
           type="button"
           onClick={() => {
@@ -86,32 +111,59 @@ export function AuthButton() {
             setOpen((current) => !current);
           }}
           disabled={loading || busyAction === "signout"}
-          className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2.5 text-xs uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:bg-white/8 disabled:cursor-not-allowed disabled:opacity-55"
+          className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-3 py-2.5 text-xs uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:bg-white/8 disabled:cursor-not-allowed disabled:opacity-55"
         >
-          <span>●</span>
-          <span>
-            {loading || busyAction === "signout"
-              ? "Loading"
-              : user?.displayName || user?.email || "Signed In"}
+          <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-[var(--border-strong)] bg-[rgba(196,145,42,0.18)] text-[0.7rem] tracking-[0.18em] text-[var(--gold-soft)]">
+            {user?.photoURL ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={user.photoURL}
+                alt={accountLabel}
+                className="h-full w-full object-cover"
+              />
+            ) : (
+              accountInitials
+            )}
+          </span>
+          <span className="max-w-[8.5rem] truncate normal-case tracking-[0.04em]">
+            {loading || busyAction === "signout" ? "Loading" : accountLabel}
           </span>
           <span>{open ? "−" : "+"}</span>
         </button>
 
         {open ? (
           <div className="absolute right-0 top-full z-30 mt-3 w-[min(22rem,calc(100vw-2rem))] rounded-[24px] border border-[var(--border-strong)] bg-[rgba(6,18,16,0.96)] p-4 shadow-[0_24px_60px_rgba(0,0,0,0.35)] backdrop-blur">
-            <div className="space-y-2">
-              <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
-                Account
-              </p>
-              <p className="text-sm leading-6 text-white">
-                {user?.displayName || "Signed In"}
-              </p>
-              {user?.email ? (
-                <p className="text-sm leading-6 text-[var(--muted)]">
-                  {user.email}
+            <div className="flex items-center gap-3">
+              <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-[var(--border-strong)] bg-[rgba(196,145,42,0.18)] text-sm tracking-[0.18em] text-[var(--gold-soft)]">
+                {user?.photoURL ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={user.photoURL}
+                    alt={accountLabel}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  accountInitials
+                )}
+              </span>
+              <div className="min-w-0 space-y-1">
+                <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
+                  Account
                 </p>
-              ) : null}
+                <p className="truncate text-sm leading-6 text-white">
+                  {accountLabel}
+                </p>
+                {user?.email ? (
+                  <p className="truncate text-sm leading-6 text-[var(--muted)]">
+                    {user.email}
+                  </p>
+                ) : null}
+              </div>
             </div>
+
+            <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
+              You are signed in and ready to save hand uploads across devices.
+            </p>
 
             <div className="mt-4 flex flex-wrap gap-2">
               <button
@@ -139,7 +191,7 @@ export function AuthButton() {
   const isBusy = loading || busyAction !== "";
 
   return (
-    <div className="relative">
+    <div className="relative notranslate" translate="no">
       <button
         type="button"
         onClick={() => {
@@ -166,8 +218,8 @@ export function AuthButton() {
               Sign In
             </p>
             <p className="text-sm leading-6 text-[var(--muted)]">
-              Continue with Google, or request a secure email link sent through
-              your own SMTP setup instead of Firebase&apos;s default template.
+              Continue with Google, or use a secure email link to finish sign-in
+              without a password.
             </p>
           </div>
 

@@ -78,7 +78,8 @@ export async function signInWithGoogleClient() {
   const provider = getGoogleProvider();
 
   try {
-    return await signInWithPopup(auth, provider);
+    await signInWithPopup(auth, provider);
+    return "popup" as const;
   } catch (error) {
     const message =
       error instanceof Error ? error.message.toLowerCase() : String(error);
@@ -89,7 +90,7 @@ export async function signInWithGoogleClient() {
       message.includes("redirect")
     ) {
       await signInWithRedirect(auth, provider);
-      return null;
+      return "redirect" as const;
     }
 
     throw error;

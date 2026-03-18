@@ -79,6 +79,7 @@ export const metadata: Metadata = {
     distribution: "global",
     coverage: "Worldwide",
     "geo.placename": "Worldwide",
+    google: "notranslate",
   },
 };
 
@@ -90,7 +91,7 @@ export default function RootLayout({
   const structuredData = buildStructuredData();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" translate="no" className="notranslate" suppressHydrationWarning>
       <body className={`${cinzel.variable} ${manrope.variable} antialiased`}>
         <script
           type="application/ld+json"
