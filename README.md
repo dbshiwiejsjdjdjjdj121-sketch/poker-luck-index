@@ -11,6 +11,7 @@ A mobile-first poker web product built with Next.js, TypeScript, and TailwindCSS
 - Firebase Admin for Firestore + Storage persistence
 - Firebase Web Auth for Google sign-in
 - Custom SMTP email-link auth for magic-link sign-in
+- Creem for Pro subscription checkout and webhook-based access sync
 - Deterministic fortune output from URL inputs
 
 ## Routes
@@ -41,6 +42,10 @@ Required for the new hand upload flow:
 - `OPENAI_HAND_ANALYSIS_MODEL`
 - `OPENAI_TRANSCRIPTION_MODEL`
 - `PREMIUM_UIDS`
+- `CREEM_API_KEY`
+- `CREEM_API_BASE_URL`
+- `CREEM_WEBHOOK_SECRET`
+- `CREEM_PRODUCT_PRO_ID`
 - `FIREBASE_PROJECT_ID`
 - `FIREBASE_STORAGE_BUCKET`
 - `FIREBASE_CLIENT_EMAIL`
@@ -60,13 +65,15 @@ Notes:
 - Google sign-in and email-link sign-in on web can use the provided default public Firebase config, but you can override it with the `NEXT_PUBLIC_FIREBASE_*` vars
 - `FIREBASE_PRIVATE_KEY` must keep the `\n` line breaks in the env string
 - Without the Firebase Admin env vars, hand uploads, history, and bankroll cloud sync will stay disabled
-- `PREMIUM_UIDS` is a simple comma-separated allowlist you can use before Creem is wired in
+- `PREMIUM_UIDS` is still available as an emergency override allowlist
 - Email-link login uses your own SMTP setup instead of Firebase's default email template
+- Creem monthly Pro access is granted through the webhook and stored in Firestore at `user_access/{uid}`
 - In Firebase Authentication, make sure Google sign-in is enabled and your web domains are added to Authorized domains:
   - `localhost`
   - `www.allinpokerai.com`
   - `allinpokerai.com`
 - If you want email-link login too, enable `Email link (passwordless sign-in)` in Firebase Authentication
+- In Creem, point the webhook to `/api/billing/creem/webhook`
 
 ## Quality Checks
 
@@ -90,9 +97,11 @@ This project is ready for deployment on [Vercel](https://vercel.com/).
   - premium voice upload
   - premium screenshot upload
 - Premium AI hand analysis can be run later on any saved hand
-- Google sign-in and custom SMTP email-link sign-in are used for cross-device sync and future subscription entitlements
+- Google sign-in and custom SMTP email-link sign-in are used for cross-device sync and subscription entitlements
 - Bankroll tracking remains free
 - Voice and screenshot uploads are stored in Firebase Storage
 - Parsed hand records are stored in Firestore under `hand_uploads/{viewerId}/entries/{entryId}`
 - Bankroll records are stored under `users/{uid}/bankrollRecords`
-- Donation CTA points to: [https://paypal.me/luck290214](https://paypal.me/luck290214)
+- User access is stored under `user_access/{uid}`
+- Free features: luck reading, bankroll tracking, manual hand uploads
+- Pro features: voice upload, screenshot upload, AI hand analysis

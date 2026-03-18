@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShareFortune } from "@/components/share-fortune";
-import { TipDealer } from "@/components/tip-dealer";
 import { buildFortune } from "@/lib/fortune";
 import {
   SITE_NAME,
@@ -299,9 +298,8 @@ export default async function ResultPage({ searchParams }: ResultPageProps) {
           </section>
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-2">
+        <section>
           <ShareFortune shareUrl={shareUrl} shareText={shareText} />
-          <TipDealer />
         </section>
       </div>
     </main>

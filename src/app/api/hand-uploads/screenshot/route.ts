@@ -62,7 +62,7 @@ export async function POST(request: Request) {
       error instanceof Error ? error.message : "Screenshot upload failed.";
     const status =
       message.toLowerCase().includes("premium subscription") ||
-      message.toLowerCase().includes("sign in with google")
+      message.toLowerCase().includes("sign in to use premium")
         ? 403
         : message.toLowerCase().includes("enough poker") ||
             message.toLowerCase().includes("did not contain enough")

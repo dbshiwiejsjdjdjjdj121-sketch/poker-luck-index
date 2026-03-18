@@ -6,6 +6,7 @@ import Link from "next/link";
 import { HandUploadRecordCard } from "@/components/hand-upload-record-card";
 import { AuthButton } from "@/components/auth-button";
 import { useAuth } from "@/components/auth-provider";
+import { SubscriptionCta } from "@/components/subscription-cta";
 import { useSubscription } from "@/components/subscription-provider";
 import {
   MAX_MANUAL_TEXT_LENGTH,
@@ -602,16 +603,12 @@ export function HandReviewStudio() {
 
                   <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
                     {premiumLocked ? (
-                      <div className="mb-5 rounded-[20px] border border-[var(--border-strong)] bg-[rgba(214,178,93,0.08)] p-4">
-                        <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                          Premium Required
-                        </p>
-                        <p className="mt-2 text-sm leading-6 text-white/86">
-                          Voice upload is part of the premium AI toolkit. Sign in
-                          now so we can attach this to your account, then later
-                          we can wire Creem into the same entitlement.
-                        </p>
-                      </div>
+                      <SubscriptionCta
+                        className="mb-5"
+                        compact
+                        title="Premium Required"
+                        description="Voice upload is a Pro feature because it calls the transcription API."
+                      />
                     ) : null}
 
                     <div className="flex flex-wrap items-center gap-4">
@@ -717,16 +714,11 @@ export function HandReviewStudio() {
                   </div>
 
                   {premiumLocked ? (
-                    <div className="rounded-[20px] border border-[var(--border-strong)] bg-[rgba(214,178,93,0.08)] p-4">
-                      <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                        Premium Required
-                      </p>
-                      <p className="mt-2 text-sm leading-6 text-white/86">
-                        Screenshot recognition is a premium AI feature. The
-                        free plan still includes manual upload, bankroll
-                        tracking, and the poker luck tool.
-                      </p>
-                    </div>
+                    <SubscriptionCta
+                      compact
+                      title="Premium Required"
+                      description="Screenshot recognition is a Pro feature because it calls the vision API."
+                    />
                   ) : null}
 
                   <button
@@ -827,11 +819,19 @@ export function HandReviewStudio() {
                 <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
                   Access Plan
                 </p>
-                <p className="mt-2 text-sm leading-6 text-white/86">
-                  {subscription.premium
-                    ? "Premium access is active for AI upload features."
-                    : "Free access includes manual upload, bankroll tracking, and luck reading. Voice, screenshot, and AI analysis are reserved for premium."}
-                </p>
+                {subscription.premium ? (
+                  <p className="mt-2 text-sm leading-6 text-white/86">
+                    Pro access is active for voice upload, screenshot parsing,
+                    and AI hand analysis.
+                  </p>
+                ) : (
+                  <div className="mt-3">
+                    <SubscriptionCta
+                      title="Free + Pro Access"
+                      description="Manual upload, bankroll tracking, and luck reading stay free. Upgrade only for the API-powered tools."
+                    />
+                  </div>
+                )}
               </section>
             ) : null}
           </div>

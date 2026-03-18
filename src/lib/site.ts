@@ -4,7 +4,6 @@ export type SearchParams = Record<string, string | string[] | undefined>;
 
 export const SITE_NAME = "Poker Luck Index";
 export const SITE_URL = "https://www.allinpokerai.com";
-export const DONATION_URL = "https://paypal.me/luck290214";
 export const SITE_LOCALE = "en_US";
 export const SITE_DESCRIPTION =
   "Get a fast poker table read with a 10-point luck score, a play style for the session, and three hands to watch.";

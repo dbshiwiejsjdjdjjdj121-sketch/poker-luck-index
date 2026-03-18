@@ -61,7 +61,7 @@ export async function POST(request: Request) {
     const message = error instanceof Error ? error.message : "Audio upload failed.";
     const status =
       message.toLowerCase().includes("premium subscription") ||
-      message.toLowerCase().includes("sign in with google")
+      message.toLowerCase().includes("sign in to use premium")
         ? 403
         : message.toLowerCase().includes("enough poker") ||
             message.toLowerCase().includes("not contain enough")

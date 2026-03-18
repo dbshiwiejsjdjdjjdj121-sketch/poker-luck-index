@@ -55,7 +55,7 @@ export async function POST(
       error instanceof Error ? error.message : "Unable to analyze hand.";
     const status =
       message.toLowerCase().includes("premium subscription") ||
-      message.toLowerCase().includes("sign in with google")
+      message.toLowerCase().includes("sign in to use premium")
         ? 403
         : message.toLowerCase().includes("not found")
           ? 404

@@ -84,7 +84,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 text-sm text-[var(--muted)]">
                 <span>♣ 10-point table read</span>
                 <span>♦ Free bankroll + manual upload</span>
-                <span>♥ Premium AI hand review</span>
+                <span>♥ Pro voice, screenshot, and AI review</span>
               </div>
 
               <div className="flex flex-wrap gap-3">

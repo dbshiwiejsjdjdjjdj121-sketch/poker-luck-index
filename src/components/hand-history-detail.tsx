@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { HandUploadRecordCard } from "@/components/hand-upload-record-card";
 import { AuthButton } from "@/components/auth-button";
 import { useAuth } from "@/components/auth-provider";
+import { SubscriptionCta } from "@/components/subscription-cta";
 import { useSubscription } from "@/components/subscription-provider";
 import { type SavedHandUpload } from "@/lib/hand-upload-types";
 
@@ -282,13 +283,10 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
 
             {!subscriptionLoading && !subscription.premium ? (
               <section className="panel p-4 sm:p-5">
-                <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Premium Gate
-                </p>
-                <p className="mt-2 text-sm leading-6 text-white/86">
-                  Manual save stays free. Voice upload, screenshot upload, and
-                  AI hand analysis are premium-only features.
-                </p>
+                <SubscriptionCta
+                  title="Unlock Pro Analysis"
+                  description="Manual save stays free. AI hand analysis, screenshot parsing, and voice upload are part of the Pro plan."
+                />
               </section>
             ) : null}
 

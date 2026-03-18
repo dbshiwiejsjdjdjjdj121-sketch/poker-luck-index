@@ -3,6 +3,7 @@ import { resolveViewerId } from "@/lib/hand-upload-server";
 import { getSubscriptionSnapshot } from "@/lib/subscription-server";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
