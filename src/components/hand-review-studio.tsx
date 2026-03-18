@@ -3,13 +3,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { AppNavigation } from "@/components/app-navigation";
 import { HandUploadRecordCard } from "@/components/hand-upload-record-card";
-import { AuthButton } from "@/components/auth-button";
-import { useAuth } from "@/components/auth-provider";
+import { ManualHandWizard } from "@/components/manual-hand-wizard";
 import { SubscriptionCta } from "@/components/subscription-cta";
+import { useAuth } from "@/components/auth-provider";
 import { useSubscription } from "@/components/subscription-provider";
 import {
-  MAX_MANUAL_TEXT_LENGTH,
+  type ManualHandSetup,
   uploadSourceLabels,
   type SavedHandUpload,
   type UploadSource,
@@ -46,12 +47,27 @@ function getOrCreateViewerId() {
   return nextId;
 }
 
+function summarizeSetup(setup: ManualHandSetup | null) {
+  if (!setup) {
+    return "No hand setup saved yet.";
+  }
+
+  return `${setup.hero.name} in ${setup.hero.seat} with ${setup.hero.holeCards.first} ${setup.hero.holeCards.second} against ${setup.opponents.length} opponent${setup.opponents.length === 1 ? "" : "s"}.`;
+}
+
+function formatCards(first: string, second: string, unknown?: boolean) {
+  if (unknown || first === "Unknown" || second === "Unknown") {
+    return "Unknown cards";
+  }
+
+  return `${first} ${second}`;
+}
+
 export function HandReviewStudio() {
   const { user, getIdToken } = useAuth();
   const { subscription, loading: subscriptionLoading } = useSubscription();
   const [viewerId, setViewerId] = useState("");
   const [activeSource, setActiveSource] = useState<UploadSource>("manual");
-  const [manualText, setManualText] = useState("");
   const [busySource, setBusySource] = useState<UploadSource | null>(null);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
@@ -67,6 +83,8 @@ export function HandReviewStudio() {
   const [isRecordingSupported, setIsRecordingSupported] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [recordingSeconds, setRecordingSeconds] = useState(0);
+  const [manualWizardVisible, setManualWizardVisible] = useState(false);
+  const [manualSetup, setManualSetup] = useState<ManualHandSetup | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
@@ -110,51 +128,50 @@ export function HandReviewStudio() {
     };
   }, [audioPreviewUrl, imagePreviewUrl]);
 
-  const manualCountText = useMemo(
-    () => `${manualText.length} / ${MAX_MANUAL_TEXT_LENGTH}`,
-    [manualText.length],
-  );
   const premiumRequired = activeSource === "voice" || activeSource === "screenshot";
   const premiumLocked = premiumRequired && !subscription.premium;
 
-  const refreshHistory = useCallback(async (currentViewerId: string) => {
-    try {
-      const idToken = await getIdToken();
-      const response = await fetch(
-        `/api/hand-uploads?viewerId=${encodeURIComponent(currentViewerId)}`,
-        {
-          headers: idToken
-            ? {
-                Authorization: `Bearer ${idToken}`,
-              }
-            : undefined,
-        },
-      );
-      const data = (await response.json()) as {
-        configured?: boolean;
-        items?: SavedHandUpload[];
-        message?: string;
-      };
-      const items = Array.isArray(data.items) ? data.items : [];
+  const refreshHistory = useCallback(
+    async (currentViewerId: string) => {
+      try {
+        const idToken = await getIdToken();
+        const response = await fetch(
+          `/api/hand-uploads?viewerId=${encodeURIComponent(currentViewerId)}`,
+          {
+            headers: idToken
+              ? {
+                  Authorization: `Bearer ${idToken}`,
+                }
+              : undefined,
+          },
+        );
+        const data = (await response.json()) as {
+          configured?: boolean;
+          items?: SavedHandUpload[];
+          message?: string;
+        };
+        const items = Array.isArray(data.items) ? data.items : [];
 
-      setHistoryConfigured(data.configured !== false);
-      setHistoryItems(items);
-      setLatestItem((current) => {
-        if (!items.length) {
-          return current;
-        }
+        setHistoryConfigured(data.configured !== false);
+        setHistoryItems(items);
+        setLatestItem((current) => {
+          if (!items.length) {
+            return current;
+          }
 
-        if (!current) {
-          return items[0] ?? null;
-        }
+          if (!current) {
+            return items[0] ?? null;
+          }
 
-        return items.find((entry) => entry.id === current.id) || items[0] || current;
-      });
-      setHistoryMessage(data.message ?? "");
-    } catch {
-      setHistoryMessage("Unable to load recent uploads right now.");
-    }
-  }, [getIdToken]);
+          return items.find((entry) => entry.id === current.id) || items[0] || current;
+        });
+        setHistoryMessage(data.message ?? "");
+      } catch {
+        setHistoryMessage("Unable to load saved hands right now.");
+      }
+    },
+    [getIdToken],
+  );
 
   useEffect(() => {
     if (!viewerId) {
@@ -196,7 +213,8 @@ export function HandReviewStudio() {
   }
 
   async function handleManualSubmit() {
-    if (!viewerId) {
+    if (!viewerId || !manualSetup) {
+      setError("Start with Manual Input and build the hand first.");
       return;
     }
 
@@ -213,7 +231,7 @@ export function HandReviewStudio() {
         },
         body: JSON.stringify({
           viewerId,
-          handText: manualText,
+          setup: manualSetup,
         }),
       });
       const data = (await response.json()) as {
@@ -226,8 +244,7 @@ export function HandReviewStudio() {
       }
 
       upsertHistoryItem(data.item);
-      setManualText("");
-      setNotice("Manual hand saved. AI analysis stays optional.");
+      setNotice("Manual hand saved. You can analyze it later without rebuilding the setup.");
     } catch (submitError) {
       setError(
         submitError instanceof Error
@@ -415,8 +432,8 @@ export function HandReviewStudio() {
     }
 
     clearAudio();
-      setSelectedAudio(file);
-      setAudioPreviewUrl(URL.createObjectURL(file));
+    setSelectedAudio(file);
+    setAudioPreviewUrl(URL.createObjectURL(file));
   }
 
   async function handleAnalyzeItem(itemId: string, force = false) {
@@ -463,129 +480,327 @@ export function HandReviewStudio() {
     }
   }
 
+  const methodCards: Array<{
+    source: UploadSource;
+    title: string;
+    description: string;
+  }> = useMemo(
+    () => [
+      {
+        source: "manual",
+        title: "Manual Input",
+        description: "Build the hand the same way All In starts it: seat, stacks, hole cards, then save.",
+      },
+      {
+        source: "voice",
+        title: "Voice Recording",
+        description: "Describe the hand out loud and let the transcript create the saved replay.",
+      },
+      {
+        source: "screenshot",
+        title: "Import Image",
+        description: "Upload a table screenshot and let vision parsing turn it into a saved hand.",
+      },
+    ],
+    [],
+  );
+
   return (
-    <main className="px-4 py-6 sm:px-6 lg:px-8">
+    <main className="relative min-h-screen overflow-hidden px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:pb-8">
       <div className="mx-auto max-w-6xl space-y-6">
-        <div className="flex items-center justify-between gap-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white"
-          >
-            <span>←</span>
-            <span>Back Home</span>
-          </Link>
-          <AuthButton />
-        </div>
+        <AppNavigation />
 
         <section className="panel panel-strong relative overflow-hidden p-6 sm:p-8 lg:p-10">
-          <div className="home-felt absolute inset-x-[12%] top-[-22%] hidden h-[360px] rounded-[999px] lg:block" />
-          <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="home-felt absolute inset-x-[10%] top-[-18%] hidden h-[360px] rounded-[999px] lg:block" />
+
+          <div className="relative grid gap-8 xl:grid-cols-[1.02fr_0.98fr] xl:items-end">
             <div className="space-y-5">
               <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-[var(--gold-soft)]">
                 <span>♠</span>
-                <span>Hand Upload Studio</span>
+                <span>Hand Replay</span>
               </span>
+
               <div className="space-y-4">
                 <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
                   Upload A Real Hand
                   <span className="mt-2 block text-[var(--gold-soft)]">
-                    In Three Different Ways
+                    The All In Way
                   </span>
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg">
-                  This is the web hand lab adapted from All In. Manual upload
-                  stays free, while voice, screenshot, and deep AI analysis sit
-                  behind the premium layer you can wire to Creem later.
+                  Start with the same three paths as the app: Manual Input, Voice Recording, or Import Image.
+                  Manual save stays free. Voice, screenshot, and AI review stay in Pro.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-3 text-sm text-[var(--muted)]">
-                <span>♣ Free manual save</span>
-                <span>♥ Premium voice + screenshot AI</span>
-                <span>♦ Firebase-backed history</span>
+
+              <div className="grid gap-3 md:grid-cols-3">
+                {methodCards.map((method) => {
+                  const active = method.source === activeSource;
+
+                  return (
+                    <button
+                      key={method.source}
+                      type="button"
+                      onClick={() => {
+                        resetMessages();
+                        setActiveSource(method.source);
+                      }}
+                      className={`rounded-[22px] border p-4 text-left transition ${
+                        active
+                          ? "border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)]"
+                          : "border-white/8 bg-white/[0.03] hover:bg-white/[0.06]"
+                      }`}
+                    >
+                      <p className="text-[0.68rem] uppercase tracking-[0.2em] text-[var(--gold-soft)]">
+                        {uploadSourceLabels[method.source]}
+                      </p>
+                      <p className="mt-3 text-lg font-semibold text-white">
+                        {method.title}
+                      </p>
+                      <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                        {method.description}
+                      </p>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
-            <div className="panel rounded-[28px] border border-[var(--border-strong)] bg-black/15 p-5 sm:p-6">
-              <p className="text-[0.7rem] uppercase tracking-[0.26em] text-[var(--gold-soft)]">
-                What Gets Saved
+            <div className="rounded-[28px] border border-[var(--border-strong)] bg-black/15 p-5 sm:p-6">
+              <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
+                Current Manual Setup
               </p>
-              <div className="mt-4 space-y-3 text-sm leading-7 text-white/86">
-                <p>1. The original note, transcript, or screenshot extraction.</p>
-                <p>2. A saved hand record you can reopen later.</p>
-                <p>3. AI analysis only when you explicitly run it.</p>
-                <p>4. Audio or image files in Firebase Storage when used.</p>
+              <p className="mt-4 text-base leading-7 text-white/88">
+                {summarizeSetup(manualSetup)}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    resetMessages();
+                    setActiveSource("manual");
+                    setManualWizardVisible(true);
+                  }}
+                  className="btn-primary"
+                >
+                  {manualSetup ? "Edit Manual Input" : "Start Manual Input"}
+                </button>
+                <Link href="/history" className="btn-secondary">
+                  Open History
+                </Link>
               </div>
-              <p className="mt-5 text-sm leading-6 text-[var(--muted)]">
-                Setup note: manual save only needs Firebase. AI features need
-                `OPENAI_API_KEY` plus Firebase Admin env vars on the server.
-              </p>
             </div>
           </div>
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
+        {(error || notice || historyMessage) && (
+          <section className="panel p-4 sm:p-5">
+            {error ? (
+              <p className="text-sm leading-6 text-[#ffb2bc]">{error}</p>
+            ) : null}
+            {!error && notice ? (
+              <p className="text-sm leading-6 text-[#d8f3b1]">{notice}</p>
+            ) : null}
+            {!error && !notice && historyMessage ? (
+              <p className="text-sm leading-6 text-[var(--muted)]">
+                {historyMessage}
+              </p>
+            ) : null}
+          </section>
+        )}
+
+        <section className="grid gap-6 xl:grid-cols-[1.04fr_0.96fr]">
           <div className="space-y-6">
             <section className="panel p-5 sm:p-6">
               <div className="flex flex-wrap gap-3">
-                {(["manual", "voice", "screenshot"] as UploadSource[]).map(
-                  (source) => {
-                    const isActive = source === activeSource;
+                {methodCards.map((method) => {
+                  const active = method.source === activeSource;
 
-                    return (
-                      <button
-                        key={source}
-                        type="button"
-                        onClick={() => {
-                          resetMessages();
-                          setActiveSource(source);
-                        }}
-                        className={`rounded-full border px-4 py-3 text-xs font-semibold uppercase tracking-[0.24em] transition ${
-                          isActive
-                            ? "border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)] text-[var(--gold-soft)]"
-                            : "border-white/8 bg-white/[0.03] text-white/72 hover:bg-white/[0.06]"
-                        }`}
-                      >
-                        {uploadSourceLabels[source]}
-                      </button>
-                    );
-                  },
-                )}
+                  return (
+                    <button
+                      key={method.source}
+                      type="button"
+                      onClick={() => {
+                        resetMessages();
+                        setActiveSource(method.source);
+                      }}
+                      className={`rounded-full border px-4 py-3 text-xs font-semibold uppercase tracking-[0.24em] transition ${
+                        active
+                          ? "border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)] text-[var(--gold-soft)]"
+                          : "border-white/8 bg-white/[0.03] text-white/72 hover:bg-white/[0.06]"
+                      }`}
+                    >
+                      {method.title}
+                    </button>
+                  );
+                })}
               </div>
 
               {activeSource === "manual" ? (
-                <div className="mt-6 space-y-4">
+                <div className="mt-6 space-y-5">
                   <div className="space-y-2">
                     <p className="text-[0.7rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
-                      Manual Upload
+                      Manual Input
                     </p>
                     <p className="text-sm leading-6 text-[var(--muted)]">
-                      Paste a hand history or a rough note from the table. This
-                      saves for free without calling the AI API.
+                      Build the table first, then add the action line. This stays on the free tier and
+                      saves the setup for later AI review.
                     </p>
                   </div>
 
-                  <label className="block">
-                    <textarea
-                      value={manualText}
-                      onChange={(event) => setManualText(event.target.value)}
-                      placeholder="Example: Hero opens CO with As Kh to 2.5bb, BTN calls, flop Kd 8s 3c..."
-                      className="min-h-[220px] w-full rounded-[24px] border border-white/8 bg-white/[0.03] px-4 py-4 text-sm leading-7 text-white outline-none transition placeholder:text-white/32 focus:border-[var(--border-strong)] focus:bg-white/[0.05]"
-                    />
-                  </label>
+                  {!manualSetup ? (
+                    <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
+                      <div className="grid gap-3 sm:grid-cols-3">
+                        <div className="rounded-[18px] border border-white/8 bg-black/15 p-4">
+                          <p className="text-[0.68rem] uppercase tracking-[0.18em] text-[var(--gold-soft)]">
+                            Step 1
+                          </p>
+                          <p className="mt-2 text-base font-semibold text-white">
+                            Choose Hero
+                          </p>
+                          <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                            Seat, stack, and hole cards.
+                          </p>
+                        </div>
+                        <div className="rounded-[18px] border border-white/8 bg-black/15 p-4">
+                          <p className="text-[0.68rem] uppercase tracking-[0.18em] text-[var(--gold-soft)]">
+                            Step 2
+                          </p>
+                          <p className="mt-2 text-base font-semibold text-white">
+                            Add Opponents
+                          </p>
+                          <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                            Seats, stacks, and known cards.
+                          </p>
+                        </div>
+                        <div className="rounded-[18px] border border-white/8 bg-black/15 p-4">
+                          <p className="text-[0.68rem] uppercase tracking-[0.18em] text-[var(--gold-soft)]">
+                            Step 3
+                          </p>
+                          <p className="mt-2 text-base font-semibold text-white">
+                            Save Replay
+                          </p>
+                          <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                            Keep it free now, analyze later.
+                          </p>
+                        </div>
+                      </div>
 
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <p className="text-xs text-[var(--muted)]">
-                      {manualCountText}
-                    </p>
-                    <button
-                      type="button"
-                      onClick={() => void handleManualSubmit()}
-                      disabled={busySource === "manual" || manualText.trim().length === 0}
-                      className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
-                    >
-                      {busySource === "manual" ? "Saving..." : "Save Manual Hand"}
-                    </button>
-                  </div>
+                      <div className="mt-5">
+                        <button
+                          type="button"
+                          onClick={() => setManualWizardVisible(true)}
+                          className="btn-primary"
+                        >
+                          Start Manual Input
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="space-y-5">
+                      <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+                        <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
+                          <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                            Hero
+                          </p>
+                          <p className="mt-3 text-xl font-semibold text-white">
+                            {manualSetup.hero.name}
+                          </p>
+                          <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                            {manualSetup.hero.seat} • {manualSetup.hero.stackBb}bb •{" "}
+                            {formatCards(
+                              manualSetup.hero.holeCards.first,
+                              manualSetup.hero.holeCards.second,
+                            )}
+                          </p>
+
+                          <div className="mt-5 rounded-[18px] border border-white/8 bg-black/15 p-4">
+                            <p className="text-[0.68rem] uppercase tracking-[0.2em] text-[var(--gold-soft)]">
+                              Button
+                            </p>
+                            <p className="mt-2 text-lg font-semibold text-white">
+                              {manualSetup.buttonSeat}
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
+                          <div className="flex items-center justify-between gap-3">
+                            <div>
+                              <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                                Opponents
+                              </p>
+                              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                                Same order and seat structure as the app.
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => setManualWizardVisible(true)}
+                              className="btn-secondary"
+                            >
+                              Edit Setup
+                            </button>
+                          </div>
+
+                          <div className="mt-4 grid gap-3">
+                            {manualSetup.opponents.map((opponent) => (
+                              <div
+                                key={`${opponent.seat}-${opponent.name}`}
+                                className="rounded-[18px] border border-white/8 bg-black/15 px-4 py-3"
+                              >
+                                <p className="text-sm font-semibold text-white">
+                                  {opponent.name}
+                                </p>
+                                <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/55">
+                                  {opponent.seat} • {opponent.stackBb}bb
+                                </p>
+                                <p className="mt-2 text-sm text-white/82">
+                                  {formatCards(
+                                    opponent.holeCards.first,
+                                    opponent.holeCards.second,
+                                    opponent.unknownCards,
+                                  )}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      <label className="block">
+                        <span className="mb-2 block text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                          Action Notes
+                        </span>
+                        <textarea
+                          value={manualSetup.actionNotes}
+                          onChange={(event) =>
+                            setManualSetup((current) =>
+                              current
+                                ? { ...current, actionNotes: event.target.value }
+                                : current,
+                            )
+                          }
+                          placeholder="CO opens to 2.5bb, BTN calls, flop Kd 8s 3c, c-bet 30%, BTN calls..."
+                          className="min-h-[180px] w-full rounded-[24px] border border-white/8 bg-white/[0.03] px-4 py-4 text-sm leading-7 text-white outline-none transition placeholder:text-white/32 focus:border-[var(--border-strong)] focus:bg-white/[0.05]"
+                        />
+                      </label>
+
+                      <div className="flex flex-wrap items-center justify-between gap-3">
+                        <p className="text-sm leading-6 text-[var(--muted)]">
+                          Save now for free, or come back later and run Pro analysis on this same hand.
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() => void handleManualSubmit()}
+                          disabled={busySource === "manual"}
+                          className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
+                        >
+                          {busySource === "manual" ? "Saving..." : "Save Manual Hand"}
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               ) : null}
 
@@ -593,11 +808,10 @@ export function HandReviewStudio() {
                 <div className="mt-6 space-y-5">
                   <div className="space-y-2">
                     <p className="text-[0.7rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
-                      Voice Upload
+                      Voice Recording
                     </p>
                     <p className="text-sm leading-6 text-[var(--muted)]">
-                      Record the hand in your own words, or upload an audio file
-                      if you already have one.
+                      Describe the hand out loud. The saved replay will be created from the transcript.
                     </p>
                   </div>
 
@@ -607,7 +821,7 @@ export function HandReviewStudio() {
                         className="mb-5"
                         compact
                         title="Premium Required"
-                        description="Voice upload is a Pro feature because it calls the transcription API."
+                        description="Voice Recording is part of Pro because transcription uses the API."
                       />
                     ) : null}
 
@@ -636,7 +850,7 @@ export function HandReviewStudio() {
                         <p className="text-sm leading-6 text-white">
                           {isRecording
                             ? `Recording... ${recordingSeconds}s`
-                            : "Use the microphone or upload a saved audio note."}
+                            : "Record a fresh memo or upload an existing audio note."}
                         </p>
                         <button
                           type="button"
@@ -676,11 +890,7 @@ export function HandReviewStudio() {
                           </button>
                         </div>
                         {audioPreviewUrl ? (
-                          <audio
-                            controls
-                            src={audioPreviewUrl}
-                            className="mt-4 w-full"
-                          />
+                          <audio controls src={audioPreviewUrl} className="mt-4 w-full" />
                         ) : null}
                       </div>
                     ) : null}
@@ -689,9 +899,7 @@ export function HandReviewStudio() {
                       <button
                         type="button"
                         onClick={() => void handleAudioSubmit()}
-                        disabled={
-                          busySource === "voice" || !selectedAudio || premiumLocked
-                        }
+                        disabled={busySource === "voice" || !selectedAudio || premiumLocked}
                         className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                       >
                         {busySource === "voice" ? "Transcribing..." : "Transcribe & Save"}
@@ -705,11 +913,10 @@ export function HandReviewStudio() {
                 <div className="mt-6 space-y-5">
                   <div className="space-y-2">
                     <p className="text-[0.7rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
-                      Screenshot Upload
+                      Import Image
                     </p>
                     <p className="text-sm leading-6 text-[var(--muted)]">
-                      Upload a poker screenshot. GPT will extract what it can,
-                      clean it up, and store the result in Firebase.
+                      Upload a screenshot from the table and turn it into a saved replay.
                     </p>
                   </div>
 
@@ -717,7 +924,7 @@ export function HandReviewStudio() {
                     <SubscriptionCta
                       compact
                       title="Premium Required"
-                      description="Screenshot recognition is a Pro feature because it calls the vision API."
+                      description="Import Image is part of Pro because screenshot parsing uses the vision API."
                     />
                   ) : null}
 
@@ -738,15 +945,12 @@ export function HandReviewStudio() {
                       />
                     ) : (
                       <>
-                        <span className="text-5xl text-[var(--gold-soft)]">
-                          ⌘
-                        </span>
+                        <span className="text-5xl text-[var(--gold-soft)]">⌘</span>
                         <p className="mt-4 text-base font-semibold text-white">
                           Tap to choose a screenshot
                         </p>
                         <p className="mt-2 max-w-md text-sm leading-6 text-[var(--muted)]">
-                          JPG, PNG, and HEIC screenshots work well as long as
-                          the hand action is visible.
+                          JPG, PNG, and HEIC screenshots work best when the action line is visible.
                         </p>
                       </>
                     )}
@@ -784,11 +988,7 @@ export function HandReviewStudio() {
                     <button
                       type="button"
                       onClick={() => void handleImageSubmit()}
-                      disabled={
-                        busySource === "screenshot" ||
-                        !selectedImage ||
-                        premiumLocked
-                      }
+                      disabled={busySource === "screenshot" || !selectedImage || premiumLocked}
                       className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                     >
                       {busySource === "screenshot" ? "Reading Image..." : "Read & Save"}
@@ -798,22 +998,6 @@ export function HandReviewStudio() {
               ) : null}
             </section>
 
-            {(error || notice || historyMessage) && (
-              <section className="panel p-4 sm:p-5">
-                {error ? (
-                  <p className="text-sm leading-6 text-[#ffb2bc]">{error}</p>
-                ) : null}
-                {!error && notice ? (
-                  <p className="text-sm leading-6 text-[#d8f3b1]">{notice}</p>
-                ) : null}
-                {!error && !notice && historyMessage ? (
-                  <p className="text-sm leading-6 text-[var(--muted)]">
-                    {historyMessage}
-                  </p>
-                ) : null}
-              </section>
-            )}
-
             {!subscriptionLoading ? (
               <section className="panel p-4 sm:p-5">
                 <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
@@ -821,14 +1005,13 @@ export function HandReviewStudio() {
                 </p>
                 {subscription.premium ? (
                   <p className="mt-2 text-sm leading-6 text-white/86">
-                    Pro access is active for voice upload, screenshot parsing,
-                    and AI hand analysis.
+                    Pro is active. Voice Recording, Import Image, and AI hand analysis are unlocked.
                   </p>
                 ) : (
                   <div className="mt-3">
                     <SubscriptionCta
                       title="Free + Pro Access"
-                      description="Manual upload, bankroll tracking, and luck reading stay free. Upgrade only for the API-powered tools."
+                      description="Manual Input, bankroll tracking, and luck reading stay free. Upgrade only for the API-powered tools."
                     />
                   </div>
                 )}
@@ -840,9 +1023,9 @@ export function HandReviewStudio() {
             <section className="panel p-5 sm:p-6">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="font-heading text-2xl text-white">Latest Read</p>
+                  <p className="font-heading text-2xl text-white">Latest Replay</p>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Your newest parsed hand shows up here immediately after save.
+                    The newest saved hand appears here right after upload.
                   </p>
                 </div>
               </div>
@@ -853,41 +1036,26 @@ export function HandReviewStudio() {
                     item={latestItem}
                     actions={
                       <>
-                        <Link
-                          href={`/history/${latestItem.id}`}
-                          className="btn-secondary"
-                        >
+                        <Link href={`/history/${latestItem.id}`} className="btn-secondary">
                           Open Detail
                         </Link>
                         {!latestItem.analysis ? (
                           <button
                             type="button"
                             onClick={() => void handleAnalyzeItem(latestItem.id)}
-                            disabled={
-                              Boolean(analyzingItemId) ||
-                              !subscription.premium
-                            }
+                            disabled={Boolean(analyzingItemId) || !subscription.premium}
                             className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                           >
-                            {analyzingItemId === latestItem.id
-                              ? "Analyzing..."
-                              : "Analyze Hand"}
+                            {analyzingItemId === latestItem.id ? "Analyzing..." : "Analyze Hand"}
                           </button>
                         ) : (
                           <button
                             type="button"
-                            onClick={() =>
-                              void handleAnalyzeItem(latestItem.id, true)
-                            }
-                            disabled={
-                              Boolean(analyzingItemId) ||
-                              !subscription.premium
-                            }
+                            onClick={() => void handleAnalyzeItem(latestItem.id, true)}
+                            disabled={Boolean(analyzingItemId) || !subscription.premium}
                             className="btn-secondary disabled:cursor-not-allowed disabled:opacity-55"
                           >
-                            {analyzingItemId === latestItem.id
-                              ? "Refreshing..."
-                              : "Refresh Analysis"}
+                            {analyzingItemId === latestItem.id ? "Refreshing..." : "Refresh Analysis"}
                           </button>
                         )}
                       </>
@@ -895,8 +1063,7 @@ export function HandReviewStudio() {
                   />
                 ) : (
                   <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 text-sm leading-7 text-[var(--muted)]">
-                    Nothing saved yet. Start with a manual note, a quick voice
-                    memo, or a screenshot from the table.
+                    Start with Manual Input, a voice memo, or a screenshot from the table. The saved hand will show up here.
                   </div>
                 )}
               </div>
@@ -905,11 +1072,9 @@ export function HandReviewStudio() {
             <section className="panel p-5 sm:p-6">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="font-heading text-2xl text-white">
-                    Recent Uploads
-                  </p>
+                  <p className="font-heading text-2xl text-white">Recent History</p>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Stored in Firebase for this browser or Google account.
+                    Saved hands for this browser or signed-in account.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -928,12 +1093,11 @@ export function HandReviewStudio() {
 
               {!historyConfigured ? (
                 <div className="mt-5 rounded-[24px] border border-white/8 bg-white/[0.03] p-5 text-sm leading-7 text-[var(--muted)]">
-                  Firebase Admin env vars are still missing, so saved history is
-                  not available yet.
+                  Saved history is temporarily unavailable.
                 </div>
               ) : historyItems.length === 0 ? (
                 <div className="mt-5 rounded-[24px] border border-white/8 bg-white/[0.03] p-5 text-sm leading-7 text-[var(--muted)]">
-                  No uploads saved for this viewer yet.
+                  No hands saved yet for this viewer.
                 </div>
               ) : (
                 <div className="mt-5 space-y-3">
@@ -946,12 +1110,9 @@ export function HandReviewStudio() {
                     >
                       <div className="flex flex-wrap items-center justify-between gap-3">
                         <div>
-                          <p className="text-sm font-semibold text-white">
-                            {item.title}
-                          </p>
+                          <p className="text-sm font-semibold text-white">{item.title}</p>
                           <p className="mt-1 text-xs uppercase tracking-[0.18em] text-[var(--gold-soft)]">
-                            {uploadSourceLabels[item.source]} •{" "}
-                            {formatUploadTime(item.createdAtMs)}
+                            {uploadSourceLabels[item.source]} • {formatUploadTime(item.createdAtMs)}
                           </p>
                         </div>
                         <div className="flex items-center gap-2">
@@ -976,6 +1137,18 @@ export function HandReviewStudio() {
           </div>
         </section>
       </div>
+
+      {manualWizardVisible ? (
+        <ManualHandWizard
+          initialSetup={manualSetup}
+          onClose={() => setManualWizardVisible(false)}
+          onComplete={(setup) => {
+            setManualSetup(setup);
+            setNotice("Manual setup saved locally. Add action notes and press Save Manual Hand when ready.");
+            setError("");
+          }}
+        />
+      ) : null}
     </main>
   );
 }

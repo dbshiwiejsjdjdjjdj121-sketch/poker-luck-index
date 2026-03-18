@@ -1,5 +1,6 @@
 import OpenAI, { toFile } from "openai";
 import {
+  type ManualHandSetup,
   type SavedHandAnalysis,
   MAX_AUDIO_BYTES,
   MAX_IMAGE_BYTES,
@@ -520,6 +521,138 @@ function buildManualUpload(rawInput: string): ParsedHandUpload {
   };
 }
 
+function normalizeManualCard(value: string) {
+  const trimmed = value.trim();
+
+  if (!trimmed) {
+    return "";
+  }
+
+  if (trimmed === "Unknown" || trimmed === "??") {
+    return "Unknown";
+  }
+
+  return normalizeCard(trimmed);
+}
+
+function normalizeManualSetup(setup: ManualHandSetup): ManualHandSetup {
+  return {
+    buttonSeat: setup.buttonSeat,
+    actionNotes: setup.actionNotes.trim(),
+    hero: {
+      seat: setup.hero.seat,
+      name: setup.hero.name.trim() || "Hero",
+      stackBb: Math.max(0, Number(setup.hero.stackBb) || 0),
+      holeCards: {
+        first: normalizeManualCard(setup.hero.holeCards.first),
+        second: normalizeManualCard(setup.hero.holeCards.second),
+      },
+    },
+    opponents: setup.opponents.map((opponent, index) => ({
+      seat: opponent.seat,
+      name: opponent.name.trim() || `Villain ${index + 1}`,
+      stackBb: Math.max(0, Number(opponent.stackBb) || 0),
+      holeCards: {
+        first: normalizeManualCard(opponent.holeCards.first),
+        second: normalizeManualCard(opponent.holeCards.second),
+      },
+      unknownCards: Boolean(opponent.unknownCards),
+    })),
+  };
+}
+
+function ensureManualSetup(setup: ManualHandSetup | null | undefined) {
+  if (!setup) {
+    throw new Error("Add the hand setup before saving.");
+  }
+
+  const normalized = normalizeManualSetup(setup);
+
+  if (!normalized.hero.seat) {
+    throw new Error("Choose Hero's seat first.");
+  }
+
+  if (normalized.hero.stackBb <= 0) {
+    throw new Error("Hero stack must be greater than zero.");
+  }
+
+  if (!normalized.hero.holeCards.first || !normalized.hero.holeCards.second) {
+    throw new Error("Hero needs two hole cards.");
+  }
+
+  if (normalized.opponents.length === 0) {
+    throw new Error("Add at least one opponent.");
+  }
+
+  return normalized;
+}
+
+function buildManualRawInputFromSetup(setup: ManualHandSetup) {
+  const heroCards = `${setup.hero.holeCards.first} ${setup.hero.holeCards.second}`;
+  const heroLine = `Hero ${setup.hero.name} sits ${setup.hero.seat} with ${heroCards} for ${setup.hero.stackBb}bb.`;
+  const buttonLine = `Button starts at ${setup.buttonSeat}.`;
+  const opponentLines = setup.opponents.map((opponent) => {
+    const cards = opponent.unknownCards
+      ? "unknown cards"
+      : `${opponent.holeCards.first} ${opponent.holeCards.second}`;
+
+    return `${opponent.name} sits ${opponent.seat} with ${cards} for ${opponent.stackBb}bb.`;
+  });
+  const notesLine = setup.actionNotes
+    ? `Action notes: ${setup.actionNotes}`
+    : "Action notes: setup saved, action line still to be added.";
+
+  return [heroLine, buttonLine, ...opponentLines, notesLine].join("\n");
+}
+
+function buildManualUploadFromSetup(setup: ManualHandSetup): ParsedHandUpload {
+  const heroCards = [
+    setup.hero.holeCards.first,
+    setup.hero.holeCards.second,
+  ].filter((card) => card && card !== "Unknown");
+  const board = detectBoardCards(setup.actionNotes);
+  const keyActions = detectActionTags(setup.actionNotes);
+  const rawInput = buildManualRawInputFromSetup(setup);
+  const missingDetails: string[] = [];
+
+  if (!setup.actionNotes.trim()) {
+    missingDetails.push("Action line is still missing.");
+  }
+
+  if (!board.flop.length && !board.turn && !board.river) {
+    missingDetails.push("Board runout has not been entered yet.");
+  }
+
+  if (!keyActions.length) {
+    missingDetails.push("No clear betting sequence was recorded yet.");
+  }
+
+  return {
+    valid: true,
+    error: "",
+    sourceText: rawInput,
+    title: `Manual Replay • ${setup.hero.seat} • ${heroCards.join(" ") || setup.hero.name}`,
+    normalizedHandText: rawInput,
+    quickSummary: `${setup.hero.name} starts from ${setup.hero.seat} with ${heroCards.join(" ") || "a saved range"} against ${setup.opponents.length} opponent${setup.opponents.length === 1 ? "" : "s"}.`,
+    coachAdvice:
+      "Manual setup saved. Add action notes whenever you want, or run Pro analysis later for the full review.",
+    hero: {
+      position: setup.hero.seat,
+      cards: heroCards,
+      stackBb: setup.hero.stackBb,
+    },
+    opponents: setup.opponents.map((opponent) => ({
+      label: opponent.name,
+      position: opponent.seat,
+      stackBb: opponent.stackBb,
+    })),
+    board,
+    keyActions,
+    missingDetails,
+    confidence: setup.actionNotes.trim() ? "medium" : "low",
+  };
+}
+
 function buildExtractionInstructions(source: UploadSource) {
   return [
     "You are the intake parser for a poker hand review web app.",
@@ -740,6 +873,7 @@ function serializeSavedUpload(
   createdAtMs: number,
   media: StoredUploadMedia | null,
   parsed: ParsedHandUpload,
+  manualSetup?: ManualHandSetup | null,
 ): SavedHandUpload {
   return {
     id,
@@ -748,6 +882,7 @@ function serializeSavedUpload(
     rawInput,
     createdAtMs,
     media,
+    manualSetup: manualSetup || null,
     analysis: null,
     ...parsed,
   };
@@ -759,6 +894,7 @@ async function saveUploadRecord(
   rawInput: string,
   parsed: ParsedHandUpload,
   media: StoredUploadMedia | null,
+  manualSetup?: ManualHandSetup | null,
 ) {
   const db = getFirebaseAdminDb();
   const sanitizedViewerId = sanitizeViewerId(viewerId);
@@ -777,6 +913,7 @@ async function saveUploadRecord(
     createdAtMs,
     media,
     parsed,
+    manualSetup,
   );
 
   await docRef.set(payload);
@@ -822,11 +959,30 @@ function ensureValidExtraction(parsed: ParsedHandUpload) {
   }
 }
 
-export async function processManualUpload(viewerId: string, handText: string) {
+export async function processManualUpload(
+  viewerId: string,
+  handText: string,
+  manualSetup?: ManualHandSetup | null,
+) {
+  if (manualSetup) {
+    const normalizedSetup = ensureManualSetup(manualSetup);
+    const rawInput = buildManualRawInputFromSetup(normalizedSetup);
+    const parsed = buildManualUploadFromSetup(normalizedSetup);
+
+    return saveUploadRecord(
+      viewerId,
+      "manual",
+      rawInput,
+      parsed,
+      null,
+      normalizedSetup,
+    );
+  }
+
   const rawInput = ensureManualText(handText);
   const parsed = buildManualUpload(rawInput);
 
-  return saveUploadRecord(viewerId, "manual", rawInput, parsed, null);
+  return saveUploadRecord(viewerId, "manual", rawInput, parsed, null, null);
 }
 
 export async function processAudioUpload(

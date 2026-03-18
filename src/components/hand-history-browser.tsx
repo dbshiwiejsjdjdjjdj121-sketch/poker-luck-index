@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { AuthButton } from "@/components/auth-button";
+import { AppNavigation } from "@/components/app-navigation";
 import { useAuth } from "@/components/auth-provider";
 import { uploadSourceLabels, type SavedHandUpload } from "@/lib/hand-upload-types";
 
@@ -99,18 +99,9 @@ export function HandHistoryBrowser() {
   }, [loadHistory]);
 
   return (
-    <main className="px-4 py-6 sm:px-6 lg:px-8">
+    <main className="px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:pb-8">
       <div className="mx-auto max-w-6xl space-y-6">
-        <div className="flex items-center justify-between gap-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white"
-          >
-            <span>←</span>
-            <span>Back Home</span>
-          </Link>
-          <AuthButton />
-        </div>
+        <AppNavigation />
 
         <section className="panel panel-strong p-6 sm:p-8 lg:p-10">
           <div className="flex flex-wrap items-start justify-between gap-4">
@@ -121,12 +112,11 @@ export function HandHistoryBrowser() {
               </span>
               <div>
                 <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl">
-                  Review Saved Hands
+                  Replay History
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--muted)]">
-                  Reopen any manual note, voice upload, or screenshot parse.
-                  Premium AI analysis stays attached to the record once it is
-                  generated.
+                  Open any saved replay, check whether it has AI analysis attached,
+                  and jump back into the hand when you need it.
                 </p>
               </div>
             </div>

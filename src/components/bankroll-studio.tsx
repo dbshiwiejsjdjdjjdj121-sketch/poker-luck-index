@@ -1,8 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import Link from "next/link";
-import { AuthButton } from "@/components/auth-button";
+import { AppNavigation } from "@/components/app-navigation";
 import { useAuth } from "@/components/auth-provider";
 import {
   buildBankrollStats,
@@ -326,18 +325,9 @@ export function BankrollStudio() {
   }
 
   return (
-    <main className="px-4 py-6 sm:px-6 lg:px-8">
+    <main className="px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:pb-8">
       <div className="mx-auto max-w-6xl space-y-6">
-        <div className="flex items-center justify-between gap-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white"
-          >
-            <span>←</span>
-            <span>Back Home</span>
-          </Link>
-          <AuthButton />
-        </div>
+        <AppNavigation />
 
         <section className="panel panel-strong relative overflow-hidden p-6 sm:p-8 lg:p-10">
           <div className="home-felt absolute inset-x-[12%] top-[-22%] hidden h-[360px] rounded-[999px] lg:block" />

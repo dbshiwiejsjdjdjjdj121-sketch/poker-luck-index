@@ -2,6 +2,28 @@ export type UploadSource = "manual" | "voice" | "screenshot";
 
 export type UploadConfidence = "high" | "medium" | "low";
 
+export type ReplaySeatPosition = "UTG" | "HJ" | "CO" | "BTN" | "SB" | "BB";
+
+export interface ReplayHoleCards {
+  first: string;
+  second: string;
+}
+
+export interface ManualPlayerSetup {
+  seat: ReplaySeatPosition;
+  name: string;
+  stackBb: number;
+  holeCards: ReplayHoleCards;
+  unknownCards?: boolean;
+}
+
+export interface ManualHandSetup {
+  buttonSeat: ReplaySeatPosition;
+  hero: ManualPlayerSetup;
+  opponents: ManualPlayerSetup[];
+  actionNotes: string;
+}
+
 export interface ParsedHeroSnapshot {
   position: string;
   cards: string[];
@@ -65,6 +87,7 @@ export interface SavedHandUpload extends ParsedHandUpload {
   rawInput: string;
   createdAtMs: number;
   media: StoredUploadMedia | null;
+  manualSetup?: ManualHandSetup | null;
   analysis?: SavedHandAnalysis | null;
 }
 

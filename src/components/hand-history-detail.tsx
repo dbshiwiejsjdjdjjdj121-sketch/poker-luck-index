@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { AppNavigation } from "@/components/app-navigation";
 import { HandUploadRecordCard } from "@/components/hand-upload-record-card";
-import { AuthButton } from "@/components/auth-button";
 import { useAuth } from "@/components/auth-provider";
 import { SubscriptionCta } from "@/components/subscription-cta";
 import { useSubscription } from "@/components/subscription-provider";
@@ -191,26 +191,25 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
   }
 
   return (
-    <main className="px-4 py-6 sm:px-6 lg:px-8">
+    <main className="px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:pb-8">
       <div className="mx-auto max-w-6xl space-y-6">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              href="/history"
-              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white"
-            >
-              <span>←</span>
-              <span>Back History</span>
-            </Link>
-            <Link
-              href="/hand-review"
-              className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white/80"
-            >
-              <span>＋</span>
-              <span>New Upload</span>
-            </Link>
-          </div>
-          <AuthButton />
+        <AppNavigation />
+
+        <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/history"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white"
+          >
+            <span>←</span>
+            <span>Back History</span>
+          </Link>
+          <Link
+            href="/hand-review"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)] transition hover:text-white/80"
+          >
+            <span>＋</span>
+            <span>New Replay</span>
+          </Link>
         </div>
 
         {error ? (

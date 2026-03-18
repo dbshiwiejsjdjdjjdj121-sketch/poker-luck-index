@@ -4,6 +4,7 @@ import {
   processManualUpload,
   resolveViewerId,
 } from "@/lib/hand-upload-server";
+import type { ManualHandSetup } from "@/lib/hand-upload-types";
 
 export const runtime = "nodejs";
 
@@ -24,6 +25,7 @@ export async function POST(request: Request) {
     const body = (await request.json()) as {
       viewerId?: string;
       handText?: string;
+      setup?: ManualHandSetup | null;
     };
 
     const viewerId = await resolveViewerId({
@@ -31,7 +33,7 @@ export async function POST(request: Request) {
       authHeader: request.headers.get("authorization"),
     });
     const handText = body.handText?.trim() ?? "";
-    const item = await processManualUpload(viewerId, handText);
+    const item = await processManualUpload(viewerId, handText, body.setup);
 
     return NextResponse.json({ item });
   } catch (error) {

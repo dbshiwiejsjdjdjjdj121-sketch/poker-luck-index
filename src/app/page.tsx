@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AuthButton } from "@/components/auth-button";
+import { AppNavigation } from "@/components/app-navigation";
 import { HomeForm } from "@/components/home-form";
 import {
   SITE_DESCRIPTION,
@@ -37,66 +37,82 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden px-4 py-6 sm:px-6 lg:px-8">
-      <div className="mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-6xl flex-col justify-center">
-        <section className="panel panel-strong relative overflow-hidden p-5 sm:p-8 lg:p-10">
+    <main className="relative min-h-screen overflow-hidden px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:pb-8">
+      <div className="mx-auto max-w-6xl space-y-6">
+        <AppNavigation />
+
+        <section className="panel panel-strong relative overflow-hidden p-6 sm:p-8 lg:p-10">
           <div className="home-felt absolute inset-x-[10%] top-[-18%] hidden h-[420px] rounded-[999px] lg:block" />
 
-          <div className="relative grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="relative grid gap-10 xl:grid-cols-[1.04fr_0.96fr] xl:items-center">
             <div className="space-y-7">
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
-                  <span>♠</span>
-                  <span>Poker Luck Index</span>
-                  <span>♥</span>
-                </div>
-                <AuthButton />
+              <div className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
+                <span>♠</span>
+                <span>Poker Luck Index</span>
+                <span>♥</span>
               </div>
 
               <div className="space-y-4">
                 <h1 className="max-w-3xl font-heading text-5xl leading-none text-white sm:text-6xl lg:text-7xl">
-                  <span className="block">Check Your Poker Luck</span>
+                  <span className="block">One Poker Home</span>
                   <span className="mt-2 block text-[var(--gold-soft)]">
-                    Before The First Hand
+                    Luck, Replay, History, Bankroll
                   </span>
                 </h1>
-                <p className="max-w-xl text-base leading-7 text-[var(--muted)] sm:text-lg">
-                  Get today&apos;s luck score, best play style, coin-flip call,
-                  and three hands to watch.
+                <p className="max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg">
+                  Use Luck before the session. Save real hands with Replay. Keep every spot in History.
+                  Track your bankroll without leaving the same app.
                 </p>
               </div>
 
-              <div className="mini-deck">
-                <div className="mini-card mini-card-hand">
-                  <span>AK</span>
-                  <span>AK</span>
-                </div>
-                <div className="mini-card mini-card-hand mini-card-red">
-                  <span>77</span>
-                  <span>77</span>
-                </div>
-                <div className="mini-card mini-card-hand">
-                  <span>QJ</span>
-                  <span>QJ</span>
-                </div>
-              </div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                <Link href="/hand-review" className="rounded-[24px] border border-[var(--border-strong)] bg-[rgba(214,178,93,0.12)] p-5 transition hover:bg-[rgba(214,178,93,0.18)]">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    Replay
+                  </p>
+                  <p className="mt-3 font-heading text-2xl text-white">
+                    Upload A Real Hand
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                    Manual Input for free. Voice, screenshot, and AI review in Pro.
+                  </p>
+                </Link>
 
-              <div className="flex flex-wrap gap-4 text-sm text-[var(--muted)]">
-                <span>♣ 10-point table read</span>
-                <span>♦ Free bankroll + manual upload</span>
-                <span>♥ Pro voice, screenshot, and AI review</span>
-              </div>
+                <Link href="/bankroll" className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 transition hover:bg-white/[0.06]">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    Bankroll
+                  </p>
+                  <p className="mt-3 font-heading text-2xl text-white">
+                    Track Sessions
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                    Record buy-in, cash-out, and running profit for free.
+                  </p>
+                </Link>
 
-              <div className="flex flex-wrap gap-3">
-                <Link href="/hand-review" className="btn-secondary">
-                  Upload A Real Hand
+                <Link href="/history" className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 transition hover:bg-white/[0.06]">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    History
+                  </p>
+                  <p className="mt-3 font-heading text-2xl text-white">
+                    Reopen Saved Hands
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                    Every saved replay stays available for later analysis.
+                  </p>
                 </Link>
-                <Link href="/bankroll" className="btn-secondary">
-                  Track Bankroll
-                </Link>
-                <Link href="/history" className="btn-secondary">
-                  View History
-                </Link>
+
+                <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    Free + Pro
+                  </p>
+                  <p className="mt-3 font-heading text-2xl text-white">
+                    Clear Product Split
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                    Free: Luck, Manual Input, Bankroll. Pro: Voice, Import Image, AI hand analysis.
+                  </p>
+                </div>
               </div>
             </div>
 
