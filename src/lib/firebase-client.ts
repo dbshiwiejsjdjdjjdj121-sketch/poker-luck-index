@@ -119,6 +119,10 @@ function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
     return new Error("Enter a valid email address.");
   }
 
+  if (code === "auth/api-key-not-valid") {
+    return new Error("Firebase web sign-in is misconfigured right now. Please try again in a moment.");
+  }
+
   return error;
 }
 
