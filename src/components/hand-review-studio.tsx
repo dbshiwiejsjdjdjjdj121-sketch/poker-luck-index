@@ -9,6 +9,7 @@ import {
   PremiumActionGateModal,
   type PremiumAction,
 } from "@/components/premium-action-gate-modal";
+import { SavedHandReplayPanel } from "@/components/saved-hand-replay-panel";
 import { useAuth } from "@/components/auth-provider";
 import { useSubscription } from "@/components/subscription-provider";
 import {
@@ -37,7 +38,11 @@ function getOrCreateViewerId() {
   return nextId;
 }
 
-export function HandReviewStudio() {
+export function HandReviewStudio({
+  selectedHandId = "",
+}: {
+  selectedHandId?: string;
+}) {
   const { user, getIdToken } = useAuth();
   const { subscription } = useSubscription();
   const [viewerId, setViewerId] = useState("");
@@ -496,7 +501,10 @@ export function HandReviewStudio() {
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <p className="text-sm leading-6 text-[#d8f3b1]">{notice}</p>
                 {lastSavedItem ? (
-                  <Link href={`/history/${lastSavedItem.id}`} className="btn-secondary">
+                  <Link
+                    href={`/hand-review?handId=${lastSavedItem.id}`}
+                    className="btn-secondary"
+                  >
                     Open Saved Hand
                   </Link>
                 ) : null}
@@ -504,6 +512,8 @@ export function HandReviewStudio() {
             )}
           </section>
         )}
+
+        {selectedHandId ? <SavedHandReplayPanel handId={selectedHandId} /> : null}
 
         <section className="panel p-5 sm:p-6">
           {activeSource === "manual" ? (

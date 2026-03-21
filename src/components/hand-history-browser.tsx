@@ -3,7 +3,9 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { AppNavigation } from "@/components/app-navigation";
+import { HoleCardsStrip } from "@/components/hole-cards-strip";
 import { useAuth } from "@/components/auth-provider";
+import { getAllInHandRecord } from "@/lib/allin-hand-record";
 import { uploadSourceLabels, type SavedHandUpload } from "@/lib/hand-upload-types";
 
 const VIEWER_ID_STORAGE_KEY = "poker-luck-index-viewer-id";
@@ -36,6 +38,28 @@ function formatUploadTime(timestamp: number) {
   } catch {
     return "";
   }
+}
+
+function getStreetLabel(item: SavedHandUpload) {
+  const allinHand = getAllInHandRecord(item);
+
+  if (!allinHand) {
+    return item.manualReplay?.finalState.street || "Preflop";
+  }
+
+  if (allinHand.streets.river?.card) {
+    return "River";
+  }
+
+  if (allinHand.streets.turn?.card) {
+    return "Turn";
+  }
+
+  if (allinHand.streets.flop?.board?.length) {
+    return "Flop";
+  }
+
+  return "Preflop";
 }
 
 export function HandHistoryBrowser() {
@@ -103,28 +127,25 @@ export function HandHistoryBrowser() {
       <div className="mx-auto max-w-6xl space-y-6">
         <AppNavigation />
 
-        <section className="panel panel-strong p-6 sm:p-8 lg:p-10">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div className="space-y-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-[var(--gold-soft)]">
-                <span>♠</span>
-                <span>Hand History</span>
-              </span>
-              <div>
-                <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl">
-                  Replay History
-                </h1>
-                <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--muted)]">
-                  Open any saved replay, check whether it has AI analysis attached,
-                  and jump back into the hand when you need it.
-                </p>
-              </div>
+        <section className="panel p-5 sm:p-6">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h1 className="text-3xl font-semibold text-white sm:text-4xl">
+                Hand History
+              </h1>
+              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                Review past hands and jump back into replay.
+              </p>
             </div>
             <div className="flex flex-wrap gap-2">
               <Link href="/hand-review" className="btn-secondary">
-                Upload Another Hand
+                New Replay
               </Link>
-              <button type="button" onClick={() => void loadHistory()} className="btn-secondary">
+              <button
+                type="button"
+                onClick={() => void loadHistory()}
+                className="btn-secondary"
+              >
                 Refresh
               </button>
             </div>
@@ -149,48 +170,60 @@ export function HandHistoryBrowser() {
             </div>
           ) : (
             items.map((item) => (
-              <article
-                key={item.id}
-                className="panel rounded-[24px] border border-white/8 bg-white/[0.03] p-5"
-              >
-                <div className="flex flex-wrap items-start justify-between gap-4">
-                  <div className="space-y-2">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="rounded-full border border-[var(--border-strong)] bg-white/5 px-3 py-1 text-[0.66rem] uppercase tracking-[0.2em] text-[var(--gold-soft)]">
-                        {uploadSourceLabels[item.source]}
-                      </span>
-                      {item.analysis ? (
-                        <span className="rounded-full border border-[#d8f3b1]/30 bg-[#d8f3b1]/10 px-3 py-1 text-[0.66rem] uppercase tracking-[0.2em] text-[#d8f3b1]">
-                          AI analyzed
-                        </span>
-                      ) : null}
-                    </div>
-                    <div>
-                      <p className="font-heading text-2xl text-white">
-                        {item.title}
-                      </p>
-                      <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--muted)]">
-                        {item.quickSummary}
-                      </p>
-                      {item.manualReplay ? (
-                        <p className="mt-2 text-xs uppercase tracking-[0.18em] text-white/50">
-                          {item.manualReplay.finalState.street} • {item.manualReplay.finalState.potBb}bb pot •{" "}
-                          {item.manualReplay.actionHistory.length} actions
-                        </p>
-                      ) : null}
-                    </div>
-                    <p className="text-xs uppercase tracking-[0.18em] text-white/50">
-                      {formatUploadTime(item.createdAtMs)} • {item.confidence} confidence
-                    </p>
-                  </div>
+              (() => {
+                const allinHand = getAllInHandRecord(item);
+                const heroPlayer = allinHand?.setup.players.find(
+                  (player) => player.seat === allinHand.setup.heroSeat,
+                );
+                const heroHoleCards = heroPlayer?.hole;
+                const potBb =
+                  allinHand?.result.pots[0]?.sizeBb ?? item.manualReplay?.finalState.potBb ?? 0;
 
-                  <div className="flex flex-wrap gap-2">
-                    <Link href={`/history/${item.id}`} className="btn-primary">
-                      Open Hand
-                    </Link>
-                  </div>
-                </div>
-              </article>
+                return (
+                  <article
+                    key={item.id}
+                    className="panel rounded-[24px] border border-white/8 bg-white/[0.03] p-5"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="min-w-0 flex-1">
+                        <p className="text-sm font-semibold text-white">
+                          {formatUploadTime(item.createdAtMs)}
+                        </p>
+                        <p className="mt-1 text-sm text-white/55">
+                          {(allinHand?.setup.heroSeat || item.hero.position || "Hero")} · {getStreetLabel(item)} · Pot: {potBb}bb
+                        </p>
+                        {item.analysis ? (
+                          <p className="mt-3 text-sm leading-6 text-white/65 line-clamp-2">
+                            {item.analysis.summary}
+                          </p>
+                        ) : null}
+                      </div>
+
+                      <div className="rounded-[12px] border border-white/8 bg-white/[0.03] px-2 py-2">
+                        {heroHoleCards ? (
+                          <HoleCardsStrip
+                            first={heroHoleCards.first}
+                            second={heroHoleCards.second}
+                            size="medium"
+                          />
+                        ) : null}
+                      </div>
+                    </div>
+
+                    <div className="mt-4 flex items-center justify-between gap-3">
+                      <div className="text-xs text-white/50">
+                        {allinHand?.setup.players.length ?? item.manualSetup?.opponents.length ? `${allinHand?.setup.players.length ?? ((item.manualSetup?.opponents.length || 0) + 1)} players` : uploadSourceLabels[item.source]}
+                      </div>
+                      <Link
+                        href={`/hand-review?handId=${item.id}`}
+                        className={item.analysis ? "btn-secondary" : "btn-primary"}
+                      >
+                        {item.analysis ? "View Analysis" : "Analyze"}
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })()
             ))
           )}
         </section>

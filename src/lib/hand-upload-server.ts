@@ -17,6 +17,7 @@ import {
   getFirebaseAdminBucket,
   getFirebaseAdminDb,
 } from "@/lib/firebase-admin";
+import { buildAllInHandRecord } from "@/lib/allin-hand-record";
 
 const DEFAULT_TEXT_MODEL = process.env.OPENAI_HAND_UPLOAD_MODEL || "gpt-4.1-mini";
 const DEFAULT_TRANSCRIPTION_MODEL =
@@ -1048,6 +1049,11 @@ function serializeSavedUpload(
   manualSetup?: ManualHandSetup | null,
   manualReplay?: ManualReplayData | null,
 ): SavedHandUpload {
+  const allinHand =
+    manualSetup && manualReplay
+      ? buildAllInHandRecord(id, createdAtMs, manualSetup, manualReplay, source, null)
+      : null;
+
   return {
     id,
     viewerId,
@@ -1057,6 +1063,7 @@ function serializeSavedUpload(
     media,
     manualSetup: manualSetup || null,
     manualReplay: manualReplay || null,
+    allinHand,
     analysis: null,
     ...parsed,
   };
@@ -1264,6 +1271,16 @@ export async function analyzeViewerUpload(
   const analysis = await analyzeSavedHand(item);
   const nextItem = {
     ...item,
+    allinHand: item.manualSetup && item.manualReplay
+      ? buildAllInHandRecord(
+          item.id,
+          item.createdAtMs,
+          item.manualSetup,
+          item.manualReplay,
+          item.source,
+          analysis,
+        )
+      : item.allinHand ?? null,
     analysis,
   } satisfies SavedHandUpload;
 

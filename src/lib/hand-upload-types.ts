@@ -125,6 +125,57 @@ export interface SavedHandAnalysis {
   createdAtMs: number;
 }
 
+export interface AllInSavedHandPlayer {
+  seat: string;
+  name: string;
+  style: string;
+  stackBb: number;
+  hole?: { first: string; second: string };
+  unknownCards?: boolean;
+}
+
+export interface AllInSavedHandAction {
+  seat: string;
+  action: string;
+  amount?: number;
+  to?: number;
+}
+
+export interface AllInSavedHandStreetGroup {
+  board?: string[];
+  card?: string;
+  actions: AllInSavedHandAction[];
+}
+
+export interface AllInSavedHand {
+  id: string;
+  setup: {
+    buttonSeat: string;
+    heroSeat: string;
+    players: AllInSavedHandPlayer[];
+  };
+  streets: {
+    preflop: AllInSavedHandAction[];
+    flop?: AllInSavedHandStreetGroup;
+    turn?: AllInSavedHandStreetGroup;
+    river?: AllInSavedHandStreetGroup;
+  };
+  result: {
+    endedBy: "fold" | "showdown";
+    winnerSeat?: string;
+    pots: Array<{
+      sizeBb: number;
+      eligibleSeats: string[];
+    }>;
+  };
+  createdAt: number;
+  progressionText?: string;
+  source?: UploadSource;
+  finalStateJson?: ReplayHandState;
+  actionHistory?: ReplayActionHistoryItem[];
+  ai?: SavedHandAnalysis | null;
+}
+
 export interface StoredUploadMedia {
   storagePath: string;
   contentType: string;
@@ -142,6 +193,7 @@ export interface SavedHandUpload extends ParsedHandUpload {
   manualSetup?: ManualHandSetup | null;
   manualReplay?: ManualReplayData | null;
   analysis?: SavedHandAnalysis | null;
+  allinHand?: AllInSavedHand | null;
 }
 
 export const MAX_MANUAL_TEXT_LENGTH = 6000;

@@ -37,6 +37,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HandReviewPage() {
-  return <HandReviewStudio />;
+export default async function HandReviewPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ handId?: string }>;
+}) {
+  const params = await searchParams;
+  const handId = params.handId?.trim() || "";
+
+  return <HandReviewStudio selectedHandId={handId} />;
 }

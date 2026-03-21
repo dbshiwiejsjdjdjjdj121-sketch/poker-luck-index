@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { HandHistoryDetail } from "@/components/hand-history-detail";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Hand Detail",
@@ -15,6 +15,5 @@ export default async function HistoryDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-
-  return <HandHistoryDetail handId={id} />;
+  redirect(`/hand-review?handId=${id}`);
 }
