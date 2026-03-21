@@ -49,12 +49,14 @@ export function PokerCardImage({
   className,
   sizes = "64px",
   backIfUnknown = false,
+  fit = "contain",
 }: {
   card?: string;
   alt: string;
   className: string;
   sizes?: string;
   backIfUnknown?: boolean;
+  fit?: "contain" | "cover";
 }) {
   const src = getPokerCardImagePath(card, backIfUnknown);
 
@@ -64,7 +66,13 @@ export function PokerCardImage({
 
   return (
     <div className={`relative overflow-hidden ${className}`}>
-      <Image src={src} alt={alt} fill sizes={sizes} className="object-cover" />
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes={sizes}
+        className={fit === "cover" ? "object-cover" : "object-contain"}
+      />
     </div>
   );
 }

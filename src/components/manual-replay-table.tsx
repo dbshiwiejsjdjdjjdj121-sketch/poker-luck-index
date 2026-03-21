@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { PokerCardImage } from "@/components/poker-card-image";
 import type {
   ManualHandSetup,
@@ -9,13 +9,19 @@ import type {
   ReplaySeatPosition,
 } from "@/lib/hand-upload-types";
 
-const SEAT_LAYOUT: Record<ReplaySeatPosition, string> = {
-  BTN: "left-[9%] top-[8%]",
-  SB: "left-1/2 top-[3%] -translate-x-1/2",
-  BB: "right-[9%] top-[8%]",
-  UTG: "right-[9%] bottom-[11%]",
-  HJ: "left-1/2 bottom-[4%] -translate-x-1/2",
-  CO: "left-[9%] bottom-[11%]",
+const SEAT_LAYOUT: Record<
+  ReplaySeatPosition,
+  { style: CSSProperties; align?: "left" | "center" | "right" }
+> = {
+  BTN: { style: { left: "4%", top: "12%" }, align: "left" },
+  SB: { style: { left: "50%", top: "2%", transform: "translateX(-50%)" }, align: "center" },
+  BB: { style: { right: "4%", top: "12%" }, align: "right" },
+  UTG: { style: { right: "4%", bottom: "12%" }, align: "right" },
+  HJ: {
+    style: { left: "50%", bottom: "1.5%", transform: "translateX(-50%)" },
+    align: "center",
+  },
+  CO: { style: { left: "4%", bottom: "12%" }, align: "left" },
 };
 
 function formatPot(value: number) {
@@ -40,7 +46,7 @@ function SeatBadge({
 
   return (
     <span
-      className={`inline-flex rounded-full border px-2 py-1 text-[0.6rem] uppercase tracking-[0.18em] ${toneClass}`}
+      className={`inline-flex whitespace-nowrap rounded-full border px-2 py-1 text-[0.54rem] uppercase tracking-[0.16em] ${toneClass}`}
     >
       {children}
     </span>
@@ -52,11 +58,13 @@ function SeatCard({
   setup,
   isCurrent,
   isWinner,
+  align = "left",
 }: {
   player: ReplayPlayerState | undefined;
   setup: ManualHandSetup;
   isCurrent: boolean;
   isWinner: boolean;
+  align?: "left" | "center" | "right";
 }) {
   if (!player) {
     return null;
@@ -72,20 +80,20 @@ function SeatCard({
 
   return (
     <div
-      className={`w-[152px] rounded-[22px] border bg-[rgba(7,16,14,0.92)] p-3 shadow-[0_14px_28px_rgba(0,0,0,0.28)] transition ${
-        player.inHand ? "border-white/10" : "border-white/6 opacity-45"
+      className={`w-[138px] rounded-[22px] border bg-[rgba(7,16,14,0.92)] p-3 shadow-[0_14px_28px_rgba(0,0,0,0.28)] transition ${
+        player.inHand ? "border-white/12" : "border-white/6 opacity-45"
       } ${isCurrent ? "ring-2 ring-[rgba(214,178,93,0.5)]" : ""}`}
     >
       <div className="flex items-start justify-between gap-2">
-        <div>
+        <div className="min-w-0">
           <p className="text-sm font-semibold text-white">{player.name}</p>
           <p className="mt-1 text-[0.68rem] uppercase tracking-[0.22em] text-white/55">
             {player.seat} • {formatPot(player.stackBb)}bb
           </p>
         </div>
-        <div className="flex flex-col items-end gap-1">
+        <div className="flex max-w-[68px] flex-col items-end gap-1">
           {player.isHero ? <SeatBadge>Hero</SeatBadge> : null}
-          {setup.buttonSeat === player.seat ? <SeatBadge tone="muted">Button</SeatBadge> : null}
+          {setup.buttonSeat === player.seat ? <SeatBadge tone="muted">D</SeatBadge> : null}
           {isCurrent ? <SeatBadge tone="gold">To Act</SeatBadge> : null}
           {player.allIn ? <SeatBadge tone="red">All-In</SeatBadge> : null}
           {!player.inHand ? <SeatBadge tone="muted">Folded</SeatBadge> : null}
@@ -93,15 +101,23 @@ function SeatCard({
         </div>
       </div>
 
-      <div className="mt-3 grid grid-cols-2 gap-2">
+      <div
+        className={`mt-3 flex gap-2 ${
+          align === "right"
+            ? "justify-end"
+            : align === "center"
+              ? "justify-center"
+              : "justify-start"
+        }`}
+      >
         {cards.map((card, index) => (
           <PokerCardImage
             key={`${player.seat}-${index}`}
             card={card}
             backIfUnknown
             alt={`${player.name} card ${index + 1}`}
-            sizes="56px"
-            className="h-14 rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.06)] shadow-[0_10px_24px_rgba(0,0,0,0.22)]"
+            sizes="58px"
+            className="h-[82px] w-[58px] rounded-[16px] border border-white/12 bg-[rgba(255,255,255,0.06)] p-[3px] shadow-[0_10px_24px_rgba(0,0,0,0.22)]"
           />
         ))}
       </div>
@@ -126,14 +142,16 @@ export function ManualReplayTable({
       <div className="home-felt absolute inset-[10%] opacity-90" />
 
       <div className="relative">
-        <div className="mx-auto aspect-[1.28/1] max-w-5xl">
-          <div className="absolute inset-[14%_18%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
+        <div className="mx-auto aspect-[1.48/1] max-w-5xl">
+          <div className="absolute inset-[18%_16%_12%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
 
-          <div className="absolute left-1/2 top-1/2 flex w-[240px] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4">
+          <div className="absolute left-1/2 top-[31%] -translate-x-1/2">
             <div className="rounded-full border border-[var(--border-strong)] bg-black/25 px-4 py-2 text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
               {handState.finished ? "Hand Complete" : `${handState.street} action`}
             </div>
+          </div>
 
+          <div className="absolute left-1/2 top-[43%] w-[220px] -translate-x-1/2 -translate-y-1/2">
             <div className="rounded-[22px] border border-white/10 bg-[rgba(6,13,11,0.84)] px-5 py-4 text-center shadow-[0_18px_38px_rgba(0,0,0,0.26)]">
               <p className="text-[0.66rem] uppercase tracking-[0.22em] text-white/52">Pot</p>
               <p className="mt-2 font-heading text-4xl text-[var(--gold-soft)]">
@@ -143,40 +161,39 @@ export function ManualReplayTable({
                 Current bet {formatPot(handState.currentBetBb)}bb
               </p>
             </div>
+          </div>
 
-            <div className="flex justify-center gap-2">
-              {Array.from({ length: 5 }).map((_, index) => {
-                const card = handState.board[index];
+          <div className="absolute bottom-[11%] left-1/2 flex -translate-x-1/2 justify-center gap-2">
+            {Array.from({ length: 5 }).map((_, index) => {
+              const card = handState.board[index];
 
-                return (
-                  card ? (
-                    <PokerCardImage
-                      key={`board-${index}`}
-                      card={card}
-                      alt={`Board card ${index + 1}`}
-                      sizes="44px"
-                      className="h-14 w-11 rounded-[14px] border border-white/14 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                    />
-                  ) : (
-                    <div
-                      key={`board-${index}`}
-                      className="flex h-14 w-11 items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                    >
-                      ?
-                    </div>
-                  )
-                );
-              })}
-            </div>
+              return card ? (
+                <PokerCardImage
+                  key={`board-${index}`}
+                  card={card}
+                  alt={`Board card ${index + 1}`}
+                  sizes="50px"
+                  className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                />
+              ) : (
+                <div
+                  key={`board-${index}`}
+                  className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                >
+                  ?
+                </div>
+              );
+            })}
           </div>
 
           {(["BTN", "SB", "BB", "UTG", "HJ", "CO"] as ReplaySeatPosition[]).map((seat) => (
-            <div key={seat} className={`absolute ${SEAT_LAYOUT[seat]}`}>
+            <div key={seat} className="absolute" style={SEAT_LAYOUT[seat].style}>
               <SeatCard
                 player={handState.players.find((player) => player.seat === seat)}
                 setup={setup}
                 isCurrent={handState.toActQueue[0] === seat}
                 isWinner={handState.winnerSeat === seat}
+                align={SEAT_LAYOUT[seat].align}
               />
             </div>
           ))}
