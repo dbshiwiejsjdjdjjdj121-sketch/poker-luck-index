@@ -9,6 +9,9 @@
   --border-strong: rgba(255, 255, 255, 0.3);
   --gold: #ffb493;
   --gold-soft: #f0d5c7;
+  --accent: #cbb8ff;
+  --accent-strong: #b79dfa;
+  --accent-shadow: #8c79cb;
   --muted: #a3a3a3;
   --red: #d45d68;
   --shadow: 0 10px 0 rgba(0, 0, 0, 0.28), 0 28px 64px rgba(0, 0, 0, 0.22);
@@ -340,6 +343,10 @@ a {
 
 .btn-primary,
 .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
   min-height: 48px;
   border-radius: 18px;
   padding: 0.75rem 1.25rem;
@@ -361,20 +368,21 @@ a {
 }
 
 .btn-primary {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: linear-gradient(180deg, #2d2d2d 0%, #222222 100%);
-  color: #f4f4f2;
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-strong) 100%);
+  color: #241d35;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.06),
-    0 4px 0 rgba(0, 0, 0, 0.45);
+    inset 0 1px 0 rgba(255, 255, 255, 0.42),
+    0 4px 0 var(--accent-shadow),
+    0 10px 24px rgba(140, 121, 203, 0.18);
 }
 
 .btn-primary:hover {
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 6px 0 rgba(0, 0, 0, 0.45),
-    0 14px 28px rgba(0, 0, 0, 0.2);
-  filter: brightness(1.04);
+    inset 0 1px 0 rgba(255, 255, 255, 0.42),
+    0 6px 0 var(--accent-shadow),
+    0 16px 30px rgba(140, 121, 203, 0.24);
+  filter: brightness(1.02);
 }
 
 .btn-secondary {

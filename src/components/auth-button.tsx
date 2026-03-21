@@ -164,7 +164,7 @@ export function AuthButton() {
             setOpen(true);
           }}
           disabled={isBusy}
-          className="inline-flex items-center gap-3 rounded-[16px] border border-[var(--border-strong)] bg-white/[0.02] px-4 py-2.5 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition hover:bg-white/[0.05] disabled:cursor-not-allowed disabled:opacity-55"
+          className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
         >
           <span>{pendingEmailLink ? "✦" : "◌"}</span>
           <span>

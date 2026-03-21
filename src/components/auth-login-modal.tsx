@@ -251,7 +251,7 @@ export function AuthLoginModal({
             </div>
 
             <button
-              className="btn-secondary w-full justify-center disabled:cursor-not-allowed disabled:opacity-55"
+              className="btn-primary w-full justify-center disabled:cursor-not-allowed disabled:opacity-55"
               disabled={isBusy}
               onClick={() => void handleGoogleSignIn()}
               type="button"
