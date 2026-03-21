@@ -647,7 +647,7 @@ export function ManualHandWizard({
                   type="button"
                   onClick={addOpponent}
                   disabled={!opponentReady}
-                  className="btn-secondary disabled:cursor-not-allowed disabled:opacity-50"
+                  className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   Add Opponent
                 </button>

@@ -107,12 +107,14 @@ export function ManualReplayTable({
       <div className="home-felt absolute inset-[10%] opacity-90" />
 
       <div className="relative">
-        {topRightControl ? (
-          <div className="absolute right-0 top-0 z-20">{topRightControl}</div>
-        ) : null}
-
         <div className="mx-auto aspect-[1.48/1] max-w-5xl">
+          <div className="absolute inset-[7%_6%_8%] rounded-[30px] border border-white/7 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]" />
+
           <div className="absolute inset-[20%_16%_16%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
+
+          {topRightControl ? (
+            <div className="absolute right-[8%] top-[8%] z-20">{topRightControl}</div>
+          ) : null}
 
           <div className="absolute left-1/2 top-[31%] -translate-x-1/2">
             <div className="rounded-full border border-[var(--border-strong)] bg-black/25 px-4 py-2 text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
@@ -156,7 +158,10 @@ export function ManualReplayTable({
           </div>
 
           {boardActionControl ? (
-            <div className="absolute left-1/2 top-[58%] z-10 hidden -translate-y-1/2 sm:block" style={{ marginLeft: "190px" }}>
+            <div
+              className="absolute top-[58%] z-10 hidden -translate-y-1/2 sm:block"
+              style={{ left: "calc(50% + 170px)" }}
+            >
               {boardActionControl}
             </div>
           ) : null}

@@ -528,7 +528,7 @@ export function HandReviewStudio({
                 {lastSavedItem ? (
                   <Link
                     href={`/hand-review?handId=${lastSavedItem.id}`}
-                    className="btn-secondary"
+                    className="btn-primary"
                   >
                     Open Saved Hand
                   </Link>
@@ -563,7 +563,7 @@ export function HandReviewStudio({
                 <button
                   type="button"
                   onClick={() => setManualWizardVisible(true)}
-                  className="btn-secondary"
+                  className="btn-primary"
                 >
                   {manualSetup ? "Continue Replay" : "Start Replay"}
                 </button>
@@ -625,7 +625,7 @@ export function HandReviewStudio({
 
                         audioInputRef.current?.click();
                       }}
-                      className="btn-secondary"
+                      className="btn-primary"
                     >
                       Choose Audio File
                     </button>
