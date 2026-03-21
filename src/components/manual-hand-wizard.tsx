@@ -1,9 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { ManualReplayBuilder } from "@/components/manual-replay-builder";
 import type {
   ManualHandSetup,
   ManualPlayerSetup,
+  ManualReplayData,
   ReplaySeatPosition,
 } from "@/lib/hand-upload-types";
 
@@ -16,7 +18,7 @@ const SUITS = [
   { value: "c", label: "♣", color: "text-white" },
 ] as const;
 
-type WizardStep = "hero" | "opponents";
+type WizardStep = "hero" | "opponents" | "actions";
 
 type HoleCardsDraft = {
   first?: string;
@@ -114,14 +116,19 @@ function buildSetup(
 
 export function ManualHandWizard({
   initialSetup,
+  saving,
   onClose,
-  onComplete,
+  onSave,
 }: {
   initialSetup: ManualHandSetup | null;
+  saving: boolean;
   onClose: () => void;
-  onComplete: (setup: ManualHandSetup) => void;
+  onSave: (payload: {
+    setup: ManualHandSetup;
+    replay: ManualReplayData;
+  }) => Promise<void>;
 }) {
-  const [step, setStep] = useState<WizardStep>("hero");
+  const [step, setStep] = useState<WizardStep>(initialSetup ? "actions" : "hero");
   const [heroDraft, setHeroDraft] = useState<HeroDraft>(() =>
     initialSetup
       ? {
@@ -199,6 +206,35 @@ export function ManualHandWizard({
       (Boolean(opponentDraft.holeCards.first) &&
         Boolean(opponentDraft.holeCards.second)));
 
+  const pendingOpponent =
+    opponentReady && opponentDraft.seat
+      ? {
+          seat: opponentDraft.seat,
+          name: opponentDraft.name.trim() || buildOpponentName(opponents.length),
+          stackBb: Number(opponentDraft.stackText) || 0,
+          holeCards: {
+            first: opponentDraft.unknownCards
+              ? "Unknown"
+              : opponentDraft.holeCards.first!,
+            second: opponentDraft.unknownCards
+              ? "Unknown"
+              : opponentDraft.holeCards.second!,
+          },
+          unknownCards: opponentDraft.unknownCards,
+        }
+      : null;
+
+  const replayOpponents = pendingOpponent ? [...opponents, pendingOpponent] : opponents;
+  const canStartActions = heroReady && replayOpponents.length > 0;
+  const replaySetup = canStartActions
+    ? buildSetup(
+        heroDraft,
+        replayOpponents,
+        buttonSeat,
+        initialSetup?.actionNotes ?? "",
+      )
+    : null;
+
   function updateHeroCard(slot: "first" | "second", value?: string) {
     setHeroDraft((current) => ({
       ...current,
@@ -272,17 +308,6 @@ export function ManualHandWizard({
     setOpponentDraft(createOpponentDraft(buildOpponentName(nextOpponents.length)));
   }
 
-  function handleComplete() {
-    const setup = buildSetup(
-      heroDraft,
-      opponents,
-      buttonSeat,
-      initialSetup?.actionNotes ?? "",
-    );
-    onComplete(setup);
-    onClose();
-  }
-
   function renderSeatPills(
     currentValue: ReplaySeatPosition | undefined,
     onSelect: (seat: ReplaySeatPosition) => void,
@@ -330,12 +355,18 @@ export function ManualHandWizard({
               Manual Input
             </p>
             <h2 className="mt-2 font-heading text-3xl text-white">
-              {step === "hero" ? "Choose Your Seat" : "Select Opponents"}
+              {step === "hero"
+                ? "Choose Your Seat"
+                : step === "opponents"
+                  ? "Select Opponents"
+                  : "Replay Actions"}
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
               {step === "hero"
                 ? "Start the hand the same way All In does: seat, stack, and hole cards first."
-                : "Add opponents, set the button, then save the replay setup for later action review."}
+                : step === "opponents"
+                  ? "Add opponents, set the button, then continue straight into the action flow."
+                  : "Finish the hand in this same window, then save it when the action line is ready."}
             </p>
           </div>
           <button
@@ -433,7 +464,7 @@ export function ManualHandWizard({
                   </button>
                 </div>
               </div>
-            ) : (
+            ) : step === "opponents" ? (
               <div className="mt-6 space-y-6">
                 {opponents.length > 0 ? (
                   <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-4">
@@ -613,13 +644,28 @@ export function ManualHandWizard({
                   </div>
                   <button
                     type="button"
-                    onClick={handleComplete}
-                    disabled={!heroReady || opponents.length === 0}
+                    onClick={() => setStep("actions")}
+                    disabled={!canStartActions}
                     className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     Start Actions
                   </button>
                 </div>
+              </div>
+            ) : replaySetup ? (
+              <div className="mt-6">
+                <ManualReplayBuilder
+                  key={JSON.stringify(replaySetup)}
+                  setup={replaySetup}
+                  saving={saving}
+                  onEditSetup={() => setStep("opponents")}
+                  onSave={onSave}
+                  onSaved={onClose}
+                />
+              </div>
+            ) : (
+              <div className="mt-6 rounded-[24px] border border-white/8 bg-white/[0.03] p-5 text-sm leading-7 text-[var(--muted)]">
+                Finish the setup first, then the action flow will open here.
               </div>
             )}
 

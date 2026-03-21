@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AppNavigation } from "@/components/app-navigation";
-import { ManualReplayBuilder } from "@/components/manual-replay-builder";
 import { ManualHandWizard } from "@/components/manual-hand-wizard";
 import {
   PremiumActionGateModal,
@@ -197,12 +196,14 @@ export function HandReviewStudio() {
       setManualSetup(payload.setup);
       setLastSavedItem(data.item);
       setNotice("Hand saved. Open it from History when you are ready.");
+      return;
     } catch (submitError) {
-      setError(
+      const message =
         submitError instanceof Error
           ? submitError.message
-          : "Manual upload failed.",
-      );
+          : "Manual upload failed.";
+      setError(message);
+      throw new Error(message);
     } finally {
       setBusySource(null);
     }
@@ -513,7 +514,7 @@ export function HandReviewStudio() {
                     Manual Input
                   </p>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Start with setup, then replay the action from preflop to river.
+                    Open the replay wizard and finish the setup and action line in one flow.
                   </p>
                 </div>
                 <button
@@ -521,23 +522,15 @@ export function HandReviewStudio() {
                   onClick={() => setManualWizardVisible(true)}
                   className="btn-secondary"
                 >
-                  {manualSetup ? "Edit Setup" : "Start Setup"}
+                  {manualSetup ? "Continue Replay" : "Start Replay"}
                 </button>
               </div>
 
-              {!manualSetup ? (
-                <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 text-sm leading-7 text-[var(--muted)]">
-                  Start the setup first. After that, the full replay builder will appear here.
-                </div>
-              ) : (
-                <ManualReplayBuilder
-                  key={JSON.stringify(manualSetup)}
-                  setup={manualSetup}
-                  saving={busySource === "manual"}
-                  onEditSetup={() => setManualWizardVisible(true)}
-                  onSave={handleManualSubmit}
-                />
-              )}
+              <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 text-sm leading-7 text-[var(--muted)]">
+                {manualSetup
+                  ? "Your last manual setup is ready. Reopen the wizard to keep building the action line or save a fresh replay."
+                  : "Use the same modal flow as allin: hero, opponents, then actions without dropping back into the page."}
+              </div>
             </div>
           ) : null}
 
@@ -733,12 +726,9 @@ export function HandReviewStudio() {
       {manualWizardVisible ? (
         <ManualHandWizard
           initialSetup={manualSetup}
+          saving={busySource === "manual"}
           onClose={() => setManualWizardVisible(false)}
-          onComplete={(setup) => {
-            setManualSetup(setup);
-            setNotice("Setup saved. Continue with the replay builder.");
-            setError("");
-          }}
+          onSave={handleManualSubmit}
         />
       ) : null}
 

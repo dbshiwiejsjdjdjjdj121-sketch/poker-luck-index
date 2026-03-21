@@ -115,6 +115,7 @@ export function ManualReplayBuilder({
   saving,
   onEditSetup,
   onSave,
+  onSaved,
 }: {
   setup: ManualHandSetup;
   saving: boolean;
@@ -123,6 +124,7 @@ export function ManualReplayBuilder({
     setup: ManualHandSetup;
     replay: ManualReplayData;
   }) => Promise<void>;
+  onSaved?: () => void;
 }) {
   const {
     handState,
@@ -236,20 +238,29 @@ export function ManualReplayBuilder({
       return;
     }
 
-    const progressionText = generateReplayLog(setup, handState, actionHistory);
-    const nextSetup: ManualHandSetup = {
-      ...setup,
-      actionNotes: progressionText,
-    };
+    try {
+      const progressionText = generateReplayLog(setup, handState, actionHistory);
+      const nextSetup: ManualHandSetup = {
+        ...setup,
+        actionNotes: progressionText,
+      };
 
-    await onSave({
-      setup: nextSetup,
-      replay: {
-        actionHistory,
-        finalState: handState,
-        progressionText,
-      },
-    });
+      await onSave({
+        setup: nextSetup,
+        replay: {
+          actionHistory,
+          finalState: handState,
+          progressionText,
+        },
+      });
+
+      setError("");
+      onSaved?.();
+    } catch (nextError) {
+      setError(
+        nextError instanceof Error ? nextError.message : "Unable to save this replay.",
+      );
+    }
   }
 
   if (!handState) {
