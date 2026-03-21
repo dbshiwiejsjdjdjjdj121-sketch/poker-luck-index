@@ -24,6 +24,58 @@ export interface ManualHandSetup {
   actionNotes: string;
 }
 
+export type ReplayActionType =
+  | "Fold"
+  | "Check"
+  | "Call"
+  | "Bet"
+  | "Raise"
+  | "All-In"
+  | "Limp";
+
+export type ReplayActionStreet = "preflop" | "flop" | "turn" | "river";
+
+export interface ReplayActionHistoryItem {
+  street: ReplayActionStreet;
+  seat: ReplaySeatPosition;
+  action: ReplayActionType;
+  amount?: number;
+  to?: number;
+  timestamp: number;
+}
+
+export interface ReplayPlayerState {
+  seat: ReplaySeatPosition;
+  name: string;
+  style: string;
+  stackBb: number;
+  committedThisStreetBb: number;
+  holeCards?: ReplayHoleCards;
+  inHand: boolean;
+  allIn: boolean;
+  isHero: boolean;
+  hasActedThisRound: boolean;
+}
+
+export interface ReplayHandState {
+  street: "preflop" | "flop" | "turn" | "river" | "showdown" | "finished";
+  potBb: number;
+  currentBetBb: number;
+  lastFullRaiseBb: number;
+  lastRaiseSizeBb: number;
+  toActQueue: ReplaySeatPosition[];
+  players: ReplayPlayerState[];
+  board: string[];
+  finished: boolean;
+  winnerSeat?: ReplaySeatPosition;
+}
+
+export interface ManualReplayData {
+  actionHistory: ReplayActionHistoryItem[];
+  finalState: ReplayHandState;
+  progressionText: string;
+}
+
 export interface ParsedHeroSnapshot {
   position: string;
   cards: string[];
@@ -88,6 +140,7 @@ export interface SavedHandUpload extends ParsedHandUpload {
   createdAtMs: number;
   media: StoredUploadMedia | null;
   manualSetup?: ManualHandSetup | null;
+  manualReplay?: ManualReplayData | null;
   analysis?: SavedHandAnalysis | null;
 }
 

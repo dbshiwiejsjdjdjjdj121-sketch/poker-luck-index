@@ -32,6 +32,26 @@ function formatManualCards(first: string, second: string, unknown?: boolean) {
   return [first, second].filter(Boolean).join(" ");
 }
 
+function summarizeReplayResult(item: SavedHandUpload) {
+  if (!item.manualReplay) {
+    return "";
+  }
+
+  const winner =
+    item.manualReplay.finalState.winnerSeat &&
+    item.manualReplay.finalState.players.find(
+      (player) => player.seat === item.manualReplay?.finalState.winnerSeat,
+    )?.name;
+
+  return [
+    item.manualReplay.finalState.street,
+    `${item.manualReplay.finalState.potBb}bb pot`,
+    winner ? `${winner} wins` : "",
+  ]
+    .filter(Boolean)
+    .join(" • ");
+}
+
 export function HandUploadRecordCard({
   item,
   actions,
@@ -157,7 +177,7 @@ export function HandUploadRecordCard({
               ))}
             </div>
 
-            {item.manualSetup.actionNotes ? (
+            {item.manualSetup.actionNotes && !item.manualReplay ? (
               <div className="mt-4 rounded-[18px] border border-white/8 bg-black/15 p-4">
                 <p className="text-[0.68rem] uppercase tracking-[0.2em] text-[var(--gold-soft)]">
                   Action Notes
@@ -167,6 +187,22 @@ export function HandUploadRecordCard({
                 </p>
               </div>
             ) : null}
+          </div>
+        ) : null}
+
+        {item.manualReplay ? (
+          <div className="rounded-[22px] border border-white/8 bg-white/[0.03] p-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
+                Replay Result
+              </p>
+              <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[0.66rem] uppercase tracking-[0.18em] text-white/60">
+                {item.manualReplay.actionHistory.length} actions
+              </span>
+            </div>
+            <p className="mt-3 text-sm leading-7 text-white/88">
+              {summarizeReplayResult(item)}
+            </p>
           </div>
         ) : null}
 

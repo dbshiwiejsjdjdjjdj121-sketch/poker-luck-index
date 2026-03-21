@@ -1,6 +1,7 @@
 import OpenAI, { toFile } from "openai";
 import {
   type ManualHandSetup,
+  type ManualReplayData,
   type SavedHandAnalysis,
   MAX_AUDIO_BYTES,
   MAX_IMAGE_BYTES,
@@ -561,6 +562,110 @@ function normalizeManualSetup(setup: ManualHandSetup): ManualHandSetup {
   };
 }
 
+function normalizeReplayActionType(value: string) {
+  if (
+    value === "Fold" ||
+    value === "Check" ||
+    value === "Call" ||
+    value === "Bet" ||
+    value === "Raise" ||
+    value === "All-In" ||
+    value === "Limp"
+  ) {
+    return value;
+  }
+
+  throw new Error("Manual replay action type is invalid.");
+}
+
+function normalizeManualReplay(
+  replay: ManualReplayData,
+  setup: ManualHandSetup,
+): ManualReplayData {
+  const validSeats = new Set([setup.hero.seat, ...setup.opponents.map((opponent) => opponent.seat)]);
+  const players = Array.isArray(replay.finalState?.players)
+    ? replay.finalState.players
+    : [];
+  const board = Array.isArray(replay.finalState?.board)
+    ? replay.finalState.board.map((card) => normalizeManualCard(String(card || ""))).filter(Boolean)
+    : [];
+
+  return {
+    actionHistory: Array.isArray(replay.actionHistory)
+      ? replay.actionHistory
+          .map((action, index) => {
+            if (!validSeats.has(action.seat)) {
+              throw new Error("Manual replay contains an unknown seat.");
+            }
+
+            return {
+              street:
+                action.street === "preflop" ||
+                action.street === "flop" ||
+                action.street === "turn" ||
+                action.street === "river"
+                  ? action.street
+                  : "preflop",
+              seat: action.seat,
+              action: normalizeReplayActionType(String(action.action || "")),
+              amount: Number.isFinite(action.amount) ? action.amount : undefined,
+              to: Number.isFinite(action.to) ? action.to : undefined,
+              timestamp: Number.isFinite(action.timestamp) ? action.timestamp : index * 500,
+            };
+          })
+      : [],
+    finalState: {
+      street:
+        replay.finalState?.street === "preflop" ||
+        replay.finalState?.street === "flop" ||
+        replay.finalState?.street === "turn" ||
+        replay.finalState?.street === "river" ||
+        replay.finalState?.street === "showdown" ||
+        replay.finalState?.street === "finished"
+          ? replay.finalState.street
+          : "preflop",
+      potBb: normalizeNumber(replay.finalState?.potBb),
+      currentBetBb: normalizeNumber(replay.finalState?.currentBetBb),
+      lastFullRaiseBb: normalizeNumber(replay.finalState?.lastFullRaiseBb),
+      lastRaiseSizeBb: normalizeNumber(replay.finalState?.lastRaiseSizeBb),
+      toActQueue: Array.isArray(replay.finalState?.toActQueue)
+        ? replay.finalState.toActQueue.filter((seat) => validSeats.has(seat))
+        : [],
+      players: players
+        .map((player) => ({
+          seat: validSeats.has(player.seat) ? player.seat : setup.hero.seat,
+          name: typeof player.name === "string" ? player.name.trim() : "",
+          style: typeof player.style === "string" ? player.style.trim() : "",
+          stackBb: normalizeNumber(player.stackBb),
+          committedThisStreetBb: normalizeNumber(player.committedThisStreetBb),
+          holeCards:
+            player.holeCards &&
+            typeof player.holeCards === "object" &&
+            typeof player.holeCards.first === "string" &&
+            typeof player.holeCards.second === "string"
+              ? {
+                  first: normalizeManualCard(player.holeCards.first),
+                  second: normalizeManualCard(player.holeCards.second),
+                }
+              : undefined,
+          inHand: Boolean(player.inHand),
+          allIn: Boolean(player.allIn),
+          isHero: Boolean(player.isHero),
+          hasActedThisRound: Boolean(player.hasActedThisRound),
+        }))
+        .slice(0, 6),
+      board,
+      finished: Boolean(replay.finalState?.finished),
+      winnerSeat:
+        replay.finalState?.winnerSeat && validSeats.has(replay.finalState.winnerSeat)
+          ? replay.finalState.winnerSeat
+          : undefined,
+    },
+    progressionText:
+      typeof replay.progressionText === "string" ? replay.progressionText.trim() : "",
+  };
+}
+
 function ensureManualSetup(setup: ManualHandSetup | null | undefined) {
   if (!setup) {
     throw new Error("Add the hand setup before saving.");
@@ -587,6 +692,27 @@ function ensureManualSetup(setup: ManualHandSetup | null | undefined) {
   return normalized;
 }
 
+function ensureManualReplay(
+  replay: ManualReplayData | null | undefined,
+  setup: ManualHandSetup,
+) {
+  if (!replay) {
+    throw new Error("Replay actions are missing.");
+  }
+
+  const normalized = normalizeManualReplay(replay, setup);
+
+  if (!normalized.progressionText) {
+    throw new Error("Replay text is missing.");
+  }
+
+  if (!normalized.finalState.players.length) {
+    throw new Error("Replay player state is missing.");
+  }
+
+  return normalized;
+}
+
 function buildManualRawInputFromSetup(setup: ManualHandSetup) {
   const heroCards = `${setup.hero.holeCards.first} ${setup.hero.holeCards.second}`;
   const heroLine = `Hero ${setup.hero.name} sits ${setup.hero.seat} with ${heroCards} for ${setup.hero.stackBb}bb.`;
@@ -605,17 +731,28 @@ function buildManualRawInputFromSetup(setup: ManualHandSetup) {
   return [heroLine, buttonLine, ...opponentLines, notesLine].join("\n");
 }
 
-function buildManualUploadFromSetup(setup: ManualHandSetup): ParsedHandUpload {
+function buildManualUploadFromSetup(
+  setup: ManualHandSetup,
+  replay?: ManualReplayData | null,
+): ParsedHandUpload {
   const heroCards = [
     setup.hero.holeCards.first,
     setup.hero.holeCards.second,
   ].filter((card) => card && card !== "Unknown");
-  const board = detectBoardCards(setup.actionNotes);
-  const keyActions = detectActionTags(setup.actionNotes);
-  const rawInput = buildManualRawInputFromSetup(setup);
+  const board = replay
+    ? {
+        flop: replay.finalState.board.slice(0, 3),
+        turn: replay.finalState.board[3] || "",
+        river: replay.finalState.board[4] || "",
+      }
+    : detectBoardCards(setup.actionNotes);
+  const keyActions = replay
+    ? uniqueStrings(replay.actionHistory.map((action) => action.action)).slice(0, 6)
+    : detectActionTags(setup.actionNotes);
+  const rawInput = replay?.progressionText || buildManualRawInputFromSetup(setup);
   const missingDetails: string[] = [];
 
-  if (!setup.actionNotes.trim()) {
+  if (!replay && !setup.actionNotes.trim()) {
     missingDetails.push("Action line is still missing.");
   }
 
@@ -633,9 +770,13 @@ function buildManualUploadFromSetup(setup: ManualHandSetup): ParsedHandUpload {
     sourceText: rawInput,
     title: `Manual Replay • ${setup.hero.seat} • ${heroCards.join(" ") || setup.hero.name}`,
     normalizedHandText: rawInput,
-    quickSummary: `${setup.hero.name} starts from ${setup.hero.seat} with ${heroCards.join(" ") || "a saved range"} against ${setup.opponents.length} opponent${setup.opponents.length === 1 ? "" : "s"}.`,
+    quickSummary: replay
+      ? `${setup.hero.name} starts from ${setup.hero.seat} with ${heroCards.join(" ") || "a saved range"} and reaches a ${replay.finalState.street} pot of ${replay.finalState.potBb}bb.`
+      : `${setup.hero.name} starts from ${setup.hero.seat} with ${heroCards.join(" ") || "a saved range"} against ${setup.opponents.length} opponent${setup.opponents.length === 1 ? "" : "s"}.`,
     coachAdvice:
-      "Manual setup saved. Add action notes whenever you want, or run Pro analysis later for the full review.",
+      replay
+        ? "Manual replay saved. You can reopen the full action flow anytime, or run Pro analysis when you want AI feedback."
+        : "Manual setup saved. Add action notes whenever you want, or run Pro analysis later for the full review.",
     hero: {
       position: setup.hero.seat,
       cards: heroCards,
@@ -649,7 +790,13 @@ function buildManualUploadFromSetup(setup: ManualHandSetup): ParsedHandUpload {
     board,
     keyActions,
     missingDetails,
-    confidence: setup.actionNotes.trim() ? "medium" : "low",
+    confidence: replay
+      ? replay.actionHistory.length >= 3
+        ? "high"
+        : "medium"
+      : setup.actionNotes.trim()
+        ? "medium"
+        : "low",
   };
 }
 
@@ -756,6 +903,13 @@ async function analyzeSavedHand(item: SavedHandUpload) {
             board: item.board,
             keyActions: item.keyActions,
             missingDetails: item.missingDetails,
+            manualReplay: item.manualReplay
+              ? {
+                  progressionText: item.manualReplay.progressionText,
+                  finalState: item.manualReplay.finalState,
+                  actionHistory: item.manualReplay.actionHistory,
+                }
+              : null,
           },
           null,
           2,
@@ -874,6 +1028,7 @@ function serializeSavedUpload(
   media: StoredUploadMedia | null,
   parsed: ParsedHandUpload,
   manualSetup?: ManualHandSetup | null,
+  manualReplay?: ManualReplayData | null,
 ): SavedHandUpload {
   return {
     id,
@@ -883,6 +1038,7 @@ function serializeSavedUpload(
     createdAtMs,
     media,
     manualSetup: manualSetup || null,
+    manualReplay: manualReplay || null,
     analysis: null,
     ...parsed,
   };
@@ -895,6 +1051,7 @@ async function saveUploadRecord(
   parsed: ParsedHandUpload,
   media: StoredUploadMedia | null,
   manualSetup?: ManualHandSetup | null,
+  manualReplay?: ManualReplayData | null,
 ) {
   const db = getFirebaseAdminDb();
   const sanitizedViewerId = sanitizeViewerId(viewerId);
@@ -914,6 +1071,7 @@ async function saveUploadRecord(
     media,
     parsed,
     manualSetup,
+    manualReplay,
   );
 
   await docRef.set(payload);
@@ -963,11 +1121,16 @@ export async function processManualUpload(
   viewerId: string,
   handText: string,
   manualSetup?: ManualHandSetup | null,
+  manualReplay?: ManualReplayData | null,
 ) {
   if (manualSetup) {
     const normalizedSetup = ensureManualSetup(manualSetup);
-    const rawInput = buildManualRawInputFromSetup(normalizedSetup);
-    const parsed = buildManualUploadFromSetup(normalizedSetup);
+    const normalizedReplay = manualReplay
+      ? ensureManualReplay(manualReplay, normalizedSetup)
+      : null;
+    const rawInput =
+      normalizedReplay?.progressionText || buildManualRawInputFromSetup(normalizedSetup);
+    const parsed = buildManualUploadFromSetup(normalizedSetup, normalizedReplay);
 
     return saveUploadRecord(
       viewerId,
@@ -976,6 +1139,7 @@ export async function processManualUpload(
       parsed,
       null,
       normalizedSetup,
+      normalizedReplay,
     );
   }
 

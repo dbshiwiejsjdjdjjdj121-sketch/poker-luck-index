@@ -172,6 +172,12 @@ export function HandHistoryBrowser() {
                       <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--muted)]">
                         {item.quickSummary}
                       </p>
+                      {item.manualReplay ? (
+                        <p className="mt-2 text-xs uppercase tracking-[0.18em] text-white/50">
+                          {item.manualReplay.finalState.street} • {item.manualReplay.finalState.potBb}bb pot •{" "}
+                          {item.manualReplay.actionHistory.length} actions
+                        </p>
+                      ) : null}
                     </div>
                     <p className="text-xs uppercase tracking-[0.18em] text-white/50">
                       {formatUploadTime(item.createdAtMs)} • {item.confidence} confidence

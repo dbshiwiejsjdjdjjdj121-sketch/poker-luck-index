@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cinzel, Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ClientShell } from "@/components/client-shell";
 import {
   SITE_DESCRIPTION,
@@ -12,13 +12,8 @@ import {
 } from "@/lib/site";
 import "./globals.css";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
-  subsets: ["latin"],
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -92,7 +87,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" translate="no" className="notranslate" suppressHydrationWarning>
-      <body className={`${cinzel.variable} ${manrope.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

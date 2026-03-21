@@ -10,7 +10,7 @@ A mobile-first poker web product built with Next.js, TypeScript, and TailwindCSS
 - OpenAI API for premium voice / screenshot parsing and hand analysis
 - Firebase Admin for Firestore + Storage persistence
 - Firebase Web Auth for Google sign-in
-- Custom SMTP email-link auth for magic-link sign-in
+- Custom email-link auth for magic-link sign-in
 - Creem for Pro subscription checkout and webhook-based access sync
 - Deterministic fortune output from URL inputs
 
@@ -51,6 +51,8 @@ Required for the new hand upload flow:
 - `FIREBASE_CLIENT_EMAIL`
 - `FIREBASE_PRIVATE_KEY`
 - `APP_URL`
+- `EMAIL_PROVIDER`
+- `RESEND_API_KEY`
 - `SMTP_HOST`
 - `SMTP_PORT`
 - `SMTP_SECURE`
@@ -66,7 +68,9 @@ Notes:
 - `FIREBASE_PRIVATE_KEY` must keep the `\n` line breaks in the env string
 - Without the Firebase Admin env vars, hand uploads, history, and bankroll cloud sync will stay disabled
 - `PREMIUM_UIDS` is still available as an emergency override allowlist
-- Email-link login uses your own SMTP setup instead of Firebase's default email template
+- Email-link login uses your own verified email setup instead of Firebase's default email template
+- Recommended production setup: `EMAIL_PROVIDER=resend` with a verified sender like `login@allinpokerai.com`
+- SMTP still works as a fallback, but domain email delivery through Resend is the better path for deliverability
 - Creem monthly Pro access is granted through the webhook and stored in Firestore at `user_access/{uid}`
 - In Firebase Authentication, make sure Google sign-in is enabled and your web domains are added to Authorized domains:
   - `localhost`
@@ -97,7 +101,7 @@ This project is ready for deployment on [Vercel](https://vercel.com/).
   - premium voice upload
   - premium screenshot upload
 - Premium AI hand analysis can be run later on any saved hand
-- Google sign-in and custom SMTP email-link sign-in are used for cross-device sync and subscription entitlements
+- Google sign-in and custom email-link sign-in are used for cross-device sync and subscription entitlements
 - Bankroll tracking remains free
 - Voice and screenshot uploads are stored in Firebase Storage
 - Parsed hand records are stored in Firestore under `hand_uploads/{viewerId}/entries/{entryId}`

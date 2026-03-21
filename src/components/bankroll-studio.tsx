@@ -329,56 +329,18 @@ export function BankrollStudio() {
       <div className="mx-auto max-w-6xl space-y-6">
         <AppNavigation />
 
-        <section className="panel panel-strong relative overflow-hidden p-6 sm:p-8 lg:p-10">
-          <div className="home-felt absolute inset-x-[12%] top-[-22%] hidden h-[360px] rounded-[999px] lg:block" />
-          <div className="relative grid gap-8 lg:grid-cols-[1.04fr_0.96fr]">
-            <div className="space-y-5">
-              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-[var(--gold-soft)]">
-                <span>♦</span>
-                <span>Bankroll Tracker</span>
-              </span>
-              <div className="space-y-4">
-                <h1 className="font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-                  Track Real Results
-                  <span className="mt-2 block text-[var(--gold-soft)]">
-                    Without Paying For The Core Tool
-                  </span>
-                </h1>
-                <p className="max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg">
-                  This is the free bankroll side of the product. Add sessions,
-                  watch the trendline, and keep your poker accounting clean.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="panel rounded-[24px] p-5">
-                <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Total Profit
-                </p>
+        <section className="relative">
+          <div className="profit-stage">
+            <div
+              className={`profit-stage-card ${totalProfit >= 0 ? "" : "is-negative"}`}
+            >
+              <div className="flex min-h-[188px] items-center justify-center px-6 sm:px-10">
                 <p
-                  className={`mt-4 text-5xl font-semibold ${
-                    totalProfit >= 0 ? "text-[#8fe8b2]" : "text-[#ff9aa7]"
+                  className={`profit-number-display ${
+                    totalProfit >= 0 ? "" : "is-negative"
                   }`}
                 >
                   {formatCurrency(totalProfit)}
-                </p>
-                <p className="mt-3 text-sm text-[var(--muted)]">
-                  {totalProfit >= 0
-                    ? "Keep pressing the edge."
-                    : "Refocus and recover."}
-                </p>
-              </div>
-              <div className="panel rounded-[24px] p-5">
-                <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Sessions
-                </p>
-                <p className="mt-4 text-5xl font-semibold text-white">
-                  {filteredRecords.length}
-                </p>
-                <p className="mt-3 text-sm text-[var(--muted)]">
-                  Stored locally for free, and synced to Firebase when you sign
-                  in with Google.
                 </p>
               </div>
             </div>

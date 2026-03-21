@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { AppNavigation } from "@/components/app-navigation";
 import { HomeForm } from "@/components/home-form";
 import {
@@ -63,56 +62,6 @@ export default function Home() {
                   Use Luck before the session. Save real hands with Replay. Keep every spot in History.
                   Track your bankroll without leaving the same app.
                 </p>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                <Link href="/hand-review" className="rounded-[24px] border border-[var(--border-strong)] bg-[rgba(214,178,93,0.12)] p-5 transition hover:bg-[rgba(214,178,93,0.18)]">
-                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    Replay
-                  </p>
-                  <p className="mt-3 font-heading text-2xl text-white">
-                    Upload A Real Hand
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Manual Input for free. Voice, screenshot, and AI review in Pro.
-                  </p>
-                </Link>
-
-                <Link href="/bankroll" className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 transition hover:bg-white/[0.06]">
-                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    Bankroll
-                  </p>
-                  <p className="mt-3 font-heading text-2xl text-white">
-                    Track Sessions
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Record buy-in, cash-out, and running profit for free.
-                  </p>
-                </Link>
-
-                <Link href="/history" className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5 transition hover:bg-white/[0.06]">
-                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    History
-                  </p>
-                  <p className="mt-3 font-heading text-2xl text-white">
-                    Reopen Saved Hands
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Every saved replay stays available for later analysis.
-                  </p>
-                </Link>
-
-                <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
-                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    Free + Pro
-                  </p>
-                  <p className="mt-3 font-heading text-2xl text-white">
-                    Clear Product Split
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Free: Luck, Manual Input, Bankroll. Pro: Voice, Import Image, AI hand analysis.
-                  </p>
-                </div>
               </div>
             </div>
 

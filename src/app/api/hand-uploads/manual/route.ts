@@ -4,7 +4,7 @@ import {
   processManualUpload,
   resolveViewerId,
 } from "@/lib/hand-upload-server";
-import type { ManualHandSetup } from "@/lib/hand-upload-types";
+import type { ManualHandSetup, ManualReplayData } from "@/lib/hand-upload-types";
 
 export const runtime = "nodejs";
 
@@ -26,6 +26,7 @@ export async function POST(request: Request) {
       viewerId?: string;
       handText?: string;
       setup?: ManualHandSetup | null;
+      replay?: ManualReplayData | null;
     };
 
     const viewerId = await resolveViewerId({
@@ -33,7 +34,7 @@ export async function POST(request: Request) {
       authHeader: request.headers.get("authorization"),
     });
     const handText = body.handText?.trim() ?? "";
-    const item = await processManualUpload(viewerId, handText, body.setup);
+    const item = await processManualUpload(viewerId, handText, body.setup, body.replay);
 
     return NextResponse.json({ item });
   } catch (error) {

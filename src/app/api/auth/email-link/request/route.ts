@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "SMTP email delivery is not configured yet. Add SMTP_HOST, SMTP_USER, SMTP_PASS, and EMAIL_FROM first.",
+          "Email delivery is not configured yet. Add RESEND_API_KEY and EMAIL_FROM, or set SMTP_HOST, SMTP_USER, SMTP_PASS, and EMAIL_FROM.",
       },
       { status: 503 },
     );

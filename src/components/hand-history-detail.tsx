@@ -5,8 +5,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AppNavigation } from "@/components/app-navigation";
 import { HandUploadRecordCard } from "@/components/hand-upload-record-card";
+import { ManualReplayViewer } from "@/components/manual-replay-viewer";
+import { PremiumActionGateModal } from "@/components/premium-action-gate-modal";
 import { useAuth } from "@/components/auth-provider";
-import { SubscriptionCta } from "@/components/subscription-cta";
 import { useSubscription } from "@/components/subscription-provider";
 import { type SavedHandUpload } from "@/lib/hand-upload-types";
 
@@ -43,13 +44,14 @@ function formatFileSize(bytes: number) {
 export function HandHistoryDetail({ handId }: { handId: string }) {
   const router = useRouter();
   const { user, getIdToken } = useAuth();
-  const { subscription, loading: subscriptionLoading } = useSubscription();
+  const { subscription } = useSubscription();
   const [viewerId, setViewerId] = useState("");
   const [item, setItem] = useState<SavedHandUpload | null>(null);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState<"analyze" | "delete" | "refresh" | "">("");
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
+  const [gateOpen, setGateOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -106,6 +108,11 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
 
   async function handleAnalyze(force = false) {
     if (!viewerId) {
+      return;
+    }
+
+    if (!user || !subscription.premium) {
+      setGateOpen(true);
       return;
     }
 
@@ -253,7 +260,7 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
                     <button
                       type="button"
                       onClick={() => void handleAnalyze(false)}
-                      disabled={busy !== "" || !subscription.premium}
+                      disabled={busy !== ""}
                       className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                     >
                       {busy === "analyze" ? "Analyzing..." : "Analyze Hand"}
@@ -262,7 +269,7 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
                     <button
                       type="button"
                       onClick={() => void handleAnalyze(true)}
-                      disabled={busy !== "" || !subscription.premium}
+                      disabled={busy !== ""}
                       className="btn-secondary disabled:cursor-not-allowed disabled:opacity-55"
                     >
                       {busy === "refresh" ? "Refreshing..." : "Refresh Analysis"}
@@ -280,16 +287,14 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
               </div>
             </section>
 
-            {!subscriptionLoading && !subscription.premium ? (
-              <section className="panel p-4 sm:p-5">
-                <SubscriptionCta
-                  title="Unlock Pro Analysis"
-                  description="Manual save stays free. AI hand analysis, screenshot parsing, and voice upload are part of the Pro plan."
-                />
-              </section>
-            ) : null}
-
             <HandUploadRecordCard item={item} showRawInput />
+
+            {item.manualSetup && item.manualReplay ? (
+              <ManualReplayViewer
+                setup={item.manualSetup}
+                replay={item.manualReplay}
+              />
+            ) : null}
 
             {item.media ? (
               <section className="panel p-5 sm:p-6">
@@ -325,6 +330,12 @@ export function HandHistoryDetail({ handId }: { handId: string }) {
           </>
         )}
       </div>
+
+      <PremiumActionGateModal
+        open={gateOpen}
+        action="analysis"
+        onClose={() => setGateOpen(false)}
+      />
     </main>
   );
 }

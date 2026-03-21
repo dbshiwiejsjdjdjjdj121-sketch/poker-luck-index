@@ -6,6 +6,10 @@ let cachedTransporter: nodemailer.Transporter | null = null;
 
 function readEmailConfig() {
   return {
+    provider:
+      process.env.EMAIL_PROVIDER ||
+      (process.env.RESEND_API_KEY ? "resend" : process.env.SMTP_HOST ? "smtp" : ""),
+    resendApiKey: process.env.RESEND_API_KEY || "",
     smtpHost: process.env.SMTP_HOST || "",
     smtpPort: Number(process.env.SMTP_PORT || 587),
     smtpSecure:
@@ -18,9 +22,11 @@ function readEmailConfig() {
   };
 }
 
-export function emailDeliveryConfigured() {
-  const config = readEmailConfig();
+function hasResendConfig(config = readEmailConfig()) {
+  return Boolean(config.resendApiKey && config.from);
+}
 
+function hasSmtpConfig(config = readEmailConfig()) {
   return Boolean(
     config.smtpHost &&
       config.smtpPort &&
@@ -30,10 +36,16 @@ export function emailDeliveryConfigured() {
   );
 }
 
+export function emailDeliveryConfigured() {
+  const config = readEmailConfig();
+
+  return hasResendConfig(config) || hasSmtpConfig(config);
+}
+
 function getTransporter() {
   const config = readEmailConfig();
 
-  if (!emailDeliveryConfigured()) {
+  if (!hasSmtpConfig(config)) {
     throw new Error("SMTP email delivery is not configured yet.");
   }
 
@@ -50,6 +62,84 @@ function getTransporter() {
   }
 
   return cachedTransporter;
+}
+
+async function sendWithResend({
+  email,
+  subject,
+  text,
+  html,
+}: {
+  email: string;
+  subject: string;
+  text: string;
+  html: string;
+}) {
+  const config = readEmailConfig();
+
+  if (!hasResendConfig(config)) {
+    throw new Error("Resend email delivery is not configured yet.");
+  }
+
+  const fromLabel = config.fromName || SITE_NAME;
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${config.resendApiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: `${fromLabel} <${config.from}>`,
+      to: [email],
+      subject,
+      text,
+      html,
+    }),
+  });
+
+  if (!response.ok) {
+    let detail = "";
+
+    try {
+      const payload = (await response.json()) as {
+        message?: string;
+        error?: string;
+      };
+      detail = payload?.message || payload?.error || "";
+    } catch {
+      detail = await response.text();
+    }
+
+    throw new Error(
+      detail
+        ? `Resend email delivery failed: ${detail}`
+        : `Resend email delivery failed with status ${response.status}.`,
+    );
+  }
+}
+
+async function sendWithSmtp({
+  email,
+  subject,
+  text,
+  html,
+}: {
+  email: string;
+  subject: string;
+  text: string;
+  html: string;
+}) {
+  const config = readEmailConfig();
+  const transporter = getTransporter();
+  const from = `${config.fromName} <${config.from}>`;
+
+  await transporter.sendMail({
+    from,
+    to: email,
+    subject,
+    text,
+    html,
+  });
 }
 
 function assertAllowedContinueUrl(value: string) {
@@ -114,7 +204,7 @@ function buildEmailHtml(signInLink: string) {
           Sign in to continue
         </h1>
         <p style="margin:0 0 24px;font-size:17px;line-height:1.7;color:#d2d6d9;">
-          Use the secure link below to sign in to ${SITE_NAME}. This email was sent from your own SMTP setup, not Firebase's default template.
+          Use the secure link below to sign in to ${SITE_NAME}. This email was sent from your own verified email setup, not Firebase's default template.
         </p>
         <a href="${signInLink}" style="display:inline-block;background:linear-gradient(135deg,#f4df9c,#d6b25d);color:#0d1614;text-decoration:none;font-size:16px;font-weight:700;padding:16px 24px;border-radius:999px;">
           Sign in to ${SITE_NAME}
@@ -153,9 +243,7 @@ export async function sendCustomEmailSignInLink({
     handleCodeInApp: true,
   });
 
-  const transporter = getTransporter();
   const config = readEmailConfig();
-  const from = `${config.fromName} <${config.from}>`;
   const subject = `Sign in to ${SITE_NAME}`;
   const text = [
     `Use the secure link below to sign in to ${SITE_NAME}.`,
@@ -166,14 +254,43 @@ export async function sendCustomEmailSignInLink({
     "",
     config.fromName,
   ].join("\n");
+  const html = buildEmailHtml(signInLink);
 
-  await transporter.sendMail({
-    from,
-    to: normalizedEmail,
-    subject,
-    text,
-    html: buildEmailHtml(signInLink),
-  });
+  const prefersResend = config.provider === "resend" || hasResendConfig(config);
+
+  if (prefersResend) {
+    try {
+      await sendWithResend({
+        email: normalizedEmail,
+        subject,
+        text,
+        html,
+      });
+    } catch (error) {
+      if (!hasSmtpConfig(config)) {
+        throw error;
+      }
+
+      console.warn(
+        "Resend email delivery failed. Falling back to SMTP for sign-in email.",
+        error instanceof Error ? error.message : error,
+      );
+
+      await sendWithSmtp({
+        email: normalizedEmail,
+        subject,
+        text,
+        html,
+      });
+    }
+  } else {
+    await sendWithSmtp({
+      email: normalizedEmail,
+      subject,
+      text,
+      html,
+    });
+  }
 
   return {
     ok: true,

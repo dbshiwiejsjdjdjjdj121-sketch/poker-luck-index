@@ -52,14 +52,10 @@ function clearPostAuthRedirect() {
 
 function getPreferredAuthDestination() {
   if (typeof window === "undefined") {
-    return "/hand-review";
+    return "/";
   }
 
   const { pathname, search, hash } = window.location;
-
-  if (pathname === "/") {
-    return "/hand-review";
-  }
 
   return `${pathname}${search}${hash}`;
 }
