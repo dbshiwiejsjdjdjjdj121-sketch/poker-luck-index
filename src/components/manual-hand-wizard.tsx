@@ -320,9 +320,11 @@ export function ManualHandWizard({
         : undefined;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-6 backdrop-blur-sm">
-      <div className="panel w-full max-w-4xl rounded-[30px] border border-[var(--border-strong)] bg-[rgba(8,18,15,0.96)] p-5 shadow-[0_32px_90px_rgba(0,0,0,0.46)] sm:p-6">
-        <div className="flex items-start justify-between gap-4">
+    <div className="fixed inset-0 z-[160] overflow-y-auto overscroll-contain bg-black/78 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1rem,env(safe-area-inset-top))] backdrop-blur-sm">
+      <div className="grid min-h-full w-full place-items-start sm:place-items-center">
+        <div className="panel my-4 w-full max-w-4xl overflow-hidden rounded-[30px] border border-[var(--border-strong)] bg-[rgba(8,18,15,0.96)] shadow-[0_32px_90px_rgba(0,0,0,0.46)]">
+          <div className="relative max-h-[calc(100dvh-2rem)] overflow-y-auto p-5 sm:max-h-[min(56rem,calc(100dvh-3rem))] sm:p-6">
+            <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-[0.68rem] uppercase tracking-[0.26em] text-[var(--gold-soft)]">
               Manual Input
@@ -343,347 +345,347 @@ export function ManualHandWizard({
           >
             Close
           </button>
-        </div>
-
-        {step === "hero" ? (
-          <div className="mt-6 space-y-6">
-            <div className="space-y-3">
-              <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                Seat
-              </p>
-              {renderSeatPills(heroDraft.seat, (seat) => {
-                setHeroDraft((current) => ({ ...current, seat }));
-              }, SEATS)}
             </div>
 
-            <div className="grid gap-4 md:grid-cols-2">
-              <label className="space-y-2">
-                <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Name
-                </span>
-                <input
-                  value={heroDraft.name}
-                  onChange={(event) =>
-                    setHeroDraft((current) => ({
-                      ...current,
-                      name: event.target.value,
-                    }))
-                  }
-                  className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
-                  placeholder="Hero"
-                />
-              </label>
-
-              <label className="space-y-2">
-                <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Stack (bb)
-                </span>
-                <input
-                  value={heroDraft.stackText}
-                  onChange={(event) =>
-                    setHeroDraft((current) => ({
-                      ...current,
-                      stackText: event.target.value.replace(/[^0-9]/g, ""),
-                    }))
-                  }
-                  inputMode="numeric"
-                  className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
-                  placeholder="120"
-                />
-              </label>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              {(["first", "second"] as const).map((slot, index) => (
-                <div key={slot} className="space-y-2">
+            {step === "hero" ? (
+              <div className="mt-6 space-y-6">
+                <div className="space-y-3">
                   <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    Card {index + 1}
+                    Seat
                   </p>
-                  <button
-                    type="button"
-                    onClick={() => setPickerTarget({ owner: "hero", slot })}
-                    className="field-shell w-full justify-between rounded-[16px] px-4 py-3 text-left"
-                  >
-                    <span className={heroDraft.holeCards[slot] ? "text-white" : "text-white/34"}>
-                      {formatCardLabel(heroDraft.holeCards[slot])}
-                    </span>
-                    <span className="text-[var(--gold-soft)]">Pick</span>
-                  </button>
+                  {renderSeatPills(heroDraft.seat, (seat) => {
+                    setHeroDraft((current) => ({ ...current, seat }));
+                  }, SEATS)}
                 </div>
-              ))}
-            </div>
 
-            <div className="flex flex-wrap justify-end gap-3">
-              <button
-                type="button"
-                onClick={onClose}
-                className="btn-secondary"
-              >
-                Exit
-              </button>
-              <button
-                type="button"
-                onClick={() => setStep("opponents")}
-                disabled={!heroReady}
-                className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                Continue
-              </button>
-            </div>
-          </div>
-        ) : (
-          <div className="mt-6 space-y-6">
-            {opponents.length > 0 ? (
-              <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-4">
-                <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Added Opponents
-                </p>
-                <div className="mt-4 space-y-3">
-                  {opponents.map((opponent) => (
-                    <div
-                      key={`${opponent.seat}-${opponent.name}`}
-                      className="flex flex-wrap items-center justify-between gap-3 rounded-[18px] border border-white/8 bg-black/15 px-4 py-3"
-                    >
-                      <div>
-                        <p className="text-sm font-semibold text-white">
-                          {opponent.name}
-                        </p>
-                        <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/55">
-                          {opponent.seat} • {opponent.stackBb}bb •{" "}
-                          {opponent.unknownCards
-                            ? "Unknown cards"
-                            : `${formatCardLabel(opponent.holeCards.first)} ${formatCardLabel(opponent.holeCards.second)}`}
-                        </p>
-                      </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <label className="space-y-2">
+                    <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                      Name
+                    </span>
+                    <input
+                      value={heroDraft.name}
+                      onChange={(event) =>
+                        setHeroDraft((current) => ({
+                          ...current,
+                          name: event.target.value,
+                        }))
+                      }
+                      className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
+                      placeholder="Hero"
+                    />
+                  </label>
+
+                  <label className="space-y-2">
+                    <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                      Stack (bb)
+                    </span>
+                    <input
+                      value={heroDraft.stackText}
+                      onChange={(event) =>
+                        setHeroDraft((current) => ({
+                          ...current,
+                          stackText: event.target.value.replace(/[^0-9]/g, ""),
+                        }))
+                      }
+                      inputMode="numeric"
+                      className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
+                      placeholder="120"
+                    />
+                  </label>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  {(["first", "second"] as const).map((slot, index) => (
+                    <div key={slot} className="space-y-2">
+                      <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                        Card {index + 1}
+                      </p>
                       <button
                         type="button"
-                        onClick={() =>
-                          setOpponents((current) =>
-                            current.filter((item) => item.seat !== opponent.seat),
-                          )
-                        }
-                        className="text-xs uppercase tracking-[0.18em] text-[#ff9ead] transition hover:text-[#ffc4cc]"
+                        onClick={() => setPickerTarget({ owner: "hero", slot })}
+                        className="field-shell w-full justify-between rounded-[16px] px-4 py-3 text-left"
                       >
-                        Remove
+                        <span className={heroDraft.holeCards[slot] ? "text-white" : "text-white/34"}>
+                          {formatCardLabel(heroDraft.holeCards[slot])}
+                        </span>
+                        <span className="text-[var(--gold-soft)]">Pick</span>
                       </button>
                     </div>
                   ))}
                 </div>
+
+                <div className="flex flex-wrap justify-end gap-3">
+                  <button
+                    type="button"
+                    onClick={onClose}
+                    className="btn-secondary"
+                  >
+                    Exit
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setStep("opponents")}
+                    disabled={!heroReady}
+                    className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    Continue
+                  </button>
+                </div>
               </div>
-            ) : null}
-
-            <div className="space-y-3">
-              <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                Seat
-              </p>
-              {availableSeats.length > 0 ? (
-                renderSeatPills(opponentDraft.seat, (seat) => {
-                  setOpponentDraft((current) => ({ ...current, seat }));
-                }, availableSeats)
-              ) : (
-                <p className="text-sm text-[var(--muted)]">
-                  All six seats are already taken.
-                </p>
-              )}
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              <label className="space-y-2">
-                <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Name
-                </span>
-                <input
-                  value={opponentDraft.name}
-                  onChange={(event) =>
-                    setOpponentDraft((current) => ({
-                      ...current,
-                      name: event.target.value,
-                    }))
-                  }
-                  className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
-                  placeholder="Villain"
-                />
-              </label>
-
-              <label className="space-y-2">
-                <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                  Stack (bb)
-                </span>
-                <input
-                  value={opponentDraft.stackText}
-                  onChange={(event) =>
-                    setOpponentDraft((current) => ({
-                      ...current,
-                      stackText: event.target.value.replace(/[^0-9]/g, ""),
-                    }))
-                  }
-                  inputMode="numeric"
-                  className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
-                  placeholder="100"
-                />
-              </label>
-            </div>
-
-            <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-4">
-              <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                Hole Cards
-              </p>
-              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                Pick Unknown if villain cards were not shown.
-              </p>
-
-              <div className="mt-4 grid gap-4 md:grid-cols-2">
-                {(["first", "second"] as const).map((slot, index) => (
-                  <div key={slot} className="space-y-2">
+            ) : (
+              <div className="mt-6 space-y-6">
+                {opponents.length > 0 ? (
+                  <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-4">
                     <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                      Card {index + 1}
+                      Added Opponents
                     </p>
+                    <div className="mt-4 space-y-3">
+                      {opponents.map((opponent) => (
+                        <div
+                          key={`${opponent.seat}-${opponent.name}`}
+                          className="flex flex-wrap items-center justify-between gap-3 rounded-[18px] border border-white/8 bg-black/15 px-4 py-3"
+                        >
+                          <div>
+                            <p className="text-sm font-semibold text-white">
+                              {opponent.name}
+                            </p>
+                            <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/55">
+                              {opponent.seat} • {opponent.stackBb}bb •{" "}
+                              {opponent.unknownCards
+                                ? "Unknown cards"
+                                : `${formatCardLabel(opponent.holeCards.first)} ${formatCardLabel(opponent.holeCards.second)}`}
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setOpponents((current) =>
+                                current.filter((item) => item.seat !== opponent.seat),
+                              )
+                            }
+                            className="text-xs uppercase tracking-[0.18em] text-[#ff9ead] transition hover:text-[#ffc4cc]"
+                          >
+                            Remove
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+
+                <div className="space-y-3">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    Seat
+                  </p>
+                  {availableSeats.length > 0 ? (
+                    renderSeatPills(opponentDraft.seat, (seat) => {
+                      setOpponentDraft((current) => ({ ...current, seat }));
+                    }, availableSeats)
+                  ) : (
+                    <p className="text-sm text-[var(--muted)]">
+                      All six seats are already taken.
+                    </p>
+                  )}
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  <label className="space-y-2">
+                    <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                      Name
+                    </p>
+                    <input
+                      value={opponentDraft.name}
+                      onChange={(event) =>
+                        setOpponentDraft((current) => ({
+                          ...current,
+                          name: event.target.value,
+                        }))
+                      }
+                      className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
+                      placeholder="Villain"
+                    />
+                  </label>
+
+                  <label className="space-y-2">
+                    <span className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                      Stack (bb)
+                    </span>
+                    <input
+                      value={opponentDraft.stackText}
+                      onChange={(event) =>
+                        setOpponentDraft((current) => ({
+                          ...current,
+                          stackText: event.target.value.replace(/[^0-9]/g, ""),
+                        }))
+                      }
+                      inputMode="numeric"
+                      className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
+                      placeholder="100"
+                    />
+                  </label>
+                </div>
+
+                <div className="rounded-[24px] border border-white/8 bg-white/[0.03] p-4">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    Hole Cards
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+                    Pick Unknown if villain cards were not shown.
+                  </p>
+
+                  <div className="mt-4 grid gap-4 md:grid-cols-2">
+                    {(["first", "second"] as const).map((slot, index) => (
+                      <div key={slot} className="space-y-2">
+                        <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                          Card {index + 1}
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setPickerTarget({ owner: "opponent", slot })
+                          }
+                          disabled={
+                            slot === "second" &&
+                            opponentDraft.holeCards.first === "Unknown"
+                          }
+                          className="field-shell w-full justify-between rounded-[16px] px-4 py-3 text-left disabled:cursor-not-allowed disabled:opacity-45"
+                        >
+                          <span
+                            className={
+                              opponentDraft.holeCards[slot]
+                                ? "text-white"
+                                : "text-white/34"
+                            }
+                          >
+                            {formatCardLabel(opponentDraft.holeCards[slot])}
+                          </span>
+                          <span className="text-[var(--gold-soft)]">Pick</span>
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      updateOpponentCard("first", "Unknown");
+                      setPickerTarget(null);
+                    }}
+                    className="mt-4 rounded-full border border-white/8 px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/75 transition hover:bg-white/[0.06]"
+                  >
+                    Pick Unknown
+                  </button>
+                </div>
+
+                <div className="space-y-3">
+                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                    Button Seat
+                  </p>
+                  {renderSeatPills(buttonSeat, setButtonSeat, SEATS)}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={addOpponent}
+                  disabled={!opponentReady}
+                  className="btn-secondary disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  Add Opponent
+                </button>
+
+                <div className="flex flex-wrap justify-between gap-3">
+                  <div className="flex gap-3">
                     <button
                       type="button"
-                      onClick={() =>
-                        setPickerTarget({ owner: "opponent", slot })
-                      }
-                      disabled={
-                        slot === "second" &&
-                        opponentDraft.holeCards.first === "Unknown"
-                      }
-                      className="field-shell w-full justify-between rounded-[16px] px-4 py-3 text-left disabled:cursor-not-allowed disabled:opacity-45"
+                      onClick={onClose}
+                      className="btn-secondary"
                     >
-                      <span
-                        className={
-                          opponentDraft.holeCards[slot]
-                            ? "text-white"
-                            : "text-white/34"
-                        }
-                      >
-                        {formatCardLabel(opponentDraft.holeCards[slot])}
-                      </span>
-                      <span className="text-[var(--gold-soft)]">Pick</span>
+                      Exit
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setStep("hero")}
+                      className="btn-secondary"
+                    >
+                      Back
                     </button>
                   </div>
-                ))}
-              </div>
-
-              <button
-                type="button"
-                onClick={() => {
-                  updateOpponentCard("first", "Unknown");
-                  setPickerTarget(null);
-                }}
-                className="mt-4 rounded-full border border-white/8 px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/75 transition hover:bg-white/[0.06]"
-              >
-                Pick Unknown
-              </button>
-            </div>
-
-            <div className="space-y-3">
-              <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                Button Seat
-              </p>
-              {renderSeatPills(buttonSeat, setButtonSeat, SEATS)}
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              <button
-                type="button"
-                onClick={addOpponent}
-                disabled={!opponentReady}
-                className="btn-secondary disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                Add Opponent
-              </button>
-            </div>
-
-            <div className="flex flex-wrap justify-between gap-3">
-              <div className="flex gap-3">
-                <button
-                  type="button"
-                  onClick={onClose}
-                  className="btn-secondary"
-                >
-                  Exit
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setStep("hero")}
-                  className="btn-secondary"
-                >
-                  Back
-                </button>
-              </div>
-              <button
-                type="button"
-                onClick={handleComplete}
-                disabled={!heroReady || opponents.length === 0}
-                className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                Start Actions
-              </button>
-            </div>
-          </div>
-        )}
-
-        {pickerTarget ? (
-          <div className="absolute inset-0 z-10 flex items-center justify-center rounded-[30px] bg-black/72 p-4">
-            <div className="w-full max-w-3xl rounded-[24px] border border-[var(--border-strong)] bg-[rgba(8,18,15,0.96)] p-4 shadow-[0_24px_60px_rgba(0,0,0,0.36)]">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    Card Picker
-                  </p>
-                  <p className="mt-2 text-sm text-[var(--muted)]">
-                    {currentPickedCard
-                      ? `Current card: ${formatCardLabel(currentPickedCard)}`
-                      : "Choose the exact card from the deck."}
-                  </p>
+                  <button
+                    type="button"
+                    onClick={handleComplete}
+                    disabled={!heroReady || opponents.length === 0}
+                    className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    Start Actions
+                  </button>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => setPickerTarget(null)}
-                  className="btn-secondary"
-                >
-                  Close
-                </button>
               </div>
+            )}
 
-              {pickerTarget.owner === "opponent" ? (
-                <button
-                  type="button"
-                  onClick={() => handleCardPick("Unknown")}
-                  className="mt-4 rounded-full border border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[var(--gold-soft)]"
-                >
-                  Unknown
-                </button>
-              ) : null}
-
-              <div className="mt-4 grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-8">
-                {ALL_CARDS.map((card) => {
-                  const disabled =
-                    usedCards.has(card.value) && currentPickedCard !== card.value;
-
-                  return (
+            {pickerTarget ? (
+              <div className="absolute inset-0 z-10 flex items-center justify-center rounded-[30px] bg-black/72 p-4">
+                <div className="w-full max-w-3xl rounded-[24px] border border-[var(--border-strong)] bg-[rgba(8,18,15,0.96)] p-4 shadow-[0_24px_60px_rgba(0,0,0,0.36)]">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                        Card Picker
+                      </p>
+                      <p className="mt-2 text-sm text-[var(--muted)]">
+                        {currentPickedCard
+                          ? `Current card: ${formatCardLabel(currentPickedCard)}`
+                          : "Choose the exact card from the deck."}
+                      </p>
+                    </div>
                     <button
-                      key={card.value}
                       type="button"
-                      onClick={() => handleCardPick(card.value)}
-                      disabled={disabled}
-                      className={`rounded-[16px] border px-3 py-3 text-sm font-semibold transition ${
-                        currentPickedCard === card.value
-                          ? "border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)]"
-                          : "border-white/8 bg-white/[0.03] hover:bg-white/[0.06]"
-                      } disabled:cursor-not-allowed disabled:opacity-25`}
+                      onClick={() => setPickerTarget(null)}
+                      className="btn-secondary"
                     >
-                      <span className={card.color}>
-                        {card.rank}
-                        {card.suit}
-                      </span>
+                      Close
                     </button>
-                  );
-                })}
+                  </div>
+
+                  {pickerTarget.owner === "opponent" ? (
+                    <button
+                      type="button"
+                      onClick={() => handleCardPick("Unknown")}
+                      className="mt-4 rounded-full border border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[var(--gold-soft)]"
+                    >
+                      Unknown
+                    </button>
+                  ) : null}
+
+                  <div className="mt-4 grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-8">
+                    {ALL_CARDS.map((card) => {
+                      const disabled =
+                        usedCards.has(card.value) && currentPickedCard !== card.value;
+
+                      return (
+                        <button
+                          key={card.value}
+                          type="button"
+                          onClick={() => handleCardPick(card.value)}
+                          disabled={disabled}
+                          className={`rounded-[16px] border px-3 py-3 text-sm font-semibold transition ${
+                            currentPickedCard === card.value
+                              ? "border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)]"
+                              : "border-white/8 bg-white/[0.03] hover:bg-white/[0.06]"
+                          } disabled:cursor-not-allowed disabled:opacity-25`}
+                        >
+                          <span className={card.color}>
+                            {card.rank}
+                            {card.suit}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
-        ) : null}
+        </div>
       </div>
     </div>
   );

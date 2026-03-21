@@ -209,6 +209,24 @@ function uniqueStrings(values: string[]) {
   return [...new Set(values.filter(Boolean))];
 }
 
+function stripUndefinedDeep<T>(value: T): T {
+  if (Array.isArray(value)) {
+    return value
+      .map((item) => stripUndefinedDeep(item))
+      .filter((item) => item !== undefined) as T;
+  }
+
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value)
+        .map(([key, item]) => [key, stripUndefinedDeep(item)] as const)
+        .filter(([, item]) => item !== undefined),
+    ) as T;
+  }
+
+  return value;
+}
+
 function normalizeAnalysisResult(payload: unknown): Omit<SavedHandAnalysis, "createdAtMs" | "model"> {
   if (!payload || typeof payload !== "object") {
     throw new Error("Model analysis response is not a JSON object.");
@@ -1074,9 +1092,11 @@ async function saveUploadRecord(
     manualReplay,
   );
 
-  await docRef.set(payload);
+  const sanitizedPayload = stripUndefinedDeep(payload) as SavedHandUpload;
 
-  return payload;
+  await docRef.set(sanitizedPayload);
+
+  return sanitizedPayload;
 }
 
 function uploadEntryDoc(viewerId: string, uploadId: string) {
@@ -1247,8 +1267,10 @@ export async function analyzeViewerUpload(
     analysis,
   } satisfies SavedHandUpload;
 
-  await docRef.set(nextItem, { merge: true });
-  return nextItem;
+  const sanitizedNextItem = stripUndefinedDeep(nextItem) as SavedHandUpload;
+
+  await docRef.set(sanitizedNextItem, { merge: true });
+  return sanitizedNextItem;
 }
 
 export async function listViewerUploads(viewerId: string, limit = 12) {

@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { PokerCardImage } from "@/components/poker-card-image";
 import type {
   ManualHandSetup,
   ReplayHandState,
@@ -16,28 +17,6 @@ const SEAT_LAYOUT: Record<ReplaySeatPosition, string> = {
   HJ: "left-1/2 bottom-[4%] -translate-x-1/2",
   CO: "left-[9%] bottom-[11%]",
 };
-
-function formatCard(card?: string) {
-  if (!card) {
-    return "??";
-  }
-
-  if (card === "Unknown") {
-    return "??";
-  }
-
-  const suit = card.slice(-1).toLowerCase();
-  const symbol =
-    suit === "s" ? "♠" : suit === "h" ? "♥" : suit === "d" ? "♦" : suit === "c" ? "♣" : "";
-  const rank = card.slice(0, card.length - 1).toUpperCase();
-
-  return `${rank}${symbol}`;
-}
-
-function cardTextTone(card?: string) {
-  const suit = card?.slice(-1).toLowerCase();
-  return suit === "h" || suit === "d" ? "text-[#de8d96]" : "text-[#f8f8f8]";
-}
 
 function formatPot(value: number) {
   return Number.isInteger(value) ? String(value) : value.toFixed(1);
@@ -116,12 +95,14 @@ function SeatCard({
 
       <div className="mt-3 grid grid-cols-2 gap-2">
         {cards.map((card, index) => (
-          <div
+          <PokerCardImage
             key={`${player.seat}-${index}`}
-            className={`flex h-14 items-center justify-center rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.06)] text-lg font-semibold ${cardTextTone(card)}`}
-          >
-            {formatCard(card)}
-          </div>
+            card={card}
+            backIfUnknown
+            alt={`${player.name} card ${index + 1}`}
+            sizes="56px"
+            className="h-14 rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.06)] shadow-[0_10px_24px_rgba(0,0,0,0.22)]"
+          />
         ))}
       </div>
 
@@ -168,16 +149,22 @@ export function ManualReplayTable({
                 const card = handState.board[index];
 
                 return (
-                  <div
-                    key={`board-${index}`}
-                    className={`flex h-14 w-11 items-center justify-center rounded-[14px] border text-sm font-semibold shadow-[0_12px_26px_rgba(0,0,0,0.22)] ${
-                      card
-                        ? "border-white/14 bg-[rgba(255,255,255,0.92)]"
-                        : "border-dashed border-white/10 bg-black/20 text-white/25"
-                    } ${card ? cardTextTone(card) : ""}`}
-                  >
-                    {card ? formatCard(card) : "?"}
-                  </div>
+                  card ? (
+                    <PokerCardImage
+                      key={`board-${index}`}
+                      card={card}
+                      alt={`Board card ${index + 1}`}
+                      sizes="44px"
+                      className="h-14 w-11 rounded-[14px] border border-white/14 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                    />
+                  ) : (
+                    <div
+                      key={`board-${index}`}
+                      className="flex h-14 w-11 items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                    >
+                      ?
+                    </div>
+                  )
                 );
               })}
             </div>
