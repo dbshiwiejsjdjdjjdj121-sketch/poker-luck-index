@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ManualReplayTable } from "@/components/manual-replay-table";
 import { generateReplayLog } from "@/lib/replay/hand-log-generator";
 import {
@@ -12,6 +12,7 @@ import type {
   ManualReplayData,
   ReplayActionHistoryItem,
   ReplayActionType,
+  SavedHandUpload,
 } from "@/lib/hand-upload-types";
 
 const RANKS = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"];
@@ -115,7 +116,7 @@ export function ManualReplayBuilder({
   saving,
   onEditSetup,
   onSave,
-  onSaved,
+  onFinished,
 }: {
   setup: ManualHandSetup;
   saving: boolean;
@@ -123,8 +124,8 @@ export function ManualReplayBuilder({
   onSave: (payload: {
     setup: ManualHandSetup;
     replay: ManualReplayData;
-  }) => Promise<void>;
-  onSaved?: () => void;
+  }) => Promise<SavedHandUpload>;
+  onFinished?: (item: SavedHandUpload) => void;
 }) {
   const {
     handState,
@@ -143,12 +144,17 @@ export function ManualReplayBuilder({
   const [betAmount, setBetAmount] = useState("");
   const [raiseAmount, setRaiseAmount] = useState("");
   const [error, setError] = useState("");
+  const autoSavedRef = useRef(false);
 
   useEffect(() => {
     if (!handState && actionHistory.length === 0) {
       initializeHand();
     }
   }, [actionHistory.length, handState, initializeHand]);
+
+  useEffect(() => {
+    autoSavedRef.current = false;
+  }, [setup]);
 
   const requiredBoardCards = pendingStreet === "flop" ? 3 : pendingStreet ? 1 : 0;
   const usedCards = useMemo(() => {
@@ -233,35 +239,53 @@ export function ManualReplayBuilder({
     }
   }
 
-  async function handleSave() {
+  const saveReplay = useCallback(async () => {
     if (!handState) {
+      throw new Error("Replay table is not ready yet.");
+    }
+
+    const progressionText = generateReplayLog(setup, handState, actionHistory);
+    const nextSetup: ManualHandSetup = {
+      ...setup,
+      actionNotes: progressionText,
+    };
+
+    const item = await onSave({
+      setup: nextSetup,
+      replay: {
+        actionHistory,
+        finalState: handState,
+        progressionText,
+      },
+    });
+
+    setError("");
+    return item;
+  }, [actionHistory, handState, onSave, setup]);
+
+  useEffect(() => {
+    if (!handFinished || saving || autoSavedRef.current) {
       return;
     }
 
-    try {
-      const progressionText = generateReplayLog(setup, handState, actionHistory);
-      const nextSetup: ManualHandSetup = {
-        ...setup,
-        actionNotes: progressionText,
-      };
+    autoSavedRef.current = true;
+    const timeoutId = window.setTimeout(() => {
+      void saveReplay()
+        .then((item) => {
+          onFinished?.(item);
+        })
+        .catch((nextError) => {
+          autoSavedRef.current = false;
+          setError(
+            nextError instanceof Error
+              ? nextError.message
+              : "Unable to save this replay.",
+          );
+        });
+    }, 0);
 
-      await onSave({
-        setup: nextSetup,
-        replay: {
-          actionHistory,
-          finalState: handState,
-          progressionText,
-        },
-      });
-
-      setError("");
-      onSaved?.();
-    } catch (nextError) {
-      setError(
-        nextError instanceof Error ? nextError.message : "Unable to save this replay.",
-      );
-    }
-  }
+    return () => window.clearTimeout(timeoutId);
+  }, [handFinished, onFinished, saveReplay, saving]);
 
   if (!handState) {
     return (
@@ -275,7 +299,27 @@ export function ManualReplayBuilder({
 
   return (
     <div className="space-y-6">
-      <ManualReplayTable setup={setup} handState={handState} />
+      <ManualReplayTable
+        setup={setup}
+        handState={handState}
+        topRightControl={
+          <button type="button" onClick={onEditSetup} className="btn-secondary">
+            Edit Setup
+          </button>
+        }
+        boardActionControl={
+          pendingStreet ? (
+            <button
+              type="button"
+              onClick={submitBoardCards}
+              disabled={selectedBoardCards.length !== requiredBoardCards}
+              className="btn-primary min-w-[140px] disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {`Set ${pendingStreet}`}
+            </button>
+          ) : null
+        }
+      />
 
       {error ? (
         <section className="panel p-4">
@@ -304,14 +348,10 @@ export function ManualReplayBuilder({
                   ? "Pick board cards the same way the desktop replay flow does before the next action opens."
                   : currentPlayer
                     ? `${currentPlayer.name} has ${currentPlayer.stackBb}bb behind. Pot is ${handState.potBb}bb.`
-                    : "The saved hand is waiting for the next street or ready to save."}
+                    : saving
+                      ? "Hand complete. Saving now and opening the analysis view."
+                      : "The hand is complete."}
               </p>
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              <button type="button" onClick={onEditSetup} className="btn-secondary">
-                Edit Setup
-              </button>
             </div>
           </div>
 
@@ -353,16 +393,6 @@ export function ManualReplayBuilder({
                 })}
               </div>
 
-              <div className="flex justify-end">
-                <button
-                  type="button"
-                  onClick={submitBoardCards}
-                  disabled={selectedBoardCards.length !== requiredBoardCards}
-                  className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  {`Set ${pendingStreet}`}
-                </button>
-              </div>
             </div>
           ) : (
             <div className="mt-6 space-y-4">
@@ -434,20 +464,6 @@ export function ManualReplayBuilder({
               })}
             </div>
           )}
-
-          <div className="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-[20px] border border-white/8 bg-black/15 p-4">
-            <p className="text-sm leading-6 text-[var(--muted)]">
-              Save any time. If the hand is unfinished, we keep the current street and action line exactly as entered.
-            </p>
-            <button
-              type="button"
-              onClick={() => void handleSave()}
-              disabled={saving}
-              className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
-            >
-              {saving ? "Saving..." : "Save Replay"}
-            </button>
-          </div>
         </section>
 
         <section className="panel p-5 sm:p-6">

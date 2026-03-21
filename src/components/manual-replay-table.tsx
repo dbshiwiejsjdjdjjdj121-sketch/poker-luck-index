@@ -1,6 +1,6 @@
 "use client";
 
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { PokerCardImage } from "@/components/poker-card-image";
 import type {
   ManualHandSetup,
@@ -94,15 +94,23 @@ function SeatCard({
 export function ManualReplayTable({
   setup,
   handState,
+  topRightControl,
+  boardActionControl,
 }: {
   setup: ManualHandSetup;
   handState: ReplayHandState;
+  topRightControl?: ReactNode;
+  boardActionControl?: ReactNode;
 }) {
   return (
     <section className="panel panel-strong relative overflow-hidden p-4 sm:p-6">
       <div className="home-felt absolute inset-[10%] opacity-90" />
 
       <div className="relative">
+        {topRightControl ? (
+          <div className="absolute right-0 top-0 z-20">{topRightControl}</div>
+        ) : null}
+
         <div className="mx-auto aspect-[1.48/1] max-w-5xl">
           <div className="absolute inset-[20%_16%_16%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
 
@@ -147,6 +155,12 @@ export function ManualReplayTable({
             })}
           </div>
 
+          {boardActionControl ? (
+            <div className="absolute left-1/2 top-[58%] z-10 hidden -translate-y-1/2 sm:block" style={{ marginLeft: "190px" }}>
+              {boardActionControl}
+            </div>
+          ) : null}
+
           {(["BTN", "SB", "BB", "UTG", "HJ", "CO"] as ReplaySeatPosition[]).map((seat) => (
             <div key={seat} className="absolute" style={SEAT_LAYOUT[seat].style}>
               <SeatCard
@@ -159,6 +173,10 @@ export function ManualReplayTable({
             </div>
           ))}
         </div>
+
+        {boardActionControl ? (
+          <div className="mt-4 flex justify-center sm:hidden">{boardActionControl}</div>
+        ) : null}
       </div>
     </section>
   );

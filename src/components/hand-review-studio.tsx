@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { AppNavigation } from "@/components/app-navigation";
 import { ManualHandWizard } from "@/components/manual-hand-wizard";
 import {
@@ -43,6 +44,7 @@ export function HandReviewStudio({
 }: {
   selectedHandId?: string;
 }) {
+  const router = useRouter();
   const { user, getIdToken } = useAuth();
   const { subscription } = useSubscription();
   const [viewerId, setViewerId] = useState("");
@@ -51,6 +53,8 @@ export function HandReviewStudio({
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [lastSavedItem, setLastSavedItem] = useState<SavedHandUpload | null>(null);
+  const [openHandId, setOpenHandId] = useState(selectedHandId);
+  const [autoAnalyzeHandId, setAutoAnalyzeHandId] = useState("");
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [imagePreviewUrl, setImagePreviewUrl] = useState("");
   const [selectedAudio, setSelectedAudio] = useState<File | null>(null);
@@ -62,6 +66,8 @@ export function HandReviewStudio({
   const [manualSetup, setManualSetup] = useState<ManualHandSetup | null>(null);
   const [gateAction, setGateAction] = useState<PremiumAction | null>(null);
   const [gateOpen, setGateOpen] = useState(false);
+  const replayPanelRef = useRef<HTMLDivElement | null>(null);
+  const previousOpenHandIdRef = useRef("");
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
@@ -76,6 +82,25 @@ export function HandReviewStudio({
         Boolean(window.MediaRecorder && navigator.mediaDevices),
     );
   }, [user?.uid]);
+
+  useEffect(() => {
+    setOpenHandId(selectedHandId);
+  }, [selectedHandId]);
+
+  useEffect(() => {
+    if (!openHandId || previousOpenHandIdRef.current === openHandId) {
+      return;
+    }
+
+    previousOpenHandIdRef.current = openHandId;
+
+    window.requestAnimationFrame(() => {
+      replayPanelRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  }, [openHandId]);
 
   useEffect(() => {
     if (!isRecording) {
@@ -168,8 +193,9 @@ export function HandReviewStudio({
     replay: ManualReplayData;
   }) {
     if (!viewerId) {
-      setError("Start with manual input first.");
-      return;
+      const message = "Start with manual input first.";
+      setError(message);
+      throw new Error(message);
     }
 
     resetMessages();
@@ -200,8 +226,7 @@ export function HandReviewStudio({
 
       setManualSetup(payload.setup);
       setLastSavedItem(data.item);
-      setNotice("Hand saved. Open it from History when you are ready.");
-      return;
+      return data.item;
     } catch (submitError) {
       const message =
         submitError instanceof Error
@@ -513,7 +538,15 @@ export function HandReviewStudio({
           </section>
         )}
 
-        {selectedHandId ? <SavedHandReplayPanel handId={selectedHandId} /> : null}
+        {openHandId ? (
+          <div ref={replayPanelRef}>
+            <SavedHandReplayPanel
+              handId={openHandId}
+              autoAnalyze={autoAnalyzeHandId === openHandId}
+              onAutoAnalyzeStarted={() => setAutoAnalyzeHandId("")}
+            />
+          </div>
+        ) : null}
 
         <section className="panel p-5 sm:p-6">
           {activeSource === "manual" ? (
@@ -739,6 +772,17 @@ export function HandReviewStudio({
           saving={busySource === "manual"}
           onClose={() => setManualWizardVisible(false)}
           onSave={handleManualSubmit}
+          onFinished={(item) => {
+            setLastSavedItem(item);
+            setOpenHandId(item.id);
+            if (user && subscription.premium) {
+              setAutoAnalyzeHandId(item.id);
+              setNotice("Hand saved. Opening analysis...");
+            } else {
+              setNotice("Hand saved. The replay is ready below.");
+            }
+            router.replace(`/hand-review?handId=${item.id}`, { scroll: false });
+          }}
         />
       ) : null}
 

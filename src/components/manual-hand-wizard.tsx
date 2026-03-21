@@ -7,6 +7,7 @@ import type {
   ManualPlayerSetup,
   ManualReplayData,
   ReplaySeatPosition,
+  SavedHandUpload,
 } from "@/lib/hand-upload-types";
 
 const SEATS: ReplaySeatPosition[] = ["UTG", "HJ", "CO", "BTN", "SB", "BB"];
@@ -154,6 +155,7 @@ export function ManualHandWizard({
   saving,
   onClose,
   onSave,
+  onFinished,
 }: {
   initialSetup: ManualHandSetup | null;
   saving: boolean;
@@ -161,7 +163,8 @@ export function ManualHandWizard({
   onSave: (payload: {
     setup: ManualHandSetup;
     replay: ManualReplayData;
-  }) => Promise<void>;
+  }) => Promise<SavedHandUpload>;
+  onFinished?: (item: SavedHandUpload) => void;
 }) {
   const [step, setStep] = useState<WizardStep>(initialSetup ? "actions" : "hero");
   const [heroDraft, setHeroDraft] = useState<HeroDraft>(() =>
@@ -684,7 +687,10 @@ export function ManualHandWizard({
                   saving={saving}
                   onEditSetup={() => setStep("opponents")}
                   onSave={onSave}
-                  onSaved={onClose}
+                  onFinished={(item) => {
+                    onFinished?.(item);
+                    onClose();
+                  }}
                 />
               </div>
             ) : (

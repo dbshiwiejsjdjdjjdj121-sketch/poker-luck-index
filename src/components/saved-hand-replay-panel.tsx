@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { HandAnalysisCard } from "@/components/hand-analysis-card";
 import { HoleCardsStrip } from "@/components/hole-cards-strip";
@@ -75,9 +75,13 @@ function formatFileSize(bytes: number) {
 
 export function SavedHandReplayPanel({
   handId,
+  autoAnalyze = false,
+  onAutoAnalyzeStarted,
   onDeleted,
 }: {
   handId: string;
+  autoAnalyze?: boolean;
+  onAutoAnalyzeStarted?: () => void;
   onDeleted?: () => void;
 }) {
   const router = useRouter();
@@ -90,6 +94,7 @@ export function SavedHandReplayPanel({
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [gateOpen, setGateOpen] = useState(false);
+  const autoAnalyzeAttemptedRef = useRef(false);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -144,7 +149,11 @@ export function SavedHandReplayPanel({
     void loadItem();
   }, [loadItem]);
 
-  async function handleAnalyze(force = false) {
+  useEffect(() => {
+    autoAnalyzeAttemptedRef.current = false;
+  }, [handId]);
+
+  const handleAnalyze = useCallback(async (force = false) => {
     if (!viewerId) {
       return;
     }
@@ -191,7 +200,33 @@ export function SavedHandReplayPanel({
     } finally {
       setBusy("");
     }
-  }
+  }, [getIdToken, handId, subscription.premium, user, viewerId]);
+
+  useEffect(() => {
+    if (
+      !autoAnalyze ||
+      autoAnalyzeAttemptedRef.current ||
+      loading ||
+      !item ||
+      item.analysis ||
+      !user ||
+      !subscription.premium
+    ) {
+      return;
+    }
+
+    autoAnalyzeAttemptedRef.current = true;
+    onAutoAnalyzeStarted?.();
+    void handleAnalyze(false);
+  }, [
+    autoAnalyze,
+    handleAnalyze,
+    item,
+    loading,
+    onAutoAnalyzeStarted,
+    subscription.premium,
+    user,
+  ]);
 
   async function handleDelete() {
     if (!viewerId) {
