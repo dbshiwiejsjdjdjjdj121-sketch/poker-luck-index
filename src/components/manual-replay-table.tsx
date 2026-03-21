@@ -1,6 +1,6 @@
 "use client";
 
-import type { CSSProperties, ReactNode } from "react";
+import type { CSSProperties } from "react";
 import { PokerCardImage } from "@/components/poker-card-image";
 import type {
   ManualHandSetup,
@@ -13,44 +13,19 @@ const SEAT_LAYOUT: Record<
   ReplaySeatPosition,
   { style: CSSProperties; align?: "left" | "center" | "right" }
 > = {
-  BTN: { style: { left: "4%", top: "12%" }, align: "left" },
+  BTN: { style: { left: "7%", top: "14%" }, align: "left" },
   SB: { style: { left: "50%", top: "2%", transform: "translateX(-50%)" }, align: "center" },
-  BB: { style: { right: "4%", top: "12%" }, align: "right" },
-  UTG: { style: { right: "4%", bottom: "12%" }, align: "right" },
+  BB: { style: { right: "7%", top: "14%" }, align: "right" },
+  UTG: { style: { right: "7%", bottom: "14%" }, align: "right" },
   HJ: {
-    style: { left: "50%", bottom: "1.5%", transform: "translateX(-50%)" },
+    style: { left: "50%", bottom: "1%", transform: "translateX(-50%)" },
     align: "center",
   },
-  CO: { style: { left: "4%", bottom: "12%" }, align: "left" },
+  CO: { style: { left: "7%", bottom: "14%" }, align: "left" },
 };
 
 function formatPot(value: number) {
   return Number.isInteger(value) ? String(value) : value.toFixed(1);
-}
-
-function SeatBadge({
-  children,
-  tone = "gold",
-}: {
-  children: ReactNode;
-  tone?: "gold" | "green" | "red" | "muted";
-}) {
-  const toneClass =
-    tone === "green"
-      ? "border-[#b8f0b5]/30 bg-[#b8f0b5]/10 text-[#d9ffd7]"
-      : tone === "red"
-        ? "border-[#ff97a6]/30 bg-[#ff97a6]/10 text-[#ffccd5]"
-        : tone === "muted"
-          ? "border-white/10 bg-white/[0.05] text-white/65"
-          : "border-[var(--border-strong)] bg-[rgba(214,178,93,0.14)] text-[var(--gold-soft)]";
-
-  return (
-    <span
-      className={`inline-flex whitespace-nowrap rounded-full border px-2 py-1 text-[0.54rem] uppercase tracking-[0.16em] ${toneClass}`}
-    >
-      {children}
-    </span>
-  );
 }
 
 function SeatCard({
@@ -80,26 +55,17 @@ function SeatCard({
 
   return (
     <div
-      className={`w-[138px] rounded-[22px] border bg-[rgba(7,16,14,0.92)] p-3 shadow-[0_14px_28px_rgba(0,0,0,0.28)] transition ${
-        player.inHand ? "border-white/12" : "border-white/6 opacity-45"
+      className={`w-[126px] rounded-[22px] border bg-[rgba(7,16,14,0.92)] p-3 shadow-[0_14px_28px_rgba(0,0,0,0.28)] transition ${
+        isWinner
+          ? "border-[#b8f0b5]/40"
+          : player.isHero
+            ? "border-[rgba(214,178,93,0.4)]"
+            : player.inHand
+              ? "border-white/12"
+              : "border-white/6 opacity-45"
       } ${isCurrent ? "ring-2 ring-[rgba(214,178,93,0.5)]" : ""}`}
     >
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <p className="text-sm font-semibold text-white">{player.name}</p>
-          <p className="mt-1 text-[0.68rem] uppercase tracking-[0.22em] text-white/55">
-            {player.seat} • {formatPot(player.stackBb)}bb
-          </p>
-        </div>
-        <div className="flex max-w-[68px] flex-col items-end gap-1">
-          {player.isHero ? <SeatBadge>Hero</SeatBadge> : null}
-          {setup.buttonSeat === player.seat ? <SeatBadge tone="muted">D</SeatBadge> : null}
-          {isCurrent ? <SeatBadge tone="gold">To Act</SeatBadge> : null}
-          {player.allIn ? <SeatBadge tone="red">All-In</SeatBadge> : null}
-          {!player.inHand ? <SeatBadge tone="muted">Folded</SeatBadge> : null}
-          {isWinner ? <SeatBadge tone="green">Winner</SeatBadge> : null}
-        </div>
-      </div>
+      <p className="text-[0.72rem] uppercase tracking-[0.28em] text-white/58">{player.seat}</p>
 
       <div
         className={`mt-3 flex gap-2 ${
@@ -121,11 +87,6 @@ function SeatCard({
           />
         ))}
       </div>
-
-      <div className="mt-3 flex items-center justify-between text-[0.7rem] uppercase tracking-[0.18em] text-white/48">
-        <span>Committed</span>
-        <span>{formatPot(player.committedThisStreetBb)}bb</span>
-      </div>
     </div>
   );
 }
@@ -143,7 +104,7 @@ export function ManualReplayTable({
 
       <div className="relative">
         <div className="mx-auto aspect-[1.48/1] max-w-5xl">
-          <div className="absolute inset-[18%_16%_12%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
+          <div className="absolute inset-[20%_16%_16%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
 
           <div className="absolute left-1/2 top-[31%] -translate-x-1/2">
             <div className="rounded-full border border-[var(--border-strong)] bg-black/25 px-4 py-2 text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
@@ -163,7 +124,7 @@ export function ManualReplayTable({
             </div>
           </div>
 
-          <div className="absolute bottom-[11%] left-1/2 flex -translate-x-1/2 justify-center gap-2">
+          <div className="absolute left-1/2 top-[58%] flex -translate-x-1/2 justify-center gap-2">
             {Array.from({ length: 5 }).map((_, index) => {
               const card = handState.board[index];
 
