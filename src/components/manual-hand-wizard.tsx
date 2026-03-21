@@ -92,12 +92,47 @@ function buildOpponentName(index: number) {
   return index === 0 ? "Villain" : `Villain ${index + 1}`;
 }
 
+function deriveButtonSeat(
+  heroSeat: ReplaySeatPosition,
+  opponents: Array<Pick<ManualPlayerSetup, "seat">>,
+): ReplaySeatPosition {
+  const occupied = new Set<ReplaySeatPosition>([
+    heroSeat,
+    ...opponents.map((player) => player.seat),
+  ]);
+  const clockwiseSeats: ReplaySeatPosition[] = ["BTN", "SB", "BB", "UTG", "HJ", "CO"];
+
+  if (occupied.size === 2 && occupied.has("SB") && occupied.has("BB")) {
+    return "SB";
+  }
+
+  if (occupied.has("SB")) {
+    let cursor = clockwiseSeats.indexOf("SB");
+
+    for (let step = 1; step <= clockwiseSeats.length; step += 1) {
+      cursor = (cursor - 1 + clockwiseSeats.length) % clockwiseSeats.length;
+      const candidate = clockwiseSeats[cursor]!;
+
+      if (occupied.has(candidate)) {
+        return candidate;
+      }
+    }
+  }
+
+  if (occupied.has("BTN")) {
+    return "BTN";
+  }
+
+  return heroSeat;
+}
+
 function buildSetup(
   heroDraft: HeroDraft,
   opponents: ManualPlayerSetup[],
-  buttonSeat: ReplaySeatPosition,
   previousNotes: string,
 ): ManualHandSetup {
+  const buttonSeat = deriveButtonSeat(heroDraft.seat!, opponents);
+
   return {
     buttonSeat,
     actionNotes: previousNotes,
@@ -141,9 +176,6 @@ export function ManualHandWizard({
           },
         }
       : createHeroDraft(),
-  );
-  const [buttonSeat, setButtonSeat] = useState<ReplaySeatPosition>(
-    () => initialSetup?.buttonSeat ?? "BTN",
   );
   const [opponents, setOpponents] = useState<ManualPlayerSetup[]>(
     () => initialSetup?.opponents ?? [],
@@ -227,10 +259,9 @@ export function ManualHandWizard({
   const replayOpponents = pendingOpponent ? [...opponents, pendingOpponent] : opponents;
   const canStartActions = heroReady && replayOpponents.length > 0;
   const replaySetup = canStartActions
-    ? buildSetup(
+      ? buildSetup(
         heroDraft,
         replayOpponents,
-        buttonSeat,
         initialSetup?.actionNotes ?? "",
       )
     : null;
@@ -365,7 +396,7 @@ export function ManualHandWizard({
               {step === "hero"
                 ? "Start the hand the same way All In does: seat, stack, and hole cards first."
                 : step === "opponents"
-                  ? "Add opponents, set the button, then continue straight into the action flow."
+                  ? "Add opponents, then continue straight into the action flow."
                   : "Finish the hand in this same window, then save it when the action line is ready."}
             </p>
           </div>
@@ -607,13 +638,6 @@ export function ManualHandWizard({
                   >
                     Pick Unknown
                   </button>
-                </div>
-
-                <div className="space-y-3">
-                  <p className="text-[0.68rem] uppercase tracking-[0.22em] text-[var(--gold-soft)]">
-                    Button Seat
-                  </p>
-                  {renderSeatPills(buttonSeat, setButtonSeat, SEATS)}
                 </div>
 
                 <button
