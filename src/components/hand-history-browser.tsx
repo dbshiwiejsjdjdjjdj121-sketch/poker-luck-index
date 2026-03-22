@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { AppNavigation } from "@/components/app-navigation";
 import { HoleCardsStrip } from "@/components/hole-cards-strip";
 import { useAuth } from "@/components/auth-provider";
@@ -63,6 +64,7 @@ function getStreetLabel(item: SavedHandUpload) {
 }
 
 export function HandHistoryBrowser() {
+  const router = useRouter();
   const { user, getIdToken } = useAuth();
   const [viewerId, setViewerId] = useState("");
   const [items, setItems] = useState<SavedHandUpload[]>([]);
@@ -182,7 +184,16 @@ export function HandHistoryBrowser() {
                 return (
                   <article
                     key={item.id}
-                    className="panel rounded-[24px] border border-white/8 bg-white/[0.03] p-5"
+                    className="panel cursor-pointer rounded-[24px] border border-white/8 bg-white/[0.03] p-5 transition hover:border-white/14 hover:bg-white/[0.05]"
+                    onClick={() => router.push(`/hand-review?handId=${item.id}`)}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        router.push(`/hand-review?handId=${item.id}`);
+                      }
+                    }}
+                    role="button"
+                    tabIndex={0}
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="min-w-0 flex-1">
@@ -216,6 +227,7 @@ export function HandHistoryBrowser() {
                       </div>
                       <Link
                         href={`/hand-review?handId=${item.id}`}
+                        onClick={(event) => event.stopPropagation()}
                         className={item.analysis ? "btn-secondary" : "btn-primary"}
                       >
                         {item.analysis ? "Open Hand" : "Open Replay"}

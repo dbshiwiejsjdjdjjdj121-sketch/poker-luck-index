@@ -384,8 +384,6 @@ export function SavedHandReplayPanel({
         </div>
       </section>
 
-      {item.analysis ? <HandAnalysisCard analysis={item.analysis} /> : null}
-
       {replayPayload ? (
         <ManualReplayViewer
           setup={replayPayload.setup}
@@ -401,6 +399,8 @@ export function SavedHandReplayPanel({
           </p>
         </section>
       )}
+
+      {item.analysis ? <HandAnalysisCard analysis={item.analysis} /> : null}
 
       <PremiumActionGateModal
         open={gateOpen}

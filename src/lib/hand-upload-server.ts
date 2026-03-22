@@ -333,6 +333,12 @@ type ImportedReplaySnapshot = {
   potBb: number;
 };
 
+function isImportedUploadSource(
+  source: UploadSource,
+): source is Extract<UploadSource, "voice" | "screenshot"> {
+  return source === "voice" || source === "screenshot";
+}
+
 function openAIConfigured() {
   return Boolean(process.env.OPENAI_API_KEY);
 }
@@ -417,6 +423,73 @@ function normalizeCard(value: string) {
   }
 
   return trimmed.toUpperCase();
+}
+
+const RANK_WORD_MAP: Record<string, string> = {
+  ace: "A",
+  aces: "A",
+  king: "K",
+  kings: "K",
+  queen: "Q",
+  queens: "Q",
+  jack: "J",
+  jacks: "J",
+  ten: "T",
+  tens: "T",
+  nine: "9",
+  nines: "9",
+  eight: "8",
+  eights: "8",
+  seven: "7",
+  sevens: "7",
+  six: "6",
+  sixes: "6",
+  five: "5",
+  fives: "5",
+  four: "4",
+  fours: "4",
+  three: "3",
+  threes: "3",
+  two: "2",
+  twos: "2",
+  a: "A",
+  k: "K",
+  q: "Q",
+  j: "J",
+  t: "T",
+  "10": "T",
+  "9": "9",
+  "8": "8",
+  "7": "7",
+  "6": "6",
+  "5": "5",
+  "4": "4",
+  "3": "3",
+  "2": "2",
+};
+
+function normalizeRankToken(value: string) {
+  const normalized = `${value || ""}`.trim().toLowerCase().replace(/[^a-z0-9]/g, "");
+  return RANK_WORD_MAP[normalized] || "";
+}
+
+function inferOffsuitHoleCards(firstRank: string, secondRank: string) {
+  if (!firstRank || !secondRank) {
+    return [];
+  }
+
+  if (firstRank === secondRank) {
+    return [`${firstRank}s`, `${secondRank}h`];
+  }
+
+  return [`${firstRank}s`, `${secondRank}h`];
+}
+
+function inferRainbowBoardCards(ranks: string[]) {
+  const suits = ["d", "c", "s", "h", "d"];
+  return ranks
+    .filter(Boolean)
+    .map((rank, index) => `${rank}${suits[index] || "d"}`);
 }
 
 function uniqueStrings(values: string[]) {
@@ -773,6 +846,455 @@ function normalizeReplayAction(value: string) {
   return "";
 }
 
+function expandSeatLabel(seat: string) {
+  switch (seat) {
+    case "UTG":
+      return "under the gun";
+    case "HJ":
+      return "hijack";
+    case "CO":
+      return "cutoff";
+    case "BTN":
+      return "button";
+    case "SB":
+      return "small blind";
+    case "BB":
+      return "big blind";
+    default:
+      return "";
+  }
+}
+
+function sanitizeImportedPlayerName(value: string, fallback: string) {
+  const trimmed = `${value || ""}`.trim();
+
+  if (!trimmed) {
+    return fallback;
+  }
+
+  if (/^(hero|villain(\s+\d+)?)$/i.test(trimmed)) {
+    return trimmed;
+  }
+
+  if (trimmed.length > 20) {
+    return fallback;
+  }
+
+  if (/[\u4e00-\u9fff]/.test(trimmed)) {
+    return fallback;
+  }
+
+  if (trimmed.split(/\s+/).length > 2) {
+    return fallback;
+  }
+
+  if (
+    /(preflop|flop|turn|river|pot|action|check|call|raise|bet|fold|all-?in|button|blind)/i.test(
+      trimmed,
+    )
+  ) {
+    return fallback;
+  }
+
+  return trimmed;
+}
+
+function inferReplayButtonSeat(
+  heroSeat: string,
+  opponents: Array<{ seat: string }>,
+) {
+  if (heroSeat === "BTN" || opponents.some((player) => player.seat === "BTN")) {
+    return "BTN";
+  }
+
+  if (
+    heroSeat === "SB" &&
+    opponents.length === 1 &&
+    opponents[0]?.seat === "BB"
+  ) {
+    return "SB";
+  }
+
+  return heroSeat || "BTN";
+}
+
+function detectMentionedReplaySeats(rawText: string) {
+  const matches = Array.from(
+    rawText.matchAll(
+      /\b(UTG\+?1?|UTG|HJ|CO|BTN|BU|SB|BB|small blind|big blind|button|cutoff|hijack)\b/gi,
+    ),
+  );
+
+  return uniqueStrings(
+    matches
+      .map((match) => normalizeReplaySeat(match[1] || ""))
+      .filter(Boolean),
+  );
+}
+
+function buildSeatAliases(
+  heroSeat: string,
+  opponents: Array<{ seat: string; name: string }>,
+) {
+  const entries = [
+    {
+      seat: heroSeat,
+      aliases: [
+        "hero",
+        heroSeat,
+        expandSeatLabel(heroSeat),
+      ],
+    },
+    ...opponents.map((opponent, index) => ({
+      seat: opponent.seat,
+      aliases: [
+        opponent.name,
+        opponent.seat,
+        expandSeatLabel(opponent.seat),
+        index === 0 ? "villain" : `villain ${index + 1}`,
+      ],
+    })),
+  ];
+
+  return entries.map((entry) => ({
+    seat: entry.seat,
+    aliases: uniqueStrings(
+      entry.aliases
+        .map((alias) => `${alias || ""}`.trim().toLowerCase())
+        .filter(Boolean),
+    ),
+  }));
+}
+
+function detectActionAmount(fragment: string) {
+  const toMatch = fragment.match(/to\s+(\d+(?:\.\d+)?)\s*(?:bb|big blind|big blinds)?/i);
+
+  if (toMatch?.[1]) {
+    return {
+      amount: Number.parseFloat(toMatch[1]),
+      to: Number.parseFloat(toMatch[1]),
+    };
+  }
+
+  const forMatch = fragment.match(/for\s+(\d+(?:\.\d+)?)\s*(?:bb|big blind|big blinds)?/i);
+
+  if (forMatch?.[1]) {
+    return {
+      amount: Number.parseFloat(forMatch[1]),
+      to: 0,
+    };
+  }
+
+  const plainMatch = fragment.match(/(\d+(?:\.\d+)?)\s*(?:bb|big blind|big blinds)/i);
+
+  if (plainMatch?.[1]) {
+    return {
+      amount: Number.parseFloat(plainMatch[1]),
+      to: 0,
+    };
+  }
+
+  return {
+    amount: 0,
+    to: 0,
+  };
+}
+
+function inferActionType(fragment: string) {
+  if (/\b(check|checks|checked)\b/i.test(fragment)) {
+    return "Check";
+  }
+
+  if (/\b(fold|folds|folded)\b/i.test(fragment)) {
+    return "Fold";
+  }
+
+  if (/\b(call|calls|called)\b/i.test(fragment)) {
+    return "Call";
+  }
+
+  if (/\b(all[\s-]?in|jam|jams|shove|shoves|shoved)\b/i.test(fragment)) {
+    return "All-In";
+  }
+
+  if (/\b(3-bet|three-bet|reraises|re-raises|reraised|re-raised|raises|raise)\b/i.test(fragment)) {
+    return "Raise";
+  }
+
+  if (/\b(limp|limps|limped)\b/i.test(fragment)) {
+    return "Limp";
+  }
+
+  if (/\b(bet|bets|betted)\b/i.test(fragment)) {
+    return "Bet";
+  }
+
+  return "";
+}
+
+function inferActionsFromHandText(
+  rawText: string,
+  heroSeat: string,
+  opponents: Array<{ seat: string; name: string }>,
+): ImportedReplaySnapshot["actions"] {
+  const actionGroups: ImportedReplaySnapshot["actions"] = {
+    preflop: [],
+    flop: [],
+    turn: [],
+    river: [],
+  };
+  const aliases = buildSeatAliases(heroSeat, opponents);
+  const chunks = rawText
+    .split(/\n+/)
+    .flatMap((line) => line.split(/(?<=[.!?])\s+|,\s+| then /i))
+    .map((line) => line.trim())
+    .filter(Boolean);
+  let currentStreet: keyof ImportedReplaySnapshot["actions"] = "preflop";
+
+  for (const chunk of chunks) {
+    const lowerChunk = chunk.toLowerCase();
+
+    if (/\bpreflop\b/.test(lowerChunk)) {
+      currentStreet = "preflop";
+    } else if (/\bflop\b/.test(lowerChunk)) {
+      currentStreet = "flop";
+    } else if (/\bturn\b/.test(lowerChunk)) {
+      currentStreet = "turn";
+    } else if (/\briver\b/.test(lowerChunk)) {
+      currentStreet = "river";
+    }
+
+    const actionType = inferActionType(chunk);
+
+    if (!actionType) {
+      continue;
+    }
+
+    const matchedSeat = aliases.find((entry) =>
+      entry.aliases.some((alias) => lowerChunk.includes(alias)),
+    )?.seat;
+
+    if (!matchedSeat) {
+      continue;
+    }
+
+    const { amount, to } = detectActionAmount(chunk);
+    actionGroups[currentStreet].push({
+      seat: matchedSeat,
+      action: actionType,
+      amount,
+      to,
+    });
+  }
+
+  return actionGroups;
+}
+
+function inferWinnerSeatFromText(
+  rawText: string,
+  heroSeat: string,
+  opponents: Array<{ seat: string; name: string }>,
+) {
+  const lower = rawText.toLowerCase();
+
+  if (/\b(hero|you)\s+(wins|won|takes)\b/i.test(lower)) {
+    return heroSeat;
+  }
+
+  for (const opponent of opponents) {
+    const aliases = uniqueStrings([
+      opponent.name.toLowerCase(),
+      opponent.seat.toLowerCase(),
+      expandSeatLabel(opponent.seat).toLowerCase(),
+      "villain",
+    ]).filter(Boolean);
+
+    if (
+      aliases.some((alias) =>
+        new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b.*\\b(wins|won|takes)\\b`, "i").test(lower),
+      )
+    ) {
+      return opponent.seat;
+    }
+  }
+
+  return "";
+}
+
+function inferPotBbFromText(rawText: string) {
+  const match = rawText.match(
+    /\bpot(?:\s+size)?\s*[:=]?\s*(\d+(?:\.\d+)?)\s*(?:bb|big blind|big blinds)\b/i,
+  );
+
+  if (!match?.[1]) {
+    return 0;
+  }
+
+  return Number.parseFloat(match[1]) || 0;
+}
+
+function buildFallbackImportedSnapshot(
+  parsed: ParsedHandUpload,
+  rawText: string,
+): ImportedReplaySnapshot {
+  const heroSeat = normalizeReplaySeat(parsed.hero.position, "BTN");
+  const combinedText = `${parsed.normalizedHandText}\n${rawText}`;
+  const detectedHeroCards = detectHeroCards(combinedText);
+  const detectedBoard = detectBoardCards(combinedText);
+  let opponents = parsed.opponents
+    .map((opponent, index) => {
+      const seat = normalizeReplaySeat(opponent.position);
+
+      if (!seat || seat === heroSeat) {
+        return null;
+      }
+
+      return {
+        seat,
+        name: sanitizeImportedPlayerName(opponent.label, `Villain ${index + 1}`),
+        stackBb: opponent.stackBb || 100,
+        holeCards: [] as string[],
+        unknownCards: true,
+      };
+    })
+    .filter((opponent): opponent is NonNullable<typeof opponent> => Boolean(opponent));
+
+  if (opponents.length === 0) {
+    opponents = detectMentionedReplaySeats(combinedText)
+      .filter((seat) => seat && seat !== heroSeat)
+      .map((seat, index) => ({
+        seat,
+        name: `Villain ${index + 1}`,
+        stackBb: 100,
+        holeCards: [] as string[],
+        unknownCards: true,
+      }));
+  }
+
+  const actions = inferActionsFromHandText(
+    combinedText,
+    heroSeat,
+    opponents,
+  );
+
+  return {
+    hero: {
+      seat: heroSeat,
+      name: "Hero",
+      stackBb: parsed.hero.stackBb || 100,
+      holeCards:
+        parsed.hero.cards.map((card) => normalizeCard(card)).filter(Boolean).slice(0, 2).length >= 2
+          ? parsed.hero.cards.map((card) => normalizeCard(card)).filter(Boolean).slice(0, 2)
+          : detectedHeroCards,
+    },
+    opponents,
+    buttonSeat: inferReplayButtonSeat(heroSeat, opponents),
+    actions,
+    board: {
+      flop:
+        parsed.board.flop.map((card) => normalizeCard(card)).filter(Boolean).slice(0, 3).length >= 3
+          ? parsed.board.flop.map((card) => normalizeCard(card)).filter(Boolean).slice(0, 3)
+          : detectedBoard.flop,
+      turn: normalizeCard(parsed.board.turn) || detectedBoard.turn,
+      river: normalizeCard(parsed.board.river) || detectedBoard.river,
+    },
+    winnerSeat: inferWinnerSeatFromText(
+      combinedText,
+      heroSeat,
+      opponents,
+    ),
+    potBb: inferPotBbFromText(combinedText),
+  };
+}
+
+function mergeImportedSnapshots(
+  primary: ImportedReplaySnapshot,
+  fallback: ImportedReplaySnapshot,
+): ImportedReplaySnapshot {
+  const heroHoleCards =
+    primary.hero.holeCards.length >= 2 ? primary.hero.holeCards : fallback.hero.holeCards;
+  const boardFlop =
+    primary.board.flop.length > 0 ? primary.board.flop : fallback.board.flop;
+
+  return {
+    hero: {
+      seat: primary.hero.seat || fallback.hero.seat,
+      name: sanitizeImportedPlayerName(primary.hero.name, fallback.hero.name || "Hero"),
+      stackBb: primary.hero.stackBb || fallback.hero.stackBb || 100,
+      holeCards: heroHoleCards,
+    },
+    opponents:
+      primary.opponents.length > 0
+        ? primary.opponents.map((opponent, index) => ({
+            ...opponent,
+            name: sanitizeImportedPlayerName(opponent.name, fallback.opponents[index]?.name || `Villain ${index + 1}`),
+          }))
+        : fallback.opponents,
+    buttonSeat: primary.buttonSeat || fallback.buttonSeat,
+    actions: {
+      preflop:
+        primary.actions.preflop.length > 0 ? primary.actions.preflop : fallback.actions.preflop,
+      flop: primary.actions.flop.length > 0 ? primary.actions.flop : fallback.actions.flop,
+      turn: primary.actions.turn.length > 0 ? primary.actions.turn : fallback.actions.turn,
+      river:
+        primary.actions.river.length > 0 ? primary.actions.river : fallback.actions.river,
+    },
+    board: {
+      flop: boardFlop,
+      turn: primary.board.turn || fallback.board.turn,
+      river: primary.board.river || fallback.board.river,
+    },
+    winnerSeat: primary.winnerSeat || fallback.winnerSeat,
+    potBb: primary.potBb || fallback.potBb,
+  };
+}
+
+function importedReplayNeedsRepair(item: SavedHandUpload) {
+  if (!isImportedUploadSource(item.source)) {
+    return false;
+  }
+
+  if (!item.manualSetup || !item.manualReplay) {
+    return true;
+  }
+
+  const hero = item.manualSetup.hero;
+  const heroHasCards =
+    hero.holeCards.first &&
+    hero.holeCards.second &&
+    hero.holeCards.first !== "Unknown" &&
+    hero.holeCards.second !== "Unknown";
+  const boardCount = item.manualReplay.finalState.board.length;
+  const actionCount = item.manualReplay.actionHistory.length;
+  const potBb = item.manualReplay.finalState.potBb;
+  const heroNameHealthy =
+    hero.name === sanitizeImportedPlayerName(hero.name, "Hero");
+  const opponents = item.manualSetup.opponents || [];
+  const opponentNamesHealthy = opponents.every((opponent, index) => {
+    const fallback = `Villain ${index + 1}`;
+    return opponent.name === sanitizeImportedPlayerName(opponent.name, fallback);
+  });
+  const knownPlayerCardCount = [
+    item.manualSetup.hero,
+    ...opponents,
+  ].filter(
+    (player) =>
+      player.holeCards.first &&
+      player.holeCards.second &&
+      player.holeCards.first !== "Unknown" &&
+      player.holeCards.second !== "Unknown",
+  ).length;
+
+  return (
+    !heroHasCards ||
+    !heroNameHealthy ||
+    !opponentNamesHealthy ||
+    opponents.length === 0 ||
+    knownPlayerCardCount === 0 ||
+    (boardCount === 0 && actionCount <= 1 && potBb === 0)
+  );
+}
+
 function normalizeSnapshotPayload(
   payload: unknown,
   parsed: ParsedHandUpload,
@@ -1043,6 +1565,7 @@ function detectHeroPosition(rawText: string) {
 }
 
 function detectHeroCards(rawText: string) {
+  const lowerRawText = rawText.toLowerCase();
   const explicitCardMatch = rawText.match(
     /\b([AKQJT2-9][shdc])\s+([AKQJT2-9][shdc])\b/i,
   );
@@ -1054,16 +1577,39 @@ function detectHeroCards(rawText: string) {
     ];
   }
 
+  const pairWordMatch = lowerRawText.match(
+    /\b(?:pocket|pair(?:\s+of)?)\s+(aces|kings|queens|jacks|tens|nines|eights|sevens|sixes|fives|fours|threes|twos)\b/i,
+  );
+
+  if (pairWordMatch?.[1]) {
+    const rank = normalizeRankToken(pairWordMatch[1]);
+    return inferOffsuitHoleCards(rank, rank);
+  }
+
+  const twoWordMatch = lowerRawText.match(
+    /\b(?:with|holding|hand:?|hero(?:\s+\([^)]+\))?\s+has)\s+(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)\s+(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)\b/i,
+  );
+
+  if (twoWordMatch?.[1] && twoWordMatch?.[2]) {
+    const firstRank = normalizeRankToken(twoWordMatch[1]);
+    const secondRank = normalizeRankToken(twoWordMatch[2]);
+    return inferOffsuitHoleCards(firstRank, secondRank);
+  }
+
   const shorthandMatch = rawText.match(/\b(AA|KK|QQ|JJ|TT|99|88|77|66|55|44|33|22|AK|AQ|AJ|AT|A9|A8|A7|A6|A5|A4|A3|A2|KQ|KJ|KT|QJ|QT|JT|T9|98|87|76|65|54)\b/i);
 
   if (!shorthandMatch) {
     return [];
   }
 
-  return shorthandMatch[1]!.toUpperCase().split("");
+  return inferOffsuitHoleCards(
+    shorthandMatch[1]!.toUpperCase().slice(0, 1),
+    shorthandMatch[1]!.toUpperCase().slice(1, 2),
+  );
 }
 
 function detectBoardCards(rawText: string) {
+  const lowerRawText = rawText.toLowerCase();
   const flopMatch = rawText.match(
     /\bflop\b[^A-Za-z0-9]{0,12}([AKQJT2-9][shdc])\s+([AKQJT2-9][shdc])\s+([AKQJT2-9][shdc])/i,
   );
@@ -1074,6 +1620,26 @@ function detectBoardCards(rawText: string) {
     /\briver\b[^A-Za-z0-9]{0,12}([AKQJT2-9][shdc])/i,
   );
 
+  const flopWordMatch = lowerRawText.match(
+    /\bflop\b[^a-z0-9]{0,20}(?:came|is|was|:)?[^a-z0-9]{0,20}(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)[,\s/.-]+(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)[,\s/.-]+(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)/i,
+  );
+  const turnWordMatch = lowerRawText.match(
+    /\bturn\b[^a-z0-9]{0,20}(?:brought|was|is|:)?[^a-z0-9]{0,20}(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)/i,
+  );
+  const riverWordMatch = lowerRawText.match(
+    /\briver\b[^a-z0-9]{0,20}(?:brought|was|is|:)?[^a-z0-9]{0,20}(ace|king|queen|jack|ten|nine|eight|seven|six|five|four|three|two|a|k|q|j|t|9|8|7|6|5|4|3|2)/i,
+  );
+
+  const inferredFlop =
+    flopWordMatch?.slice(1, 4).map((token) => normalizeRankToken(token || "")).filter(Boolean) || [];
+  const inferredTurn = normalizeRankToken(turnWordMatch?.[1] || "");
+  const inferredRiver = normalizeRankToken(riverWordMatch?.[1] || "");
+  const rainbowBoard = inferRainbowBoardCards([
+    ...inferredFlop,
+    inferredTurn,
+    inferredRiver,
+  ]);
+
   return {
     flop: uniqueStrings(
       flopMatch
@@ -1082,10 +1648,10 @@ function detectBoardCards(rawText: string) {
             normalizeCard(flopMatch[2] ?? ""),
             normalizeCard(flopMatch[3] ?? ""),
           ]
-        : [],
+        : rainbowBoard.slice(0, 3),
     ),
-    turn: normalizeCard(turnMatch?.[1] ?? ""),
-    river: normalizeCard(riverMatch?.[1] ?? ""),
+    turn: normalizeCard(turnMatch?.[1] ?? "") || rainbowBoard[3] || "",
+    river: normalizeCard(riverMatch?.[1] ?? "") || rainbowBoard[4] || "",
   };
 }
 
@@ -1498,8 +2064,13 @@ function buildExtractionInstructions(source: UploadSource) {
   return [
     "You are the intake parser for a poker hand review web app.",
     "Turn the user's hand description, voice transcript, or screenshot into a clean structured hand summary.",
+    "Accept any input language, but ALL output fields must be ENGLISH ONLY.",
     "Be conservative. Never invent cards, actions, stacks, or board cards that are not reasonably supported by the input.",
     "If there is not enough poker information, set valid=false and explain the gap in error.",
+    "Structured extraction is the priority: identify Hero, opponent seats, board, and key actions whenever the text supports them.",
+    "Use only these seats when possible: UTG, HJ, CO, BTN, SB, BB.",
+    "If a player name is unclear or sounds like transcript filler, prefer Hero and Villain labels instead of odd names.",
+    "If stacks are not clearly stated, use 100 for unknown stacks instead of 0.",
     "Write normalizedHandText as a compact English hand history, organized by street when possible.",
     "Write quickSummary as one sentence and coachAdvice as one or two actionable sentences.",
     "Use sourceText for the cleaned transcript / OCR / manual note.",
@@ -1553,16 +2124,30 @@ async function parseHandFromText(source: UploadSource, rawText: string) {
 
 function buildReplaySnapshotInstructions(source: UploadSource) {
   return [
-    "You convert a confirmed poker hand into a replay snapshot for a Texas Hold'em app.",
+    "You are the replay snapshot parser for the ALL IN POKER style hand review flow.",
+    "Your job is to turn confirmed hand text into a clean replay snapshot for a Texas Hold'em table.",
+    "This is a structured data extraction task. Replay JSON is the primary output, not prose.",
     "Output only valid JSON that matches the schema.",
+    "Use ENGLISH ONLY.",
     "Use only these seats: UTG, HJ, CO, BTN, SB, BB.",
-    "Preserve action order exactly as described.",
+    "Fix obvious ASR and OCR mistakes before extracting the hand.",
+    "Recognize poker rank words and pair words: pocket Aces, pair of Kings, pocket Jacks, Tens, Ace King, AK, AQ, TT, 44, etc.",
+    "If suits are missing, infer offsuit hole cards and a rainbow board. If a card uses x as the suit, treat it as an unknown suit and infer a reasonable suit.",
+    "When the text says Hero from Button / Small Blind / Big Blind / Cutoff / Hijack / UTG, use that real seat in the snapshot.",
+    "If multiple opponents exist, distinguish them by seat and keep their seats stable.",
+    "Preserve the action order exactly as described and keep actions grouped by street.",
     "Hero must include the known hole cards when they exist.",
     "If villain cards were not shown, use an empty holeCards array and unknownCards=true.",
     "If an amount or final pot is unknown, use 0 instead of guessing.",
     "If the hand ended before flop, keep flop/turn/river arrays and cards empty.",
-    "buttonSeat must be the actual button position for this hand.",
+    "buttonSeat must be the real button for the hand, not just the hero seat.",
     "winnerSeat should be empty only when the winner cannot be determined from the text.",
+    "Do not use transcript filler, commentary, or stray spoken phrases as player names.",
+    "Prefer Hero and Villain 1 / Villain 2 when names are unclear.",
+    "If the text explicitly mentions showdown cards for an opponent, include them. Do not leave known showdown cards empty.",
+    "If the text clearly describes the final board, include all known board cards.",
+    "If the text clearly says who won, set winnerSeat.",
+    "If the confirmed text already implies a board, hole cards, or showdown winner, keep them in the snapshot.",
     `The source is ${source}.`,
   ].join(" ");
 }
@@ -1609,7 +2194,13 @@ async function parseReplaySnapshotFromText(
     throw new Error("The model returned an empty replay snapshot.");
   }
 
-  return normalizeSnapshotPayload(JSON.parse(stripCodeFence(rawContent)), parsed);
+  const normalized = normalizeSnapshotPayload(
+    JSON.parse(stripCodeFence(rawContent)),
+    parsed,
+  );
+  const fallback = buildFallbackImportedSnapshot(parsed, rawText);
+
+  return mergeImportedSnapshots(normalized, fallback);
 }
 
 function buildReplayArtifactsFromSnapshot(
@@ -1624,7 +2215,7 @@ function buildReplayArtifactsFromSnapshot(
 
   const hero: ManualHandSetup["hero"] = {
     seat: snapshot.hero.seat as ManualHandSetup["hero"]["seat"],
-    name: snapshot.hero.name || "Hero",
+    name: sanitizeImportedPlayerName(snapshot.hero.name, "Hero"),
     stackBb: snapshot.hero.stackBb || 100,
     holeCards: {
       first: snapshot.hero.holeCards[0]!,
@@ -1636,7 +2227,7 @@ function buildReplayArtifactsFromSnapshot(
     .filter((opponent) => opponent.seat && opponent.seat !== hero.seat)
     .map((opponent, index) => ({
       seat: opponent.seat as ManualHandSetup["opponents"][number]["seat"],
-      name: opponent.name || `Villain ${index + 1}`,
+      name: sanitizeImportedPlayerName(opponent.name, `Villain ${index + 1}`),
       stackBb: opponent.stackBb || 100,
       holeCards: {
         first: opponent.holeCards[0] || "Unknown",
@@ -2339,11 +2930,7 @@ export async function getViewerUpload(viewerId: string, uploadId: string) {
 
   const item = doc.data() as SavedHandUpload;
 
-  if (
-    !item.manualSetup &&
-    !item.manualReplay &&
-    (item.source === "voice" || item.source === "screenshot")
-  ) {
+  if (importedReplayNeedsRepair(item) && isImportedUploadSource(item.source)) {
     try {
       const snapshot = await parseReplaySnapshotFromText(
         item.source,
@@ -2410,9 +2997,8 @@ export async function analyzeViewerUpload(
   let nextItem = item;
 
   if (
-    !nextItem.manualSetup &&
-    !nextItem.manualReplay &&
-    (nextItem.source === "voice" || nextItem.source === "screenshot")
+    importedReplayNeedsRepair(nextItem) &&
+    isImportedUploadSource(nextItem.source)
   ) {
     try {
       const replaySnapshot = await parseReplaySnapshotFromText(
