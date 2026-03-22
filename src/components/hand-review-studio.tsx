@@ -24,6 +24,7 @@ import {
 } from "@/lib/hand-upload-types";
 
 const VIEWER_ID_STORAGE_KEY = "poker-luck-index-viewer-id";
+const TARGET_AUDIO_SAMPLE_RATE = 16_000;
 
 function createViewerId() {
   return `viewer-${crypto.randomUUID()}`;
@@ -39,6 +40,98 @@ function getOrCreateViewerId() {
   const nextId = createViewerId();
   window.localStorage.setItem(VIEWER_ID_STORAGE_KEY, nextId);
   return nextId;
+}
+
+function shouldNormalizeAudioFile(file: File) {
+  const lowerName = file.name.toLowerCase();
+
+  return (
+    file.type.includes("webm") ||
+    file.type.includes("ogg") ||
+    lowerName.endsWith(".webm") ||
+    lowerName.endsWith(".ogg")
+  );
+}
+
+function writeWavString(view: DataView, offset: number, value: string) {
+  for (let index = 0; index < value.length; index += 1) {
+    view.setUint8(offset + index, value.charCodeAt(index));
+  }
+}
+
+function encodeMonoWav(audioBuffer: AudioBuffer) {
+  const samples = audioBuffer.getChannelData(0);
+  const bytesPerSample = 2;
+  const blockAlign = bytesPerSample;
+  const byteRate = audioBuffer.sampleRate * blockAlign;
+  const wavBuffer = new ArrayBuffer(44 + samples.length * bytesPerSample);
+  const view = new DataView(wavBuffer);
+
+  writeWavString(view, 0, "RIFF");
+  view.setUint32(4, 36 + samples.length * bytesPerSample, true);
+  writeWavString(view, 8, "WAVE");
+  writeWavString(view, 12, "fmt ");
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true);
+  view.setUint16(22, 1, true);
+  view.setUint32(24, audioBuffer.sampleRate, true);
+  view.setUint32(28, byteRate, true);
+  view.setUint16(32, blockAlign, true);
+  view.setUint16(34, 16, true);
+  writeWavString(view, 36, "data");
+  view.setUint32(40, samples.length * bytesPerSample, true);
+
+  let offset = 44;
+  for (let index = 0; index < samples.length; index += 1) {
+    const sample = Math.max(-1, Math.min(1, samples[index] || 0));
+    view.setInt16(
+      offset,
+      sample < 0 ? sample * 0x8000 : sample * 0x7fff,
+      true,
+    );
+    offset += bytesPerSample;
+  }
+
+  return new Blob([wavBuffer], { type: "audio/wav" });
+}
+
+async function normalizeAudioFileForUpload(file: File) {
+  if (!shouldNormalizeAudioFile(file)) {
+    return file;
+  }
+
+  const audioContextCtor = window.AudioContext;
+
+  if (!audioContextCtor) {
+    throw new Error("This browser cannot convert the recording yet. Try Safari, Chrome, or upload WAV/M4A.");
+  }
+
+  const sourceBuffer = await file.arrayBuffer();
+  const audioContext = new audioContextCtor();
+
+  try {
+    const decoded = await audioContext.decodeAudioData(sourceBuffer.slice(0));
+    const offline = new OfflineAudioContext(
+      1,
+      Math.ceil(decoded.duration * TARGET_AUDIO_SAMPLE_RATE),
+      TARGET_AUDIO_SAMPLE_RATE,
+    );
+    const source = offline.createBufferSource();
+    source.buffer = decoded;
+    source.connect(offline.destination);
+    source.start(0);
+    const rendered = await offline.startRendering();
+    const wavBlob = encodeMonoWav(rendered);
+    const baseName = file.name.replace(/\.[^.]+$/, "").trim() || `voice-note-${Date.now()}`;
+
+    return new File([wavBlob], `${baseName}.wav`, { type: "audio/wav" });
+  } catch {
+    throw new Error(
+      "This WebM recording could not be converted for transcription. Try uploading M4A or WAV instead.",
+    );
+  } finally {
+    void audioContext.close().catch(() => undefined);
+  }
 }
 
 export function HandReviewStudio({
@@ -61,6 +154,7 @@ export function HandReviewStudio({
   const [imagePreviewUrl, setImagePreviewUrl] = useState("");
   const [selectedAudio, setSelectedAudio] = useState<File | null>(null);
   const [audioPreviewUrl, setAudioPreviewUrl] = useState("");
+  const [audioPreparing, setAudioPreparing] = useState(false);
   const [isRecordingSupported, setIsRecordingSupported] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [recordingSeconds, setRecordingSeconds] = useState(0);
@@ -199,6 +293,27 @@ export function HandReviewStudio({
 
     setSelectedAudio(null);
     setAudioPreviewUrl("");
+  }
+
+  async function prepareAudioSelection(file: File) {
+    setAudioPreparing(true);
+    setError("");
+
+    try {
+      const normalized = await normalizeAudioFileForUpload(file);
+      clearAudio();
+      setSelectedAudio(normalized);
+      setAudioPreviewUrl(URL.createObjectURL(normalized));
+    } catch (audioError) {
+      clearAudio();
+      setError(
+        audioError instanceof Error
+          ? audioError.message
+          : "This audio file could not be prepared for transcription.",
+      );
+    } finally {
+      setAudioPreparing(false);
+    }
   }
 
   async function handleManualSubmit(payload: {
@@ -453,11 +568,6 @@ export function HandReviewStudio({
           `voice-note-${Date.now()}.${blob.type.includes("mp4") ? "m4a" : "webm"}`,
           { type: blob.type || "audio/webm" },
         );
-        const previewUrl = URL.createObjectURL(blob);
-
-        clearAudio();
-        setSelectedAudio(audioFile);
-        setAudioPreviewUrl(previewUrl);
         setIsRecording(false);
         audioChunksRef.current = [];
 
@@ -465,6 +575,8 @@ export function HandReviewStudio({
           mediaStreamRef.current.getTracks().forEach((track) => track.stop());
           mediaStreamRef.current = null;
         }
+
+        void prepareAudioSelection(audioFile);
       };
 
       recorder.start();
@@ -509,9 +621,7 @@ export function HandReviewStudio({
       return;
     }
 
-    clearAudio();
-    setSelectedAudio(file);
-    setAudioPreviewUrl(URL.createObjectURL(file));
+    void prepareAudioSelection(file);
   }
 
   const methodCards: Array<{
@@ -693,7 +803,9 @@ export function HandReviewStudio({
                     <p className="text-sm leading-6 text-white">
                       {isRecording
                         ? `Recording... ${recordingSeconds}s`
-                        : "Record live or upload an audio file."}
+                        : audioPreparing
+                          ? "Preparing audio for transcription..."
+                          : "Record live or upload an audio file."}
                     </p>
                     <button
                       type="button"
@@ -748,10 +860,14 @@ export function HandReviewStudio({
                   <button
                     type="button"
                     onClick={() => void handleAudioSubmit()}
-                    disabled={busySource === "voice" || !selectedAudio}
+                    disabled={audioPreparing || busySource === "voice" || !selectedAudio}
                     className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                   >
-                    {busySource === "voice" ? "Transcribing..." : "Transcribe Voice"}
+                    {audioPreparing
+                      ? "Preparing Audio..."
+                      : busySource === "voice"
+                        ? "Transcribing..."
+                        : "Transcribe Voice"}
                   </button>
                 </div>
               </div>
