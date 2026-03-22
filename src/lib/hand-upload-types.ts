@@ -114,6 +114,8 @@ export interface HandAnalysisStreet {
   street: string;
   highlight: string;
   suggestion: string;
+  rating?: string;
+  verdict?: string;
 }
 
 export interface SavedHandAnalysis {
@@ -121,6 +123,11 @@ export interface SavedHandAnalysis {
   streets: HandAnalysisStreet[];
   gtoTips: string[];
   encouragement: string;
+  score?: number;
+  title?: string;
+  rangeCategory?: string;
+  villainReading?: string;
+  emotionalFeedback?: string;
   model: string;
   createdAtMs: number;
 }

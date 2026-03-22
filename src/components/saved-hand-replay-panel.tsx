@@ -8,7 +8,7 @@ import { ManualReplayViewer } from "@/components/manual-replay-viewer";
 import { PremiumActionGateModal } from "@/components/premium-action-gate-modal";
 import { useAuth } from "@/components/auth-provider";
 import { useSubscription } from "@/components/subscription-provider";
-import { getAllInHandRecord } from "@/lib/allin-hand-record";
+import { getAllInHandRecord, getReplayPayload } from "@/lib/allin-hand-record";
 import { uploadSourceLabels, type SavedHandUpload } from "@/lib/hand-upload-types";
 
 const VIEWER_ID_STORAGE_KEY = "poker-luck-index-viewer-id";
@@ -286,12 +286,17 @@ export function SavedHandReplayPanel({
   }
 
   const allinHand = getAllInHandRecord(item);
+  const replayPayload = getReplayPayload(item);
   const heroPlayer = allinHand?.setup.players.find(
     (player) => player.seat === allinHand.setup.heroSeat,
   );
-  const heroHoleCards = heroPlayer?.hole;
+  const heroHoleCards =
+    replayPayload?.setup.hero.holeCards || heroPlayer?.hole;
   const potBb =
-    allinHand?.result.pots[0]?.sizeBb ?? item.manualReplay?.finalState.potBb ?? 0;
+    allinHand?.result.pots[0]?.sizeBb ??
+    replayPayload?.replay.finalState.potBb ??
+    item.manualReplay?.finalState.potBb ??
+    0;
 
   return (
     <>
@@ -381,8 +386,11 @@ export function SavedHandReplayPanel({
 
       {item.analysis ? <HandAnalysisCard analysis={item.analysis} /> : null}
 
-      {item.manualSetup && item.manualReplay ? (
-        <ManualReplayViewer setup={item.manualSetup} replay={item.manualReplay} />
+      {replayPayload ? (
+        <ManualReplayViewer
+          setup={replayPayload.setup}
+          replay={replayPayload.replay}
+        />
       ) : (
         <section className="panel p-5 sm:p-6">
           <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">

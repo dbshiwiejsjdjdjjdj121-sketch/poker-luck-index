@@ -17,7 +17,8 @@ import {
   getFirebaseAdminBucket,
   getFirebaseAdminDb,
 } from "@/lib/firebase-admin";
-import { buildAllInHandRecord } from "@/lib/allin-hand-record";
+import { buildAllInHandRecord, getAllInHandRecord } from "@/lib/allin-hand-record";
+import { generateReplayLog } from "@/lib/replay/hand-log-generator";
 
 const DEFAULT_TEXT_MODEL = process.env.OPENAI_HAND_UPLOAD_MODEL || "gpt-4.1-mini";
 const DEFAULT_TRANSCRIPTION_MODEL =
@@ -96,29 +97,241 @@ const HAND_UPLOAD_RESPONSE_SCHEMA = {
 const HAND_ANALYSIS_RESPONSE_SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["summary", "streets", "gtoTips", "encouragement"],
+  required: ["coach_summary", "villain_reading", "street_details", "gto_tips"],
   properties: {
-    summary: { type: "string" },
-    streets: {
+    coach_summary: {
+      type: "object",
+      additionalProperties: false,
+      required: [
+        "score",
+        "title",
+        "emotional_feedback",
+        "main_feedback",
+        "is_tilt_detected",
+      ],
+      properties: {
+        score: { type: "number" },
+        title: { type: "string" },
+        emotional_feedback: { type: "string" },
+        main_feedback: { type: "string" },
+        is_tilt_detected: { type: "boolean" },
+      },
+    },
+    villain_reading: {
+      type: "object",
+      additionalProperties: false,
+      required: ["range_category", "analysis"],
+      properties: {
+        range_category: { type: "string" },
+        analysis: { type: "string" },
+      },
+    },
+    street_details: {
+      type: "object",
+      additionalProperties: false,
+      required: ["preflop", "flop", "turn", "river"],
+      properties: {
+        preflop: {
+          type: "object",
+          additionalProperties: false,
+          required: ["rating", "markdown_content"],
+          properties: {
+            rating: { type: "string" },
+            markdown_content: { type: "string" },
+          },
+        },
+        flop: {
+          type: "object",
+          additionalProperties: false,
+          required: ["rating", "markdown_content"],
+          properties: {
+            rating: { type: "string" },
+            markdown_content: { type: "string" },
+          },
+        },
+        turn: {
+          type: "object",
+          additionalProperties: false,
+          required: ["rating", "markdown_content"],
+          properties: {
+            rating: { type: "string" },
+            markdown_content: { type: "string" },
+          },
+        },
+        river: {
+          type: "object",
+          additionalProperties: false,
+          required: ["rating", "markdown_content"],
+          properties: {
+            rating: { type: "string" },
+            markdown_content: { type: "string" },
+          },
+        },
+      },
+    },
+    gto_tips: {
+      type: "array",
+      items: { type: "string" },
+    },
+  },
+} as const;
+
+const IMPORTED_REPLAY_RESPONSE_SCHEMA = {
+  type: "object",
+  additionalProperties: false,
+  required: [
+    "hero",
+    "opponents",
+    "buttonSeat",
+    "actions",
+    "board",
+    "winnerSeat",
+    "potBb",
+  ],
+  properties: {
+    hero: {
+      type: "object",
+      additionalProperties: false,
+      required: ["seat", "name", "stackBb", "holeCards"],
+      properties: {
+        seat: { type: "string" },
+        name: { type: "string" },
+        stackBb: { type: "number" },
+        holeCards: {
+          type: "array",
+          items: { type: "string" },
+        },
+      },
+    },
+    opponents: {
       type: "array",
       items: {
         type: "object",
         additionalProperties: false,
-        required: ["street", "highlight", "suggestion"],
+        required: ["seat", "name", "stackBb", "holeCards", "unknownCards"],
         properties: {
-          street: { type: "string" },
-          highlight: { type: "string" },
-          suggestion: { type: "string" },
+          seat: { type: "string" },
+          name: { type: "string" },
+          stackBb: { type: "number" },
+          holeCards: {
+            type: "array",
+            items: { type: "string" },
+          },
+          unknownCards: { type: "boolean" },
         },
       },
     },
-    gtoTips: {
-      type: "array",
-      items: { type: "string" },
+    buttonSeat: { type: "string" },
+    actions: {
+      type: "object",
+      additionalProperties: false,
+      required: ["preflop", "flop", "turn", "river"],
+      properties: {
+        preflop: {
+          type: "array",
+          items: {
+            type: "object",
+            additionalProperties: false,
+            required: ["seat", "action", "amount", "to"],
+            properties: {
+              seat: { type: "string" },
+              action: { type: "string" },
+              amount: { type: "number" },
+              to: { type: "number" },
+            },
+          },
+        },
+        flop: {
+          type: "array",
+          items: {
+            type: "object",
+            additionalProperties: false,
+            required: ["seat", "action", "amount", "to"],
+            properties: {
+              seat: { type: "string" },
+              action: { type: "string" },
+              amount: { type: "number" },
+              to: { type: "number" },
+            },
+          },
+        },
+        turn: {
+          type: "array",
+          items: {
+            type: "object",
+            additionalProperties: false,
+            required: ["seat", "action", "amount", "to"],
+            properties: {
+              seat: { type: "string" },
+              action: { type: "string" },
+              amount: { type: "number" },
+              to: { type: "number" },
+            },
+          },
+        },
+        river: {
+          type: "array",
+          items: {
+            type: "object",
+            additionalProperties: false,
+            required: ["seat", "action", "amount", "to"],
+            properties: {
+              seat: { type: "string" },
+              action: { type: "string" },
+              amount: { type: "number" },
+              to: { type: "number" },
+            },
+          },
+        },
+      },
     },
-    encouragement: { type: "string" },
+    board: {
+      type: "object",
+      additionalProperties: false,
+      required: ["flop", "turn", "river"],
+      properties: {
+        flop: {
+          type: "array",
+          items: { type: "string" },
+        },
+        turn: { type: "string" },
+        river: { type: "string" },
+      },
+    },
+    winnerSeat: { type: "string" },
+    potBb: { type: "number" },
   },
 } as const;
+
+type ImportedReplaySnapshot = {
+  hero: {
+    seat: string;
+    name: string;
+    stackBb: number;
+    holeCards: string[];
+  };
+  opponents: Array<{
+    seat: string;
+    name: string;
+    stackBb: number;
+    holeCards: string[];
+    unknownCards: boolean;
+  }>;
+  buttonSeat: string;
+  actions: {
+    preflop: Array<{ seat: string; action: string; amount: number; to: number }>;
+    flop: Array<{ seat: string; action: string; amount: number; to: number }>;
+    turn: Array<{ seat: string; action: string; amount: number; to: number }>;
+    river: Array<{ seat: string; action: string; amount: number; to: number }>;
+  };
+  board: {
+    flop: string[];
+    turn: string;
+    river: string;
+  };
+  winnerSeat: string;
+  potBb: number;
+};
 
 function openAIConfigured() {
   return Boolean(process.env.OPENAI_API_KEY);
@@ -413,45 +626,328 @@ function normalizeAnalysisResult(payload: unknown): Omit<SavedHandAnalysis, "cre
   }
 
   const data = payload as Record<string, unknown>;
-  const streets = Array.isArray(data.streets)
-    ? data.streets
-        .map((item) => {
+  const coachSummary =
+    data.coach_summary && typeof data.coach_summary === "object"
+      ? (data.coach_summary as Record<string, unknown>)
+      : {};
+  const villainReading =
+    data.villain_reading && typeof data.villain_reading === "object"
+      ? (data.villain_reading as Record<string, unknown>)
+      : {};
+  const streetDetails =
+    data.street_details && typeof data.street_details === "object"
+      ? (data.street_details as Record<string, unknown>)
+      : {};
+  const streetOrder = ["preflop", "flop", "turn", "river"];
+  const streets = streetOrder
+    .map((streetKey) => {
+      const streetDetail =
+        streetDetails[streetKey] && typeof streetDetails[streetKey] === "object"
+          ? (streetDetails[streetKey] as Record<string, unknown>)
+          : {};
+      const highlight = `${streetDetail.markdown_content || ""}`
+        .replace(/\*\*/g, "")
+        .trim();
+      const rating = `${streetDetail.rating || ""}`.trim();
+      const verdictMatch = highlight.match(/^(Correct|Incorrect)\./i);
+
+      if (!highlight && !rating) {
+        return null;
+      }
+
+      return {
+        street: streetKey[0]!.toUpperCase() + streetKey.slice(1),
+        highlight,
+        suggestion: rating,
+        rating,
+        verdict: verdictMatch?.[1]
+          ? `${verdictMatch[1][0]!.toUpperCase()}${verdictMatch[1].slice(1).toLowerCase()}`
+          : "",
+      };
+    })
+    .filter(
+      (
+        item,
+      ): item is {
+        street: string;
+        highlight: string;
+        suggestion: string;
+        rating: string;
+        verdict: string;
+      } => Boolean(item),
+    );
+
+  return {
+    summary:
+      typeof coachSummary.main_feedback === "string"
+        ? coachSummary.main_feedback.trim()
+        : "",
+    streets,
+    gtoTips: normalizeTextArray(data.gto_tips).slice(0, 4),
+    encouragement:
+      typeof coachSummary.emotional_feedback === "string"
+        ? coachSummary.emotional_feedback.trim()
+        : "",
+    score:
+      typeof coachSummary.score === "number" && Number.isFinite(coachSummary.score)
+        ? coachSummary.score
+        : undefined,
+    title:
+      typeof coachSummary.title === "string"
+        ? coachSummary.title.trim()
+        : undefined,
+    rangeCategory:
+      typeof villainReading.range_category === "string"
+        ? villainReading.range_category.trim()
+        : undefined,
+    villainReading:
+      typeof villainReading.analysis === "string"
+        ? villainReading.analysis.trim()
+        : undefined,
+    emotionalFeedback:
+      typeof coachSummary.emotional_feedback === "string"
+        ? coachSummary.emotional_feedback.trim()
+        : undefined,
+  };
+}
+
+function normalizeReplaySeat(value: string, fallback = "") {
+  const normalized = `${value || ""}`.trim().toUpperCase();
+
+  if (["UTG", "HJ", "CO", "BTN", "SB", "BB"].includes(normalized)) {
+    return normalized;
+  }
+
+  if (normalized === "BU") {
+    return "BTN";
+  }
+
+  if (normalized === "LJ") {
+    return "HJ";
+  }
+
+  if (normalized === "MP" || normalized === "EP") {
+    return "UTG";
+  }
+
+  return fallback;
+}
+
+function normalizeReplayAction(value: string) {
+  const normalized = `${value || ""}`.trim().toLowerCase();
+
+  if (normalized === "fold" || normalized === "folds") {
+    return "Fold";
+  }
+
+  if (normalized === "check" || normalized === "checks") {
+    return "Check";
+  }
+
+  if (normalized === "call" || normalized === "calls") {
+    return "Call";
+  }
+
+  if (normalized === "bet" || normalized === "bets") {
+    return "Bet";
+  }
+
+  if (normalized === "raise" || normalized === "raises" || normalized === "3-bet") {
+    return "Raise";
+  }
+
+  if (
+    normalized === "all-in" ||
+    normalized === "all in" ||
+    normalized === "jam" ||
+    normalized === "shove" ||
+    normalized === "shoves"
+  ) {
+    return "All-In";
+  }
+
+  if (normalized === "limp" || normalized === "limps") {
+    return "Limp";
+  }
+
+  return "";
+}
+
+function normalizeSnapshotPayload(
+  payload: unknown,
+  parsed: ParsedHandUpload,
+): ImportedReplaySnapshot {
+  if (!payload || typeof payload !== "object") {
+    throw new Error("Replay snapshot response is not a JSON object.");
+  }
+
+  const data = payload as Record<string, unknown>;
+  const heroRecord =
+    data.hero && typeof data.hero === "object"
+      ? (data.hero as Record<string, unknown>)
+      : {};
+  const actionRecord =
+    data.actions && typeof data.actions === "object"
+      ? (data.actions as Record<string, unknown>)
+      : {};
+  const boardRecord =
+    data.board && typeof data.board === "object"
+      ? (data.board as Record<string, unknown>)
+      : {};
+
+  const normalizeActionArray = (value: unknown) =>
+    Array.isArray(value)
+      ? value
+          .map((item) => {
+            if (!item || typeof item !== "object") {
+              return null;
+            }
+
+            const action = item as Record<string, unknown>;
+            const normalizedSeat = normalizeReplaySeat(
+              typeof action.seat === "string" ? action.seat : "",
+            );
+            const normalizedAction = normalizeReplayAction(
+              typeof action.action === "string" ? action.action : "",
+            );
+
+            if (!normalizedSeat || !normalizedAction) {
+              return null;
+            }
+
+            return {
+              seat: normalizedSeat,
+              action: normalizedAction,
+              amount:
+                typeof action.amount === "number" && Number.isFinite(action.amount)
+                  ? action.amount
+                  : 0,
+              to:
+                typeof action.to === "number" && Number.isFinite(action.to)
+                  ? action.to
+                  : 0,
+            };
+          })
+          .filter(
+            (
+              item,
+            ): item is {
+              seat: string;
+              action: string;
+              amount: number;
+              to: number;
+            } => Boolean(item),
+          )
+      : [];
+
+  const normalizedHeroSeat = normalizeReplaySeat(
+    typeof heroRecord.seat === "string" ? heroRecord.seat : parsed.hero.position,
+    normalizeReplaySeat(parsed.hero.position, "BTN"),
+  );
+
+  const normalizedOpponents = Array.isArray(data.opponents)
+    ? data.opponents
+        .map((item, index) => {
           if (!item || typeof item !== "object") {
             return null;
           }
 
-          const street = item as Record<string, unknown>;
+          const opponent = item as Record<string, unknown>;
+          const seat = normalizeReplaySeat(
+            typeof opponent.seat === "string" ? opponent.seat : "",
+          );
+
+          if (!seat || seat === normalizedHeroSeat) {
+            return null;
+          }
 
           return {
-            street:
-              typeof street.street === "string" ? street.street.trim() : "",
-            highlight:
-              typeof street.highlight === "string"
-                ? street.highlight.trim()
-                : "",
-            suggestion:
-              typeof street.suggestion === "string"
-                ? street.suggestion.trim()
-                : "",
+            seat,
+            name:
+              typeof opponent.name === "string" && opponent.name.trim()
+                ? opponent.name.trim()
+                : parsed.opponents[index]?.label || `Villain ${index + 1}`,
+            stackBb:
+              typeof opponent.stackBb === "number" && Number.isFinite(opponent.stackBb)
+                ? opponent.stackBb
+                : parsed.opponents[index]?.stackBb || 100,
+            holeCards: normalizeTextArray(opponent.holeCards).slice(0, 2),
+            unknownCards:
+              typeof opponent.unknownCards === "boolean"
+                ? opponent.unknownCards
+                : normalizeTextArray(opponent.holeCards).length < 2,
           };
         })
-        .filter(
-          (
-            item,
-          ): item is {
-            street: string;
-            highlight: string;
-            suggestion: string;
-          } => Boolean(item?.street || item?.highlight || item?.suggestion),
-        )
+        .filter((item): item is NonNullable<typeof item> => Boolean(item))
     : [];
 
   return {
-    summary: typeof data.summary === "string" ? data.summary.trim() : "",
-    streets,
-    gtoTips: normalizeTextArray(data.gtoTips).slice(0, 4),
-    encouragement:
-      typeof data.encouragement === "string" ? data.encouragement.trim() : "",
+    hero: {
+      seat: normalizedHeroSeat,
+      name:
+        typeof heroRecord.name === "string" && heroRecord.name.trim()
+          ? heroRecord.name.trim()
+          : "Hero",
+      stackBb:
+        typeof heroRecord.stackBb === "number" && Number.isFinite(heroRecord.stackBb)
+          ? heroRecord.stackBb
+          : parsed.hero.stackBb || 100,
+      holeCards: (
+        normalizeTextArray(heroRecord.holeCards).length >= 2
+          ? normalizeTextArray(heroRecord.holeCards)
+          : parsed.hero.cards
+      )
+        .map((card) => normalizeCard(card))
+        .slice(0, 2),
+    },
+    opponents:
+      normalizedOpponents.length > 0
+        ? normalizedOpponents
+        : parsed.opponents
+            .map((opponent, index) => ({
+              seat: normalizeReplaySeat(opponent.position),
+              name: opponent.label || `Villain ${index + 1}`,
+              stackBb: opponent.stackBb || 100,
+              holeCards: [] as string[],
+              unknownCards: true,
+            }))
+            .filter((opponent) => opponent.seat && opponent.seat !== normalizedHeroSeat),
+    buttonSeat: normalizeReplaySeat(
+      typeof data.buttonSeat === "string" ? data.buttonSeat : "",
+      normalizedHeroSeat,
+    ),
+    actions: {
+      preflop: normalizeActionArray(actionRecord.preflop),
+      flop: normalizeActionArray(actionRecord.flop),
+      turn: normalizeActionArray(actionRecord.turn),
+      river: normalizeActionArray(actionRecord.river),
+    },
+    board: {
+      flop: (
+        normalizeTextArray(boardRecord.flop).length > 0
+          ? normalizeTextArray(boardRecord.flop)
+          : parsed.board.flop
+      )
+        .map((card) => normalizeCard(card))
+        .slice(0, 3),
+      turn: normalizeCard(
+        typeof boardRecord.turn === "string" && boardRecord.turn.trim()
+          ? boardRecord.turn
+          : parsed.board.turn,
+      ),
+      river: normalizeCard(
+        typeof boardRecord.river === "string" && boardRecord.river.trim()
+          ? boardRecord.river
+          : parsed.board.river,
+      ),
+    },
+    winnerSeat: normalizeReplaySeat(
+      typeof data.winnerSeat === "string" ? data.winnerSeat : "",
+    ),
+    potBb:
+      typeof data.potBb === "number" && Number.isFinite(data.potBb)
+        ? data.potBb
+        : 0,
   };
 }
 
@@ -1055,22 +1551,262 @@ async function parseHandFromText(source: UploadSource, rawText: string) {
   ]);
 }
 
-function buildAnalysisInstructions() {
+function buildReplaySnapshotInstructions(source: UploadSource) {
   return [
-    "You are the premium poker coach inside a Texas Hold'em review app.",
-    "Analyze only what is supported by the saved hand note and extracted details.",
-    "Do not invent exact ranges, solver frequencies, or hidden cards.",
-    "If information is missing, say so in a calm and practical way.",
-    "summary should be a compact overall read of the hand.",
-    "streets should include only the relevant streets in order.",
-    "Each street highlight should explain what happened.",
-    "Each street suggestion should say what to adjust next time.",
-    "gtoTips should contain at most 4 concise strategy reminders.",
-    "encouragement should end on a constructive note, not hype.",
+    "You convert a confirmed poker hand into a replay snapshot for a Texas Hold'em app.",
+    "Output only valid JSON that matches the schema.",
+    "Use only these seats: UTG, HJ, CO, BTN, SB, BB.",
+    "Preserve action order exactly as described.",
+    "Hero must include the known hole cards when they exist.",
+    "If villain cards were not shown, use an empty holeCards array and unknownCards=true.",
+    "If an amount or final pot is unknown, use 0 instead of guessing.",
+    "If the hand ended before flop, keep flop/turn/river arrays and cards empty.",
+    "buttonSeat must be the actual button position for this hand.",
+    "winnerSeat should be empty only when the winner cannot be determined from the text.",
+    `The source is ${source}.`,
   ].join(" ");
 }
 
+async function parseReplaySnapshotFromText(
+  source: Extract<UploadSource, "voice" | "screenshot">,
+  rawText: string,
+  parsed: ParsedHandUpload,
+) {
+  const client = getOpenAIClient();
+  const completion = await client.chat.completions.create({
+    model: DEFAULT_TEXT_MODEL,
+    response_format: {
+      type: "json_schema",
+      json_schema: {
+        name: "poker_replay_snapshot",
+        strict: true,
+        schema: IMPORTED_REPLAY_RESPONSE_SCHEMA,
+      },
+    },
+    messages: [
+      {
+        role: "developer",
+        content: buildReplaySnapshotInstructions(source),
+      },
+      {
+        role: "user",
+        content: JSON.stringify(
+          {
+            source,
+            rawText,
+            parsedPreview: parsed,
+          },
+          null,
+          2,
+        ),
+      },
+    ],
+  });
+
+  const rawContent = completion.choices[0]?.message?.content;
+
+  if (!rawContent) {
+    throw new Error("The model returned an empty replay snapshot.");
+  }
+
+  return normalizeSnapshotPayload(JSON.parse(stripCodeFence(rawContent)), parsed);
+}
+
+function buildReplayArtifactsFromSnapshot(
+  snapshot: ImportedReplaySnapshot,
+  source: Extract<UploadSource, "voice" | "screenshot">,
+  id: string,
+  createdAtMs: number,
+) {
+  if (!snapshot.hero.seat || snapshot.hero.holeCards.length < 2) {
+    return null;
+  }
+
+  const hero: ManualHandSetup["hero"] = {
+    seat: snapshot.hero.seat as ManualHandSetup["hero"]["seat"],
+    name: snapshot.hero.name || "Hero",
+    stackBb: snapshot.hero.stackBb || 100,
+    holeCards: {
+      first: snapshot.hero.holeCards[0]!,
+      second: snapshot.hero.holeCards[1]!,
+    },
+  };
+
+  const opponents = snapshot.opponents
+    .filter((opponent) => opponent.seat && opponent.seat !== hero.seat)
+    .map((opponent, index) => ({
+      seat: opponent.seat as ManualHandSetup["opponents"][number]["seat"],
+      name: opponent.name || `Villain ${index + 1}`,
+      stackBb: opponent.stackBb || 100,
+      holeCards: {
+        first: opponent.holeCards[0] || "Unknown",
+        second: opponent.holeCards[1] || "Unknown",
+      },
+      unknownCards: opponent.unknownCards || opponent.holeCards.length < 2,
+    }));
+
+  if (opponents.length === 0) {
+    return null;
+  }
+
+  const actionHistory = (
+    [
+      ["preflop", snapshot.actions.preflop],
+      ["flop", snapshot.actions.flop],
+      ["turn", snapshot.actions.turn],
+      ["river", snapshot.actions.river],
+    ] as const
+  ).flatMap(([street, actions], streetIndex) =>
+    actions.map((action, index) => ({
+      street,
+      seat: action.seat as ManualHandSetup["hero"]["seat"],
+      action: action.action as ManualReplayData["actionHistory"][number]["action"],
+      amount: action.amount > 0 ? action.amount : undefined,
+      to: action.to > 0 ? action.to : undefined,
+      timestamp: streetIndex * 10_000 + index * 500,
+    })),
+  );
+
+  const players = [hero, ...opponents].map((player) => {
+    const folded = actionHistory.some(
+      (action) => action.seat === player.seat && action.action === "Fold",
+    );
+    const allIn = actionHistory.some(
+      (action) => action.seat === player.seat && action.action === "All-In",
+    );
+
+    return {
+      seat: player.seat,
+      name: player.name,
+      style: "",
+      stackBb: player.stackBb,
+      committedThisStreetBb: 0,
+      holeCards:
+        player.unknownCards ||
+        player.holeCards.first === "Unknown" ||
+        player.holeCards.second === "Unknown"
+          ? undefined
+          : player.holeCards,
+      inHand: !folded,
+      allIn,
+      isHero: player.seat === hero.seat,
+      hasActedThisRound: false,
+    };
+  });
+
+  const board = [
+    ...snapshot.board.flop,
+    ...(snapshot.board.turn ? [snapshot.board.turn] : []),
+    ...(snapshot.board.river ? [snapshot.board.river] : []),
+  ].filter(Boolean);
+  const activePlayers = players.filter((player) => player.inHand);
+  const winnerSeat =
+    snapshot.winnerSeat ||
+    (activePlayers.length === 1 ? activePlayers[0]?.seat : undefined);
+  const setup: ManualHandSetup = {
+    buttonSeat: (snapshot.buttonSeat || hero.seat) as ManualHandSetup["buttonSeat"],
+    hero,
+    opponents,
+    actionNotes: "",
+  };
+  const replay: ManualReplayData = {
+    actionHistory,
+    finalState: {
+      street: "finished",
+      potBb: snapshot.potBb || 0,
+      currentBetBb: 0,
+      lastFullRaiseBb: 0,
+      lastRaiseSizeBb: 0,
+      toActQueue: [],
+      players,
+      board,
+      finished: true,
+      winnerSeat: winnerSeat as ManualReplayData["finalState"]["winnerSeat"],
+    },
+    progressionText: "",
+  };
+
+  replay.progressionText = generateReplayLog(setup, replay.finalState, actionHistory);
+
+  return {
+    setup,
+    replay,
+    allinHand: buildAllInHandRecord(
+      id,
+      createdAtMs,
+      setup,
+      replay,
+      source,
+      null,
+    ),
+  };
+}
+
+function buildAnalysisInstructions() {
+  return `
+♟️ AI Texas Hold'em Coach (GTO & Exploit Expert)
+
+CORE:
+Analyze strictly from provided JSON data only.
+Judge each Hero DECISION as CORRECT or INCORRECT.
+Focus on decision quality, not outcome or luck.
+
+1. Verdict First
+- Each street where Hero has a decision must start markdown_content with Correct. or Incorrect.
+- No hedging and no delayed verdicts.
+
+2. Correct
+- Explain why the decision is correct using range, EV, blocker, or sizing logic.
+
+3. Incorrect
+- State clearly that it is wrong.
+- State the correct action and explain the EV / range mistake.
+
+4. No-Decision Streets
+- If Hero had no real choice because the money was already in or Hero was no longer in the hand:
+  - rating = Good
+  - markdown_content starts with Correct.
+  - say clearly that no decision existed on that street.
+
+5. Language
+- ENGLISH ONLY.
+- Valid JSON only.
+- Use the schema exactly.
+- Exactly 3 gto_tips.
+`.trim();
+}
+
 async function analyzeSavedHand(item: SavedHandUpload) {
+  const allinHand = getAllInHandRecord(item);
+  const heroPlayer = allinHand?.setup.players.find(
+    (player) => player.seat === allinHand.setup.heroSeat,
+  );
+  const boardCards = [
+    ...(allinHand?.streets.flop?.board || []),
+    ...(allinHand?.streets.turn?.card ? [allinHand.streets.turn.card] : []),
+    ...(allinHand?.streets.river?.card ? [allinHand.streets.river.card] : []),
+  ].filter(Boolean);
+  const actionLog = [
+    `Preflop: ${(allinHand?.streets.preflop || [])
+      .map((action) => `${action.seat} ${action.action}${typeof action.amount === "number" ? ` ${action.amount}bb` : ""}${typeof action.to === "number" ? ` to ${action.to}bb` : ""}`)
+      .join(", ")}`,
+    allinHand?.streets.flop
+      ? `Flop [${allinHand.streets.flop.board?.join(" ") || ""}]: ${allinHand.streets.flop.actions
+          .map((action) => `${action.seat} ${action.action}${typeof action.amount === "number" ? ` ${action.amount}bb` : ""}${typeof action.to === "number" ? ` to ${action.to}bb` : ""}`)
+          .join(", ")}`
+      : "",
+    allinHand?.streets.turn
+      ? `Turn [${allinHand.streets.turn.card || ""}]: ${allinHand.streets.turn.actions
+          .map((action) => `${action.seat} ${action.action}${typeof action.amount === "number" ? ` ${action.amount}bb` : ""}${typeof action.to === "number" ? ` to ${action.to}bb` : ""}`)
+          .join(", ")}`
+      : "",
+    allinHand?.streets.river
+      ? `River [${allinHand.streets.river.card || ""}]: ${allinHand.streets.river.actions
+          .map((action) => `${action.seat} ${action.action}${typeof action.amount === "number" ? ` ${action.amount}bb` : ""}${typeof action.to === "number" ? ` to ${action.to}bb` : ""}`)
+          .join(", ")}`
+      : "",
+  ].filter(Boolean);
+
   const client = getOpenAIClient();
   const completion = await client.chat.completions.create({
     model: DEFAULT_ANALYSIS_MODEL,
@@ -1101,6 +1837,40 @@ async function analyzeSavedHand(item: SavedHandUpload) {
             board: item.board,
             keyActions: item.keyActions,
             missingDetails: item.missingDetails,
+            handFacts: allinHand
+              ? {
+                  hero_seat: allinHand.setup.heroSeat,
+                  hero_name: heroPlayer?.name || "Hero",
+                  hero_hand: heroPlayer?.hole
+                    ? [heroPlayer.hole.first, heroPlayer.hole.second]
+                    : item.hero.cards,
+                  board_cards: boardCards,
+                  actions_log: actionLog.join("\n"),
+                  pot_size_bb: allinHand.result.pots[0]?.sizeBb || 0,
+                  street:
+                    boardCards.length >= 5
+                      ? "river"
+                      : boardCards.length >= 4
+                        ? "turn"
+                        : boardCards.length >= 3
+                          ? "flop"
+                          : "preflop",
+                  players: allinHand.setup.players.map((player) => ({
+                    seat: player.seat,
+                    name: player.name,
+                    stack_bb: player.stackBb,
+                    in_hand:
+                      !allinHand.actionHistory?.some(
+                        (action) =>
+                          action.seat === player.seat && action.action === "Fold",
+                      ),
+                    is_hero: player.seat === allinHand.setup.heroSeat,
+                    hole_cards: player.hole
+                      ? [player.hole.first, player.hole.second]
+                      : null,
+                  })),
+                }
+              : null,
             manualReplay: item.manualReplay
               ? {
                   progressionText: item.manualReplay.progressionText,
@@ -1530,8 +2300,29 @@ export async function savePremiumUploadFromText(
 
   ensureValidExtraction(parsed);
 
+  let replayArtifacts: ReturnType<typeof buildReplayArtifactsFromSnapshot> | null = null;
   try {
-    return await saveUploadRecord(viewerId, source, rawInput, parsed, null);
+    const snapshot = await parseReplaySnapshotFromText(source, rawInput, parsed);
+    replayArtifacts = buildReplayArtifactsFromSnapshot(
+      snapshot,
+      source,
+      crypto.randomUUID(),
+      Date.now(),
+    );
+  } catch (error) {
+    logUploadStageError(source, "save", error);
+  }
+
+  try {
+    return await saveUploadRecord(
+      viewerId,
+      source,
+      rawInput,
+      parsed,
+      null,
+      replayArtifacts?.setup ?? null,
+      replayArtifacts?.replay ?? null,
+    );
   } catch (error) {
     logUploadStageError(source, "save", error);
     throw new Error("Saving the uploaded hand failed.");
@@ -1539,13 +2330,50 @@ export async function savePremiumUploadFromText(
 }
 
 export async function getViewerUpload(viewerId: string, uploadId: string) {
-  const doc = await uploadEntryDoc(viewerId, uploadId).get();
+  const docRef = uploadEntryDoc(viewerId, uploadId);
+  const doc = await docRef.get();
 
   if (!doc.exists) {
     throw new Error("Hand upload not found.");
   }
 
-  return doc.data() as SavedHandUpload;
+  const item = doc.data() as SavedHandUpload;
+
+  if (
+    !item.manualSetup &&
+    !item.manualReplay &&
+    (item.source === "voice" || item.source === "screenshot")
+  ) {
+    try {
+      const snapshot = await parseReplaySnapshotFromText(
+        item.source,
+        item.rawInput || item.normalizedHandText,
+        item,
+      );
+      const replayArtifacts = buildReplayArtifactsFromSnapshot(
+        snapshot,
+        item.source,
+        item.id,
+        item.createdAtMs,
+      );
+
+      if (replayArtifacts) {
+        const nextItem = stripUndefinedDeep({
+          ...item,
+          manualSetup: replayArtifacts.setup,
+          manualReplay: replayArtifacts.replay,
+          allinHand: replayArtifacts.allinHand,
+        }) as SavedHandUpload;
+
+        await docRef.set(nextItem, { merge: true });
+        return nextItem;
+      }
+    } catch (error) {
+      logUploadStageError(item.source, "save", error);
+    }
+  }
+
+  return item;
 }
 
 export async function deleteViewerUpload(viewerId: string, uploadId: string) {
@@ -1579,27 +2407,61 @@ export async function analyzeViewerUpload(
 
   const item = snapshot.data() as SavedHandUpload;
 
-  if (item.analysis && !options?.force) {
-    return item;
+  let nextItem = item;
+
+  if (
+    !nextItem.manualSetup &&
+    !nextItem.manualReplay &&
+    (nextItem.source === "voice" || nextItem.source === "screenshot")
+  ) {
+    try {
+      const replaySnapshot = await parseReplaySnapshotFromText(
+        nextItem.source,
+        nextItem.rawInput || nextItem.normalizedHandText,
+        nextItem,
+      );
+      const replayArtifacts = buildReplayArtifactsFromSnapshot(
+        replaySnapshot,
+        nextItem.source,
+        nextItem.id,
+        nextItem.createdAtMs,
+      );
+
+      if (replayArtifacts) {
+        nextItem = stripUndefinedDeep({
+          ...nextItem,
+          manualSetup: replayArtifacts.setup,
+          manualReplay: replayArtifacts.replay,
+          allinHand: replayArtifacts.allinHand,
+        }) as SavedHandUpload;
+        await docRef.set(nextItem, { merge: true });
+      }
+    } catch (error) {
+      logUploadStageError(nextItem.source, "save", error);
+    }
   }
 
-  const analysis = await analyzeSavedHand(item);
-  const nextItem = {
-    ...item,
-    allinHand: item.manualSetup && item.manualReplay
+  if (nextItem.analysis && !options?.force) {
+    return nextItem;
+  }
+
+  const analysis = await analyzeSavedHand(nextItem);
+  const analyzedItem = {
+    ...nextItem,
+    allinHand: nextItem.manualSetup && nextItem.manualReplay
       ? buildAllInHandRecord(
-          item.id,
-          item.createdAtMs,
-          item.manualSetup,
-          item.manualReplay,
-          item.source,
+          nextItem.id,
+          nextItem.createdAtMs,
+          nextItem.manualSetup,
+          nextItem.manualReplay,
+          nextItem.source,
           analysis,
         )
-      : item.allinHand ?? null,
+      : nextItem.allinHand ?? null,
     analysis,
   } satisfies SavedHandUpload;
 
-  const sanitizedNextItem = stripUndefinedDeep(nextItem) as SavedHandUpload;
+  const sanitizedNextItem = stripUndefinedDeep(analyzedItem) as SavedHandUpload;
 
   await docRef.set(sanitizedNextItem, { merge: true });
   return sanitizedNextItem;

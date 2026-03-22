@@ -261,6 +261,19 @@ export function HandReviewStudio({
     setDraftError("");
   }
 
+  function openSavedHand(itemId: string) {
+    setOpenHandId(itemId);
+    setAutoAnalyzeHandId("");
+    previousOpenHandIdRef.current = "";
+    window.requestAnimationFrame(() => {
+      replayPanelRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+    router.replace(`/hand-review?handId=${itemId}`, { scroll: false });
+  }
+
   function handleSourceSelect(source: UploadSource) {
     resetMessages();
 
@@ -716,12 +729,13 @@ export function HandReviewStudio({
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <p className="text-sm leading-6 text-[#d8f3b1]">{notice}</p>
                 {lastSavedItem ? (
-                  <Link
-                    href={`/hand-review?handId=${lastSavedItem.id}`}
+                  <button
+                    type="button"
+                    onClick={() => openSavedHand(lastSavedItem.id)}
                     className="btn-primary"
                   >
                     Open Saved Hand
-                  </Link>
+                  </button>
                 ) : null}
               </div>
             )}

@@ -218,7 +218,7 @@ export function HandHistoryBrowser() {
                         href={`/hand-review?handId=${item.id}`}
                         className={item.analysis ? "btn-secondary" : "btn-primary"}
                       >
-                        {item.analysis ? "View Analysis" : "Analyze"}
+                        {item.analysis ? "Open Hand" : "Open Replay"}
                       </Link>
                     </div>
                   </article>
