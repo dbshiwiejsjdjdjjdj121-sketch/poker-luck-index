@@ -11,9 +11,11 @@ import {
   type PremiumAction,
 } from "@/components/premium-action-gate-modal";
 import { SavedHandReplayPanel } from "@/components/saved-hand-replay-panel";
+import { UploadTextConfirmModal } from "@/components/upload-text-confirm-modal";
 import { useAuth } from "@/components/auth-provider";
 import { useSubscription } from "@/components/subscription-provider";
 import {
+  type ExtractedUploadDraft,
   type ManualHandSetup,
   type ManualReplayData,
   uploadSourceLabels,
@@ -66,6 +68,10 @@ export function HandReviewStudio({
   const [manualSetup, setManualSetup] = useState<ManualHandSetup | null>(null);
   const [gateAction, setGateAction] = useState<PremiumAction | null>(null);
   const [gateOpen, setGateOpen] = useState(false);
+  const [uploadDraft, setUploadDraft] = useState<ExtractedUploadDraft | null>(null);
+  const [textConfirmOpen, setTextConfirmOpen] = useState(false);
+  const [draftSaving, setDraftSaving] = useState(false);
+  const [draftError, setDraftError] = useState("");
   const replayPanelRef = useRef<HTMLDivElement | null>(null);
   const previousOpenHandIdRef = useRef("");
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -150,8 +156,15 @@ export function HandReviewStudio({
 
   function openGate(action: PremiumAction) {
     resetMessages();
+    setDraftError("");
     setGateAction(action);
     setGateOpen(true);
+  }
+
+  function closeTextConfirm() {
+    setTextConfirmOpen(false);
+    setUploadDraft(null);
+    setDraftError("");
   }
 
   function handleSourceSelect(source: UploadSource) {
@@ -268,17 +281,22 @@ export function HandReviewStudio({
         body: formData,
       });
       const data = (await response.json()) as {
-        item?: SavedHandUpload;
+        extractedText?: string;
+        preview?: ExtractedUploadDraft["preview"];
         error?: string;
       };
 
-      if (!response.ok || !data.item) {
+      if (!response.ok || !data.extractedText || !data.preview) {
         throw new Error(data.error || "Screenshot upload failed.");
       }
 
-      setLastSavedItem(data.item);
-      clearImage();
-      setNotice("Screenshot saved. Open it from History when you are ready.");
+      setDraftError("");
+      setUploadDraft({
+        source: "screenshot",
+        extractedText: data.extractedText,
+        preview: data.preview,
+      });
+      setTextConfirmOpen(true);
     } catch (submitError) {
       setError(
         submitError instanceof Error
@@ -319,17 +337,22 @@ export function HandReviewStudio({
         body: formData,
       });
       const data = (await response.json()) as {
-        item?: SavedHandUpload;
+        extractedText?: string;
+        preview?: ExtractedUploadDraft["preview"];
         error?: string;
       };
 
-      if (!response.ok || !data.item) {
+      if (!response.ok || !data.extractedText || !data.preview) {
         throw new Error(data.error || "Voice upload failed.");
       }
 
-      setLastSavedItem(data.item);
-      clearAudio();
-      setNotice("Voice upload saved. Open it from History when you are ready.");
+      setDraftError("");
+      setUploadDraft({
+        source: "voice",
+        extractedText: data.extractedText,
+        preview: data.preview,
+      });
+      setTextConfirmOpen(true);
     } catch (submitError) {
       setError(
         submitError instanceof Error
@@ -338,6 +361,63 @@ export function HandReviewStudio({
       );
     } finally {
       setBusySource(null);
+    }
+  }
+
+  async function handleConfirmDraft(nextText: string) {
+    if (!viewerId || !uploadDraft) {
+      return;
+    }
+
+    setDraftSaving(true);
+    setDraftError("");
+    setError("");
+    setNotice("");
+
+    try {
+      const idToken = await getIdToken();
+      const response = await fetch("/api/hand-uploads/confirm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(idToken ? { Authorization: `Bearer ${idToken}` } : {}),
+        },
+        body: JSON.stringify({
+          viewerId,
+          source: uploadDraft.source,
+          handText: nextText,
+        }),
+      });
+      const data = (await response.json()) as {
+        item?: SavedHandUpload;
+        error?: string;
+      };
+
+      if (!response.ok || !data.item) {
+        throw new Error(data.error || "Unable to save this extracted hand.");
+      }
+
+      setLastSavedItem(data.item);
+      setOpenHandId(data.item.id);
+      setAutoAnalyzeHandId("");
+      setNotice("Hand saved. Replay is ready below.");
+      router.replace(`/hand-review?handId=${data.item.id}`, { scroll: false });
+
+      if (uploadDraft.source === "voice") {
+        clearAudio();
+      } else {
+        clearImage();
+      }
+
+      closeTextConfirm();
+    } catch (confirmError) {
+      setDraftError(
+        confirmError instanceof Error
+          ? confirmError.message
+          : "Unable to save this extracted hand.",
+      );
+    } finally {
+      setDraftSaving(false);
     }
   }
 
@@ -671,7 +751,7 @@ export function HandReviewStudio({
                     disabled={busySource === "voice" || !selectedAudio}
                     className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                   >
-                    {busySource === "voice" ? "Transcribing..." : "Transcribe & Save"}
+                    {busySource === "voice" ? "Transcribing..." : "Transcribe Voice"}
                   </button>
                 </div>
               </div>
@@ -758,7 +838,7 @@ export function HandReviewStudio({
                   disabled={busySource === "screenshot" || !selectedImage}
                   className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
                 >
-                  {busySource === "screenshot" ? "Reading Image..." : "Read & Save"}
+                  {busySource === "screenshot" ? "Reading Image..." : "Read Screenshot"}
                 </button>
               </div>
             </div>
@@ -785,6 +865,15 @@ export function HandReviewStudio({
           }}
         />
       ) : null}
+
+      <UploadTextConfirmModal
+        open={textConfirmOpen}
+        draft={uploadDraft}
+        saving={draftSaving}
+        error={draftError}
+        onClose={closeTextConfirm}
+        onConfirm={handleConfirmDraft}
+      />
 
       <PremiumActionGateModal
         open={gateOpen}

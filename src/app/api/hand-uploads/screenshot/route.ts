@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import {
+  extractScreenshotUploadDraft,
   handUploadRuntimeConfigured,
-  processScreenshotUpload,
   resolveViewerId,
 } from "@/lib/hand-upload-server";
 import { assertPremiumAccess } from "@/lib/subscription-server";
@@ -49,25 +49,38 @@ export async function POST(request: Request) {
     }
 
     const buffer = Buffer.from(await fileEntry.arrayBuffer());
-    const item = await processScreenshotUpload(
-      viewerId,
+    const draft = await extractScreenshotUploadDraft(
       buffer,
       fileEntry.name || "hand-screenshot.jpg",
       fileEntry.type || "image/jpeg",
     );
 
-    return NextResponse.json({ item });
+    return NextResponse.json(draft);
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Screenshot upload failed.";
+    const lowerMessage = message.toLowerCase();
     const status =
-      message.toLowerCase().includes("premium subscription") ||
-      message.toLowerCase().includes("sign in to use premium")
+      lowerMessage.includes("premium subscription") ||
+      lowerMessage.includes("sign in to use premium")
         ? 403
-        : message.toLowerCase().includes("enough poker") ||
-            message.toLowerCase().includes("did not contain enough")
+        : lowerMessage.includes("heic screenshots are not supported") ||
+            lowerMessage.includes("export the screenshot as jpg") ||
+            lowerMessage.includes("export the screenshot as png")
+        ? 415
+        : lowerMessage.includes("enough poker") ||
+            lowerMessage.includes("did not contain enough")
         ? 422
+        : lowerMessage.includes("openai") ||
+            lowerMessage.includes("parsing")
+        ? 502
+        : lowerMessage.includes("firebase") ||
+            lowerMessage.includes("storage") ||
+            lowerMessage.includes("saving the screenshot upload record")
+        ? 500
         : 400;
+
+    console.error("[api/hand-uploads/screenshot] request failed", error);
 
     return NextResponse.json({ error: message }, { status });
   }

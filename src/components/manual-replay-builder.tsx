@@ -303,7 +303,11 @@ export function ManualReplayBuilder({
         setup={setup}
         handState={handState}
         topRightControl={
-          <button type="button" onClick={onEditSetup} className="btn-secondary">
+          <button
+            type="button"
+            onClick={onEditSetup}
+            className="btn-primary min-h-[44px] px-4 py-2"
+          >
             Edit Setup
           </button>
         }
@@ -335,17 +339,17 @@ export function ManualReplayBuilder({
                 Replay Controls
               </p>
               <h3 className="mt-3 font-heading text-3xl text-white">
-                {pendingStreet
-                  ? `Set ${pendingStreet[0]?.toUpperCase()}${pendingStreet.slice(1)}`
-                  : currentSeat
+                {currentSeat
                     ? `${currentSeat} To Act`
                     : handFinished
                       ? "Hand Complete"
-                      : "Replay In Progress"}
+                      : pendingStreet
+                        ? `Pick ${pendingStreet[0]?.toUpperCase()}${pendingStreet.slice(1)}`
+                        : "Replay In Progress"}
               </h3>
               <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
                 {pendingStreet
-                  ? "Pick board cards the same way the desktop replay flow does before the next action opens."
+                  ? "Choose the board cards below, then use the purple button next to the board to continue."
                   : currentPlayer
                     ? `${currentPlayer.name} has ${currentPlayer.stackBb}bb behind. Pot is ${handState.potBb}bb.`
                     : saving

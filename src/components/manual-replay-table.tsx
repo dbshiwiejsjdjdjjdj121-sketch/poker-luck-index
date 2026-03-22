@@ -11,17 +11,16 @@ import type {
 
 const SEAT_LAYOUT: Record<
   ReplaySeatPosition,
-  { style: CSSProperties; align?: "left" | "center" | "right" }
+  { style: CSSProperties }
 > = {
-  BTN: { style: { left: "7%", top: "14%" }, align: "left" },
-  SB: { style: { left: "50%", top: "2%", transform: "translateX(-50%)" }, align: "center" },
-  BB: { style: { right: "7%", top: "14%" }, align: "right" },
-  UTG: { style: { right: "7%", bottom: "14%" }, align: "right" },
+  BTN: { style: { left: "7%", top: "14%" } },
+  SB: { style: { left: "50%", top: "2%", transform: "translateX(-50%)" } },
+  BB: { style: { right: "7%", top: "14%" } },
+  UTG: { style: { right: "7%", bottom: "14%" } },
   HJ: {
     style: { left: "50%", bottom: "1%", transform: "translateX(-50%)" },
-    align: "center",
   },
-  CO: { style: { left: "7%", bottom: "14%" }, align: "left" },
+  CO: { style: { left: "7%", bottom: "14%" } },
 };
 
 function formatPot(value: number) {
@@ -33,13 +32,11 @@ function SeatCard({
   setup,
   isCurrent,
   isWinner,
-  align = "left",
 }: {
   player: ReplayPlayerState | undefined;
   setup: ManualHandSetup;
   isCurrent: boolean;
   isWinner: boolean;
-  align?: "left" | "center" | "right";
 }) {
   if (!player) {
     return null;
@@ -65,17 +62,9 @@ function SeatCard({
               : "border-white/6 opacity-45"
       } ${isCurrent ? "ring-2 ring-[rgba(214,178,93,0.5)]" : ""}`}
     >
-      <p className="text-[0.72rem] uppercase tracking-[0.28em] text-white/58">{player.seat}</p>
+      <p className="text-[0.78rem] uppercase tracking-[0.28em] text-white/72">{player.seat}</p>
 
-      <div
-        className={`mt-3 flex gap-2 ${
-          align === "right"
-            ? "justify-end"
-            : align === "center"
-              ? "justify-center"
-              : "justify-start"
-        }`}
-      >
+      <div className="mt-3 flex justify-center gap-2">
         {cards.map((card, index) => (
           <PokerCardImage
             key={`${player.seat}-${index}`}
@@ -110,11 +99,15 @@ export function ManualReplayTable({
         <div className="mx-auto aspect-[1.48/1] max-w-5xl">
           <div className="absolute inset-[7%_6%_8%] rounded-[30px] border border-white/7 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]" />
 
-          <div className="absolute inset-[20%_16%_16%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
-
           {topRightControl ? (
-            <div className="absolute right-[8%] top-[8%] z-20">{topRightControl}</div>
+            <div className="absolute inset-[7%_6%_8%] pointer-events-none z-20">
+              <div className="absolute right-4 top-4 pointer-events-auto">
+                {topRightControl}
+              </div>
+            </div>
           ) : null}
+
+          <div className="absolute inset-[20%_16%_16%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
 
           <div className="absolute left-1/2 top-[31%] -translate-x-1/2">
             <div className="rounded-full border border-[var(--border-strong)] bg-black/25 px-4 py-2 text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
@@ -134,37 +127,36 @@ export function ManualReplayTable({
             </div>
           </div>
 
-          <div className="absolute left-1/2 top-[58%] flex -translate-x-1/2 justify-center gap-2">
-            {Array.from({ length: 5 }).map((_, index) => {
-              const card = handState.board[index];
+          <div className="absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2">
+            <div className="flex items-center justify-center gap-4">
+              <div className="flex justify-center gap-2">
+                {Array.from({ length: 5 }).map((_, index) => {
+                  const card = handState.board[index];
 
-              return card ? (
-                <PokerCardImage
-                  key={`board-${index}`}
-                  card={card}
-                  alt={`Board card ${index + 1}`}
-                  sizes="50px"
-                  className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                />
-              ) : (
-                <div
-                  key={`board-${index}`}
-                  className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                >
-                  ?
-                </div>
-              );
-            })}
-          </div>
+                  return card ? (
+                    <PokerCardImage
+                      key={`board-${index}`}
+                      card={card}
+                      alt={`Board card ${index + 1}`}
+                      sizes="50px"
+                      className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                    />
+                  ) : (
+                    <div
+                      key={`board-${index}`}
+                      className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                    >
+                      ?
+                    </div>
+                  );
+                })}
+              </div>
 
-          {boardActionControl ? (
-            <div
-              className="absolute top-[58%] z-10 hidden -translate-y-1/2 sm:block"
-              style={{ left: "calc(50% + 170px)" }}
-            >
-              {boardActionControl}
+              {boardActionControl ? (
+                <div className="hidden shrink-0 sm:block">{boardActionControl}</div>
+              ) : null}
             </div>
-          ) : null}
+          </div>
 
           {(["BTN", "SB", "BB", "UTG", "HJ", "CO"] as ReplaySeatPosition[]).map((seat) => (
             <div key={seat} className="absolute" style={SEAT_LAYOUT[seat].style}>
@@ -173,7 +165,6 @@ export function ManualReplayTable({
                 setup={setup}
                 isCurrent={handState.toActQueue[0] === seat}
                 isWinner={handState.winnerSeat === seat}
-                align={SEAT_LAYOUT[seat].align}
               />
             </div>
           ))}

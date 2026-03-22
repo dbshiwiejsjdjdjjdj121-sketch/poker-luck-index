@@ -210,6 +210,185 @@ function uniqueStrings(values: string[]) {
   return [...new Set(values.filter(Boolean))];
 }
 
+function hasMagicBytes(
+  buffer: Buffer,
+  offset: number,
+  bytes: number[],
+) {
+  return bytes.every((byte, index) => buffer[offset + index] === byte);
+}
+
+function detectAudioFormat(buffer: Buffer) {
+  if (buffer.byteLength >= 4 && hasMagicBytes(buffer, 0, [0x1a, 0x45, 0xdf, 0xa3])) {
+    return {
+      mimeType: "audio/webm",
+      extension: "webm",
+      label: "WebM audio",
+    };
+  }
+
+  if (buffer.byteLength >= 4 && buffer.subarray(0, 4).toString("ascii") === "OggS") {
+    return {
+      mimeType: "audio/ogg",
+      extension: "ogg",
+      label: "Ogg audio",
+    };
+  }
+
+  if (
+    buffer.byteLength >= 12 &&
+    buffer.subarray(0, 4).toString("ascii") === "RIFF" &&
+    buffer.subarray(8, 12).toString("ascii") === "WAVE"
+  ) {
+    return {
+      mimeType: "audio/wav",
+      extension: "wav",
+      label: "WAV audio",
+    };
+  }
+
+  if (
+    buffer.byteLength >= 3 &&
+    (buffer.subarray(0, 3).toString("ascii") === "ID3" ||
+      (buffer[0] === 0xff && (buffer[1] & 0xe0) === 0xe0))
+  ) {
+    return {
+      mimeType: "audio/mpeg",
+      extension: "mp3",
+      label: "MP3 audio",
+    };
+  }
+
+  if (
+    buffer.byteLength >= 12 &&
+    buffer.subarray(4, 8).toString("ascii") === "ftyp"
+  ) {
+    return {
+      mimeType: "audio/mp4",
+      extension: "m4a",
+      label: "M4A audio",
+    };
+  }
+
+  return null;
+}
+
+function detectImageFormat(buffer: Buffer) {
+  if (
+    buffer.byteLength >= 8 &&
+    hasMagicBytes(buffer, 0, [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])
+  ) {
+    return {
+      mimeType: "image/png",
+      extension: "png",
+      label: "PNG image",
+      supported: true,
+    };
+  }
+
+  if (
+    buffer.byteLength >= 3 &&
+    hasMagicBytes(buffer, 0, [0xff, 0xd8, 0xff])
+  ) {
+    return {
+      mimeType: "image/jpeg",
+      extension: "jpg",
+      label: "JPEG image",
+      supported: true,
+    };
+  }
+
+  if (
+    buffer.byteLength >= 12 &&
+    buffer.subarray(0, 4).toString("ascii") === "RIFF" &&
+    buffer.subarray(8, 12).toString("ascii") === "WEBP"
+  ) {
+    return {
+      mimeType: "image/webp",
+      extension: "webp",
+      label: "WebP image",
+      supported: true,
+    };
+  }
+
+  if (
+    buffer.byteLength >= 12 &&
+    buffer.subarray(4, 8).toString("ascii") === "ftyp"
+  ) {
+    const brand = buffer.subarray(8, 12).toString("ascii").toLowerCase();
+    const heifBrands = new Set([
+      "heic",
+      "heix",
+      "hevc",
+      "hevx",
+      "mif1",
+      "msf1",
+    ]);
+
+    if (heifBrands.has(brand)) {
+      return {
+        mimeType: "image/heic",
+        extension: "heic",
+        label: "HEIC image",
+        supported: false,
+      };
+    }
+  }
+
+  return null;
+}
+
+function normalizeOpenAIAudioFile(
+  buffer: Buffer,
+  originalName: string,
+) {
+  const detected = detectAudioFormat(buffer);
+
+  if (!detected) {
+    throw new Error(
+      "This audio format is not supported yet. Export it as WebM, WAV, MP3, or M4A first.",
+    );
+  }
+
+  const baseName =
+    originalName.replace(/\.[^.]+$/, "").trim() || `voice-note-${Date.now()}`;
+
+  return {
+    normalizedName: `${baseName}.${detected.extension}`,
+    normalizedMimeType: detected.mimeType,
+    detectedLabel: detected.label,
+  };
+}
+
+function normalizeOpenAIImageFile(
+  buffer: Buffer,
+  originalName: string,
+  mimeType: string,
+) {
+  const detected = detectImageFormat(buffer);
+
+  if (!detected) {
+    return {
+      normalizedName: originalName,
+      normalizedMimeType: mimeType,
+    };
+  }
+
+  if (!detected.supported) {
+    throw new Error(
+      "HEIC screenshots are not supported in this upload flow yet. Export the screenshot as JPG or PNG first.",
+    );
+  }
+
+  const baseName =
+    originalName.replace(/\.[^.]+$/, "").trim() || `hand-screenshot-${Date.now()}`;
+
+  return {
+    normalizedName: `${baseName}.${detected.extension}`,
+    normalizedMimeType: detected.mimeType,
+  };
+}
+
 function stripUndefinedDeep<T>(value: T): T {
   if (Array.isArray(value)) {
     return value
@@ -957,7 +1136,12 @@ async function parseHandFromImage(
   mimeType: string,
   originalName: string,
 ) {
-  const dataUrl = `data:${mimeType};base64,${buffer.toString("base64")}`;
+  const { normalizedMimeType, normalizedName } = normalizeOpenAIImageFile(
+    buffer,
+    originalName,
+    mimeType,
+  );
+  const dataUrl = `data:${normalizedMimeType};base64,${buffer.toString("base64")}`;
 
   return parseModelJsonResponse("screenshot", [
     {
@@ -965,7 +1149,7 @@ async function parseHandFromImage(
       content: [
         {
           type: "text",
-          text: `Extract the poker hand from this screenshot. File name: ${originalName}.`,
+          text: `Extract the poker hand from this screenshot. File name: ${normalizedName}.`,
         },
         {
           type: "image_url",
@@ -979,9 +1163,13 @@ async function parseHandFromImage(
   ]);
 }
 
-async function transcribeAudio(buffer: Buffer, originalName: string, mimeType: string) {
+async function transcribeAudio(buffer: Buffer, originalName: string) {
   const client = getOpenAIClient();
-  const file = await toFile(buffer, originalName, { type: mimeType });
+  const { normalizedName, normalizedMimeType } = normalizeOpenAIAudioFile(
+    buffer,
+    originalName,
+  );
+  const file = await toFile(buffer, normalizedName, { type: normalizedMimeType });
   const transcription = await client.audio.transcriptions.create({
     file,
     model: DEFAULT_TRANSCRIPTION_MODEL,
@@ -1036,6 +1224,14 @@ async function uploadMedia(
     originalName,
     bytes: buffer.byteLength,
   };
+}
+
+function logUploadStageError(
+  source: UploadSource,
+  stage: "transcription" | "parsing" | "storage" | "save",
+  error: unknown,
+) {
+  console.error(`[hand-upload:${source}] ${stage} failed`, error);
 }
 
 function serializeSavedUpload(
@@ -1184,14 +1380,68 @@ export async function processAudioUpload(
 ) {
   ensureFileSize(buffer, MAX_AUDIO_BYTES, "Audio file");
 
-  const transcript = await transcribeAudio(buffer, originalName, mimeType);
-  const parsed = await parseHandFromText("voice", transcript);
+  let transcript = "";
+  try {
+    transcript = await transcribeAudio(buffer, originalName);
+  } catch (error) {
+    logUploadStageError("voice", "transcription", error);
+    throw new Error("OpenAI transcription failed for this audio file.");
+  }
+
+  let parsed: ParsedHandUpload;
+  try {
+    parsed = await parseHandFromText("voice", transcript);
+  } catch (error) {
+    logUploadStageError("voice", "parsing", error);
+    throw new Error("OpenAI hand extraction failed for this audio file.");
+  }
 
   ensureValidExtraction(parsed);
 
-  const media = await uploadMedia(viewerId, "voice", buffer, mimeType, originalName);
+  let media: StoredUploadMedia;
+  try {
+    media = await uploadMedia(viewerId, "voice", buffer, mimeType, originalName);
+  } catch (error) {
+    logUploadStageError("voice", "storage", error);
+    throw new Error("Firebase media storage failed while saving this audio file.");
+  }
 
-  return saveUploadRecord(viewerId, "voice", transcript, parsed, media);
+  try {
+    return await saveUploadRecord(viewerId, "voice", transcript, parsed, media);
+  } catch (error) {
+    logUploadStageError("voice", "save", error);
+    throw new Error("Saving the audio upload record failed.");
+  }
+}
+
+export async function extractAudioUploadDraft(
+  buffer: Buffer,
+  originalName: string,
+) {
+  ensureFileSize(buffer, MAX_AUDIO_BYTES, "Audio file");
+
+  let transcript = "";
+  try {
+    transcript = await transcribeAudio(buffer, originalName);
+  } catch (error) {
+    logUploadStageError("voice", "transcription", error);
+    throw new Error("OpenAI transcription failed for this audio file.");
+  }
+
+  let parsed: ParsedHandUpload;
+  try {
+    parsed = await parseHandFromText("voice", transcript);
+  } catch (error) {
+    logUploadStageError("voice", "parsing", error);
+    throw new Error("OpenAI hand extraction failed for this audio file.");
+  }
+
+  ensureValidExtraction(parsed);
+
+  return {
+    extractedText: parsed.sourceText || parsed.normalizedHandText || transcript,
+    preview: parsed,
+  };
 }
 
 export async function processScreenshotUpload(
@@ -1202,25 +1452,90 @@ export async function processScreenshotUpload(
 ) {
   ensureFileSize(buffer, MAX_IMAGE_BYTES, "Image file");
 
-  const parsed = await parseHandFromImage(buffer, mimeType, originalName);
+  let parsed: ParsedHandUpload;
+  try {
+    parsed = await parseHandFromImage(buffer, mimeType, originalName);
+  } catch (error) {
+    logUploadStageError("screenshot", "parsing", error);
+    throw new Error("OpenAI image parsing failed for this screenshot.");
+  }
 
   ensureValidExtraction(parsed);
 
-  const media = await uploadMedia(
-    viewerId,
-    "screenshot",
-    buffer,
-    mimeType,
-    originalName,
-  );
+  let media: StoredUploadMedia;
+  try {
+    media = await uploadMedia(
+      viewerId,
+      "screenshot",
+      buffer,
+      mimeType,
+      originalName,
+    );
+  } catch (error) {
+    logUploadStageError("screenshot", "storage", error);
+    throw new Error("Firebase media storage failed while saving this screenshot.");
+  }
 
-  return saveUploadRecord(
-    viewerId,
-    "screenshot",
-    parsed.sourceText || originalName,
-    parsed,
-    media,
-  );
+  try {
+    return await saveUploadRecord(
+      viewerId,
+      "screenshot",
+      parsed.sourceText || originalName,
+      parsed,
+      media,
+    );
+  } catch (error) {
+    logUploadStageError("screenshot", "save", error);
+    throw new Error("Saving the screenshot upload record failed.");
+  }
+}
+
+export async function extractScreenshotUploadDraft(
+  buffer: Buffer,
+  originalName: string,
+  mimeType: string,
+) {
+  ensureFileSize(buffer, MAX_IMAGE_BYTES, "Image file");
+
+  let parsed: ParsedHandUpload;
+  try {
+    parsed = await parseHandFromImage(buffer, mimeType, originalName);
+  } catch (error) {
+    logUploadStageError("screenshot", "parsing", error);
+    throw new Error("OpenAI image parsing failed for this screenshot.");
+  }
+
+  ensureValidExtraction(parsed);
+
+  return {
+    extractedText: parsed.sourceText || parsed.normalizedHandText || originalName,
+    preview: parsed,
+  };
+}
+
+export async function savePremiumUploadFromText(
+  viewerId: string,
+  source: Extract<UploadSource, "voice" | "screenshot">,
+  handText: string,
+) {
+  const rawInput = ensureManualText(handText);
+
+  let parsed: ParsedHandUpload;
+  try {
+    parsed = await parseHandFromText(source, rawInput);
+  } catch (error) {
+    logUploadStageError(source, "parsing", error);
+    throw new Error("OpenAI hand extraction failed for this hand text.");
+  }
+
+  ensureValidExtraction(parsed);
+
+  try {
+    return await saveUploadRecord(viewerId, source, rawInput, parsed, null);
+  } catch (error) {
+    logUploadStageError(source, "save", error);
+    throw new Error("Saving the uploaded hand failed.");
+  }
 }
 
 export async function getViewerUpload(viewerId: string, uploadId: string) {

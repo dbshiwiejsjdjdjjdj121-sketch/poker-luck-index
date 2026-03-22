@@ -196,6 +196,12 @@ export interface SavedHandUpload extends ParsedHandUpload {
   allinHand?: AllInSavedHand | null;
 }
 
+export interface ExtractedUploadDraft {
+  source: Extract<UploadSource, "voice" | "screenshot">;
+  extractedText: string;
+  preview: ParsedHandUpload;
+}
+
 export const MAX_MANUAL_TEXT_LENGTH = 6000;
 export const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
 export const MAX_AUDIO_BYTES = 12 * 1024 * 1024;

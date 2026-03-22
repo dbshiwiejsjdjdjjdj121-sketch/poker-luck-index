@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import {
+  extractAudioUploadDraft,
   handUploadRuntimeConfigured,
-  processAudioUpload,
   resolveViewerId,
 } from "@/lib/hand-upload-server";
 import { assertPremiumAccess } from "@/lib/subscription-server";
@@ -49,24 +49,38 @@ export async function POST(request: Request) {
     }
 
     const buffer = Buffer.from(await fileEntry.arrayBuffer());
-    const item = await processAudioUpload(
-      viewerId,
+    const draft = await extractAudioUploadDraft(
       buffer,
       fileEntry.name || "voice-note.webm",
-      fileEntry.type || "audio/webm",
     );
 
-    return NextResponse.json({ item });
+    return NextResponse.json(draft);
   } catch (error) {
     const message = error instanceof Error ? error.message : "Audio upload failed.";
+    const lowerMessage = message.toLowerCase();
     const status =
-      message.toLowerCase().includes("premium subscription") ||
-      message.toLowerCase().includes("sign in to use premium")
+      lowerMessage.includes("premium subscription") ||
+      lowerMessage.includes("sign in to use premium")
         ? 403
-        : message.toLowerCase().includes("enough poker") ||
-            message.toLowerCase().includes("not contain enough")
+        : lowerMessage.includes("not supported yet") ||
+            lowerMessage.includes("export it as webm") ||
+            lowerMessage.includes("export it as wav") ||
+            lowerMessage.includes("export it as mp3") ||
+            lowerMessage.includes("export it as m4a")
+        ? 415
+        : lowerMessage.includes("enough poker") ||
+            lowerMessage.includes("not contain enough")
         ? 422
+        : lowerMessage.includes("openai") ||
+            lowerMessage.includes("transcription")
+        ? 502
+        : lowerMessage.includes("firebase") ||
+            lowerMessage.includes("storage") ||
+            lowerMessage.includes("saving the audio upload record")
+        ? 500
         : 400;
+
+    console.error("[api/hand-uploads/audio] request failed", error);
 
     return NextResponse.json({ error: message }, { status });
   }
