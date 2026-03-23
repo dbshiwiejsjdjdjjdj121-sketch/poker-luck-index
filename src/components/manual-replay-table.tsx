@@ -91,16 +91,22 @@ export function ManualReplayTable({
   topRightControl?: ReactNode;
   boardActionControl?: ReactNode;
 }) {
+  const tableShellClass =
+    "absolute inset-[7%_6%_8%] rounded-[30px] border border-white/7 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]";
+  const innerFrameClass =
+    "absolute inset-[14%_12%_16%] rounded-[26px] border border-white/8 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]";
+
   return (
     <section className="panel panel-strong relative overflow-hidden p-4 sm:p-6">
       <div className="home-felt absolute inset-[10%] opacity-90" />
 
       <div className="relative">
         <div className="mx-auto aspect-[1.48/1] max-w-5xl">
-          <div className="absolute inset-[7%_6%_8%] rounded-[30px] border border-white/7 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]" />
+          <div className={tableShellClass} />
+          <div className={innerFrameClass} />
 
           {topRightControl ? (
-            <div className="absolute inset-[7%_6%_8%] pointer-events-none z-20">
+            <div className={`${innerFrameClass} pointer-events-none z-20`}>
               <div className="absolute right-4 top-4 pointer-events-auto">
                 {topRightControl}
               </div>
@@ -127,33 +133,37 @@ export function ManualReplayTable({
             </div>
           </div>
 
-          <div className="absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2">
-            <div className="flex items-center justify-center gap-4">
-              <div className="flex justify-center gap-2">
-                {Array.from({ length: 5 }).map((_, index) => {
-                  const card = handState.board[index];
+          <div className="absolute inset-x-[12%] top-[58%] -translate-y-1/2">
+            <div className="relative">
+              <div className="flex justify-center sm:pr-[190px]">
+                <div className="flex justify-center gap-2">
+                  {Array.from({ length: 5 }).map((_, index) => {
+                    const card = handState.board[index];
 
-                  return card ? (
-                    <PokerCardImage
-                      key={`board-${index}`}
-                      card={card}
-                      alt={`Board card ${index + 1}`}
-                      sizes="50px"
-                      className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                    />
-                  ) : (
-                    <div
-                      key={`board-${index}`}
-                      className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                    >
-                      ?
-                    </div>
-                  );
-                })}
+                    return card ? (
+                      <PokerCardImage
+                        key={`board-${index}`}
+                        card={card}
+                        alt={`Board card ${index + 1}`}
+                        sizes="50px"
+                        className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                      />
+                    ) : (
+                      <div
+                        key={`board-${index}`}
+                        className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                      >
+                        ?
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
 
               {boardActionControl ? (
-                <div className="hidden shrink-0 sm:block">{boardActionControl}</div>
+                <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 sm:block">
+                  {boardActionControl}
+                </div>
               ) : null}
             </div>
           </div>
