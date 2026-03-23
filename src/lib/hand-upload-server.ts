@@ -3053,16 +3053,36 @@ export async function analyzeViewerUpload(
   return sanitizedNextItem;
 }
 
-export async function listViewerUploads(viewerId: string, limit = 12) {
+export async function listViewerUploads(
+  viewerId: string,
+  limit = 12,
+  cursor?: number,
+) {
   const db = getFirebaseAdminDb();
   const sanitizedViewerId = sanitizeViewerId(viewerId);
-  const snapshot = await db
+  let query = db
     .collection("hand_uploads")
     .doc(sanitizedViewerId)
     .collection("entries")
     .orderBy("createdAtMs", "desc")
-    .limit(limit)
-    .get();
+    .limit(limit + 1);
 
-  return snapshot.docs.map((doc) => doc.data() as SavedHandUpload);
+  if (typeof cursor === "number" && Number.isFinite(cursor)) {
+    query = query.startAfter(cursor);
+  }
+
+  const snapshot = await query.get();
+  const docs = snapshot.docs;
+  const pageDocs = docs.slice(0, limit);
+  const hasMore = docs.length > limit;
+  const lastItem = pageDocs.at(-1)?.data() as SavedHandUpload | undefined;
+
+  return {
+    items: pageDocs.map((doc) => doc.data() as SavedHandUpload),
+    nextCursor:
+      hasMore && typeof lastItem?.createdAtMs === "number"
+        ? lastItem.createdAtMs
+        : null,
+    hasMore,
+  };
 }

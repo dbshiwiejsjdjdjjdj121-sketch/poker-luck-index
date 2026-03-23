@@ -11,6 +11,15 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const requestedViewerId = searchParams.get("viewerId")?.trim() ?? "";
   const limitParam = Number(searchParams.get("limit") || "12");
+  const cursorParam = searchParams.get("cursor");
+  const parsedCursor =
+    cursorParam && cursorParam.trim().length > 0
+      ? Number(cursorParam)
+      : null;
+  const cursor =
+    parsedCursor !== null && Number.isFinite(parsedCursor)
+      ? parsedCursor
+      : undefined;
   const limit = Number.isFinite(limitParam)
     ? Math.min(Math.max(limitParam, 1), 100)
     : 12;
@@ -30,11 +39,13 @@ export async function GET(request: Request) {
       requestedViewerId,
       authHeader: request.headers.get("authorization"),
     });
-    const items = await listViewerUploads(viewerId, limit);
+    const result = await listViewerUploads(viewerId, limit, cursor);
 
     return NextResponse.json({
       configured: true,
-      items,
+      items: result.items,
+      nextCursor: result.nextCursor,
+      hasMore: result.hasMore,
     });
   } catch (error) {
     const message =
@@ -44,6 +55,8 @@ export async function GET(request: Request) {
       {
         configured: true,
         items: [],
+        nextCursor: null,
+        hasMore: false,
         message,
       },
       { status: 500 },

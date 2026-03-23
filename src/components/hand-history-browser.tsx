@@ -69,7 +69,10 @@ export function HandHistoryBrowser() {
   const [viewerId, setViewerId] = useState("");
   const [items, setItems] = useState<SavedHandUpload[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
   const [error, setError] = useState("");
+  const [nextCursor, setNextCursor] = useState<number | null>(null);
+  const [hasMore, setHasMore] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -90,7 +93,7 @@ export function HandHistoryBrowser() {
     try {
       const idToken = await getIdToken();
       const response = await fetch(
-        `/api/hand-uploads?viewerId=${encodeURIComponent(viewerId)}&limit=60`,
+        `/api/hand-uploads?viewerId=${encodeURIComponent(viewerId)}&limit=24`,
         {
           headers: idToken
             ? {
@@ -101,6 +104,8 @@ export function HandHistoryBrowser() {
       );
       const data = (await response.json()) as {
         items?: SavedHandUpload[];
+        nextCursor?: number | null;
+        hasMore?: boolean;
         message?: string;
       };
 
@@ -109,6 +114,10 @@ export function HandHistoryBrowser() {
       }
 
       setItems(Array.isArray(data.items) ? data.items : []);
+      setNextCursor(
+        typeof data.nextCursor === "number" ? data.nextCursor : null,
+      );
+      setHasMore(Boolean(data.hasMore));
     } catch (loadError) {
       setError(
         loadError instanceof Error
@@ -119,6 +128,54 @@ export function HandHistoryBrowser() {
       setLoading(false);
     }
   }, [getIdToken, viewerId]);
+
+  const loadMoreHistory = useCallback(async () => {
+    if (!viewerId || !hasMore || typeof nextCursor !== "number") {
+      return;
+    }
+
+    setLoadingMore(true);
+    setError("");
+
+    try {
+      const idToken = await getIdToken();
+      const response = await fetch(
+        `/api/hand-uploads?viewerId=${encodeURIComponent(viewerId)}&limit=24&cursor=${encodeURIComponent(String(nextCursor))}`,
+        {
+          headers: idToken
+            ? {
+                Authorization: `Bearer ${idToken}`,
+              }
+            : undefined,
+        },
+      );
+      const data = (await response.json()) as {
+        items?: SavedHandUpload[];
+        nextCursor?: number | null;
+        hasMore?: boolean;
+        message?: string;
+      };
+
+      if (!response.ok) {
+        throw new Error(data.message || "Unable to load more hands.");
+      }
+
+      const nextItems = Array.isArray(data.items) ? data.items : [];
+      setItems((current) => [...current, ...nextItems]);
+      setNextCursor(
+        typeof data.nextCursor === "number" ? data.nextCursor : null,
+      );
+      setHasMore(Boolean(data.hasMore));
+    } catch (loadError) {
+      setError(
+        loadError instanceof Error
+          ? loadError.message
+          : "Unable to load more hands.",
+      );
+    } finally {
+      setLoadingMore(false);
+    }
+  }, [getIdToken, hasMore, nextCursor, viewerId]);
 
   useEffect(() => {
     void loadHistory();
@@ -239,6 +296,25 @@ export function HandHistoryBrowser() {
             ))
           )}
         </section>
+
+        {!loading && items.length > 0 ? (
+          <section className="flex justify-center">
+            {hasMore ? (
+              <button
+                type="button"
+                onClick={() => void loadMoreHistory()}
+                className="btn-secondary min-w-[180px] justify-center disabled:cursor-not-allowed disabled:opacity-55"
+                disabled={loadingMore}
+              >
+                {loadingMore ? "Loading..." : "Load More"}
+              </button>
+            ) : (
+              <div className="rounded-full border border-white/8 bg-white/[0.03] px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/42">
+                End of history
+              </div>
+            )}
+          </section>
+        ) : null}
       </div>
     </main>
   );
