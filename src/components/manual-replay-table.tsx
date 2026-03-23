@@ -83,8 +83,6 @@ function SeatCard({
 export function ManualReplayTable({
   setup,
   handState,
-  topRightControl,
-  boardActionControl,
 }: {
   setup: ManualHandSetup;
   handState: ReplayHandState;
@@ -104,14 +102,6 @@ export function ManualReplayTable({
         <div className="mx-auto aspect-[1.48/1] max-w-5xl">
           <div className={tableShellClass} />
           <div className={innerFrameClass} />
-
-          {topRightControl ? (
-            <div className={`${innerFrameClass} pointer-events-none z-20`}>
-              <div className="absolute right-4 top-4 pointer-events-auto">
-                {topRightControl}
-              </div>
-            </div>
-          ) : null}
 
           <div className="absolute inset-[20%_16%_16%] rounded-[999px] border border-[rgba(214,178,93,0.18)] bg-[radial-gradient(circle_at_center,rgba(21,87,66,0.92),rgba(8,35,28,0.96))] shadow-[inset_0_0_0_1px_rgba(214,178,93,0.08)]" />
 
@@ -133,38 +123,28 @@ export function ManualReplayTable({
             </div>
           </div>
 
-          <div className="absolute inset-x-[12%] top-[58%] -translate-y-1/2">
-            <div className="relative">
-              <div className="flex justify-center sm:pr-[190px]">
-                <div className="flex justify-center gap-2">
-                  {Array.from({ length: 5 }).map((_, index) => {
-                    const card = handState.board[index];
+          <div className="absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2">
+            <div className="flex justify-center gap-2">
+              {Array.from({ length: 5 }).map((_, index) => {
+                const card = handState.board[index];
 
-                    return card ? (
-                      <PokerCardImage
-                        key={`board-${index}`}
-                        card={card}
-                        alt={`Board card ${index + 1}`}
-                        sizes="50px"
-                        className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                      />
-                    ) : (
-                      <div
-                        key={`board-${index}`}
-                        className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
-                      >
-                        ?
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {boardActionControl ? (
-                <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 sm:block">
-                  {boardActionControl}
-                </div>
-              ) : null}
+                return card ? (
+                  <PokerCardImage
+                    key={`board-${index}`}
+                    card={card}
+                    alt={`Board card ${index + 1}`}
+                    sizes="50px"
+                    className="h-[76px] w-[54px] rounded-[14px] border border-white/14 bg-[rgba(255,255,255,0.04)] p-[3px] shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                  />
+                ) : (
+                  <div
+                    key={`board-${index}`}
+                    className="flex h-[76px] w-[54px] items-center justify-center rounded-[14px] border border-dashed border-white/10 bg-black/20 text-sm font-semibold text-white/25 shadow-[0_12px_26px_rgba(0,0,0,0.22)]"
+                  >
+                    ?
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -179,10 +159,6 @@ export function ManualReplayTable({
             </div>
           ))}
         </div>
-
-        {boardActionControl ? (
-          <div className="mt-4 flex justify-center sm:hidden">{boardActionControl}</div>
-        ) : null}
       </div>
     </section>
   );

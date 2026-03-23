@@ -302,27 +302,6 @@ export function ManualReplayBuilder({
       <ManualReplayTable
         setup={setup}
         handState={handState}
-        topRightControl={
-          <button
-            type="button"
-            onClick={onEditSetup}
-            className="btn-primary min-h-[44px] px-4 py-2"
-          >
-            Edit Setup
-          </button>
-        }
-        boardActionControl={
-          pendingStreet ? (
-            <button
-              type="button"
-              onClick={submitBoardCards}
-              disabled={selectedBoardCards.length !== requiredBoardCards}
-              className="btn-primary min-w-[140px] disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              {`Set ${pendingStreet}`}
-            </button>
-          ) : null
-        }
       />
 
       {error ? (
@@ -354,24 +333,43 @@ export function ManualReplayBuilder({
                     ? `${currentPlayer.name} has ${currentPlayer.stackBb}bb behind. Pot is ${handState.potBb}bb.`
                     : saving
                       ? "Hand complete. Saving now and opening the analysis view."
-                      : "The hand is complete."}
+                  : "The hand is complete."}
               </p>
             </div>
+
+            <button
+              type="button"
+              onClick={onEditSetup}
+              className="btn-primary min-h-[44px] px-4 py-2"
+            >
+              Edit Setup
+            </button>
           </div>
 
           {pendingStreet ? (
             <div className="mt-6 space-y-5">
-              <div className="flex flex-wrap gap-2">
-                {Array.from({ length: requiredBoardCards }).map((_, index) => (
-                  <div
-                    key={`slot-${index}`}
-                    className="flex h-14 w-12 items-center justify-center rounded-[14px] border border-dashed border-[var(--border-strong)] bg-white/[0.03] text-sm font-semibold text-white/78"
-                  >
-                    {selectedBoardCards[index]
-                      ? ALL_CARDS.find((card) => card.value === selectedBoardCards[index])?.label
-                      : "?"}
-                  </div>
-                ))}
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="flex flex-wrap gap-2">
+                  {Array.from({ length: requiredBoardCards }).map((_, index) => (
+                    <div
+                      key={`slot-${index}`}
+                      className="flex h-14 w-12 items-center justify-center rounded-[14px] border border-dashed border-[var(--border-strong)] bg-white/[0.03] text-sm font-semibold text-white/78"
+                    >
+                      {selectedBoardCards[index]
+                        ? ALL_CARDS.find((card) => card.value === selectedBoardCards[index])?.label
+                        : "?"}
+                    </div>
+                  ))}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={submitBoardCards}
+                  disabled={selectedBoardCards.length !== requiredBoardCards}
+                  className="btn-primary min-w-[140px] disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {`Set ${pendingStreet}`}
+                </button>
               </div>
 
               <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-8">
