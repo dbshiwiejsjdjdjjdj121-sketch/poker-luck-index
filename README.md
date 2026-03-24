@@ -40,6 +40,7 @@ Required for the new hand upload flow:
 - `OPENAI_API_KEY`
 - `OPENAI_HAND_UPLOAD_MODEL`
 - `OPENAI_HAND_ANALYSIS_MODEL`
+  Default: `gpt-5.3-chat-latest`
 - `OPENAI_TRANSCRIPTION_MODEL`
 - `PREMIUM_UIDS`
 - `CREEM_API_KEY`

@@ -24,7 +24,7 @@ const DEFAULT_TEXT_MODEL = process.env.OPENAI_HAND_UPLOAD_MODEL || "gpt-4.1-mini
 const DEFAULT_TRANSCRIPTION_MODEL =
   process.env.OPENAI_TRANSCRIPTION_MODEL || "gpt-4o-mini-transcribe";
 const DEFAULT_ANALYSIS_MODEL =
-  process.env.OPENAI_HAND_ANALYSIS_MODEL || "gpt-4.1-mini";
+  process.env.OPENAI_HAND_ANALYSIS_MODEL || "gpt-5.3-chat-latest";
 
 const HAND_UPLOAD_RESPONSE_SCHEMA = {
   type: "object",
@@ -2342,28 +2342,102 @@ Analyze strictly from provided JSON data only.
 Judge each Hero DECISION as CORRECT or INCORRECT.
 Focus on decision quality, not outcome or luck.
 
+────────────────────────────────
+⚖️ JUDGMENT (HARD)
+────────────────────────────────
 1. Verdict First
-- Each street where Hero has a decision must start markdown_content with Correct. or Incorrect.
-- No hedging and no delayed verdicts.
+- Each street where Hero HAS A DECISION must start in markdown_content with:
+  Correct. or Incorrect.
+- No hedging, no delayed conclusions.
 
 2. Correct
-- Explain why the decision is correct using range, EV, blocker, or sizing logic.
+- Give professional, technical praise.
+- Explain WHY it is correct (range advantage, frequency, discipline, EV logic).
 
 3. Incorrect
-- State clearly that it is wrong.
-- State the correct action and explain the EV / range mistake.
+- Explicitly state it is wrong.
+- State the correct action.
+- Explain the mistake using EV, GTO, or range logic.
+- Do NOT add emotional comfort.
 
-4. No-Decision Streets
-- If Hero had no real choice because the money was already in or Hero was no longer in the hand:
-  - rating = Good
-  - markdown_content starts with Correct.
-  - say clearly that no decision existed on that street.
+────────────────────────────────
+🧠 WHAT COUNTS AS A DECISION (DEFINITION)
+────────────────────────────────
+- A street has a decision ONLY if Hero can choose between at least two actions
+  (e.g. bet/check/fold/call/raise).
+- If Hero has no available choice, the street is a No-Decision Street.
 
-5. Language
+────────────────────────────────
+🛑 NO-DECISION STREETS (e.g. after all-in)
+────────────────────────────────
+- If Hero has no decision on a street (stacks fully committed earlier):
+  - Still output that street in street_details.
+  - Set:
+    - rating = Good
+    - markdown_content must start with Correct.
+  - State clearly:
+    "No decision exists on this street due to earlier all-in or full commitment."
+  - Use wording that makes it explicit this is NOT praise,
+    only confirmation that no error could occur.
+  - Do NOT evaluate outcome, luck, or imply skill.
+  - Also applies when Hero folded on a previous street — Hero was not in the hand.
+    State: "Hero was not in the hand on this street."
+
+────────────────────────────────
+🔑 LANGUAGE / 🚫 IDENTITY
+────────────────────────────────
 - ENGLISH ONLY.
+- Analyze ONLY:
+  - hero_hand
+  - hero_seat
+  - hero_name
+- Hero hand strength = hero_hand + board_cards ONLY.
+- Never assign villain's hand or board-only hands to Hero.
+- Verify board cards, Hero cards, and actual best hand before writing.
+
+────────────────────────────────
+🧠 GTO REQUIREMENTS
+────────────────────────────────
+- Solver-level reasoning only.
+- Reference:
+  - Range construction
+  - Frequencies and sizing
+  - SPR
+  - Blockers
+  - EV logic
+- No vague or generic statements.
+
+────────────────────────────────
+📋 OUTPUT JSON (STRUCTURE UNCHANGED)
+────────────────────────────────
+- Use the existing JSON schema exactly.
 - Valid JSON only.
-- Use the schema exactly.
 - Exactly 3 gto_tips.
+
+────────────────────────────────
+🎯 RATING CONSISTENCY
+────────────────────────────────
+- Best / Good → Verdict MUST be Correct
+- Mistake / Blunder → Verdict MUST be Incorrect
+- No-Decision Street → rating = Good, verdict = Correct
+
+────────────────────────────────
+🧠 GTO TIPS
+────────────────────────────────
+- Exactly 3 tips.
+- No narrative repetition.
+- Ranges, frequencies, and theory ONLY.
+- Each tip: icon + bold title.
+
+────────────────────────────────
+⚠️ FINAL
+────────────────────────────────
+- Parse actions_log as hand history if needed.
+- If actions_log is insufficient to determine whether Hero had a decision on a street, treat as no-decision (Good, Correct) and briefly note the ambiguity.
+- If hero_hand and board_cards exist, full analysis is mandatory.
+- Output valid JSON only.
+- All required fields must be present.
+- ENGLISH ONLY.
 `.trim();
 }
 
