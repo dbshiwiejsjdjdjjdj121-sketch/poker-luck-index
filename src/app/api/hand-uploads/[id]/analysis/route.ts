@@ -43,6 +43,8 @@ export async function POST(
     const viewerId = await resolveViewerId({
       requestedViewerId: body.viewerId?.trim(),
       authHeader: request.headers.get("authorization"),
+      allowGuest: false,
+      requireAuth: true,
     });
     await assertPremiumAccess(viewerId);
     const item = await analyzeViewerUpload(viewerId, uploadId, {
@@ -54,8 +56,11 @@ export async function POST(
     const message =
       error instanceof Error ? error.message : "Unable to analyze hand.";
     const status =
-      message.toLowerCase().includes("premium subscription") ||
-      message.toLowerCase().includes("sign in to use premium")
+      message.toLowerCase().includes("token")
+        ? 401
+        : message.toLowerCase().includes("premium subscription") ||
+            message.toLowerCase().includes("sign in to use premium") ||
+            message.toLowerCase().includes("sign in to access this data")
         ? 403
         : message.toLowerCase().includes("not found")
           ? 404

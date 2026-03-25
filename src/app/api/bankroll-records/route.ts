@@ -14,6 +14,8 @@ export async function GET(request: Request) {
     const viewerId = await resolveViewerId({
       requestedViewerId: new URL(request.url).searchParams.get("viewerId") || undefined,
       authHeader: request.headers.get("authorization"),
+      allowGuest: false,
+      requireAuth: true,
     });
 
     const snapshot = await bankrollCollection(viewerId)
@@ -26,8 +28,11 @@ export async function GET(request: Request) {
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Unable to load bankroll records.";
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token") ? 401 : 400;
 
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json({ error: message }, { status });
   }
 }
 
@@ -41,6 +46,8 @@ export async function POST(request: Request) {
     const viewerId = await resolveViewerId({
       requestedViewerId: body.viewerId?.trim(),
       authHeader: request.headers.get("authorization"),
+      allowGuest: false,
+      requireAuth: true,
     });
     const record = body.record;
 
@@ -66,8 +73,11 @@ export async function POST(request: Request) {
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Unable to save bankroll record.";
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token") ? 401 : 400;
 
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json({ error: message }, { status });
   }
 }
 
@@ -78,6 +88,8 @@ export async function DELETE(request: Request) {
     const viewerId = await resolveViewerId({
       requestedViewerId: searchParams.get("viewerId")?.trim() || undefined,
       authHeader: request.headers.get("authorization"),
+      allowGuest: false,
+      requireAuth: true,
     });
 
     if (!recordId) {
@@ -90,7 +102,10 @@ export async function DELETE(request: Request) {
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Unable to delete bankroll record.";
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token") ? 401 : 400;
 
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json({ error: message }, { status });
   }
 }

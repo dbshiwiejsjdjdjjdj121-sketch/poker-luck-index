@@ -504,17 +504,26 @@ export function HandReviewStudio({
 
     try {
       const idToken = await getIdToken();
+      const mediaFile =
+        uploadDraft.source === "voice" ? selectedAudio : selectedImage;
+
+      if (!mediaFile) {
+        throw new Error("The original upload is no longer attached. Re-upload it and try again.");
+      }
+
+      const formData = new FormData();
+      formData.append("viewerId", viewerId);
+      formData.append("source", uploadDraft.source);
+      formData.append("handText", nextText);
+      formData.append("media", mediaFile);
       const response = await fetch("/api/hand-uploads/confirm", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...(idToken ? { Authorization: `Bearer ${idToken}` } : {}),
-        },
-        body: JSON.stringify({
-          viewerId,
-          source: uploadDraft.source,
-          handText: nextText,
-        }),
+        headers: idToken
+          ? {
+              Authorization: `Bearer ${idToken}`,
+            }
+          : undefined,
+        body: formData,
       });
       const data = (await response.json()) as {
         item?: SavedHandUpload;

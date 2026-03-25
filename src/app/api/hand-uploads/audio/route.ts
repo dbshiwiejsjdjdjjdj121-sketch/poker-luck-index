@@ -35,6 +35,8 @@ export async function POST(request: Request) {
     const viewerId = await resolveViewerId({
       requestedViewerId: `${formData.get("viewerId") ?? ""}`.trim(),
       authHeader: request.headers.get("authorization"),
+      allowGuest: false,
+      requireAuth: true,
     });
     await assertPremiumAccess(viewerId);
     const fileEntry = formData.get("audio");
@@ -59,8 +61,11 @@ export async function POST(request: Request) {
     const message = error instanceof Error ? error.message : "Audio upload failed.";
     const lowerMessage = message.toLowerCase();
     const status =
-      lowerMessage.includes("premium subscription") ||
-      lowerMessage.includes("sign in to use premium")
+      lowerMessage.includes("token")
+        ? 401
+        : lowerMessage.includes("premium subscription") ||
+            lowerMessage.includes("sign in to use premium") ||
+            lowerMessage.includes("sign in to access this data")
         ? 403
         : lowerMessage.includes("not supported yet") ||
             lowerMessage.includes("export it as webm") ||

@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", sizes: "1024x1024", type: "image/png" }],
+  },
   applicationName: SITE_NAME,
   referrer: "origin-when-cross-origin",
   keywords: SITE_KEYWORDS,

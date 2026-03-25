@@ -40,7 +40,13 @@ export async function POST(request: Request) {
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Manual upload failed.";
-    const status = message.toLowerCase().includes("enough poker") ? 422 : 400;
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token")
+        ? 401
+        : lowerMessage.includes("enough poker")
+          ? 422
+          : 400;
 
     return NextResponse.json({ error: message }, { status });
   }

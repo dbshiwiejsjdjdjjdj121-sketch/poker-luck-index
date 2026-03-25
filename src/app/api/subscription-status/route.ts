@@ -6,19 +6,30 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
+  const authHeader = request.headers.get("authorization");
 
   try {
+    if (!authHeader?.startsWith("Bearer ")) {
+      return NextResponse.json({
+        subscription: await getSubscriptionSnapshot(null),
+      });
+    }
+
     const viewerId = await resolveViewerId({
-      requestedViewerId: searchParams.get("viewerId")?.trim() || undefined,
-      authHeader: request.headers.get("authorization"),
+      authHeader,
+      allowGuest: false,
+      requireAuth: true,
     });
     const subscription = await getSubscriptionSnapshot(viewerId || null);
 
     return NextResponse.json({ subscription });
-  } catch {
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Unable to load subscription.";
+
     return NextResponse.json({
       subscription: await getSubscriptionSnapshot(null),
-    });
+      error: message,
+    }, { status: 401 });
   }
 }

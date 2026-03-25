@@ -30,7 +30,7 @@ const SubscriptionContext = createContext<SubscriptionContextValue | null>(null)
 export function SubscriptionProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
-  const { user, getIdToken } = useAuth();
+  const { getIdToken } = useAuth();
   const [loading, setLoading] = useState(true);
   const [checkoutBusy, setCheckoutBusy] = useState(false);
   const [checkoutError, setCheckoutError] = useState("");
@@ -43,17 +43,14 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
 
     try {
       const idToken = await getIdToken();
-      const response = await fetch(
-        `/api/subscription-status?viewerId=${encodeURIComponent(user?.uid || "")}`,
-        {
-          cache: "no-store",
-          headers: idToken
-            ? {
-                Authorization: `Bearer ${idToken}`,
-              }
-            : undefined,
-        },
-      );
+      const response = await fetch("/api/subscription-status", {
+        cache: "no-store",
+        headers: idToken
+          ? {
+              Authorization: `Bearer ${idToken}`,
+            }
+          : undefined,
+      });
       const data = (await response.json()) as {
         subscription?: SubscriptionSnapshot;
       };
@@ -66,7 +63,7 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
     } finally {
       setLoading(false);
     }
-  }, [getIdToken, user?.uid]);
+  }, [getIdToken]);
 
   useEffect(() => {
     void refresh();

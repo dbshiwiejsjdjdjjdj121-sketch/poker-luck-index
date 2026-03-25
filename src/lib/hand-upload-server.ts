@@ -353,24 +353,46 @@ export function handUploadRuntimeConfigured() {
 export async function resolveViewerId({
   requestedViewerId,
   authHeader,
+  allowGuest = true,
+  requireAuth = false,
 }: {
   requestedViewerId?: string;
   authHeader?: string | null;
+  allowGuest?: boolean;
+  requireAuth?: boolean;
 }) {
   if (firebaseAdminConfigured() && authHeader?.startsWith("Bearer ")) {
     const idToken = authHeader.slice("Bearer ".length).trim();
 
-    if (idToken) {
-      try {
-        const decoded = await getFirebaseAdminAuth().verifyIdToken(idToken);
-        return sanitizeViewerId(decoded.uid);
-      } catch {
-        // Fall back to requested viewerId for non-authenticated browsing.
-      }
+    if (!idToken) {
+      throw new Error("Sign-in token is missing.");
+    }
+
+    try {
+      const decoded = await getFirebaseAdminAuth().verifyIdToken(idToken);
+      return sanitizeViewerId(decoded.uid);
+    } catch {
+      throw new Error("Sign-in token is invalid or expired.");
     }
   }
 
-  return sanitizeViewerId(requestedViewerId ?? "");
+  if (requireAuth) {
+    throw new Error("Sign in to access this data.");
+  }
+
+  const requestedId = requestedViewerId?.trim()
+    ? sanitizeViewerId(requestedViewerId)
+    : "";
+
+  if (requestedId) {
+    if (allowGuest && requestedId.startsWith("viewer-")) {
+      return requestedId;
+    }
+
+    throw new Error("Sign in to access account data.");
+  }
+
+  throw new Error("viewerId is missing or invalid.");
 }
 
 function getOpenAIClient() {
@@ -2661,6 +2683,41 @@ async function uploadMedia(
   };
 }
 
+type PremiumUploadMediaInput = {
+  buffer: Buffer;
+  mimeType: string;
+  originalName: string;
+};
+
+async function uploadPremiumMedia(
+  viewerId: string,
+  source: Extract<UploadSource, "voice" | "screenshot">,
+  mediaInput?: PremiumUploadMediaInput | null,
+) {
+  if (!mediaInput) {
+    return null;
+  }
+
+  if (source === "voice") {
+    ensureFileSize(mediaInput.buffer, MAX_AUDIO_BYTES, "Audio file");
+  } else {
+    ensureFileSize(mediaInput.buffer, MAX_IMAGE_BYTES, "Image file");
+  }
+
+  try {
+    return await uploadMedia(
+      viewerId,
+      source,
+      mediaInput.buffer,
+      mediaInput.mimeType,
+      mediaInput.originalName,
+    );
+  } catch (error) {
+    logUploadStageError(source, "storage", error);
+    throw new Error(`Firebase media storage failed while saving this ${source} upload.`);
+  }
+}
+
 function logUploadStageError(
   source: UploadSource,
   stage: "transcription" | "parsing" | "storage" | "save",
@@ -2952,6 +3009,7 @@ export async function savePremiumUploadFromText(
   viewerId: string,
   source: Extract<UploadSource, "voice" | "screenshot">,
   handText: string,
+  mediaInput?: PremiumUploadMediaInput | null,
 ) {
   const rawInput = ensureManualText(handText);
 
@@ -2978,13 +3036,15 @@ export async function savePremiumUploadFromText(
     logUploadStageError(source, "save", error);
   }
 
+  const media = await uploadPremiumMedia(viewerId, source, mediaInput);
+
   try {
     return await saveUploadRecord(
       viewerId,
       source,
       rawInput,
       parsed,
-      null,
+      media,
       replayArtifacts?.setup ?? null,
       replayArtifacts?.replay ?? null,
     );

@@ -38,7 +38,13 @@ export async function GET(
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Unable to load hand upload.";
-    const status = message.toLowerCase().includes("not found") ? 404 : 400;
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token")
+        ? 401
+        : lowerMessage.includes("not found")
+          ? 404
+          : 400;
 
     return NextResponse.json({ error: message }, { status });
   }
@@ -74,7 +80,13 @@ export async function DELETE(
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Unable to delete hand upload.";
-    const status = message.toLowerCase().includes("not found") ? 404 : 400;
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token")
+        ? 401
+        : lowerMessage.includes("not found")
+          ? 404
+          : 400;
 
     return NextResponse.json({ error: message }, { status });
   }

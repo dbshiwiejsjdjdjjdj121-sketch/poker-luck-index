@@ -2,20 +2,25 @@ import type { Metadata } from "next";
 import { AppNavigation } from "@/components/app-navigation";
 import { HomeForm } from "@/components/home-form";
 import {
-  SITE_DESCRIPTION,
   SITE_NAME,
   buildOgImageUrl,
 } from "@/lib/site";
 
+const HOME_TITLE = `${SITE_NAME} | Poker Replay, Bankroll Tracker & Luck Index`;
+const HOME_DESCRIPTION =
+  "Replay poker hands, track bankroll, save history, and get a fast table read in one clean poker workspace.";
+
 export const metadata: Metadata = {
-  title: SITE_NAME,
-  description: SITE_DESCRIPTION,
+  title: {
+    absolute: HOME_TITLE,
+  },
+  description: HOME_DESCRIPTION,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     url: "/",
     images: [
       {
@@ -28,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     images: [buildOgImageUrl({ view: "home" })],
   },
 };
@@ -47,7 +52,7 @@ export default function Home() {
             <div className="space-y-7">
               <div className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
                 <span>♠</span>
-                <span>Poker Luck Index</span>
+                <span>ALL IN Poker AI</span>
                 <span>♥</span>
               </div>
 
@@ -59,8 +64,8 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg">
-                  Use Luck before the session. Save real hands with Replay. Keep every spot in History.
-                  Track your bankroll without leaving the same app.
+                  ALL IN Poker AI keeps your luck index, hand replay, saved history, and
+                  bankroll tracker in one fast poker workspace.
                 </p>
               </div>
             </div>

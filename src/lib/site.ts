@@ -2,18 +2,20 @@ import type { FortuneInput, FortuneOutput } from "@/lib/fortune";
 
 export type SearchParams = Record<string, string | string[] | undefined>;
 
-export const SITE_NAME = "Poker Luck Index";
+export const SITE_NAME = "ALL IN Poker AI";
 export const SITE_URL = "https://www.allinpokerai.com";
 export const SITE_LOCALE = "en_US";
 export const SITE_DESCRIPTION =
-  "Get a fast poker table read with a 10-point luck score, a play style for the session, and three hands to watch.";
+  "ALL IN Poker AI helps you replay poker hands, track bankroll, save hand history, and check a fast luck index before you play.";
 export const SITE_KEYWORDS = [
+  "all in poker ai",
+  "allinpokerai",
+  "poker ai",
+  "poker hand replay",
+  "poker bankroll tracker",
+  "poker hand history",
   "poker luck index",
-  "poker fortune",
-  "daily poker luck",
-  "poker strategy tool",
-  "poker entertainment app",
-  "shareable poker result",
+  "poker analysis tool",
 ];
 
 export function buildAbsoluteUrl(path: string) {
@@ -97,6 +99,7 @@ export function buildStructuredData() {
       {
         "@type": "WebSite",
         name: SITE_NAME,
+        alternateName: "allinpokerai.com",
         url: SITE_URL,
         inLanguage: "en-US",
         description: SITE_DESCRIPTION,

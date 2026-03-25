@@ -13,6 +13,35 @@ function isPremiumSource(value: string): value is Extract<UploadSource, "voice" 
   return value === "voice" || value === "screenshot";
 }
 
+async function readConfirmRequest(request: Request) {
+  const contentType = request.headers.get("content-type") || "";
+
+  if (contentType.includes("multipart/form-data")) {
+    const formData = await request.formData();
+    const mediaEntry = formData.get("media");
+
+    return {
+      viewerId: `${formData.get("viewerId") || ""}`.trim(),
+      source: `${formData.get("source") || ""}`.trim(),
+      handText: `${formData.get("handText") || ""}`.trim(),
+      media: mediaEntry instanceof File ? mediaEntry : null,
+    };
+  }
+
+  const body = (await request.json()) as {
+    viewerId?: string;
+    source?: string;
+    handText?: string;
+  };
+
+  return {
+    viewerId: body.viewerId?.trim() || "",
+    source: `${body.source || ""}`.trim(),
+    handText: body.handText?.trim() || "",
+    media: null,
+  };
+}
+
 export async function POST(request: Request) {
   const runtimeConfig = handUploadRuntimeConfigured();
 
@@ -36,12 +65,8 @@ export async function POST(request: Request) {
   }
 
   try {
-    const body = (await request.json()) as {
-      viewerId?: string;
-      source?: string;
-      handText?: string;
-    };
-    const source = `${body.source || ""}`;
+    const payload = await readConfirmRequest(request);
+    const source = payload.source;
 
     if (!isPremiumSource(source)) {
       return NextResponse.json(
@@ -53,14 +78,24 @@ export async function POST(request: Request) {
     }
 
     const viewerId = await resolveViewerId({
-      requestedViewerId: body.viewerId?.trim(),
+      requestedViewerId: payload.viewerId || undefined,
       authHeader: request.headers.get("authorization"),
+      allowGuest: false,
+      requireAuth: true,
     });
     await assertPremiumAccess(viewerId);
+    const mediaInput = payload.media
+      ? {
+          buffer: Buffer.from(await payload.media.arrayBuffer()),
+          mimeType: payload.media.type || "application/octet-stream",
+          originalName: payload.media.name || `${source}-upload`,
+        }
+      : null;
     const item = await savePremiumUploadFromText(
       viewerId,
       source,
-      body.handText?.trim() || "",
+      payload.handText,
+      mediaInput,
     );
 
     return NextResponse.json({ item });
@@ -69,8 +104,11 @@ export async function POST(request: Request) {
       error instanceof Error ? error.message : "Unable to save this hand upload.";
     const lowerMessage = message.toLowerCase();
     const status =
-      lowerMessage.includes("premium subscription") ||
-      lowerMessage.includes("sign in to use premium")
+      lowerMessage.includes("token")
+        ? 401
+        : lowerMessage.includes("premium subscription") ||
+            lowerMessage.includes("sign in to use premium") ||
+            lowerMessage.includes("sign in to access this data")
         ? 403
         : lowerMessage.includes("enough poker") ||
             lowerMessage.includes("hand extraction failed")

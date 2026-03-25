@@ -50,6 +50,9 @@ export async function GET(request: Request) {
   } catch (error) {
     const message =
       error instanceof Error ? error.message : "Unable to load saved uploads.";
+    const lowerMessage = message.toLowerCase();
+    const status =
+      lowerMessage.includes("sign in") || lowerMessage.includes("token") ? 401 : 500;
 
     return NextResponse.json(
       {
@@ -59,7 +62,7 @@ export async function GET(request: Request) {
         hasMore: false,
         message,
       },
-      { status: 500 },
+      { status },
     );
   }
 }
