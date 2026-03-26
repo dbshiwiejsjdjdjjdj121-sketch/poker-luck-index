@@ -34,6 +34,7 @@ Optional Vercel verification:
 ```bash
 npm run seo:report
 npm run seo:plan
+npm run seo:weekly
 ```
 
 The command reads Google Analytics 4 and Search Console data, then writes:
@@ -43,6 +44,8 @@ The command reads Google Analytics 4 and Search Console data, then writes:
 - `reports/seo/action-plan.md`
 - `reports/seo/action-plan.json`
 - `reports/seo/issue-body.md`
+
+`npm run seo:weekly` is the local fallback that regenerates the report and action plan together.
 
 ## What The Report Looks For
 
@@ -65,6 +68,9 @@ The safe long-term flow is:
 1. Auto-pull GA4 and Search Console data
 2. Auto-generate a ranked SEO todo list
 3. Auto-open a Codex task or branch with the suggested edits
+4. Ship one focused SEO change batch against the weekly runbook
+
+The weekly execution rules live in [docs/seo-weekly-runbook.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-weekly-runbook.md).
 
 Avoid fully automatic content rewrites on short-term traffic swings.
 

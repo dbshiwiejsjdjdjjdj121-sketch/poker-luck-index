@@ -9,7 +9,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "seo:report": "node scripts/seo-report.mjs",
-    "seo:plan": "node scripts/seo-action-plan.mjs"
+    "seo:plan": "node scripts/seo-action-plan.mjs",
+    "seo:weekly": "npm run seo:report && npm run seo:plan"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
