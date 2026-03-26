@@ -14,6 +14,7 @@ import { SavedHandReplayPanel } from "@/components/saved-hand-replay-panel";
 import { UploadTextConfirmModal } from "@/components/upload-text-confirm-modal";
 import { useAuth } from "@/components/auth-provider";
 import { useSubscription } from "@/components/subscription-provider";
+import { trackEvent } from "@/lib/analytics";
 import {
   type ExtractedUploadDraft,
   type ManualHandSetup,
@@ -251,6 +252,10 @@ export function HandReviewStudio({
   function openGate(action: PremiumAction) {
     resetMessages();
     setDraftError("");
+    trackEvent("premium_gate_opened", {
+      action,
+      path: "/hand-review",
+    });
     setGateAction(action);
     setGateOpen(true);
   }
@@ -276,6 +281,11 @@ export function HandReviewStudio({
 
   function handleSourceSelect(source: UploadSource) {
     resetMessages();
+    trackEvent("hand_upload_source_selected", {
+      source,
+      premium_unlocked: subscription.premium,
+      signed_in: Boolean(user),
+    });
 
     if (source === "manual") {
       setActiveSource("manual");
@@ -367,6 +377,10 @@ export function HandReviewStudio({
 
       setManualSetup(payload.setup);
       setLastSavedItem(data.item);
+      trackEvent("hand_saved", {
+        source: "manual",
+        signed_in: Boolean(user),
+      });
       return data.item;
     } catch (submitError) {
       const message =
@@ -538,6 +552,10 @@ export function HandReviewStudio({
       setOpenHandId(data.item.id);
       setAutoAnalyzeHandId("");
       setNotice("Hand saved. Replay is ready below.");
+      trackEvent("hand_saved", {
+        source: uploadDraft.source,
+        signed_in: Boolean(user),
+      });
       router.replace(`/hand-review?handId=${data.item.id}`, { scroll: false });
 
       if (uploadDraft.source === "voice") {

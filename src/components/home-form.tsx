@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 function formatLocalDate(date: Date) {
   const year = date.getFullYear();
@@ -37,19 +39,50 @@ export function HomeForm() {
     pickerInput.focus();
   }
 
+  function handleToolClick(tool: "bankroll" | "manual_replay") {
+    trackEvent("home_tool_cta_clicked", {
+      tool,
+      placement: "home_form",
+    });
+  }
+
+  function handleFortuneSubmit() {
+    trackEvent("fortune_form_submitted", {
+      placement: "home_form",
+    });
+  }
+
   return (
     <section className="panel panel-strong relative overflow-hidden p-5 sm:p-6">
       <div className="absolute right-5 top-5 text-xl text-[rgba(247,223,160,0.55)]">
         ♠
       </div>
       <div className="mb-6">
-        <p className="font-heading text-2xl text-white">Daily Draw</p>
+        <p className="font-heading text-2xl text-white">Quick Table Read</p>
         <p className="mt-2 text-sm text-[var(--muted)]">
-          Enter your table, seat, and dates. The read takes about ten seconds.
+          Use the lighter luck read when you want a fast pre-session ritual. Need a
+          real tool first? Jump straight into bankroll or replay below.
         </p>
       </div>
 
-      <form action="/result" className="space-y-5">
+      <div className="mb-5 grid gap-3 sm:grid-cols-2">
+        <Link
+          href="/bankroll"
+          className="btn-secondary inline-flex items-center justify-center"
+          onClick={() => handleToolClick("bankroll")}
+        >
+          Free Bankroll Tracker
+        </Link>
+        <Link
+          href="/hand-review"
+          className="btn-secondary inline-flex items-center justify-center"
+          onClick={() => handleToolClick("manual_replay")}
+        >
+          Free Manual Replay
+        </Link>
+      </div>
+
+      <form action="/result" className="space-y-5" onSubmit={handleFortuneSubmit}>
         <div className="grid gap-5 sm:grid-cols-2">
           <label className="block">
             <span className="mb-2 block text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
@@ -143,12 +176,12 @@ export function HomeForm() {
           type="submit"
           className="btn-primary mt-2 inline-flex w-full items-center justify-center"
         >
-          Reveal My Poker Fortune
+          Generate Table Read
         </button>
 
         <p className="text-center text-xs text-[var(--muted)]">
-          Use the calendar picker for the fastest input. You&apos;ll get a
-          10-point read, a session plan, and three hands to watch.
+          Use the calendar picker for the fastest input. You&apos;ll get a 10-point
+          read, a session plan, and three hands to watch.
         </p>
       </form>
     </section>

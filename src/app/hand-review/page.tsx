@@ -6,9 +6,9 @@ import {
   buildOgImageUrl,
 } from "@/lib/site";
 
-const PAGE_TITLE = "Hand Upload Studio";
+const PAGE_TITLE = "Poker Hand Replay Studio";
 const PAGE_DESCRIPTION =
-  "Save a poker hand by manual note, voice, or screenshot. Manual upload stays free, while AI-powered voice, screenshot, and hand analysis run through Firebase-backed premium flows.";
+  "Replay and save a poker hand by manual note, voice, or screenshot. Manual replay stays free, while AI-powered voice, screenshot, and hand analysis run through premium flows.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { BankrollStudio } from "@/components/bankroll-studio";
 import { SITE_NAME, buildAbsoluteUrl, buildOgImageUrl } from "@/lib/site";
 
-const PAGE_TITLE = "Bankroll Tracker";
+const PAGE_TITLE = "Free Poker Bankroll Tracker";
 const PAGE_DESCRIPTION =
-  "Track poker sessions, bankroll swings, and running profit for free.";
+  "Track poker sessions, bankroll swings, and running profit for free in a mobile-friendly web app.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

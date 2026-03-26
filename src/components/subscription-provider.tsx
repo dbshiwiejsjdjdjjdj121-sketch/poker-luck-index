@@ -11,6 +11,7 @@ import {
 } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useAuth } from "@/components/auth-provider";
+import { trackEvent } from "@/lib/analytics";
 import { FREE_SUBSCRIPTION, type SubscriptionSnapshot } from "@/lib/subscription";
 
 type SubscriptionContextValue = {
@@ -95,6 +96,9 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
 
         if (snapshot.premium) {
           setBillingNotice("Pro access is active.");
+          trackEvent("checkout_completed", {
+            path: pathname,
+          });
           return;
         }
 
@@ -149,6 +153,9 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
             );
           }
 
+          trackEvent("checkout_started", {
+            path: pathname,
+          });
           window.location.assign(data.checkoutUrl);
         } catch (error) {
           setCheckoutError(
@@ -175,6 +182,7 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
       loading,
       refresh,
       subscription,
+      pathname,
     ],
   );
 

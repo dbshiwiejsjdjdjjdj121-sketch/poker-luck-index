@@ -61,6 +61,24 @@ Required for the new hand upload flow:
 - `SMTP_PASS`
 - `EMAIL_FROM`
 - `EMAIL_FROM_NAME`
+- `NEXT_PUBLIC_GA_ID`
+  Optional: enables Google Analytics 4 page views and funnel events
+- `GA4_PROPERTY_ID`
+  Required for the SEO reporting script
+- `GOOGLE_SERVICE_ACCOUNT_KEY_PATH`
+  Required for the SEO reporting script
+- `GOOGLE_SERVICE_ACCOUNT_JSON`
+  Optional alternative for CI or GitHub Actions
+- `GOOGLE_SERVICE_ACCOUNT_JSON_BASE64`
+  Optional alternative for CI or GitHub Actions
+- `GSC_SITE_URL`
+  Required for the SEO reporting script. Use your Search Console property, such as `https://www.allinpokerai.com/` or `sc-domain:allinpokerai.com`
+- `VERCEL_TOKEN`
+  Optional for the SEO reporting script
+- `VERCEL_PROJECT_ID`
+  Optional for the SEO reporting script
+- `VERCEL_TEAM_ID`
+  Optional for the SEO reporting script when the project belongs to a team
 
 Notes:
 
@@ -86,7 +104,23 @@ Notes:
 npm run lint
 npm run typecheck
 npm run build
+npm run seo:report
+npm run seo:plan
 ```
+
+`npm run seo:report` writes the latest markdown and JSON summaries into `reports/seo/`.
+`npm run seo:plan` turns the latest report into an action plan and issue body.
+
+For GitHub Actions, add these repository secrets:
+
+- `GA4_PROPERTY_ID`
+- `GSC_SITE_URL`
+- `GOOGLE_SERVICE_ACCOUNT_JSON`
+- `VERCEL_TOKEN`
+- `VERCEL_PROJECT_ID`
+- `VERCEL_TEAM_ID`
+
+The scheduled workflow also creates a GitHub issue with the latest SEO action plan.
 
 ## Deployment
 

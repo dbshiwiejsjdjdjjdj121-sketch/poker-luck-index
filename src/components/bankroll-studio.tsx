@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AppNavigation } from "@/components/app-navigation";
 import { useAuth } from "@/components/auth-provider";
+import { trackEvent } from "@/lib/analytics";
 import {
   buildBankrollStats,
   recordProfit,
@@ -278,6 +279,11 @@ export function BankrollStudio() {
         saveLocalRecords(viewerId, syncedRecords);
         setRecords(syncedRecords);
       }
+
+      trackEvent("bankroll_record_added", {
+        signed_in: Boolean(user?.uid),
+        profit_usd: recordProfit(localRecord),
+      });
 
       setBuyIn("");
       setCashOut("");

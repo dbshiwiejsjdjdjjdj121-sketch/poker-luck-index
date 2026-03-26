@@ -9,6 +9,7 @@ import { PremiumActionGateModal } from "@/components/premium-action-gate-modal";
 import { useAuth } from "@/components/auth-provider";
 import { useSubscription } from "@/components/subscription-provider";
 import { getAllInHandRecord, getReplayPayload } from "@/lib/allin-hand-record";
+import { trackEvent } from "@/lib/analytics";
 import { uploadSourceLabels, type SavedHandUpload } from "@/lib/hand-upload-types";
 
 const VIEWER_ID_STORAGE_KEY = "poker-luck-index-viewer-id";
@@ -159,6 +160,10 @@ export function SavedHandReplayPanel({
     }
 
     if (!user || !subscription.premium) {
+      trackEvent("premium_gate_opened", {
+        action: "analysis",
+        path: "/hand-review",
+      });
       setGateOpen(true);
       return;
     }
@@ -191,6 +196,9 @@ export function SavedHandReplayPanel({
 
       setItem(data.item);
       setNotice(force ? "AI analysis refreshed." : "AI analysis saved.");
+      trackEvent(force ? "hand_analysis_refreshed" : "hand_analysis_started", {
+        source: item?.source || "",
+      });
     } catch (analysisError) {
       setError(
         analysisError instanceof Error
@@ -200,7 +208,7 @@ export function SavedHandReplayPanel({
     } finally {
       setBusy("");
     }
-  }, [getIdToken, handId, subscription.premium, user, viewerId]);
+  }, [getIdToken, handId, item?.source, subscription.premium, user, viewerId]);
 
   useEffect(() => {
     if (
