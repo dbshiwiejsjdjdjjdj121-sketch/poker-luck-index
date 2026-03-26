@@ -70,21 +70,63 @@ async function main() {
   fs.mkdirSync(reportDir, { recursive: true });
 
   console.log("Loading Google access token...");
-  const googleToken = await getGoogleAccessToken(googleAuth);
-  console.log("Fetching GA4, Search Console, and Vercel summaries...");
-  const [gaLandingRows, gaEventRows, gscPageRows, gscPrevPageRows, gscQueryRows, vercelSummary] =
-    await Promise.all([
-      fetchGaLandingPages(googleToken),
-      fetchGaEventCounts(googleToken),
-      fetchSearchConsoleRows(googleToken, ["page"], currentRange),
-      fetchSearchConsoleRows(googleToken, ["page"], previousRange),
-      fetchSearchConsoleRows(googleToken, ["query"], currentRange),
-      fetchVercelSummary(),
-    ]);
+  let googleToken = "";
+  const sourceErrors = {};
 
-  const gaSummary = buildGaSummary(gaLandingRows, gaEventRows);
-  const gscSummary = buildGscSummary(gscPageRows, gscPrevPageRows, gscQueryRows);
-  const recommendations = buildRecommendations({ gaSummary, gscSummary, vercelSummary });
+  try {
+    googleToken = await getGoogleAccessToken(googleAuth);
+  } catch (error) {
+    sourceErrors.googleAuth = toErrorMessage(error);
+  }
+
+  console.log("Fetching GA4, Search Console, and Vercel summaries...");
+  const [
+    gaLandingResult,
+    gaEventsResult,
+    gscPagesResult,
+    gscPrevPagesResult,
+    gscQueriesResult,
+    vercelResult,
+  ] = await Promise.all([
+    googleToken ? fetchGaLandingPages(googleToken) : Promise.resolve([]),
+    googleToken ? fetchGaEventCounts(googleToken) : Promise.resolve([]),
+    googleToken ? fetchSearchConsoleRows(googleToken, ["page"], currentRange) : Promise.resolve([]),
+    googleToken ? fetchSearchConsoleRows(googleToken, ["page"], previousRange) : Promise.resolve([]),
+    googleToken ? fetchSearchConsoleRows(googleToken, ["query"], currentRange) : Promise.resolve([]),
+    fetchVercelSummary(),
+  ].map((promise, index) =>
+    settle(
+      promise,
+      index === 5
+        ? {
+            linked: false,
+            note: "Unable to verify Vercel project access.",
+          }
+        : [],
+    ),
+  ));
+
+  if (gaLandingResult.error || gaEventsResult.error) {
+    sourceErrors.ga4 = gaLandingResult.error || gaEventsResult.error || "";
+  }
+
+  if (gscPagesResult.error || gscPrevPagesResult.error || gscQueriesResult.error) {
+    sourceErrors.searchConsole =
+      gscPagesResult.error || gscPrevPagesResult.error || gscQueriesResult.error || "";
+  }
+
+  if (vercelResult.error) {
+    sourceErrors.vercel = vercelResult.error;
+  }
+
+  const gaSummary = buildGaSummary(gaLandingResult.value, gaEventsResult.value);
+  const gscSummary = buildGscSummary(
+    gscPagesResult.value,
+    gscPrevPagesResult.value,
+    gscQueriesResult.value,
+  );
+  const vercelSummary = vercelResult.value;
+  const recommendations = buildRecommendations({ gaSummary, gscSummary, vercelSummary, sourceErrors });
 
   const report = {
     generatedAt: now.toISOString(),
@@ -101,9 +143,10 @@ async function main() {
           : googleCredentials.kind,
       vercelProjectLinked: Boolean(config.vercelToken && config.vercelProjectId),
     },
+    sourceErrors,
     ga4: gaSummary,
     searchConsole: gscSummary,
-    vercel: vercelSummary,
+    vercel: vercelResult.value,
     recommendations,
   };
 
@@ -112,6 +155,24 @@ async function main() {
 
   console.log(`SEO report written to ${reportMarkdownPath}`);
   console.log(`SEO report JSON written to ${reportJsonPath}`);
+}
+
+async function settle(promise, fallbackValue) {
+  try {
+    return {
+      value: await promise,
+      error: "",
+    };
+  } catch (error) {
+    return {
+      value: fallbackValue,
+      error: toErrorMessage(error),
+    };
+  }
+}
+
+function toErrorMessage(error) {
+  return error instanceof Error ? error.message : String(error);
 }
 
 function loadEnvFile(filePath) {
@@ -449,8 +510,38 @@ function buildGscSummary(currentPageRows, previousPageRows, queryRows) {
   };
 }
 
-function buildRecommendations({ gaSummary, gscSummary, vercelSummary }) {
+function buildRecommendations({ gaSummary, gscSummary, vercelSummary, sourceErrors }) {
   const recommendations = [];
+
+  if (sourceErrors.googleAuth) {
+    recommendations.push({
+      type: "ops",
+      priority: "high",
+      target: "google-auth",
+      reason: `Google auth could not initialize: ${sourceErrors.googleAuth}`,
+      action: "Verify the service account JSON, the workflow secret, and outbound access to Google APIs.",
+    });
+  }
+
+  if (sourceErrors.ga4) {
+    recommendations.push({
+      type: "ops",
+      priority: "high",
+      target: "ga4",
+      reason: `GA4 data could not be fetched: ${sourceErrors.ga4}`,
+      action: "Confirm the service account has at least Analyst access on this GA4 property.",
+    });
+  }
+
+  if (sourceErrors.searchConsole) {
+    recommendations.push({
+      type: "ops",
+      priority: "high",
+      target: "search-console",
+      reason: `Search Console data could not be fetched: ${sourceErrors.searchConsole}`,
+      action: "Confirm the service account has access to the Search Console property and the property ID is correct.",
+    });
+  }
 
   for (const page of gscSummary.topPages) {
     if (page.impressions >= 75 && page.ctr < 0.02) {
@@ -534,8 +625,10 @@ function buildRecommendations({ gaSummary, gscSummary, vercelSummary }) {
       type: "ops",
       priority: "low",
       target: "vercel",
-      reason: "Vercel project access is not fully linked into the automation report yet.",
-      action: "Add VERCEL_TOKEN and VERCEL_PROJECT_ID to verify deployment access automatically.",
+      reason: vercelSummary.note || "Vercel project access is not fully linked into the automation report yet.",
+      action: config.vercelToken && config.vercelProjectId
+        ? "Verify the Vercel token, project ID, team ID, and outbound access to api.vercel.com."
+        : "Add VERCEL_TOKEN and VERCEL_PROJECT_ID to verify deployment access automatically.",
     });
   }
 
@@ -557,32 +650,46 @@ function buildMarkdownReport(report) {
     `- Google credentials source: ${report.config.googleCredentialSource}`,
     `- Vercel project linked: ${report.config.vercelProjectLinked ? "yes" : "no"}`,
     "",
+    "## Source Status",
+    "",
+    ...(Object.keys(report.sourceErrors).length === 0
+      ? ["- All configured data sources responded successfully."]
+      : Object.entries(report.sourceErrors).map(([source, message]) => `- ${source}: ${message}`)),
+    "",
     "## GA4 Funnel",
     "",
-    ...Object.entries(report.ga4.eventTotals).map(
-      ([eventName, count]) => `- ${eventName}: ${count}`,
-    ),
+    ...(Object.entries(report.ga4.eventTotals).length === 0
+      ? ["- No GA4 event data was returned for this run."]
+      : Object.entries(report.ga4.eventTotals).map(
+          ([eventName, count]) => `- ${eventName}: ${count}`,
+        )),
     "",
     "## Top Landing Pages",
     "",
-    ...report.ga4.topLandingPages.slice(0, 10).map(
-      (row) =>
-        `- ${row.landingPage} | ${row.sourceMedium} | sessions ${row.sessions} | users ${row.users} | engaged ${row.engagedSessions}`,
-    ),
+    ...(report.ga4.topLandingPages.length === 0
+      ? ["- No GA4 landing page rows were returned for this run."]
+      : report.ga4.topLandingPages.slice(0, 10).map(
+          (row) =>
+            `- ${row.landingPage} | ${row.sourceMedium} | sessions ${row.sessions} | users ${row.users} | engaged ${row.engagedSessions}`,
+        )),
     "",
     "## Search Console Pages",
     "",
-    ...report.searchConsole.topPages.slice(0, 10).map(
-      (row) =>
-        `- ${row.key} | clicks ${row.clicks} (${formatSigned(row.clickDelta)}) | impressions ${row.impressions} (${formatSigned(row.impressionDelta)}) | CTR ${formatPercent(row.ctr)} | position ${row.position.toFixed(1)}`,
-    ),
+    ...(report.searchConsole.topPages.length === 0
+      ? ["- No Search Console page rows were returned for this run."]
+      : report.searchConsole.topPages.slice(0, 10).map(
+          (row) =>
+            `- ${row.key} | clicks ${row.clicks} (${formatSigned(row.clickDelta)}) | impressions ${row.impressions} (${formatSigned(row.impressionDelta)}) | CTR ${formatPercent(row.ctr)} | position ${row.position.toFixed(1)}`,
+        )),
     "",
     "## Search Console Queries",
     "",
-    ...report.searchConsole.topQueries.slice(0, 10).map(
-      (row) =>
-        `- ${row.key} | clicks ${row.clicks} | impressions ${row.impressions} | CTR ${formatPercent(row.ctr)} | position ${row.position.toFixed(1)}`,
-    ),
+    ...(report.searchConsole.topQueries.length === 0
+      ? ["- No Search Console query rows were returned for this run."]
+      : report.searchConsole.topQueries.slice(0, 10).map(
+          (row) =>
+            `- ${row.key} | clicks ${row.clicks} | impressions ${row.impressions} | CTR ${formatPercent(row.ctr)} | position ${row.position.toFixed(1)}`,
+        )),
     "",
     "## Vercel",
     "",
@@ -597,10 +704,12 @@ function buildMarkdownReport(report) {
     "",
     "## Recommendations",
     "",
-    ...report.recommendations.map(
-      (item, index) =>
-        `${index + 1}. [${item.priority}] ${item.target}: ${item.reason} ${item.action}`,
-    ),
+    ...(report.recommendations.length === 0
+      ? ["- No immediate SEO actions were generated for this run."]
+      : report.recommendations.map(
+          (item, index) =>
+            `${index + 1}. [${item.priority}] ${item.target}: ${item.reason} ${item.action}`,
+        )),
     "",
   ];
 
