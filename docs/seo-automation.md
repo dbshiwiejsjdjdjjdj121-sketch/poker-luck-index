@@ -13,6 +13,11 @@ This project can now collect analytics in three layers:
 - `GOOGLE_SERVICE_ACCOUNT_KEY_PATH`
 - `GSC_SITE_URL`
 
+Notes:
+
+- `GA4_PROPERTY_ID` must be the GA4 property ID, not the web stream ID
+- `GSC_SITE_URL` must match the exact Search Console property type. For a domain property use `sc-domain:allinpokerai.com`
+
 CI-friendly alternatives:
 
 - `GOOGLE_SERVICE_ACCOUNT_JSON`

@@ -64,7 +64,7 @@ Required for the new hand upload flow:
 - `NEXT_PUBLIC_GA_ID`
   Optional: enables Google Analytics 4 page views and funnel events
 - `GA4_PROPERTY_ID`
-  Required for the SEO reporting script
+  Required for the SEO reporting script. Use the GA4 property ID, not the stream ID. In the Analytics admin URL it appears as the number after `p`
 - `GOOGLE_SERVICE_ACCOUNT_KEY_PATH`
   Required for the SEO reporting script
 - `GOOGLE_SERVICE_ACCOUNT_JSON`
@@ -72,7 +72,7 @@ Required for the new hand upload flow:
 - `GOOGLE_SERVICE_ACCOUNT_JSON_BASE64`
   Optional alternative for CI or GitHub Actions
 - `GSC_SITE_URL`
-  Required for the SEO reporting script. Use your Search Console property, such as `https://www.allinpokerai.com/` or `sc-domain:allinpokerai.com`
+  Required for the SEO reporting script. Use your exact Search Console property, such as `https://www.allinpokerai.com/` for a URL-prefix property or `sc-domain:allinpokerai.com` for a domain property
 - `VERCEL_TOKEN`
   Optional for the SEO reporting script
 - `VERCEL_PROJECT_ID`
