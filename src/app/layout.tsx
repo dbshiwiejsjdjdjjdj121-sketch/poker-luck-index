@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import { ClientShell } from "@/components/client-shell";
 import {
+  IOS_APP_STORE_ID,
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
   SITE_LOCALE,
@@ -83,6 +84,7 @@ export const metadata: Metadata = {
     },
   },
   other: {
+    "apple-itunes-app": `app-id=${IOS_APP_STORE_ID}, app-argument=${SITE_URL}`,
     distribution: "global",
     coverage: "Worldwide",
     "geo.placename": "Worldwide",

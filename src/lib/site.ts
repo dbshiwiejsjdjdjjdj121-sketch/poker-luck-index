@@ -5,6 +5,9 @@ export type SearchParams = Record<string, string | string[] | undefined>;
 export const SITE_NAME = "ALL IN Poker AI";
 export const SITE_URL = "https://www.allinpokerai.com";
 export const SITE_LOCALE = "en_US";
+export const IOS_APP_STORE_ID = "6756933594";
+export const IOS_APP_STORE_URL =
+  "https://apps.apple.com/us/app/all-in-poker-ai/id6756933594";
 export const SITE_DESCRIPTION =
   "ALL IN Poker AI helps you replay poker hands, track bankroll, save hand history, and check a fast luck index before you play.";
 export const SITE_KEYWORDS = [
@@ -103,6 +106,7 @@ export function buildStructuredData() {
         url: SITE_URL,
         inLanguage: "en-US",
         description: SITE_DESCRIPTION,
+        sameAs: [IOS_APP_STORE_URL],
       },
       {
         "@type": "WebApplication",
@@ -119,6 +123,25 @@ export function buildStructuredData() {
           priceCurrency: "USD",
         },
         description: SITE_DESCRIPTION,
+        sameAs: [IOS_APP_STORE_URL],
+      },
+      {
+        "@type": "MobileApplication",
+        name: "ALL IN Poker AI",
+        operatingSystem: "iOS",
+        applicationCategory: "EntertainmentApplication",
+        url: IOS_APP_STORE_URL,
+        downloadUrl: IOS_APP_STORE_URL,
+        inLanguage: "en-US",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        isPartOf: {
+          "@type": "WebSite",
+          url: SITE_URL,
+        },
       },
     ],
   };

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AppNavigation } from "@/components/app-navigation";
+import { AppStorePromo } from "@/components/app-store-promo";
 import { HomeForm } from "@/components/home-form";
 import {
   SITE_NAME,
@@ -103,6 +104,8 @@ export default function Home() {
                   Start Manual Replay
                 </Link>
               </div>
+
+              <AppStorePromo />
 
               <div className="grid gap-3 sm:grid-cols-3">
                 {HOME_PILLARS.map((pillar) => (
