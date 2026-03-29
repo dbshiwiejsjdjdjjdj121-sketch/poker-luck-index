@@ -38,6 +38,8 @@ Use the keyword system in `seo/keyword-map.json`.
 - Keep focus on a small number of core intent clusters
 - Only add a new cluster when the current ones have meaningful coverage
 - Prefer direct language such as `free poker bankroll tracker` over clever wording
+- Treat the keyword queue `shape_group` field as a hard same-day diversity rule
+- Do not publish two candidate pages with the same `shape_group` on the same day unless you explicitly override the queue for a good reason
 
 ## Allowed SEO Changes
 
@@ -84,6 +86,7 @@ Avoid:
 - Default target is 3 to 5 high-quality content pieces per week
 - If there is not enough useful material, publish fewer pages instead of weaker pages
 - Every new page must have a clear target intent, useful body content, internal links, and a path back to a product page
+- Respect the `max_same_shape_group_per_day` rule from `seo/content-types.json`
 
 ## Evidence Hierarchy
 
@@ -136,3 +139,4 @@ Every weekly review should answer:
 - which keyword cluster needs the next improvement
 - whether the planned change is people-first and product-relevant
 - whether first-party traffic data is strong enough to override the default competitor-and-keyword baseline for the next change
+- whether the current keyword queue would create a same-day `shape_group` collision that should be deferred

@@ -1,4 +1,12 @@
 {
+  "queue_rules": {
+    "max_same_shape_group_per_day": 1,
+    "notes": [
+      "Treat `shape_group` as a hard publishing diversity rule for the same calendar day.",
+      "If two candidates have the same `shape_group`, publish at most one of them that day unless you explicitly override the queue.",
+      "When first-party data is sparse, use `shape_group` to keep the content mix varied instead of repeatedly shipping near-identical page shapes."
+    ]
+  },
   "clusters": [
     {
       "slug": "bankroll-tracker",
@@ -15,6 +23,64 @@
         "how to track live poker bankroll",
         "how to log poker sessions",
         "bankroll tracking for live poker players"
+      ],
+      "queue": [
+        {
+          "term": "free poker bankroll tracker",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 1
+        },
+        {
+          "term": "poker bankroll tracker",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 2
+        },
+        {
+          "term": "live poker bankroll tracker",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 3
+        },
+        {
+          "term": "track poker sessions",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 4
+        },
+        {
+          "term": "poker session tracker",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 5
+        },
+        {
+          "term": "how to track live poker bankroll",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 6
+        },
+        {
+          "term": "how to log poker sessions",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/bankroll",
+          "priority": 7
+        },
+        {
+          "term": "bankroll tracking for live poker players",
+          "shape_group": "player-faq",
+          "content_type": "faq-comparison",
+          "target_page": "/bankroll",
+          "priority": 8
+        }
       ]
     },
     {
@@ -32,6 +98,64 @@
         "how to replay a poker hand",
         "how to review live poker hands",
         "manual hand replay vs ai hand analysis"
+      ],
+      "queue": [
+        {
+          "term": "poker hand replay",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 1
+        },
+        {
+          "term": "poker hand review",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 2
+        },
+        {
+          "term": "manual poker hand replay",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 3
+        },
+        {
+          "term": "poker hand replayer",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 4
+        },
+        {
+          "term": "review poker hands after session",
+          "shape_group": "post-session-review",
+          "content_type": "scenario-page",
+          "target_page": "/hand-review",
+          "priority": 5
+        },
+        {
+          "term": "how to replay a poker hand",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 6
+        },
+        {
+          "term": "how to review live poker hands",
+          "shape_group": "post-session-review",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 7
+        },
+        {
+          "term": "manual hand replay vs ai hand analysis",
+          "shape_group": "comparison",
+          "content_type": "faq-comparison",
+          "target_page": "/hand-review",
+          "priority": 8
+        }
       ]
     },
     {
@@ -48,6 +172,57 @@
         "how to write poker hand history from notes",
         "how to save live poker hands",
         "best way to record live poker hands"
+      ],
+      "queue": [
+        {
+          "term": "poker hand history",
+          "shape_group": "core-landing",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 1
+        },
+        {
+          "term": "write poker hand history",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 2
+        },
+        {
+          "term": "save poker hand history",
+          "shape_group": "note-capture",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 3
+        },
+        {
+          "term": "live poker hand notes",
+          "shape_group": "note-capture",
+          "content_type": "scenario-page",
+          "target_page": "/hand-review",
+          "priority": 4
+        },
+        {
+          "term": "how to write poker hand history from notes",
+          "shape_group": "workflow-how-to",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 5
+        },
+        {
+          "term": "how to save live poker hands",
+          "shape_group": "note-capture",
+          "content_type": "evergreen-guide",
+          "target_page": "/hand-review",
+          "priority": 6
+        },
+        {
+          "term": "best way to record live poker hands",
+          "shape_group": "player-faq",
+          "content_type": "faq-comparison",
+          "target_page": "/hand-review",
+          "priority": 7
+        }
       ]
     },
     {
@@ -62,6 +237,43 @@
       "supporting_intents": [
         "what should i track before a poker session",
         "poker session planning tool"
+      ],
+      "queue": [
+        {
+          "term": "poker luck index",
+          "shape_group": "discovery-hook",
+          "content_type": "evergreen-guide",
+          "target_page": "/",
+          "priority": 1
+        },
+        {
+          "term": "table read poker tool",
+          "shape_group": "discovery-hook",
+          "content_type": "evergreen-guide",
+          "target_page": "/",
+          "priority": 2
+        },
+        {
+          "term": "pre session poker tool",
+          "shape_group": "pre-session-checklist",
+          "content_type": "evergreen-guide",
+          "target_page": "/",
+          "priority": 3
+        },
+        {
+          "term": "what should i track before a poker session",
+          "shape_group": "pre-session-checklist",
+          "content_type": "faq-comparison",
+          "target_page": "/",
+          "priority": 4
+        },
+        {
+          "term": "poker session planning tool",
+          "shape_group": "pre-session-checklist",
+          "content_type": "evergreen-guide",
+          "target_page": "/",
+          "priority": 5
+        }
       ]
     }
   ]

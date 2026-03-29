@@ -33,6 +33,7 @@ Use the current report to decide which mode applies:
 - `conversion`: enough landing and activation data exists to improve CTA hierarchy, onboarding copy, and monetization messaging
 
 The competitor set is not a daily crawler target. Treat `seo/competitors.json` plus `seo/competitor-snapshot.json` as the stable research baseline and only refresh them on a longer cycle.
+Treat the keyword queue in `seo/keyword-map.json` as the publishing sequence, and use `shape_group` to avoid same-day page-shape collisions.
 
 ## Priority Order
 
@@ -63,6 +64,7 @@ Use these only when the weekly report has no strong non-ops recommendation:
 - Prefer editing existing SEO surfaces before creating brand new pages
 - Use the fixed competitor keyword baseline first, then let weekly first-party data decide what to refine next
 - Do not fetch or re-scrape competitor sites during the weekly automation run
+- Do not schedule or publish more than one item from the same `shape_group` on the same day
 - Do not change pricing, billing logic, auth, or core product behavior unless the SEO report specifically points to a conversion issue and the change is low risk
 - Do not remove existing user-facing features just to simplify SEO copy
 - Keep the product positioning tools-first: bankroll and replay lead, luck index supports discovery
@@ -92,4 +94,5 @@ At the end of each weekly run:
 - Summarize what changed
 - Note which report signal or backlog item justified the change
 - Mention validation results
+- Inspect the full automation chain once: report freshness, rolling `seo` issue freshness, queue `shape_group` collisions, and any low-risk workflow friction worth fixing
 - If no safe SEO code change is warranted, say so clearly instead of forcing a weak edit

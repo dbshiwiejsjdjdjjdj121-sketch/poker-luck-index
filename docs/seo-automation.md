@@ -74,6 +74,7 @@ The safe long-term flow is:
 2. Auto-generate a ranked SEO todo list
 3. Auto-open a Codex task or branch with the suggested edits
 4. Ship one focused SEO change batch against the weekly runbook
+5. Run one short supervision pass on the completed flow and patch low-risk automation friction if it surfaced
 
 The weekly execution rules live in [docs/seo-weekly-runbook.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-weekly-runbook.md).
 The fixed SEO policy and machine-readable inputs live in:
@@ -86,6 +87,7 @@ The fixed SEO policy and machine-readable inputs live in:
 
 Avoid fully automatic content rewrites on short-term traffic swings.
 Avoid weekly or daily competitor scraping during normal execution. Use the frozen snapshot until you intentionally refresh it.
+Avoid same-day content batching that repeats the same `shape_group` from the keyword queue.
 
 ## GitHub Actions Setup
 

@@ -1,5 +1,47 @@
 {
   "max_pieces_per_week": 5,
+  "shape_group_rules": {
+    "max_same_shape_group_per_day": 1,
+    "notes": [
+      "Do not publish two pieces from the same `shape_group` on the same day.",
+      "Use `shape_group` to vary page shape before you vary wording.",
+      "If the queue only offers duplicate `shape_group` options, ship the highest-value one and defer the rest."
+    ]
+  },
+  "shape_groups": [
+    {
+      "slug": "core-landing",
+      "goal": "Main intent page that explains the product surface directly."
+    },
+    {
+      "slug": "workflow-how-to",
+      "goal": "Step-by-step teaching page for a concrete player task."
+    },
+    {
+      "slug": "player-faq",
+      "goal": "FAQ-style page or section answering a common player question."
+    },
+    {
+      "slug": "comparison",
+      "goal": "Compare two approaches such as manual replay versus AI analysis."
+    },
+    {
+      "slug": "post-session-review",
+      "goal": "Review-oriented page for after-session analysis and replay workflows."
+    },
+    {
+      "slug": "note-capture",
+      "goal": "Page focused on recording, saving, or structuring live hand notes."
+    },
+    {
+      "slug": "discovery-hook",
+      "goal": "Top-of-funnel discovery page tied to luck, table feel, or pre-session curiosity."
+    },
+    {
+      "slug": "pre-session-checklist",
+      "goal": "Preparation or planning page for before a live session starts."
+    }
+  ],
   "preferred_mix": [
     {
       "type": "evergreen-guide",
