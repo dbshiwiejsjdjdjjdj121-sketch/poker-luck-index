@@ -71,6 +71,12 @@ The safe long-term flow is:
 4. Ship one focused SEO change batch against the weekly runbook
 
 The weekly execution rules live in [docs/seo-weekly-runbook.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-weekly-runbook.md).
+The fixed SEO policy and machine-readable inputs live in:
+
+- [docs/seo-policy.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-policy.md)
+- [seo/competitors.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitors.json)
+- [seo/keyword-map.json](/Users/wangbin/Documents/Poker%20Fortune/seo/keyword-map.json)
+- [seo/content-types.json](/Users/wangbin/Documents/Poker%20Fortune/seo/content-types.json)
 
 Avoid fully automatic content rewrites on short-term traffic swings.
 

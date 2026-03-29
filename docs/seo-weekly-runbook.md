@@ -2,6 +2,13 @@
 
 This runbook defines the safe weekly SEO editing loop for this repository.
 
+Reference inputs:
+
+- [docs/seo-policy.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-policy.md)
+- [seo/competitors.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitors.json)
+- [seo/keyword-map.json](/Users/wangbin/Documents/Poker%20Fortune/seo/keyword-map.json)
+- [seo/content-types.json](/Users/wangbin/Documents/Poker%20Fortune/seo/content-types.json)
+
 ## Goal
 
 Turn the weekly SEO report into one focused batch of code changes that improves search visibility, activation, or conversion without creating noisy churn.
@@ -13,7 +20,8 @@ Start from these sources in order:
 1. The latest SEO action issue in GitHub labeled `seo`
 2. `reports/seo/action-plan.md` if it exists locally
 3. `reports/seo/latest.md` if it exists locally
-4. The current site structure and gaps in the main SEO surfaces
+4. The policy and fixed-input SEO files
+5. The current site structure and gaps in the main SEO surfaces
 
 ## Priority Order
 
@@ -24,7 +32,8 @@ Pick the highest-value change from this order:
 3. Improve the highest-traffic tool page with weak activation
 4. Add one tightly scoped FAQ or guide section for a rising query
 5. Strengthen homepage routing into `bankroll` and `hand-review`
-6. If the report has no strong signal yet, ship one foundational SEO improvement from the backlog
+6. Add one people-first content page only if it fits the fixed keyword map and content-type rules
+7. If the report has no strong signal yet, ship one foundational SEO improvement from the backlog
 
 ## Foundational Backlog
 
@@ -35,6 +44,7 @@ Use these only when the weekly report has no strong non-ops recommendation:
 - Tighten title tags and meta descriptions on the main tool pages
 - Add comparison copy such as manual replay vs AI analysis
 - Add GEO-friendly answer blocks with definitions, steps, and use cases
+- Add one high-value guide, FAQ, or analysis page that matches the fixed keyword and competitor system
 
 ## Scope Guardrails
 
@@ -43,6 +53,8 @@ Use these only when the weekly report has no strong non-ops recommendation:
 - Do not change pricing, billing logic, auth, or core product behavior unless the SEO report specifically points to a conversion issue and the change is low risk
 - Do not remove existing user-facing features just to simplify SEO copy
 - Keep the product positioning tools-first: bankroll and replay lead, luck index supports discovery
+- Never force daily publishing just to fill a quota
+- New content must satisfy the people-first and quality-gate rules in `docs/seo-policy.md`
 
 ## Validation
 

@@ -1,0 +1,51 @@
+{
+  "review_window_weeks": 8,
+  "competitors": [
+    {
+      "slug": "chipstats",
+      "name": "ChipStats",
+      "url": "https://chipstats.app/",
+      "primary_focus": "live poker bankroll tracker",
+      "notes": [
+        "Use for bankroll language, feature framing, and live-session use cases.",
+        "Do not mirror branding or feature claims beyond what is publicly visible."
+      ]
+    },
+    {
+      "slug": "check-replay",
+      "name": "Check Replay",
+      "url": "https://www.checkreplay.com/",
+      "primary_focus": "poker hand replay and review",
+      "notes": [
+        "Use for replay-page structure, explanatory copy, and review-oriented wording."
+      ]
+    },
+    {
+      "slug": "handhistory",
+      "name": "HandHistory",
+      "url": "https://handhistory.com/",
+      "primary_focus": "hand replayer, analysis, and bankroll support",
+      "notes": [
+        "Use for broad topic coverage and support-page patterns."
+      ]
+    },
+    {
+      "slug": "edge-poker",
+      "name": "EDGE Poker",
+      "url": "https://edgepoker.app/",
+      "primary_focus": "all-in-one poker companion positioning",
+      "notes": [
+        "Use for positioning comparisons and product-category framing."
+      ]
+    },
+    {
+      "slug": "poker-stack",
+      "name": "Poker Stack",
+      "url": "https://www.pokerbankrollapp.com/",
+      "primary_focus": "bankroll tracker positioning",
+      "notes": [
+        "Use for bankroll intent language and session-tracking comparisons."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "clusters": [
+    {
+      "slug": "bankroll-tracker",
+      "priority": 1,
+      "primary_page": "/bankroll",
+      "core_terms": [
+        "free poker bankroll tracker",
+        "poker bankroll tracker",
+        "live poker bankroll tracker",
+        "track poker sessions",
+        "poker session tracker"
+      ],
+      "supporting_intents": [
+        "how to track live poker bankroll",
+        "how to log poker sessions",
+        "bankroll tracking for live poker players"
+      ]
+    },
+    {
+      "slug": "hand-replay",
+      "priority": 2,
+      "primary_page": "/hand-review",
+      "core_terms": [
+        "poker hand replay",
+        "poker hand review",
+        "manual poker hand replay",
+        "poker hand replayer",
+        "review poker hands after session"
+      ],
+      "supporting_intents": [
+        "how to replay a poker hand",
+        "how to review live poker hands",
+        "manual hand replay vs ai hand analysis"
+      ]
+    },
+    {
+      "slug": "hand-history",
+      "priority": 3,
+      "primary_page": "/hand-review",
+      "core_terms": [
+        "poker hand history",
+        "write poker hand history",
+        "save poker hand history",
+        "live poker hand notes"
+      ],
+      "supporting_intents": [
+        "how to write poker hand history from notes",
+        "how to save live poker hands",
+        "best way to record live poker hands"
+      ]
+    },
+    {
+      "slug": "table-read-luck",
+      "priority": 4,
+      "primary_page": "/",
+      "core_terms": [
+        "poker luck index",
+        "table read poker tool",
+        "pre session poker tool"
+      ],
+      "supporting_intents": [
+        "what should i track before a poker session",
+        "poker session planning tool"
+      ]
+    }
+  ]
+}

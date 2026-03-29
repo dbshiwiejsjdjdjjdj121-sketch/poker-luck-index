@@ -1,0 +1,40 @@
+{
+  "max_pieces_per_week": 5,
+  "preferred_mix": [
+    {
+      "type": "evergreen-guide",
+      "share": 0.5,
+      "goal": "Own durable search intents tied to bankroll, replay, and hand-history workflows."
+    },
+    {
+      "type": "faq-comparison",
+      "share": 0.25,
+      "goal": "Support near-page-one queries and reduce ambiguity around free vs premium workflows."
+    },
+    {
+      "type": "scenario-page",
+      "share": 0.15,
+      "goal": "Capture realistic live-poker situations using player language and product-relevant advice."
+    },
+    {
+      "type": "news-analysis",
+      "share": 0.1,
+      "goal": "Publish timely commentary only when the topic materially affects live poker players or connects naturally to the product."
+    }
+  ],
+  "quality_gates": [
+    "clear target intent",
+    "original explanation or synthesis",
+    "useful body content, not a thin wrapper",
+    "internal links to bankroll or hand-review when relevant",
+    "no mass-produced template spam",
+    "no generic news rewrites without analysis"
+  ],
+  "disallowed_patterns": [
+    "daily forced publishing regardless of topic quality",
+    "rewritten competitor pages",
+    "unattributed summaries of public articles",
+    "pages that do not support a real player task",
+    "content whose only purpose is to create more URLs"
+  ]
+}
