@@ -17,7 +17,7 @@ Turn the weekly SEO report into one focused batch of code changes that improves 
 
 Start from these sources in order:
 
-1. The latest SEO action issue in GitHub labeled `seo`
+1. The rolling SEO action issue in GitHub labeled `seo`
 2. `reports/seo/action-plan.md` if it exists locally
 3. `reports/seo/latest.md` if it exists locally
 4. The policy and fixed-input SEO files

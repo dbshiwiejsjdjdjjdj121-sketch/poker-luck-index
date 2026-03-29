@@ -110,3 +110,37 @@ jobs:
               });
               core.notice(`Created SEO issue #${result.data.number}`);
             }
+
+            const activeIssueNumber = existingIssue
+              ? existingIssue.number
+              : (await github.rest.issues.listForRepo({
+                  owner,
+                  repo,
+                  state: "open",
+                  labels: labelName,
+                  per_page: 100,
+                })).data.find(
+                  (issue) => !issue.pull_request && issue.title === actionPlan.issueTitle,
+                )?.number;
+
+            if (activeIssueNumber) {
+              const staleSeoIssues = existingIssues.filter((issue) => {
+                if (issue.pull_request || issue.number === activeIssueNumber) {
+                  return false;
+                }
+
+                return issue.labels.some((label) =>
+                  typeof label === "string" ? label === labelName : label.name === labelName,
+                );
+              });
+
+              for (const staleIssue of staleSeoIssues) {
+                await github.rest.issues.update({
+                  owner,
+                  repo,
+                  issue_number: staleIssue.number,
+                  state: "closed",
+                });
+                core.notice(`Closed stale SEO issue #${staleIssue.number}`);
+              }
+            }

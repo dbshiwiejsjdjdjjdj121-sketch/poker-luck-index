@@ -94,4 +94,4 @@ Add these GitHub repository secrets:
 - `VERCEL_TEAM_ID`
 
 The workflow runs weekly and also supports manual runs from the Actions tab.
-After the report finishes, it also creates a GitHub issue with the latest SEO action plan.
+After the report finishes, it updates a rolling GitHub issue with the latest SEO action plan and closes older automation-created SEO issues.

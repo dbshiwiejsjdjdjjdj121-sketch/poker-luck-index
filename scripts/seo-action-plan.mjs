@@ -73,8 +73,7 @@ function buildFocus(inputReport) {
 }
 
 function buildIssueTitle(inputReport) {
-  const date = inputReport.generatedAt?.slice(0, 10) || new Date().toISOString().slice(0, 10);
-  return `SEO action plan ${date}`;
+  return "SEO Weekly Action Plan";
 }
 
 function buildActionPlanMarkdown(plan, inputReport) {
