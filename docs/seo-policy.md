@@ -25,6 +25,8 @@ The product should be positioned as a poker tools workspace.
 Use the fixed competitor set in `seo/competitors.json`.
 
 - Keep the same set for at least 8 weeks
+- Build the competitor snapshot once, then treat it as a stable baseline instead of re-extracting competitor language every day
+- Refresh the competitor set only on a longer review cycle or when the market meaningfully changes
 - Use competitor research for language, page structure, topic coverage, and internal-link ideas
 - Do not copy feature claims or invent parity where it does not exist
 
@@ -132,3 +134,4 @@ Every weekly review should answer:
 - which competitor gap is most important now
 - which keyword cluster needs the next improvement
 - whether the planned change is people-first and product-relevant
+- whether first-party traffic data is strong enough to override the default competitor-and-keyword baseline for the next change

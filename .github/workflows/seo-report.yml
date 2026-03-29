@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "0 3 * * 1"
 
+concurrency:
+  group: seo-report
+  cancel-in-progress: true
+
 permissions:
   contents: read
   issues: write

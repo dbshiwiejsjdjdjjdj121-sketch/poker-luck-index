@@ -23,6 +23,16 @@ Start from these sources in order:
 4. The policy and fixed-input SEO files
 5. The current site structure and gaps in the main SEO surfaces
 
+## Signal Modes
+
+Use the current report to decide which mode applies:
+
+- `foundation`: traffic and query signals are still sparse, so use the fixed competitor snapshot and keyword map to improve one existing core SEO page
+- `discovery`: early impressions are appearing, so use weekly Search Console signals to refine titles, FAQ, internal links, or query support
+- `conversion`: enough landing and activation data exists to improve CTA hierarchy, onboarding copy, and monetization messaging
+
+The competitor set is not a daily crawler target. Treat `seo/competitors.json` as a stable research baseline and only refresh it on a longer cycle.
+
 ## Priority Order
 
 Pick the highest-value change from this order:
@@ -50,6 +60,7 @@ Use these only when the weekly report has no strong non-ops recommendation:
 
 - Ship one focused batch per run, not a whole-site rewrite
 - Prefer editing existing SEO surfaces before creating brand new pages
+- Use the fixed competitor keyword baseline first, then let weekly first-party data decide what to refine next
 - Do not change pricing, billing logic, auth, or core product behavior unless the SEO report specifically points to a conversion issue and the change is low risk
 - Do not remove existing user-facing features just to simplify SEO copy
 - Keep the product positioning tools-first: bankroll and replay lead, luck index supports discovery
