@@ -32,10 +32,13 @@ Optional Vercel verification:
 ## Report Command
 
 ```bash
+npm run seo:competitors
 npm run seo:report
 npm run seo:plan
 npm run seo:weekly
 ```
+
+`npm run seo:competitors` is a manual refresh command for the fixed competitor snapshot. It is not part of the weekly automation loop.
 
 The command reads Google Analytics 4 and Search Console data, then writes:
 
@@ -75,10 +78,12 @@ The fixed SEO policy and machine-readable inputs live in:
 
 - [docs/seo-policy.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-policy.md)
 - [seo/competitors.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitors.json)
+- [seo/competitor-snapshot.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitor-snapshot.json)
 - [seo/keyword-map.json](/Users/wangbin/Documents/Poker%20Fortune/seo/keyword-map.json)
 - [seo/content-types.json](/Users/wangbin/Documents/Poker%20Fortune/seo/content-types.json)
 
 Avoid fully automatic content rewrites on short-term traffic swings.
+Avoid weekly or daily competitor scraping during normal execution. Use the frozen snapshot until you intentionally refresh it.
 
 ## GitHub Actions Setup
 

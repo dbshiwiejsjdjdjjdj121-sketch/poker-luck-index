@@ -1,0 +1,272 @@
+{
+  "capturedAt": "2026-03-29T16:33:50.907Z",
+  "refreshPolicy": {
+    "mode": "manual-only",
+    "notes": [
+      "This file is a fixed competitor baseline for weekly SEO work.",
+      "Weekly automation should read this snapshot and must not re-fetch competitor sites.",
+      "Refresh only when you explicitly want to rebuild the competitor baseline."
+    ]
+  },
+  "sourceWindowWeeks": 8,
+  "competitors": [
+    {
+      "slug": "chipstats",
+      "name": "ChipStats",
+      "sourceUrl": "https://chipstats.app/",
+      "finalUrl": "https://chipstats.app/",
+      "status": 200,
+      "primaryFocus": "live poker bankroll tracker",
+      "title": "ChipStats – Live Poker Bankroll Tracker App",
+      "metaDescription": "Track your poker sessions, bankroll, ROI, and hourly with ChipStats. Built for live players who want speed, insights, and clarity.",
+      "metaKeywords": [
+        "poker tracker",
+        "live poker",
+        "bankroll tracker",
+        "poker app",
+        "session stats",
+        "ROI calculator",
+        "poker log"
+      ],
+      "canonical": "",
+      "h1": "Built for the Grind",
+      "h2": [
+        "Track every live session in seconds. Play smarter. Win more."
+      ],
+      "keywordSignals": [
+        "live poker bankroll tracker",
+        "track poker sessions",
+        "poker ROI",
+        "poker hourly",
+        "poker session stats",
+        "poker bankroll insights"
+      ],
+      "mappedClusters": [
+        "bankroll-tracker"
+      ],
+      "positioningNotes": [
+        "Leans hard into live-session speed and win-rate clarity.",
+        "Useful reference for bankroll, ROI, and hourly language on player-facing pages."
+      ],
+      "sourceNotes": [
+        "Use for bankroll language, feature framing, and live-session use cases.",
+        "Do not mirror branding or feature claims beyond what is publicly visible."
+      ]
+    },
+    {
+      "slug": "check-replay",
+      "name": "Check Replay",
+      "sourceUrl": "https://www.checkreplay.com/",
+      "finalUrl": "https://www.checkreplay.com/",
+      "status": 200,
+      "primaryFocus": "poker hand replay and review",
+      "title": "Poker Replayer | Check Replay",
+      "metaDescription": "Save time and improve your poker skills with Check Replay. An accessible and intuitive platform for hand history replays.",
+      "metaKeywords": [],
+      "canonical": "",
+      "h1": "Optimize your game with the replayer of choice for poker pros",
+      "h2": [
+        "Your game’s strong — but is your study game on the same level?",
+        "Quick reviews. One-click sharing.",
+        "Share Hand",
+        "How Check Replay Helps Your Game!",
+        "Kelvin Kerber is also Check Replay!"
+      ],
+      "keywordSignals": [
+        "poker replayer",
+        "poker hand replay",
+        "poker hand history replay",
+        "poker hand review",
+        "accessible hand replays",
+        "improve poker skills"
+      ],
+      "mappedClusters": [
+        "hand-replay",
+        "hand-history"
+      ],
+      "positioningNotes": [
+        "Frames the category directly as a poker replayer.",
+        "Good reference for intuitive replay language and skill-improvement positioning."
+      ],
+      "sourceNotes": [
+        "Use for replay-page structure, explanatory copy, and review-oriented wording."
+      ]
+    },
+    {
+      "slug": "handhistory",
+      "name": "HandHistory",
+      "sourceUrl": "https://handhistory.com/",
+      "finalUrl": "https://handhistory.com/",
+      "status": 200,
+      "primaryFocus": "hand replayer, analysis, and bankroll support",
+      "title": "HandHistory - Become a Profitable Poker Player | Track & Analyze Your Game",
+      "metaDescription": "Improve your poker game with HandHistory. Track your performance, analyze hands, find leaks with intelligent analysis, and review detailed statistics. Free poker tracking software for PokerStars, GGPoker & more.",
+      "metaKeywords": [
+        "poker tracker",
+        "hand history",
+        "poker analysis",
+        "poker software",
+        "poker statistics",
+        "poker tracking",
+        "poker leak finder",
+        "PokerStars tracker",
+        "GGPoker tracker",
+        "poker winrate",
+        "poker hand replayer",
+        "bankroll management"
+      ],
+      "canonical": "https://handhistory.com",
+      "h1": "Track your poker journey",
+      "h2": [
+        "View hand replays and stats from any device",
+        "How it works",
+        "Message from the founder",
+        "Powerful Features",
+        "Choose Your Plan"
+      ],
+      "keywordSignals": [
+        "poker tracking software",
+        "poker hand replayer",
+        "bankroll management",
+        "poker leak finder",
+        "poker statistics",
+        "poker hand analysis"
+      ],
+      "mappedClusters": [
+        "hand-replay",
+        "hand-history",
+        "bankroll-tracker"
+      ],
+      "positioningNotes": [
+        "Broad all-in-one tracking and analysis positioning.",
+        "Strong source for analysis, statistics, and bankroll vocabulary."
+      ],
+      "sourceNotes": [
+        "Use for broad topic coverage and support-page patterns."
+      ]
+    },
+    {
+      "slug": "edge-poker",
+      "name": "EDGE Poker",
+      "sourceUrl": "https://edgepoker.app/",
+      "finalUrl": "https://edgepoker.app/",
+      "status": 200,
+      "primaryFocus": "all-in-one poker companion positioning",
+      "title": "EDGE Poker | AI Coach, Tracker & Tournament Timer",
+      "metaDescription": "The only poker app with AI coaching. GTO trainer, hand logger, study hub, session tracking, tournament timer, and bankroll analytics. Free on the App Store.",
+      "metaKeywords": [],
+      "canonical": "",
+      "h1": "EDGE Poker",
+      "h2": [
+        "AI Scouting Reports",
+        "AI Pre-Session Briefings",
+        "GTO Trainer & Charts",
+        "Study Hub",
+        "Session Tracking"
+      ],
+      "keywordSignals": [
+        "ai poker coach",
+        "poker tracker",
+        "tournament timer",
+        "bankroll analytics",
+        "hand logger",
+        "study hub"
+      ],
+      "mappedClusters": [
+        "bankroll-tracker",
+        "hand-history",
+        "table-read-luck"
+      ],
+      "positioningNotes": [
+        "Emphasizes one-app convenience and AI-assisted workflows.",
+        "Useful for product-category framing, but not for copying feature breadth."
+      ],
+      "sourceNotes": [
+        "Use for positioning comparisons and product-category framing."
+      ]
+    },
+    {
+      "slug": "poker-stack",
+      "name": "Poker Stack",
+      "sourceUrl": "https://www.pokerbankrollapp.com/",
+      "finalUrl": "https://www.pokerbankrollapp.com/",
+      "status": 200,
+      "primaryFocus": "bankroll tracker positioning",
+      "title": "Poker Stack: FREE Poker Bankroll Tracker for iOS & Android",
+      "metaDescription": "The easiest bankroll management app for poker. See where your money goes, visualize your progress with over 40+ insightful graphs, become a better player.",
+      "metaKeywords": [
+        "poker",
+        "bankroll",
+        "app",
+        "ios",
+        "Poker Bankroll Management",
+        "poker stats",
+        "poker statistics",
+        "android"
+      ],
+      "canonical": "",
+      "h1": "Poker Stack for Poker Money Management",
+      "h2": [
+        "More than a poker bankroll tracker",
+        "The best free poker bankroll management app",
+        "Bankroll Manager for Texas Hold'em or Omaha?",
+        "THE #1 POKER PLAYER COMPANION",
+        "The Smartest Poker Bankroll Management App"
+      ],
+      "keywordSignals": [
+        "free poker bankroll tracker",
+        "poker bankroll management",
+        "track poker sessions",
+        "poker session graphs",
+        "poker stats",
+        "ios and android poker app"
+      ],
+      "mappedClusters": [
+        "bankroll-tracker"
+      ],
+      "positioningNotes": [
+        "Very direct bankroll-tracker wording with cross-platform app language.",
+        "Good reference for simple bankroll-management and graph/reporting phrasing."
+      ],
+      "sourceNotes": [
+        "Use for bankroll intent language and session-tracking comparisons."
+      ]
+    }
+  ],
+  "baselineKeywords": {
+    "bankroll-tracker": [
+      "live poker bankroll tracker",
+      "free poker bankroll tracker",
+      "poker bankroll management",
+      "track poker sessions",
+      "poker session tracker",
+      "poker ROI",
+      "poker hourly",
+      "bankroll analytics"
+    ],
+    "hand-replay": [
+      "poker hand replay",
+      "poker replayer",
+      "poker hand review",
+      "poker hand history replay",
+      "hand replayer",
+      "accessible hand replays"
+    ],
+    "hand-history": [
+      "poker hand history",
+      "hand logger",
+      "save poker hands",
+      "poker hand analysis",
+      "poker leak finder",
+      "poker statistics"
+    ],
+    "table-read-luck": [
+      "ai poker coach",
+      "poker tools in one app",
+      "pre-session planning",
+      "session tracking",
+      "study hub",
+      "tournament timer"
+    ]
+  }
+}

@@ -22,11 +22,12 @@ The product should be positioned as a poker tools workspace.
 
 ## Fixed Competitor Set
 
-Use the fixed competitor set in `seo/competitors.json`.
+Use the fixed competitor set in `seo/competitors.json` and the frozen SEO snapshot in `seo/competitor-snapshot.json`.
 
 - Keep the same set for at least 8 weeks
 - Build the competitor snapshot once, then treat it as a stable baseline instead of re-extracting competitor language every day
 - Refresh the competitor set only on a longer review cycle or when the market meaningfully changes
+- Weekly SEO automation must read the local snapshot instead of fetching competitor pages again
 - Use competitor research for language, page structure, topic coverage, and internal-link ideas
 - Do not copy feature claims or invent parity where it does not exist
 

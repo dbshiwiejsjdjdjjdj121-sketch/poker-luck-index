@@ -1,5 +1,7 @@
 {
   "review_window_weeks": 8,
+  "snapshot_file": "seo/competitor-snapshot.json",
+  "refresh_policy": "manual-only",
   "competitors": [
     {
       "slug": "chipstats",

@@ -6,6 +6,7 @@ Reference inputs:
 
 - [docs/seo-policy.md](/Users/wangbin/Documents/Poker%20Fortune/docs/seo-policy.md)
 - [seo/competitors.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitors.json)
+- [seo/competitor-snapshot.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitor-snapshot.json)
 - [seo/keyword-map.json](/Users/wangbin/Documents/Poker%20Fortune/seo/keyword-map.json)
 - [seo/content-types.json](/Users/wangbin/Documents/Poker%20Fortune/seo/content-types.json)
 
@@ -31,7 +32,7 @@ Use the current report to decide which mode applies:
 - `discovery`: early impressions are appearing, so use weekly Search Console signals to refine titles, FAQ, internal links, or query support
 - `conversion`: enough landing and activation data exists to improve CTA hierarchy, onboarding copy, and monetization messaging
 
-The competitor set is not a daily crawler target. Treat `seo/competitors.json` as a stable research baseline and only refresh it on a longer cycle.
+The competitor set is not a daily crawler target. Treat `seo/competitors.json` plus `seo/competitor-snapshot.json` as the stable research baseline and only refresh them on a longer cycle.
 
 ## Priority Order
 
@@ -61,6 +62,7 @@ Use these only when the weekly report has no strong non-ops recommendation:
 - Ship one focused batch per run, not a whole-site rewrite
 - Prefer editing existing SEO surfaces before creating brand new pages
 - Use the fixed competitor keyword baseline first, then let weekly first-party data decide what to refine next
+- Do not fetch or re-scrape competitor sites during the weekly automation run
 - Do not change pricing, billing logic, auth, or core product behavior unless the SEO report specifically points to a conversion issue and the change is low risk
 - Do not remove existing user-facing features just to simplify SEO copy
 - Keep the product positioning tools-first: bankroll and replay lead, luck index supports discovery
