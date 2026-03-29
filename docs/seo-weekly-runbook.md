@@ -74,10 +74,10 @@ Use these only when the weekly report has no strong non-ops recommendation:
 After edits, always run:
 
 ```bash
-npm run lint
-npm run typecheck
-npm run build
+npm run seo:validate
 ```
+
+This wrapper runs `lint`, `build`, then `typecheck`. The order is intentional because Next route types inside `.next/types` can lag behind route changes and cause a false `typecheck` failure if you run `tsc --noEmit` before a fresh build.
 
 ## Branching
 

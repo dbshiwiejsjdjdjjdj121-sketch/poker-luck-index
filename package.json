@@ -11,7 +11,8 @@
     "seo:competitors": "node scripts/build-competitor-snapshot.mjs",
     "seo:report": "node scripts/seo-report.mjs",
     "seo:plan": "node scripts/seo-action-plan.mjs",
-    "seo:weekly": "npm run seo:report && npm run seo:plan"
+    "seo:weekly": "npm run seo:report && npm run seo:plan",
+    "seo:validate": "npm run lint && npm run build && npm run typecheck"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

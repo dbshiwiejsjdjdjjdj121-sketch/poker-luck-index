@@ -36,9 +36,11 @@ npm run seo:competitors
 npm run seo:report
 npm run seo:plan
 npm run seo:weekly
+npm run seo:validate
 ```
 
 `npm run seo:competitors` is a manual refresh command for the fixed competitor snapshot. It is not part of the weekly automation loop.
+`npm run seo:validate` is the preferred post-edit check for SEO work because it rebuilds Next route types before the final TypeScript pass.
 
 The command reads Google Analytics 4 and Search Console data, then writes:
 
