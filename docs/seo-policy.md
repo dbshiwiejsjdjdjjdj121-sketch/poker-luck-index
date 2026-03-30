@@ -41,6 +41,14 @@ Use the keyword system in `seo/keyword-map.json`.
 - Treat the keyword queue `shape_group` field as a hard same-day diversity rule
 - Do not publish two candidate pages with the same `shape_group` on the same day unless you explicitly override the queue for a good reason
 
+## Strategy State
+
+Persist the current weekly SEO conclusion in `seo/strategy-state.json`.
+
+- Treat it as the inherited strategy layer between weekly reviews and any future daily publishing flow
+- Update it after each complete weekly SEO cycle so later runs inherit the latest focus page, focus cluster, queue rules, and supervision findings
+- Read it before planning new content so the system follows the current weekly direction instead of relying only on prompt memory
+
 ## Allowed SEO Changes
 
 Automatic SEO work may change:

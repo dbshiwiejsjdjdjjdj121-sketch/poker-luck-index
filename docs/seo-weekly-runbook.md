@@ -9,6 +9,7 @@ Reference inputs:
 - [seo/competitor-snapshot.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitor-snapshot.json)
 - [seo/keyword-map.json](/Users/wangbin/Documents/Poker%20Fortune/seo/keyword-map.json)
 - [seo/content-types.json](/Users/wangbin/Documents/Poker%20Fortune/seo/content-types.json)
+- [seo/strategy-state.json](/Users/wangbin/Documents/Poker%20Fortune/seo/strategy-state.json)
 
 ## Goal
 
@@ -22,7 +23,8 @@ Start from these sources in order:
 2. `reports/seo/action-plan.md` if it exists locally
 3. `reports/seo/latest.md` if it exists locally
 4. The policy and fixed-input SEO files
-5. The current site structure and gaps in the main SEO surfaces
+5. `seo/strategy-state.json` for the currently active weekly decision and queue inheritance
+6. The current site structure and gaps in the main SEO surfaces
 
 ## Signal Modes
 
@@ -94,5 +96,6 @@ At the end of each weekly run:
 - Summarize what changed
 - Note which report signal or backlog item justified the change
 - Mention validation results
+- Run `npm run seo:strategy` so the weekly conclusion is persisted into `seo/strategy-state.json`
 - Inspect the full automation chain once: report freshness, rolling `seo` issue freshness, queue `shape_group` collisions, and any low-risk workflow friction worth fixing
 - If no safe SEO code change is warranted, say so clearly instead of forcing a weak edit

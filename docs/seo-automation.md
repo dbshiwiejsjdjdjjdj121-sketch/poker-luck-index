@@ -35,11 +35,13 @@ Optional Vercel verification:
 npm run seo:competitors
 npm run seo:report
 npm run seo:plan
+npm run seo:strategy
 npm run seo:weekly
 npm run seo:validate
 ```
 
 `npm run seo:competitors` is a manual refresh command for the fixed competitor snapshot. It is not part of the weekly automation loop.
+`npm run seo:strategy` syncs the current weekly SEO conclusion into a fixed strategy state file so later runs inherit the latest weekly decision.
 `npm run seo:validate` is the preferred post-edit check for SEO work because it rebuilds Next route types before the final TypeScript pass.
 
 The command reads Google Analytics 4 and Search Console data, then writes:
@@ -84,6 +86,7 @@ The fixed SEO policy and machine-readable inputs live in:
 - [seo/competitor-snapshot.json](/Users/wangbin/Documents/Poker%20Fortune/seo/competitor-snapshot.json)
 - [seo/keyword-map.json](/Users/wangbin/Documents/Poker%20Fortune/seo/keyword-map.json)
 - [seo/content-types.json](/Users/wangbin/Documents/Poker%20Fortune/seo/content-types.json)
+- [seo/strategy-state.json](/Users/wangbin/Documents/Poker%20Fortune/seo/strategy-state.json)
 
 Avoid fully automatic content rewrites on short-term traffic swings.
 Avoid weekly or daily competitor scraping during normal execution. Use the frozen snapshot until you intentionally refresh it.

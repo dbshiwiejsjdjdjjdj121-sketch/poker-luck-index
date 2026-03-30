@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "updatedAt": "2026-03-30T04:54:15.189Z",
+  "source": {
+    "reportGeneratedAt": "2026-03-26T18:51:51.717Z",
+    "actionPlanGeneratedAt": "2026-03-26T18:51:51.717Z",
+    "executionMode": "foundation",
+    "currentWindow": {
+      "startDate": "2026-02-26",
+      "endDate": "2026-03-25"
+    }
+  },
+  "observed": {
+    "topPage": "/",
+    "topQuery": "",
+    "topLanding": "/",
+    "signal": {
+      "pageImpressions": 0,
+      "queryImpressions": 0,
+      "sessions": 0,
+      "toolActivations": 0,
+      "checkoutStarts": 0
+    }
+  },
+  "activeWeeklyDecision": {
+    "status": "active",
+    "focusPage": "/bankroll",
+    "focusCluster": "bankroll-tracker",
+    "shapeGroups": [
+      "core-landing",
+      "workflow-how-to",
+      "player-faq"
+    ],
+    "summary": "First foundation-mode SEO pass focused on strengthening the bankroll landing page with people-first static copy, FAQ support, internal links, and JSON-LD.",
+    "changedOnBranch": "codex/seo-weekly-20260330",
+    "pullRequestUrl": "https://github.com/dbshiwiejsjdjdjjdj121-sketch/webpoker/pull/4"
+  },
+  "queuePolicy": {
+    "maxSameShapeGroupPerDay": 1,
+    "deferSameShapeGroupSameDay": true,
+    "rotateClustersWhenPossible": true
+  },
+  "nextCandidates": [
+    {
+      "cluster": "hand-replay",
+      "targetPage": "/hand-review",
+      "term": "poker hand replay",
+      "shapeGroup": "core-landing",
+      "contentType": "evergreen-guide",
+      "priority": 2
+    },
+    {
+      "cluster": "hand-history",
+      "targetPage": "/hand-review",
+      "term": "poker hand history",
+      "shapeGroup": "core-landing",
+      "contentType": "evergreen-guide",
+      "priority": 3
+    },
+    {
+      "cluster": "table-read-luck",
+      "targetPage": "/",
+      "term": "poker luck index",
+      "shapeGroup": "discovery-hook",
+      "contentType": "evergreen-guide",
+      "priority": 4
+    }
+  ],
+  "supervision": {
+    "lastReviewedAt": "2026-03-30T04:54:15.189Z",
+    "recentFindings": [
+      "Keep the rolling `seo` issue fresh after each report run.",
+      "Run one post-flow supervision pass after every complete automation cycle.",
+      "Avoid same-day `shape_group` collisions when selecting queued content."
+    ]
+  }
+}
