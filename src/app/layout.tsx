@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import { ClientShell } from "@/components/client-shell";
 import {
@@ -15,11 +14,6 @@ import {
   buildStructuredData,
 } from "@/lib/site";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GA_ID?.trim();
 
@@ -101,7 +95,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" translate="no" className="notranslate" suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased`}>
+      <body className="antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

@@ -18,6 +18,15 @@ const keywordMap = readJson(keywordMapPath, { clusters: [], queue_rules: {} });
 const contentTypes = readJson(contentTypesPath, { shape_group_rules: {} });
 const report = readJson(reportPath, null);
 const actionPlan = readJson(actionPlanPath, null);
+const branchName = process.env.SEO_BRANCH?.trim() || "";
+const focusPageOverride = process.env.SEO_FOCUS_PAGE?.trim() || "";
+const focusClusterOverride = process.env.SEO_FOCUS_CLUSTER?.trim() || "";
+const summaryOverride = process.env.SEO_SUMMARY?.trim() || "";
+const pullRequestUrlOverride = process.env.SEO_PULL_REQUEST_URL?.trim() || "";
+const shapeGroupsOverride = (process.env.SEO_SHAPE_GROUPS || "")
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean);
 
 const strategyState = {
   version: 1,
@@ -90,6 +99,25 @@ function buildObserved(inputReport, inputActionPlan, previousState) {
 function buildWeeklyDecision(previousState) {
   const existingDecision = previousState?.activeWeeklyDecision;
 
+  if (focusPageOverride || focusClusterOverride || summaryOverride || shapeGroupsOverride.length > 0) {
+    return {
+      status: "active",
+      focusPage: focusPageOverride || existingDecision?.focusPage || "/bankroll",
+      focusCluster: focusClusterOverride || existingDecision?.focusCluster || "bankroll-tracker",
+      shapeGroups:
+        shapeGroupsOverride.length > 0
+          ? shapeGroupsOverride
+          : existingDecision?.shapeGroups || ["core-landing"],
+      summary:
+        summaryOverride ||
+        existingDecision?.summary ||
+        "Weekly SEO focus updated from the latest automation run.",
+      changedOnBranch:
+        branchName || existingDecision?.changedOnBranch || "codex/seo-weekly-20260330",
+      pullRequestUrl: pullRequestUrlOverride,
+    };
+  }
+
   if (existingDecision) {
     return existingDecision;
   }
@@ -120,7 +148,10 @@ function buildQueuePolicy(inputKeywordMap, inputContentTypes, previousState) {
 }
 
 function buildNextCandidates(inputKeywordMap, previousState) {
-  const activeCluster = previousState?.activeWeeklyDecision?.focusCluster || "bankroll-tracker";
+  const activeCluster =
+    focusClusterOverride ||
+    previousState?.activeWeeklyDecision?.focusCluster ||
+    "bankroll-tracker";
 
   const candidates = (inputKeywordMap?.clusters || [])
     .filter((cluster) => cluster.slug !== activeCluster)

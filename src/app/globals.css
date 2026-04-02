@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 :root {
+  --font-inter:
+    "Inter",
+    "SF Pro Text",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
   --background: #1f1f1f;
   --foreground: #f4f4f2;
   --surface: rgba(35, 35, 35, 0.9);

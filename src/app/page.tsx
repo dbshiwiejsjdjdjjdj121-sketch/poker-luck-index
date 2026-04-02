@@ -65,28 +65,21 @@ export default function Home() {
       <div className="mx-auto max-w-6xl space-y-6">
         <AppNavigation />
 
-        <section className="panel panel-strong relative overflow-hidden p-6 sm:p-8 lg:p-10">
-          <div className="home-felt absolute inset-x-[10%] top-[-18%] hidden h-[420px] rounded-[999px] lg:block" />
+        <section className="panel panel-strong p-6 sm:p-8 lg:p-10">
+          <div className="grid gap-10 xl:grid-cols-[1fr_0.95fr] xl:items-start">
+            <div className="space-y-6">
+              <p className="text-[0.7rem] uppercase tracking-[0.32em] text-[var(--gold-soft)]">
+                Free Poker Tools For Live Players
+              </p>
 
-          <div className="relative grid gap-10 xl:grid-cols-[1.04fr_0.96fr] xl:items-center">
-            <div className="space-y-7">
-              <div className="inline-flex items-center gap-3 rounded-full border border-[var(--border-strong)] bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[var(--gold-soft)]">
-                <span>♠</span>
-                <span>Free Poker Tools For Live Players</span>
-                <span>♥</span>
-              </div>
-
-              <div className="space-y-4">
-                <h1 className="max-w-3xl font-heading text-5xl leading-none text-white sm:text-6xl lg:text-7xl">
-                  <span className="block">Track Bankroll.</span>
-                  <span className="mt-2 block text-[var(--gold-soft)]">
-                    Replay Hands. Check The Table.
-                  </span>
+              <div className="space-y-3">
+                <h1 className="max-w-3xl font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+                  Track bankroll, replay hands, and get a fast table read.
                 </h1>
-                <p className="max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg">
-                  Start with the free bankroll tracker and manual replay studio. Keep the
-                  luck read as a fast pre-session hook, then unlock AI analysis only when
-                  you want voice, screenshot, and deeper review tools.
+                <p className="max-w-2xl text-sm leading-7 text-[var(--muted)] sm:text-base">
+                  Start with the free bankroll tracker and manual replay studio. Use the
+                  luck read as a quick pre-session check, then unlock AI analysis only
+                  when you want a deeper review.
                 </p>
               </div>
 
@@ -105,15 +98,13 @@ export default function Home() {
                 </Link>
               </div>
 
-              <AppStorePromo />
-
               <div className="grid gap-3 sm:grid-cols-3">
                 {HOME_PILLARS.map((pillar) => (
-                  <article key={pillar.title} className="panel p-4">
+                  <article key={pillar.title} className="rounded-[18px] border border-white/10 bg-white/[0.03] p-4">
                     <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
                       {pillar.eyebrow}
                     </p>
-                    <p className="mt-3 text-lg font-semibold text-white">{pillar.title}</p>
+                    <p className="mt-3 text-base font-semibold text-white">{pillar.title}</p>
                     <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
                       {pillar.description}
                     </p>
@@ -125,6 +116,8 @@ export default function Home() {
             <HomeForm />
           </div>
         </section>
+
+        <AppStorePromo />
       </div>
     </main>
   );

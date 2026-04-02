@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { GoogleAuth } from "google-auth-library";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -52,22 +51,22 @@ const now = new Date();
 const currentRange = getDateRange(28, now);
 const previousRange = getDateRange(28, new Date(currentRange.startDate));
 
-const googleAuth = new GoogleAuth({
-  ...(googleCredentials.kind === "file"
-    ? {
-        keyFile: googleCredentials.value,
-      }
-    : {
-        credentials: googleCredentials.value,
-      }),
-  scopes: [
-    "https://www.googleapis.com/auth/analytics.readonly",
-    "https://www.googleapis.com/auth/webmasters.readonly",
-  ],
-});
-
 async function main() {
   fs.mkdirSync(reportDir, { recursive: true });
+  const GoogleAuth = await loadGoogleAuth();
+  const googleAuth = new GoogleAuth({
+    ...(googleCredentials.kind === "file"
+      ? {
+          keyFile: googleCredentials.value,
+        }
+      : {
+          credentials: googleCredentials.value,
+        }),
+    scopes: [
+      "https://www.googleapis.com/auth/analytics.readonly",
+      "https://www.googleapis.com/auth/webmasters.readonly",
+    ],
+  });
 
   console.log("Loading Google access token...");
   let googleToken = "";
@@ -155,6 +154,17 @@ async function main() {
 
   console.log(`SEO report written to ${reportMarkdownPath}`);
   console.log(`SEO report JSON written to ${reportJsonPath}`);
+}
+
+async function loadGoogleAuth() {
+  try {
+    const { GoogleAuth } = await import("google-auth-library");
+    return GoogleAuth;
+  } catch (error) {
+    throw new Error(
+      `Unable to load google-auth-library. Install dependencies before running seo:report. ${toErrorMessage(error)}`,
+    );
+  }
 }
 
 async function settle(promise, fallbackValue) {

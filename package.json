@@ -13,7 +13,7 @@
     "seo:plan": "node scripts/seo-action-plan.mjs",
     "seo:strategy": "node scripts/sync-seo-strategy-state.mjs",
     "seo:weekly": "npm run seo:report && npm run seo:plan",
-    "seo:validate": "npm run lint && npm run build && npm run typecheck"
+    "seo:validate": "npm run lint && npm run build -- --webpack && npm run typecheck"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
