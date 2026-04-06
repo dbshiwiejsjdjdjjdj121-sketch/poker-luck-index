@@ -26,7 +26,8 @@
     "openai": "^6.32.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-qr-code": "^2.0.18"
+    "react-qr-code": "^2.0.18",
+    "undici": "^7.24.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

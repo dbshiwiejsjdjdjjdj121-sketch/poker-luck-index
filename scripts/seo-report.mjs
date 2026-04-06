@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { ProxyAgent, setGlobalDispatcher } from "undici";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +22,7 @@ const relevantEvents = [
 
 loadEnvFile(path.join(repoRoot, ".env.local"));
 loadEnvFile(path.join(repoRoot, ".env"));
+configureProxyFromEnv();
 
 const config = {
   gaPropertyId: process.env.GA4_PROPERTY_ID?.trim() || "",
@@ -32,6 +34,29 @@ const config = {
   vercelProjectId: process.env.VERCEL_PROJECT_ID?.trim() || "",
   vercelTeamId: process.env.VERCEL_TEAM_ID?.trim() || "",
 };
+
+function configureProxyFromEnv() {
+  const proxyUrl = [process.env.HTTPS_PROXY, process.env.HTTP_PROXY, process.env.ALL_PROXY]
+    .map((value) => value?.trim())
+    .find(Boolean);
+
+  if (!proxyUrl) {
+    return;
+  }
+
+  if (proxyUrl.toLowerCase().startsWith("socks")) {
+    console.warn(
+      "Proxy detected via SOCKS scheme. Provide an HTTP(S) proxy URL for fetch to use it.",
+    );
+    return;
+  }
+
+  try {
+    setGlobalDispatcher(new ProxyAgent(proxyUrl));
+  } catch (error) {
+    console.warn(`Unable to configure proxy dispatcher: ${toErrorMessage(error)}`);
+  }
+}
 
 const googleCredentials = resolveGoogleCredentials();
 
