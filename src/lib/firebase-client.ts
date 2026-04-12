@@ -4,11 +4,10 @@ import { getApp, getApps, initializeApp, type FirebaseApp } from "firebase/app";
 import {
   getAuth,
   GoogleAuthProvider,
-  isSignInWithEmailLink,
   onAuthStateChanged,
   setPersistence,
   browserLocalPersistence,
-  signInWithEmailLink,
+  signInWithCustomToken,
   signInWithPopup,
   signInWithRedirect,
   signOut,
@@ -34,7 +33,6 @@ const DEFAULT_FIREBASE_WEB_CONFIG = {
 };
 
 let cachedApp: FirebaseApp | null = null;
-export const FIREBASE_EMAIL_STORAGE_KEY = "poker-luck-index-email-link-email";
 
 export function getFirebaseErrorCode(error: unknown) {
   if (!(error instanceof Error)) {
@@ -120,12 +118,12 @@ function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
     return new Error("The browser blocked the Google sign-in popup. Please allow popups and try again.");
   }
 
-  if (code === "auth/invalid-action-code") {
-    return new Error("This sign-in link has already been used or expired. Request a fresh email link.");
+  if (code === "auth/invalid-custom-token") {
+    return new Error("This verification code session is invalid. Request a fresh code and try again.");
   }
 
-  if (code === "auth/invalid-email") {
-    return new Error("Enter a valid email address.");
+  if (code === "auth/custom-token-mismatch") {
+    return new Error("The verification code session does not match this Firebase project.");
   }
 
   if (code === "auth/api-key-not-valid") {
@@ -135,43 +133,22 @@ function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
   return error;
 }
 
-export function storeEmailLinkEmail(email: string) {
-  window.localStorage.setItem(FIREBASE_EMAIL_STORAGE_KEY, email.trim().toLowerCase());
-}
-
-export function readStoredEmailLinkEmail() {
-  return window.localStorage.getItem(FIREBASE_EMAIL_STORAGE_KEY)?.trim() || "";
-}
-
-export function clearStoredEmailLinkEmail() {
-  window.localStorage.removeItem(FIREBASE_EMAIL_STORAGE_KEY);
-}
-
-export function hasPendingEmailSignInLink(url: string) {
-  return isSignInWithEmailLink(getFirebaseClientAuth(), url);
-}
-
-export async function completeEmailSignInLink(url: string, explicitEmail?: string) {
-  const auth = await ensureFirebaseAuthPersistence();
-  const email = (explicitEmail || readStoredEmailLinkEmail()).trim().toLowerCase();
-
-  if (!email) {
-    throw new Error("Confirm the email address you used for the sign-in link.");
+export async function signInWithEmailCodeToken(customToken: string) {
+  if (!customToken.trim()) {
+    throw new Error("Missing verification token.");
   }
 
-  let credential;
+  const auth = await ensureFirebaseAuthPersistence();
 
   try {
-    credential = await signInWithEmailLink(auth, email, url);
+    const credential = await signInWithCustomToken(auth, customToken);
+    return credential.user;
   } catch (error) {
     throw normalizeFirebaseError(
       error,
-      "We could not complete the email sign-in link.",
+      "We could not complete the verification code sign-in.",
     );
   }
-
-  clearStoredEmailLinkEmail();
-  return credential.user;
 }
 
 export function observeFirebaseUser(callback: (user: User | null) => void) {
