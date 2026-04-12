@@ -161,7 +161,7 @@ export function AuthLoginModal({
                 </label>
                 <p className="text-sm leading-6 text-[var(--muted)]">
                   We will send a 6-digit verification code to this address. Enter
-                  the code here to finish signing in without opening a sign-in link.
+                  the code here to finish signing in without leaving this screen.
                 </p>
                 <button
                   className="btn-primary w-full justify-center disabled:cursor-not-allowed disabled:opacity-55"
