@@ -31,7 +31,6 @@ export function AuthButton() {
   const {
     user,
     loading,
-    pendingEmailLink,
     signOut,
     clearAuthFeedback,
   } = useAuth();
@@ -40,12 +39,6 @@ export function AuthButton() {
   const isSignedIn = Boolean(user);
   const accountLabel = getAccountLabel(user?.displayName, user?.email);
   const accountInitials = getInitials(user?.displayName, user?.email);
-
-  useEffect(() => {
-    if (pendingEmailLink) {
-      setOpen(true);
-    }
-  }, [pendingEmailLink]);
 
   useEffect(() => {
     if (open && user) {
@@ -166,14 +159,8 @@ export function AuthButton() {
           disabled={isBusy}
           className="btn-primary disabled:cursor-not-allowed disabled:opacity-55"
         >
-          <span>{pendingEmailLink ? "✦" : "◌"}</span>
-          <span>
-            {isBusy
-              ? "Loading"
-              : pendingEmailLink
-                ? "Complete Sign-In"
-                : "Sign In"}
-          </span>
+          <span>◌</span>
+          <span>{isBusy ? "Loading" : "Sign In"}</span>
         </button>
       </div>
 

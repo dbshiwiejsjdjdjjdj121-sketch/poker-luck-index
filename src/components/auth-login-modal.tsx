@@ -21,23 +21,24 @@ export function AuthLoginModal({
     loading,
     authError,
     authMessage,
-    pendingEmailLink,
     signInWithGoogle,
-    requestEmailSignInLink,
-    completeEmailLink,
+    requestEmailSignInCode,
+    verifyEmailSignInCode,
     clearAuthFeedback,
   } = useAuth();
   const [email, setEmail] = useState("");
-  const [emailLinkSentTo, setEmailLinkSentTo] = useState<string | null>(null);
+  const [emailCode, setEmailCode] = useState("");
+  const [emailCodeSentTo, setEmailCodeSentTo] = useState<string | null>(null);
   const [busyAction, setBusyAction] = useState<
-    "" | "google" | "email" | "complete"
+    "" | "google" | "email" | "verify"
   >("");
 
   useEffect(() => {
     if (!open) {
       setBusyAction("");
       setEmail("");
-      setEmailLinkSentTo(null);
+      setEmailCode("");
+      setEmailCodeSentTo(null);
       clearAuthFeedback();
     }
   }, [clearAuthFeedback, open]);
@@ -47,7 +48,6 @@ export function AuthLoginModal({
   }
 
   const isBusy = loading || busyAction !== "";
-  const needsCompleteStep = pendingEmailLink;
 
   async function handleGoogleSignIn() {
     setBusyAction("google");
@@ -60,27 +60,30 @@ export function AuthLoginModal({
     }
   }
 
-  async function handleEmailLinkRequest(emailOverride?: string) {
+  async function handleEmailCodeRequest(emailOverride?: string) {
     const normalizedEmail = (emailOverride || email).trim().toLowerCase();
 
     setBusyAction("email");
     clearAuthFeedback();
 
     try {
-      await requestEmailSignInLink(normalizedEmail);
+      await requestEmailSignInCode(normalizedEmail);
       setEmail(normalizedEmail);
-      setEmailLinkSentTo(normalizedEmail);
+      setEmailCode("");
+      setEmailCodeSentTo(normalizedEmail);
     } finally {
       setBusyAction("");
     }
   }
 
-  async function handleEmailLinkComplete() {
-    setBusyAction("complete");
+  async function handleEmailCodeVerify() {
+    const normalizedEmail = (emailCodeSentTo || email).trim().toLowerCase();
+
+    setBusyAction("verify");
     clearAuthFeedback();
 
     try {
-      await completeEmailLink(email);
+      await verifyEmailSignInCode(normalizedEmail, emailCode);
     } finally {
       setBusyAction("");
     }
@@ -96,28 +99,28 @@ export function AuthLoginModal({
         <div className="my-4 w-full max-w-[32rem] overflow-hidden rounded-[28px] border border-[var(--border-strong)] bg-[rgba(29,31,34,0.98)] shadow-[var(--shadow)]">
           <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto p-5 sm:max-h-[min(44rem,calc(100dvh-3rem))] sm:p-6">
             <div className="flex items-start justify-between gap-4">
-          <div className="space-y-3">
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-white/52">
-              Sign in
-            </p>
-            <div className="space-y-2">
-              <h2 className="font-heading text-3xl leading-tight text-white sm:text-4xl">
-                {title}
-              </h2>
-              <p className="max-w-[34rem] text-sm leading-7 text-[var(--muted)] sm:text-base">
-                {description}
-              </p>
-            </div>
-          </div>
+              <div className="space-y-3">
+                <p className="text-[0.7rem] uppercase tracking-[0.24em] text-white/52">
+                  Sign in
+                </p>
+                <div className="space-y-2">
+                  <h2 className="font-heading text-3xl leading-tight text-white sm:text-4xl">
+                    {title}
+                  </h2>
+                  <p className="max-w-[34rem] text-sm leading-7 text-[var(--muted)] sm:text-base">
+                    {description}
+                  </p>
+                </div>
+              </div>
 
-          <button
-            aria-label="Close"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border-strong)] bg-white/[0.03] text-xl text-white/70 transition hover:bg-white/[0.06] hover:text-white"
-            onClick={onClose}
-            type="button"
-          >
-            ×
-          </button>
+              <button
+                aria-label="Close"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border-strong)] bg-white/[0.03] text-xl text-white/70 transition hover:bg-white/[0.06] hover:text-white"
+                onClick={onClose}
+                type="button"
+              >
+                ×
+              </button>
             </div>
 
             {authError ? (
@@ -131,12 +134,12 @@ export function AuthLoginModal({
               </div>
             ) : null}
 
-            {!emailLinkSentTo && !needsCompleteStep ? (
+            {!emailCodeSentTo ? (
               <form
                 className="mt-5 space-y-3 rounded-[22px] border border-white/10 bg-white/[0.03] p-4"
                 onSubmit={(event) => {
                   event.preventDefault();
-                  void handleEmailLinkRequest();
+                  void handleEmailCodeRequest();
                 }}
               >
                 <label className="block space-y-2">
@@ -147,60 +150,66 @@ export function AuthLoginModal({
                     autoComplete="email"
                     className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
                     disabled={isBusy}
-                    onChange={(event) => setEmail(event.target.value)}
+                    onChange={(event) => {
+                      clearAuthFeedback();
+                      setEmail(event.target.value);
+                    }}
                     placeholder="you@example.com"
                     type="email"
                     value={email}
                   />
                 </label>
                 <p className="text-sm leading-6 text-[var(--muted)]">
-                  We will send a secure sign-in link to this address, including
-                  Gmail accounts. Open the email on this device to finish signing in.
+                  We will send a 6-digit verification code to this address. Enter
+                  the code here to finish signing in without opening a sign-in link.
                 </p>
                 <button
                   className="btn-primary w-full justify-center disabled:cursor-not-allowed disabled:opacity-55"
                   disabled={isBusy}
                   type="submit"
                 >
-                  {busyAction === "email" ? "Sending..." : "Send sign-in link"}
+                  {busyAction === "email" ? "Sending..." : "Send code"}
                 </button>
               </form>
-            ) : needsCompleteStep ? (
+            ) : (
               <form
                 className="mt-5 space-y-3 rounded-[22px] border border-white/10 bg-white/[0.03] p-4"
                 onSubmit={(event) => {
                   event.preventDefault();
-                  void handleEmailLinkComplete();
+                  void handleEmailCodeVerify();
                 }}
               >
                 <p className="text-sm leading-6 text-[var(--muted)]">
-                  Open the email on this device, then confirm the same email address
-                  here to finish signing in.
+                  Enter the 6-digit code we sent to{" "}
+                  <strong className="text-white">{emailCodeSentTo}</strong>.
                 </p>
                 <input
-                  autoComplete="email"
+                  autoComplete="one-time-code"
                   className="field-shell w-full rounded-[16px] px-4 py-3 text-white outline-none"
                   disabled={isBusy}
-                  onChange={(event) => setEmail(event.target.value)}
-                  placeholder="you@example.com"
-                  type="email"
-                  value={email}
+                  inputMode="numeric"
+                  maxLength={6}
+                  onChange={(event) => {
+                    clearAuthFeedback();
+                    setEmailCode(event.target.value.replace(/\D/g, "").slice(0, 6));
+                  }}
+                  placeholder="123456"
+                  type="text"
+                  value={emailCode}
                 />
                 <div className="flex flex-wrap gap-2">
                   <button
                     className="btn-primary flex-1 justify-center disabled:cursor-not-allowed disabled:opacity-55"
-                    disabled={isBusy}
+                    disabled={isBusy || emailCode.trim().length < 6}
                     type="submit"
                   >
-                    {busyAction === "complete"
-                      ? "Completing..."
-                      : "Complete sign-in"}
+                    {busyAction === "verify" ? "Verifying..." : "Continue"}
                   </button>
                   <button
                     className="btn-secondary justify-center"
                     onClick={() => {
-                      setEmail("");
-                      setEmailLinkSentTo(null);
+                      setEmailCode("");
+                      setEmailCodeSentTo(null);
                       clearAuthFeedback();
                     }}
                     type="button"
@@ -208,38 +217,17 @@ export function AuthLoginModal({
                     Use another email
                   </button>
                 </div>
+                <button
+                  className="btn-secondary w-full justify-center disabled:cursor-not-allowed disabled:opacity-55"
+                  disabled={isBusy}
+                  onClick={() =>
+                    void handleEmailCodeRequest(emailCodeSentTo || undefined)
+                  }
+                  type="button"
+                >
+                  {busyAction === "email" ? "Sending..." : "Resend code"}
+                </button>
               </form>
-            ) : (
-              <div className="space-y-3 rounded-[22px] border border-white/10 bg-white/[0.03] p-4">
-                <p className="text-sm leading-6 text-[var(--muted)]">
-                  Sign-in link sent to{" "}
-                  <strong className="text-white">{emailLinkSentTo}</strong>. Open
-                  the email on this device and tap the link to finish signing in.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <button
-                    className="btn-secondary flex-1 justify-center disabled:cursor-not-allowed disabled:opacity-55"
-                    disabled={isBusy}
-                    onClick={() =>
-                      void handleEmailLinkRequest(emailLinkSentTo || undefined)
-                    }
-                    type="button"
-                  >
-                    {busyAction === "email" ? "Sending..." : "Resend sign-in link"}
-                  </button>
-                  <button
-                    className="btn-secondary justify-center"
-                    onClick={() => {
-                      setEmail("");
-                      setEmailLinkSentTo(null);
-                      clearAuthFeedback();
-                    }}
-                    type="button"
-                  >
-                    Use another email
-                  </button>
-                </div>
-              </div>
             )}
 
             <div className="my-5 flex items-center gap-3">

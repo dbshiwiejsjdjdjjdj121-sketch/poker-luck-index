@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  useCallback,
   createContext,
   useContext,
   useEffect,
@@ -13,15 +12,10 @@ import {
 import { usePathname, useRouter } from "next/navigation";
 import type { User } from "firebase/auth";
 import {
-  clearStoredEmailLinkEmail,
-  completeEmailSignInLink,
-  getFirebaseErrorCode,
-  hasPendingEmailSignInLink,
   observeFirebaseUser,
-  readStoredEmailLinkEmail,
+  signInWithEmailCodeToken,
   signInWithGoogleClient,
   signOutFirebaseUser,
-  storeEmailLinkEmail,
 } from "@/lib/firebase-client";
 
 const POST_AUTH_REDIRECT_KEY = "poker-luck-index-post-auth-redirect";
@@ -60,15 +54,21 @@ function getPreferredAuthDestination() {
   return `${pathname}${search}${hash}`;
 }
 
+type EmailCodeRequestResult = {
+  email: string;
+  expiresInSeconds: number;
+  resendInSeconds: number;
+  message: string;
+};
+
 type AuthContextValue = {
   user: User | null;
   loading: boolean;
   authError: string;
   authMessage: string;
-  pendingEmailLink: boolean;
   signInWithGoogle: () => Promise<void>;
-  requestEmailSignInLink: (email: string) => Promise<void>;
-  completeEmailLink: (email?: string) => Promise<void>;
+  requestEmailSignInCode: (email: string) => Promise<EmailCodeRequestResult>;
+  verifyEmailSignInCode: (email: string, code: string) => Promise<void>;
   signOut: () => Promise<void>;
   getIdToken: () => Promise<string>;
   clearAuthFeedback: () => void;
@@ -83,7 +83,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
   const [authError, setAuthError] = useState("");
   const [authMessage, setAuthMessage] = useState("");
-  const [pendingEmailLink, setPendingEmailLink] = useState(false);
   const lastUserUidRef = useRef<string>("");
 
   useEffect(() => {
@@ -94,90 +93,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     return unsubscribe;
   }, []);
-
-  const clearEmailLinkParams = useCallback(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-
-    const url = new URL(window.location.href);
-    const continueUrl = url.searchParams.get("continueUrl");
-
-    if (continueUrl) {
-      try {
-        const decoded = new URL(continueUrl);
-        router.replace(`${decoded.pathname}${decoded.search}${decoded.hash}`);
-        return;
-      } catch {
-        // Fall through to stripping Firebase params from the current URL.
-      }
-    }
-
-    [
-      "apiKey",
-      "mode",
-      "oobCode",
-      "lang",
-      "continueUrl",
-    ].forEach((key) => {
-      url.searchParams.delete(key);
-    });
-
-    router.replace(`${url.pathname}${url.search}${url.hash}`);
-  }, [router]);
-
-  const completeEmailSignIn = useCallback(async (currentUrl: string, explicitEmail?: string) => {
-    setLoading(true);
-    setAuthError("");
-    setAuthMessage("");
-
-    try {
-      await completeEmailSignInLink(currentUrl, explicitEmail);
-      setPendingEmailLink(false);
-      setAuthMessage("Signed in successfully with your email link.");
-      clearEmailLinkParams();
-    } catch (error) {
-      const code = getFirebaseErrorCode(error);
-
-      if (code === "auth/invalid-action-code") {
-        clearStoredEmailLinkEmail();
-        setPendingEmailLink(false);
-        clearEmailLinkParams();
-      }
-
-      setAuthError(
-        error instanceof Error
-          ? error.message
-          : "We could not complete the email sign-in link.",
-      );
-    } finally {
-      setLoading(false);
-    }
-  }, [clearEmailLinkParams]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-
-    const currentUrl = window.location.href;
-
-    if (!hasPendingEmailSignInLink(currentUrl)) {
-      return;
-    }
-
-    const storedEmail = readStoredEmailLinkEmail();
-    setPendingEmailLink(true);
-    setLoading(true);
-
-    if (!storedEmail) {
-      setAuthMessage("Confirm your email address to finish the sign-in link.");
-      setLoading(false);
-      return;
-    }
-
-    void completeEmailSignIn(currentUrl, storedEmail);
-  }, [completeEmailSignIn]);
 
   useEffect(() => {
     if (!user) {
@@ -209,7 +124,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       authError,
       authMessage,
-      pendingEmailLink,
       async signInWithGoogle() {
         setAuthError("");
         setAuthMessage("");
@@ -228,15 +142,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           throw error;
         }
       },
-      async requestEmailSignInLink(email: string) {
+      async requestEmailSignInCode(email: string) {
         const normalizedEmail = email.trim().toLowerCase();
 
         if (!normalizedEmail) {
           throw new Error("Enter your email address first.");
-        }
-
-        if (typeof window === "undefined") {
-          throw new Error("Email sign-in only works in the browser.");
         }
 
         setLoading(true);
@@ -244,63 +154,113 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setAuthMessage("");
 
         try {
-          const continueUrl = new URL(
-            getPreferredAuthDestination(),
-            window.location.origin,
-          ).toString();
-          const response = await fetch("/api/auth/email-link/request", {
+          const response = await fetch("/api/auth/email-code/request", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
               email: normalizedEmail,
-              continueUrl,
             }),
           });
-          const data = (await response.json()) as {
-            message?: string;
+
+          const data = (await response.json().catch(() => ({}))) as {
+            email?: string;
             error?: string;
+            expiresInSeconds?: number;
+            message?: string;
+            resendInSeconds?: number;
           };
 
           if (!response.ok) {
-            throw new Error(data.error || "We could not send the sign-in link.");
+            throw new Error(data.error || "We could not send the verification code.");
           }
 
-          storeEmailLinkEmail(normalizedEmail);
-          setAuthMessage(
+          const message =
             data.message ||
-              `A secure sign-in link was sent to ${normalizedEmail}.`,
-          );
+            `We sent a 6-digit verification code to ${normalizedEmail}.`;
+
+          setAuthMessage(message);
+
+          return {
+            email: String(data.email || normalizedEmail),
+            expiresInSeconds: Number(data.expiresInSeconds || 0),
+            resendInSeconds: Number(data.resendInSeconds || 0),
+            message,
+          };
         } catch (error) {
           setAuthError(
             error instanceof Error
               ? error.message
-              : "We could not send the sign-in link.",
+              : "We could not send the verification code.",
           );
           throw error;
         } finally {
           setLoading(false);
         }
       },
-      async completeEmailLink(email?: string) {
-        if (typeof window === "undefined") {
-          return;
+      async verifyEmailSignInCode(email: string, code: string) {
+        const normalizedEmail = email.trim().toLowerCase();
+        const normalizedCode = code.replace(/\D/g, "").slice(0, 6);
+
+        if (!normalizedEmail) {
+          throw new Error("Enter your email address first.");
         }
 
-        if (email?.trim()) {
-          storeEmailLinkEmail(email);
-        } else if (!readStoredEmailLinkEmail()) {
-          clearStoredEmailLinkEmail();
+        if (normalizedCode.length !== 6) {
+          throw new Error("Enter the 6-digit verification code.");
         }
 
-        await completeEmailSignIn(window.location.href, email?.trim().toLowerCase());
+        setLoading(true);
+        setAuthError("");
+        setAuthMessage("");
+
+        try {
+          const response = await fetch("/api/auth/email-code/verify", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: normalizedEmail,
+              code: normalizedCode,
+            }),
+          });
+
+          const data = (await response.json().catch(() => ({}))) as {
+            customToken?: string;
+            error?: string;
+            message?: string;
+          };
+
+          if (!response.ok) {
+            throw new Error(data.error || "We could not verify the code.");
+          }
+
+          if (!data.customToken) {
+            throw new Error("The verification response did not include a sign-in token.");
+          }
+
+          await signInWithEmailCodeToken(data.customToken);
+          setAuthMessage(
+            data.message || `Signed in successfully as ${normalizedEmail}.`,
+          );
+          router.refresh();
+        } catch (error) {
+          setAuthError(
+            error instanceof Error
+              ? error.message
+              : "We could not verify the code.",
+          );
+          throw error;
+        } finally {
+          setLoading(false);
+        }
       },
       async signOut() {
         setAuthError("");
         setAuthMessage("");
         clearPostAuthRedirect();
-        clearStoredEmailLinkEmail();
         await signOutFirebaseUser();
       },
       async getIdToken() {
@@ -318,9 +278,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [
       authError,
       authMessage,
-      completeEmailSignIn,
       loading,
-      pendingEmailLink,
+      pathname,
       router,
       user,
     ],
