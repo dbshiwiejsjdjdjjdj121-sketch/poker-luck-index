@@ -1,0 +1,525 @@
+{
+  "festivals": [
+    {
+      "id": "virginia-2026",
+      "slug": "wsop-circuit-caesars-virginia-2026",
+      "name": "WSOP Circuit Caesars Virginia 2026",
+      "tour": "WSOP Circuit",
+      "destinationId": "united-states/danville",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-14",
+      "timezone": "America/New_York",
+      "dateNote": null,
+      "venue": {
+        "name": "Caesars Virginia",
+        "address": null,
+        "url": "https://www.caesars.com/caesars-virginia"
+      },
+      "status": "scheduled",
+      "description": "WSOP Circuit comes to Caesars Virginia in Danville. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+      "registration": null,
+      "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
+      "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
+      "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+      "sourceIds": [
+        "virginia-schedule"
+      ],
+      "checkedAt": "2026-09-06T17:56:10+00:00",
+      "updatedAt": "2026-09-06T17:56:10+00:00",
+      "reviewNote": null,
+      "changes": [
+        {
+          "date": "2026-09-06T17:56:10+00:00",
+          "text": "Overview added with official dates, selected buy-ins and travel links."
+        }
+      ],
+      "tournaments": [
+        {
+          "id": "event-11",
+          "slug": "event-11",
+          "number": "11",
+          "name": "$1,700 NLH Main Event $500K GTD",
+          "game": "NLH",
+          "category": "main",
+          "buyIn": {
+            "amount": 1700,
+            "currency": "USD"
+          },
+          "fee": null,
+          "guarantee": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "startingStack": null,
+          "levels": null,
+          "reentry": "1 Re-Entry Per Flight",
+          "lateRegistration": null,
+          "endDate": null,
+          "sessions": [
+            {
+              "id": "11-2026-09-10-0",
+              "label": "Flight A",
+              "date": "2026-09-10",
+              "time": "11:00",
+              "kind": "entry"
+            },
+            {
+              "id": "11-2026-09-11-1",
+              "label": "Flight B",
+              "date": "2026-09-11",
+              "time": "11:00",
+              "kind": "entry"
+            },
+            {
+              "id": "11-2026-09-12-2",
+              "label": "Flight C",
+              "date": "2026-09-12",
+              "time": "11:00",
+              "kind": "entry"
+            }
+          ],
+          "sourceIds": [
+            "virginia-schedule"
+          ]
+        },
+        {
+          "id": "event-1",
+          "slug": "event-1",
+          "number": "1",
+          "name": "$400 NLH Double Stack Opener $25K GTD",
+          "game": "NLH",
+          "category": "side",
+          "buyIn": {
+            "amount": 400,
+            "currency": "USD"
+          },
+          "fee": null,
+          "guarantee": {
+            "amount": 25000,
+            "currency": "USD"
+          },
+          "startingStack": null,
+          "levels": null,
+          "reentry": "Unlimited Re-Entry",
+          "lateRegistration": null,
+          "endDate": null,
+          "sessions": [
+            {
+              "id": "1-2026-09-03-0",
+              "label": "Published start",
+              "date": "2026-09-03",
+              "time": "10:00",
+              "kind": "entry"
+            }
+          ],
+          "sourceIds": [
+            "virginia-schedule"
+          ]
+        },
+        {
+          "id": "event-2",
+          "slug": "event-2",
+          "number": "2",
+          "name": "$600 NLH Mini Main Event $250K GTD",
+          "game": "NLH",
+          "category": "side",
+          "buyIn": {
+            "amount": 600,
+            "currency": "USD"
+          },
+          "fee": null,
+          "guarantee": {
+            "amount": 250000,
+            "currency": "USD"
+          },
+          "startingStack": null,
+          "levels": null,
+          "reentry": "Unlimited Re-Entry",
+          "lateRegistration": null,
+          "endDate": null,
+          "sessions": [
+            {
+              "id": "2-2026-09-03-0",
+              "label": "Flight A",
+              "date": "2026-09-03",
+              "time": "16:00",
+              "kind": "entry"
+            },
+            {
+              "id": "2-2026-09-04-1",
+              "label": "Flight B",
+              "date": "2026-09-04",
+              "time": "10:00",
+              "kind": "entry"
+            },
+            {
+              "id": "2-2026-09-04-2",
+              "label": "Flight C",
+              "date": "2026-09-04",
+              "time": "16:00",
+              "kind": "entry"
+            },
+            {
+              "id": "2-2026-09-05-3",
+              "label": "Flight D",
+              "date": "2026-09-05",
+              "time": "10:00",
+              "kind": "entry"
+            }
+          ],
+          "sourceIds": [
+            "virginia-schedule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "liechtenstein-2026",
+      "slug": "wsop-circuit-grand-casino-liechtenstein-2026",
+      "name": "WSOP Circuit Grand Casino Liechtenstein 2026",
+      "tour": "WSOP Circuit",
+      "destinationId": "liechtenstein/gamprin",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-22",
+      "timezone": "Europe/Vaduz",
+      "dateNote": null,
+      "venue": {
+        "name": "Grand Casino Liechtenstein",
+        "address": null,
+        "url": "https://gcli.li/"
+      },
+      "status": "scheduled",
+      "description": "WSOP Circuit comes to Grand Casino Liechtenstein in Gamprin. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+      "registration": null,
+      "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
+      "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
+      "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+      "sourceIds": [
+        "liechtenstein-schedule"
+      ],
+      "checkedAt": "2026-09-06T17:56:10+00:00",
+      "updatedAt": "2026-09-06T17:56:10+00:00",
+      "reviewNote": null,
+      "changes": [
+        {
+          "date": "2026-09-06T17:56:10+00:00",
+          "text": "Overview added with official dates, selected buy-ins and travel links."
+        }
+      ],
+      "tournaments": [
+        {
+          "id": "event-7",
+          "slug": "event-7",
+          "number": "7",
+          "name": "CHf 1,500 NLH Main Event CHf 750K GTD",
+          "game": "NLH",
+          "category": "main",
+          "buyIn": {
+            "amount": 1500,
+            "currency": "CHF"
+          },
+          "fee": null,
+          "guarantee": {
+            "amount": 750000,
+            "currency": "CHF"
+          },
+          "startingStack": "50,000",
+          "levels": null,
+          "reentry": "Unlimited Re-Entry",
+          "lateRegistration": "Start of Lvl 13",
+          "endDate": null,
+          "sessions": [
+            {
+              "id": "7-2026-09-17-0",
+              "label": "Flight A",
+              "date": "2026-09-17",
+              "time": "13:00",
+              "kind": "entry"
+            },
+            {
+              "id": "7-2026-09-18-1",
+              "label": "Flight B",
+              "date": "2026-09-18",
+              "time": "12:00",
+              "kind": "entry"
+            },
+            {
+              "id": "7-2026-09-18-2",
+              "label": "Flight C",
+              "date": "2026-09-18",
+              "time": "20:00",
+              "kind": "entry"
+            },
+            {
+              "id": "7-2026-09-19-3",
+              "label": "Flight D",
+              "date": "2026-09-19",
+              "time": "12:00",
+              "kind": "entry"
+            },
+            {
+              "id": "7-2026-09-19-4",
+              "label": "Flight E",
+              "date": "2026-09-19",
+              "time": "20:00",
+              "kind": "entry"
+            }
+          ],
+          "sourceIds": [
+            "liechtenstein-schedule"
+          ]
+        },
+        {
+          "id": "event-1",
+          "slug": "event-1",
+          "number": "1",
+          "name": "CHf 300 NLH Mini Main CHf 200K GTD",
+          "game": "NLH",
+          "category": "side",
+          "buyIn": {
+            "amount": 300,
+            "currency": "CHF"
+          },
+          "fee": null,
+          "guarantee": {
+            "amount": 200000,
+            "currency": "CHF"
+          },
+          "startingStack": "30,000",
+          "levels": null,
+          "reentry": "Unlimited Re-Entry",
+          "lateRegistration": "Start of Lvl 11",
+          "endDate": null,
+          "sessions": [
+            {
+              "id": "1-2026-09-10-0",
+              "label": "Flight A",
+              "date": "2026-09-10",
+              "time": "17:00",
+              "kind": "entry"
+            },
+            {
+              "id": "1-2026-09-11-1",
+              "label": "Flight B",
+              "date": "2026-09-11",
+              "time": "17:00",
+              "kind": "entry"
+            },
+            {
+              "id": "1-2026-09-12-2",
+              "label": "Flight C",
+              "date": "2026-09-12",
+              "time": "12:00",
+              "kind": "entry"
+            },
+            {
+              "id": "1-2026-09-12-3",
+              "label": "Flight D",
+              "date": "2026-09-12",
+              "time": "17:00",
+              "kind": "entry"
+            }
+          ],
+          "sourceIds": [
+            "liechtenstein-schedule"
+          ]
+        },
+        {
+          "id": "event-3",
+          "slug": "event-3",
+          "number": "3",
+          "name": "CHf 500 NLH Mystery Bounty CHF 100K GTD",
+          "game": "NLH",
+          "category": "side",
+          "buyIn": {
+            "amount": 500,
+            "currency": "CHF"
+          },
+          "fee": null,
+          "guarantee": {
+            "amount": 100000,
+            "currency": "CHF"
+          },
+          "startingStack": "40,000",
+          "levels": null,
+          "reentry": "Unlimited Re-Entry",
+          "lateRegistration": "Start of Lvl 11",
+          "endDate": null,
+          "sessions": [
+            {
+              "id": "3-2026-09-13-0",
+              "label": "Flight A",
+              "date": "2026-09-13",
+              "time": "13:00",
+              "kind": "entry"
+            },
+            {
+              "id": "3-2026-09-13-1",
+              "label": "Flight B",
+              "date": "2026-09-13",
+              "time": "18:00",
+              "kind": "entry"
+            },
+            {
+              "id": "3-2026-09-14-2",
+              "label": "Flight C",
+              "date": "2026-09-14",
+              "time": "17:00",
+              "kind": "entry"
+            }
+          ],
+          "sourceIds": [
+            "liechtenstein-schedule"
+          ]
+        }
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "id": "united-states/danville",
+      "country": "United States",
+      "countryCode": "US",
+      "countrySlug": "united-states",
+      "city": "Danville",
+      "slug": "danville",
+      "region": "North America",
+      "intro": "Use Caesars Virginia as the starting point for your Danville tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+      "airport": {
+        "title": "Piedmont Triad International (GSO)",
+        "detail": "An airport option to compare for your trip to Danville. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+        "url": "https://flyfrompti.com/",
+        "sourceId": "virginia-airport"
+      },
+      "transport": [
+        {
+          "title": "Arriving by road",
+          "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
+          "detail": "The resort is off US-29 and US-58. Its visitor information lists GSO and RDU as airport options. Arrange onward road transport; an airport choice is not a guaranteed shuttle service.",
+          "sourceId": "danville-hotel"
+        }
+      ],
+      "hotels": [
+        {
+          "title": "Caesars Virginia — stay at the venue",
+          "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
+          "detail": "The resort offers 320 rooms at the playing venue. Compare the full room total and cancellation terms with an off-site stay; no tournament rate is assumed.",
+          "sourceId": "danville-hotel"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Quick meals and Ramsay’s Kitchen",
+          "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/dining",
+          "detail": "Three Stacks and the 500 Block food hall offer casual options; Ramsay’s Kitchen is a sit-down alternative. The hotel also lists room service. Check outlet hours against your session breaks.",
+          "sourceId": "danville-food"
+        }
+      ],
+      "tax": {
+        "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+        "sourceIds": [
+          "us-tax"
+        ]
+      },
+      "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+      "indexable": true
+    },
+    {
+      "id": "liechtenstein/gamprin",
+      "country": "Liechtenstein",
+      "countryCode": "LI",
+      "countrySlug": "liechtenstein",
+      "city": "Gamprin",
+      "slug": "gamprin",
+      "region": "Europe",
+      "intro": "Use Grand Casino Liechtenstein as the starting point for your Gamprin tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+      "airport": {
+        "title": "Zurich Airport (ZRH)",
+        "detail": "An airport option to compare for your trip to Gamprin. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+        "url": "https://www.flughafen-zuerich.ch/en/passengers",
+        "sourceId": "liechtenstein-airport"
+      },
+      "transport": [],
+      "hotels": [
+        {
+          "title": "GC Hotel — in the casino building",
+          "url": "https://gchotel.li/en/zimmer/",
+          "detail": "The hotel is in the Grand Casino building in Bendern. Check room availability directly; an on-site room can simplify late finishes.",
+          "sourceId": "gamprin-hotel"
+        }
+      ],
+      "dining": [
+        {
+          "title": "Breakfast and restaurant information",
+          "url": "https://gchotel.li/en/zimmer/",
+          "detail": "The hotel’s room information describes breakfast in the casino’s ground-floor restaurant. Check your reservation’s inclusions and current restaurant service before arrival.",
+          "sourceId": "gamprin-hotel"
+        }
+      ],
+      "tax": {
+        "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+        "sourceIds": []
+      },
+      "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+      "indexable": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "virginia-schedule",
+      "title": "WSOP Circuit Caesars Virginia 2026 — official event page",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
+      "kind": "schedule",
+      "checkedAt": "2026-09-06T17:56:10+00:00"
+    },
+    {
+      "id": "virginia-airport",
+      "title": "Piedmont Triad International (GSO) — official airport",
+      "url": "https://flyfrompti.com/",
+      "kind": "travel",
+      "checkedAt": "2026-09-06T17:56:10+00:00"
+    },
+    {
+      "id": "us-tax",
+      "title": "IRS Publication 515 — nonresident withholding",
+      "url": "https://www.irs.gov/publications/p515",
+      "kind": "tax",
+      "checkedAt": "2026-09-06T17:56:10+00:00"
+    },
+    {
+      "id": "liechtenstein-schedule",
+      "title": "WSOP Circuit Grand Casino Liechtenstein 2026 — official event page",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
+      "kind": "schedule",
+      "checkedAt": "2026-09-06T17:56:10+00:00"
+    },
+    {
+      "id": "liechtenstein-airport",
+      "title": "Zurich Airport (ZRH) — official airport",
+      "url": "https://www.flughafen-zuerich.ch/en/passengers",
+      "kind": "travel",
+      "checkedAt": "2026-09-06T17:56:10+00:00"
+    },
+    {
+      "id": "danville-hotel",
+      "title": "Caesars Virginia — stay at the venue",
+      "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
+      "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+      "kind": "travel"
+    },
+    {
+      "id": "danville-food",
+      "title": "Quick meals and Ramsay’s Kitchen",
+      "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/dining",
+      "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+      "kind": "travel"
+    },
+    {
+      "id": "gamprin-hotel",
+      "title": "GC Hotel — in the casino building",
+      "url": "https://gchotel.li/en/zimmer/",
+      "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+      "kind": "travel"
+    }
+  ]
+}
