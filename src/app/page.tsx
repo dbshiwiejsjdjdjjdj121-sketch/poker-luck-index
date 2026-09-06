@@ -10,7 +10,7 @@ export default function Home() {
   const featured = upcoming.find(f => f.tour === "EPT") || upcoming[0];
   const places = ["czechia/prague","united-states/las-vegas","south-korea/jeju","bahamas/nassau"].map(id => destinations.find(d => d.id === id)).filter(d => !!d);
   const countries = new Set(upcoming.map(f => destinationById(f.destinationId).country)).size;
-  const changes = festivals.flatMap(f => f.changes.map(c => ({...c,festival:f}))).sort((a,b) => b.date.localeCompare(a.date)).slice(0,3);
+  const changes = upcoming.flatMap(f => f.changes.map(c => ({...c,festival:f}))).sort((a,b) => b.date.localeCompare(a.date)).slice(0,3);
   return <main id="main"><section className="hero container"><div className="hero-copy"><p className="eyebrow"><span className="live-dot" /> THE LIVE POKER TRAVEL GUIDE</p><h1>Find your next<br />poker tournament.<br /><em>Plan the trip.</em></h1><p className="hero-description">From the first flight to the final table. Discover major festivals, compare the schedule, and get the details that make the journey easier.</p>
     <form className="hero-search" action="/tournaments"><label><span>WHERE TO?</span><input name="q" aria-label="City, country or tournament" placeholder="City, country or tournament" /></label><label><span>FROM</span><input name="from" type="date" aria-label="Earliest travel date" /></label><button className="button" type="submit">Find a tournament <span>↗</span></button></form>
     <div className="hero-stats"><div><strong>{upcoming.length}</strong><span>upcoming & ongoing</span></div><div><strong>{countries}</strong><span>countries to explore</span></div><div><strong>Official</strong><span>sources, linked throughout</span></div></div>

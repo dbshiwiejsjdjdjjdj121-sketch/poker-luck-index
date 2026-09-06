@@ -10,6 +10,7 @@ export type Tournament = {
 };
 export type Festival = {
   id: string; slug: string; name: string; tour: string; destinationId: string;
+  previousEditionId?: string;
   startDate: string; endDate: string; dateNote: string | null; timezone: string;
   venue: { name: string; address: string | null; url: string | null };
   status: "scheduled" | "postponed" | "cancelled";

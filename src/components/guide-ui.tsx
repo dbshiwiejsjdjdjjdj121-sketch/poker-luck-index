@@ -16,14 +16,15 @@ export function Status({ festival }: { festival: Festival }) {
 }
 export function FestivalCard({ festival: f }: { festival: Festival }) {
   const d = destinationById(f.destinationId), main = mainEvent(f);
+  const archived = statusOf(f) === "ended";
   return <article className="festival-card">
     <div className="card-top"><span className="tour">{f.tour}</span><Status festival={f} /></div>
     <p className="card-location">{d.city}<span> / {d.country}</span></p>
     <h3><Link href={`/tournaments/${f.slug}`}>{f.name}</Link></h3>
     <p className="card-date">{dateRange(f.startDate, f.endDate)}</p>
     <p className="card-venue">{f.venue.name}</p>
-    <div className="card-values"><div><span>MAIN EVENT</span><strong>{main ? money(main.buyIn) : "To be confirmed"}</strong></div><div><span>HIGHLIGHTS</span><strong>{f.tournaments.length || "Pending"}</strong></div></div>
-    <div className="card-bottom"><span>{buyInRange(f)}<small>Highlighted buy-ins · satellites excluded</small></span><Link aria-label={`View ${f.name}`} href={`/tournaments/${f.slug}`}>↗</Link></div>
+    <div className="card-values"><div><span>MAIN EVENT</span><strong>{main ? money(main.buyIn) : archived ? "Not confirmed" : "To be confirmed"}</strong></div><div><span>HIGHLIGHTS</span><strong>{f.tournaments.length || (archived ? "None recorded" : "Pending")}</strong></div></div>
+    <div className="card-bottom"><span>{archived && !f.tournaments.some(t=>t.category!=="satellite"&&t.buyIn) ? "No confirmed buy-ins" : buyInRange(f)}<small>Highlighted buy-ins · satellites excluded</small></span><Link aria-label={`View ${f.name}`} href={`/tournaments/${f.slug}`}>↗</Link></div>
     {(f.reviewNote || isStale(f)) && <p className="card-warning">{f.reviewNote ? "Source discrepancy noted" : "Recheck due · see sources"}</p>}
   </article>;
 }

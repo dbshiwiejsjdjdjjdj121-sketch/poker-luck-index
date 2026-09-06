@@ -16,5 +16,6 @@ export default async function Tournaments({searchParams}:Props) {
   return <main id="main" className="container page"><div className="page-heading"><p className="eyebrow">THE GLOBAL LIVE POKER CALENDAR</p><h1>Find your next seat.</h1><p>Major festivals. Original currencies. Details straight from the source.</p></div>
   <FilterForm key={JSON.stringify(filters)} filters={filters} countries={countries} cities={destinations.map(d=>[d.id,d.city] as [string,string]).sort((a,b)=>a[1].localeCompare(b[1]))} tours={[...new Set(festivals.map(f=>f.tour))].sort()} games={[...new Set(allEvents.map(t=>t.game))].sort()} currencies={[...new Set(allEvents.flatMap(t=>t.buyIn?[t.buyIn.currency]:[]))].sort()}/>
   {filters.from && filters.to && filters.from>filters.to && <p className="notice">The end date is before the start date. Choose a wider date range.</p>}
-  <div className="results-heading"><p><strong>{result.length}</strong> festival{result.length===1?"":"s"} found</p><span>By start date · venue local time</span></div><FestivalGrid items={result}/></main>;
+  {filters.status==="ended"&&<p className="notice archive-notice">Past editions are kept for reference. Their buy-ins, entry rules and festival-specific offers are historical; follow the organizer for current events.</p>}
+  <div className="results-heading"><p><strong>{result.length}</strong> festival{result.length===1?"":"s"} found</p><span>{filters.status==="ended"?"Most recent first":"By start date"} · venue local time</span></div><FestivalGrid items={result}/></main>;
 }

@@ -28,6 +28,11 @@ for(const path of ["/api/subscription-status","/api/bankroll-records","/api/hand
 const filtered=await get("/tournaments?q=NO-SUCH-FESTIVAL-TEST&currency=EUR&max=1");
 assert.match(filtered.html,/No matching festivals/);assert.match(filtered.html,/<meta name="robots" content="noindex/);
 assert.ok(filtered.html.includes('href="/tournaments"'));
+const archive=await get("/tournaments?status=ended");
+assert.equal(archive.r.status,200);
+assert.match(archive.html,/Past editions are kept for reference/);
+assert.match(archive.html,/Most recent first/);
+assert.match(archive.html,/<meta name="robots" content="noindex/);
 const sitemap=(await get("/sitemap.xml")).html;
 assert.ok(!sitemap.includes("/account")&&!sitemap.includes("/tournaments?"));
 for(const f of festivals)assert.ok(sitemap.includes("/tournaments/"+f.slug));

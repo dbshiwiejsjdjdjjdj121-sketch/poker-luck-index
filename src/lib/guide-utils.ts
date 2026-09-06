@@ -27,9 +27,22 @@ export function buyInRange(f: Festival) {
   return lo === hi ? money(values[0]) : `${money({ amount: lo, currency: currencies[0] })} – ${hi.toLocaleString("en-US")}`;
 }
 export function isStale(f: Festival, now = new Date()) {
-  const daysUntil = (Date.parse(f.startDate) - now.getTime()) / 86400000;
-  const allowance = daysUntil <= 30 ? 2 : 8;
+  const cadence = maintenanceCadence(f, now);
+  if (cadence === "archive") return false;
+  const allowance = cadence === "daily" ? 2 : 8;
   return (now.getTime() - Date.parse(f.checkedAt)) / 86400000 > allowance;
+}
+export function daysToStart(f: Festival, now = new Date()) {
+  return (Date.parse(f.startDate) - Date.parse(localToday(f.timezone, now))) / 86400000;
+}
+export function maintenanceCadence(f: Festival, now = new Date()) {
+  const state = statusOf(f, now);
+  if (state === "ended" || state === "cancelled") return "archive";
+  if (state === "postponed") return "weekly";
+  return daysToStart(f, now) <= 30 ? "daily" : "weekly";
+}
+export function nextEditionOf(f: Festival, festivals: Festival[]) {
+  return festivals.find(candidate => candidate.previousEditionId === f.id);
 }
 export function matchesTournament(t: Tournament, filters: Filters, nowDate?: string) {
   if (filters.game && t.game !== filters.game) return false;
@@ -62,6 +75,6 @@ export function filterFestivals(festivals: Festival[], filters: Filters, cityNam
       return f.tournaments.some(t => matchesTournament(t, { game: filters.game, currency: filters.currency, min: filters.min, max: filters.max }));
     }
     return true;
-  }).sort((a,b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name));
+  }).sort((a,b) => (filters.status === "ended" ? b.startDate.localeCompare(a.startDate) : a.startDate.localeCompare(b.startDate)) || a.name.localeCompare(b.name));
 }
 export function serializeJsonLd(value: unknown) { return JSON.stringify(value).replace(/</g, "\\u003c"); }

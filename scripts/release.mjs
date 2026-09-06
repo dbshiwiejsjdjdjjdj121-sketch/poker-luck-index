@@ -1,6 +1,8 @@
 import {writeFileSync} from "node:fs";
 import {checkProject,run,project,bypass,vercel,smoke,deploymentUrl} from "./vercel-client.mjs";
 const initial=process.argv.includes("--initial");
+const product=process.argv.includes("--product");
+const productRelease=initial||product;
 checkProject();
 const git=(...args)=>run("git",args,{capture:true});
 if(git("status","--porcelain"))throw new Error("Commit the intended change first; release requires a clean worktree.");
@@ -9,8 +11,8 @@ git("fetch","origin","main");
 const expectedMain=git("rev-parse","origin/main"),head=git("rev-parse","HEAD");
 git("merge-base","--is-ancestor",expectedMain,head);
 const changed=git("diff","--name-only",expectedMain,head).split("\n").filter(Boolean);
-if(!initial&&changed.some(f=>!f.startsWith("data/")&&!f.startsWith("reports/maintenance/")))throw new Error("Daily release may only change content data and maintenance reports.");
-if(!initial&&!changed.some(f=>f.startsWith("data/"))){console.log("No data changes; no deployment.");process.exit(0);}
+if(!productRelease&&changed.some(f=>!f.startsWith("data/")&&!f.startsWith("reports/maintenance/")))throw new Error("Daily release may only change content data and maintenance reports.");
+if(!productRelease&&!changed.some(f=>f.startsWith("data/"))){console.log("No data changes; no deployment.");process.exit(0);}
 run("npm",["run","validate"]);
 const before=await project(),previous=before.targets?.production?.url;
 if(!previous)throw new Error("Could not identify the last production deployment.");

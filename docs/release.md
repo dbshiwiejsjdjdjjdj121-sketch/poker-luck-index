@@ -2,7 +2,7 @@
 
 Production project: `poker-luck-index` (`prj_4RY5RDNbeFUAeEV10kBPckbZeJzR`), team `team_8ufG83uOS6mmizyqiGqR6JB0`, domain `www.allinpokerai.com`, Git branch `origin/main`.
 
-The release script must run from a clean committed worktree. Normal releases allow only data and maintenance-report changes versus origin/main. `--initial` permits the explicitly authorized initial product rebuild; daily automations must never use this option. Git auto-deploy is disabled so an unverified main push cannot bypass the smoke check and promotion gate.
+The release script must run from a clean committed worktree. Normal releases allow only data and maintenance-report changes versus origin/main. `--product` permits an explicitly user-authorized product change, with the same validation, staged deployment and recovery checks. `--initial` remains for the initial rebuild only. Daily automations must never use either option. Git auto-deploy is disabled so an unverified main push cannot bypass the smoke check and promotion gate.
 
 ```sh
 node --env-file=.env.local scripts/release.mjs

@@ -1,5 +1,6 @@
 import type { GuideData } from "./guide-types";
 import { validateGuide } from "./validate-guide";
+import { daysToStart } from "./guide-utils";
 export type Candidate = Partial<GuideData> & { successfulSourceIds: string[] };
 /** Merge verified proposals by stable ID. Failed proposals never erase the last good record. */
 export function stageGuide(base: GuideData, candidate: Candidate, now = new Date()) {
@@ -23,6 +24,12 @@ export function stageGuide(base: GuideData, candidate: Candidate, now = new Date
       const target = trial[kind] as {id:string}[];
       if (index < 0) target.push(structuredClone(record)); else target[index] = structuredClone(record);
       const errors = validateGuide(trial, now);
+      if (kind === "festivals" && index >= 0 && (record as GuideData["festivals"][number]).slug !== data.festivals[index].slug) {
+        errors.push("Existing festival URLs must be preserved through reschedules; create a new ID and year-specific URL for another edition.");
+      }
+      if (!errors.length && kind === "festivals" && index < 0 && daysToStart(record as GuideData["festivals"][number], now) > 180) {
+        errors.push("New festival is beyond the 180-day discovery window; retain it as a candidate for editorial review.");
+      }
       if (errors.length) quarantined.push({kind,id,errors}); else data = trial;
     }
   }

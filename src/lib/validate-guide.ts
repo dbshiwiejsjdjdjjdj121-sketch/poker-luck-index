@@ -10,7 +10,9 @@ export function validateGuide(input: unknown, now = new Date()): string[] {
     const d=input as GuideData;
     if(!d || !Array.isArray(d.festivals)||!Array.isArray(d.destinations)||!Array.isArray(d.sources))return ["Expected festivals, destinations and sources arrays"];
     unique(d.festivals.map(f=>f.id),"Festivals");unique(d.festivals.map(f=>f.slug),"Festival URLs");unique(d.destinations.map(f=>f.id),"Destinations");unique(d.sources.map(f=>f.id),"Sources");
-    unique(d.festivals.map(f=>f.tour+"|"+f.destinationId+"|"+f.scheduleUrl),"Official event identities");
+    unique(d.festivals.map(f=>f.tour+"|"+f.destinationId+"|"+f.startDate.slice(0,4)+"|"+f.scheduleUrl),"Official event identities");
+    unique(d.festivals.flatMap(f=>f.previousEditionId?[f.previousEditionId]:[]),"Edition successors");
+    const festivalMap=new Map(d.festivals.map(f=>[f.id,f]));
     const sourceMap=new Map(d.sources.map(s=>[s.id,s])), destIds=new Set(d.destinations.map(d=>d.id));
     const refs=(ids:string[],label:string)=>{check(Array.isArray(ids)&&ids.length>0,label+" needs a source");for(const id of ids)check(sourceMap.has(id),label+": unknown source "+id)};
     for(const s of d.sources){check(s.id&&s.title&&url(s.url),"Invalid source "+s.id);check(timestamp(s.checkedAt),"Invalid check timestamp "+s.id);check(["schedule","travel","tax","organizer"].includes(s.kind),"Invalid source kind "+s.id)}
@@ -27,6 +29,10 @@ export function validateGuide(input: unknown, now = new Date()): string[] {
       check(/^[a-z0-9-]+$/.test(f.slug)&&/20\d{2}/.test(f.slug),"Festival needs year-specific slug "+label);
       check(f.name&&f.tour&&f.description&&f.venue.name&&destIds.has(f.destinationId),"Incomplete festival "+label);
       check(validDate(f.startDate)&&validDate(f.endDate)&&f.startDate<=f.endDate,"Invalid festival date range "+label);
+      if(f.previousEditionId!==undefined){
+        const previous=festivalMap.get(f.previousEditionId);
+        check(previous&&previous.id!==f.id&&previous.endDate<f.startDate&&previous.tour===f.tour,"Invalid previous edition "+label);
+      }
       try{new Intl.DateTimeFormat("en",{timeZone:f.timezone}).format(now)}catch{errors.push("Invalid timezone "+label)}
       check(["scheduled","postponed","cancelled"].includes(f.status),"Invalid status "+label);
       check(url(f.scheduleUrl)&&url(f.registrationUrl)&&(!f.venue.url||url(f.venue.url)),"Invalid official link "+label);
