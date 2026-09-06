@@ -2,22 +2,12 @@ import crypto from "node:crypto";
 import nodemailer from "nodemailer";
 import { getFirebaseAdminAuth } from "@/lib/firebase-admin";
 import { getFirebaseAdminDb } from "@/lib/firebase-admin";
+import { validEmail } from "@/lib/email-api";
 import { SITE_NAME } from "@/lib/site";
 
-let cachedTransporter: nodemailer.Transporter | null = null;
-const EMAIL_CODE_TTL_MS = 10 * 60 * 1000;
-const EMAIL_CODE_RESEND_COOLDOWN_MS = 45 * 1000;
-const EMAIL_CODE_MAX_FAILED_ATTEMPTS = 5;
+let cachedTransporter: ReturnType<typeof nodemailer.createTransport> | null = null;
 const EMAIL_CODE_COLLECTION = "emailAuthCodes";
-
-type EmailCodeRecord = {
-  codeHash: string;
-  createdAt: string;
-  email: string;
-  expiresAt: string;
-  failedAttempts: number;
-  resendAvailableAt: string;
-};
+import { EMAIL_CODE_TTL_MS, EMAIL_CODE_RESEND_COOLDOWN_MS, checkResend, advanceCodeAttempt, type EmailCodeRecord } from "@/lib/email-code-policy";
 
 function readEmailConfig() {
   return {
@@ -32,7 +22,7 @@ function readEmailConfig() {
     smtpUser: process.env.SMTP_USER || "",
     smtpPass: process.env.SMTP_PASS || "",
     from: process.env.EMAIL_FROM || process.env.SMTP_USER || "",
-    fromName: process.env.EMAIL_FROM_NAME || "All In Poker AI",
+    fromName: process.env.EMAIL_FROM_NAME || "ALL IN Poker Guide",
   };
 }
 
@@ -201,16 +191,16 @@ async function deliverEmail({
 
 function buildEmailCodeHtml(email: string, code: string, expiresInMinutes: number) {
   return `
-    <div style="background:#06130f;padding:32px 16px;font-family:Arial,sans-serif;color:#f7f2e5;">
-      <div style="max-width:560px;margin:0 auto;background:#0c201a;border-radius:28px;padding:40px 32px;border:1px solid rgba(214,178,93,0.24);box-shadow:0 24px 80px rgba(0,0,0,0.28);">
+    <div style="background:#080f1d;padding:32px 16px;font-family:Arial,sans-serif;color:#f7f2e5;">
+      <div style="max-width:560px;margin:0 auto;background:#0e192b;border-radius:28px;padding:40px 32px;border:1px solid rgba(214,178,93,0.24);box-shadow:0 24px 80px rgba(0,0,0,0.28);">
         <div style="font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:#d6b25d;font-weight:700;margin-bottom:18px;">
-          All In Poker AI
+          ALL IN Poker Guide
         </div>
         <h1 style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:34px;line-height:1.1;color:#fffaf2;">
           Your verification code
         </h1>
         <p style="margin:0 0 24px;font-size:17px;line-height:1.7;color:#d2d6d9;">
-          Enter this 6-digit code in ${SITE_NAME} to sign in and recover your saved poker history.
+          Enter this 6-digit code in ${SITE_NAME} to sign in to your account.
         </p>
         <div style="display:inline-block;background:linear-gradient(135deg,#f4df9c,#d6b25d);color:#0d1614;font-size:32px;font-weight:700;letter-spacing:0.24em;padding:16px 24px;border-radius:20px;">
           ${code}
@@ -232,7 +222,7 @@ function buildEmailCodeHtml(email: string, code: string, expiresInMinutes: numbe
 function normalizeEmailAddress(value: string) {
   const normalizedEmail = value.trim().toLowerCase();
 
-  if (!normalizedEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
+  if (!validEmail(normalizedEmail)) {
     throw new Error("Enter a valid email address.");
   }
 
@@ -309,32 +299,19 @@ export async function requestEmailVerificationCode({
   const docRef = db
     .collection(EMAIL_CODE_COLLECTION)
     .doc(getEmailCodeDocumentId(normalizedEmail));
-  const snapshot = await docRef.get();
-
-  if (snapshot.exists) {
-    const existing = snapshot.data() as Partial<EmailCodeRecord>;
-    const resendAvailableAt = Date.parse(String(existing.resendAvailableAt || 0));
-
-    if (Number.isFinite(resendAvailableAt) && resendAvailableAt > now) {
-      const secondsLeft = Math.max(
-        1,
-        Math.ceil((resendAvailableAt - now) / 1000),
-      );
-      throw new Error(`Please wait ${secondsLeft}s before requesting another code.`);
-    }
-  }
-
   const code = createEmailCode();
-  const expiresInMinutes = Math.max(1, Math.ceil(EMAIL_CODE_TTL_MS / 60_000));
-
-  await docRef.set({
-    codeHash: hashEmailCode(normalizedEmail, code),
-    createdAt: new Date(now).toISOString(),
-    email: normalizedEmail,
-    expiresAt: addMilliseconds(now, EMAIL_CODE_TTL_MS),
-    failedAttempts: 0,
+  const expiresInMinutes = Math.ceil(EMAIL_CODE_TTL_MS / 60_000);
+  const record: EmailCodeRecord = {
+    codeHash: hashEmailCode(normalizedEmail, code), createdAt: new Date(now).toISOString(),
+    email: normalizedEmail, expiresAt: addMilliseconds(now, EMAIL_CODE_TTL_MS), failedAttempts: 0,
     resendAvailableAt: addMilliseconds(now, EMAIL_CODE_RESEND_COOLDOWN_MS),
-  } satisfies EmailCodeRecord);
+  };
+  await db.runTransaction(async transaction => {
+    const snapshot = await transaction.get(docRef);
+    const error = checkResend(snapshot.exists ? snapshot.data() ?? null : null, now);
+    if (error) throw new Error(error);
+    transaction.set(docRef, record);
+  });
 
   try {
     await deliverEmail({
@@ -353,7 +330,10 @@ export async function requestEmailVerificationCode({
       html: buildEmailCodeHtml(normalizedEmail, code, expiresInMinutes),
     });
   } catch (error) {
-    await docRef.delete().catch(() => undefined);
+    await db.runTransaction(async transaction => {
+      const current = await transaction.get(docRef);
+      if (current.data()?.codeHash === record.codeHash) transaction.delete(docRef);
+    }).catch(() => undefined);
     throw error;
   }
 
@@ -379,42 +359,15 @@ export async function verifyEmailVerificationCode({
   const docRef = db
     .collection(EMAIL_CODE_COLLECTION)
     .doc(getEmailCodeDocumentId(normalizedEmail));
-  const snapshot = await docRef.get();
-
-  if (!snapshot.exists) {
-    throw new Error("Request a fresh verification code before continuing.");
-  }
-
-  const record = snapshot.data() as Partial<EmailCodeRecord>;
-  const now = Date.now();
-  const expiresAt = Date.parse(String(record.expiresAt || 0));
-
-  if (!Number.isFinite(expiresAt) || expiresAt <= now) {
-    await docRef.delete().catch(() => undefined);
-    throw new Error("This verification code has expired. Request a fresh one.");
-  }
-
-  const failedAttempts = Number(record.failedAttempts || 0);
   const submittedHash = hashEmailCode(normalizedEmail, normalizedCode);
-
-  if (submittedHash !== String(record.codeHash || "")) {
-    const nextFailedAttempts = failedAttempts + 1;
-
-    if (nextFailedAttempts >= EMAIL_CODE_MAX_FAILED_ATTEMPTS) {
-      await docRef.delete().catch(() => undefined);
-      throw new Error("Too many incorrect codes. Request a new one and try again.");
-    }
-
-    await docRef.set(
-      {
-        failedAttempts: nextFailedAttempts,
-      },
-      { merge: true },
-    );
-    throw new Error("That code is incorrect. Try again.");
-  }
-
-  await docRef.delete().catch(() => undefined);
+  const error = await db.runTransaction(async transaction => {
+    const snapshot = await transaction.get(docRef);
+    const outcome = advanceCodeAttempt(snapshot.exists ? snapshot.data() ?? null : null, submittedHash, Date.now());
+    if (outcome.next) transaction.set(docRef, outcome.next);
+    else if (snapshot.exists) transaction.delete(docRef);
+    return outcome.error;
+  });
+  if (error) throw new Error(error);
 
   const auth = getFirebaseAdminAuth();
   const user = await getOrCreateFirebaseUserByEmail(normalizedEmail);

@@ -1,0 +1,10 @@
+import festivalsJson from "../../data/festivals.json";
+import destinationsJson from "../../data/destinations.json";
+import sourcesJson from "../../data/sources.json";
+import type { Festival, Destination, Source } from "./guide-types";
+export const festivals = festivalsJson as Festival[];
+export const destinations = destinationsJson as Destination[];
+export const sources = sourcesJson as Source[];
+export const festivalBySlug = (slug: string) => festivals.find(f => f.slug === slug);
+export const destinationById = (id: string) => destinations.find(d => d.id === id)!;
+export const sourcesFor = (ids: string[]) => sources.filter(s => ids.includes(s.id));

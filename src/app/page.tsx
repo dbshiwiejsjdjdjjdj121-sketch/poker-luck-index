@@ -1,124 +1,25 @@
-import type { Metadata } from "next";
 import Link from "next/link";
-import { AppNavigation } from "@/components/app-navigation";
-import { AppStorePromo } from "@/components/app-store-promo";
-import { HomeForm } from "@/components/home-form";
-import {
-  SITE_NAME,
-  buildOgImageUrl,
-} from "@/lib/site";
-
-const HOME_TITLE = `${SITE_NAME} | Free Poker Bankroll Tracker, Replay & Luck Index`;
-const HOME_DESCRIPTION =
-  "Free poker bankroll tracker, manual hand replay, saved history, and a fast table read in one clean poker workspace.";
-
-const HOME_PILLARS = [
-  {
-    eyebrow: "Free Tool",
-    title: "Bankroll Tracker",
-    description: "Log sessions, watch swings, and keep a running profit line without leaving the same site.",
-  },
-  {
-    eyebrow: "Free Tool",
-    title: "Manual Replay",
-    description: "Save live hands street by street, reopen them later, and keep your history attached.",
-  },
-  {
-    eyebrow: "Pro Upgrade",
-    title: "AI Analysis",
-    description: "Use voice, screenshots, and AI hand breakdowns only after the free workflow is already useful.",
-  },
-] as const;
-
-export const metadata: Metadata = {
-  title: {
-    absolute: HOME_TITLE,
-  },
-  description: HOME_DESCRIPTION,
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: HOME_TITLE,
-    description: HOME_DESCRIPTION,
-    url: "/",
-    images: [
-      {
-        url: buildOgImageUrl({ view: "home" }),
-        width: 1200,
-        height: 630,
-        alt: "Poker Luck Index home sharing card",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: HOME_TITLE,
-    description: HOME_DESCRIPTION,
-    images: [buildOgImageUrl({ view: "home" })],
-  },
-};
-
+import { destinations, festivals, destinationById } from "@/lib/guide-data";
+import { pageMeta } from "@/lib/site";
+import { dateRange, mainEvent, money, statusOf } from "@/lib/guide-utils";
+import { FestivalGrid, SectionTitle, DestinationCard } from "@/components/guide-ui";
+export const revalidate = 3600;
+export const metadata = pageMeta("Live poker tournaments & travel", "Find your next poker tournament. Explore upcoming global festivals, compare buy-ins and plan your trip with official sources.", "/");
 export default function Home() {
-  return (
-    <main className="relative min-h-screen overflow-hidden px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:pb-8">
-      <div className="mx-auto max-w-6xl space-y-6">
-        <AppNavigation />
-
-        <section className="panel panel-strong p-6 sm:p-8 lg:p-10">
-          <div className="grid gap-10 xl:grid-cols-[1fr_0.95fr] xl:items-start">
-            <div className="space-y-6">
-              <p className="text-[0.7rem] uppercase tracking-[0.32em] text-[var(--gold-soft)]">
-                Free Poker Tools For Live Players
-              </p>
-
-              <div className="space-y-3">
-                <h1 className="max-w-3xl font-heading text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-                  Track bankroll, replay hands, and get a fast table read.
-                </h1>
-                <p className="max-w-2xl text-sm leading-7 text-[var(--muted)] sm:text-base">
-                  Start with the free bankroll tracker and manual replay studio. Use the
-                  luck read as a quick pre-session check, then unlock AI analysis only
-                  when you want a deeper review.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/bankroll"
-                  className="btn-primary inline-flex items-center justify-center"
-                >
-                  Open Free Bankroll Tracker
-                </Link>
-                <Link
-                  href="/hand-review"
-                  className="btn-secondary inline-flex items-center justify-center"
-                >
-                  Start Manual Replay
-                </Link>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-3">
-                {HOME_PILLARS.map((pillar) => (
-                  <article key={pillar.title} className="rounded-[18px] border border-white/10 bg-white/[0.03] p-4">
-                    <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[var(--gold-soft)]">
-                      {pillar.eyebrow}
-                    </p>
-                    <p className="mt-3 text-base font-semibold text-white">{pillar.title}</p>
-                    <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                      {pillar.description}
-                    </p>
-                  </article>
-                ))}
-              </div>
-            </div>
-
-            <HomeForm />
-          </div>
-        </section>
-
-        <AppStorePromo />
-      </div>
-    </main>
-  );
+  const upcoming = festivals.filter(f => ["upcoming","ongoing"].includes(statusOf(f))).sort((a,b) => a.startDate.localeCompare(b.startDate));
+  const featured = upcoming.find(f => f.tour === "EPT") || upcoming[0];
+  const places = ["czechia/prague","united-states/las-vegas","south-korea/jeju","bahamas/nassau"].map(id => destinations.find(d => d.id === id)).filter(d => !!d);
+  const countries = new Set(upcoming.map(f => destinationById(f.destinationId).country)).size;
+  const changes = festivals.flatMap(f => f.changes.map(c => ({...c,festival:f}))).sort((a,b) => b.date.localeCompare(a.date)).slice(0,3);
+  return <main id="main"><section className="hero container"><div className="hero-copy"><p className="eyebrow"><span className="live-dot" /> THE LIVE POKER TRAVEL GUIDE</p><h1>Find your next<br />poker tournament.<br /><em>Plan the trip.</em></h1><p className="hero-description">From the first flight to the final table. Discover major festivals, compare the schedule, and get the details that make the journey easier.</p>
+    <form className="hero-search" action="/tournaments"><label><span>WHERE TO?</span><input name="q" aria-label="City, country or tournament" placeholder="City, country or tournament" /></label><label><span>FROM</span><input name="from" type="date" aria-label="Earliest travel date" /></label><button className="button" type="submit">Find a tournament <span>↗</span></button></form>
+    <div className="hero-stats"><div><strong>{upcoming.length}</strong><span>upcoming & ongoing</span></div><div><strong>{countries}</strong><span>countries to explore</span></div><div><strong>Official</strong><span>sources, linked throughout</span></div></div>
+  </div>
+  {featured && <Link href={`/tournaments/${featured.slug}`} className="hero-feature"><div className="orb" aria-hidden="true"><div className="orbit o1" /><div className="orbit o2" /><div className="orbit o3" /><span className="map-label ml1">LAS VEGAS</span><span className="map-label ml2">PRAGUE</span><span className="map-label ml3">JEJU</span><span className="map-dot md1"/><span className="map-dot md2"/><span className="map-dot md3"/></div><div className="feature-overlay"><p className="eyebrow">ON THE RADAR <span>↗</span></p><h2>{featured.name}</h2><p>{destinationById(featured.destinationId).city} · {dateRange(featured.startDate,featured.endDate)}</p><div><span>MAIN EVENT</span><strong>{money(mainEvent(featured)?.buyIn)}</strong></div></div></Link>}
+  </section>
+  <div className="tour-strip"><div className="container"><span>FOLLOW THE TOURS</span><b>WSOP</b><b>WPT</b><b>EPT</b><b>POKERSTARS OPEN</b><b>APT</b><span>Global calendar. Local details.</span></div></div>
+  <section className="container section"><SectionTitle number="01" eyebrow="THE TOURNAMENT CALENDAR" title="Next on the schedule"><Link className="text-link" href="/tournaments">All tournaments ↗</Link></SectionTitle><FestivalGrid items={upcoming.slice(0,6)} /></section>
+  <section className="destination-section"><div className="container section"><SectionTitle number="02" eyebrow="BEYOND THE FELT" title="Make a destination of it"><Link className="text-link" href="/destinations">Explore destinations ↗</Link></SectionTitle><div className="destination-grid">{places.map(d => <DestinationCard key={d.id} destination={d} count={upcoming.filter(f => f.destinationId===d.id).length} />)}</div></div></section>
+  <section className="container section editorial-grid"><div><p className="eyebrow">03 / INFORMATION YOU CAN TRACE</p><h2>Less searching.<br />More certainty.</h2><p className="muted">Schedules change. Every festival links to its source and tells you when it was checked. Missing details stay clearly marked.</p><Link className="text-link" href="/about">How we keep the guide current ↗</Link></div><div className="updates"><h3>Latest additions & changes</h3>{changes.map((c,i) => <Link key={i} href={`/tournaments/${c.festival.slug}`}><time>{c.date.slice(5,10).replace("-"," / ")}</time><div><strong>{c.festival.name}</strong><p>{c.text}</p></div><span>↗</span></Link>)}</div></section>
+  </main>;
 }

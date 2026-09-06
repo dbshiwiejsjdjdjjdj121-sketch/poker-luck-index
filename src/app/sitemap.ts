@@ -1,27 +1,12 @@
 import type { MetadataRoute } from "next";
-import { buildAbsoluteUrl } from "@/lib/site";
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
-  return [
-    {
-      url: buildAbsoluteUrl("/"),
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: buildAbsoluteUrl("/bankroll"),
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: buildAbsoluteUrl("/hand-review"),
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-  ];
+import { festivals,destinations,destinationById } from "@/lib/guide-data";
+import { SITE_URL } from "@/lib/site";
+export default function sitemap():MetadataRoute.Sitemap {
+ const countries=[...new Set(destinations.map(d=>d.countrySlug))];
+ return [
+ ...["","/tournaments","/destinations","/about","/privacy","/terms"].map(path=>({url:SITE_URL+path})),
+ ...festivals.map(f=>({url:SITE_URL+"/tournaments/"+f.slug,lastModified:[f.updatedAt,destinationById(f.destinationId).updatedAt].sort().at(-1)})),
+ ...destinations.filter(d=>d.indexable).map(d=>({url:SITE_URL+"/destinations/"+d.id,lastModified:d.updatedAt})),
+ ...countries.map(c=>({url:SITE_URL+"/destinations/"+c,lastModified:destinations.filter(d=>d.countrySlug===c).map(d=>d.updatedAt).sort().at(-1)}))
+ ];
 }

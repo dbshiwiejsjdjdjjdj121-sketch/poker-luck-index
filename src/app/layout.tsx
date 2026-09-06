@@ -1,126 +1,20 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import Script from "next/script";
-import { ClientShell } from "@/components/client-shell";
-import {
-  IOS_APP_STORE_ID,
-  SITE_DESCRIPTION,
-  SITE_KEYWORDS,
-  SITE_LOCALE,
-  SITE_NAME,
-  SITE_URL,
-  buildOgImageUrl,
-  buildStructuredData,
-} from "@/lib/site";
+import Link from "next/link";
+import { Navigation } from "@/components/navigation";
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, IS_PREVIEW } from "@/lib/site";
+import { serializeJsonLd } from "@/lib/guide-utils";
 import "./globals.css";
 
-const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GA_ID?.trim();
-
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`,
-  },
-  description: SITE_DESCRIPTION,
-  icons: {
-    icon: [
-      { url: "/icon.png", type: "image/png" },
-    ],
-    shortcut: [{ url: "/icon.png", type: "image/png" }],
-    apple: [{ url: "/apple-icon.png", sizes: "1024x1024", type: "image/png" }],
-  },
-  applicationName: SITE_NAME,
-  referrer: "origin-when-cross-origin",
-  keywords: SITE_KEYWORDS,
-  authors: [{ name: SITE_NAME, url: SITE_URL }],
-  creator: SITE_NAME,
-  publisher: SITE_NAME,
-  category: "entertainment",
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/",
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: SITE_LOCALE,
-    siteName: SITE_NAME,
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-    url: SITE_URL,
-    images: [
-      {
-        url: buildOgImageUrl({ view: "home" }),
-        width: 1200,
-        height: 630,
-        alt: "Poker Luck Index sharing card",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-    images: [buildOgImageUrl({ view: "home" })],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-  other: {
-    "apple-itunes-app": `app-id=${IOS_APP_STORE_ID}, app-argument=${SITE_URL}`,
-    distribution: "global",
-    coverage: "Worldwide",
-    "geo.placename": "Worldwide",
-    google: "notranslate",
-  },
+  metadataBase: new URL(SITE_URL), title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` }, description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME, robots: { index: !IS_PREVIEW, follow: true },
+  openGraph: { type: "website", locale: "en_US", siteName: SITE_NAME, title: SITE_NAME, description: SITE_DESCRIPTION },
+  twitter: { card: "summary_large_image" },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const structuredData = buildStructuredData();
-
-  return (
-    <html lang="en" translate="no" className="notranslate" suppressHydrationWarning>
-      <body className="antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <ClientShell>{children}</ClientShell>
-        <Analytics />
-        <SpeedInsights />
-        {GOOGLE_ANALYTICS_ID ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                window.gtag = window.gtag || gtag;
-                gtag('js', new Date());
-                gtag('config', '${GOOGLE_ANALYTICS_ID}', { send_page_view: true });
-              `}
-            </Script>
-          </>
-        ) : null}
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body><a className="skip-link" href="#main">Skip to content</a><Navigation />
+    {children}
+    <footer className="site-footer"><div className="container footer-grid"><div><Link className="footer-brand" href="/">♠ ALL IN <span>POKER GUIDE</span></Link><p>Your next tournament. Your next destination.<br />Independent information for live poker players.</p></div><div className="footer-links"><Link href="/about">About & sources</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/account">Account</Link></div></div><div className="container footer-bottom"><span>© {new Date().getUTCFullYear()} ALL IN Poker Guide</span><span>Independent of the tours listed. Confirm details with the organizer.</span></div></footer>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd({ "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL, inLanguage: "en", description: SITE_DESCRIPTION }) }} />
+  </body></html>;
 }

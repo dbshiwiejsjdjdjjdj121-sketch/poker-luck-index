@@ -1,0 +1,450 @@
+[
+  {
+    "id": "virginia-schedule",
+    "title": "WSOP Circuit Caesars Virginia 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "virginia-airport",
+    "title": "Piedmont Triad International (GSO) — official airport",
+    "url": "https://flyfrompti.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "us-tax",
+    "title": "IRS Publication 515 — nonresident withholding",
+    "url": "https://www.irs.gov/publications/p515",
+    "kind": "tax",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "liechtenstein-schedule",
+    "title": "WSOP Circuit Grand Casino Liechtenstein 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "liechtenstein-airport",
+    "title": "Zurich Airport (ZRH) — official airport",
+    "url": "https://www.flughafen-zuerich.ch/en/passengers",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "austin-schedule",
+    "title": "WSOP Circuit Texas Card House 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-texas-card-house/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "austin-airport",
+    "title": "Austin-Bergstrom International (AUS) — official airport",
+    "url": "https://www.flyaustin.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "austin-venue",
+    "title": "Texas Card House — official visitor information",
+    "url": "https://www.texascardhouse.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "council-bluffs-schedule",
+    "title": "WSOP Circuit Horseshoe Council Bluffs 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-council-bluffs/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "council-bluffs-airport",
+    "title": "Omaha Eppley Airfield (OMA) — official airport",
+    "url": "https://www.flyoma.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lincoln-schedule",
+    "title": "WSOP Circuit Thunder Valley Casino Resort 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lincoln-airport",
+    "title": "Sacramento International (SMF) — official airport",
+    "url": "https://flysmf.gov/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lincoln-venue",
+    "title": "Thunder Valley Casino Resort — official visitor information",
+    "url": "https://www.thundervalleyresort.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "malta-schedule",
+    "title": "WSOP Circuit Casino Malta 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-malta/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "malta-airport",
+    "title": "Malta International (MLA) — official airport",
+    "url": "https://maltairport.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "malta-venue",
+    "title": "Casino Malta — official visitor information",
+    "url": "https://casinomalta.com.mt/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "calgary-schedule",
+    "title": "WSOP Circuit Deerfoot Inn & Casino 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-deerfoot-inn-and-casino-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "calgary-airport",
+    "title": "Calgary International (YYC) — official airport",
+    "url": "https://www.yyc.com/en-us/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "calgary-venue",
+    "title": "Deerfoot Inn & Casino — official visitor information",
+    "url": "https://deerfootinn.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "pompano-beach-schedule",
+    "title": "WSOP Circuit Harrah’s Pompano Beach 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "pompano-beach-airport",
+    "title": "Fort Lauderdale–Hollywood International (FLL) — official airport",
+    "url": "https://www.broward.org/airport/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "verona-schedule",
+    "title": "WSOP Circuit Turning Stone Resort Casino 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-turning-stone/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "verona-airport",
+    "title": "Syracuse Hancock International (SYR) — official airport",
+    "url": "https://syrairport.org/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "verona-venue",
+    "title": "Turning Stone Resort Casino — official visitor information",
+    "url": "https://www.turningstone.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lake-tahoe-schedule",
+    "title": "WSOP Circuit Caesars Republic Lake Tahoe 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-republic-lake-tahoe/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lake-tahoe-airport",
+    "title": "Reno–Tahoe International (RNO) — official airport",
+    "url": "https://www.renoairport.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "paradise-schedule",
+    "title": "WSOP Paradise 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/2026-wsop-paradise/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "paradise-airport",
+    "title": "Lynden Pindling International (NAS) — official airport",
+    "url": "https://nassaulpia.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "paradise-venue",
+    "title": "Baha Mar Resort — official visitor information",
+    "url": "https://bahamar.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "bs-tax",
+    "title": "Bahamas Department of Inland Revenue",
+    "url": "https://inlandrevenue.finance.gov.bs/",
+    "kind": "tax",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "sydney-schedule",
+    "title": "WPT Prime Australia Championship 2026 — official event page",
+    "url": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "sydney-airport",
+    "title": "Sydney Airport (SYD) — official airport",
+    "url": "https://www.sydneyairport.com.au/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lodge-schedule",
+    "title": "WPT Prime Lodge Championship 2026 — official event page",
+    "url": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "lodge-airport",
+    "title": "Austin-Bergstrom International (AUS) — official airport",
+    "url": "https://www.flyaustin.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "cyprus-schedule",
+    "title": "WPT Prime Cyprus Championship 2026 — official event page",
+    "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "san-jose-schedule",
+    "title": "WPT Bay 101 Shooting Star Championship 2026 — official event page",
+    "url": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "san-jose-airport",
+    "title": "San José Mineta International (SJC) — official airport",
+    "url": "https://www.flysanjose.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "san-jose-venue",
+    "title": "Bay 101 Casino — official visitor information",
+    "url": "https://www.bay101.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "las-vegas-schedule",
+    "title": "WPT Venetian Las Vegas Fall Championship 2026 — official event page",
+    "url": "https://www.worldpokertour.com/event/main-tour-wpt-venetian-las-vegas-fall-championship-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "las-vegas-airport",
+    "title": "Harry Reid International (LAS) — official airport",
+    "url": "https://www.harryreidairport.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "las-vegas-venue",
+    "title": "The Venetian Resort — official visitor information",
+    "url": "https://www.venetianlasvegas.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "prague-schedule",
+    "title": "EPT Prague 2026 — official event page",
+    "url": "https://www.pokerstarslive.com/ept/prague/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "prague-airport",
+    "title": "Václav Havel Airport Prague (PRG) — official airport",
+    "url": "https://www.prg.aero/en",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "prague-venue",
+    "title": "Hilton Prague Atrium — official visitor information",
+    "url": "https://www.hilton.com/en/hotels/prghitw-hilton-prague-atrium/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "aix-schedule",
+    "title": "PokerStars Open Aix-en-Provence 2026 — official event page",
+    "url": "https://www.pokerstarslive.com/pokerstarsopen/aixenprovence/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "aix-airport",
+    "title": "Marseille Provence Airport (MRS) — official airport",
+    "url": "https://www.marseille-airport.com/",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "jeju-schedule",
+    "title": "APT Jeju 2026 — official event page",
+    "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "jeju-info",
+    "title": "APT Jeju 2026 — organizer travel and entry information",
+    "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
+    "kind": "organizer",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "jeju-airport",
+    "title": "Jeju International (CJU) — official airport",
+    "url": "https://www.airport.co.kr/jejueng/index.do",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "kr-tax",
+    "title": "Korean National Tax Service",
+    "url": "https://www.nts.go.kr/english/main.do",
+    "kind": "tax",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "taipei-schedule",
+    "title": "APT Championship Taipei 2026 — official event page",
+    "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/events",
+    "kind": "schedule",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "taipei-info",
+    "title": "APT Championship Taipei 2026 — organizer travel and entry information",
+    "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+    "kind": "organizer",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "taipei-venue",
+    "title": "Red Space — official visitor information",
+    "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "tw-tax",
+    "title": "Taiwan Ministry of Finance eTax portal",
+    "url": "https://www.etax.nat.gov.tw/etwmain/en",
+    "kind": "tax",
+    "checkedAt": "2026-09-06T17:56:10+00:00"
+  },
+  {
+    "id": "danville-hotel",
+    "title": "Caesars Virginia — stay at the venue",
+    "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "danville-food",
+    "title": "Quick meals and Ramsay’s Kitchen",
+    "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/dining",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "gamprin-hotel",
+    "title": "GC Hotel — in the casino building",
+    "url": "https://gchotel.li/en/zimmer/",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "council-hilton",
+    "title": "Hilton Garden Inn Omaha East / Council Bluffs",
+    "url": "https://www.hilton.com/en/hotels/omaeagi-hilton-garden-inn-omaha-east-council-bluffs/",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "pompano-hampton",
+    "title": "Hampton Inn Fort Lauderdale Pompano Beach",
+    "url": "https://www.hilton.com/en/hotels/ppmpbhx-hampton-fort-lauderdale-pompano-beach/",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "tahoe-hotel",
+    "title": "Caesars Republic Lake Tahoe — venue hotel",
+    "url": "https://www.wyndhamhotels.com/caesars-rewards/stateline-nevada/caesars-republic-lake-tahoe/overview",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "tahoe-food",
+    "title": "Resort restaurants and casual options",
+    "url": "https://www.wyndhamhotels.com/en-ca/caesars-rewards/stateline-nevada/caesars-republic-lake-tahoe/dining",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "prague-transit",
+    "title": "Airport trolleybus and metro",
+    "url": "https://www.prg.aero/en/public-transport-buses",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "sydney-transit",
+    "title": "Airport train and transport options",
+    "url": "https://www.sydneyairport.com.au/info-sheet/transport-options",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  },
+  {
+    "id": "vegas-taxis",
+    "title": "Airport taxi and rideshare pickup",
+    "url": "https://www.harryreidairport.com/taxi-and-ride-share",
+    "checkedAt": "2026-09-06T18:08:39.263494+00:00",
+    "kind": "travel"
+  }
+]

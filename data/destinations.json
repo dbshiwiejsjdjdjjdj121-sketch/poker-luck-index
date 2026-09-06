@@ -1,0 +1,815 @@
+[
+  {
+    "id": "united-states/danville",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Danville",
+    "slug": "danville",
+    "region": "North America",
+    "intro": "Use Caesars Virginia as the starting point for your Danville tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Piedmont Triad International (GSO)",
+      "detail": "An airport option to compare for your trip to Danville. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://flyfrompti.com/",
+      "sourceId": "virginia-airport"
+    },
+    "transport": [
+      {
+        "title": "Arriving by road",
+        "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
+        "detail": "The resort is off US-29 and US-58. Its visitor information lists GSO and RDU as airport options. Arrange onward road transport; an airport choice is not a guaranteed shuttle service.",
+        "sourceId": "danville-hotel"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Caesars Virginia — stay at the venue",
+        "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
+        "detail": "The resort offers 320 rooms at the playing venue. Compare the full room total and cancellation terms with an off-site stay; no tournament rate is assumed.",
+        "sourceId": "danville-hotel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Quick meals and Ramsay’s Kitchen",
+        "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/dining",
+        "detail": "Three Stacks and the 500 Block food hall offer casual options; Ramsay’s Kitchen is a sit-down alternative. The hotel also lists room service. Check outlet hours against your session breaks.",
+        "sourceId": "danville-food"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "liechtenstein/gamprin",
+    "country": "Liechtenstein",
+    "countryCode": "LI",
+    "countrySlug": "liechtenstein",
+    "city": "Gamprin",
+    "slug": "gamprin",
+    "region": "Europe",
+    "intro": "Use Grand Casino Liechtenstein as the starting point for your Gamprin tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Zurich Airport (ZRH)",
+      "detail": "An airport option to compare for your trip to Gamprin. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.flughafen-zuerich.ch/en/passengers",
+      "sourceId": "liechtenstein-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "GC Hotel — in the casino building",
+        "url": "https://gchotel.li/en/zimmer/",
+        "detail": "The hotel is in the Grand Casino building in Bendern. Check room availability directly; an on-site room can simplify late finishes.",
+        "sourceId": "gamprin-hotel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Breakfast and restaurant information",
+        "url": "https://gchotel.li/en/zimmer/",
+        "detail": "The hotel’s room information describes breakfast in the casino’s ground-floor restaurant. Check your reservation’s inclusions and current restaurant service before arrival.",
+        "sourceId": "gamprin-hotel"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "united-states/austin",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Austin",
+    "slug": "austin",
+    "region": "North America",
+    "intro": "Use Texas Card House as the starting point for your Austin tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Austin-Bergstrom International (AUS)",
+      "detail": "An airport option to compare for your trip to Austin. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.flyaustin.com/",
+      "sourceId": "austin-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Texas Card House visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://www.texascardhouse.com/",
+        "sourceId": "austin-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://www.texascardhouse.com/",
+        "sourceId": "austin-venue"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "united-states/council-bluffs",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Council Bluffs",
+    "slug": "council-bluffs",
+    "region": "North America",
+    "intro": "Use Horseshoe Council Bluffs as the starting point for your Council Bluffs tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Omaha Eppley Airfield (OMA)",
+      "detail": "An airport option to compare for your trip to Council Bluffs. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.flyoma.com/",
+      "sourceId": "council-bluffs-airport"
+    },
+    "transport": [
+      {
+        "title": "Hotel access and airport transfers",
+        "url": "https://www.hilton.com/en/hotels/omaeagi-hilton-garden-inn-omaha-east-council-bluffs/",
+        "detail": "Hilton lists free parking and no airport shuttle. Plan a separate transfer from Eppley Airfield if you are not renting a car.",
+        "sourceId": "council-hilton"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Hilton Garden Inn Omaha East / Council Bluffs",
+        "url": "https://www.hilton.com/en/hotels/omaeagi-hilton-garden-inn-omaha-east-council-bluffs/",
+        "detail": "A covered walkway connects the hotel to Horseshoe Casino. This is a practical option for a stay without a separate daily transfer; compare current rates directly.",
+        "sourceId": "council-hilton"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Slice Pizzeria at Hilton Garden Inn",
+        "url": "https://www.hilton.com/en/hotels/omaeagi-hilton-garden-inn-omaha-east-council-bluffs/",
+        "detail": "The hotel lists casual breakfast and dinner service. Confirm hours for your tournament dates; availability during a short break depends on service time.",
+        "sourceId": "council-hilton"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "united-states/lincoln",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Lincoln",
+    "slug": "lincoln",
+    "region": "North America",
+    "intro": "Use Thunder Valley Casino Resort as the starting point for your Lincoln tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Sacramento International (SMF)",
+      "detail": "An airport option to compare for your trip to Lincoln. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://flysmf.gov/",
+      "sourceId": "lincoln-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Thunder Valley Casino Resort visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://www.thundervalleyresort.com/",
+        "sourceId": "lincoln-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://www.thundervalleyresort.com/",
+        "sourceId": "lincoln-venue"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "malta/st-julians",
+    "country": "Malta",
+    "countryCode": "MT",
+    "countrySlug": "malta",
+    "city": "St. Julian’s",
+    "slug": "st-julians",
+    "region": "Europe",
+    "intro": "Use Casino Malta as the starting point for your St. Julian’s tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Malta International (MLA)",
+      "detail": "An airport option to compare for your trip to St. Julian’s. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://maltairport.com/",
+      "sourceId": "malta-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Casino Malta visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://casinomalta.com.mt/",
+        "sourceId": "malta-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://casinomalta.com.mt/",
+        "sourceId": "malta-venue"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "canada/calgary",
+    "country": "Canada",
+    "countryCode": "CA",
+    "countrySlug": "canada",
+    "city": "Calgary",
+    "slug": "calgary",
+    "region": "North America",
+    "intro": "Use Deerfoot Inn & Casino as the starting point for your Calgary tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Calgary International (YYC)",
+      "detail": "An airport option to compare for your trip to Calgary. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.yyc.com/en-us/",
+      "sourceId": "calgary-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Deerfoot Inn & Casino visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://deerfootinn.com/",
+        "sourceId": "calgary-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://deerfootinn.com/",
+        "sourceId": "calgary-venue"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "united-states/pompano-beach",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Pompano Beach",
+    "slug": "pompano-beach",
+    "region": "North America",
+    "intro": "Use Harrah’s Pompano Beach as the starting point for your Pompano Beach tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Fort Lauderdale–Hollywood International (FLL)",
+      "detail": "An airport option to compare for your trip to Pompano Beach. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.broward.org/airport/",
+      "sourceId": "pompano-beach-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Hampton Inn Fort Lauderdale Pompano Beach",
+        "url": "https://www.hilton.com/en/hotels/ppmpbhx-hampton-fort-lauderdale-pompano-beach/",
+        "detail": "An off-site option on South Federal Highway with breakfast included. Factor the journey to Harrah’s into the total stay cost; no tournament partnership or shuttle is assumed.",
+        "sourceId": "pompano-hampton"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Breakfast at the hotel",
+        "url": "https://www.hilton.com/en/hotels/ppmpbhx-hampton-fort-lauderdale-pompano-beach/",
+        "detail": "Hampton lists complimentary hot breakfast for guests. Use this when comparing room value, and confirm the serving window if you expect a late start.",
+        "sourceId": "pompano-hampton"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "united-states/verona",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Verona",
+    "slug": "verona",
+    "region": "North America",
+    "intro": "Use Turning Stone Resort Casino as the starting point for your Verona tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Syracuse Hancock International (SYR)",
+      "detail": "An airport option to compare for your trip to Verona. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://syrairport.org/",
+      "sourceId": "verona-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Turning Stone Resort Casino visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://www.turningstone.com/",
+        "sourceId": "verona-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://www.turningstone.com/",
+        "sourceId": "verona-venue"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "united-states/stateline",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Stateline",
+    "slug": "stateline",
+    "region": "North America",
+    "intro": "Use Caesars Republic Lake Tahoe as the starting point for your Stateline tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Reno–Tahoe International (RNO)",
+      "detail": "An airport option to compare for your trip to Stateline. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.renoairport.com/",
+      "sourceId": "lake-tahoe-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Caesars Republic Lake Tahoe — venue hotel",
+        "url": "https://www.wyndhamhotels.com/caesars-rewards/stateline-nevada/caesars-republic-lake-tahoe/overview",
+        "detail": "Stay at the tournament resort in Stateline. Compare room categories, resort charges and cancellation terms directly; current tournament room discounts are not assumed.",
+        "sourceId": "tahoe-hotel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Resort restaurants and casual options",
+        "url": "https://www.wyndhamhotels.com/en-ca/caesars-rewards/stateline-nevada/caesars-republic-lake-tahoe/dining",
+        "detail": "The directory includes El Jefe’s Cantina, Cinnabon, Sage Room and Wolf by Vanderpump. Choose a quick snack or reserve a longer meal around your expected play schedule.",
+        "sourceId": "tahoe-food"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "bahamas/nassau",
+    "country": "Bahamas",
+    "countryCode": "BS",
+    "countrySlug": "bahamas",
+    "city": "Nassau",
+    "slug": "nassau",
+    "region": "Caribbean",
+    "intro": "Use Baha Mar Resort as the starting point for your Nassau tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Lynden Pindling International (NAS)",
+      "detail": "An airport option to compare for your trip to Nassau. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://nassaulpia.com/",
+      "sourceId": "paradise-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Grand Hyatt, SLS and Rosewood at Baha Mar",
+        "detail": "The resort presents several hotel brands. Compare the total stay cost and cancellation terms directly; tournament package inclusions may differ from regular bookings.",
+        "url": "https://bahamar.com/",
+        "sourceId": "paradise-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Baha Mar restaurant directory",
+        "detail": "Use the resort’s culinary directory to compare restaurants and casual options before planning breaks. Reservations and hours vary by outlet.",
+        "url": "https://bahamar.com/",
+        "sourceId": "paradise-venue"
+      }
+    ],
+    "tax": {
+      "text": "Use the official tax authority as the starting point for your situation. Ask the organizer whether it withholds anything from prizes and which payout documents it provides. No specific tournament tax rate has been verified here; your tax residence may create separate reporting obligations.",
+      "sourceIds": [
+        "bs-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": true
+  },
+  {
+    "id": "australia/sydney",
+    "country": "Australia",
+    "countryCode": "AU",
+    "countrySlug": "australia",
+    "city": "Sydney",
+    "slug": "sydney",
+    "region": "Oceania",
+    "intro": "Use The Star Sydney as the starting point for your Sydney tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Sydney Airport (SYD)",
+      "detail": "An airport option to compare for your trip to Sydney. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.sydneyairport.com.au/",
+      "sourceId": "sydney-airport"
+    },
+    "transport": [
+      {
+        "title": "Airport train and transport options",
+        "url": "https://www.sydneyairport.com.au/info-sheet/transport-options",
+        "detail": "The airport has train connections to the city from its domestic and international terminals. The city connection is only part of the journey: check the onward route to the tournament venue and current fares.",
+        "sourceId": "sydney-transit"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Organizer’s accommodation information",
+        "detail": "Follow the official event or key-information page for linked accommodation options. Rates and availability must be confirmed with the provider.",
+        "url": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
+        "sourceId": "sydney-schedule"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": false
+  },
+  {
+    "id": "united-states/round-rock",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Round Rock",
+    "slug": "round-rock",
+    "region": "North America",
+    "intro": "Use Lodge Card Club Austin as the starting point for your Round Rock tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Austin-Bergstrom International (AUS)",
+      "detail": "An airport option to compare for your trip to Round Rock. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.flyaustin.com/",
+      "sourceId": "lodge-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Organizer’s accommodation information",
+        "detail": "Follow the official event or key-information page for linked accommodation options. Rates and availability must be confirmed with the provider.",
+        "url": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
+        "sourceId": "lodge-schedule"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "cyprus/kyrenia",
+    "country": "Cyprus",
+    "countryCode": "CY",
+    "countrySlug": "cyprus",
+    "city": "Kyrenia / Çatalköy",
+    "slug": "kyrenia",
+    "region": "Europe",
+    "intro": "Use Chamada Prestige Hotel & Spa as the starting point for your Kyrenia / Çatalköy tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Arrival & transfer planning",
+      "detail": "Confirm the route to Chamada Prestige Hotel & Spa with the organizer before booking transport. Airport recommendations and transfer times are still being verified.",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
+      "sourceId": "cyprus-schedule"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Organizer’s accommodation information",
+        "detail": "Follow the official event or key-information page for linked accommodation options. Rates and availability must be confirmed with the provider.",
+        "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
+        "sourceId": "cyprus-schedule"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "united-states/san-jose",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "San Jose",
+    "slug": "san-jose",
+    "region": "North America",
+    "intro": "Use Bay 101 Casino as the starting point for your San Jose tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "San José Mineta International (SJC)",
+      "detail": "An airport option to compare for your trip to San Jose. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.flysanjose.com/",
+      "sourceId": "san-jose-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Bay 101 Casino visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://www.bay101.com/",
+        "sourceId": "san-jose-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://www.bay101.com/",
+        "sourceId": "san-jose-venue"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "united-states/las-vegas",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Las Vegas",
+    "slug": "las-vegas",
+    "region": "North America",
+    "intro": "Use The Venetian Resort as the starting point for your Las Vegas tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Harry Reid International (LAS)",
+      "detail": "An airport option to compare for your trip to Las Vegas. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.harryreidairport.com/",
+      "sourceId": "las-vegas-airport"
+    },
+    "transport": [
+      {
+        "title": "Airport taxi and rideshare pickup",
+        "url": "https://www.harryreidairport.com/taxi-and-ride-share",
+        "detail": "Taxis are available outside baggage claim in both terminals. Rideshare uses designated pickup areas; follow the current terminal guidance and allow for roadwork or event traffic on the Strip.",
+        "sourceId": "vegas-taxis"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "The Venetian & The Palazzo",
+        "detail": "Both hotel options are presented by The Venetian Resort. Compare the full price including any mandatory resort charges; do not assume a tournament offer code is still valid.",
+        "url": "https://www.venetianlasvegas.com/",
+        "sourceId": "las-vegas-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://www.venetianlasvegas.com/",
+        "sourceId": "las-vegas-venue"
+      }
+    ],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "czechia/prague",
+    "country": "Czechia",
+    "countryCode": "CZ",
+    "countrySlug": "czechia",
+    "city": "Prague",
+    "slug": "prague",
+    "region": "Europe",
+    "intro": "Use Hilton Prague Atrium as the starting point for your Prague tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Václav Havel Airport Prague (PRG)",
+      "detail": "An airport option to compare for your trip to Prague. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.prg.aero/en",
+      "sourceId": "prague-airport"
+    },
+    "transport": [
+      {
+        "title": "Airport trolleybus and metro",
+        "url": "https://www.prg.aero/en/public-transport-buses",
+        "detail": "The airport recommends trolleybus 59 to Nádraží Veleslavín for a connection to metro line A. Plan the onward journey to Hilton Prague separately, including the last service after a late finish.",
+        "sourceId": "prague-transit"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Hilton Prague Atrium — tournament venue",
+        "detail": "Staying at the playing venue simplifies early starts and late finishes. Compare hotel-direct availability with the PokerStars Travel option linked by the organizer.",
+        "url": "https://www.hilton.com/en/hotels/prghitw-hilton-prague-atrium/",
+        "sourceId": "prague-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Café & Bistro at Hilton Prague",
+        "detail": "The hotel describes an all-day café and bistro for coffee and lighter meals. Check current hours before relying on it for a late tournament break.",
+        "url": "https://www.hilton.com/en/hotels/prghitw-hilton-prague-atrium/",
+        "sourceId": "prague-venue"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "indexable": true
+  },
+  {
+    "id": "france/aix-en-provence",
+    "country": "France",
+    "countryCode": "FR",
+    "countrySlug": "france",
+    "city": "Aix-en-Provence",
+    "slug": "aix-en-provence",
+    "region": "Europe",
+    "intro": "Use Pasino GRAND as the starting point for your Aix-en-Provence tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Marseille Provence Airport (MRS)",
+      "detail": "An airport option to compare for your trip to Aix-en-Provence. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.marseille-airport.com/",
+      "sourceId": "aix-airport"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Organizer’s accommodation information",
+        "detail": "Follow the official event or key-information page for linked accommodation options. Rates and availability must be confirmed with the provider.",
+        "url": "https://www.pokerstarslive.com/pokerstarsopen/aixenprovence/",
+        "sourceId": "aix-schedule"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "south-korea/jeju",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "countrySlug": "south-korea",
+    "city": "Jeju",
+    "slug": "jeju",
+    "region": "Asia",
+    "intro": "Use LES A Casino as the starting point for your Jeju tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Jeju International (CJU)",
+      "detail": "An airport option to compare for your trip to Jeju. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
+      "url": "https://www.airport.co.kr/jejueng/index.do",
+      "sourceId": "jeju-airport"
+    },
+    "transport": [
+      {
+        "title": "APT airport transfer information",
+        "detail": "APT publishes an airport-transfer schedule on its event information page. Check pickup points, operating dates and eligibility before relying on it; the playing venue is at LES A Casino in Seogwipo.",
+        "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
+        "sourceId": "jeju-info"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Organizer’s accommodation information",
+        "detail": "APT links its hotel-booking information from the event page. Confirm the property, transfer arrangements and total package cost through that official link before reserving.",
+        "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
+        "sourceId": "jeju-info"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Use the official tax authority as the starting point for your situation. Ask the organizer whether it withholds anything from prizes and which payout documents it provides. No specific tournament tax rate has been verified here; your tax residence may create separate reporting obligations.",
+      "sourceIds": [
+        "kr-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  },
+  {
+    "id": "taiwan/taipei",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "countrySlug": "taiwan",
+    "city": "Taipei",
+    "slug": "taipei",
+    "region": "Asia",
+    "intro": "Use Red Space as the starting point for your Taipei tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "airport": {
+      "title": "Arrival & transfer planning",
+      "detail": "Confirm the route to Red Space with the organizer before booking transport. Airport recommendations and transfer times are still being verified.",
+      "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+      "sourceId": "taipei-info"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Red Space visitor information",
+        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+        "sourceId": "taipei-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the venue",
+        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+        "sourceId": "taipei-venue"
+      }
+    ],
+    "tax": {
+      "text": "Use the official tax authority as the starting point for your situation. Ask the organizer whether it withholds anything from prizes and which payout documents it provides. No specific tournament tax rate has been verified here; your tax residence may create separate reporting obligations.",
+      "sourceIds": [
+        "tw-tax"
+      ]
+    },
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "indexable": false
+  }
+]

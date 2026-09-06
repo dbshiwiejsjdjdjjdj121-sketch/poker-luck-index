@@ -3,13 +3,10 @@
 import { getApp, getApps, initializeApp, type FirebaseApp } from "firebase/app";
 import {
   getAuth,
-  GoogleAuthProvider,
   onAuthStateChanged,
   setPersistence,
   browserLocalPersistence,
   signInWithCustomToken,
-  signInWithPopup,
-  signInWithRedirect,
   signOut,
   type User,
 } from "firebase/auth";
@@ -55,44 +52,10 @@ export function getFirebaseClientAuth() {
   return getAuth(getFirebaseClientApp());
 }
 
-export function getGoogleProvider() {
-  const provider = new GoogleAuthProvider();
-  provider.setCustomParameters({
-    prompt: "select_account",
-  });
-  provider.addScope("email");
-  provider.addScope("profile");
-  return provider;
-}
-
 export async function ensureFirebaseAuthPersistence() {
   const auth = getFirebaseClientAuth();
   await setPersistence(auth, browserLocalPersistence);
   return auth;
-}
-
-export async function signInWithGoogleClient() {
-  const auth = await ensureFirebaseAuthPersistence();
-  const provider = getGoogleProvider();
-
-  try {
-    await signInWithPopup(auth, provider);
-    return "popup" as const;
-  } catch (error) {
-    const message =
-      error instanceof Error ? error.message.toLowerCase() : String(error);
-
-    if (
-      message.includes("popup") ||
-      message.includes("operation-not-supported") ||
-      message.includes("redirect")
-    ) {
-      await signInWithRedirect(auth, provider);
-      return "redirect" as const;
-    }
-
-    throw error;
-  }
 }
 
 function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
@@ -108,14 +71,6 @@ function normalizeFirebaseError(error: unknown, fallbackMessage: string) {
 
   if (code === "auth/unauthorized-domain") {
     return new Error("This domain is not authorized in Firebase Authentication yet.");
-  }
-
-  if (code === "auth/popup-closed-by-user") {
-    return new Error("The Google sign-in popup was closed before the sign-in finished.");
-  }
-
-  if (code === "auth/popup-blocked") {
-    return new Error("The browser blocked the Google sign-in popup. Please allow popups and try again.");
   }
 
   if (code === "auth/invalid-custom-token") {

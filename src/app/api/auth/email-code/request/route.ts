@@ -1,72 +1,13 @@
 import { NextResponse } from "next/server";
-import {
-  emailDeliveryConfigured,
-  requestEmailVerificationCode,
-} from "@/lib/email-auth-server";
+import { emailDeliveryConfigured, requestEmailVerificationCode } from "@/lib/email-auth-server";
 import { firebaseAdminConfigured } from "@/lib/firebase-admin";
-
+import { validEmail, publicEmailError } from "@/lib/email-api";
 export const runtime = "nodejs";
-
-function isValidEmail(value: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-}
-
-function resolveStatus(errorMessage: string) {
-  if (errorMessage.includes("Please wait")) {
-    return 429;
-  }
-
-  return 400;
-}
-
 export async function POST(request: Request) {
-  if (!firebaseAdminConfigured()) {
-    return NextResponse.json(
-      {
-        error:
-          "Firebase Admin credentials are missing. Add FIREBASE_CLIENT_EMAIL and FIREBASE_PRIVATE_KEY first.",
-      },
-      { status: 503 },
-    );
-  }
-
-  if (!emailDeliveryConfigured()) {
-    return NextResponse.json(
-      {
-        error:
-          "Email delivery is not configured yet. Add RESEND_API_KEY and EMAIL_FROM, or set SMTP_HOST, SMTP_USER, SMTP_PASS, and EMAIL_FROM.",
-      },
-      { status: 503 },
-    );
-  }
-
-  try {
-    const body = (await request.json()) as {
-      email?: string;
-    };
-
-    const email = String(body.email || "").trim().toLowerCase();
-
-    if (!isValidEmail(email)) {
-      return NextResponse.json(
-        {
-          error: "Enter a valid email address.",
-        },
-        { status: 400 },
-      );
-    }
-
-    const result = await requestEmailVerificationCode({ email });
-    return NextResponse.json(result);
-  } catch (error) {
-    const message =
-      error instanceof Error
-        ? error.message
-        : "We could not send the verification code.";
-
-    return NextResponse.json(
-      { error: message },
-      { status: resolveStatus(message) },
-    );
-  }
+  const body = await request.json().catch(() => null);
+  const email = typeof body?.email === "string" ? body.email.trim().toLowerCase() : "";
+  if (!validEmail(email)) return NextResponse.json({ error: "Enter a valid email address." }, { status: 400 });
+  if (!firebaseAdminConfigured() || !emailDeliveryConfigured()) return NextResponse.json({ error: "Email sign-in is temporarily unavailable. Please try again shortly." }, { status: 503 });
+  try { return NextResponse.json(await requestEmailVerificationCode({ email })); }
+  catch (error) { const result=publicEmailError(error); return NextResponse.json({error:result.error},{status:result.status}); }
 }

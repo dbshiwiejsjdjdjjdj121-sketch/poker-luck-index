@@ -1,0 +1,2949 @@
+[
+  {
+    "id": "virginia-2026",
+    "slug": "wsop-circuit-caesars-virginia-2026",
+    "name": "WSOP Circuit Caesars Virginia 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/danville",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-14",
+    "timezone": "America/New_York",
+    "dateNote": null,
+    "venue": {
+      "name": "Caesars Virginia",
+      "address": null,
+      "url": "https://www.caesars.com/caesars-virginia"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Caesars Virginia in Danville. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "virginia-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-11",
+        "slug": "event-11",
+        "number": "11",
+        "name": "$1,700 NLH Main Event $500K GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 500000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "1 Re-Entry Per Flight",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "11-2026-09-10-0",
+            "label": "Flight A",
+            "date": "2026-09-10",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "11-2026-09-11-1",
+            "label": "Flight B",
+            "date": "2026-09-11",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "11-2026-09-12-2",
+            "label": "Flight C",
+            "date": "2026-09-12",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "virginia-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$400 NLH Double Stack Opener $25K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 25000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-09-03-0",
+            "label": "Published start",
+            "date": "2026-09-03",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "virginia-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "$600 NLH Mini Main Event $250K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "2-2026-09-03-0",
+            "label": "Flight A",
+            "date": "2026-09-03",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-04-1",
+            "label": "Flight B",
+            "date": "2026-09-04",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-04-2",
+            "label": "Flight C",
+            "date": "2026-09-04",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-05-3",
+            "label": "Flight D",
+            "date": "2026-09-05",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "virginia-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "liechtenstein-2026",
+    "slug": "wsop-circuit-grand-casino-liechtenstein-2026",
+    "name": "WSOP Circuit Grand Casino Liechtenstein 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "liechtenstein/gamprin",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-22",
+    "timezone": "Europe/Vaduz",
+    "dateNote": null,
+    "venue": {
+      "name": "Grand Casino Liechtenstein",
+      "address": null,
+      "url": "https://gcli.li/"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Grand Casino Liechtenstein in Gamprin. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "liechtenstein-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-7",
+        "slug": "event-7",
+        "number": "7",
+        "name": "CHf 1,500 NLH Main Event CHf 750K GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500.0,
+          "currency": "CHF"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 750000.0,
+          "currency": "CHF"
+        },
+        "startingStack": "50,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "7-2026-09-17-0",
+            "label": "Flight A",
+            "date": "2026-09-17",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "7-2026-09-18-1",
+            "label": "Flight B",
+            "date": "2026-09-18",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "7-2026-09-18-2",
+            "label": "Flight C",
+            "date": "2026-09-18",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "7-2026-09-19-3",
+            "label": "Flight D",
+            "date": "2026-09-19",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "7-2026-09-19-4",
+            "label": "Flight E",
+            "date": "2026-09-19",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "liechtenstein-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "CHf 300 NLH Mini Main CHf 200K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 300.0,
+          "currency": "CHF"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 200000.0,
+          "currency": "CHF"
+        },
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 11",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-09-10-0",
+            "label": "Flight A",
+            "date": "2026-09-10",
+            "time": "17:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-11-1",
+            "label": "Flight B",
+            "date": "2026-09-11",
+            "time": "17:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-12-2",
+            "label": "Flight C",
+            "date": "2026-09-12",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-12-3",
+            "label": "Flight D",
+            "date": "2026-09-12",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "liechtenstein-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "CHf 500 NLH Mystery Bounty CHF 100K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 500.0,
+          "currency": "CHF"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000.0,
+          "currency": "CHF"
+        },
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 11",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-09-13-0",
+            "label": "Flight A",
+            "date": "2026-09-13",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-13-1",
+            "label": "Flight B",
+            "date": "2026-09-13",
+            "time": "18:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-14-2",
+            "label": "Flight C",
+            "date": "2026-09-14",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "liechtenstein-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "austin-2026",
+    "slug": "wsop-circuit-texas-card-house-2026",
+    "name": "WSOP Circuit Texas Card House 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/austin",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-21",
+    "timezone": "America/Chicago",
+    "dateNote": null,
+    "venue": {
+      "name": "Texas Card House",
+      "address": null,
+      "url": "https://www.texascardhouse.com/"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Texas Card House in Austin. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-texas-card-house/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-texas-card-house/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "austin-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-13",
+        "slug": "event-13",
+        "number": "13",
+        "name": "$1,700 NLH Main Event $2M GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2000000.0,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "1 Re-Entry Per Flight",
+        "lateRegistration": "Start of Lvl 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "13-2026-09-17-0",
+            "label": "Flight A",
+            "date": "2026-09-17",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "13-2026-09-18-1",
+            "label": "Flight B",
+            "date": "2026-09-18",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "13-2026-09-19-2",
+            "label": "Flight C",
+            "date": "2026-09-19",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "austin-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$400 NLH The Lone Star Ring Event $100K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000.0,
+          "currency": "USD"
+        },
+        "startingStack": "20,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 9",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-09-10-0",
+            "label": "Published start",
+            "date": "2026-09-10",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "austin-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "$600 NLH Mini Main $750K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 750000.0,
+          "currency": "USD"
+        },
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 9",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "2-2026-09-10-0",
+            "label": "Flight A",
+            "date": "2026-09-10",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-11-1",
+            "label": "Flight B",
+            "date": "2026-09-11",
+            "time": "09:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-11-2",
+            "label": "Flight C",
+            "date": "2026-09-11",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-12-3",
+            "label": "Flight D",
+            "date": "2026-09-12",
+            "time": "09:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-12-4",
+            "label": "Flight E",
+            "date": "2026-09-12",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "austin-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "council-bluffs-2026",
+    "slug": "wsop-circuit-horseshoe-council-bluffs-2026",
+    "name": "WSOP Circuit Horseshoe Council Bluffs 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/council-bluffs",
+    "startDate": "2026-09-17",
+    "endDate": "2026-09-28",
+    "timezone": "America/Chicago",
+    "dateNote": null,
+    "venue": {
+      "name": "Horseshoe Council Bluffs",
+      "address": null,
+      "url": "https://www.caesars.com/horseshoe-council-bluffs"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Horseshoe Council Bluffs in Council Bluffs. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-council-bluffs/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-council-bluffs/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "council-bluffs-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-14",
+        "slug": "event-14",
+        "number": "14",
+        "name": "$1,700 NLH Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "2 Re-Entries Per Flight",
+        "lateRegistration": "Start of Lvl 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "14-2026-09-25-0",
+            "label": "Flight A",
+            "date": "2026-09-25",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "14-2026-09-26-1",
+            "label": "Flight B",
+            "date": "2026-09-26",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "council-bluffs-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$400 NLH Monster Stack",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-09-16-0",
+            "label": "Flight A",
+            "date": "2026-09-16",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-16-1",
+            "label": "Flight B",
+            "date": "2026-09-16",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-17-2",
+            "label": "Flight C",
+            "date": "2026-09-17",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "council-bluffs-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "$400 NLH Mini Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 9",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "2-2026-09-17-0",
+            "label": "Flight A",
+            "date": "2026-09-17",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-18-1",
+            "label": "Flight B",
+            "date": "2026-09-18",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-18-2",
+            "label": "Flight C",
+            "date": "2026-09-18",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-09-19-3",
+            "label": "Flight D",
+            "date": "2026-09-19",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "council-bluffs-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lincoln-2026",
+    "slug": "wsop-circuit-thunder-valley-casino-resort-2026",
+    "name": "WSOP Circuit Thunder Valley Casino Resort 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/lincoln",
+    "startDate": "2026-09-24",
+    "endDate": "2026-10-05",
+    "timezone": "America/Los_Angeles",
+    "dateNote": null,
+    "venue": {
+      "name": "Thunder Valley Casino Resort",
+      "address": null,
+      "url": "https://www.thundervalleyresort.com/"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Thunder Valley Casino Resort in Lincoln. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "lincoln-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-13",
+        "slug": "event-13",
+        "number": "13",
+        "name": "$1,700 NLH Main Event $500K GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 500000.0,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "2 Re-Entries Per Flight",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "13-2026-10-02-0",
+            "label": "Flight A",
+            "date": "2026-10-02",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "13-2026-10-03-1",
+            "label": "Flight B",
+            "date": "2026-10-03",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lincoln-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "$400 No-Limit Hold'em Freezeout",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "20,000",
+        "levels": null,
+        "reentry": "Freezeout",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "2-2026-09-24-0",
+            "label": "Published start",
+            "date": "2026-09-24",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lincoln-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "NLH The Opener $250K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000.0,
+          "currency": "USD"
+        },
+        "startingStack": "20,000",
+        "levels": null,
+        "reentry": "1 Re-Entry Per Flight",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-09-24-0",
+            "label": "Flight A",
+            "date": "2026-09-24",
+            "time": "15:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-25-1",
+            "label": "Flight B",
+            "date": "2026-09-25",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-25-2",
+            "label": "Flight C",
+            "date": "2026-09-25",
+            "time": "15:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-26-3",
+            "label": "Flight D",
+            "date": "2026-09-26",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lincoln-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "malta-2026",
+    "slug": "wsop-circuit-casino-malta-2026",
+    "name": "WSOP Circuit Casino Malta 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "malta/st-julians",
+    "startDate": "2026-09-25",
+    "endDate": "2026-10-05",
+    "timezone": "Europe/Malta",
+    "dateNote": null,
+    "venue": {
+      "name": "Casino Malta",
+      "address": null,
+      "url": "https://casinomalta.com.mt/"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Casino Malta in St. Julian’s. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-malta/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-malta/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "malta-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-8",
+        "slug": "event-8",
+        "number": "8",
+        "name": "€1,500 No-Limit Hold'em Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500.0,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "50,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "End of Lvl 12",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "8-2026-09-30-0",
+            "label": "Flight A",
+            "date": "2026-09-30",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "8-2026-10-01-1",
+            "label": "Flight B",
+            "date": "2026-10-01",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "8-2026-10-02-2",
+            "label": "Flight C",
+            "date": "2026-10-02",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "8-2026-10-02-3",
+            "label": "Flight D",
+            "date": "2026-10-02",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "malta-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "€300 No-Limit Hold'em Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 300.0,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "End of Lvl 10",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-09-25-0",
+            "label": "Flight A",
+            "date": "2026-09-25",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-25-1",
+            "label": "Flight B",
+            "date": "2026-09-25",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-26-2",
+            "label": "Flight C",
+            "date": "2026-09-26",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-09-26-3",
+            "label": "Flight D",
+            "date": "2026-09-26",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "malta-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "€550 No-Limit Hold'em Mystery Bounty",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 550.0,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "End of Lvl 11",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-09-27-0",
+            "label": "Flight A",
+            "date": "2026-09-27",
+            "time": "14:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-28-1",
+            "label": "Flight B",
+            "date": "2026-09-28",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-09-28-2",
+            "label": "Flight C",
+            "date": "2026-09-28",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "malta-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "calgary-2026",
+    "slug": "wsop-circuit-deerfoot-inn-casino-2026",
+    "name": "WSOP Circuit Deerfoot Inn & Casino 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "canada/calgary",
+    "startDate": "2026-09-30",
+    "endDate": "2026-10-12",
+    "timezone": "America/Edmonton",
+    "dateNote": null,
+    "venue": {
+      "name": "Deerfoot Inn & Casino",
+      "address": null,
+      "url": "https://deerfootinn.com/"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Deerfoot Inn & Casino in Calgary. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-deerfoot-inn-and-casino-2026/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-deerfoot-inn-and-casino-2026/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "calgary-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-12",
+        "slug": "event-12",
+        "number": "12",
+        "name": "$2,300 NLH Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2300.0,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "1 Re-Entry Per Flight",
+        "lateRegistration": "Start of Lvl 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "12-2026-10-08-0",
+            "label": "Flight A",
+            "date": "2026-10-08",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "12-2026-10-09-1",
+            "label": "Flight B",
+            "date": "2026-10-09",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "12-2026-10-10-2",
+            "label": "Flight C",
+            "date": "2026-10-10",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "calgary-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$400 NLH Big 30 Stack",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 11",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-09-30-0",
+            "label": "Published start",
+            "date": "2026-09-30",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "calgary-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "$600 No-Limit Hold'em Black Chip Bounty",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600.0,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "25,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 10",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-10-01-0",
+            "label": "Published start",
+            "date": "2026-10-01",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "calgary-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pompano-beach-2026",
+    "slug": "wsop-circuit-harrah-s-pompano-beach-2026",
+    "name": "WSOP Circuit Harrah’s Pompano Beach 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/pompano-beach",
+    "startDate": "2026-10-01",
+    "endDate": "2026-10-12",
+    "timezone": "America/New_York",
+    "dateNote": null,
+    "venue": {
+      "name": "Harrah’s Pompano Beach",
+      "address": null,
+      "url": "https://www.caesars.com/harrahs-pompano-beach"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Harrah’s Pompano Beach in Pompano Beach. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "pompano-beach-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-10",
+        "slug": "event-10",
+        "number": "10",
+        "name": "$1,700 NLH Main Event $1M GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "1 Re-Entry Per Flight",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "10-2026-10-08-0",
+            "label": "Flight A",
+            "date": "2026-10-08",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "10-2026-10-09-1",
+            "label": "Flight B",
+            "date": "2026-10-09",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "10-2026-10-10-2",
+            "label": "Flight C",
+            "date": "2026-10-10",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "pompano-beach-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$400 NLH Double Stack Opener $50K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 50000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-10-01-0",
+            "label": "Published start",
+            "date": "2026-10-01",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "pompano-beach-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "$600 NLH Mini Main Event $250K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-10-02-0",
+            "label": "Flight A",
+            "date": "2026-10-02",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-10-02-1",
+            "label": "Flight B",
+            "date": "2026-10-02",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-10-03-2",
+            "label": "Flight C",
+            "date": "2026-10-03",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-10-03-3",
+            "label": "Flight D",
+            "date": "2026-10-03",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "pompano-beach-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "verona-2026",
+    "slug": "wsop-circuit-turning-stone-resort-casino-2026",
+    "name": "WSOP Circuit Turning Stone Resort Casino 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/verona",
+    "startDate": "2026-10-15",
+    "endDate": "2026-10-26",
+    "timezone": "America/New_York",
+    "dateNote": null,
+    "venue": {
+      "name": "Turning Stone Resort Casino",
+      "address": null,
+      "url": "https://www.turningstone.com/"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Turning Stone Resort Casino in Verona. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-turning-stone/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-turning-stone/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "verona-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-9",
+        "slug": "event-9",
+        "number": "9",
+        "name": "$1,700 No-Limit Hold'em Main Event $1M GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000.0,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "1 Re-Entry Per Flight",
+        "lateRegistration": "Start of Lvl 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "9-2026-10-22-0",
+            "label": "Flight A",
+            "date": "2026-10-22",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "9-2026-10-23-1",
+            "label": "Flight B",
+            "date": "2026-10-23",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "9-2026-10-24-2",
+            "label": "Flight C",
+            "date": "2026-10-24",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "verona-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$400 40/40/40 No-Limit Hold'em $100K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000.0,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 10",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-10-15-0",
+            "label": "Published start",
+            "date": "2026-10-15",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "verona-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "$400 No-Limit Hold'em Mini Main Event $600K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 600000.0,
+          "currency": "USD"
+        },
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": "Start of Lvl 9",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "2-2026-10-15-0",
+            "label": "Flight A",
+            "date": "2026-10-15",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-10-16-1",
+            "label": "Flight B",
+            "date": "2026-10-16",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-10-16-2",
+            "label": "Flight C",
+            "date": "2026-10-16",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-10-17-3",
+            "label": "Flight D",
+            "date": "2026-10-17",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "2-2026-10-17-4",
+            "label": "Flight E",
+            "date": "2026-10-17",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "verona-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lake-tahoe-2026",
+    "slug": "wsop-circuit-caesars-republic-lake-tahoe-2026",
+    "name": "WSOP Circuit Caesars Republic Lake Tahoe 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/stateline",
+    "startDate": "2026-10-22",
+    "endDate": "2026-11-02",
+    "timezone": "America/Los_Angeles",
+    "dateNote": null,
+    "venue": {
+      "name": "Caesars Republic Lake Tahoe",
+      "address": null,
+      "url": "https://www.caesars.com/caesars-republic-lake-tahoe"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit comes to Caesars Republic Lake Tahoe in Stateline. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-republic-lake-tahoe/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-republic-lake-tahoe/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "lake-tahoe-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-13",
+        "slug": "event-13",
+        "number": "13",
+        "name": "$1,700 NLH Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "-",
+        "levels": null,
+        "reentry": "-",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "13-2026-10-30-0",
+            "label": "Flight A",
+            "date": "2026-10-30",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "13-2026-10-31-1",
+            "label": "Flight B",
+            "date": "2026-10-31",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lake-tahoe-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "$400 NLH Mini Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "-",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-10-23-0",
+            "label": "Flight A",
+            "date": "2026-10-23",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-10-23-1",
+            "label": "Flight B",
+            "date": "2026-10-23",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "3-2026-10-24-2",
+            "label": "Flight C",
+            "date": "2026-10-24",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lake-tahoe-schedule"
+        ]
+      },
+      {
+        "id": "event-4",
+        "slug": "event-4",
+        "number": "4",
+        "name": "$400 No-Limit Hold'em",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "-",
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "4-2026-10-24-0",
+            "label": "Published start",
+            "date": "2026-10-24",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lake-tahoe-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paradise-2026",
+    "slug": "wsop-paradise-2026",
+    "name": "WSOP Paradise 2026",
+    "tour": "WSOP",
+    "destinationId": "bahamas/nassau",
+    "startDate": "2026-12-02",
+    "endDate": "2026-12-17",
+    "timezone": "America/Nassau",
+    "dateNote": null,
+    "venue": {
+      "name": "Baha Mar Resort",
+      "address": null,
+      "url": "https://bahamar.com/"
+    },
+    "status": "scheduled",
+    "description": "A bracelet festival at Baha Mar, with a high buy-in Super Main Event and lower-entry circuit championship options. Compare the tournament budget with the cost of a resort stay.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/2026-wsop-paradise/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/2026-wsop-paradise/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "paradise-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-12",
+        "slug": "event-12",
+        "number": "12",
+        "name": "$26,000 NLH Super Main Event $50M GTD",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 26000.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 50000000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "12-2026-12-10-0",
+            "label": "Flight A",
+            "date": "2026-12-10",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "12-2026-12-11-1",
+            "label": "Flight 2A",
+            "date": "2026-12-11",
+            "time": "12:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "12-2026-12-12-2",
+            "label": "Flight B",
+            "date": "2026-12-12",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "12-2026-12-13-3",
+            "label": "Flight C",
+            "date": "2026-12-13",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "12-2026-12-14-4",
+            "label": "Flight 2BC",
+            "date": "2026-12-14",
+            "time": "12:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "paradise-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "$2,750 NLH WSOP Circuit Championship Mystery Bounty $5M GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 2750.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 5000000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2026-12-02-0",
+            "label": "Flight A",
+            "date": "2026-12-02",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-12-02-1",
+            "label": "Flight B",
+            "date": "2026-12-02",
+            "time": "17:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-12-03-2",
+            "label": "Flight C",
+            "date": "2026-12-03",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "1-2026-12-03-3",
+            "label": "Flight D",
+            "date": "2026-12-03",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "paradise-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "$50,000 High Roller No-Limit Hold'em $2.5M GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 50000.0,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2500000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "3-2026-12-04-0",
+            "label": "Published start",
+            "date": "2026-12-04",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "paradise-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sydney-2026",
+    "slug": "wpt-prime-australia-championship-2026",
+    "name": "WPT Prime Australia Championship 2026",
+    "tour": "WPT Prime",
+    "destinationId": "australia/sydney",
+    "startDate": "2026-09-17",
+    "endDate": "2026-09-22",
+    "timezone": "Australia/Sydney",
+    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "venue": {
+      "name": "The Star Sydney",
+      "address": null,
+      "url": "https://www.star.com.au/sydney"
+    },
+    "status": "scheduled",
+    "description": "WPT Prime comes to The Star Sydney in Sydney. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
+    "registrationUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
+    "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "sydney-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500,
+          "currency": "AUD"
+        },
+        "fee": {
+          "amount": 150,
+          "currency": "AUD"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": "Day 1: 40 minutes; later days: 60 minutes.",
+        "reentry": "One re-entry per flight",
+        "lateRegistration": "Registration closes at the start of Level 10.",
+        "endDate": "2026-09-22",
+        "sessions": [
+          {
+            "id": "championship-start",
+            "label": "Published start",
+            "date": "2026-09-17",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "sydney-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lodge-2026",
+    "slug": "wpt-prime-lodge-championship-2026",
+    "name": "WPT Prime Lodge Championship 2026",
+    "tour": "WPT Prime",
+    "destinationId": "united-states/round-rock",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-12",
+    "timezone": "America/Chicago",
+    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "venue": {
+      "name": "Lodge Card Club Austin",
+      "address": null,
+      "url": "https://thelodgepokerclub.com/"
+    },
+    "status": "scheduled",
+    "description": "WPT Prime comes to Lodge Card Club Austin in Round Rock. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
+    "registrationUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
+    "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "lodge-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 130,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": "Day 1: 40 minutes; turbo flight: 20 minutes; Day 2: 60 minutes.",
+        "reentry": null,
+        "lateRegistration": "Registration closes at the start of Level 10 on each starting day.",
+        "endDate": "2026-10-12",
+        "sessions": [
+          {
+            "id": "championship-start",
+            "label": "Published start",
+            "date": "2026-10-08",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lodge-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cyprus-2026",
+    "slug": "wpt-prime-cyprus-championship-2026",
+    "name": "WPT Prime Cyprus Championship 2026",
+    "tour": "WPT Prime",
+    "destinationId": "cyprus/kyrenia",
+    "startDate": "2026-10-15",
+    "endDate": "2026-10-19",
+    "timezone": "Asia/Famagusta",
+    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "venue": {
+      "name": "Chamada Prestige Hotel & Spa",
+      "address": null,
+      "url": "https://www.chamadaprestige.com/"
+    },
+    "status": "scheduled",
+    "description": "WPT Prime comes to Chamada Prestige Hotel & Spa in Kyrenia / Çatalköy. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
+    "registrationUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
+    "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "cyprus-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-19",
+        "sessions": [
+          {
+            "id": "championship-start",
+            "label": "Published start",
+            "date": "2026-10-15",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "cyprus-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "san-jose-2026",
+    "slug": "wpt-bay-101-shooting-star-championship-2026",
+    "name": "WPT Bay 101 Shooting Star Championship 2026",
+    "tour": "WPT",
+    "destinationId": "united-states/san-jose",
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-27",
+    "timezone": "America/Los_Angeles",
+    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "venue": {
+      "name": "Bay 101 Casino",
+      "address": null,
+      "url": "https://www.bay101.com/"
+    },
+    "status": "scheduled",
+    "description": "WPT comes to Bay 101 Casino in San Jose. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
+    "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
+    "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "san-jose-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5300,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 500,
+          "currency": "USD"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": "One optional re-entry on each Day 1",
+        "lateRegistration": "Entry is also permitted before the Day 2 restart.",
+        "endDate": "2026-10-27",
+        "sessions": [
+          {
+            "id": "championship-start",
+            "label": "Published start",
+            "date": "2026-10-23",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "san-jose-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "las-vegas-2026",
+    "slug": "wpt-venetian-las-vegas-fall-championship-2026",
+    "name": "WPT Venetian Las Vegas Fall Championship 2026",
+    "tour": "WPT",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-10",
+    "timezone": "America/Los_Angeles",
+    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "venue": {
+      "name": "The Venetian Resort",
+      "address": null,
+      "url": "https://www.venetianlasvegas.com/"
+    },
+    "status": "scheduled",
+    "description": "WPT comes to The Venetian Resort in Las Vegas. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
+    "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-venetian-las-vegas-fall-championship-season-2026",
+    "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-venetian-las-vegas-fall-championship-season-2026",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "las-vegas-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": "The page’s hotel promotion references an older-looking offer code. No rate or validity is assumed here; confirm directly with the resort.",
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-10",
+        "sessions": [
+          {
+            "id": "championship-start",
+            "label": "Published start",
+            "date": "2026-11-05",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "las-vegas-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prague-2026",
+    "slug": "ept-prague-2026",
+    "name": "EPT Prague 2026",
+    "tour": "EPT",
+    "destinationId": "czechia/prague",
+    "startDate": "2026-12-02",
+    "endDate": "2026-12-13",
+    "timezone": "Europe/Prague",
+    "dateNote": null,
+    "venue": {
+      "name": "Hilton Prague Atrium",
+      "address": "Pobřežní 311/1, 186 00 Prague 8, Czechia",
+      "url": "https://www.hilton.com/en/hotels/prghitw-hilton-prague-atrium/"
+    },
+    "status": "scheduled",
+    "description": "An EPT stop at Hilton Prague with both the EPT Main Event and a lower-buy-in PokerStars Open programme. A useful option for players comparing several entry levels in one trip.",
+    "registration": "Minimum age 18. Bring photo identification or your passport. The organizer lists a casual dress code with no sportswear or shorts.",
+    "registrationUrl": "https://www.pokerstarslive.com/ept/prague/",
+    "scheduleUrl": "https://www.pokerstarslive.com/ept/prague/schedule/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "prague-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "main-event",
+        "name": "EPT Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5300,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-12-13",
+        "sessions": [
+          {
+            "id": "main-event-start",
+            "label": "Published start",
+            "date": "2026-12-07",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "prague-schedule"
+        ]
+      },
+      {
+        "id": "open-main",
+        "slug": "open-main",
+        "number": "open-main",
+        "name": "PokerStars Open Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-12-07",
+        "sessions": [
+          {
+            "id": "open-main-start",
+            "label": "Published start",
+            "date": "2026-12-02",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "prague-schedule"
+        ]
+      },
+      {
+        "id": "pokerstars-cup",
+        "slug": "pokerstars-cup",
+        "number": "pokerstars-cup",
+        "name": "PokerStars Cup",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 825,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-12-06",
+        "sessions": [
+          {
+            "id": "pokerstars-cup-start",
+            "label": "Published start",
+            "date": "2026-12-05",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "prague-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aix-2026",
+    "slug": "pokerstars-open-aix-en-provence-2026",
+    "name": "PokerStars Open Aix-en-Provence 2026",
+    "tour": "PokerStars Open",
+    "destinationId": "france/aix-en-provence",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-08",
+    "timezone": "Europe/Paris",
+    "dateNote": null,
+    "venue": {
+      "name": "Pasino GRAND",
+      "address": "21 Avenue de l’Europe, 13090 Aix-en-Provence, France",
+      "url": "https://casino-aix.partouche.com/"
+    },
+    "status": "scheduled",
+    "description": "A PokerStars Open stop at Pasino GRAND in southern France. The headline event sits alongside lower-buy-in side events, with Marseille airport and Aix TGV as arrival options.",
+    "registration": "Minimum age 18. A valid government-issued passport or EU citizen ID card is required. The organizer lists cash in euros, bank cards and selected payment accounts; confirm availability before travel.",
+    "registrationUrl": "https://www.pokerstarslive.com/pokerstarsopen/aixenprovence/",
+    "scheduleUrl": "https://www.pokerstarslive.com/pokerstarsopen/aixenprovence/schedule/",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "aix-schedule"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "main-event",
+        "name": "PokerStars Open Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "main-event-start",
+            "label": "Published start",
+            "date": "2026-11-04",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "aix-schedule"
+        ]
+      },
+      {
+        "id": "second-chance",
+        "slug": "second-chance",
+        "number": "second-chance",
+        "name": "Second Chance",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 550,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-07",
+        "sessions": [
+          {
+            "id": "second-chance-start",
+            "label": "Published start",
+            "date": "2026-11-06",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "aix-schedule"
+        ]
+      },
+      {
+        "id": "mystery-bounty",
+        "slug": "mystery-bounty",
+        "number": "mystery-bounty",
+        "name": "Mystery Bounty Cup",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "mystery-bounty-start",
+            "label": "Published start",
+            "date": "2026-11-07",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "aix-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jeju-2026",
+    "slug": "apt-jeju-2026",
+    "name": "APT Jeju 2026",
+    "tour": "APT",
+    "destinationId": "south-korea/jeju",
+    "startDate": "2026-09-25",
+    "endDate": "2026-10-07",
+    "timezone": "Asia/Seoul",
+    "dateNote": null,
+    "venue": {
+      "name": "LES A Casino",
+      "address": null,
+      "url": "https://www.lesajeju.com/"
+    },
+    "status": "scheduled",
+    "description": "An APT festival at LES A Casino. The main event, national cup and satellites offer different entry levels; check casino eligibility before committing to travel.",
+    "registration": "Check the organizer’s eligibility and identification rules before booking. LES A Casino requires guests to be at least 19 and applies specific nationality and identification conditions. Bring the required passport or documents; see the full official policy.",
+    "registrationUrl": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
+    "scheduleUrl": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "jeju-schedule",
+      "jeju-info"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-19",
+        "slug": "event-19",
+        "number": "19",
+        "name": "APT Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2700000.0,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2200000000.0,
+          "currency": "KRW"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-03",
+        "sessions": [
+          {
+            "id": "07a52b0e-a442-43f0-ab2b-4a17687d6a9b",
+            "label": "Flight A",
+            "date": "2026-09-27",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "11:00 PM"
+          },
+          {
+            "id": "d424ae0f-6705-481a-b9e3-9667c5fab80a",
+            "label": "Flight B",
+            "date": "2026-09-28",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "8:30 PM"
+          },
+          {
+            "id": "ae6b96dc-dfd3-4150-93dc-9e731832f677",
+            "label": "Flight C",
+            "date": "2026-09-29",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "5:30 PM"
+          },
+          {
+            "id": "9401d31c-48bf-4a78-8537-cbdc444b8946",
+            "label": "Flight D",
+            "date": "2026-09-29",
+            "time": "18:00",
+            "kind": "entry",
+            "registrationCloses": "12:30 AM"
+          },
+          {
+            "id": "ee510913-4e75-4736-8825-22af490bd2f4",
+            "label": "Day 2",
+            "date": "2026-09-30",
+            "time": "11:00",
+            "kind": "continuation",
+            "registrationCloses": "12:15 PM"
+          },
+          {
+            "id": "c4ad2204-f93c-4e5e-895f-880899ceabd4",
+            "label": "Day 3",
+            "date": "2026-10-01",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          },
+          {
+            "id": "8d3eaab4-9e29-4ce1-9f0f-e54db8881a04",
+            "label": "Day 4",
+            "date": "2026-10-02",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          },
+          {
+            "id": "ffb82180-3024-452a-960c-945f525763c9",
+            "label": "Final Day",
+            "date": "2026-10-03",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          }
+        ],
+        "sourceIds": [
+          "jeju-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "Korea National Cup",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 900000.0,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 200000000.0,
+          "currency": "KRW"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-26",
+        "sessions": [
+          {
+            "id": "939057e1-3381-4b8d-a1e7-bc2e5acba6cd",
+            "label": "Flight A",
+            "date": "2026-09-25",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "4:30 PM"
+          },
+          {
+            "id": "1d5a0af1-0e8f-4aa2-ba45-e34dfda39b88",
+            "label": "Flight B",
+            "date": "2026-09-25",
+            "time": "16:00",
+            "kind": "entry",
+            "registrationCloses": "7:50 PM"
+          },
+          {
+            "id": "bb541aee-1fd4-4b91-abf4-8c6dc28fade9",
+            "label": "Turbo Flight C",
+            "date": "2026-09-25",
+            "time": "20:30",
+            "kind": "entry",
+            "registrationCloses": "11:15 PM"
+          },
+          {
+            "id": "c227a17c-703a-4187-916f-8c20f2017d0e",
+            "label": "Final Day",
+            "date": "2026-09-26",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          }
+        ],
+        "sourceIds": [
+          "jeju-schedule"
+        ]
+      },
+      {
+        "id": "event-27",
+        "slug": "event-27",
+        "number": "27",
+        "name": "10 Seats GTD - Satellite to APT Main Event (Win Your Seat @ 105,000)",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 475000.0,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "6a2db65e-e5bc-4084-a9e1-bbcf08125194",
+            "label": "Published start",
+            "date": "2026-09-27",
+            "time": "20:00",
+            "kind": "entry",
+            "registrationCloses": "10:15 PM"
+          }
+        ],
+        "sourceIds": [
+          "jeju-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "taipei-2026",
+    "slug": "apt-championship-taipei-2026",
+    "name": "APT Championship Taipei 2026",
+    "tour": "APT",
+    "destinationId": "taiwan/taipei",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-29",
+    "timezone": "Asia/Taipei",
+    "dateNote": null,
+    "venue": {
+      "name": "Red Space",
+      "address": null,
+      "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info"
+    },
+    "status": "scheduled",
+    "description": "An APT Championship festival at Red Space, with a freezeout championship and a wider range of side events. Plan accommodation around the actual venue, not a generic Taipei casino search.",
+    "registration": "Check the organizer’s eligibility and identification rules before booking. Participants must be at least 18. Foreign players need a valid foreign passport; local players may use an accepted local ID or passport.",
+    "registrationUrl": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+    "scheduleUrl": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/events",
+    "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
+    "sourceIds": [
+      "taipei-schedule",
+      "taipei-info"
+    ],
+    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-06T17:56:10+00:00",
+        "text": "Overview added with official dates, selected buy-ins and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-1014",
+        "slug": "event-1014",
+        "number": "1014",
+        "name": "[Event 14] APT Championship Main Event Freezeout",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 311900.0,
+          "currency": "TWD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 5000000.0,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Freezeout",
+        "lateRegistration": null,
+        "endDate": "2026-11-27",
+        "sessions": [
+          {
+            "id": "7c5f9739-cf62-4290-b566-2adf5e01ba2d",
+            "label": "Day 1",
+            "date": "2026-11-23",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "10:45 PM"
+          },
+          {
+            "id": "3500fb41-5534-4f28-b869-2f63ed4bea7f",
+            "label": "Day 2",
+            "date": "2026-11-24",
+            "time": "11:00",
+            "kind": "continuation",
+            "registrationCloses": "1:45 PM"
+          },
+          {
+            "id": "c912cd6e-56ed-4349-b2ec-721d7aa36844",
+            "label": "Day 3",
+            "date": "2026-11-25",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          },
+          {
+            "id": "1f3ce59d-3cff-4cf5-97e2-3401f1dc9c20",
+            "label": "Day 4",
+            "date": "2026-11-26",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          },
+          {
+            "id": "e010bdf5-1e4d-4755-8dd9-934df2e306e4",
+            "label": "Final Day",
+            "date": "2026-11-27",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "Closed"
+          }
+        ],
+        "sourceIds": [
+          "taipei-schedule"
+        ]
+      },
+      {
+        "id": "event-1001",
+        "slug": "event-1001",
+        "number": "1001",
+        "name": "[Event 1] National Cup Championship",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 16000.0,
+          "currency": "TWD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 20000000.0,
+          "currency": "TWD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-15",
+        "sessions": [
+          {
+            "id": "33101034-9336-4ea8-826b-09ab57a249f1",
+            "label": "Flight A",
+            "date": "2026-11-13",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "6:20 PM"
+          },
+          {
+            "id": "a014b698-1abf-4b5b-a11d-883cee995aac",
+            "label": "Turbo Flight B",
+            "date": "2026-11-13",
+            "time": "20:00",
+            "kind": "entry",
+            "registrationCloses": "10:45 PM"
+          },
+          {
+            "id": "723ef662-93fa-4342-ab93-d655006787f7",
+            "label": "Flight C",
+            "date": "2026-11-14",
+            "time": "11:00",
+            "kind": "entry",
+            "registrationCloses": "3:40 PM"
+          },
+          {
+            "id": "ff42fbc3-2169-4b4b-a5df-cadd6f02399b",
+            "label": "Flight D",
+            "date": "2026-11-14",
+            "time": "16:30",
+            "kind": "entry",
+            "registrationCloses": "8:20 PM"
+          },
+          {
+            "id": "ca24fff8-c56c-4036-8265-61035ba31b8a",
+            "label": "Turbo Flight E",
+            "date": "2026-11-14",
+            "time": "20:30",
+            "kind": "entry",
+            "registrationCloses": "11:15 PM"
+          },
+          {
+            "id": "6c1f19a5-e842-40f7-b36b-637dfc6b5b03",
+            "label": "Final Day",
+            "date": "2026-11-15",
+            "time": "11:15",
+            "kind": "continuation",
+            "registrationCloses": "11:05 AM"
+          }
+        ],
+        "sourceIds": [
+          "taipei-schedule"
+        ]
+      },
+      {
+        "id": "event-71",
+        "slug": "event-71",
+        "number": "71",
+        "name": "5 Seats GTD - Satellite to APT Championship Main Event (Win Your Seat @ 105,000)",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 53000.0,
+          "currency": "TWD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "71422604-54d4-4168-9f89-aae76d9e035e",
+            "label": "Published start",
+            "date": "2026-11-19",
+            "time": "20:00",
+            "kind": "entry",
+            "registrationCloses": "10:55 PM"
+          }
+        ],
+        "sourceIds": [
+          "taipei-schedule"
+        ]
+      }
+    ]
+  }
+]

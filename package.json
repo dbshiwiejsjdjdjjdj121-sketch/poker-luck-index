@@ -1,44 +1,38 @@
 {
-  "name": "poker-luck-index",
+  "name": "all-in-poker-guide",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "seo:competitors": "node scripts/build-competitor-snapshot.mjs",
-    "seo:report": "node scripts/seo-report.mjs",
-    "seo:plan": "node scripts/seo-action-plan.mjs",
-    "seo:strategy": "node scripts/sync-seo-strategy-state.mjs",
-    "seo:weekly": "npm run seo:report && npm run seo:plan",
-    "seo:validate": "npm run lint && npm run build -- --webpack && npm run typecheck"
+    "test": "tsx --test tests/*.test.ts",
+    "data:validate": "tsx scripts/validate-data.ts",
+    "data:links": "node scripts/check-links.mjs",
+    "validate": "npm run data:validate && npm test && npm run lint && npm run build && npm run typecheck",
+    "data:stage": "tsx scripts/stage-data.ts",
+    "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0",
     "firebase": "^12.10.0",
     "firebase-admin": "^13.7.0",
-    "google-auth-library": "^10.6.2",
-    "next": "16.1.6",
-    "nodemailer": "^8.0.3",
-    "openai": "^6.32.0",
+    "next": "^16.3.4",
+    "nodemailer": "^10.0.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "react-qr-code": "^2.0.18",
-    "undici": "^7.24.7"
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/nodemailer": "^7.0.11",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "^16.3.4",
     "tailwindcss": "^4",
+    "tsx": "^4.20.0",
     "typescript": "^5",
-    "vercel": "^50.39.0"
+    "undici": "^7.29.1"
   }
 }
