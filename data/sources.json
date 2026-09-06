@@ -333,7 +333,7 @@
     "title": "APT Jeju 2026 — organizer travel and entry information",
     "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
     "kind": "organizer",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-06T18:27:47.540764+00:00"
   },
   {
     "id": "jeju-airport",
@@ -446,5 +446,19 @@
     "url": "https://www.harryreidairport.com/taxi-and-ride-share",
     "checkedAt": "2026-09-06T18:08:39.263494+00:00",
     "kind": "travel"
+  },
+  {
+    "id": "apt-app",
+    "title": "Official APT app downloads",
+    "url": "https://www.theasianpokertour.com/download",
+    "kind": "organizer",
+    "checkedAt": "2026-09-06T18:27:47.540764+00:00"
+  },
+  {
+    "id": "jeju-dining",
+    "title": "LES A Jeju dining directory",
+    "url": "https://www.lesajeju.com/pc/en/ylccy",
+    "kind": "travel",
+    "checkedAt": "2026-09-06T18:27:47.540764+00:00"
   }
 ]

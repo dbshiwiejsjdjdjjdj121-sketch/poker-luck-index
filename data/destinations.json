@@ -761,15 +761,28 @@
         "sourceId": "jeju-info"
       }
     ],
-    "dining": [],
+    "dining": [
+      {
+        "title": "Casino dining and late-session meals",
+        "detail": "LES A lists Korean, Chinese and Western food for casino guests, with a 24-hour catering service. Confirm access and ordering arrangements with the venue; this does not mean every listed restaurant is open all night.",
+        "url": "https://www.lesajeju.com/pc/en/ylccy",
+        "sourceId": "jeju-dining"
+      },
+      {
+        "title": "Casual food, coffee and a longer dinner",
+        "detail": "The directory includes The Shanghai Bund, MOM’S TOUCH and Landing Deli alongside other resort outlets. Compare a quick meal with a sit-down option around your planned break; outlet hours and location within the resort vary.",
+        "url": "https://www.lesajeju.com/pc/en/ylccy",
+        "sourceId": "jeju-dining"
+      }
+    ],
     "tax": {
       "text": "Use the official tax authority as the starting point for your situation. Ask the organizer whether it withholds anything from prizes and which payout documents it provides. No specific tournament tax rate has been verified here; your tax residence may create separate reporting obligations.",
       "sourceIds": [
         "kr-tax"
       ]
     },
-    "updatedAt": "2026-09-06T17:56:10+00:00",
-    "indexable": false
+    "updatedAt": "2026-09-06T18:27:47.540764+00:00",
+    "indexable": true
   },
   {
     "id": "taiwan/taipei",

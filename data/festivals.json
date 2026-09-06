@@ -41,12 +41,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 500000.0,
+          "amount": 500000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -89,12 +89,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 25000.0,
+          "amount": 25000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -123,12 +123,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 600.0,
+          "amount": 600,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 250000.0,
+          "amount": 250000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -214,12 +214,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1500.0,
+          "amount": 1500,
           "currency": "CHF"
         },
         "fee": null,
         "guarantee": {
-          "amount": 750000.0,
+          "amount": 750000,
           "currency": "CHF"
         },
         "startingStack": "50,000",
@@ -276,12 +276,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 300.0,
+          "amount": 300,
           "currency": "CHF"
         },
         "fee": null,
         "guarantee": {
-          "amount": 200000.0,
+          "amount": 200000,
           "currency": "CHF"
         },
         "startingStack": "30,000",
@@ -331,12 +331,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 500.0,
+          "amount": 500,
           "currency": "CHF"
         },
         "fee": null,
         "guarantee": {
-          "amount": 100000.0,
+          "amount": 100000,
           "currency": "CHF"
         },
         "startingStack": "40,000",
@@ -415,12 +415,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 2000000.0,
+          "amount": 2000000,
           "currency": "USD"
         },
         "startingStack": "40,000",
@@ -463,12 +463,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 100000.0,
+          "amount": 100000,
           "currency": "USD"
         },
         "startingStack": "20,000",
@@ -497,12 +497,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 600.0,
+          "amount": 600,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 750000.0,
+          "amount": 750000,
           "currency": "USD"
         },
         "startingStack": "30,000",
@@ -595,7 +595,7 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
@@ -633,7 +633,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
@@ -678,7 +678,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
@@ -766,12 +766,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 500000.0,
+          "amount": 500000,
           "currency": "USD"
         },
         "startingStack": "40,000",
@@ -807,7 +807,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
@@ -838,12 +838,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 250000.0,
+          "amount": 250000,
           "currency": "USD"
         },
         "startingStack": "20,000",
@@ -929,7 +929,7 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1500.0,
+          "amount": 1500,
           "currency": "EUR"
         },
         "fee": null,
@@ -981,7 +981,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 300.0,
+          "amount": 300,
           "currency": "EUR"
         },
         "fee": null,
@@ -1033,7 +1033,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 550.0,
+          "amount": 550,
           "currency": "EUR"
         },
         "fee": null,
@@ -1114,7 +1114,7 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 2300.0,
+          "amount": 2300,
           "currency": "CAD"
         },
         "fee": null,
@@ -1159,7 +1159,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "CAD"
         },
         "fee": null,
@@ -1190,7 +1190,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 600.0,
+          "amount": 600,
           "currency": "CAD"
         },
         "fee": null,
@@ -1257,12 +1257,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 1000000.0,
+          "amount": 1000000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -1305,12 +1305,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 50000.0,
+          "amount": 50000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -1339,12 +1339,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 600.0,
+          "amount": 600,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 250000.0,
+          "amount": 250000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -1430,12 +1430,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 1000000.0,
+          "amount": 1000000,
           "currency": "USD"
         },
         "startingStack": "40,000",
@@ -1478,12 +1478,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 100000.0,
+          "amount": 100000,
           "currency": "USD"
         },
         "startingStack": "40,000",
@@ -1512,12 +1512,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 600000.0,
+          "amount": 600000,
           "currency": "USD"
         },
         "startingStack": "30,000",
@@ -1610,7 +1610,7 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 1700.0,
+          "amount": 1700,
           "currency": "USD"
         },
         "fee": null,
@@ -1648,7 +1648,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
@@ -1693,7 +1693,7 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 400.0,
+          "amount": 400,
           "currency": "USD"
         },
         "fee": null,
@@ -1760,12 +1760,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 26000.0,
+          "amount": 26000,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 50000000.0,
+          "amount": 50000000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -1822,12 +1822,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 2750.0,
+          "amount": 2750,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 5000000.0,
+          "amount": 5000000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -1877,12 +1877,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 50000.0,
+          "amount": 50000,
           "currency": "USD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 2500000.0,
+          "amount": 2500000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -2533,21 +2533,26 @@
     },
     "status": "scheduled",
     "description": "An APT festival at LES A Casino. The main event, national cup and satellites offer different entry levels; check casino eligibility before committing to travel.",
-    "registration": "Check the organizer’s eligibility and identification rules before booking. LES A Casino requires guests to be at least 19 and applies specific nationality and identification conditions. Bring the required passport or documents; see the full official policy.",
+    "registration": "LES A Casino admits eligible guests aged 19 or older. Foreign visitors must carry a valid foreign passport. Expatriate Korean guests need the specific passport and residency/emigration documents listed by the organizer, plus its confirmation letter. Check that policy before booking. The APT information page also links to member registration and the official app.",
     "registrationUrl": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
     "scheduleUrl": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
     "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
     "sourceIds": [
       "jeju-schedule",
-      "jeju-info"
+      "jeju-info",
+      "apt-app"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-06T18:27:47.540764+00:00",
+    "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-09-06T18:27:47.540764+00:00",
+        "text": "Added clearer entry-document guidance, the official APT app source and verified dining options at LES A Jeju."
       }
     ],
     "tournaments": [
@@ -2559,12 +2564,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 2700000.0,
+          "amount": 2700000,
           "currency": "KRW"
         },
         "fee": null,
         "guarantee": {
-          "amount": 2200000000.0,
+          "amount": 2200000000,
           "currency": "KRW"
         },
         "startingStack": null,
@@ -2650,12 +2655,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 900000.0,
+          "amount": 900000,
           "currency": "KRW"
         },
         "fee": null,
         "guarantee": {
-          "amount": 200000000.0,
+          "amount": 200000000,
           "currency": "KRW"
         },
         "startingStack": null,
@@ -2709,7 +2714,7 @@
         "game": "NLH",
         "category": "satellite",
         "buyIn": {
-          "amount": 475000.0,
+          "amount": 475000,
           "currency": "KRW"
         },
         "fee": null,
@@ -2778,12 +2783,12 @@
         "game": "NLH",
         "category": "main",
         "buyIn": {
-          "amount": 311900.0,
+          "amount": 311900,
           "currency": "TWD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 5000000.0,
+          "amount": 5000000,
           "currency": "USD"
         },
         "startingStack": null,
@@ -2845,12 +2850,12 @@
         "game": "NLH",
         "category": "side",
         "buyIn": {
-          "amount": 16000.0,
+          "amount": 16000,
           "currency": "TWD"
         },
         "fee": null,
         "guarantee": {
-          "amount": 20000000.0,
+          "amount": 20000000,
           "currency": "TWD"
         },
         "startingStack": null,
@@ -2920,7 +2925,7 @@
         "game": "NLH",
         "category": "satellite",
         "buyIn": {
-          "amount": 53000.0,
+          "amount": 53000,
           "currency": "TWD"
         },
         "fee": null,
