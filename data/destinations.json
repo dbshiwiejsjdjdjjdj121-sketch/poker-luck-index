@@ -824,5 +824,608 @@
     },
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "indexable": false
+  },
+  {
+    "id": "canada/kahnawake",
+    "country": "Canada",
+    "countryCode": "CA",
+    "countrySlug": "canada",
+    "city": "Kahnawake",
+    "slug": "kahnawake",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Kahnawake. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
+      "sourceId": "playground-super-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/catoosa",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Catoosa",
+    "slug": "catoosa",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Catoosa. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-hard-rock-tulsa/",
+      "sourceId": "tulsa-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "mexico/mexico-city",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "countrySlug": "mexico",
+    "city": "Mexico City",
+    "slug": "mexico-city",
+    "region": "North America",
+    "intro": "The Santa Fe festival is based at Barceló México Santa Fe, with accommodation and dining in the playing property. Plan the airport transfer separately and check the full room price and meal inclusions before booking.",
+    "airport": {
+      "title": "Hotel airport transfers",
+      "detail": "The hotel lists an airport shuttle for an additional charge. Confirm the airport served, collection arrangements and price directly before booking.",
+      "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/",
+      "sourceId": "mexico-santa-fe-hotel"
+    },
+    "transport": [
+      {
+        "title": "Arriving at the host hotel",
+        "detail": "The venue is at Guillermo González Camarena 300, Santa Fe City Center. The hotel lists parking and valet services for an additional charge.",
+        "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/",
+        "sourceId": "mexico-santa-fe-hotel"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Barceló México Santa Fe — host hotel",
+        "detail": "Stay in the event’s hotel if rooms are available. Check cancellation terms, breakfast inclusions and the full payable price; no poker discount is assumed.",
+        "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/",
+        "sourceId": "mexico-santa-fe-hotel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "La Terraza and B-Market Gourmet",
+        "detail": "The hotel lists La Terraza for restaurant meals and B-Market Gourmet for lighter food and snacks. Confirm service hours against your tournament breaks.",
+        "url": "https://www.barcelo.com/en-ww/barcelo-mexico-santa-fe/cuisine/",
+        "sourceId": "mexico-santa-fe-dining"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": true
+  },
+  {
+    "id": "france/paris",
+    "country": "France",
+    "countryCode": "FR",
+    "countrySlug": "france",
+    "city": "Paris",
+    "slug": "paris",
+    "region": "Europe",
+    "intro": "Find the confirmed festival dates and official entry points for Paris. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-partouche-casino-club/",
+      "sourceId": "paris-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/elizabeth",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Elizabeth",
+    "slug": "elizabeth",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Elizabeth. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/",
+      "sourceId": "southern-indiana-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "spain/madrid",
+    "country": "Spain",
+    "countryCode": "ES",
+    "countrySlug": "spain",
+    "city": "Madrid",
+    "slug": "madrid",
+    "region": "Europe",
+    "intro": "Find the confirmed festival dates and official entry points for Madrid. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/",
+      "sourceId": "madrid-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/durant",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Durant",
+    "slug": "durant",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Durant. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
+      "sourceId": "durant-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/toledo",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Toledo",
+    "slug": "toledo",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Toledo. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
+      "sourceId": "toledo-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/scottsdale",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Scottsdale",
+    "slug": "scottsdale",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Scottsdale. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
+      "sourceId": "scottsdale-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/elgin",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Elgin",
+    "slug": "elgin",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Elgin. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
+      "sourceId": "elgin-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "panama/panama-city",
+    "country": "Panama",
+    "countryCode": "PA",
+    "countrySlug": "panama",
+    "city": "Panama City",
+    "slug": "panama-city",
+    "region": "Central America",
+    "intro": "Find the confirmed festival dates and official entry points for Panama City. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
+      "sourceId": "panama-city-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "belgium/middelkerke",
+    "country": "Belgium",
+    "countryCode": "BE",
+    "countrySlug": "belgium",
+    "city": "Middelkerke",
+    "slug": "middelkerke",
+    "region": "Europe",
+    "intro": "Find the confirmed festival dates and official entry points for Middelkerke. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
+      "sourceId": "middelkerke-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/new-orleans",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "New Orleans",
+    "slug": "new-orleans",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for New Orleans. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
+      "sourceId": "new-orleans-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "italy/sanremo",
+    "country": "Italy",
+    "countryCode": "IT",
+    "countrySlug": "italy",
+    "city": "Sanremo",
+    "slug": "sanremo",
+    "region": "Europe",
+    "intro": "Find the confirmed festival dates and official entry points for Sanremo. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
+      "sourceId": "sanremo-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "united-states/cherokee",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Cherokee",
+    "slug": "cherokee",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Cherokee. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
+      "sourceId": "cherokee-november-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "belgium/namur",
+    "country": "Belgium",
+    "countryCode": "BE",
+    "countrySlug": "belgium",
+    "city": "Namur",
+    "slug": "namur",
+    "region": "Europe",
+    "intro": "Namur’s Circus Casino Resort combines the playing venue with a Mercure hotel and La Carte du Roi restaurant. On-site parking is listed by the operator, while airport and rail transfers still need individual planning.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
+      "sourceId": "namur-megastack-2026-schedule"
+    },
+    "transport": [
+      {
+        "title": "Parking at the casino",
+        "detail": "The operator lists 130 parking spaces and 14 EV charging spaces. Check availability and any current charges directly.",
+        "url": "https://www.circus-poker.com/en/namur/contact",
+        "sourceId": "namur-venue"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Mercure — inside the casino complex",
+        "detail": "The venue lists a four-star, 100-room Mercure hotel within the casino. Compare current rates and cancellation conditions; availability is not guaranteed.",
+        "url": "https://www.circus-poker.com/en/namur/contact",
+        "sourceId": "namur-venue"
+      }
+    ],
+    "dining": [
+      {
+        "title": "La Carte du Roi",
+        "detail": "The on-site restaurant serves breakfast, lunch and dinner. Check opening hours and reservations around your playing days.",
+        "url": "https://www.circus-poker.com/en/namur/contact",
+        "sourceId": "namur-venue"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": true
+  },
+  {
+    "id": "united-states/jacksonville",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Jacksonville",
+    "slug": "jacksonville",
+    "region": "North America",
+    "intro": "Find the confirmed festival dates and official entry points for Jacksonville. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026/details",
+      "sourceId": "jacksonville-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "US withholding on gambling winnings can depend on tax residency and treaty eligibility. Ask the payer about the documents needed before the payout. A withholding amount is not necessarily your final tax liability; state and home-country reporting may also need review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "south-korea/incheon",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "countrySlug": "south-korea",
+    "city": "Incheon",
+    "slug": "incheon",
+    "region": "Asia",
+    "intro": "Incheon hosts the APPT at Paradise City and WPT Seoul at INSPIRE. These are different resorts: choose accommodation and your arrival destination to match the festival you plan to enter.",
+    "airport": {
+      "title": "Incheon International Airport (ICN)",
+      "detail": "The APPT organizer identifies ICN as the arrival airport for Paradise City; WPT places INSPIRE near the airport. Confirm the correct resort and current ground transport with your hotel.",
+      "url": "https://www.pokerstarslive.com/appt/korea/",
+      "sourceId": "appt-korea-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Paradise City — APPT venue",
+        "detail": "The APPT is played in the Paradise City resort, which offers accommodation. Use the event’s linked stay information and confirm availability and terms directly.",
+        "url": "https://www.pokerstarslive.com/appt/korea/",
+        "sourceId": "appt-korea-2026-schedule"
+      },
+      {
+        "title": "INSPIRE — WPT Seoul venue",
+        "detail": "WPT’s announcement describes accommodation within INSPIRE, the host resort for WPT Seoul. This is a different property from Paradise City; no promotional room price is assumed.",
+        "url": "https://www.worldpokertour.com/article/world-poker-tour-makes-historic-debut-at-inspire-entertainment-resort-for-wpt-seoul",
+        "sourceId": "wpt-seoul-2026-announcement"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Dining at INSPIRE",
+        "detail": "The WPT announcement describes dining and entertainment within the host resort. Check individual outlets and service hours before relying on meals between sessions.",
+        "url": "https://www.worldpokertour.com/article/world-poker-tour-makes-historic-debut-at-inspire-entertainment-resort-for-wpt-seoul",
+        "sourceId": "wpt-seoul-2026-announcement"
+      }
+    ],
+    "tax": {
+      "text": "Use the official tax authority as the starting point for your situation. Ask the organizer whether it withholds anything from prizes and which payout documents it provides. No specific tournament tax rate has been verified here; your tax residence may create separate reporting obligations.",
+      "sourceIds": [
+        "kr-tax"
+      ]
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": true
+  },
+  {
+    "id": "philippines/manila",
+    "country": "Philippines",
+    "countryCode": "PH",
+    "countrySlug": "philippines",
+    "city": "Metro Manila",
+    "slug": "manila",
+    "region": "Asia",
+    "intro": "The APPT Manila Championship is played at Okada Manila in Entertainment City, Parañaque. Use the exact venue address when arranging airport transport; the championship and lower-buy-in highlights fall on different dates.",
+    "airport": {
+      "title": "Ninoy Aquino International Airport (NAIA)",
+      "detail": "The APPT organizer identifies NAIA for air arrivals. Arrange transport to Okada Manila in Parañaque and confirm the pickup point with the operator.",
+      "url": "https://www.pokerstarslive.com/appt/manilachampionship/",
+      "sourceId": "appt-manila-championship-2026-schedule"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Okada Manila — tournament venue",
+        "detail": "The event page links accommodation at the host hotel. Confirm the room total, cancellation terms and availability directly; a tournament discount is not assumed.",
+        "url": "https://www.pokerstarslive.com/appt/manilachampionship/",
+        "sourceId": "appt-manila-championship-2026-schedule"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "cambodia/phnom-penh",
+    "country": "Cambodia",
+    "countryCode": "KH",
+    "countrySlug": "cambodia",
+    "city": "Phnom Penh",
+    "slug": "phnom-penh",
+    "region": "Asia",
+    "intro": "Find the confirmed festival dates and official entry points for Phnom Penh. Specific airport transfers, accommodation choices and dining details are still being verified.",
+    "airport": {
+      "title": "Arrival information pending",
+      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship",
+      "sourceId": "cambodia-2027-announcement"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "NagaWorld — host resort",
+        "detail": "WPT’s announcement confirms accommodation in the resort hosting the festival. Player room offers and their terms must be checked with the organizer; no rate is assumed.",
+        "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship",
+        "sourceId": "cambodia-2027-announcement"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Dining at NagaWorld",
+        "detail": "WPT lists dining within the host resort. Specific outlets and late-night service hours have not yet been verified for this guide.",
+        "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship",
+        "sourceId": "cambodia-2027-announcement"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
   }
 ]

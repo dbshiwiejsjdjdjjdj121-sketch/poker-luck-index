@@ -4,7 +4,7 @@
     "title": "WSOP Circuit Caesars Virginia 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "virginia-airport",
@@ -25,7 +25,7 @@
     "title": "WSOP Circuit Grand Casino Liechtenstein 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "liechtenstein-airport",
@@ -39,7 +39,7 @@
     "title": "WSOP Circuit Texas Card House 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-texas-card-house/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "austin-airport",
@@ -60,7 +60,7 @@
     "title": "WSOP Circuit Horseshoe Council Bluffs 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-council-bluffs/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "council-bluffs-airport",
@@ -74,7 +74,7 @@
     "title": "WSOP Circuit Thunder Valley Casino Resort 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "lincoln-airport",
@@ -95,7 +95,7 @@
     "title": "WSOP Circuit Casino Malta 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-malta/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "malta-airport",
@@ -116,7 +116,7 @@
     "title": "WSOP Circuit Deerfoot Inn & Casino 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-deerfoot-inn-and-casino-2026/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "calgary-airport",
@@ -137,7 +137,7 @@
     "title": "WSOP Circuit Harrah’s Pompano Beach 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "pompano-beach-airport",
@@ -214,7 +214,7 @@
     "title": "WPT Prime Australia Championship 2026 — official event page",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "sydney-airport",
@@ -326,7 +326,7 @@
     "title": "APT Jeju 2026 — official event page",
     "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
     "kind": "schedule",
-    "checkedAt": "2026-09-06T17:56:10+00:00"
+    "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "jeju-info",
@@ -460,5 +460,229 @@
     "url": "https://www.lesajeju.com/pc/en/ylccy",
     "kind": "travel",
     "checkedAt": "2026-09-06T18:27:47.540764+00:00"
+  },
+  {
+    "id": "playground-super-2026-schedule",
+    "title": "WSOP Super Circuit Canada 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "tulsa-2026-schedule",
+    "title": "WSOP Circuit Hard Rock Tulsa 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-hard-rock-tulsa/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "mexico-city-2026-schedule",
+    "title": "WSOP Circuit Big Bola Casinos Mexico City 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-big-bola-casinos-santa-fe-barcelo-mexico-santa-fe-hotel/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "paris-2026-schedule",
+    "title": "WSOP Circuit Partouche Pasino Club Paris 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-partouche-casino-club/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "southern-indiana-2026-schedule",
+    "title": "WSOP Circuit Caesars Southern Indiana 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "madrid-2026-schedule",
+    "title": "WSOP Circuit Casino Gran Vía 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "durant-2026-schedule",
+    "title": "WSOP Circuit Choctaw Durant October 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "toledo-2026-schedule",
+    "title": "WSOP Circuit The Reserve Poker Club 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "playground-november-2026-schedule",
+    "title": "WSOP Circuit Playground November 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "scottsdale-2026-schedule",
+    "title": "WSOP Circuit Talking Stick 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "elgin-2026-schedule",
+    "title": "WSOP Circuit Grand Victoria 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "panama-city-2026-schedule",
+    "title": "WSOP Circuit Panama City 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "middelkerke-2026-schedule",
+    "title": "WSOP Circuit Casino Middelkerke 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "new-orleans-2026-schedule",
+    "title": "WSOP Circuit Caesars New Orleans 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "sanremo-2026-schedule",
+    "title": "WSOP Circuit Casino Sanremo 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "cherokee-november-2026-schedule",
+    "title": "WSOP Circuit Harrah’s Cherokee November 2026 — official event page",
+    "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "mexico-santa-fe-hotel",
+    "title": "Barceló México Santa Fe — hotel and services",
+    "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/",
+    "kind": "travel",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "mexico-santa-fe-dining",
+    "title": "Barceló México Santa Fe — dining",
+    "url": "https://www.barcelo.com/en-ww/barcelo-mexico-santa-fe/cuisine/",
+    "kind": "travel",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "namur-megastack-2026-schedule",
+    "title": "PokerStars Live — BPC MegaStack Edition 2026",
+    "url": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "namur-megastack-2026-host",
+    "title": "Circus Poker — BPC MegaStack schedule",
+    "url": "https://www.circus-poker.com/en/news/290_belgian-poker-challenge-megastack-edition-the-big-event-to-kick-off-the-new-season",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "namur-venue",
+    "title": "Circus Casino Resort Namur — visitor information",
+    "url": "https://www.circus-poker.com/en/namur/contact",
+    "kind": "travel",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "sydney-festival-2026",
+    "title": "The Star Poker — WPT Australia festival 2026",
+    "url": "https://www.starpoker.com.au/wpt-australia",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "sydney-main-2026",
+    "title": "WPT Australia Championship 2026 — official details",
+    "url": "https://www.worldpokertour.com/event/main-tour-wpt-australia-championship-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "jacksonville-2026-schedule",
+    "title": "WPT bestbet Scramble Championship 2026 — official details",
+    "url": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026/details",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "jacksonville-2026-live",
+    "title": "WPT bestbet Scramble Championship 2026 — live updates",
+    "url": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "appt-korea-2026-schedule",
+    "title": "PokerStars Live — APPT Korea 2026",
+    "url": "https://www.pokerstarslive.com/appt/korea/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "wpt-seoul-2026-schedule",
+    "title": "WPT Seoul 2026 — official event details",
+    "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "wpt-seoul-2026-announcement",
+    "title": "WPT — Seoul festival at INSPIRE, 2026 announcement",
+    "url": "https://www.worldpokertour.com/article/world-poker-tour-makes-historic-debut-at-inspire-entertainment-resort-for-wpt-seoul",
+    "kind": "organizer",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "appt-manila-championship-2026-schedule",
+    "title": "PokerStars Live — APPT Manila Championship 2026",
+    "url": "https://www.pokerstarslive.com/appt/manilachampionship/",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "cambodia-2027-announcement",
+    "title": "WPT — Cambodia festival January 12–February 2, 2027",
+    "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship",
+    "kind": "organizer",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "cambodia-2027-main",
+    "title": "WPT Cambodia Championship 2027 — official event",
+    "url": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
+  },
+  {
+    "id": "cambodia-2027-prime",
+    "title": "WPT Prime Cambodia Championship 2027 — official event",
+    "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cambodia-championship-season-2027",
+    "kind": "schedule",
+    "checkedAt": "2026-09-07T05:15:28Z"
   }
 ]

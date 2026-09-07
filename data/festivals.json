@@ -23,7 +23,7 @@
     "sourceIds": [
       "virginia-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -196,7 +196,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -397,7 +397,7 @@
     "sourceIds": [
       "austin-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -577,7 +577,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -748,7 +748,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -911,7 +911,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1096,7 +1096,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1239,7 +1239,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1908,44 +1908,84 @@
   {
     "id": "sydney-2026",
     "slug": "wpt-prime-australia-championship-2026",
-    "name": "WPT Prime Australia Championship 2026",
-    "tour": "WPT Prime",
+    "name": "WPT Australia 2026",
+    "tour": "WPT",
     "destinationId": "australia/sydney",
-    "startDate": "2026-09-17",
-    "endDate": "2026-09-22",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-30",
     "timezone": "Australia/Sydney",
-    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "dateNote": "This overview now covers the full September 10–30 festival. The Prime Championship runs September 17–22 and the Main Tour Championship September 24–30; this is expanded coverage of the same edition, not an announced reschedule.",
     "venue": {
       "name": "The Star Sydney",
       "address": null,
       "url": "https://www.star.com.au/sydney"
     },
     "status": "scheduled",
-    "description": "WPT Prime comes to The Star Sydney in Sydney. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
-    "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
-    "registrationUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
-    "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
+    "description": "The Star Sydney brings the WPT Main Tour and WPT Prime together in one September festival. Compare the AUD 5,000 championship with the AUD 1,500 Prime Championship, then use the venue’s official festival page for the wider programme, player guide and hotel offers.",
+    "registration": "The venue requires guests to be at least 18, and WPT requires a verified player account. Follow The Star’s official funds-management and entry-purchasing guidance before arranging payment. Festival hotel offers are linked from the official page; check their current terms.",
+    "registrationUrl": "https://www.starpoker.com.au/wpt-australia",
+    "scheduleUrl": "https://www.starpoker.com.au/wpt-australia",
     "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
     "sourceIds": [
-      "sydney-schedule"
+      "sydney-festival-2026",
+      "sydney-schedule",
+      "sydney-main-2026"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Expanded this existing overview to the full September 10–30 WPT Australia festival, added the Main Tour championship and retained the Prime highlight and original URL."
       }
     ],
     "tournaments": [
       {
+        "id": "wpt-australia-championship",
+        "slug": "wpt-australia-championship",
+        "number": "wpt-australia-championship",
+        "name": "WPT Australia Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5000,
+          "currency": "AUD"
+        },
+        "fee": {
+          "amount": 500,
+          "currency": "AUD"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": "Day 1: 40 minutes; later days: 60 minutes.",
+        "reentry": "One re-entry per flight",
+        "lateRegistration": "Registration closes at the start of Level 10.",
+        "endDate": "2026-09-30",
+        "sessions": [
+          {
+            "id": "wpt-australia-championship-start-1",
+            "label": "Published start",
+            "date": "2026-09-24",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "sydney-main-2026"
+        ]
+      },
+      {
         "id": "championship",
         "slug": "championship",
         "number": "championship",
-        "name": "Championship",
+        "name": "WPT Prime Australia Championship",
         "game": "NLH",
-        "category": "main",
+        "category": "side",
         "buyIn": {
           "amount": 1500,
           "currency": "AUD"
@@ -1965,7 +2005,7 @@
             "id": "championship-start",
             "label": "Published start",
             "date": "2026-09-17",
-            "time": null,
+            "time": "14:30",
             "kind": "entry"
           }
         ],
@@ -2542,7 +2582,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-06T18:27:47.540764+00:00",
+    "checkedAt": "2026-09-07T05:15:28Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -2947,6 +2987,2120 @@
         ],
         "sourceIds": [
           "taipei-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "playground-super-2026",
+    "slug": "wsop-super-circuit-canada-2026",
+    "name": "WSOP Super Circuit Canada 2026",
+    "tour": "WSOP Super Circuit",
+    "destinationId": "canada/kahnawake",
+    "startDate": "2026-08-26",
+    "endDate": "2026-09-12",
+    "timezone": "America/Toronto",
+    "dateNote": "Main-event starting flights were September 3–5. The festival continues through September 12, with later side events listed by the organizer; this does not guarantee seats remain available.",
+    "venue": {
+      "name": "Playground",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/"
+    },
+    "status": "scheduled",
+    "description": "Playground’s Super Circuit combines a CAD 5,000 main event with lower-buy-in side events. The main starting flights have passed, while the published programme includes UltraStack and Mystery Bounty entries later in the festival.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "playground-super-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-7",
+        "slug": "event-7",
+        "number": "7",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5000,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 10000000,
+          "currency": "CAD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-7-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-03",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-7-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-04",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-7-start-3",
+            "label": "Published entry 3",
+            "date": "2026-09-05",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "playground-super-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-11",
+        "slug": "event-11",
+        "number": "11",
+        "name": "UltraStack",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000,
+          "currency": "CAD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-11-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-07",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-11-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-08",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-11-start-3",
+            "label": "Published entry 3",
+            "date": "2026-09-08",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "playground-super-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-14",
+        "slug": "event-14",
+        "number": "14",
+        "name": "Mystery Bounty",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 800,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 150000,
+          "currency": "CAD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-14-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-10",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-14-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-10",
+            "time": "15:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "playground-super-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tulsa-2026",
+    "slug": "wsop-circuit-hard-rock-tulsa-2026",
+    "name": "WSOP Circuit Hard Rock Tulsa 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/catoosa",
+    "startDate": "2026-08-26",
+    "endDate": "2026-09-07",
+    "timezone": "America/Chicago",
+    "dateNote": "The official festival ends September 7, but its published schedule lists no new starting event on September 7. Main-event flights were September 4–5; do not treat ongoing play as an open entry window.",
+    "venue": {
+      "name": "Hard Rock Hotel and Casino Tulsa",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-hard-rock-tulsa/"
+    },
+    "status": "scheduled",
+    "description": "The Hard Rock Tulsa Circuit stop is reaching its final listed day. This overview records the championship entry and venue for reference; the published starting flights have already passed.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-hard-rock-tulsa/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-hard-rock-tulsa/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "tulsa-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-14",
+        "slug": "event-14",
+        "number": "14",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-14-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-04",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-14-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-05",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "tulsa-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mexico-city-2026",
+    "slug": "wsop-circuit-mexico-city-2026",
+    "name": "WSOP Circuit Big Bola Casinos Mexico City 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "mexico/mexico-city",
+    "startDate": "2026-08-31",
+    "endDate": "2026-09-11",
+    "timezone": "America/Mexico_City",
+    "dateNote": null,
+    "venue": {
+      "name": "Barceló México Santa Fe Hotel",
+      "address": "Guillermo González Camarena 300, Santa Fe City Center, Mexico City",
+      "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/"
+    },
+    "status": "scheduled",
+    "description": "The Big Bola Casinos Circuit stop is held at the Barceló México Santa Fe hotel. The MXN 27,200 main event has several published starting days, alongside PLO and lower-buy-in side events. Staying at the host hotel keeps accommodation and play in the same property.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-big-bola-casinos-santa-fe-barcelo-mexico-santa-fe-hotel/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-big-bola-casinos-santa-fe-barcelo-mexico-santa-fe-hotel/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "mexico-city-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-6",
+        "slug": "event-6",
+        "number": "6",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 27200,
+          "currency": "MXN"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-6-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-05",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-06",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-3",
+            "label": "Published entry 3",
+            "date": "2026-09-07",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-4",
+            "label": "Published entry 4",
+            "date": "2026-09-08",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-5",
+            "label": "Published entry 5",
+            "date": "2026-09-08",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "mexico-city-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-9",
+        "slug": "event-9",
+        "number": "9",
+        "name": "PLO Championship",
+        "game": "PLO",
+        "category": "side",
+        "buyIn": {
+          "amount": 12800,
+          "currency": "MXN"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-9-start-1",
+            "label": "Published start",
+            "date": "2026-09-07",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "mexico-city-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-11",
+        "slug": "event-11",
+        "number": "11",
+        "name": "The Closer",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 8000,
+          "currency": "MXN"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-11-start-1",
+            "label": "Published start",
+            "date": "2026-09-10",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "mexico-city-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paris-2026",
+    "slug": "wsop-circuit-partouche-casino-club-2026",
+    "name": "WSOP Circuit Partouche Pasino Club Paris 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "france/paris",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-14",
+    "timezone": "Europe/Paris",
+    "dateNote": null,
+    "venue": {
+      "name": "Partouche Pasino Club",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-partouche-casino-club/"
+    },
+    "status": "scheduled",
+    "description": "The Paris Circuit stop pairs a EUR 1,500 main event with a EUR 300 Colossus and other side events. Compare the remaining published entry days, then use the official schedule for registration cutoffs and structures.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-partouche-casino-club/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-partouche-casino-club/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "paris-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-5",
+        "slug": "event-5",
+        "number": "5",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-5-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-06",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-5-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-10",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-5-start-3",
+            "label": "Published entry 3",
+            "date": "2026-09-11",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-5-start-4",
+            "label": "Published entry 4",
+            "date": "2026-09-12",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-5-start-5",
+            "label": "Published entry 5",
+            "date": "2026-09-12",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "paris-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "Colossus",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 300,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-3-start-1",
+            "label": "Published entry 1",
+            "date": "2026-09-07",
+            "time": "20:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-08",
+            "time": "20:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-3",
+            "label": "Published entry 3",
+            "date": "2026-09-09",
+            "time": "14:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-4",
+            "label": "Published entry 4",
+            "date": "2026-09-09",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "paris-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-8",
+        "slug": "event-8",
+        "number": "8",
+        "name": "Pot-Limit Omaha",
+        "game": "PLO",
+        "category": "side",
+        "buyIn": {
+          "amount": 500,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-8-start-1",
+            "label": "Published start",
+            "date": "2026-09-07",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "paris-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "southern-indiana-2026",
+    "slug": "wsop-circuit-caesars-southern-indiana-2026",
+    "name": "WSOP Circuit Caesars Southern Indiana 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/elizabeth",
+    "startDate": "2026-10-22",
+    "endDate": "2026-11-02",
+    "timezone": "America/Indiana/Indianapolis",
+    "dateNote": null,
+    "venue": {
+      "name": "Caesars Southern Indiana",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/"
+    },
+    "status": "scheduled",
+    "description": "Caesars Southern Indiana’s autumn Circuit programme includes a USD 1,700 main event with a USD 250,000 guarantee and a USD 500 Mini Main. Compare the two entry budgets before choosing which part of the festival to attend.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "southern-indiana-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-13",
+        "slug": "event-13",
+        "number": "13",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-13-start-1",
+            "label": "Published entry 1",
+            "date": "2026-10-30",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-13-start-2",
+            "label": "Published entry 2",
+            "date": "2026-10-31",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "southern-indiana-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 500,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-2-start-1",
+            "label": "Published entry 1",
+            "date": "2026-10-23",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-2",
+            "label": "Published entry 2",
+            "date": "2026-10-23",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-3",
+            "label": "Published entry 3",
+            "date": "2026-10-24",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-4",
+            "label": "Published entry 4",
+            "date": "2026-10-24",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "southern-indiana-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "madrid-2026",
+    "slug": "wsop-circuit-casino-gran-via-2026",
+    "name": "WSOP Circuit Casino Gran Vía 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "spain/madrid",
+    "startDate": "2026-10-23",
+    "endDate": "2026-11-02",
+    "timezone": "Europe/Madrid",
+    "dateNote": null,
+    "venue": {
+      "name": "Casino Gran Vía",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/"
+    },
+    "status": "scheduled",
+    "description": "Casino Gran Vía hosts an autumn Circuit stop in Madrid, with a EUR 1,500 main event and EUR 300 Mini Main. The lower buy-in belongs to the Mini Main, not the main championship.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "madrid-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-7",
+        "slug": "event-7",
+        "number": "7",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-7-start-1",
+            "label": "Published entry 1",
+            "date": "2026-10-28",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-7-start-2",
+            "label": "Published entry 2",
+            "date": "2026-10-29",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-7-start-3",
+            "label": "Published entry 3",
+            "date": "2026-10-30",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-7-start-4",
+            "label": "Published entry 4",
+            "date": "2026-10-30",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "madrid-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 300,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-1-start-1",
+            "label": "Published entry 1",
+            "date": "2026-10-23",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-2",
+            "label": "Published entry 2",
+            "date": "2026-10-23",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-3",
+            "label": "Published entry 3",
+            "date": "2026-10-24",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-4",
+            "label": "Published entry 4",
+            "date": "2026-10-24",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "madrid-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "durant-2026",
+    "slug": "wsop-circuit-choctaw-durant-october-2026",
+    "name": "WSOP Circuit Choctaw Durant October 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/durant",
+    "startDate": "2026-10-28",
+    "endDate": "2026-11-09",
+    "timezone": "America/Chicago",
+    "dateNote": null,
+    "venue": {
+      "name": "Choctaw Casino Resort",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/"
+    },
+    "status": "scheduled",
+    "description": "Choctaw Casino Resort hosts this WSOP stop in Durant. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "durant-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "toledo-2026",
+    "slug": "wsop-circuit-the-reserve-poker-club-2026",
+    "name": "WSOP Circuit The Reserve Poker Club 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/toledo",
+    "startDate": "2026-10-29",
+    "endDate": "2026-11-09",
+    "timezone": "America/New_York",
+    "dateNote": null,
+    "venue": {
+      "name": "The Reserve Poker Club",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/"
+    },
+    "status": "scheduled",
+    "description": "The Reserve Poker Club’s Toledo stop advertises a USD 1 million guarantee for its USD 1,700 main event. A separate USD 600 Mini Main carries its own USD 500,000 guarantee; these are individual event guarantees, not an estimate of the final prize pools.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "toledo-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-12",
+        "slug": "event-12",
+        "number": "12",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-12-start-1",
+            "label": "Published entry 1",
+            "date": "2026-11-05",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-12-start-2",
+            "label": "Published entry 2",
+            "date": "2026-11-06",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-12-start-3",
+            "label": "Published entry 3",
+            "date": "2026-11-07",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "toledo-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 500000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-2-start-1",
+            "label": "Published entry 1",
+            "date": "2026-10-29",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-2",
+            "label": "Published entry 2",
+            "date": "2026-10-30",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-3",
+            "label": "Published entry 3",
+            "date": "2026-10-30",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-4",
+            "label": "Published entry 4",
+            "date": "2026-10-31",
+            "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-2-start-5",
+            "label": "Published entry 5",
+            "date": "2026-10-31",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "toledo-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "playground-november-2026",
+    "slug": "wsop-circuit-canada-playground-2026",
+    "name": "WSOP Circuit Playground November 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "canada/kahnawake",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-17",
+    "timezone": "America/Toronto",
+    "dateNote": null,
+    "venue": {
+      "name": "Playground",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/"
+    },
+    "status": "scheduled",
+    "description": "Playground hosts this WSOP stop in Kahnawake. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "playground-november-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "scottsdale-2026",
+    "slug": "wsop-circuit-talking-stick-2026",
+    "name": "WSOP Circuit Talking Stick 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/scottsdale",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-16",
+    "timezone": "America/Phoenix",
+    "dateNote": null,
+    "venue": {
+      "name": "Talking Stick Resort Hotel",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/"
+    },
+    "status": "scheduled",
+    "description": "Talking Stick Resort Hotel hosts this WSOP stop in Scottsdale. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "scottsdale-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "elgin-2026",
+    "slug": "wsop-circuit-grand-victoria-2026",
+    "name": "WSOP Circuit Grand Victoria 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/elgin",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-16",
+    "timezone": "America/Chicago",
+    "dateNote": null,
+    "venue": {
+      "name": "Grand Victoria Casino",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/"
+    },
+    "status": "scheduled",
+    "description": "Grand Victoria’s November Circuit visit includes a USD 1,700 main event and a USD 400 Mini Main. Their published guarantees are USD 600,000 and USD 250,000 respectively; use the official schedule to choose a flight and check entry conditions.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
+    "scheduleCoverage": "A few published entry options, not the complete schedule. Some starting days may have passed; check the organizer’s current registration information before travelling.",
+    "sourceIds": [
+      "elgin-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-9",
+        "slug": "event-9",
+        "number": "9",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 600000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-9-start-1",
+            "label": "Published entry 1",
+            "date": "2026-11-12",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-9-start-2",
+            "label": "Published entry 2",
+            "date": "2026-11-13",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-9-start-3",
+            "label": "Published entry 3",
+            "date": "2026-11-14",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "elgin-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-2",
+        "slug": "event-2",
+        "number": "2",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-2-start-1",
+            "label": "Published start",
+            "date": "2026-11-05",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "elgin-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "panama-city-2026",
+    "slug": "wsop-circuit-panama-city-2026",
+    "name": "WSOP Circuit Panama City 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "panama/panama-city",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-15",
+    "timezone": "America/Panama",
+    "dateNote": null,
+    "venue": {
+      "name": "Sortis Hotel, Spa & Casino",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/"
+    },
+    "status": "scheduled",
+    "description": "Sortis Hotel, Spa & Casino hosts this WSOP stop in Panama City. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "panama-city-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "middelkerke-2026",
+    "slug": "wsop-circuit-casino-middelkerke-2026",
+    "name": "WSOP Circuit Casino Middelkerke 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "belgium/middelkerke",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-15",
+    "timezone": "Europe/Brussels",
+    "dateNote": null,
+    "venue": {
+      "name": "Casino Middelkerke Betfirst by Partouche",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/"
+    },
+    "status": "scheduled",
+    "description": "Casino Middelkerke Betfirst by Partouche hosts this WSOP stop in Middelkerke. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "middelkerke-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "new-orleans-2026",
+    "slug": "wsop-circuit-caesars-new-orleans-2026",
+    "name": "WSOP Circuit Caesars New Orleans 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/new-orleans",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-23",
+    "timezone": "America/Chicago",
+    "dateNote": null,
+    "venue": {
+      "name": "Caesars New Orleans",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/"
+    },
+    "status": "scheduled",
+    "description": "Caesars New Orleans hosts this WSOP stop in New Orleans. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "new-orleans-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "sanremo-2026",
+    "slug": "wsop-circuit-casino-sanremo-2026",
+    "name": "WSOP Circuit Casino Sanremo 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "italy/sanremo",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-30",
+    "timezone": "Europe/Rome",
+    "dateNote": null,
+    "venue": {
+      "name": "Casino Sanremo",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/"
+    },
+    "status": "scheduled",
+    "description": "Casino Sanremo hosts this WSOP stop in Sanremo. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "sanremo-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "cherokee-november-2026",
+    "slug": "wsop-circuit-harrah-s-cherokee-november-2026",
+    "name": "WSOP Circuit Harrah’s Cherokee November 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-states/cherokee",
+    "startDate": "2026-11-26",
+    "endDate": "2026-12-07",
+    "timezone": "America/New_York",
+    "dateNote": null,
+    "venue": {
+      "name": "Harrah’s Cherokee",
+      "address": null,
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/"
+    },
+    "status": "scheduled",
+    "description": "Harrah’s Cherokee hosts this WSOP stop in Cherokee. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "registration": null,
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "sourceIds": [
+      "cherokee-november-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "namur-megastack-2026",
+    "slug": "bpc-megastack-namur-2026",
+    "name": "BPC MegaStack Edition Namur 2026",
+    "tour": "Belgian Poker Challenge",
+    "destinationId": "belgium/namur",
+    "startDate": "2026-09-17",
+    "endDate": "2026-09-27",
+    "timezone": "Europe/Brussels",
+    "dateNote": null,
+    "venue": {
+      "name": "Circus Casino Resort Namur",
+      "address": "Avenue Baron de Moreau 1, 5000 Namur, Belgium",
+      "url": "https://www.circus-poker.com/en/namur/contact"
+    },
+    "status": "scheduled",
+    "description": "A lower-buy-in Belgian Poker Challenge edition centred on a EUR 400 main event. The festival also offers a EUR 200 Mini Main and main-event satellites, with a hotel and restaurant in the casino complex.",
+    "registration": "Players must be at least 21. The organizer specifies smart-casual dress and excludes caps, shorts, tracksuits, flip-flops and tank tops. Confirm identification, payment and late-entry rules before arrival.",
+    "registrationUrl": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
+    "scheduleUrl": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
+    "sourceIds": [
+      "namur-megastack-2026-schedule",
+      "namur-megastack-2026-host"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "number": "main",
+        "name": "MegaStack Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 400,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 300000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-27",
+        "sessions": [
+          {
+            "id": "main-start-1",
+            "label": "Published start",
+            "date": "2026-09-19",
+            "time": "15:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "namur-megastack-2026-host"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "number": "mini-main",
+        "name": "Mini Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 200,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 30000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-20",
+        "sessions": [
+          {
+            "id": "mini-main-start-1",
+            "label": "Published start",
+            "date": "2026-09-17",
+            "time": "19:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "namur-megastack-2026-host"
+        ]
+      },
+      {
+        "id": "main-qualifier",
+        "slug": "main-qualifier",
+        "number": "main-qualifier",
+        "name": "Main Event Qualifier",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 60,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-qualifier-start-1",
+            "label": "Published start",
+            "date": "2026-09-17",
+            "time": "21:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "namur-megastack-2026-host"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jacksonville-2026",
+    "slug": "wpt-bestbet-scramble-championship-2026",
+    "name": "WPT bestbet Scramble Championship 2026",
+    "tour": "WPT",
+    "destinationId": "united-states/jacksonville",
+    "startDate": "2026-09-04",
+    "endDate": "2026-09-09",
+    "timezone": "America/New_York",
+    "dateNote": "Dates cover the championship only, not the surrounding festival. The final Day 1 flight concluded September 6; ongoing Day 2 play does not mean new entries remain available.",
+    "venue": {
+      "name": "bestbet Jacksonville",
+      "address": "201 Monument Road, Jacksonville, FL 32225, United States",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026/details"
+    },
+    "status": "scheduled",
+    "description": "The USD 5,000 bestbet Scramble Championship is underway in Jacksonville. Its published starting flights have finished; this page records the championship’s dates and entry terms while play continues.",
+    "registration": "WPT requires a verified player account. The starting-flight entry window has passed; consult the official live updates for the remaining championship programme.",
+    "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026/details",
+    "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026/details",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
+    "sourceIds": [
+      "jacksonville-2026-schedule",
+      "jacksonville-2026-live"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "WPT bestbet Scramble Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5000,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 500,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": "60-minute levels",
+        "reentry": "Unlimited re-entry during the registration period.",
+        "lateRegistration": "Registration closes at the start of Level 9.",
+        "endDate": "2026-09-09",
+        "sessions": [
+          {
+            "id": "championship-start-1",
+            "label": "Published start",
+            "date": "2026-09-04",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "jacksonville-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "appt-korea-2026",
+    "slug": "appt-korea-2026",
+    "name": "APPT Korea 2026",
+    "tour": "APPT",
+    "destinationId": "south-korea/incheon",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-14",
+    "timezone": "Asia/Seoul",
+    "dateNote": null,
+    "venue": {
+      "name": "Paradise City",
+      "address": "186 Yeongjonghaeannam-ro 321beon-gil, Jung District, Incheon, South Korea",
+      "url": "https://www.pokerstarslive.com/appt/korea/"
+    },
+    "status": "scheduled",
+    "description": "APPT returns to Paradise City in Incheon with a KRW 1.8 million main event and lower-buy-in National, Mini Main and qualifying events. The main event starts later in the festival, so compare its dates with the side events when planning your stay.",
+    "registration": "Players must be 19 or older and bring a valid passport to create a Paradise casino card. The organizer describes the casino as foreigner-exclusive; verify your eligibility before travel. Events are subject to regulatory approval.",
+    "registrationUrl": "https://www.pokerstarslive.com/appt/korea/",
+    "scheduleUrl": "https://www.pokerstarslive.com/appt/korea/",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
+    "sourceIds": [
+      "appt-korea-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "number": "main",
+        "name": "APPT Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1800000,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000000,
+          "currency": "KRW"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-14",
+        "sessions": [
+          {
+            "id": "main-start-1",
+            "label": "Published start",
+            "date": "2026-09-10",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-korea-2026-schedule"
+        ]
+      },
+      {
+        "id": "national",
+        "slug": "national",
+        "number": "national",
+        "name": "APPT National",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 1200000,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000000,
+          "currency": "KRW"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-10",
+        "sessions": [
+          {
+            "id": "national-start-1",
+            "label": "Published start",
+            "date": "2026-09-07",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-korea-2026-schedule"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "number": "mini-main",
+        "name": "APPT Mini Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 850000,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000000,
+          "currency": "KRW"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-14",
+        "sessions": [
+          {
+            "id": "mini-main-start-1",
+            "label": "Published start",
+            "date": "2026-09-13",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-korea-2026-schedule"
+        ]
+      },
+      {
+        "id": "main-qualifier",
+        "slug": "main-qualifier",
+        "number": "main-qualifier",
+        "name": "Main Event Mega Qualifier",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 350000,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-qualifier-start-1",
+            "label": "Published start",
+            "date": "2026-09-09",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-korea-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wpt-seoul-2026",
+    "slug": "wpt-seoul-2026",
+    "name": "WPT Seoul 2026",
+    "tour": "WPT Special Event",
+    "destinationId": "south-korea/incheon",
+    "startDate": "2026-10-30",
+    "endDate": "2026-11-09",
+    "timezone": "Asia/Seoul",
+    "dateNote": "Festival dates are October 30–November 9. The main event runs November 5–9 at INSPIRE in Incheon.",
+    "venue": {
+      "name": "YY Poker Club at INSPIRE Entertainment Resort",
+      "address": null,
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026"
+    },
+    "status": "scheduled",
+    "description": "Despite the Seoul event name, this WPT special event is held at INSPIRE in Incheon. The festival runs October 30–November 9, with a KRW 1.75 million main event beginning November 5 and a KRW 1 billion guarantee.",
+    "registration": "This licensed WPT special event is presented by Khartes and does not award WPT Player of the Year points. Check the official organizer’s current eligibility, identification and payment requirements before travelling.",
+    "registrationUrl": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026",
+    "scheduleUrl": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
+    "sourceIds": [
+      "wpt-seoul-2026-schedule",
+      "wpt-seoul-2026-announcement"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "number": "main",
+        "name": "WPT Seoul Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1750000,
+          "currency": "KRW"
+        },
+        "fee": {
+          "amount": 175000,
+          "currency": "KRW"
+        },
+        "guarantee": {
+          "amount": 1000000000,
+          "currency": "KRW"
+        },
+        "startingStack": "40,000",
+        "levels": "Day 1: 40 minutes; Day 2 onward: 60 minutes; heads-up: 30 minutes.",
+        "reentry": "Re-entry is available in each flight until registration closes.",
+        "lateRegistration": "Registration closes at the start of Level 10 on each Day 1.",
+        "endDate": "2026-11-09",
+        "sessions": [
+          {
+            "id": "main-start-1",
+            "label": "Published start",
+            "date": "2026-11-05",
+            "time": "11:30",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "wpt-seoul-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "appt-manila-championship-2026",
+    "slug": "appt-manila-championship-2026",
+    "name": "APPT Manila Championship 2026",
+    "tour": "APPT",
+    "destinationId": "philippines/manila",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-19",
+    "timezone": "Asia/Manila",
+    "dateNote": null,
+    "venue": {
+      "name": "Coral Lounge at Okada Manila",
+      "address": "New Seaside Drive, Entertainment City, Parañaque 1701, Metro Manila, Philippines",
+      "url": "https://www.pokerstarslive.com/appt/manilachampionship/"
+    },
+    "status": "scheduled",
+    "description": "Okada Manila hosts a broad APPT programme, from the PHP 3,500 kickoff to the PHP 165,000 championship. The championship’s PHP 60 million guarantee applies to that event; the National and Mini Championship have separate buy-ins and guarantees.",
+    "registration": "The organizer lists a minimum age of 21 and casual dress. Follow its buy-in guidance to confirm identification, payment options and entry deadlines.",
+    "registrationUrl": "https://www.pokerstarslive.com/appt/manilachampionship/",
+    "scheduleUrl": "https://www.pokerstarslive.com/appt/manilachampionship/",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
+    "sourceIds": [
+      "appt-manila-championship-2026-schedule"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "number": "championship",
+        "name": "APPT Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 165000,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 60000000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-19",
+        "sessions": [
+          {
+            "id": "championship-start-1",
+            "label": "Published start",
+            "date": "2026-10-15",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-manila-championship-2026-schedule"
+        ]
+      },
+      {
+        "id": "national",
+        "slug": "national",
+        "number": "national",
+        "name": "APPT National",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 30000,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 8000000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-12",
+        "sessions": [
+          {
+            "id": "national-start-1",
+            "label": "Published start",
+            "date": "2026-10-11",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-manila-championship-2026-schedule"
+        ]
+      },
+      {
+        "id": "kickoff",
+        "slug": "kickoff",
+        "number": "kickoff",
+        "name": "Okada Kickoff Marathon",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 3500,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 750000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-08",
+        "sessions": [
+          {
+            "id": "kickoff-start-1",
+            "label": "Published start",
+            "date": "2026-10-08",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-manila-championship-2026-schedule"
+        ]
+      },
+      {
+        "id": "mini-championship",
+        "slug": "mini-championship",
+        "number": "mini-championship",
+        "name": "APPT Mini Championship",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 35000,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 3000000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-19",
+        "sessions": [
+          {
+            "id": "mini-championship-start-1",
+            "label": "Published start",
+            "date": "2026-10-18",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "appt-manila-championship-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cambodia-2027",
+    "slug": "wpt-cambodia-2027",
+    "name": "WPT Cambodia 2027",
+    "tour": "WPT",
+    "destinationId": "cambodia/phnom-penh",
+    "startDate": "2027-01-12",
+    "endDate": "2027-02-02",
+    "timezone": "Asia/Phnom_Penh",
+    "dateNote": "Dates cover the full January 12–February 2 festival. Buy-in currency and fee details are still being verified, so numeric prices are not yet shown here.",
+    "venue": {
+      "name": "NagaWorld Integrated Resort",
+      "address": null,
+      "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship"
+    },
+    "status": "scheduled",
+    "description": "WPT opens its 2027 season with a combined festival at NagaWorld in Phnom Penh. Prime runs January 22–26, followed by the Main Tour championship January 27–February 1. Plan around the championship you intend to play; the whole festival spans a longer window.",
+    "registration": "Use the official championship pages and linked player guide for current registration and hotel information. Confirm the payment currency and full entry cost directly before committing to the trip.",
+    "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
+    "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
+    "sourceIds": [
+      "cambodia-2027-announcement",
+      "cambodia-2027-main",
+      "cambodia-2027-prime"
+    ],
+    "checkedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-07T05:15:28Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-07T05:15:28Z",
+        "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "number": "main",
+        "name": "WPT Cambodia Championship",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": null,
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-02-01",
+        "sessions": [
+          {
+            "id": "main-start-1",
+            "label": "Published start",
+            "date": "2027-01-27",
+            "time": "11:30",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "cambodia-2027-main"
+        ]
+      },
+      {
+        "id": "prime",
+        "slug": "prime",
+        "number": "prime",
+        "name": "WPT Prime Cambodia Championship",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": null,
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-26",
+        "sessions": [
+          {
+            "id": "prime-start-1",
+            "label": "Published start",
+            "date": "2027-01-22",
+            "time": "11:30",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "cambodia-2027-prime"
         ]
       }
     ]
