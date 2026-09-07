@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Festival, Destination, TravelItem } from "@/lib/guide-types";
 import { sourcesFor, destinationById } from "@/lib/guide-data";
-import { buyInRange, dateRange, formatDate, isStale, mainEvent, money, statusOf } from "@/lib/guide-utils";
+import { formatDate } from "@/lib/guide-utils";
+import { FestivalCardView } from "./festival-card";
 
 export function ExternalLink({ href, children, className = "" }: { href: string; children: ReactNode; className?: string }) {
   return <a href={href} className={className} target="_blank" rel="noopener noreferrer">{children}<span aria-hidden="true"> ↗</span></a>;
@@ -10,24 +11,8 @@ export function ExternalLink({ href, children, className = "" }: { href: string;
 export function SectionTitle({ number, eyebrow, title, children }: { number: string; eyebrow: string; title: string; children?: ReactNode }) {
   return <div className="section-heading"><div><p className="eyebrow"><span>{number}</span> {eyebrow}</p><h2>{title}</h2></div>{children}</div>;
 }
-export function Status({ festival }: { festival: Festival }) {
-  const state = statusOf(festival);
-  return <span className={`status ${state}`}><i />{state === "ongoing" ? "Happening now" : state === "upcoming" ? "Upcoming" : state[0].toUpperCase() + state.slice(1)}</span>;
-}
-export function FestivalCard({ festival: f }: { festival: Festival }) {
-  const d = destinationById(f.destinationId), main = mainEvent(f);
-  const archived = statusOf(f) === "ended";
-  return <article className="festival-card">
-    <div className="card-top"><span className="tour">{f.tour}</span><Status festival={f} /></div>
-    <p className="card-location">{d.city}<span> / {d.country}</span></p>
-    <h3><Link href={`/tournaments/${f.slug}`}>{f.name}</Link></h3>
-    <p className="card-date">{dateRange(f.startDate, f.endDate)}</p>
-    <p className="card-venue">{f.venue.name}</p>
-    <div className="card-values"><div><span>MAIN EVENT</span><strong>{main ? money(main.buyIn) : archived ? "Not confirmed" : "To be confirmed"}</strong></div><div><span>HIGHLIGHTS</span><strong>{f.tournaments.length || (archived ? "None recorded" : "Pending")}</strong></div></div>
-    <div className="card-bottom"><span>{archived && !f.tournaments.some(t=>t.category!=="satellite"&&t.buyIn) ? "No confirmed buy-ins" : buyInRange(f)}<small>Highlighted buy-ins · satellites excluded</small></span><Link aria-label={`View ${f.name}`} href={`/tournaments/${f.slug}`}>↗</Link></div>
-    {(f.reviewNote || isStale(f)) && <p className="card-warning">{f.reviewNote ? "Source discrepancy noted" : "Recheck due · see sources"}</p>}
-  </article>;
-}
+export { FestivalStatus as Status } from "./festival-card";
+export function FestivalCard({ festival }: { festival: Festival }) { return <FestivalCardView festival={festival} destination={destinationById(festival.destinationId)}/>; }
 export function FestivalGrid({ items }: { items: Festival[] }) {
   return items.length ? <div className="festival-grid">{items.map(f => <FestivalCard key={f.id} festival={f} />)}</div> : <div className="empty-state"><span>♧</span><h2>No matching festivals</h2><p>Try a wider date range, another currency or a different destination.</p><Link className="button" href="/tournaments">Clear filters</Link></div>;
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SaveButton } from "@/components/save-button";
 import { notFound } from "next/navigation";
 import { festivals, festivalBySlug, destinationById, sourcesFor } from "@/lib/guide-data";
 import { pageMeta, SITE_URL } from "@/lib/site";
@@ -20,7 +21,7 @@ export default async function FestivalPage({params}:Props){
   const contentUpdated=[f.updatedAt,d.updatedAt].sort().at(-1)!;
   return <main id="main" className="container page"><Breadcrumbs items={[{label:"Tournaments",href:"/tournaments"},{label:f.name}]}/>
   <FestivalLifecycleNotice festival={f} archived={archived} next={nextEditionOf(f,festivals)} previous={festivals.find(candidate=>candidate.id===f.previousEditionId)}/>
-  <div className="detail-hero"><div><p className="eyebrow">{f.tour} / {d.country}</p><h1>{f.name}</h1><p className="detail-intro">{f.description}</p><div className="detail-location"><span>⌖ {d.city}, {d.country}</span><Status festival={f}/></div></div><div className="hero-summary"><span className="eyebrow">AT A GLANCE</span><strong>{dateRange(f.startDate,f.endDate)}</strong><p>{f.venue.name}</p><div><span>MAIN EVENT BUY-IN</span><strong>{money(main?.buyIn)}</strong></div><a href="#official" className="button">{archived?"Official sources ↗":"Official entry points ↗"}</a></div></div>
+  <div className="detail-hero"><div><p className="eyebrow">{f.tour} / {d.country}</p><h1>{f.name}</h1><div className="detail-save"><SaveButton festivalId={f.id} name={f.name}/></div><p className="detail-intro">{f.description}</p><div className="detail-location"><span>⌖ {d.city}, {d.country}</span><Status festival={f}/></div></div><div className="hero-summary"><span className="eyebrow">AT A GLANCE</span><strong>{dateRange(f.startDate,f.endDate)}</strong><p>{f.venue.name}</p><div><span>MAIN EVENT BUY-IN</span><strong>{money(main?.buyIn)}</strong></div><a href="#official" className="button">{archived?"Official sources ↗":"Official entry points ↗"}</a></div></div>
   <div className="verification-bar"><span>Source checked <strong>{formatDate(f.checkedAt.slice(0,10),true)}</strong></span><span>Information updated {formatDate(contentUpdated.slice(0,10),true)}</span><span className={stale?"warning-text":""}>{archived?"Archived · not routinely rechecked":stale?"Recheck due":"Sources linked below"}</span></div>
   {f.reviewNote && <p className="notice"><strong>Source discrepancy:</strong> {f.reviewNote}</p>}
   {f.dateNote && <p className="notice">{f.dateNote}</p>}

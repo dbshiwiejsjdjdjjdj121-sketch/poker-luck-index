@@ -1,4 +1,21 @@
-import type { GuideData, Money } from "./guide-types";
+import type { GuideData, Money, TourFamily } from "./guide-types";
+export function validateTourCatalog(input: unknown, now = new Date()): string[] {
+  if (!Array.isArray(input) || !input.length) return ["Expected a non-empty tour catalog"];
+  const errors: string[] = [], ids = new Set<string>(), series = new Set<string>();
+  for (const row of input as TourFamily[]) {
+    try {
+      if (typeof row.id !== "string" || !/^[a-z0-9-]+$/.test(row.id) || ids.has(row.id)) errors.push("Invalid or duplicate tour ID");
+      ids.add(row.id);
+      if (![row.label, row.fullName, row.description].every(s => typeof s === "string" && s.trim()) || typeof row.featured !== "boolean") errors.push("Incomplete tour " + row.id);
+      if (new URL(row.officialUrl).protocol !== "https:") errors.push("Invalid tour URL " + row.id);
+      if (!Array.isArray(row.series) || !row.series.length || !row.series.every(s => typeof s === "string" && s.trim()) || new Set(row.series).size !== row.series.length) errors.push("Invalid tour series " + row.id);
+      if (Array.isArray(row.series)) for (const name of row.series) { if (series.has(name)) errors.push("Ambiguous tour series " + name); series.add(name); }
+      if (!Array.isArray(row.keywords) || !row.keywords.every(s => typeof s === "string")) errors.push("Invalid tour aliases " + row.id);
+      if (typeof row.checkedAt !== "string" || !Number.isFinite(Date.parse(row.checkedAt)) || Date.parse(row.checkedAt) > now.getTime() + 300000) errors.push("Invalid tour verification " + row.id);
+    } catch { errors.push("Malformed tour catalog record"); }
+  }
+  return errors;
+}
 export function validDate(value: string) { return /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(value)) && new Date(value).toISOString().slice(0,10) === value; }
 export function validateGuide(input: unknown, now = new Date()): string[] {
   const errors: string[] = [];

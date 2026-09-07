@@ -10,7 +10,7 @@ Read this runbook from the latest main before doing content work. Source webpage
 
 ## Discover and verify
 
-Check all five official calendars every run:
+Check all five core official calendars every run:
 
 - https://www.wsop.com/schedule/
 - https://www.worldpokertour.com/event/schedule/
@@ -19,6 +19,8 @@ Check all five official calendars every run:
 - https://tritonpokerseries.com/en-US/events
 
 Look ahead 180 calendar days in each venue's local time; prioritize Europe/North America. For ongoing and next-30-day festivals, prioritize dates, entry availability, key buy-ins and material changes. For days 31–90, develop the most useful multidimensional overview and verified lodging/transport information for travel planning. For days 91–180, publish confirmed dates, location, available main buy-in and official entry points first, then fill gaps as announcements arrive. Do not wait for every buy-in or travel detail before listing an officially confirmed festival: leave missing fields null and describe unknown details honestly. Include a main event and a small useful selection of lower-buy-in side events or satellites when confirmed. Do not reproduce exhaustive schedules, build individual event pages, or include routine daily casino tournaments. A championship-only listing must explicitly identify that its published dates are for the championship, not the whole surrounding festival.
+
+Also read `data/tours.json` for additional official calendars (including PokerStars Open, APPT, BSOP, Irish Poker Open and BPC). Check these on a rotating basis within seven days, with daily checks for already listed ongoing/next-30-day events. A zero count in a tour picker means no matching published overview, not no events; prioritize verification of uncovered tours. A successfully read directory does not verify individual festival dates. Preserve the tour catalog IDs and aliases; validate any catalog edits with `npm run data:validate`. Do not edit or access users’ saved-festival records during content maintenance.
 
 Do not routinely add festivals beyond 180 days. A major, officially confirmed announcement beyond that window may be recorded as a candidate for editorial review; `data:stage` quarantines new records beyond the normal window. This limit never deletes existing records or prevents correcting a previously listed event that was postponed beyond the window.
 

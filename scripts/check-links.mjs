@@ -2,7 +2,8 @@ import {fetch} from "./network.mjs";
 import {readFileSync,writeFileSync} from "node:fs";
 const sources=JSON.parse(readFileSync("data/sources.json","utf8"));
 const festivals=JSON.parse(readFileSync("data/festivals.json","utf8"));
-const urls=[...new Set([...sources.map(s=>s.url),...festivals.flatMap(f=>[f.registrationUrl,f.scheduleUrl,f.venue.url].filter(Boolean))])];
+const tours=JSON.parse(readFileSync("data/tours.json","utf8"));
+const urls=[...new Set([...tours.map(t=>t.officialUrl),...sources.map(s=>s.url),...festivals.flatMap(f=>[f.registrationUrl,f.scheduleUrl,f.venue.url].filter(Boolean))])];
 const results=[];let index=0;
 await Promise.all(Array.from({length:4},async()=>{while(index<urls.length){const url=urls[index++];try{
  const r=await fetch(url,{signal:AbortSignal.timeout(18000),headers:{"User-Agent":"ALL-IN-Poker-Guide-Link-Check/1.0"}});

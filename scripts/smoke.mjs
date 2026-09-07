@@ -5,7 +5,7 @@ const base=process.argv[2] || "http://127.0.0.1:3000";
 const preview=process.argv.includes("--preview");
 const festivals=JSON.parse(readFileSync("data/festivals.json","utf8"));
 const places=JSON.parse(readFileSync("data/destinations.json","utf8"));
-const paths=["/","/tournaments","/destinations","/about","/privacy","/terms","/account",...festivals.map(f=>"/tournaments/"+f.slug),...places.map(d=>"/destinations/"+d.id),...new Set(places.map(d=>"/destinations/"+d.countrySlug))];
+const paths=["/","/tournaments","/destinations","/about","/privacy","/terms","/account","/saved",...festivals.map(f=>"/tournaments/"+f.slug),...places.map(d=>"/destinations/"+d.id),...new Set(places.map(d=>"/destinations/"+d.countrySlug))];
 const headers={"User-Agent":"Googlebot"};
 if(process.env.VERCEL_AUTOMATION_BYPASS_SECRET)headers["x-vercel-protection-bypass"]=process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 async function get(path){const r=await fetch(base+path,{headers,signal:AbortSignal.timeout(60000)});return {r,html:await r.text()};}
@@ -15,7 +15,7 @@ for(const path of paths){
  assert.match(html,/<html[^>]*lang="en"/,path);assert.match(html,/<title>[^<]+<\/title>/,path);
  assert.match(html,/<meta name="description" content="[^"]+"/,path);
  assert.ok(html.includes(`rel="canonical" href="https://www.allinpokerai.com${path==="/"?"":path}"`)||html.includes(`rel="canonical" href="https://www.allinpokerai.com${path}"`),"canonical "+path);
- if(preview||path==="/account")assert.match(html,/<meta name="robots" content="noindex/,path);
+ if(preview||path==="/account"||path==="/saved")assert.match(html,/<meta name="robots" content="noindex/,path);
  if(path.startsWith("/tournaments/")){
   const events=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1])).filter(o=>o["@type"]==="Event");
   assert.equal(events.length,1,path);assert.ok(events[0].startDate&&events[0].location);
@@ -28,13 +28,19 @@ for(const path of ["/api/subscription-status","/api/bankroll-records","/api/hand
 const filtered=await get("/tournaments?q=NO-SUCH-FESTIVAL-TEST&currency=EUR&max=1");
 assert.match(filtered.html,/No matching festivals/);assert.match(filtered.html,/<meta name="robots" content="noindex/);
 assert.ok(filtered.html.includes('href="/tournaments"'));
+const tour=await get("/tournaments?brand=wsop");
+assert.match(tour.html,/World Series of Poker/);assert.match(tour.html,/WSOP Circuit/);assert.match(tour.html,/WSOP Super Circuit/);assert.match(tour.html,/<meta name="robots" content="noindex/);
+const triton=await get("/tournaments?brand=triton");assert.match(triton.html,/Triton/);assert.match(triton.html,/Official calendar/);
+for(const [path,method] of [["/api/saved","GET"],["/api/saved/virginia-2026","PUT"],["/api/saved/virginia-2026","DELETE"]]){
+ const response=await fetch(base+path,{method,headers});assert.equal(response.status,401);assert.match(response.headers.get("cache-control"),/no-store/);assert.ok((await response.json()).error);
+}
 const archive=await get("/tournaments?status=ended");
 assert.equal(archive.r.status,200);
 assert.match(archive.html,/Past editions are kept for reference/);
 assert.match(archive.html,/Most recent first/);
 assert.match(archive.html,/<meta name="robots" content="noindex/);
 const sitemap=(await get("/sitemap.xml")).html;
-assert.ok(!sitemap.includes("/account")&&!sitemap.includes("/tournaments?"));
+assert.ok(!sitemap.includes("/account")&&!sitemap.includes("/saved")&&!sitemap.includes("/tournaments?"));
 for(const f of festivals)assert.ok(sitemap.includes("/tournaments/"+f.slug));
 for(const d of places)assert.equal(sitemap.includes("/destinations/"+d.id+"<"),Boolean(d.indexable));
 const robots=(await get("/robots.txt")).html;assert.ok(robots.includes(preview?"Disallow: /\n":"Sitemap: https://www.allinpokerai.com/sitemap.xml"));

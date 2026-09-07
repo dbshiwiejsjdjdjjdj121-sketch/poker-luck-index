@@ -1,4 +1,5 @@
 import type { Festival, Filters, Money, Tournament } from "./guide-types";
+import { matchesSeries, matchesTourFamily, tourSearchText } from "./tour-catalog";
 
 export function localToday(timezone: string, now = new Date()) {
   return new Intl.DateTimeFormat("en-CA", { timeZone: timezone, year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
@@ -67,8 +68,9 @@ export function filterFestivals(festivals: Festival[], filters: Filters, cityNam
     else if (filters.status !== "all" && state !== filters.status) return false;
     if (filters.country && !f.destinationId.startsWith(filters.country + "/")) return false;
     if (filters.city && f.destinationId !== filters.city) return false;
-    if (filters.tour && f.tour !== filters.tour) return false;
-    if (filters.q && !`${f.name} ${f.venue.name} ${dest}`.toLowerCase().includes(filters.q.trim().toLowerCase())) return false;
+    if (filters.brand && !matchesTourFamily(f, filters.brand)) return false;
+    if (filters.tour && !matchesSeries(f, filters.tour)) return false;
+    if (filters.q && !`${f.name} ${f.venue.name} ${dest} ${tourSearchText(f)}`.toLowerCase().includes(filters.q.trim().toLowerCase())) return false;
     if (filters.from && f.endDate < filters.from) return false;
     if (filters.to && f.startDate > filters.to) return false;
     if (filters.game || filters.currency || (filters.currency && (filters.min || filters.max))) {

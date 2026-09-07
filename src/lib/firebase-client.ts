@@ -3,6 +3,7 @@
 import { getApp, getApps, initializeApp, type FirebaseApp } from "firebase/app";
 import {
   getAuth,
+  connectAuthEmulator,
   onAuthStateChanged,
   setPersistence,
   browserLocalPersistence,
@@ -49,7 +50,14 @@ export function getFirebaseClientApp() {
 }
 
 export function getFirebaseClientAuth() {
-  return getAuth(getFirebaseClientApp());
+  const auth = getAuth(getFirebaseClientApp());
+  const emulator = process.env.NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_URL;
+  if (process.env.NODE_ENV === "development" && emulator && !auth.emulatorConfig) {
+    const url = new URL(emulator);
+    if (url.protocol !== "http:" || !["localhost", "127.0.0.1"].includes(url.hostname)) throw new Error("Use a local authentication emulator.");
+    connectAuthEmulator(auth, url.origin);
+  }
+  return auth;
 }
 
 export async function ensureFirebaseAuthPersistence() {

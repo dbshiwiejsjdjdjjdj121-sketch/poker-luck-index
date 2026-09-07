@@ -28,4 +28,5 @@ export type Destination = {
   updatedAt: string;
 };
 export type GuideData = { festivals: Festival[]; destinations: Destination[]; sources: Source[] };
-export type Filters = { q?: string; from?: string; to?: string; country?: string; city?: string; tour?: string; game?: string; currency?: string; min?: string; max?: string; status?: string };
+export type TourFamily = { id: string; label: string; fullName: string; series: string[]; keywords: string[]; officialUrl: string; featured: boolean; description: string; checkedAt: string };
+export type Filters = { q?: string; from?: string; to?: string; country?: string; city?: string; brand?: string; tour?: string; game?: string; currency?: string; min?: string; max?: string; status?: string };

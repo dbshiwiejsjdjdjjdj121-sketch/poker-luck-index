@@ -9,8 +9,12 @@ Public content requires no login. Only email-code authentication remains. No ban
 - Publish one concise, multidimensional festival overview with official entry points at the bottom. Tournament/session types represent selected highlights only; do not reproduce full schedules or create individual event pages. Preserve stable IDs and year-specific URLs through reschedules.
 - Never infer missing buy-ins, end dates, times, guarantees, tax rates or hotel prices. Preserve nulls.
 - Attribute facts to successfully read primary sources. checkedAt records verification; updatedAt records substantive changes.
-- Do not delete remote Firebase records or accounts. Firebase and the existing email service serve email-code authentication only.
+- Do not delete remote Firebase records or accounts. Firebase serves email-code authentication and private saved-festival records. The email service is used only for sign-in codes.
 - Do not introduce paid APIs, data providers or a new database without an explicit request.
+
+## Saved festivals and tour discovery
+- Saved festivals require email sign-in, are private to the verified user, and sync through server-only `guideSavedFestivals` documents in the existing Firestore database. Never accept a user ID from a request. Preserve ended saves and stable festival IDs.
+- Tour families and official calendar links live in `data/tours.json`. Keep major tour choices visible even with zero listed festivals; directory counts describe our coverage, not all events worldwide. Preserve legacy exact-series URLs alongside `brand` filters.
 
 ## Maintenance
 Read docs/daily-maintenance.md before daily content work. Daily runs may change data/ and reports/maintenance/ only.
