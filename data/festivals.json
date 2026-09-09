@@ -23,7 +23,7 @@
     "sourceIds": [
       "virginia-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -196,7 +196,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -397,7 +397,7 @@
     "sourceIds": [
       "austin-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -577,7 +577,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -748,7 +748,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -911,7 +911,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1096,7 +1096,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1239,7 +1239,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1931,7 +1931,7 @@
       "sydney-schedule",
       "sydney-main-2026"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -2039,13 +2039,17 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Added the organizer’s published October 8 championship start time, 12:15 local time."
       }
     ],
     "tournaments": [
@@ -2078,7 +2082,7 @@
             "id": "championship-start",
             "label": "Published start",
             "date": "2026-10-08",
-            "time": null,
+            "time": "12:15",
             "kind": "entry"
           }
         ],
@@ -2582,7 +2586,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -3007,7 +3011,7 @@
       "url": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/"
     },
     "status": "scheduled",
-    "description": "Playground’s Super Circuit combines a CAD 5,000 main event with lower-buy-in side events. The main starting flights have passed, while the published programme includes UltraStack and Mystery Bounty entries later in the festival.",
+    "description": "Playground’s Super Circuit combines a CAD 5,000 main event with lower-buy-in side events. Main-event starting flights were September 3–5. Later entry options include the CAD 800 Mystery Bounty on September 10 and CAD 500 Series Saver on September 12.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
@@ -3015,13 +3019,17 @@
     "sourceIds": [
       "playground-super-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Added the September 12 Series Saver and highlighted the remaining Mystery Bounty and Series Saver entries."
       }
     ],
     "tournaments": [
@@ -3161,6 +3169,40 @@
         "sourceIds": [
           "playground-super-2026-schedule"
         ]
+      },
+      {
+        "id": "event-18",
+        "slug": "event-18",
+        "number": "18",
+        "name": "Series Saver",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 500,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 50000,
+          "currency": "CAD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-18-start-1",
+            "date": "2026-09-12",
+            "time": "18:00",
+            "label": "Published start",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "playground-super-2026-schedule"
+        ]
       }
     ]
   },
@@ -3247,14 +3289,14 @@
     "startDate": "2026-08-31",
     "endDate": "2026-09-11",
     "timezone": "America/Mexico_City",
-    "dateNote": null,
+    "dateNote": "The festival continues through September 11. Listed starting times do not guarantee seats remain available; confirm registration with the organizer.",
     "venue": {
       "name": "Barceló México Santa Fe Hotel",
       "address": "Guillermo González Camarena 300, Santa Fe City Center, Mexico City",
       "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/"
     },
     "status": "scheduled",
-    "description": "The Big Bola Casinos Circuit stop is held at the Barceló México Santa Fe hotel. The MXN 27,200 main event has several published starting days, alongside PLO and lower-buy-in side events. Staying at the host hotel keeps accommodation and play in the same property.",
+    "description": "The Big Bola Casinos Circuit stop is held at the Barceló México Santa Fe hotel. Main-event starting flights were September 5–8; later options include the MXN 8,000 Closer on September 10 and MXN 4,800 Ring Turbo Deepstack on September 11.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-big-bola-casinos-santa-fe-barcelo-mexico-santa-fe-hotel/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-big-bola-casinos-santa-fe-barcelo-mexico-santa-fe-hotel/",
@@ -3262,13 +3304,17 @@
     "sourceIds": [
       "mexico-city-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Added the second September 10 Closer flight and the September 11 Ring Turbo Deepstack; clarified that main-event starting flights have passed."
       }
     ],
     "tournaments": [
@@ -3383,9 +3429,47 @@
         "sessions": [
           {
             "id": "event-11-start-1",
-            "label": "Published start",
+            "label": "Published entry 1",
             "date": "2026-09-10",
             "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-11-start-2",
+            "label": "Published entry 2",
+            "date": "2026-09-10",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "mexico-city-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-12",
+        "slug": "event-12",
+        "number": "12",
+        "name": "Ring Turbo Deepstack",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 4800,
+          "currency": "MXN"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-12-start-1",
+            "date": "2026-09-11",
+            "time": "12:00",
+            "label": "Published start",
             "kind": "entry"
           }
         ],
@@ -3419,7 +3503,7 @@
     "sourceIds": [
       "paris-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4411,13 +4495,17 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Added the two-player TAG TEAM Championship on September 22–23; the listed €300 buy-in is per team."
       }
     ],
     "tournaments": [
@@ -4519,6 +4607,44 @@
         "sourceIds": [
           "namur-megastack-2026-host"
         ]
+      },
+      {
+        "id": "tag-team-championship",
+        "slug": "tag-team-championship",
+        "number": "tag-team-championship",
+        "name": "TAG TEAM Championship — €300 per two-player team",
+        "game": "NLH · Tag team",
+        "category": "side",
+        "buyIn": {
+          "amount": 300,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-23",
+        "sessions": [
+          {
+            "id": "tag-team-championship-start-1",
+            "date": "2026-09-22",
+            "time": "18:00",
+            "label": "Day 1",
+            "kind": "entry"
+          },
+          {
+            "id": "tag-team-championship-start-2",
+            "date": "2026-09-23",
+            "time": "14:00",
+            "label": "Day 2",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "namur-megastack-2026-host"
+        ]
       }
     ]
   },
@@ -4547,7 +4673,7 @@
       "jacksonville-2026-schedule",
       "jacksonville-2026-live"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4620,7 +4746,7 @@
     "sourceIds": [
       "appt-korea-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4863,7 +4989,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5103,6 +5229,799 @@
           "cambodia-2027-prime"
         ]
       }
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": null,
+    "reviewNote": null,
+    "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-13",
+        "slug": "event-13",
+        "number": "13",
+        "name": "Super Circuit Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 3000,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2000000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-13-start-1",
+            "date": "2026-11-05",
+            "time": "14:00",
+            "label": "Flight A",
+            "kind": "entry"
+          },
+          {
+            "id": "event-13-start-2",
+            "date": "2026-11-06",
+            "time": "14:00",
+            "label": "Flight B",
+            "kind": "entry"
+          },
+          {
+            "id": "event-13-start-3",
+            "date": "2026-11-07",
+            "time": "14:00",
+            "label": "Flight C",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "kings-super-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-4",
+        "slug": "event-4",
+        "number": "4",
+        "name": "Mini Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 1000,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-4-start-1",
+            "date": "2026-10-29",
+            "time": "16:00",
+            "label": "Flight A",
+            "kind": "entry"
+          },
+          {
+            "id": "event-4-start-2",
+            "date": "2026-10-30",
+            "time": "11:00",
+            "label": "Flight B",
+            "kind": "entry"
+          },
+          {
+            "id": "event-4-start-3",
+            "date": "2026-10-30",
+            "time": "17:00",
+            "label": "Flight C",
+            "kind": "entry"
+          },
+          {
+            "id": "event-4-start-4",
+            "date": "2026-10-31",
+            "time": "11:00",
+            "label": "Flight D",
+            "kind": "entry"
+          },
+          {
+            "id": "event-4-start-5",
+            "date": "2026-10-31",
+            "time": "18:00",
+            "label": "Flight E",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "kings-super-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "Super Circuit Kick-Off",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 500,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-1-start-1",
+            "date": "2026-10-28",
+            "time": "15:00",
+            "label": "Published start",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "kings-super-2026-schedule"
+        ]
+      }
+    ],
+    "id": "kings-super-2026",
+    "slug": "wsop-super-circuit-kings-2026",
+    "name": "WSOP Super Circuit KINGS 2026",
+    "tour": "WSOP Super Circuit",
+    "destinationId": "czechia/rozvadov",
+    "startDate": "2026-10-28",
+    "endDate": "2026-11-11",
+    "timezone": "Europe/Prague",
+    "venue": {
+      "name": "King’s Resort",
+      "address": "Rozvadov 7, Rozvadov, Czechia",
+      "url": "https://kings-resort.com/"
+    },
+    "description": "The Rozvadov Super Circuit spans late October and November at King’s Resort. A €3,000 main event with €2 million guaranteed sits alongside a €1,000 Mini Main and lower-buy-in side events. On-site and nearby resort rooms make it possible to plan different lengths of stay.",
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-kings/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-kings/",
+    "sourceIds": [
+      "kings-super-2026-schedule",
+      "rozvadov-transport"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": null,
+    "reviewNote": null,
+    "scheduleCoverage": "The organizer has not yet published the tournament schedule. Buy-ins, guarantees and entry days remain unconfirmed.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [],
+    "id": "latam-super-2027",
+    "slug": "wsop-super-circuit-latam-2027",
+    "name": "WSOP Super Circuit LATAM 2027",
+    "tour": "WSOP Super Circuit",
+    "destinationId": "dominican-republic/punta-cana",
+    "startDate": "2027-01-24",
+    "endDate": "2027-02-02",
+    "timezone": "America/Santo_Domingo",
+    "venue": {
+      "name": "Hard Rock Hotel & Casino Punta Cana",
+      "address": null,
+      "url": "https://hotel.hardrock.com/punta-cana/"
+    },
+    "description": "WSOP has confirmed a Super Circuit stop at the Hard Rock Hotel & Casino in Punta Cana for January 24–February 2. Dates and venue are available for early trip planning; tournament buy-ins and entry days have not yet been announced.",
+    "registrationUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
+    "scheduleUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
+    "sourceIds": [
+      "latam-super-2027-schedule"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
+    "reviewNote": null,
+    "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "sunday-million",
+        "slug": "sunday-million",
+        "number": "sunday-million",
+        "name": "Sunday Million Live",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 250,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-12",
+        "sessions": [
+          {
+            "id": "sunday-million-start-1",
+            "date": "2026-10-02",
+            "time": null,
+            "label": "Day 1A",
+            "kind": "entry"
+          },
+          {
+            "id": "sunday-million-start-2",
+            "date": "2026-10-03",
+            "time": null,
+            "label": "Day 1B",
+            "kind": "entry"
+          },
+          {
+            "id": "sunday-million-start-3",
+            "date": "2026-10-04",
+            "time": null,
+            "label": "Day 1C",
+            "kind": "entry"
+          },
+          {
+            "id": "sunday-million-start-4",
+            "date": "2026-10-07",
+            "time": null,
+            "label": "Day 1D",
+            "kind": "entry"
+          },
+          {
+            "id": "sunday-million-start-5",
+            "date": "2026-10-08",
+            "time": null,
+            "label": "Day 1E",
+            "kind": "entry"
+          },
+          {
+            "id": "sunday-million-start-6",
+            "date": "2026-10-09",
+            "time": null,
+            "label": "Day 1F",
+            "kind": "entry"
+          },
+          {
+            "id": "sunday-million-start-7",
+            "date": "2026-10-10",
+            "time": null,
+            "label": "Day 2A / Day 2B",
+            "kind": "continuation"
+          },
+          {
+            "id": "sunday-million-start-8",
+            "date": "2026-10-11",
+            "time": null,
+            "label": "Day 3",
+            "kind": "continuation"
+          },
+          {
+            "id": "sunday-million-start-9",
+            "date": "2026-10-12",
+            "time": null,
+            "label": "Day 4",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "sunday-million-2026-info"
+        ]
+      }
+    ],
+    "id": "sunday-million-live-2026",
+    "slug": "sunday-million-live-campione-2026",
+    "name": "Sunday Million Live Campione 2026",
+    "tour": "PokerStars Open",
+    "destinationId": "italy/campione-ditalia",
+    "startDate": "2026-10-02",
+    "endDate": "2026-10-12",
+    "timezone": "Europe/Rome",
+    "venue": {
+      "name": "Casino di Campione",
+      "address": "Piazzale Milano 2, 22061 Campione d’Italia CO, Italy",
+      "url": "https://casinocampioneditalia.it/"
+    },
+    "description": "PokerStars brings Sunday Million Live to Campione d’Italia with €250 starting flights and a €1 million guarantee. Multiple entry dates lead into the October 10–12 continuation days, giving players a choice of when to begin their trip.",
+    "registrationUrl": "https://www.pokerstarslive.com/sunday-million-live/",
+    "scheduleUrl": "https://www.pokerstarslive.com/sunday-million-live/schedule/",
+    "sourceIds": [
+      "sunday-million-2026-info"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": "This festival is already underway. Main-event flights remain on September 10–12; the Mini Irish Open’s last starting flight is September 10. Confirm registration availability with Poker Palace.",
+    "registration": "The organizer requires players to be over 18 and carry valid photo ID. The schedule states registration fees are included in the listed total buy-ins; the separate fee amounts have not been confirmed.",
+    "reviewNote": null,
+    "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-10",
+        "slug": "event-10",
+        "number": "10",
+        "name": "Irish Open Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2000,
+          "currency": "AUD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "AUD"
+        },
+        "startingStack": "50,000",
+        "levels": "Standard Day 1: 40 minutes; turbo flights: 20 minutes; later days: 60 minutes.",
+        "reentry": null,
+        "lateRegistration": "10 levels on starting flights; confirm the exact cutoff with the organizer.",
+        "endDate": "2026-09-14",
+        "sessions": [
+          {
+            "id": "event-10-start-1",
+            "date": "2026-09-06",
+            "time": "12:00",
+            "label": "Day 1A",
+            "kind": "entry"
+          },
+          {
+            "id": "event-10-start-2",
+            "date": "2026-09-10",
+            "time": "12:00",
+            "label": "Day 1B",
+            "kind": "entry"
+          },
+          {
+            "id": "event-10-start-3",
+            "date": "2026-09-11",
+            "time": "12:00",
+            "label": "Day 1C",
+            "kind": "entry"
+          },
+          {
+            "id": "event-10-start-4",
+            "date": "2026-09-11",
+            "time": "20:00",
+            "label": "Day 1D Turbo",
+            "kind": "entry"
+          },
+          {
+            "id": "event-10-start-5",
+            "date": "2026-09-12",
+            "time": "11:00",
+            "label": "Day 1E",
+            "kind": "entry"
+          },
+          {
+            "id": "event-10-start-6",
+            "date": "2026-09-12",
+            "time": "19:00",
+            "label": "Day 1F Turbo",
+            "kind": "entry"
+          },
+          {
+            "id": "event-10-start-7",
+            "date": "2026-09-13",
+            "time": "13:00",
+            "label": "Day 2",
+            "kind": "continuation"
+          },
+          {
+            "id": "event-10-start-8",
+            "date": "2026-09-14",
+            "time": "13:00",
+            "label": "Final Day",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "irish-sydney-2026-schedule",
+          "irish-sydney-2026-main"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "Mini Irish Open",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 360,
+          "currency": "AUD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 500000,
+          "currency": "AUD"
+        },
+        "startingStack": "30,000",
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-09-11",
+        "sessions": [
+          {
+            "id": "event-1-start-1",
+            "date": "2026-09-09",
+            "time": "17:00",
+            "label": "Day 1J",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-2",
+            "date": "2026-09-10",
+            "time": "17:00",
+            "label": "Day 1K",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-3",
+            "date": "2026-09-11",
+            "time": "12:00",
+            "label": "Final Day",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "irish-sydney-2026-schedule",
+          "irish-sydney-2026-main"
+        ]
+      },
+      {
+        "id": "event-26",
+        "slug": "event-26",
+        "number": "26",
+        "name": "September 9 Main Event Satellite",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 250,
+          "currency": "AUD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": "20 minutes",
+        "reentry": null,
+        "lateRegistration": "8 levels; confirm the exact cutoff with the organizer.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-26-start-1",
+            "date": "2026-09-09",
+            "time": "20:00",
+            "label": "Published start",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "irish-sydney-2026-schedule",
+          "irish-sydney-2026-main"
+        ]
+      }
+    ],
+    "id": "irish-open-sydney-2026",
+    "slug": "irish-open-sydney-2026",
+    "name": "Irish Open Sydney 2026",
+    "tour": "Irish Poker Open",
+    "destinationId": "australia/sydney",
+    "startDate": "2026-08-31",
+    "endDate": "2026-09-14",
+    "timezone": "Australia/Sydney",
+    "venue": {
+      "name": "Poker Palace at Club Marconi",
+      "address": "Prairie Vale Road, Bossley Park, Sydney, Australia",
+      "url": "https://irishpokeropen.com/sydney/location/"
+    },
+    "description": "The Irish Open’s first international stop is at Poker Palace in Club Marconi. The AUD 2,000 main event has AUD 1 million guaranteed, with further starting flights on September 10–12. The AUD 360 Mini Irish Open and live satellites offer lower entry points.",
+    "registrationUrl": "https://irishpokeropen.com/sydney/",
+    "scheduleUrl": "https://irishpokeropen.com/wp-content/uploads/sites/4/2026/06/IrishOpen2026-SydneySchedule-NoFees.pdf",
+    "sourceIds": [
+      "irish-sydney-2026-schedule",
+      "irish-sydney-2026-main",
+      "irish-sydney-location"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": "The organizer requires players to be over 18 and carry valid photo ID. Its event page links festival accommodation offers; confirm the applicable terms and booking procedure directly.",
+    "reviewNote": "The organizer’s Marrakech schedule link currently opens a Sydney PDF, and its FAQ mixes destinations. Marrakech buy-ins and entry rules remain unconfirmed. Check the correct local schedule with the organizer.",
+    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins, guarantees and entry days remain unconfirmed while the correct Marrakech schedule is checked.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [],
+    "id": "irish-open-marrakech-2026",
+    "slug": "irish-open-marrakech-2026",
+    "name": "Irish Open Marrakech 2026",
+    "tour": "Irish Poker Open",
+    "destinationId": "morocco/marrakech",
+    "startDate": "2026-11-10",
+    "endDate": "2026-11-15",
+    "timezone": "Africa/Casablanca",
+    "venue": {
+      "name": "Casino de Marrakech at Es Saadi Resort",
+      "address": "Rue Ibrahim El Mazini, Hivernage, Marrakech, Morocco",
+      "url": "https://www.essaadi.com/en/"
+    },
+    "description": "Irish Open Marrakech is confirmed for November 10–15 at Casino de Marrakech in the Es Saadi Resort. This stop combines a resort playing venue with nearby hotel alternatives. Individual tournament dates and buy-ins are still being verified.",
+    "registrationUrl": "https://irishpokeropen.com/marrakech/",
+    "scheduleUrl": "https://irishpokeropen.com/marrakech/",
+    "sourceIds": [
+      "irish-marrakech-2026-info",
+      "irish-calendar",
+      "marrakech-location",
+      "marrakech-hotels"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": "The organizer supports registration at the event cashier and through GameID after BSOP registration. Confirm accepted payment methods and any payment charges with the cashier.",
+    "reviewNote": null,
+    "scheduleCoverage": "Official key-tournament date ranges and buy-ins are published. The complete flight schedule is still to come; dates below show each highlighted event’s published opening date.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "main-event",
+        "name": "Main Event",
+        "game": "Not confirmed",
+        "category": "main",
+        "buyIn": {
+          "amount": 5000,
+          "currency": "BRL"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 10000000,
+          "currency": "BRL"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-23",
+        "sessions": [
+          {
+            "id": "main-event-start-1",
+            "date": "2026-11-16",
+            "time": null,
+            "label": "Published start",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bsop-millions-2026-info"
+        ]
+      },
+      {
+        "id": "millionaire-maker",
+        "slug": "millionaire-maker",
+        "number": "millionaire-maker",
+        "name": "Millionaire Maker",
+        "game": "Not confirmed",
+        "category": "side",
+        "buyIn": {
+          "amount": 1200,
+          "currency": "BRL"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 5000000,
+          "currency": "BRL"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-24",
+        "sessions": [
+          {
+            "id": "millionaire-maker-start-1",
+            "date": "2026-11-18",
+            "time": null,
+            "label": "Published start",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bsop-millions-2026-info"
+        ]
+      },
+      {
+        "id": "bsop-championship",
+        "slug": "bsop-championship",
+        "number": "bsop-championship",
+        "name": "BSOP Championship",
+        "game": "Not confirmed",
+        "category": "side",
+        "buyIn": {
+          "amount": 25000,
+          "currency": "BRL"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 15000000,
+          "currency": "BRL"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-28",
+        "sessions": [
+          {
+            "id": "bsop-championship-start-1",
+            "date": "2026-11-21",
+            "time": null,
+            "label": "Published start",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bsop-millions-2026-info"
+        ]
+      }
+    ],
+    "id": "bsop-millions-2026",
+    "slug": "bsop-millions-sao-paulo-2026",
+    "name": "BSOP Millions São Paulo 2026",
+    "tour": "BSOP",
+    "destinationId": "brazil/sao-paulo",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-28",
+    "timezone": "America/Sao_Paulo",
+    "venue": {
+      "name": "WTC Sheraton / WTC Complex",
+      "address": "Av. das Nações Unidas 12559, Brooklin Novo, São Paulo, Brazil",
+      "url": "https://bsop.com.br/bsop-millions/"
+    },
+    "description": "BSOP’s November finale at the WTC complex includes a BRL 5,000 Main Event and a separate BRL 25,000 BSOP Championship. The Millionaire Maker provides a lower-buy-in alternative. Each event’s guarantee is listed separately.",
+    "registrationUrl": "https://bsop.com.br/bsop-millions/",
+    "scheduleUrl": "https://bsop.com.br/bsop-millions/",
+    "sourceIds": [
+      "bsop-millions-2026-info",
+      "bsop-calendar"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": "BSOP lists event-cashier and GameID registration. Confirm the published tournament programme before choosing an entry or booking a satellite package.",
+    "reviewNote": null,
+    "scheduleCoverage": "The organizer has not yet published the full tournament schedule. Buy-ins, guarantees and starting days remain unconfirmed.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [],
+    "id": "bsop-summer-2027",
+    "slug": "bsop-summer-costa-do-sauipe-2027",
+    "name": "BSOP Summer Costa do Sauípe 2027",
+    "tour": "BSOP",
+    "destinationId": "brazil/costa-do-sauipe",
+    "startDate": "2027-01-22",
+    "endDate": "2027-01-30",
+    "timezone": "America/Bahia",
+    "venue": {
+      "name": "Sauípe Resorts",
+      "address": null,
+      "url": "https://bsop.com.br/summer/"
+    },
+    "description": "BSOP opens its 2027 season at Sauípe Resorts in Bahia. The January 22–30 festival dates are confirmed, while the complete tournament schedule and buy-ins are still to be announced.",
+    "registrationUrl": "https://bsop.com.br/summer/",
+    "scheduleUrl": "https://bsop.com.br/summer/",
+    "sourceIds": [
+      "bsop-summer-2027-info",
+      "bsop-calendar"
+    ]
+  },
+  {
+    "status": "scheduled",
+    "dateNote": "Dates follow the organizer’s September 2026 announcement. Confirm individual entry days, buy-in currency and fees with Triton before booking.",
+    "registration": null,
+    "reviewNote": null,
+    "scheduleCoverage": "Series dates are announced. Individual starting days, fee breakdowns and registration cutoffs have not yet been verified; use Triton’s official calendar for the latest schedule.",
+    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "changes": [
+      {
+        "date": "2026-09-09T05:17:08.345Z",
+        "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      }
+    ],
+    "tournaments": [],
+    "id": "triton-north-cyprus-2026",
+    "slug": "triton-north-cyprus-2026",
+    "name": "Triton North Cyprus 2026",
+    "tour": "Triton",
+    "destinationId": "cyprus/kyrenia",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-30",
+    "timezone": "Asia/Famagusta",
+    "venue": {
+      "name": "Merit Royal Premium Hotel Casino & Spa",
+      "address": null,
+      "url": "https://tritonpokerseries.com/news/thetritontimes/2nd"
+    },
+    "description": "Triton’s September announcement places its North Cyprus return at Merit Royal Premium. The trip combines Triton ONE, November 5–15, and the Super High Roller Series, November 15–30. Choose the appropriate series before planning the length of your stay.",
+    "registrationUrl": "https://tritonpokerseries.com/en-US/events",
+    "scheduleUrl": "https://tritonpokerseries.com/en-US/events",
+    "sourceIds": [
+      "triton-cyprus-2026-announcement"
     ]
   }
 ]

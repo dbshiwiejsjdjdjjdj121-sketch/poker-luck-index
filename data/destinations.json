@@ -466,7 +466,7 @@
     "city": "Sydney",
     "slug": "sydney",
     "region": "Oceania",
-    "intro": "Use The Star Sydney as the starting point for your Sydney tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "intro": "Sydney festivals use different venues: WPT Australia is at The Star Sydney, while Irish Open Sydney is at Poker Palace in Club Marconi, Bossley Park. Choose accommodation and transfers for the venue of your selected festival.",
     "airport": {
       "title": "Sydney Airport (SYD)",
       "detail": "An airport option to compare for your trip to Sydney. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
@@ -479,14 +479,26 @@
         "url": "https://www.sydneyairport.com.au/info-sheet/transport-options",
         "detail": "The airport has train connections to the city from its domestic and international terminals. The city connection is only part of the journey: check the onward route to the tournament venue and current fares.",
         "sourceId": "sydney-transit"
+      },
+      {
+        "title": "Poker Palace at Club Marconi — Bossley Park",
+        "detail": "The Irish Open venue is in Bossley Park, with customer parking and airport taxi or rideshare options. Check the full journey to Club Marconi when comparing it with a central Sydney stay.",
+        "sourceId": "irish-sydney-location",
+        "url": "https://irishpokeropen.com/sydney/location/"
       }
     ],
     "hotels": [
       {
-        "title": "Organizer’s accommodation information",
+        "title": "The Star Sydney — WPT accommodation information",
         "detail": "Follow the official event or key-information page for linked accommodation options. Rates and availability must be confirmed with the provider.",
         "url": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
         "sourceId": "sydney-schedule"
+      },
+      {
+        "title": "Club Marconi area — Novotel Cabramatta or Mercure Liverpool",
+        "detail": "The Irish Open accommodation guide lists these two hotels for Poker Palace visitors. Both require onward transport to Club Marconi; compare current room terms directly.",
+        "sourceId": "irish-sydney-hotels",
+        "url": "https://irishpokeropen.com/sydney/hotels/"
       }
     ],
     "dining": [],
@@ -494,7 +506,7 @@
       "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
       "sourceIds": []
     },
-    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "indexable": false
   },
   {
@@ -536,31 +548,44 @@
     "country": "Cyprus",
     "countryCode": "CY",
     "countrySlug": "cyprus",
-    "city": "Kyrenia / Çatalköy",
+    "city": "Kyrenia area",
     "slug": "kyrenia",
     "region": "Europe",
-    "intro": "Use Chamada Prestige Hotel & Spa as the starting point for your Kyrenia / Çatalköy tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "intro": "Festivals in the Kyrenia area use different properties. WPT Prime is listed at Chamada Prestige, while Triton’s November festival is announced for Merit Royal Premium. Match your hotel and transfer to the correct venue.",
     "airport": {
-      "title": "Arrival & transfer planning",
-      "detail": "Confirm the route to Chamada Prestige Hotel & Spa with the organizer before booking transport. Airport recommendations and transfer times are still being verified.",
-      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
-      "sourceId": "cyprus-schedule"
+      "title": "Confirm the airport and transfer for your venue",
+      "detail": "Airport recommendations and crossing arrangements have not yet been verified for this guide. Ask the organizer about the complete arrival route to Merit Royal Premium or your selected festival venue.",
+      "sourceId": "triton-cyprus-2026-announcement",
+      "url": "https://tritonpokerseries.com/news/thetritontimes/2nd"
     },
     "transport": [],
     "hotels": [
       {
-        "title": "Organizer’s accommodation information",
+        "title": "Chamada Prestige — WPT accommodation information",
         "detail": "Follow the official event or key-information page for linked accommodation options. Rates and availability must be confirmed with the provider.",
         "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
         "sourceId": "cyprus-schedule"
+      },
+      {
+        "title": "Merit Royal Premium — Triton host hotel",
+        "detail": "Triton identifies Royal Premium as its November host property, with guest rooms above the playing area. Confirm availability and package terms with the organizer.",
+        "sourceId": "triton-cyprus-2026-announcement",
+        "url": "https://tritonpokerseries.com/news/thetritontimes/2nd"
       }
     ],
-    "dining": [],
+    "dining": [
+      {
+        "title": "Merit Royal Premium dining",
+        "detail": "Triton’s destination feature describes buffet and à la carte options at the Merit complex. Check which restaurants your hotel package includes.",
+        "sourceId": "triton-cyprus-2026-announcement",
+        "url": "https://tritonpokerseries.com/news/thetritontimes/2nd"
+      }
+    ],
     "tax": {
       "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
       "sourceIds": []
     },
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "indexable": false
   },
   {
@@ -1426,6 +1451,287 @@
       "sourceIds": []
     },
     "updatedAt": "2026-09-07T05:15:28Z",
+    "indexable": false
+  },
+  {
+    "id": "czechia/rozvadov",
+    "country": "Czechia",
+    "countryCode": "CZ",
+    "countrySlug": "czechia",
+    "city": "Rozvadov",
+    "slug": "rozvadov",
+    "region": "Europe",
+    "intro": "King’s Resort combines poker, accommodation and dining in Rozvadov. Compare rooms at the casino with the resort’s nearby Comfort and Budget accommodation; arrange the airport transfer separately.",
+    "airport": {
+      "title": "Prague, Nuremberg or Munich airports",
+      "detail": "The resort lists these three airports as arrival options, followed by a road transfer. Confirm the pickup airport and cost with its transport team before booking.",
+      "sourceId": "rozvadov-transport",
+      "url": "https://kings-resort.com/contact"
+    },
+    "transport": [
+      {
+        "title": "Road arrival and resort transfers",
+        "detail": "King’s publishes driving directions from Prague and Munich and a shuttle contact. Ask for a confirmed transfer arrangement; no automatic airport pickup is assumed.",
+        "sourceId": "rozvadov-transport",
+        "url": "https://kings-resort.com/contact"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "King’s Luxury accommodation — at the casino",
+        "detail": "The main hotel is directly at the casino. Check availability and room terms with the resort.",
+        "sourceId": "rozvadov-resort",
+        "url": "https://kings-resort.com/"
+      },
+      {
+        "title": "King’s Comfort and Budget rooms",
+        "detail": "The resort lists Comfort, Standard and Basic rooms within walking distance as alternatives to the main hotel. Compare the complete room total before choosing.",
+        "sourceId": "rozvadov-resort",
+        "url": "https://kings-resort.com/"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Radimský Restaurant and buffet",
+        "detail": "The resort offers a sit-down international restaurant and a buffet with fruit and non-alcoholic drinks. Check current service hours against tournament breaks.",
+        "sourceId": "rozvadov-resort",
+        "url": "https://kings-resort.com/"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "indexable": true
+  },
+  {
+    "id": "dominican-republic/punta-cana",
+    "country": "Dominican Republic",
+    "countryCode": "DO",
+    "countrySlug": "dominican-republic",
+    "city": "Punta Cana",
+    "slug": "punta-cana",
+    "region": "Caribbean",
+    "intro": "The Hard Rock Hotel & Casino is a resort base for a Punta Cana poker trip. Compare the room package, dining inclusions and airport transfer arrangements separately.",
+    "airport": {
+      "title": "Punta Cana Airport (PUJ)",
+      "detail": "The hotel lists transfers from PUJ and also Santo Domingo Airport (SDQ). Check the correct airport when requesting a quote.",
+      "sourceId": "punta-cana-transport",
+      "url": "https://hotel.hardrock.com/punta-cana/book-transportation.aspx"
+    },
+    "transport": [
+      {
+        "title": "Book the hotel transfer separately",
+        "detail": "The hotel’s transfer page says transport is outside its standard all-inclusive experience. Direct-booking guests are asked to request it at least 15 days before arrival; confirm any offer-specific inclusions.",
+        "sourceId": "punta-cana-transport",
+        "url": "https://hotel.hardrock.com/punta-cana/book-transportation.aspx"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Hard Rock Hotel & Casino — stay at the venue",
+        "detail": "Rooms and suites are offered at the host resort. Check your package’s cancellation rules and inclusions directly; no poker-specific rate has been verified.",
+        "sourceId": "punta-cana-resort",
+        "url": "https://hotel.hardrock.com/punta-cana/"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Resort dining and room service",
+        "detail": "The resort advertises an all-inclusive food-and-drink offering and room service. Confirm which outlets, extras and hours your chosen package covers.",
+        "sourceId": "punta-cana-resort",
+        "url": "https://hotel.hardrock.com/punta-cana/"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "indexable": true
+  },
+  {
+    "id": "italy/campione-ditalia",
+    "country": "Italy",
+    "countryCode": "IT",
+    "countrySlug": "italy",
+    "city": "Campione d’Italia",
+    "slug": "campione-ditalia",
+    "region": "Europe",
+    "intro": "Campione d’Italia’s casino sits beside Lake Lugano. The town is Italian and surrounded by Switzerland, so plan the complete arrival route and the return journey after play.",
+    "airport": {
+      "title": "Milan Malpensa and Linate airports",
+      "detail": "The casino lists both Milan airports as arrival options. Arrange onward travel to Campione; published driving estimates are not guaranteed transfer times.",
+      "sourceId": "campione-arrival",
+      "url": "https://casinocampioneditalia.it/come-raggiungerci/"
+    },
+    "transport": [
+      {
+        "title": "Lugano rail connection or road arrival",
+        "detail": "The casino lists Lugano station with onward taxi or bus travel, plus road directions from the Milan–Como–Lugano route. Use the venue’s current directions and check the last return connection.",
+        "sourceId": "campione-arrival",
+        "url": "https://casinocampioneditalia.it/come-raggiungerci/"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Organizer’s accommodation entry point",
+        "detail": "PokerStars links its travel service from the event page. A specific nearby hotel and festival room rate have not yet been verified for this guide.",
+        "sourceId": "sunday-million-2026-info",
+        "url": "https://www.pokerstarslive.com/sunday-million-live/"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Riviera Restaurant — inside the casino",
+        "detail": "The seventh-floor restaurant offers a buffet bistro and a seated menu including vegetarian options. The buffet has a shorter service window; check opening hours before relying on it during a break.",
+        "sourceId": "campione-dining",
+        "url": "https://casinocampioneditalia.it/ristorante/"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "indexable": false
+  },
+  {
+    "id": "morocco/marrakech",
+    "country": "Morocco",
+    "countryCode": "MA",
+    "countrySlug": "morocco",
+    "city": "Marrakech",
+    "slug": "marrakech",
+    "region": "Africa",
+    "intro": "Casino de Marrakech is within Es Saadi Resort in the Hivernage district. Compare a room in the resort with nearby hotels, then plan transport and meals around your tournament day.",
+    "airport": {
+      "title": "Marrakech Menara Airport (RAK)",
+      "detail": "The organizer identifies RAK as the airport for arrival, followed by a taxi or arranged road transfer to the Hivernage district. Confirm the fare and pickup with the provider.",
+      "sourceId": "marrakech-location",
+      "url": "https://irishpokeropen.com/marrakech/location/"
+    },
+    "transport": [
+      {
+        "title": "Casino de Marrakech at Es Saadi",
+        "detail": "The casino is on Rue Ibrahim El Mazini inside the resort. The organizer lists on-site valet parking and taxi connections from Marrakech Central Station.",
+        "sourceId": "marrakech-location",
+        "url": "https://irishpokeropen.com/marrakech/location/"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Es Saadi Hotel or Palace — inside the resort",
+        "detail": "The resort offers both the Hotel and Palace, keeping accommodation on the same property as the casino. Compare room types and cancellation terms directly.",
+        "sourceId": "marrakech-resort",
+        "url": "https://www.essaadi.com/en/"
+      },
+      {
+        "title": "Nearby alternatives — El Andalous and Kennedy",
+        "detail": "The organizer’s hotel guide lists El Andalous and Kennedy Hospitality Resort as nearby alternatives to Es Saadi. Current rates and availability require confirmation.",
+        "sourceId": "marrakech-hotels",
+        "url": "https://irishpokeropen.com/marrakech/2026/08/10/where-to-stay-in-marrakech-your-festival-hotel-guide/"
+      }
+    ],
+    "dining": [
+      {
+        "title": "L’Épicurien — evening dining at the casino",
+        "detail": "Es Saadi lists this restaurant-lounge inside Casino de Marrakech, with French and Mediterranean influences and live music. Check reservations and service hours for your playing day.",
+        "sourceId": "marrakech-dining",
+        "url": "https://www.essaadi.com/en/restaurants-marrakech/late-night-restaurants/epicurien/"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "indexable": true
+  },
+  {
+    "id": "brazil/sao-paulo",
+    "country": "Brazil",
+    "countryCode": "BR",
+    "countrySlug": "brazil",
+    "city": "São Paulo",
+    "slug": "sao-paulo",
+    "region": "South America",
+    "intro": "The WTC complex in Brooklin Novo hosts BSOP festivals, with accommodation and dining at the venue. Choose your arrival route for the WTC location before booking a room.",
+    "airport": {
+      "title": "Airport transfer planning",
+      "detail": "The event page gives the WTC address and arrival guidance. A preferred airport and current transfer arrangements have not yet been verified for this guide.",
+      "sourceId": "bsop-millions-2026-info",
+      "url": "https://bsop.com.br/bsop-millions/"
+    },
+    "transport": [
+      {
+        "title": "WTC arrival and Berrini station",
+        "detail": "The organizer lists access by car, taxi or ride-hailing and Berrini rail station as a nearby connection. Check current rail services and the final walking route.",
+        "sourceId": "bsop-millions-2026-info",
+        "url": "https://bsop.com.br/bsop-millions/"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "WTC Sheraton — at the festival complex",
+        "detail": "BSOP identifies WTC Sheraton as the host location. Confirm the hotel booking and room terms separately from tournament entry.",
+        "sourceId": "bsop-calendar",
+        "url": "https://bsop.com.br/proximas-etapas/"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the WTC complex",
+        "detail": "The organizer lists dining options at the venue and a food court in the WTC complex. Check service times before a short break.",
+        "sourceId": "bsop-millions-2026-info",
+        "url": "https://bsop.com.br/bsop-millions/"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "indexable": false
+  },
+  {
+    "id": "brazil/costa-do-sauipe",
+    "country": "Brazil",
+    "countryCode": "BR",
+    "countrySlug": "brazil",
+    "city": "Costa do Sauípe",
+    "slug": "costa-do-sauipe",
+    "region": "South America",
+    "intro": "Sauípe Resorts is the BSOP Summer venue on Bahia’s coast. Plan the room package and onward journey from Salvador together, especially for late tournament finishes.",
+    "airport": {
+      "title": "Salvador airport",
+      "detail": "The organizer recommends flying to Salvador for the onward trip to Costa do Sauípe. Compare a rental car with a prearranged transfer.",
+      "sourceId": "bsop-summer-2027-info",
+      "url": "https://bsop.com.br/summer/"
+    },
+    "transport": [],
+    "hotels": [
+      {
+        "title": "Sauípe Resorts — stay at the venue",
+        "detail": "The organizer identifies an all-inclusive resort setting. Meal access varies by the accommodation tower; check your room package rather than assuming every outlet is included.",
+        "sourceId": "bsop-summer-2027-info",
+        "url": "https://bsop.com.br/summer/"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Resort meal inclusions",
+        "detail": "BSOP says resort guests have access to the all-inclusive dining associated with their accommodation tower. Check outlet access and hours with the hotel.",
+        "sourceId": "bsop-summer-2027-info",
+        "url": "https://bsop.com.br/summer/"
+      }
+    ],
+    "tax": {
+      "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-09T05:17:08.345Z",
     "indexable": false
   }
 ]
