@@ -637,7 +637,7 @@
     "city": "Las Vegas",
     "slug": "las-vegas",
     "region": "North America",
-    "intro": "Use The Venetian Resort as the starting point for your Las Vegas tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "intro": "The Venetian’s poker room is inside The Palazzo, on level 2 of Grand Canal Shoppes. Plan airport pickup, check the resort’s poker-rate conditions and compare festival dates with championship dates before booking.",
     "airport": {
       "title": "Harry Reid International (LAS)",
       "detail": "An airport option to compare for your trip to Las Vegas. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
@@ -650,22 +650,28 @@
         "url": "https://www.harryreidairport.com/taxi-and-ride-share",
         "detail": "Taxis are available outside baggage claim in both terminals. Rideshare uses designated pickup areas; follow the current terminal guidance and allow for roadwork or event traffic on the Strip.",
         "sourceId": "vegas-taxis"
+      },
+      {
+        "title": "Find the poker room",
+        "detail": "Head to The Palazzo, level 2 of Grand Canal Shoppes. The resort identifies The Palazzo self-parking garage as convenient access; check parking terms before arrival.",
+        "url": "https://www.venetianlasvegas.com/resort/casino/poker.html",
+        "sourceId": "venetian-poker-room"
       }
     ],
     "hotels": [
       {
-        "title": "The Venetian & The Palazzo",
-        "detail": "Both hotel options are presented by The Venetian Resort. Compare the full price including any mandatory resort charges; do not assume a tournament offer code is still valid.",
-        "url": "https://www.venetianlasvegas.com/",
-        "sourceId": "las-vegas-venue"
+        "title": "The Venetian & The Palazzo — 2026 poker suite rate",
+        "detail": "The resort’s 2026 page confirms code EPOKR25. The rate has qualifying-play requirements for each night, a USD 55 nightly resort fee, availability limits and possible blackout dates. Unqualified nights revert to the prevailing rate. Confirm the complete terms and total price with the resort before booking.",
+        "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
+        "sourceId": "venetian-poker-rates-2026"
       }
     ],
     "dining": [
       {
-        "title": "Food at the venue",
-        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
-        "url": "https://www.venetianlasvegas.com/",
-        "sourceId": "las-vegas-venue"
+        "title": "Grand Lux Cafe — tableside option",
+        "detail": "The resort lists Grand Lux Cafe among the outlets whose food can be served at the poker table. Ask poker-room staff about the available menu and service during your session; opening hours are not confirmed here.",
+        "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
+        "sourceId": "venetian-poker-rates-2026"
       }
     ],
     "tax": {
@@ -674,7 +680,7 @@
         "us-tax"
       ]
     },
-    "updatedAt": "2026-09-06T18:08:39.263494+00:00",
+    "updatedAt": "2026-09-11T06:57:18.694Z",
     "indexable": true
   },
   {
@@ -1272,8 +1278,8 @@
     "region": "Europe",
     "intro": "Namur’s Circus Casino Resort combines the playing venue with a Mercure hotel and La Carte du Roi restaurant. On-site parking is listed by the operator, while airport and rail transfers still need individual planning.",
     "airport": {
-      "title": "Arrival information pending",
-      "detail": "Airport and transfer options have not yet been verified for this guide. Check the organizer’s venue information before arranging travel.",
+      "title": "Brussels airports and Namur station",
+      "detail": "The official event guide lists Brussels Airport (BRU) and Brussels South Charleroi (CRL) among the arrival options, with Namur as the closest railway station. Compare current connections and arrange the final journey to the casino; transfer times and fares are not confirmed here.",
       "url": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
       "sourceId": "namur-megastack-2026-schedule"
     },
@@ -1305,7 +1311,7 @@
       "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
       "sourceIds": []
     },
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "updatedAt": "2026-09-11T06:57:18.694Z",
     "indexable": true
   },
   {

@@ -17,7 +17,7 @@
     "officialUrl": "https://www.wsop.com/schedule/",
     "featured": true,
     "description": "Circuit stops, Super Circuit and bracelet festivals, together in one view.",
-    "checkedAt": "2026-09-07T17:21:59Z"
+    "checkedAt": "2026-09-11T06:57:18.694Z"
   },
   {
     "id": "wpt",
@@ -32,7 +32,7 @@
     "officialUrl": "https://www.worldpokertour.com/event/schedule/",
     "featured": true,
     "description": "Main Tour, Prime and special events. A festival can include more than one championship.",
-    "checkedAt": "2026-09-07T17:21:59Z"
+    "checkedAt": "2026-09-11T06:57:18.694Z"
   },
   {
     "id": "ept",
@@ -60,7 +60,7 @@
     "officialUrl": "https://www.theasianpokertour.com/series",
     "featured": true,
     "description": "Asian Poker Tour festivals, with dates, selected buy-ins and official entry points.",
-    "checkedAt": "2026-09-07T17:21:59Z"
+    "checkedAt": "2026-09-11T06:57:18.694Z"
   },
   {
     "id": "triton",
@@ -154,6 +154,22 @@
     "officialUrl": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
     "featured": false,
     "description": "Belgian Poker Challenge editions, including the MegaStack festival in Namur.",
-    "checkedAt": "2026-09-07T17:29:00Z"
+    "checkedAt": "2026-09-11T06:57:18.694Z"
+  },
+  {
+    "id": "cps",
+    "label": "Circus Poker Series",
+    "fullName": "Circus Poker Series",
+    "series": [
+      "Circus Poker Series",
+      "CPS"
+    ],
+    "keywords": [
+      "CPS Namur"
+    ],
+    "officialUrl": "https://www.pokerstarslive.com/circuspokerseries/",
+    "featured": false,
+    "description": "Circus Poker Series festivals at Namur. Use the official calendar to confirm entry details; coverage here includes selected highlights.",
+    "checkedAt": "2026-09-11T06:57:18.694Z"
   }
 ]
