@@ -1,0 +1,128 @@
+[
+  {
+    "tourId": "wsop",
+    "title": "WSOP tournaments & Circuit guide",
+    "description": "Find upcoming live WSOP and Circuit festivals. Compare destinations, selected buy-ins and travel information, with links to official schedules.",
+    "intro": "The World Series of Poker calendar extends beyond the Las Vegas summer series. Explore Circuit stops, Super Circuit festivals and international bracelet events, then choose a specific edition for its dates, buy-ins and travel details.",
+    "formats": [
+      {
+        "title": "WSOP Circuit",
+        "description": "Circuit stops bring multi-event festivals to different host venues. A Circuit festival is separate from the Las Vegas summer bracelet series. Compare its main event with the selected side events in each overview.",
+        "series": "WSOP Circuit"
+      },
+      {
+        "title": "WSOP Super Circuit",
+        "description": "Super Circuit is separately labelled on the official WSOP calendar. Check the particular festival’s schedule and entry rules; the label does not establish one common buy-in or guarantee.",
+        "series": "WSOP Super Circuit"
+      },
+      {
+        "title": "Bracelet festivals",
+        "description": "WSOP Europe and WSOP Paradise are international bracelet festivals alongside the Las Vegas series. Choose an announced edition before making travel plans; a familiar tour name does not confirm next year’s dates.",
+        "series": null
+      }
+    ],
+    "planning": [
+      {
+        "title": "Choose the edition, then the entry day",
+        "description": "A festival can run for weeks while a particular tournament has only a few starting flights. Check the remaining main or side-event entry days before choosing flights and hotel nights."
+      },
+      {
+        "title": "Compare the same kind of buy-in",
+        "description": "Our main-event price is separate from lower-cost side events and satellites. Set a currency before using a buy-in filter, and allow separately for accommodation, transfers, meals and any additional entries."
+      },
+      {
+        "title": "Check the host venue’s requirements",
+        "description": "Open the official entry link for identification, age requirements, payment options and registration deadlines. For travel information, start with the destination guide linked from your chosen festival."
+      }
+    ],
+    "sourceIds": [
+      "guide-wsop-calendar"
+    ],
+    "checkedAt": "2026-09-11T17:20:39.510Z",
+    "updatedAt": "2026-09-11T17:20:39.510Z"
+  },
+  {
+    "tourId": "wpt",
+    "title": "WPT tournaments & Prime guide",
+    "description": "Browse upcoming WPT Main Tour, Prime and special events. Compare festival dates, selected buy-ins, host venues and practical travel information.",
+    "intro": "The World Poker Tour lists Main Tour, WPT Prime and special events across its calendar. Some festivals combine a Prime championship and a Main Tour championship, so compare the whole trip as well as the event you want to enter.",
+    "formats": [
+      {
+        "title": "WPT Main Tour",
+        "description": "Use the Main Tour championship as your starting point, then check the surrounding festival for other events. The championship dates can cover only part of the full festival.",
+        "series": "WPT"
+      },
+      {
+        "title": "WPT Prime",
+        "description": "Prime has its own championship listings. A Prime event can also sit inside a combined WPT festival; our Prime filter includes combined editions when a Prime highlight is verified.",
+        "series": "WPT Prime"
+      },
+      {
+        "title": "WPT special events",
+        "description": "The official calendar also labels special events. Read the event’s own eligibility, schedule and registration details instead of assuming that every WPT-branded event follows Main Tour rules.",
+        "series": "WPT Special Event"
+      }
+    ],
+    "planning": [
+      {
+        "title": "Make a shortlist by date and destination",
+        "description": "Compare festivals that fit your available travel dates. Save the editions you are considering, then revisit their overviews before booking to check for changes."
+      },
+      {
+        "title": "Keep the championship and festival dates separate",
+        "description": "For a combined festival, Prime and Main Tour entry days may fall in different weeks. Use the selected highlights to plan your stay and confirm all flights and later days in the full official schedule."
+      },
+      {
+        "title": "Read the hotel offer conditions",
+        "description": "An event hotel rate may depend on availability, selected nights or qualifying play. Check the official terms and the destination guide; listed buy-ins do not include your room or travel costs."
+      }
+    ],
+    "sourceIds": [
+      "guide-wpt-calendar"
+    ],
+    "checkedAt": "2026-09-11T17:20:39.510Z",
+    "updatedAt": "2026-09-11T17:20:39.510Z"
+  },
+  {
+    "tourId": "ept",
+    "title": "EPT tournaments & travel guide",
+    "description": "Find upcoming European Poker Tour festivals, compare selected main and side-event buy-ins, and plan your stay with verified destination information.",
+    "intro": "PokerStars Live’s European Poker Tour calendar brings together its EPT festival stops. Start with an upcoming edition, compare the selected entry options and use the destination guide to plan the journey around your playing days.",
+    "formats": [
+      {
+        "title": "EPT Main Event",
+        "description": "The main event is one part of an EPT festival. Our overview separates its buy-in and starting flights from the dates of the full festival, so you can plan around the tournament you intend to play.",
+        "series": null
+      },
+      {
+        "title": "Other events in the festival",
+        "description": "Selected side events and satellites can offer different entry options. A satellite price is the cost of entering a qualifier, not the direct buy-in for the main event; consult its official qualification rules.",
+        "series": null
+      },
+      {
+        "title": "Other PokerStars Live tours",
+        "description": "EPT and PokerStars Open have separate official calendars. Check the tour and edition named on your chosen event before arranging travel or looking for registration.",
+        "series": null
+      }
+    ],
+    "planning": [
+      {
+        "title": "Pick the playing days that fit your trip",
+        "description": "Read the published starting flights and any later days before choosing a return journey. A festival’s last date is not necessarily the finishing date of your selected tournament."
+      },
+      {
+        "title": "Compare travel choices around the venue",
+        "description": "Use our linked destination guides for the host hotel, verified nearby options and airport transport. Confirm availability and cancellation terms directly with the provider before booking."
+      },
+      {
+        "title": "Confirm the official entry process",
+        "description": "Use PokerStars Live for the latest schedule, registration and payment instructions. Our email account only stores your shortlist and is separate from the organizer’s account or app."
+      }
+    ],
+    "sourceIds": [
+      "guide-ept-calendar"
+    ],
+    "checkedAt": "2026-09-11T17:20:39.510Z",
+    "updatedAt": "2026-09-11T17:20:39.510Z"
+  }
+]

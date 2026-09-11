@@ -1,4 +1,25 @@
-import type { GuideData, Money, TourFamily } from "./guide-types";
+import type { GuideData, Money, Source, TourFamily, TourGuide } from "./guide-types";
+export function validateTourGuides(input: unknown, catalog: TourFamily[], sources: Source[], now = new Date()): string[] {
+  if (!Array.isArray(input)) return ["Expected tour guides array"];
+  const errors: string[] = [], seen = new Set<string>();
+  const timestamp = (value: unknown) => typeof value === "string" && Number.isFinite(Date.parse(value)) && Date.parse(value) <= now.getTime() + 300000;
+  for (const guide of input as TourGuide[]) {
+    try {
+      const family = catalog.find(t => t.id === guide.tourId);
+      if (!family || seen.has(guide.tourId)) errors.push("Unknown or duplicate guide tour " + guide.tourId);
+      seen.add(guide.tourId);
+      if (![guide.title, guide.description, guide.intro].every(s => typeof s === "string" && s.trim())) errors.push("Incomplete tour guide " + guide.tourId);
+      for (const section of [guide.formats, guide.planning]) {
+        if (!Array.isArray(section) || !section.length || !section.every(item => typeof item.title === "string" && item.title.trim() && typeof item.description === "string" && item.description.trim())) errors.push("Incomplete tour guide sections " + guide.tourId);
+      }
+      if (!guide.formats.every(f => f.series === null || family?.series.includes(f.series))) errors.push("Unknown guide series " + guide.tourId);
+      if (!timestamp(guide.checkedAt) || !timestamp(guide.updatedAt)) errors.push("Invalid tour guide dates " + guide.tourId);
+      if (!Array.isArray(guide.sourceIds) || !guide.sourceIds.length || new Set(guide.sourceIds).size !== guide.sourceIds.length || !guide.sourceIds.every(id => sources.some(s => s.id === id))) errors.push("Invalid tour guide sources " + guide.tourId);
+      if (!guide.sourceIds.some(id => sources.some(s => s.id === id && Date.parse(s.checkedAt) >= Date.parse(guide.checkedAt)))) errors.push("Tour introduction needs a verified source " + guide.tourId);
+    } catch { errors.push("Malformed tour guide"); }
+  }
+  return errors;
+}
 export function validateTourCatalog(input: unknown, now = new Date()): string[] {
   if (!Array.isArray(input) || !input.length) return ["Expected a non-empty tour catalog"];
   const errors: string[] = [], ids = new Set<string>(), series = new Set<string>();

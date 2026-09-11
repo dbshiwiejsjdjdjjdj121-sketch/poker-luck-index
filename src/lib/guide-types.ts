@@ -29,4 +29,10 @@ export type Destination = {
 };
 export type GuideData = { festivals: Festival[]; destinations: Destination[]; sources: Source[] };
 export type TourFamily = { id: string; label: string; fullName: string; series: string[]; keywords: string[]; officialUrl: string; featured: boolean; description: string; checkedAt: string };
+export type TourGuide = {
+  tourId: string; title: string; description: string; intro: string;
+  formats: { title: string; description: string; series: string | null }[];
+  planning: { title: string; description: string }[];
+  sourceIds: string[]; checkedAt: string; updatedAt: string;
+};
 export type Filters = { q?: string; from?: string; to?: string; country?: string; city?: string; brand?: string; tour?: string; game?: string; currency?: string; min?: string; max?: string; status?: string };

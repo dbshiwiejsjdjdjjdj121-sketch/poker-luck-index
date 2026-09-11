@@ -80,6 +80,7 @@ test("sign-in return targets stay on safe public guide routes and preserve filte
   for (const path of ["https://attacker.example","//attacker.example","/\\attacker.example","/api/auth","javascript:alert(1)","/account"]) assert.equal(safeReturnPath(path),"/saved");
   const target="/tournaments?brand=wpt&from=2026-09-01";
   assert.equal(safeReturnPath(target),target);
+  assert.equal(safeReturnPath("/tours/wsop#upcoming"),"/tours/wsop#upcoming");
   const query=new URL(savedSignInUrl(festival.id,target),"https://www.allinpokerai.com").searchParams;
   assert.equal(query.get("save"),festival.id);assert.equal(query.get("returnTo"),target);
 });

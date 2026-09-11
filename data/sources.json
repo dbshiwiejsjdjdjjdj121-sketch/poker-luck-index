@@ -908,5 +908,26 @@
     "url": "https://www.circus-poker.com/en/ticketing/ticket/details/3391ca34-65a3-61b9-daf7-3a2365256b7d",
     "kind": "schedule",
     "checkedAt": "2026-09-11T06:57:18.694Z"
+  },
+  {
+    "id": "guide-wsop-calendar",
+    "title": "World Series of Poker — official live tournament calendar",
+    "url": "https://www.wsop.com/schedule/",
+    "checkedAt": "2026-09-11T17:20:39.510Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "guide-wpt-calendar",
+    "title": "World Poker Tour — Main Tour, Prime and special-event calendar",
+    "url": "https://www.worldpokertour.com/event/schedule/",
+    "checkedAt": "2026-09-11T17:20:39.510Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "guide-ept-calendar",
+    "title": "PokerStars Live — European Poker Tour calendar",
+    "url": "https://www.pokerstarslive.com/ept/",
+    "checkedAt": "2026-09-11T17:20:39.510Z",
+    "kind": "organizer"
   }
 ]

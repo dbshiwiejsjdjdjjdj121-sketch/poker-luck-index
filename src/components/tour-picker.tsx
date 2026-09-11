@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Filters } from "@/lib/guide-types";
 import { tourFamilies, tourFamily, tourFilterHref } from "@/lib/tour-catalog";
+import { tourGuideHref } from "@/lib/tour-guide-data";
 export function TourPicker({filters,counts}:{filters:Filters;counts:Record<string,number>}) {
   const selected=tourFamily(filters.brand);
   function choice(id:string,label:string){return <Link key={id} className="tour-choice" aria-current={filters.brand===id?"true":undefined} href={tourFilterHref(filters,id)}><strong>{label}</strong><span>{counts[id]||0} listed</span></Link>;}
@@ -8,6 +9,6 @@ export function TourPicker({filters,counts}:{filters:Filters;counts:Record<strin
     <div className="tour-choices">{tourFamilies.filter(t=>t.featured).map(t=>choice(t.id,t.label))}</div>
     <details className="more-tours" open={selected&&!selected.featured?true:undefined}><summary>More tours & series <span>{tourFamilies.filter(t=>!t.featured).map(t=>t.label).join(" · ")}</span></summary><div className="tour-choices">{tourFamilies.filter(t=>!t.featured).map(t=>choice(t.id,t.label))}</div></details>
     <p className="tour-count-note">Counts show festivals listed in this guide matching your other filters, not the organizer’s entire calendar.</p>
-    {selected&&<div className="selected-tour"><div><strong>{selected.fullName}</strong><p>{selected.description}</p></div><a href={selected.officialUrl} target="_blank" rel="noopener noreferrer">Official calendar ↗</a></div>}
+    {selected&&<div className="selected-tour"><div><strong>{selected.fullName}</strong><p>{selected.description}</p>{tourGuideHref(selected.id)&&<p><Link className="text-link" href={tourGuideHref(selected.id)!}>{selected.label} tour & travel guide ↗</Link></p>}</div><a href={selected.officialUrl} target="_blank" rel="noopener noreferrer">Official calendar ↗</a></div>}
   </section>;
 }

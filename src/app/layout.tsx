@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SavedProvider } from "@/components/saved-provider";
 import { Navigation } from "@/components/navigation";
+import { PublicAnalytics } from "@/components/public-analytics";
+import { Suspense } from "react";
+import { destinations, festivals } from "@/lib/guide-data";
+import { tourGuides } from "@/lib/tour-guide-data";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, IS_PREVIEW } from "@/lib/site";
 import { serializeJsonLd } from "@/lib/guide-utils";
 import "./globals.css";
@@ -13,9 +17,11 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const publicPaths = ["/", "/tournaments", "/destinations", "/about", "/privacy", "/terms", ...festivals.map(f => `/tournaments/${f.slug}`), ...destinations.map(d => `/destinations/${d.id}`), ...new Set(destinations.map(d => `/destinations/${d.countrySlug}`)), ...tourGuides.map(g => `/tours/${g.tourId}`)];
   return <html lang="en"><body><SavedProvider><a className="skip-link" href="#main">Skip to content</a><Navigation />
     {children}
     <footer className="site-footer"><div className="container footer-grid"><div><Link className="footer-brand" href="/">♠ ALL IN <span>POKER GUIDE</span></Link><p>Your next tournament. Your next destination.<br />Independent information for live poker players.</p></div><div className="footer-links"><Link href="/about">About & sources</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/saved">Saved</Link><Link href="/account">Account</Link></div></div><div className="container footer-bottom"><span>© {new Date().getUTCFullYear()} ALL IN Poker Guide</span><span>Independent of the tours listed. Confirm details with the organizer.</span></div></footer>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd({ "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL, inLanguage: "en", description: SITE_DESCRIPTION }) }} />
+    {process.env.VERCEL_ENV === "production" && <Suspense fallback={null}><PublicAnalytics paths={publicPaths} /></Suspense>}
   </SavedProvider></body></html>;
 }

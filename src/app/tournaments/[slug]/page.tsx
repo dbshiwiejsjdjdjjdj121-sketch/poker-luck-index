@@ -6,6 +6,8 @@ import { pageMeta, SITE_URL } from "@/lib/site";
 import { dateRange, formatDate, isStale, mainEvent, money, nextEditionOf, serializeJsonLd, statusOf } from "@/lib/guide-utils";
 import { Breadcrumbs, ExternalLink, SourceList, Status, TravelGuide } from "@/components/guide-ui";
 import { FestivalLifecycleNotice, FestivalOfficialLinks } from "@/components/festival-lifecycle";
+import { familyForSeries } from "@/lib/tour-catalog";
+import { tourGuideHref } from "@/lib/tour-guide-data";
 type Props={params:Promise<{slug:string}>};
 export const revalidate=3600;
 export async function generateMetadata({params}:Props){
@@ -19,7 +21,8 @@ export default async function FestivalPage({params}:Props){
   const archived=statusOf(f)==="ended", stale=isStale(f);
   const primarySources=sourcesFor(f.sourceIds);
   const contentUpdated=[f.updatedAt,d.updatedAt].sort().at(-1)!;
-  return <main id="main" className="container page"><Breadcrumbs items={[{label:"Tournaments",href:"/tournaments"},{label:f.name}]}/>
+  const family=familyForSeries(f.tour), guideHref=family&&tourGuideHref(family.id);
+  return <main id="main" className="container page"><Breadcrumbs items={[{label:"Tournaments",href:"/tournaments"},...(guideHref?[{label:family!.label+" guide",href:guideHref}]:[]),{label:f.name}]}/>
   <FestivalLifecycleNotice festival={f} archived={archived} next={nextEditionOf(f,festivals)} previous={festivals.find(candidate=>candidate.id===f.previousEditionId)}/>
   <div className="detail-hero"><div><p className="eyebrow">{f.tour} / {d.country}</p><h1>{f.name}</h1><div className="detail-save"><SaveButton festivalId={f.id} name={f.name}/></div><p className="detail-intro">{f.description}</p><div className="detail-location"><span>⌖ {d.city}, {d.country}</span><Status festival={f}/></div></div><div className="hero-summary"><span className="eyebrow">AT A GLANCE</span><strong>{dateRange(f.startDate,f.endDate)}</strong><p>{f.venue.name}</p><div><span>MAIN EVENT BUY-IN</span><strong>{money(main?.buyIn)}</strong></div><a href="#official" className="button">{archived?"Official sources ↗":"Official entry points ↗"}</a></div></div>
   <div className="verification-bar"><span>Source checked <strong>{formatDate(f.checkedAt.slice(0,10),true)}</strong></span><span>Information updated {formatDate(contentUpdated.slice(0,10),true)}</span><span className={stale?"warning-text":""}>{archived?"Archived · not routinely rechecked":stale?"Recheck due":"Sources linked below"}</span></div>
