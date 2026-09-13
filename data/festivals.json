@@ -23,7 +23,7 @@
     "sourceIds": [
       "virginia-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -234,7 +234,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -435,7 +435,7 @@
     "sourceIds": [
       "austin-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1780,7 +1780,7 @@
     "sourceIds": [
       "paradise-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1969,7 +1969,7 @@
       "sydney-schedule",
       "sydney-main-2026"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -2077,7 +2077,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
@@ -2154,13 +2154,17 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-13T06:27:30Z",
+    "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-09-13T06:27:30Z",
+        "text": "Confirmed the published championship start at 12:00 venue local time from WPT’s event page."
       }
     ],
     "tournaments": [
@@ -2190,7 +2194,7 @@
             "id": "championship-start",
             "label": "Published start",
             "date": "2026-10-15",
-            "time": null,
+            "time": "12:00",
             "kind": "entry"
           }
         ],
@@ -2224,13 +2228,17 @@
     "sourceIds": [
       "san-jose-schedule"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-13T06:27:30Z",
+    "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-09-13T06:27:30Z",
+        "text": "Confirmed the published championship start at 10:00 venue local time from WPT’s event page."
       }
     ],
     "tournaments": [
@@ -2260,7 +2268,7 @@
             "id": "championship-start",
             "label": "Published start",
             "date": "2026-10-23",
-            "time": null,
+            "time": "10:00",
             "kind": "entry"
           }
         ],
@@ -2837,7 +2845,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -3060,7 +3068,7 @@
       "taipei-schedule",
       "taipei-info"
     ],
-    "checkedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -3799,7 +3807,7 @@
     "sourceIds": [
       "paris-2026-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -4826,7 +4834,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5081,7 +5089,7 @@
     "sourceIds": [
       "appt-korea-2026-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5324,7 +5332,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5481,87 +5489,226 @@
     "startDate": "2027-01-12",
     "endDate": "2027-02-02",
     "timezone": "Asia/Phnom_Penh",
-    "dateNote": "Dates cover the full January 12–February 2 festival. Buy-in currency and fee details are still being verified, so numeric prices are not yet shown here.",
+    "dateNote": "Dates cover the full January 12–February 2 festival. Prime runs January 22–26; the Main Tour championship runs January 27–February 1.",
     "venue": {
       "name": "NagaWorld Integrated Resort",
       "address": null,
       "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship"
     },
     "status": "scheduled",
-    "description": "WPT opens its 2027 season with a combined festival at NagaWorld in Phnom Penh. Prime runs January 22–26, followed by the Main Tour championship January 27–February 1. Plan around the championship you intend to play; the whole festival spans a longer window.",
-    "registration": "Use the official championship pages and linked player guide for current registration and hotel information. Confirm the payment currency and full entry cost directly before committing to the trip.",
+    "description": "NagaWorld hosts WPT’s first festival of 2027 in Phnom Penh. Compare the USD 3,500 Main Tour championship, USD 1,100 Prime championship and an earlier USD 550 Warm Up before choosing your travel dates. These are selected highlights from a longer festival.",
+    "registration": "The official player guide requires NagaWorld Rewards membership for the two championships; Prime also specifies a WPT player release. Both allow re-entry until Level 10. Confirm entry arrangements with the organizer before travelling; any staff deduction from the prize pool is separate from the entry fee.",
     "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
-    "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
+    "scheduleUrl": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/08/WPT-Cambodia-2027-player-guide-low-res.pdf",
     "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
     "sourceIds": [
       "cambodia-2027-announcement",
       "cambodia-2027-main",
-      "cambodia-2027-prime"
+      "cambodia-2027-prime",
+      "cambodia-2027-player-guide"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
+    "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-13T06:27:30Z",
+        "text": "Confirmed USD buy-ins, fees, guarantees and entry flights for the two championships, and added a USD 550 Warm Up highlight from the official player guide."
       }
     ],
     "tournaments": [
       {
         "id": "main",
         "slug": "main",
-        "number": "main",
+        "number": "67",
         "name": "WPT Cambodia Championship",
         "game": "NLH",
         "category": "main",
-        "buyIn": null,
-        "fee": null,
-        "guarantee": null,
-        "startingStack": null,
-        "levels": null,
-        "reentry": null,
-        "lateRegistration": null,
+        "buyIn": {
+          "amount": 3500,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 225,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": "50,000",
+        "levels": "60 minutes on Day 1; 90 minutes later, 45 minutes heads-up.",
+        "reentry": "Unlimited re-entry until the start of Level 10.",
+        "lateRegistration": "Start of Level 10 on each Day 1 (approximately 21:45 local time).",
         "endDate": "2027-02-01",
         "sessions": [
           {
             "id": "main-start-1",
-            "label": "Published start",
+            "label": "Day 1A",
             "date": "2027-01-27",
             "time": "11:30",
             "kind": "entry"
+          },
+          {
+            "id": "main-start-2",
+            "label": "Day 1B",
+            "date": "2027-01-28",
+            "time": "11:30",
+            "kind": "entry"
+          },
+          {
+            "id": "main-day-2",
+            "label": "Day 2",
+            "date": "2027-01-29",
+            "time": "11:30",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-day-3",
+            "label": "Day 3",
+            "date": "2027-01-30",
+            "time": "11:30",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-day-4",
+            "label": "Day 4",
+            "date": "2027-01-31",
+            "time": "11:30",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-day-5",
+            "label": "Day 5",
+            "date": "2027-02-01",
+            "time": "11:30",
+            "kind": "continuation"
           }
         ],
         "sourceIds": [
-          "cambodia-2027-main"
+          "cambodia-2027-main",
+          "cambodia-2027-player-guide"
         ]
       },
       {
         "id": "prime",
         "slug": "prime",
-        "number": "prime",
+        "number": "46",
         "name": "WPT Prime Cambodia Championship",
         "game": "NLH",
         "category": "side",
-        "buyIn": null,
-        "fee": null,
-        "guarantee": null,
-        "startingStack": null,
-        "levels": null,
-        "reentry": null,
-        "lateRegistration": null,
+        "buyIn": {
+          "amount": 1100,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 100,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 500000,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": "40 minutes on Day 1; 60 minutes on Days 2 and 3, 30 minutes heads-up.",
+        "reentry": "Unlimited re-entry until the start of Level 10.",
+        "lateRegistration": "Start of Level 10 on each Day 1 (approximately 18:15 local time).",
         "endDate": "2027-01-26",
         "sessions": [
           {
             "id": "prime-start-1",
-            "label": "Published start",
+            "label": "Day 1A",
             "date": "2027-01-22",
             "time": "11:30",
+            "kind": "entry"
+          },
+          {
+            "id": "prime-start-2",
+            "label": "Day 1B",
+            "date": "2027-01-23",
+            "time": "11:30",
+            "kind": "entry"
+          },
+          {
+            "id": "prime-start-3",
+            "label": "Day 1C",
+            "date": "2027-01-24",
+            "time": "11:30",
+            "kind": "entry"
+          },
+          {
+            "id": "prime-day-2",
+            "label": "Day 2",
+            "date": "2027-01-25",
+            "time": "11:30",
+            "kind": "continuation"
+          },
+          {
+            "id": "prime-day-3",
+            "label": "Day 3",
+            "date": "2027-01-26",
+            "time": "11:30",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "cambodia-2027-prime",
+          "cambodia-2027-player-guide"
+        ]
+      },
+      {
+        "id": "warm-up",
+        "slug": "warm-up",
+        "name": "Championship Warm Up",
+        "number": "10",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 550,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 50,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 75000,
+          "currency": "USD"
+        },
+        "startingStack": "50,000",
+        "levels": "40 minutes on Day 1A/B; 20 minutes on Day 1C. Later days use 60 minutes, 30 minutes heads-up.",
+        "reentry": "Unlimited re-entry on each Day 1.",
+        "lateRegistration": "Start of Level 10 on Day 1.",
+        "endDate": "2027-01-17",
+        "sessions": [
+          {
+            "id": "warm-up-1a",
+            "label": "Day 1A",
+            "date": "2027-01-14",
+            "time": "11:30",
+            "kind": "entry"
+          },
+          {
+            "id": "warm-up-1b",
+            "label": "Day 1B",
+            "date": "2027-01-15",
+            "time": "11:30",
+            "kind": "entry"
+          },
+          {
+            "id": "warm-up-1c",
+            "label": "Day 1C",
+            "date": "2027-01-15",
+            "time": "18:00",
             "kind": "entry"
           }
         ],
         "sourceIds": [
-          "cambodia-2027-prime"
+          "cambodia-2027-player-guide"
         ]
       }
     ]
@@ -5788,7 +5935,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -5914,12 +6061,16 @@
     "registration": "The organizer requires players to be over 18 and carry valid photo ID. The schedule states registration fees are included in the listed total buy-ins; the separate fee amounts have not been confirmed.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-11T06:57:18.694Z",
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
+    "updatedAt": "2026-09-13T06:27:30Z",
     "changes": [
       {
         "date": "2026-09-09T05:17:08.345Z",
         "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      },
+      {
+        "date": "2026-09-13T06:27:30Z",
+        "text": "Added the AUD 460 Irish Goodbye on September 14 at 16:00 as a remaining entry option after the Main Event starting flights."
       }
     ],
     "tournaments": [
@@ -6086,6 +6237,37 @@
         "sourceIds": [
           "irish-sydney-2026-schedule",
           "irish-sydney-2026-main"
+        ]
+      },
+      {
+        "id": "event-42",
+        "slug": "event-42",
+        "name": "The Irish Goodbye",
+        "number": "42",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 460,
+          "currency": "AUD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": "20 minutes",
+        "reentry": null,
+        "lateRegistration": "8 levels, according to the official schedule.",
+        "endDate": "2026-09-14",
+        "sessions": [
+          {
+            "id": "event-42-start-1",
+            "label": "Published start",
+            "date": "2026-09-14",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "irish-sydney-2026-schedule"
         ]
       }
     ],
@@ -6330,7 +6512,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "Series dates are announced. Individual starting days, fee breakdowns and registration cutoffs have not yet been verified; use Triton’s official calendar for the latest schedule.",
-    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-13T06:27:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6513,6 +6695,157 @@
         ],
         "sourceIds": [
           "cps-namur-2026-qualifier"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "triton-jeju-september-2026",
+    "slug": "triton-jeju-september-2026",
+    "name": "Triton Jeju September 2026",
+    "tour": "Triton Super High Roller Series",
+    "destinationId": "south-korea/jeju",
+    "startDate": "2026-09-04",
+    "endDate": "2026-09-17",
+    "dateNote": "Dates cover the complete September Super High Roller Series. The NLH Main Event runs September 14–16; other events continue on September 17.",
+    "timezone": "Asia/Seoul",
+    "venue": {
+      "name": "LES A Casino, Jeju Shinhwa World",
+      "address": null,
+      "url": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5"
+    },
+    "status": "scheduled",
+    "description": "A high-stakes festival at LES A Casino in Jeju Shinhwa World. The USD 100,000 NLH Main Event is the headline entry, with selected remaining side events at USD 30,000 and USD 50,000. Check Triton’s entry process before arranging the trip.",
+    "registration": "Triton’s event page directs prospective players through a referral from an existing player or Triton team member, followed by VIP and Player Services contact. Confirm eligibility, approval and any entry fees directly. The separately scheduled Triton Invitational is invitation-only.",
+    "registrationUrl": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
+    "scheduleUrl": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
+    "scheduleCoverage": "Selected remaining highlights only, with entry and continuation days shown separately. The official page below has the full schedule and current registration information.",
+    "sourceIds": [
+      "triton-jeju-september-2026-announcement",
+      "triton-jeju-september-2026-schedule"
+    ],
+    "checkedAt": "2026-09-13T06:27:30Z",
+    "updatedAt": "2026-09-13T06:27:30Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-13T06:27:30Z",
+        "text": "Added the confirmed September 4–17 festival, selected remaining USD buy-ins and starting days, venue and official entry information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "NLH Main Event",
+        "number": "12",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 100000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "250,000",
+        "levels": "50 minutes",
+        "reentry": null,
+        "lateRegistration": "September 15 (Day 2), 13:00 local time.",
+        "endDate": "2026-09-16",
+        "sessions": [
+          {
+            "id": "main-1",
+            "label": "Day 1",
+            "date": "2026-09-14",
+            "time": "15:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-2",
+            "label": "Day 2",
+            "date": "2026-09-15",
+            "time": "13:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-3",
+            "label": "Final",
+            "date": "2026-09-16",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "triton-jeju-september-2026-schedule"
+        ]
+      },
+      {
+        "id": "nlh-seven-handed",
+        "slug": "nlh-seven-handed",
+        "name": "NLH 7-Handed",
+        "number": "11",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 50000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "200,000",
+        "levels": "30 minutes",
+        "reentry": null,
+        "lateRegistration": "September 13 (Day 1), 23:00 local time.",
+        "endDate": "2026-09-14",
+        "sessions": [
+          {
+            "id": "nlh-seven-handed-1",
+            "label": "Day 1",
+            "date": "2026-09-13",
+            "time": "17:00",
+            "kind": "entry"
+          },
+          {
+            "id": "nlh-seven-handed-2",
+            "label": "Final",
+            "date": "2026-09-14",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "triton-jeju-september-2026-schedule"
+        ]
+      },
+      {
+        "id": "nlh-turbo",
+        "slug": "nlh-turbo",
+        "name": "NLH Turbo",
+        "number": "16",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 30000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "200,000",
+        "levels": "20 minutes",
+        "reentry": null,
+        "lateRegistration": "September 17, 19:25 local time.",
+        "endDate": "2026-09-17",
+        "sessions": [
+          {
+            "id": "nlh-turbo-1",
+            "label": "Published start",
+            "date": "2026-09-17",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "triton-jeju-september-2026-schedule"
         ]
       }
     ]

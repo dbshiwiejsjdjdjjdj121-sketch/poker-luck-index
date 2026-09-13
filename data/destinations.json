@@ -779,17 +779,23 @@
     "transport": [
       {
         "title": "APT airport transfer information",
-        "detail": "APT publishes an airport-transfer schedule on its event information page. Check pickup points, operating dates and eligibility before relying on it; the playing venue is at LES A Casino in Seogwipo.",
+        "detail": "APT publishes an airport-transfer schedule for its September 25–October 7 Jeju festival. Check pickup points, operating dates and eligibility; do not assume this arrangement covers other organizers’ events at LES A Casino.",
         "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
         "sourceId": "jeju-info"
       }
     ],
     "hotels": [
       {
-        "title": "Organizer’s accommodation information",
+        "title": "APT Jeju accommodation information",
         "detail": "APT links its hotel-booking information from the event page. Confirm the property, transfer arrangements and total package cost through that official link before reserving.",
         "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
         "sourceId": "jeju-info"
+      },
+      {
+        "title": "Marriott resort listed by Triton",
+        "detail": "Triton’s September 2026 event page names Jeju Shinhwa World Marriott Resort as its accommodation. Confirm availability, room terms and any event arrangement with Triton or the hotel; no room price or discount has been verified here.",
+        "url": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
+        "sourceId": "triton-jeju-september-2026-schedule"
       }
     ],
     "dining": [
@@ -812,7 +818,7 @@
         "kr-tax"
       ]
     },
-    "updatedAt": "2026-09-06T18:27:47.540764+00:00",
+    "updatedAt": "2026-09-13T06:27:30Z",
     "indexable": true
   },
   {
