@@ -24,3 +24,16 @@
 @media(max-width:1000px){.fr-hero{gap:30px}.fr-filters{grid-template-columns:repeat(3,minmax(0,1fr))}.fr-detail-grid{gap:30px}.fr-hero .hero-search{flex-wrap:wrap}.fr-hero .hero-search .button{width:100%}.fr-hero-panel{padding:24px}.fr-hero h1{font-size:44px}}
 @media(max-width:760px){.header-inner nav{gap:18px}.header-inner nav a{font-size:11px}.fr-hero{grid-template-columns:1fr;padding-block:34px 28px}.fr-hero h1{font-size:42px}.fr-hero-panel{display:none}.fr-hero .hero-search{flex-direction:column}.fr-hero .hero-search label{padding:10px 12px}.fr-hero .hero-search input{font-size:16px;padding-block:9px}.fr-quick-links{gap:6px 15px}.fr-quick-links a{font-size:11px}.fr-grid{grid-template-columns:1fr;gap:16px}.freeroll-card{padding:22px}.freeroll-card h3{font-size:23px}.fr-card-footer{gap:12px}.fr-first-section{padding-top:15px}.fr-live-actions{gap:22px}.fr-explainer{grid-template-columns:1fr;gap:35px;padding-block:35px}.fr-filters{grid-template-columns:repeat(2,minmax(0,1fr));padding:18px;gap:16px 12px}.fr-filters label:first-child{grid-column:1/-1}.fr-filters input,.fr-filters select{font-size:16px}.fr-filters label{font-size:11px}.fr-filters .button{grid-column:1/-1}.fr-heading .lead{font-size:14px}.fr-detail-grid{grid-template-columns:1fr;gap:24px}.fr-heading{margin-bottom:28px}.fr-block h2{font-size:25px}.fr-facts div{grid-template-columns:120px 1fr}.fr-official{padding:23px}.fr-official h2{font-size:27px}.fr-official-links{flex-direction:column}.fr-official-links .button{justify-content:space-between}.fr-tour-links a{padding:12px 14px}.fr-side{order:-1}.fr-side .button,.fr-side .text-link{display:none}}
 @media(max-width:760px){.fr-filters label:last-of-type{grid-column:1/-1}}
+
+/* Short, source-linked answers alongside the freeroll directory. */
+.fr-questions{border-top:1px solid var(--line);padding-block:40px 55px;margin-top:40px}
+.fr-questions>h2{font-size:32px;margin:14px 0 28px}
+.fr-question-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 45px}
+.fr-question-grid article{border-top:1px solid var(--line);padding-top:20px;min-width:0}
+.fr-question-grid h3{font-size:21px;line-height:1.4}
+.fr-question-grid p{font-size:13px;line-height:1.8;color:var(--muted);margin:14px 0}
+.fr-question-grid a{display:inline-block;color:var(--gold);font-size:12px;line-height:1.7;padding-block:8px;text-decoration:underline;text-underline-offset:3px}
+.fr-detail-nav{margin-top:-10px;margin-bottom:28px}
+.fr-block .fr-label{color:var(--gold);font-size:16px;margin-bottom:15px}
+.fr-detail .fr-block{scroll-margin-top:120px}
+@media(max-width:760px){.fr-question-grid{grid-template-columns:1fr;gap:24px}.fr-questions>h2{font-size:27px}.fr-detail-nav{gap:20px;flex-wrap:wrap}.fr-questions{padding-block:30px}}

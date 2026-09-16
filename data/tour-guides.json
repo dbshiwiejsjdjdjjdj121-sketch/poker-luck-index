@@ -1,9 +1,9 @@
 [
   {
     "tourId": "wsop",
-    "title": "WSOP tournaments & Circuit guide",
-    "description": "Find upcoming live WSOP and Circuit festivals. Compare destinations, selected buy-ins and travel information, with links to official schedules.",
-    "intro": "The World Series of Poker calendar extends beyond the Las Vegas summer series. Explore Circuit stops, Super Circuit festivals and international bracelet events, then choose a specific edition for its dates, buy-ins and travel details.",
+    "title": "WSOP Circuit schedule & festival guide",
+    "description": "Explore upcoming WSOP Circuit stops and selected bracelet festivals. Compare dates, buy-ins and travel details, then open the official schedule.",
+    "intro": "Find upcoming WSOP Circuit stops, Super Circuit festivals and selected international bracelet events. Choose a listed edition for its dates, featured buy-ins and travel details, then use the official WSOP calendar for the complete schedule.",
     "formats": [
       {
         "title": "WSOP Circuit",
@@ -38,8 +38,8 @@
     "sourceIds": [
       "guide-wsop-calendar"
     ],
-    "checkedAt": "2026-09-11T17:20:39.510Z",
-    "updatedAt": "2026-09-11T17:20:39.510Z"
+    "checkedAt": "2026-09-16T08:01:05Z",
+    "updatedAt": "2026-09-16T08:01:05Z"
   },
   {
     "tourId": "wpt",
