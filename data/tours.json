@@ -17,7 +17,7 @@
     "officialUrl": "https://www.wsop.com/schedule/",
     "featured": true,
     "description": "Circuit stops, Super Circuit and bracelet festivals, together in one view.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "wpt",
@@ -32,7 +32,7 @@
     "officialUrl": "https://www.worldpokertour.com/event/schedule/",
     "featured": true,
     "description": "Main Tour, Prime and special events. A festival can include more than one championship.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "ept",
@@ -60,7 +60,7 @@
     "officialUrl": "https://www.theasianpokertour.com/series",
     "featured": true,
     "description": "Asian Poker Tour festivals, with dates, selected buy-ins and official entry points.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "triton",
@@ -138,7 +138,7 @@
     "officialUrl": "https://irishpokeropen.com/",
     "featured": false,
     "description": "The Irish Poker Open and its international stops. Check the official site for the wider calendar.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "bpc",
@@ -154,7 +154,7 @@
     "officialUrl": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
     "featured": false,
     "description": "Belgian Poker Challenge editions, including the MegaStack festival in Namur.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "cps",

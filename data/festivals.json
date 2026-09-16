@@ -234,7 +234,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -435,7 +435,7 @@
     "sourceIds": [
       "austin-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1969,7 +1969,7 @@
       "sydney-schedule",
       "sydney-main-2026"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -2077,7 +2077,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
@@ -2154,7 +2154,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -2845,7 +2845,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -4020,7 +4020,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4149,7 +4149,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4281,24 +4281,173 @@
       "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/"
     },
     "status": "scheduled",
-    "description": "Choctaw Casino Resort hosts this WSOP stop in Durant. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "description": "Choctaw Casino Resort hosts this October–November WSOP Circuit stop in Durant. The USD 1,700 main event has a USD 1 million guarantee and entry flights on November 6–7. Earlier alternatives include the USD 400 Gargantuan and USD 1,100 Mini Main; compare their entry dates before planning your stay.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
-    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. Follow the official schedule below for the full lineup, structures and registration deadlines.",
     "sourceIds": [
       "durant-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
+    "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-16T05:14:30Z",
+        "text": "Added confirmed main-event, Gargantuan and Mini Main buy-ins, guarantees and starting flights from the published WSOP schedule."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "event-14",
+        "slug": "event-14",
+        "name": "Main Event",
+        "number": "14",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-14-start-1",
+            "label": "Flight A",
+            "date": "2026-11-06",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-14-start-2",
+            "label": "Flight B",
+            "date": "2026-11-07",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "durant-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "name": "Gargantuan",
+        "number": "3",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-3-start-1",
+            "label": "Flight A",
+            "date": "2026-10-29",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-2",
+            "label": "Flight B",
+            "date": "2026-10-30",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-3",
+            "label": "Flight C",
+            "date": "2026-10-30",
+            "time": "16:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-4",
+            "label": "Flight D",
+            "date": "2026-10-31",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-5",
+            "label": "Flight E",
+            "date": "2026-10-31",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "durant-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-13",
+        "slug": "event-13",
+        "name": "Mini Main",
+        "number": "13",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 200000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-13-start-1",
+            "label": "Flight A",
+            "date": "2026-11-05",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-13-start-2",
+            "label": "Flight B",
+            "date": "2026-11-05",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "durant-2026-schedule"
+        ]
+      }
+    ]
   },
   {
     "id": "toledo-2026",
@@ -4324,7 +4473,7 @@
     "sourceIds": [
       "toledo-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4470,7 +4619,7 @@
     "sourceIds": [
       "playground-november-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4505,7 +4654,7 @@
     "sourceIds": [
       "scottsdale-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4540,7 +4689,7 @@
     "sourceIds": [
       "elgin-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4658,7 +4807,7 @@
     "sourceIds": [
       "panama-city-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4685,24 +4834,178 @@
       "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/"
     },
     "status": "scheduled",
-    "description": "Casino Middelkerke Betfirst by Partouche hosts this WSOP stop in Middelkerke. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "description": "This Belgian WSOP Circuit stop offers a EUR 1,500 main event with four starting flights on November 11–13. Earlier options include a EUR 300 Mini Main and EUR 550 Mystery Bounty. The festival runs November 6–15 at Casino Middelkerke; check the official schedule for registration and structure details.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
-    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. Follow the official schedule below for the full lineup, structures and registration deadlines.",
     "sourceIds": [
       "middelkerke-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
+    "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-16T05:14:30Z",
+        "text": "Added confirmed main-event, Mini Main and Mystery Bounty buy-ins and starting flights from the published WSOP schedule."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "event-6",
+        "slug": "event-6",
+        "name": "Main Event",
+        "number": "6",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-6-start-1",
+            "label": "Flight A",
+            "date": "2026-11-11",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-2",
+            "label": "Flight B",
+            "date": "2026-11-12",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-3",
+            "label": "Flight C",
+            "date": "2026-11-13",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-6-start-4",
+            "label": "Flight D",
+            "date": "2026-11-13",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "middelkerke-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "name": "Mini Main",
+        "number": "1",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 300,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-1-start-1",
+            "label": "Flight A",
+            "date": "2026-11-06",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-2",
+            "label": "Flight B",
+            "date": "2026-11-06",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-3",
+            "label": "Flight C",
+            "date": "2026-11-07",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-1-start-4",
+            "label": "Flight D",
+            "date": "2026-11-07",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "middelkerke-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "name": "Mystery Bounty",
+        "number": "3",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 550,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "event-3-start-1",
+            "label": "Flight A",
+            "date": "2026-11-08",
+            "time": "14:00",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-2",
+            "label": "Flight B",
+            "date": "2026-11-09",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-start-3",
+            "label": "Flight C",
+            "date": "2026-11-09",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "middelkerke-2026-schedule"
+        ]
+      }
+    ]
   },
   {
     "id": "new-orleans-2026",
@@ -4728,7 +5031,7 @@
     "sourceIds": [
       "new-orleans-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4763,7 +5066,7 @@
     "sourceIds": [
       "sanremo-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4798,7 +5101,7 @@
     "sourceIds": [
       "cherokee-november-2026-schedule"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4834,7 +5137,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5259,7 +5562,7 @@
       "wpt-seoul-2026-schedule",
       "wpt-seoul-2026-announcement"
     ],
-    "checkedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5332,7 +5635,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5719,7 +6022,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -5900,7 +6203,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "The organizer has not yet published the tournament schedule. Buy-ins, guarantees and entry days remain unconfirmed.",
-    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -5935,7 +6238,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6299,7 +6602,7 @@
     "registration": "The organizer requires players to be over 18 and carry valid photo ID. Its event page links festival accommodation offers; confirm the applicable terms and booking procedure directly.",
     "reviewNote": "The organizer’s Marrakech schedule link currently opens a Sydney PDF, and its FAQ mixes destinations. Marrakech buy-ins and entry rules remain unconfirmed. Check the correct local schedule with the organizer.",
     "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins, guarantees and entry days remain unconfirmed while the correct Marrakech schedule is checked.",
-    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6337,7 +6640,7 @@
     "registration": "The organizer supports registration at the event cashier and through GameID after BSOP registration. Confirm accepted payment methods and any payment charges with the cashier.",
     "reviewNote": null,
     "scheduleCoverage": "Official key-tournament date ranges and buy-ins are published. The complete flight schedule is still to come; dates below show each highlighted event’s published opening date.",
-    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6476,7 +6779,7 @@
     "registration": "BSOP lists event-cashier and GameID registration. Confirm the published tournament programme before choosing an entry or booking a satellite package.",
     "reviewNote": null,
     "scheduleCoverage": "The organizer has not yet published the full tournament schedule. Buy-ins, guarantees and starting days remain unconfirmed.",
-    "checkedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6724,7 +7027,7 @@
       "triton-jeju-september-2026-announcement",
       "triton-jeju-september-2026-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-16T05:14:30Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -6846,6 +7149,148 @@
         ],
         "sourceIds": [
           "triton-jeju-september-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wynn-world-championship-2026",
+    "slug": "wpt-world-championship-wynn-las-vegas-2026",
+    "name": "WPT World Championship Festival at Wynn Las Vegas 2026",
+    "tour": "WPT Main Tour",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-11-27",
+    "endDate": "2026-12-21",
+    "timezone": "America/Los_Angeles",
+    "dateNote": "These dates cover the whole festival. The World Championship runs December 13–20; Prime runs December 5–12 and Super Gold Million December 10–14.",
+    "venue": {
+      "name": "Wynn Las Vegas",
+      "address": "3131 Las Vegas Boulevard South, Las Vegas, NV 89109, United States",
+      "url": "https://www.wynnlasvegas.com/casino/poker"
+    },
+    "status": "scheduled",
+    "description": "Wynn hosts the WPT season finale with three distinct headline budgets: the USD 10,400 World Championship, USD 1,100 Prime Championship and USD 400 Super Gold Million. Prime advertises a USD 5 million guarantee; Super Gold Million advertises USD 3 million. The wider festival includes mixed games and satellites. Match your travel dates to the event you want to enter.",
+    "registration": "The official schedule requires players to be at least 21. Check structure sheets for fees and entry requirements. WPT links a dedicated Wynn and Encore hotel offer; its booking window differs from the festival dates, and the booking page lists a USD 45 daily resort fee plus tax. Confirm room availability and the total price directly.",
+    "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-world-championship-at-wynn-las-vegas-season-2026",
+    "scheduleUrl": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/09/WPT-World-Championship-Festival-Schedule-Season-24.pdf",
+    "scheduleCoverage": "Three selected headline events and their first published starts. Use the official festival PDF for every flight, side event, satellite and structure. Listed guarantees apply only to their named events.",
+    "sourceIds": [
+      "wynn-world-2026-announcement",
+      "wynn-world-2026-main",
+      "wynn-world-2026-prime",
+      "wynn-world-2026-super-gold",
+      "wynn-world-2026-schedule",
+      "wynn-world-2026-hotel"
+    ],
+    "checkedAt": "2026-09-16T05:14:30Z",
+    "updatedAt": "2026-09-16T05:14:30Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-16T05:14:30Z",
+        "text": "Added the officially announced 2026 festival, three headline buy-ins, dated starts, event guarantees and Wynn travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "world-championship",
+        "slug": "world-championship",
+        "name": "WPT World Championship",
+        "number": "main",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 10400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": "One entry per starting flight; three starting flights are advertised.",
+        "lateRegistration": "Final opportunity to enter is before the start of Day 2; consult the official structure for the cutoff.",
+        "endDate": "2026-12-20",
+        "sessions": [
+          {
+            "id": "world-championship-start-1",
+            "label": "First starting flight",
+            "date": "2026-12-13",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "wynn-world-2026-main",
+          "wynn-world-2026-announcement"
+        ]
+      },
+      {
+        "id": "prime-championship",
+        "slug": "prime-championship",
+        "name": "WPT Prime Championship",
+        "number": "prime",
+        "game": "Poker",
+        "category": "side",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 5000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-12-12",
+        "sessions": [
+          {
+            "id": "prime-championship-start-1",
+            "label": "First starting flight",
+            "date": "2026-12-05",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "wynn-world-2026-prime"
+        ]
+      },
+      {
+        "id": "super-gold-million",
+        "slug": "super-gold-million",
+        "name": "Super Gold Million",
+        "number": "super-gold",
+        "game": "Poker",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 3000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited re-entry across the four advertised starting flights.",
+        "lateRegistration": null,
+        "endDate": "2026-12-14",
+        "sessions": [
+          {
+            "id": "super-gold-million-start-1",
+            "label": "First starting flight",
+            "date": "2026-12-10",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "wynn-world-2026-super-gold",
+          "wynn-world-2026-announcement"
         ]
       }
     ]

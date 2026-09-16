@@ -637,7 +637,7 @@
     "city": "Las Vegas",
     "slug": "las-vegas",
     "region": "North America",
-    "intro": "The Venetian’s poker room is inside The Palazzo, on level 2 of Grand Canal Shoppes. Plan airport pickup, check the resort’s poker-rate conditions and compare festival dates with championship dates before booking.",
+    "intro": "Las Vegas festivals use different resorts. The Venetian poker room is inside The Palazzo, while Wynn’s poker room is at Encore. Match the specific festival venue and entry dates before booking a room, and allow extra time for airport roadwork.",
     "airport": {
       "title": "Harry Reid International (LAS)",
       "detail": "An airport option to compare for your trip to Las Vegas. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
@@ -648,14 +648,20 @@
       {
         "title": "Airport taxi and rideshare pickup",
         "url": "https://www.harryreidairport.com/taxi-and-ride-share",
-        "detail": "Taxis are available outside baggage claim in both terminals. Rideshare uses designated pickup areas; follow the current terminal guidance and allow for roadwork or event traffic on the Strip.",
+        "detail": "The airport reports connector-road lane reductions through December 2026. Allow extra time. Taxi pickup is outside baggage claim; rideshare pickup is on level 2 of the Terminal 1 parking garage and the valet level of the Terminal 3 garage. Follow the current terminal signs.",
         "sourceId": "vegas-taxis"
       },
       {
-        "title": "Find the poker room",
+        "title": "Find The Palazzo poker room",
         "detail": "Head to The Palazzo, level 2 of Grand Canal Shoppes. The resort identifies The Palazzo self-parking garage as convenient access; check parking terms before arrival.",
         "url": "https://www.venetianlasvegas.com/resort/casino/poker.html",
         "sourceId": "venetian-poker-room"
+      },
+      {
+        "title": "Wynn and Encore poker-room access",
+        "detail": "Wynn identifies its regular poker room at Encore; the pedestrian bridge from the northwest corner of Wynn self-parking level 2 leads toward it. Check the festival’s assigned tournament area before heading to the regular room.",
+        "url": "https://www.wynnlasvegas.com/casino/poker",
+        "sourceId": "wynn-poker-room"
       }
     ],
     "hotels": [
@@ -664,6 +670,12 @@
         "detail": "The resort’s 2026 page confirms code EPOKR25. The rate has qualifying-play requirements for each night, a USD 55 nightly resort fee, availability limits and possible blackout dates. Unqualified nights revert to the prevailing rate. Confirm the complete terms and total price with the resort before booking.",
         "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
         "sourceId": "venetian-poker-rates-2026"
+      },
+      {
+        "title": "Wynn and Encore — poker player room enquiries",
+        "detail": "The poker-room page lists preferred room rates and a reservations contact. Ask about eligibility and dates, and compare the complete stay cost. Festival-specific booking offers may have different terms.",
+        "url": "https://www.wynnlasvegas.com/casino/poker",
+        "sourceId": "wynn-poker-room"
       }
     ],
     "dining": [
@@ -672,6 +684,12 @@
         "detail": "The resort lists Grand Lux Cafe among the outlets whose food can be served at the poker table. Ask poker-room staff about the available menu and service during your session; opening hours are not confirmed here.",
         "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
         "sourceId": "venetian-poker-rates-2026"
+      },
+      {
+        "title": "Wynn and Encore — casual dining choices",
+        "detail": "The resort lists Allegro for Italian food, Charlie’s Sports Bar for burgers and sandwiches, Red 8 for Asian dishes and Wazuzu for Asian fusion and sushi. Use the official directory for each restaurant’s menu, location and current hours.",
+        "url": "https://www.wynnlasvegas.com/dining",
+        "sourceId": "wynn-dining"
       }
     ],
     "tax": {
@@ -680,7 +698,7 @@
         "us-tax"
       ]
     },
-    "updatedAt": "2026-09-11T06:57:18.694Z",
+    "updatedAt": "2026-09-16T05:14:30Z",
     "indexable": true
   },
   {
