@@ -1,30 +1,34 @@
 import Link from "next/link";
 import { SaveButton } from "@/components/save-button";
 import { notFound } from "next/navigation";
-import { festivals, festivalBySlug, destinationById, sourcesFor } from "@/lib/guide-data";
+import { festivals, festivalBySlug, destinationById } from "@/lib/guide-data";
 import { pageMeta, SITE_URL } from "@/lib/site";
 import { dateRange, formatDate, isStale, mainEvent, money, nextEditionOf, serializeJsonLd, statusOf } from "@/lib/guide-utils";
 import { Breadcrumbs, ExternalLink, SourceList, Status, TravelGuide } from "@/components/guide-ui";
 import { FestivalLifecycleNotice, FestivalOfficialLinks } from "@/components/festival-lifecycle";
 import { familyForSeries } from "@/lib/tour-catalog";
 import { tourGuideHref } from "@/lib/tour-guide-data";
+import { festivalArticle, festivalBreadcrumbs, festivalContentUpdated, festivalImagePath } from "@/lib/festival-seo";
 type Props={params:Promise<{slug:string}>};
 export const revalidate=3600;
 export async function generateMetadata({params}:Props){
   const f=festivalBySlug((await params).slug);if(!f)return {};
   const archived=statusOf(f)==="ended";
-  return pageMeta(archived?`${f.name} — Past festival`:f.name,archived?`${f.name} has ended. Browse this edition's dates, buy-ins and venue information for reference, with original official sources.`:`${f.name}: dates, key buy-ins, venue, travel essentials and official registration links.`,`/tournaments/${f.slug}`);
+  const metadata=pageMeta(archived?`${f.name} — Past festival`:f.name,archived?`${f.name} has ended. Browse this edition's dates, buy-ins and venue information for reference, with original official sources.`:`${f.name}: dates, key buy-ins, venue, travel essentials and official registration links.`,`/tournaments/${f.slug}`);
+  const image={url:SITE_URL+festivalImagePath(f.slug),width:1200,height:630,alt:`${f.name} — independent festival guide`};
+  return {...metadata,openGraph:{...metadata.openGraph,type:"article",images:[image]},twitter:{...metadata.twitter,images:[image]}};
 }
 export default async function FestivalPage({params}:Props){
   const f=festivalBySlug((await params).slug);if(!f)notFound();
   const d=destinationById(f.destinationId), main=mainEvent(f);
   const archived=statusOf(f)==="ended", stale=isStale(f);
-  const primarySources=sourcesFor(f.sourceIds);
-  const contentUpdated=[f.updatedAt,d.updatedAt].sort().at(-1)!;
+  const contentUpdated=festivalContentUpdated(f,d);
   const family=familyForSeries(f.tour), guideHref=family&&tourGuideHref(family.id);
-  return <main id="main" className="container page"><Breadcrumbs items={[{label:"Tournaments",href:"/tournaments"},...(guideHref?[{label:family!.label+" guide",href:guideHref}]:[]),{label:f.name}]}/>
+  const breadcrumbs=[{label:"Tournaments",href:"/tournaments"},...(guideHref?[{label:family!.label+" guide",href:guideHref}]:[]),{label:f.name}];
+  return <main id="main" className="container page"><Breadcrumbs items={breadcrumbs}/>
   <FestivalLifecycleNotice festival={f} archived={archived} next={nextEditionOf(f,festivals)} previous={festivals.find(candidate=>candidate.id===f.previousEditionId)}/>
   <div className="detail-hero"><div><p className="eyebrow">{f.tour} / {d.country}</p><h1>{f.name}</h1><div className="detail-save"><SaveButton festivalId={f.id} name={f.name}/></div><p className="detail-intro">{f.description}</p><div className="detail-location"><span>⌖ {d.city}, {d.country}</span><Status festival={f}/></div></div><div className="hero-summary"><span className="eyebrow">AT A GLANCE</span><strong>{dateRange(f.startDate,f.endDate)}</strong><p>{f.venue.name}</p><div><span>MAIN EVENT BUY-IN</span><strong>{money(main?.buyIn)}</strong></div><a href="#official" className="button">{archived?"Official sources ↗":"Official entry points ↗"}</a></div></div>
+  <p className="fine-print">Independent festival guide by <Link href="/about">ALL IN Poker Guide</Link>.</p>
   <div className="verification-bar"><span>Source checked <strong>{formatDate(f.checkedAt.slice(0,10),true)}</strong></span><span>Information updated {formatDate(contentUpdated.slice(0,10),true)}</span><span className={stale?"warning-text":""}>{archived?"Archived · not routinely rechecked":stale?"Recheck due":"Sources linked below"}</span></div>
   {f.reviewNote && <p className="notice"><strong>Source discrepancy:</strong> {f.reviewNote}</p>}
   {f.dateNote && <p className="notice">{f.dateNote}</p>}
@@ -39,6 +43,7 @@ export default async function FestivalPage({params}:Props){
   <section id="travel" className="section compact"><div className="section-heading"><div><p className="eyebrow">03 / BEYOND THE TABLE</p><h2>{archived?`Explore ${d.city}.`:`Plan your time in ${d.city}.`}</h2></div><Link className="text-link" href={`/destinations/${d.id}`}>Destination guide ↗</Link></div>{archived&&<p className="section-description">The destination guide below is maintained separately from this historical edition. Check current availability with each provider; festival-specific offers from this edition are no longer current.</p>}<TravelGuide destination={d}/></section>
   <FestivalOfficialLinks festival={f} archived={archived}/>
   <section className="section compact source-section"><div><h3>Sources & verification</h3><SourceList ids={f.sourceIds}/></div><div><h3>What changed</h3>{f.changes.slice().reverse().map((c,i)=><p key={i}><time>{formatDate(c.date.slice(0,10),true)}</time> — {c.text}</p>)}</div></section>
-  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeJsonLd({"@context":"https://schema.org","@type":"Event",name:f.name,url:SITE_URL+"/tournaments/"+f.slug,description:f.description,startDate:f.startDate,endDate:f.endDate,eventStatus:"https://schema.org/"+(f.status==="cancelled"?"EventCancelled":f.status==="postponed"?"EventPostponed":"EventScheduled"),eventAttendanceMode:"https://schema.org/OfflineEventAttendanceMode",location:{"@type":"Place",name:f.venue.name,address:{"@type":"PostalAddress",addressLocality:d.city,addressCountry:d.countryCode,...(f.venue.address?{streetAddress:f.venue.address}:{})}},organizer:{"@type":"Organization",name:f.tour,url:primarySources[0]?.url}})}}/>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeJsonLd(festivalArticle(f,d))}}/>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeJsonLd(festivalBreadcrumbs(breadcrumbs))}}/>
   </main>;
 }
