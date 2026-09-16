@@ -950,5 +950,75 @@
     "url": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
     "kind": "schedule",
     "checkedAt": "2026-09-13T06:27:30Z"
+  },
+  {
+    "id": "freeroll-stars-fr",
+    "title": "PokerStars.fr — Stars Freerolls",
+    "url": "https://www.pokerstars.fr/en/poker/free/freerolls/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-stars-help",
+    "title": "PokerStars — freeroll tournament help",
+    "url": "https://www.pokerstars.com/is/help/articles/finding-freerolls-fr/10918/?ooac=1",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-party-offer",
+    "title": "PartyPoker — Round-the-Clock terms",
+    "url": "https://www.partypoker.com/en/poker/offers/round-the-clock-freerolls",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-party-help",
+    "title": "PartyPoker — free poker eligibility",
+    "url": "https://www.partypoker.com/en/poker/how-to-play/software/free-poker",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-888-offer",
+    "title": "888poker — 24/7 Freerolls Festival",
+    "url": "https://www.888poker.com/poker-promotions/24-7-freerolls-festival/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-888-terms",
+    "title": "888poker — 24/7 eligibility and rules",
+    "url": "https://www.888poker.com/terms/24-7-freerolls-festival/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-atlanta-schedule",
+    "title": "Freeroll Atlanta — dated schedule",
+    "url": "https://www.freerollatlanta.com/schedule-2/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-atlanta-rules",
+    "title": "Freeroll Atlanta — rules and spending conditions",
+    "url": "https://www.freerollatlanta.com/rules/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-atlanta-welcome",
+    "title": "Freeroll Atlanta — player introduction",
+    "url": "https://www.freerollatlanta.com/welcome-to-freeroll-atlanta-poker/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
+  },
+  {
+    "id": "freeroll-atlanta-prizes",
+    "title": "Freeroll Atlanta — prizes",
+    "url": "https://www.freerollatlanta.com/prizes/",
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "kind": "organizer"
   }
 ]

@@ -1,0 +1,395 @@
+[
+  {
+    "id": "pokerstars-freerolls",
+    "slug": "pokerstars-freerolls",
+    "title": "PokerStars freerolls: the .fr Stars program",
+    "brand": "PokerStars",
+    "description": "Free qualifiers feed two weekly finals on PokerStars.fr. Check the ticket requirement and regional account before treating this as an open-entry final.",
+    "mode": "online",
+    "status": "published",
+    "market": {
+      "label": "France · PokerStars.fr",
+      "countries": [
+        "FR"
+      ],
+      "usStates": [],
+      "note": "This source describes PokerStars.fr only. It does not confirm the same promotion in the US, UK or another PokerStars market. Account and location eligibility must be checked with PokerStars."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "required",
+      "password": "unknown",
+      "requirements": [
+        "An eligible real-money PokerStars.fr account; the official page says no deposit is required.",
+        "Finish in the top 27 of a free Satellite Stars Freeroll to obtain a finals ticket.",
+        "Tickets expire after 31 days."
+      ],
+      "costNote": "Free qualifier entry; weekly finals require a qualification ticket. This is not a deposit-bonus offer."
+    },
+    "reward": {
+      "label": "€1,500 cash / T€500",
+      "details": "The Sunday final advertises €1,500 cash; Wednesday advertises T€500 in tournament money. These are separate pools, not a payout to every entrant."
+    },
+    "schedule": {
+      "text": "Daily qualifier at 20:00; Wednesday final at 20:00 and Sunday final at 16:00. The official page labels final times CET. Check the lobby for daylight-saving handling and the next dated occurrence.",
+      "endDate": null,
+      "slots": [],
+      "timezone": null
+    },
+    "sections": [
+      {
+        "title": "What the listing covers",
+        "text": "This is a recurring program, not a confirmed seat in today’s tournament. The qualifier and final have different entry conditions."
+      },
+      {
+        "title": "Finding other PokerStars freerolls",
+        "text": "PokerStars’ help page explains that freerolls are listed in the tournament lobby, sometimes with ticket or password requirements. Availability differs by market; an empty lobby filter means none are available at that time."
+      }
+    ],
+    "officialLinks": [
+      {
+        "sourceId": "freeroll-stars-fr",
+        "label": "Official .fr program and conditions",
+        "kind": "rules",
+        "url": "https://www.pokerstars.fr/en/poker/free/freerolls/"
+      },
+      {
+        "sourceId": "freeroll-stars-help",
+        "label": "Official help: finding freerolls",
+        "kind": "explanation",
+        "url": "https://www.pokerstars.com/is/help/articles/finding-freerolls-fr/10918/?ooac=1"
+      }
+    ],
+    "sourceIds": [
+      "freeroll-stars-fr",
+      "freeroll-stars-help"
+    ],
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "updatedAt": "2026-09-16T03:54:20Z",
+    "reviewNote": null
+  },
+  {
+    "id": "partypoker-round-the-clock",
+    "slug": "partypoker-round-the-clock",
+    "title": "PartyPoker Round-the-Clock Freerolls",
+    "brand": "PartyPoker",
+    "description": "An hourly program with Party Dollars or tournament-ticket prizes. The entry fee is zero, but account and deposit conditions still matter.",
+    "mode": "online",
+    "status": "published",
+    "market": {
+      "label": "UK / eligible PartyPoker markets",
+      "countries": [
+        "GB"
+      ],
+      "usStates": [],
+      "note": "The source is the international PartyPoker offer, with UK promotion reference UKREQ0008466. Restricted countries are excluded. This is not a US offer; confirm availability for your specific account and location."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "required",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Verified eligible real-money account, poker client, and access to promotions.",
+        "18+; the offer specifies 19+ in Canada, whose local availability is not confirmed here.",
+        "PartyPoker’s general freeroll guide says real-money players must have made at least one deposit."
+      ],
+      "costNote": "Do not treat zero tournament entry as no-deposit eligibility. A funded-account condition is described in the official general guide."
+    },
+    "reward": {
+      "label": "P$ or tournament tickets",
+      "details": "Current offer advertises $20–$50 pools and $500 total per day across tournaments. Party Dollars cannot be exchanged for cash; they expire after 12 months."
+    },
+    "schedule": {
+      "text": "The offer describes starts on the hour, daily until further notice. Exact dated tournaments and pool details are in the lobby. Single entry; the promotion terms describe 60 minutes of late entry.",
+      "endDate": null,
+      "slots": [],
+      "timezone": null
+    },
+    "sections": [
+      {
+        "title": "Reading the prizes",
+        "text": "The daily promotional total is spread across tournaments. P$ is playing credit, not a withdrawable cash prize."
+      },
+      {
+        "title": "Before choosing a tournament",
+        "text": "The current promotion and the general eligibility guide are both linked below. Check the client for your available event and any account-specific restriction."
+      }
+    ],
+    "officialLinks": [
+      {
+        "sourceId": "freeroll-party-offer",
+        "label": "Official offer, prizes and rules",
+        "kind": "rules",
+        "url": "https://www.partypoker.com/en/poker/offers/round-the-clock-freerolls"
+      },
+      {
+        "sourceId": "freeroll-party-help",
+        "label": "Official account and deposit explanation",
+        "kind": "explanation",
+        "url": "https://www.partypoker.com/en/poker/how-to-play/software/free-poker"
+      }
+    ],
+    "sourceIds": [
+      "freeroll-party-offer",
+      "freeroll-party-help"
+    ],
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "updatedAt": "2026-09-16T03:54:20Z",
+    "reviewNote": null
+  },
+  {
+    "id": "888poker-freerolls",
+    "slug": "888poker-freerolls",
+    "title": "888poker 24/7 Freerolls Festival",
+    "brand": "888poker",
+    "description": "Freebie and Fabulous freerolls have different entry routes. Both sit within a promotion for funded players, with additional regional restrictions.",
+    "mode": "online",
+    "status": "published",
+    "market": {
+      "label": "Great Britain · eligible accounts",
+      "countries": [
+        "GB"
+      ],
+      "usStates": [],
+      "note": "UK terms are published, but Northern Ireland is explicitly excluded. Other markets have their own eligibility rules; no US availability is confirmed by these sources."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "required",
+      "ticket": "varies",
+      "password": "unknown",
+      "requirements": [
+        "Eligible registered and funded account; age 18 or the higher local minimum.",
+        "The terms distinguish earlier funded accounts with qualifying real-money activity from first deposits after the promotion began.",
+        "Freebie entry needs no ticket; Fabulous requires a Multiprize Wheel ticket."
+      ],
+      "costNote": "Funded-account promotion. No ticket for a Freebie does not mean no deposit or no eligibility conditions."
+    },
+    "reward": {
+      "label": "Prize varies by freeroll",
+      "details": "The promotional page advertises over $9,000 across the week, not for one tournament. Confirm each event’s payout and reward type in the lobby; wheel rewards and tournament prizes are different."
+    },
+    "schedule": {
+      "text": "Ongoing daily promotion. The operator sets individual start times; exact dated starts are not published on the source page.",
+      "endDate": null,
+      "slots": [],
+      "timezone": null
+    },
+    "sections": [
+      {
+        "title": "Two different access routes",
+        "text": "A Freebie and a Fabulous tournament are not interchangeable. Check whether a ticket is required before selecting an event."
+      },
+      {
+        "title": "What to confirm in the lobby",
+        "text": "Check the individual time, prize type, ticket validity and account eligibility. The official page does not establish that every advertised reward is withdrawable cash."
+      }
+    ],
+    "officialLinks": [
+      {
+        "sourceId": "freeroll-888-offer",
+        "label": "Official promotion overview",
+        "kind": "explanation",
+        "url": "https://www.888poker.com/poker-promotions/24-7-freerolls-festival/"
+      },
+      {
+        "sourceId": "freeroll-888-terms",
+        "label": "Official eligibility and full rules",
+        "kind": "rules",
+        "url": "https://www.888poker.com/terms/24-7-freerolls-festival/"
+      }
+    ],
+    "sourceIds": [
+      "freeroll-888-offer",
+      "freeroll-888-terms"
+    ],
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "updatedAt": "2026-09-16T03:54:20Z",
+    "reviewNote": null
+  },
+  {
+    "id": "freeroll-atlanta",
+    "slug": "freeroll-atlanta",
+    "title": "Freeroll Atlanta: free-entry live poker",
+    "brand": "Freeroll Atlanta",
+    "description": "A local No-Limit Hold’em league in Atlanta bars and restaurants. Entry is free, but qualifying for points or gift certificates requires venue spending.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Atlanta, Georgia · United States",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "GA"
+      ],
+      "note": "In-person Atlanta venues only. This is not an online poker offer available across Georgia or the United States. Confirm venue admission and age requirements with the host."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "not-required",
+      "password": "not-required",
+      "requirements": [
+        "Attend the listed Atlanta venue and check its admission requirements.",
+        "The rules require a $10 venue tab to qualify for points or gift certificates.",
+        "Optional food or drink purchases can add chips during early levels."
+      ],
+      "costNote": "Free entry does not mean a cost-free prize opportunity: a $10 tab is required for points/gift certificates, and purchases may provide extra chips."
+    },
+    "reward": {
+      "label": "Venue prizes / selected cash nights",
+      "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
+    },
+    "schedule": {
+      "text": "Selected published starts for 16–22 September 2026, shown in Atlanta local time (America/New_York). This is a subset of the official calendar; no future weekly dates are generated automatically.",
+      "endDate": null,
+      "slots": [
+        {
+          "id": "atlanta-2026-09-16-1800",
+          "label": "Neighbor’s Pub",
+          "date": "2026-09-16",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-16-2000",
+          "label": "Limerick Junction Pub",
+          "date": "2026-09-16",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-17-1900",
+          "label": "Gino’s NY Pizza Bar",
+          "date": "2026-09-17",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-18-1900",
+          "label": "Neighbor’s Pub",
+          "date": "2026-09-18",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-19-1300",
+          "label": "The Independent · turbo",
+          "date": "2026-09-19",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-19-1500",
+          "label": "The Independent · turbo",
+          "date": "2026-09-19",
+          "time": "15:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-20-1300",
+          "label": "The Independent",
+          "date": "2026-09-20",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-20-1600",
+          "label": "Milltown Arms Tavern 5 Points",
+          "date": "2026-09-20",
+          "time": "16:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-20-1900",
+          "label": "Little 5 Pub",
+          "date": "2026-09-20",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-21-1900",
+          "label": "Moe’s and Joe’s",
+          "date": "2026-09-21",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-22-1800",
+          "label": "Sweet Auburn BBQ",
+          "date": "2026-09-22",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-22-2000",
+          "label": "Little 5 Pub",
+          "date": "2026-09-22",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        }
+      ],
+      "timezone": "America/New_York"
+    },
+    "sections": [
+      {
+        "title": "Know the spending conditions",
+        "text": "The organizer describes free entry. Its separate rules add a spending condition for points and gift certificates, plus purchase-related extra chips."
+      },
+      {
+        "title": "Confirm before travelling",
+        "text": "Check the official venue link and day’s listing. Late-entry limits conflict between the schedule and rules, so arrive before the published start or contact the organizer."
+      }
+    ],
+    "officialLinks": [
+      {
+        "sourceId": "freeroll-atlanta-schedule",
+        "label": "Official dated calendar and venue links",
+        "kind": "schedule",
+        "url": "https://www.freerollatlanta.com/schedule-2/"
+      },
+      {
+        "sourceId": "freeroll-atlanta-rules",
+        "label": "Official rules and spending requirements",
+        "kind": "rules",
+        "url": "https://www.freerollatlanta.com/rules/"
+      },
+      {
+        "sourceId": "freeroll-atlanta-welcome",
+        "label": "Official introduction for new players",
+        "kind": "explanation",
+        "url": "https://www.freerollatlanta.com/welcome-to-freeroll-atlanta-poker/"
+      },
+      {
+        "sourceId": "freeroll-atlanta-prizes",
+        "label": "Official prize explanation",
+        "kind": "explanation",
+        "url": "https://www.freerollatlanta.com/prizes/"
+      }
+    ],
+    "sourceIds": [
+      "freeroll-atlanta-schedule",
+      "freeroll-atlanta-rules",
+      "freeroll-atlanta-welcome",
+      "freeroll-atlanta-prizes"
+    ],
+    "checkedAt": "2026-09-16T03:54:20Z",
+    "updatedAt": "2026-09-16T03:54:20Z",
+    "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed."
+  }
+]

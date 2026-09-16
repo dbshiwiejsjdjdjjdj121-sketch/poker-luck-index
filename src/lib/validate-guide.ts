@@ -98,3 +98,46 @@ export function validateGuide(input: unknown, now = new Date()): string[] {
   } catch (e) { errors.push("Malformed data structure: "+(e instanceof Error?e.message:"unknown error")); }
   return errors;
 }
+
+export function validateFreerolls(input: unknown, sources: Source[], now = new Date()): string[] {
+  if (!Array.isArray(input)) return ["Expected freerolls array"];
+  const errors: string[] = [], ids = new Set<string>(), slugs = new Set<string>(), identities = new Set<string>();
+  const check = (ok: unknown, message: string) => { if (!ok) errors.push(message); };
+  const text = (v: unknown) => typeof v === "string" && v.trim().length > 0;
+  const timestamp = (v: unknown) => typeof v === "string" && /T.*Z$/.test(v) && Number.isFinite(Date.parse(v)) && Date.parse(v) <= now.getTime() + 300000;
+  for (const f of input as import("./guide-types").Freeroll[]) {
+    try {
+      check(/^[a-z0-9-]+$/.test(f.id) && !ids.has(f.id), "Invalid or duplicate freeroll ID " + f.id); ids.add(f.id);
+      check(/^[a-z0-9-]+$/.test(f.slug) && !slugs.has(f.slug), "Invalid or duplicate freeroll slug " + f.id); slugs.add(f.slug);
+      check([f.title,f.brand,f.description,f.market.label,f.market.note,f.entry.costNote,f.reward.label,f.reward.details,f.schedule.text].every(text), "Incomplete freeroll " + f.id);
+      check(["online","live"].includes(f.mode) && ["published","paused","ended"].includes(f.status), "Invalid freeroll status/mode " + f.id);
+      check(f.market.countries.every(c => /^[A-Z]{2}$/.test(c)) && f.market.usStates.every(s => /^[A-Z]{2}$/.test(s)), "Invalid freeroll market " + f.id);
+      check(!f.market.usStates.length || f.market.countries.includes("US"), "US states without US market " + f.id);
+      check(!f.market.countries.includes("US") || f.market.usStates.length > 0, "US coverage requires verified states " + f.id);
+      check(f.entry.buyIn === 0 && ["not-required","required","unknown"].includes(f.entry.deposit) && ["required","varies","not-required"].includes(f.entry.ticket) && ["required","varies","not-required","unknown"].includes(f.entry.password), "Invalid freeroll entry conditions " + f.id);
+      check(f.entry.requirements.length > 0 && f.entry.requirements.every(text), "Missing freeroll eligibility " + f.id);
+      check(timestamp(f.checkedAt) && timestamp(f.updatedAt), "Invalid freeroll timestamps " + f.id);
+      check(f.sourceIds.length > 0 && new Set(f.sourceIds).size === f.sourceIds.length && f.sourceIds.every(id => sources.some(s => s.id === id && Date.parse(s.checkedAt) >= Date.parse(f.checkedAt))), "Freeroll check exceeds a source check or has unknown sources " + f.id);
+      check(f.reviewNote === null || text(f.reviewNote), "Invalid freeroll review note " + f.id);
+      check(f.schedule.endDate === null || (validDate(f.schedule.endDate) && text(f.schedule.timezone)), "Invalid freeroll end date/timezone " + f.id);
+      if (f.schedule.timezone !== null) new Intl.DateTimeFormat("en", {timeZone:f.schedule.timezone}).format(now);
+      check(f.sections.length > 0 && f.sections.every(s => text(s.title) && text(s.text)), "Missing freeroll overview " + f.id);
+      check(f.officialLinks.length > 0, "Missing freeroll official links " + f.id);
+      for (const link of f.officialLinks) {
+        check(text(link.label) && new URL(link.url).protocol === "https:" && ["rules","schedule","explanation"].includes(link.kind), "Invalid freeroll official link " + f.id);
+        check(f.sourceIds.includes(link.sourceId) && sources.some(s => s.id === link.sourceId && s.url === link.url), "Unverified freeroll link " + f.id);
+      }
+      const identity = f.brand + "|" + f.officialLinks[0]?.url;
+      check(!identities.has(identity), "Duplicate freeroll program source " + f.id); identities.add(identity);
+      const slotIds = new Set<string>();
+      for (const s of f.schedule.slots) {
+        check(text(s.id) && !slotIds.has(s.id) && text(s.label), "Invalid or duplicate freeroll slot " + f.id);slotIds.add(s.id);
+        check(validDate(s.date) && (s.time === null || /^([01]\d|2[0-3]):[0-5]\d$/.test(s.time)), "Invalid freeroll slot date/time " + f.id);
+        check(f.schedule.endDate === null || s.date <= f.schedule.endDate, "Freeroll slot after end date " + f.id);
+        new Intl.DateTimeFormat("en", {timeZone:s.timezone}).format(now);
+        check(f.sourceIds.includes(s.sourceId), "Unknown freeroll slot source " + f.id);
+      }
+    } catch { errors.push("Malformed freeroll " + (f?.id || "record")); }
+  }
+  return errors;
+}

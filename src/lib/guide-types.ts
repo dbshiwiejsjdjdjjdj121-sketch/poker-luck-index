@@ -36,3 +36,26 @@ export type TourGuide = {
   sourceIds: string[]; checkedAt: string; updatedAt: string;
 };
 export type Filters = { q?: string; from?: string; to?: string; country?: string; city?: string; brand?: string; tour?: string; game?: string; currency?: string; min?: string; max?: string; status?: string };
+
+export type FreerollSlot = {
+  id: string; label: string; date: string; time: string | null;
+  timezone: string; sourceId: string;
+};
+export type Freeroll = {
+  id: string; slug: string; title: string; brand: string;
+  description: string; mode: "online" | "live";
+  status: "published" | "paused" | "ended";
+  market: { label: string; countries: string[]; usStates: string[]; note: string };
+  entry: {
+    buyIn: 0; deposit: "not-required" | "required" | "unknown";
+    ticket: "required" | "varies" | "not-required";
+    password: "required" | "varies" | "not-required" | "unknown";
+    requirements: string[]; costNote: string;
+  };
+  reward: { label: string; details: string };
+  schedule: { text: string; timezone: string | null; endDate: string | null; slots: FreerollSlot[] };
+  sections: { title: string; text: string }[];
+  officialLinks: { label: string; url: string; kind: "rules" | "schedule" | "explanation"; sourceId: string }[];
+  sourceIds: string[]; checkedAt: string; updatedAt: string; reviewNote: string | null;
+};
+export type FreerollFilters = { q?: string; mode?: string; country?: string; state?: string; entry?: string; when?: string };

@@ -24,6 +24,7 @@ export function stageGuide(base: GuideData, candidate: Candidate, now = new Date
       const target = trial[kind] as {id:string}[];
       if (index < 0) target.push(structuredClone(record)); else target[index] = structuredClone(record);
       const errors = validateGuide(trial, now);
+      if (kind === "sources" && index >= 0 && Date.parse((record as GuideData["sources"][number]).checkedAt) < Date.parse(data.sources[index].checkedAt)) errors.push("A source check timestamp cannot move backwards.");
       if (kind === "festivals" && index >= 0 && (record as GuideData["festivals"][number]).slug !== data.festivals[index].slug) {
         errors.push("Existing festival URLs must be preserved through reschedules; create a new ID and year-specific URL for another edition.");
       }

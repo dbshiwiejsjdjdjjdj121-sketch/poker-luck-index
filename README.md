@@ -50,3 +50,7 @@ Email-signed-in users can save festival editions at `/saved`, remove or undo a s
 `data/tours.json` defines visible tour families and official calendars. The `brand` query includes a tour family; `tour` remains the exact-series filter (including Prime highlights in combined WPT festivals). Official-calendar links remain available when a family has no verified listing.
 
 For isolated sign-in testing, run local Firebase Auth and Firestore emulators with a `demo-` project and set `FIREBASE_PROJECT_ID`, `NEXT_PUBLIC_FIREBASE_PROJECT_ID`, `FIREBASE_AUTH_EMULATOR_HOST` and `FIRESTORE_EMULATOR_HOST` consistently. `NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_URL` accepts only a loopback HTTP URL in development. Route email to a local SMTP receiver and explicitly clear `RESEND_API_KEY` so no real email is sent. Never apply emulator settings to a production build or deployment.
+
+## Freeroll discovery
+
+The homepage prioritizes source-backed free-entry program guides, with live festivals second. Content lives in `data/freerolls.json`; public pages at `/freerolls` and `/freerolls/[slug]` require no login. Search filters are shareable GET URLs and noindex; substantive guide pages are included in the sitemap. Recurring program text never generates dated sessions. Source checks older than 48 hours remove records from date filters. Daily content staging supports a `freerolls` proposal array and preserves the last good record on a failed check. See `docs/daily-maintenance.md` and the keyword decision in `reports/research/2026-09-16-freeroll-keywords.md`.

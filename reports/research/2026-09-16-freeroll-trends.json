@@ -1,0 +1,357 @@
+{
+  "retrievedAt": "2026-09-16",
+  "source": "Google Trends Explore public UI, observed weekly table",
+  "geo": "Worldwide",
+  "search": "Web Search, all categories, search terms",
+  "window": "Past 12 months",
+  "queryTerms": [
+    "poker freerolls",
+    "freeroll passwords",
+    "free poker tournaments",
+    "pokerstars freerolls",
+    "freerolls today"
+  ],
+  "url": "https://trends.google.com/trends/explore?date=today%2012-m&q=poker%20freerolls,freeroll%20passwords,free%20poker%20tournaments,pokerstars%20freerolls,freerolls%20today&hl=en",
+  "units": "Relative normalized index 0-100 within this query, not searches",
+  "excludedPartialWeek": "2026-09-13",
+  "metrics": {
+    "poker freerolls": {
+      "first26Mean": 20,
+      "last26Mean": 54.69,
+      "changePct": 173.5,
+      "nonzeroWeeks": 45
+    },
+    "free poker tournaments": {
+      "first26Mean": 18.04,
+      "last26Mean": 51.88,
+      "changePct": 187.6,
+      "nonzeroWeeks": 47
+    },
+    "freeroll passwords": {
+      "first26Mean": 35.38,
+      "last26Mean": 29.88,
+      "changePct": -15.5,
+      "nonzeroWeeks": 52
+    }
+  },
+  "series": [
+    {
+      "week": "2025-09-14",
+      "poker freerolls": 0,
+      "free poker tournaments": 26,
+      "freeroll passwords": 43
+    },
+    {
+      "week": "2025-09-21",
+      "poker freerolls": 0,
+      "free poker tournaments": 17,
+      "freeroll passwords": 49
+    },
+    {
+      "week": "2025-09-28",
+      "poker freerolls": 21,
+      "free poker tournaments": 25,
+      "freeroll passwords": 36
+    },
+    {
+      "week": "2025-10-05",
+      "poker freerolls": 0,
+      "free poker tournaments": 0,
+      "freeroll passwords": 46
+    },
+    {
+      "week": "2025-10-12",
+      "poker freerolls": 0,
+      "free poker tournaments": 0,
+      "freeroll passwords": 20
+    },
+    {
+      "week": "2025-10-19",
+      "poker freerolls": 20,
+      "free poker tournaments": 18,
+      "freeroll passwords": 36
+    },
+    {
+      "week": "2025-10-26",
+      "poker freerolls": 0,
+      "free poker tournaments": 17,
+      "freeroll passwords": 32
+    },
+    {
+      "week": "2025-11-02",
+      "poker freerolls": 31,
+      "free poker tournaments": 20,
+      "freeroll passwords": 35
+    },
+    {
+      "week": "2025-11-09",
+      "poker freerolls": 0,
+      "free poker tournaments": 15,
+      "freeroll passwords": 46
+    },
+    {
+      "week": "2025-11-16",
+      "poker freerolls": 16,
+      "free poker tournaments": 19,
+      "freeroll passwords": 38
+    },
+    {
+      "week": "2025-11-23",
+      "poker freerolls": 20,
+      "free poker tournaments": 0,
+      "freeroll passwords": 33
+    },
+    {
+      "week": "2025-11-30",
+      "poker freerolls": 28,
+      "free poker tournaments": 17,
+      "freeroll passwords": 26
+    },
+    {
+      "week": "2025-12-07",
+      "poker freerolls": 28,
+      "free poker tournaments": 24,
+      "freeroll passwords": 36
+    },
+    {
+      "week": "2025-12-14",
+      "poker freerolls": 22,
+      "free poker tournaments": 19,
+      "freeroll passwords": 44
+    },
+    {
+      "week": "2025-12-21",
+      "poker freerolls": 23,
+      "free poker tournaments": 29,
+      "freeroll passwords": 48
+    },
+    {
+      "week": "2025-12-28",
+      "poker freerolls": 19,
+      "free poker tournaments": 17,
+      "freeroll passwords": 31
+    },
+    {
+      "week": "2026-01-04",
+      "poker freerolls": 0,
+      "free poker tournaments": 0,
+      "freeroll passwords": 35
+    },
+    {
+      "week": "2026-01-11",
+      "poker freerolls": 21,
+      "free poker tournaments": 0,
+      "freeroll passwords": 37
+    },
+    {
+      "week": "2026-01-18",
+      "poker freerolls": 15,
+      "free poker tournaments": 21,
+      "freeroll passwords": 30
+    },
+    {
+      "week": "2026-01-25",
+      "poker freerolls": 28,
+      "free poker tournaments": 32,
+      "freeroll passwords": 34
+    },
+    {
+      "week": "2026-02-01",
+      "poker freerolls": 25,
+      "free poker tournaments": 23,
+      "freeroll passwords": 25
+    },
+    {
+      "week": "2026-02-08",
+      "poker freerolls": 21,
+      "free poker tournaments": 19,
+      "freeroll passwords": 34
+    },
+    {
+      "week": "2026-02-15",
+      "poker freerolls": 25,
+      "free poker tournaments": 18,
+      "freeroll passwords": 29
+    },
+    {
+      "week": "2026-02-22",
+      "poker freerolls": 41,
+      "free poker tournaments": 24,
+      "freeroll passwords": 31
+    },
+    {
+      "week": "2026-03-01",
+      "poker freerolls": 64,
+      "free poker tournaments": 42,
+      "freeroll passwords": 33
+    },
+    {
+      "week": "2026-03-08",
+      "poker freerolls": 52,
+      "free poker tournaments": 27,
+      "freeroll passwords": 33
+    },
+    {
+      "week": "2026-03-15",
+      "poker freerolls": 36,
+      "free poker tournaments": 42,
+      "freeroll passwords": 34
+    },
+    {
+      "week": "2026-03-22",
+      "poker freerolls": 23,
+      "free poker tournaments": 40,
+      "freeroll passwords": 35
+    },
+    {
+      "week": "2026-03-29",
+      "poker freerolls": 38,
+      "free poker tournaments": 46,
+      "freeroll passwords": 28
+    },
+    {
+      "week": "2026-04-05",
+      "poker freerolls": 19,
+      "free poker tournaments": 59,
+      "freeroll passwords": 21
+    },
+    {
+      "week": "2026-04-12",
+      "poker freerolls": 23,
+      "free poker tournaments": 57,
+      "freeroll passwords": 29
+    },
+    {
+      "week": "2026-04-19",
+      "poker freerolls": 38,
+      "free poker tournaments": 37,
+      "freeroll passwords": 23
+    },
+    {
+      "week": "2026-04-26",
+      "poker freerolls": 87,
+      "free poker tournaments": 68,
+      "freeroll passwords": 34
+    },
+    {
+      "week": "2026-05-03",
+      "poker freerolls": 100,
+      "free poker tournaments": 91,
+      "freeroll passwords": 28
+    },
+    {
+      "week": "2026-05-10",
+      "poker freerolls": 74,
+      "free poker tournaments": 85,
+      "freeroll passwords": 27
+    },
+    {
+      "week": "2026-05-17",
+      "poker freerolls": 21,
+      "free poker tournaments": 35,
+      "freeroll passwords": 30
+    },
+    {
+      "week": "2026-05-24",
+      "poker freerolls": 36,
+      "free poker tournaments": 33,
+      "freeroll passwords": 30
+    },
+    {
+      "week": "2026-05-31",
+      "poker freerolls": 34,
+      "free poker tournaments": 59,
+      "freeroll passwords": 25
+    },
+    {
+      "week": "2026-06-07",
+      "poker freerolls": 41,
+      "free poker tournaments": 63,
+      "freeroll passwords": 22
+    },
+    {
+      "week": "2026-06-14",
+      "poker freerolls": 86,
+      "free poker tournaments": 53,
+      "freeroll passwords": 14
+    },
+    {
+      "week": "2026-06-21",
+      "poker freerolls": 91,
+      "free poker tournaments": 74,
+      "freeroll passwords": 32
+    },
+    {
+      "week": "2026-06-28",
+      "poker freerolls": 42,
+      "free poker tournaments": 46,
+      "freeroll passwords": 25
+    },
+    {
+      "week": "2026-07-05",
+      "poker freerolls": 50,
+      "free poker tournaments": 60,
+      "freeroll passwords": 41
+    },
+    {
+      "week": "2026-07-12",
+      "poker freerolls": 56,
+      "free poker tournaments": 44,
+      "freeroll passwords": 33
+    },
+    {
+      "week": "2026-07-19",
+      "poker freerolls": 51,
+      "free poker tournaments": 43,
+      "freeroll passwords": 32
+    },
+    {
+      "week": "2026-07-26",
+      "poker freerolls": 67,
+      "free poker tournaments": 46,
+      "freeroll passwords": 27
+    },
+    {
+      "week": "2026-08-02",
+      "poker freerolls": 62,
+      "free poker tournaments": 49,
+      "freeroll passwords": 27
+    },
+    {
+      "week": "2026-08-09",
+      "poker freerolls": 68,
+      "free poker tournaments": 42,
+      "freeroll passwords": 23
+    },
+    {
+      "week": "2026-08-16",
+      "poker freerolls": 70,
+      "free poker tournaments": 40,
+      "freeroll passwords": 30
+    },
+    {
+      "week": "2026-08-23",
+      "poker freerolls": 73,
+      "free poker tournaments": 46,
+      "freeroll passwords": 32
+    },
+    {
+      "week": "2026-08-30",
+      "poker freerolls": 65,
+      "free poker tournaments": 54,
+      "freeroll passwords": 45
+    },
+    {
+      "week": "2026-09-06",
+      "poker freerolls": 71,
+      "free poker tournaments": 37,
+      "freeroll passwords": 50
+    }
+  ],
+  "cautions": [
+    "Sampled, normalized search interest; small-volume zero values are not proof of zero searches.",
+    "Global growth cannot establish US/UK growth or absolute market size.",
+    "Google Trends related-query increases use their own comparison period, not this half-window calculation.",
+    "No credible absolute monthly search volume was obtained."
+  ]
+}

@@ -1,8 +1,13 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { festivals,destinations,sources } from "../src/lib/guide-data";
+import { freerolls } from "../src/lib/freeroll-data";
+import { stageFreerolls } from "../src/lib/stage-freerolls";
 import { stageGuide } from "../src/lib/stage-guide";
 const file = process.argv[2];
 if (!file) throw new Error("Usage: npm run data:stage -- /absolute/path/candidate.json");
-const result = stageGuide({festivals,destinations,sources}, JSON.parse(readFileSync(file,"utf8")));
+const candidate = JSON.parse(readFileSync(file,"utf8"));
+const result = stageGuide({festivals,destinations,sources}, candidate);
+const freerollResult = stageFreerolls(freerolls,candidate.freerolls ?? [],result.data.sources,candidate.successfulSourceIds);
 for (const kind of ["sources","destinations","festivals"] as const) writeFileSync(`data/${kind}.json`,JSON.stringify(result.data[kind],null,2)+"\n");
-console.log(JSON.stringify({quarantined:result.quarantined,festivals:result.data.festivals.length},null,2));
+writeFileSync("data/freerolls.json",JSON.stringify(freerollResult.data,null,2)+"\n");
+console.log(JSON.stringify({quarantined:[...result.quarantined,...freerollResult.quarantined],festivals:result.data.festivals.length,freerolls:freerollResult.data.length},null,2));

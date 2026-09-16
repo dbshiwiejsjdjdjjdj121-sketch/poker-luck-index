@@ -1,4 +1,4 @@
-# Daily festival maintenance
+# Daily freeroll and festival maintenance
 
 Run at **13:00 Asia/Shanghai** using this local Codex task, existing usage allowance, and the existing Vercel/Firebase/email services. The computer must be on, the app running, and the network available. Missed runs are caught up on the next run. Do not enable any previous SEO automation or scheduled article workflow.
 
@@ -28,6 +28,16 @@ Recheck ongoing and next-30-day overviews daily. Rotate more distant event detai
 
 Preserve stable IDs and year-specific slugs through reschedules. Repeated sources for the same edition must not create another record. Keep the last confirmed fact when sources conflict; add a review note and cite both. A blocked/failed source is not a cancellation. Keep unknown amounts/times null; never turn unknown start times into midnight. Guarantees are not actual prize pools. Do not call a highlight buy-in range the full festival range. Do not advertise stale hotel offers or assume an organizer app accepts registration unless its official page confirms it.
 
+## Freeroll programs and dated starts
+
+Maintain `data/freerolls.json` in this same daily run. Check every published program’s referenced official pages daily, and discover a small number of useful public official announcements; prioritize eligible US/UK sources but never infer their availability from another market. Keep existing festival calendar work. This is editorial coverage, not a promise to capture all lobbies or channels.
+
+Record zero buy-in separately from deposits, prior paid play, qualification tickets, public password instructions, and venue spending or paid extra chips. Clearly distinguish cash, tournament credit, tickets and venue rewards. Preserve unknowns. Do not copy inaccessible/private passwords, register accounts, deposit, accept operator terms or enter games as part of maintenance. A help article can support a guide but cannot establish a currently scheduled game.
+
+For a specific time, store only a published dated start in `schedule.slots` with its source ID and venue IANA timezone. Do not silently convert an ambiguous CET label to summer local time, or generate future occurrences from generic daily/weekly copy. `schedule.endDate` is the confirmed final date in `schedule.timezone`, a verified IANA timezone; leave the end date null when the end or its timezone is not known. Ended/paused guides retain their URLs but leave the default directory. Dated starts leave date filters after their known start; unknown times are date-only. After 48 hours without a successful check, dated starts are withheld and the guide shows Recheck due. An unavailable source is not a cancellation.
+
+Stage updates using the existing candidate file’s optional `freerolls` array. Read all referenced sources successfully before advancing the program’s `checkedAt`; list those source IDs in `successfulSourceIds`. `data:stage` validates and quarantines individual freeroll proposals, retaining their previous record on failure while allowing valid changes through. Preserve stable IDs/slugs for the same program; a new yearly one-off edition gets a distinct ID and year-specific slug. Do not change `updatedAt` for rechecks alone. If a previously stale program is confirmed unchanged, record the successful check locally and follow the no-substantive-change release rule below; report that its published freshness may remain overdue until a substantive content release.
+
 ## Ended editions and subsequent editions
 
 Keep ended festivals and their year-specific URLs permanently as historical overviews. Their status changes automatically after the complete listed festival ends in venue local time, without a data-only status edit or artificial `updatedAt` change. Do not archive a whole festival merely because its main event has ended while side events remain. Home recommendations, recent changes and default search exclude ended editions; the Past festivals filter shows them newest first. Archive pages explicitly identify buy-ins, registration rules and festival-specific hotel offers as historical and preserve source check dates.
@@ -38,7 +48,7 @@ When the organizer confirms a subsequent edition, create a new ID and year-speci
 
 ## Stage and check
 
-Prepare a candidate JSON in `/tmp` with any proposed `sources`, `destinations`, `festivals` arrays and a `successfulSourceIds` array. Each source timestamp must reflect an actual successful content read. `npm run data:stage -- /tmp/candidate.json` merges by stable ID and reports quarantined proposals. Failed proposals retain their old record; other valid proposals proceed. Check the merged diff manually for factual correctness; structural validation is not evidence verification.
+Prepare a candidate JSON in `/tmp` with any proposed `sources`, `destinations`, `festivals`, `freerolls` arrays and a `successfulSourceIds` array. Each source timestamp must reflect an actual successful content read. `npm run data:stage -- /tmp/candidate.json` merges by stable ID and reports quarantined proposals. Failed proposals retain their old record; other valid proposals proceed. Check the merged diff manually for factual correctness; structural validation is not evidence verification.
 
 Set `updatedAt` only for substantive changes, including travel information used by a page. A successful recheck alone does not change SEO modification dates. Keep a short English factual change note. City pages stay out of the sitemap until they contain useful destination-specific guidance beyond generic placeholders (`indexable: true` requires editorial review).
 
@@ -50,6 +60,6 @@ If nothing substantive changed, do not publish a deployment or change `updatedAt
 
 For valid substantive updates, write a concise `reports/maintenance/YYYY-MM-DD-HHMM.md`: sources read, factual changes, quarantined/failed items, and checks performed. Commit only data and that report. Run `node --env-file=.env.local scripts/release.mjs`. It rejects dirty trees or non-content changes, checks the latest main, validates/builds, stages a production deployment, smoke-checks it before promotion, fast-forwards origin/main, promotes, verifies the live site, and restores the previous production deployment if the live check fails. Never use `--product`, `--initial` or force push in daily maintenance.
 
-Check one changed festival in a browser, including its official bottom links; repeat phone layout checks if content exposes a layout issue. Read public correction issues in the GitHub repository and notify the owner if action is needed; do not reply to other people automatically.
+Check one changed guide (freeroll or festival) in a browser, including its official bottom links; repeat phone layout checks if content exposes a layout issue. Read public correction issues in the GitHub repository and notify the owner if action is needed; do not reply to other people automatically.
 
 Notify in Chinese only for successful additions, important factual changes, failures, or required user action. Stay quiet for unchanged/non-actionable runs. Include the changed public URLs, a compact count and unresolved source issues. No generic SEO articles. Keep failed worktrees/logs for diagnosis; remove only worktrees created by this run once the changes are safely on origin/main. Never remove the user's saved stash.

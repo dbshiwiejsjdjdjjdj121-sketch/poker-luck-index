@@ -6,7 +6,8 @@ const preview=process.argv.includes("--preview");
 const festivals=JSON.parse(readFileSync("data/festivals.json","utf8"));
 const places=JSON.parse(readFileSync("data/destinations.json","utf8"));
 const tourGuides=JSON.parse(readFileSync("data/tour-guides.json","utf8"));
-const paths=["/","/tournaments","/destinations","/about","/privacy","/terms","/account","/saved",...tourGuides.map(g=>"/tours/"+g.tourId),...festivals.map(f=>"/tournaments/"+f.slug),...places.map(d=>"/destinations/"+d.id),...new Set(places.map(d=>"/destinations/"+d.countrySlug))];
+const freerolls=JSON.parse(readFileSync("data/freerolls.json","utf8"));
+const paths=["/freerolls",...freerolls.map(f=>"/freerolls/"+f.slug),"/","/tournaments","/destinations","/about","/privacy","/terms","/account","/saved",...tourGuides.map(g=>"/tours/"+g.tourId),...festivals.map(f=>"/tournaments/"+f.slug),...places.map(d=>"/destinations/"+d.id),...new Set(places.map(d=>"/destinations/"+d.countrySlug))];
 const headers={"User-Agent":"Googlebot"};
 if(process.env.VERCEL_AUTOMATION_BYPASS_SECRET)headers["x-vercel-protection-bypass"]=process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 async function get(path){const r=await fetch(base+path,{headers,signal:AbortSignal.timeout(60000)});return {r,html:await r.text()};}
@@ -17,6 +18,14 @@ for(const path of paths){
  assert.match(html,/<meta name="description" content="[^"]+"/,path);
  assert.ok(html.includes(`rel="canonical" href="https://www.allinpokerai.com${path==="/"?"":path}"`)||html.includes(`rel="canonical" href="https://www.allinpokerai.com${path}"`),"canonical "+path);
  if(preview||path==="/account"||path==="/saved")assert.match(html,/<meta name="robots" content="noindex/,path);
+ if(path.startsWith("/freerolls/")){
+  const objects=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1]));
+  assert.equal(objects.filter(o=>o["@type"]==="Event").length,0,path);
+  assert.equal(objects.filter(o=>o["@type"]==="WebPage").length,1,path);
+  assert.ok(html.includes('id="official"'),path);
+  const guide=freerolls.find(f=>path==="/freerolls/"+f.slug);
+  for(const link of guide.officialLinks)assert.ok(html.includes(link.url.replaceAll("&","&amp;")),path+" official source");
+ }
  if(path.startsWith("/tours/")){
   const objects=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1]));
   const collection=objects.find(o=>o["@type"]==="CollectionPage");
@@ -45,7 +54,7 @@ for(const path of paths){
  }
  checked++;
 }
-for(const path of ["/result","/hand-review","/bankroll","/history","/not-a-page","/tournaments/missing-2026","/tournaments/missing-2026/guide-image","/tours/missing","/tours/triton"]){assert.equal((await get(path)).r.status,404,path);checked++;}
+for(const path of ["/freerolls/not-a-guide","/result","/hand-review","/bankroll","/history","/not-a-page","/tournaments/missing-2026","/tournaments/missing-2026/guide-image","/tours/missing","/tours/triton"]){assert.equal((await get(path)).r.status,404,path);checked++;}
 const imageExamples=[festivals[0],festivals.find(f=>f.slug==="triton-jeju-september-2026"),[...festivals].sort((a,b)=>b.name.length-a.name.length)[0]].filter(Boolean);
 for(const festival of imageExamples){
  const path="/tournaments/"+festival.slug+"/guide-image";
@@ -69,7 +78,14 @@ assert.equal(archive.r.status,200);
 assert.match(archive.html,/Past editions are kept for reference/);
 assert.match(archive.html,/Most recent first/);
 assert.match(archive.html,/<meta name="robots" content="noindex/);
+const freeEmpty=await get("/freerolls?country=US&mode=online");
+assert.match(freeEmpty.html,/No verified matches/);assert.match(freeEmpty.html,/<meta name="robots" content="noindex/);
+const noDeposit=await get("/freerolls?entry=no-deposit");
+assert.ok(noDeposit.html.includes('href="/freerolls/pokerstars-freerolls"'));
+assert.ok(!noDeposit.html.includes('href="/freerolls/888poker-freerolls"'));
 const sitemap=(await get("/sitemap.xml")).html;
+for(const f of freerolls)assert.ok(sitemap.includes("/freerolls/"+f.slug));
+assert.ok(!sitemap.includes("/freerolls?"));
 assert.ok(!sitemap.includes("/account")&&!sitemap.includes("/saved")&&!sitemap.includes("/tournaments?"));
 for(const f of festivals)assert.ok(sitemap.includes("/tournaments/"+f.slug));
 for(const guide of tourGuides){assert.ok(sitemap.includes("/tours/"+guide.tourId));assert.ok((await get("/")).html.includes('href="/tours/'+guide.tourId+'"'));}

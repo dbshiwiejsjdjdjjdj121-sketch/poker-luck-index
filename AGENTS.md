@@ -1,7 +1,7 @@
 # ALL IN Poker Guide
 
 ## Product
-English, mobile-first directory of major live poker festivals and travel information. Next.js App Router, TypeScript, Tailwind, Vercel. Domain: https://www.allinpokerai.com.
+English, mobile-first poker information directory. Freeroll discovery is the primary homepage entry; major live festivals and travel remain the second entry. Next.js App Router, TypeScript, Tailwind, Vercel. Domain: https://www.allinpokerai.com.
 Public content requires no login. Only email-code authentication remains. No bankroll, analysis, luck, subscription, Google login or App promotion.
 
 ## Data integrity
@@ -11,6 +11,12 @@ Public content requires no login. Only email-code authentication remains. No ban
 - Attribute facts to successfully read primary sources. checkedAt records verification; updatedAt records substantive changes.
 - Do not delete remote Firebase records or accounts. Firebase serves email-code authentication and private saved-festival records. The email service is used only for sign-in codes.
 - Do not introduce paid APIs, data providers or a new database without an explicit request.
+
+## Freerolls
+- `data/freerolls.json` contains concise program guides, not an exhaustive real-time lobby. Keep recurring programs separate from confirmed dated starts. Official explanations, rules and calendars belong at the bottom; do not label them registration forms.
+- Record deposit, ticket, password, prior-play and venue-spending conditions. Zero buy-in is not no-deposit eligibility; cash, tournament credit and tickets are different rewards.
+- Verify country/account eligibility; US listings need explicit states. Do not infer a global offer from a regional page or manufacture dated occurrences from recurring text. Only use publicly authorized password instructions.
+- Preserve last confirmed facts on source failure. Every referenced source must be read before advancing a freeroll check timestamp. Stale (48-hour) records leave date filters automatically.
 
 ## Saved festivals and tour discovery
 - Saved festivals require email sign-in, are private to the verified user, and sync through server-only `guideSavedFestivals` documents in the existing Firestore database. Never accept a user ID from a request. Preserve ended saves and stable festival IDs.
