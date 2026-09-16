@@ -1,5 +1,7 @@
 # Freeroll keyword decision — 16 September 2026
 
+Later the same day, logged-in Semrush research provided national volume estimates for selected terms. See [the supplemental report](2026-09-16-semrush-keyword-plan.md) and [durable keyword queue](../../data/keyword-opportunities.json). Statements below about unavailable absolute volume describe the earlier pre-launch research, not the later evidence. The worldwide Trends limitations still apply.
+
 ## Decision before implementation
 Build a small, source-backed freeroll discovery pilot, with Freerolls first on the homepage and Live Tournaments second. Keep existing festival URLs and saved festivals. Primary intent: **poker freerolls / free poker tournaments**. Brand guides support this intent. Do not position the site as a playable free-poker game, a bankroll giveaway, an exhaustive password feed, or a complete US online schedule.
 

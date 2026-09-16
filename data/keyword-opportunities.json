@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Durable editorial keyword queue for agents; not imported into the website or a promise of traffic.",
+  "updatedOn": "2026-09-16",
+  "lastMarketReviewOn": "2026-09-16",
+  "nextMarketReviewNotBefore": "2026-10-16",
+  "primaryMarkets": [
+    "US",
+    "GB"
+  ],
+  "strategyDocument": "docs/keyword-strategy.md",
+  "latestMarketEvidence": "reports/research/2026-09-16-semrush-keywords.json",
+  "trendEvidence": "reports/research/2026-09-16-freeroll-trends.json",
+  "metricPolicy": "Use the source's country, measurement period and units. Retain historical evidence; never relabel old readings as newly measured. Empty metrics means unmeasured, not zero demand.",
+  "priorities": {
+    "1": "Improve verified existing content and useful coverage first",
+    "2": "Expand only when source-backed supply and a distinct user need exist",
+    "3": "Hold, verify access, or handle as seasonal/historical",
+    "4": "Do not target under current product scope"
+  },
+  "reviewCadence": {
+    "content": "Read this library before each publication; official facts and timeliness take precedence over search volume.",
+    "searchConsole": "At most once per seven days inside the existing daily maintenance task, using private dated snapshots.",
+    "market": "At most once per thirty days inside the existing task; use accessible Semrush/Trends data, no paid trial or API.",
+    "notification": "Notify for meaningful findings, failures requiring action or an actual decision; not unchanged rankings."
+  },
+  "groups": [
+    {
+      "id": "free-tournament-entry",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Understand and find free-entry poker tournaments",
+      "primaryPage": "/",
+      "supportingPages": [
+        "/freerolls"
+      ],
+      "keywords": [
+        "free poker tournaments",
+        "free poker tournament"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "free poker tournaments",
+          "monthlySearchesEstimate": 880,
+          "difficultyPercent": 61,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-free-poker-tournaments-01"
+        }
+      ],
+      "action": "Keep the homepage's free-entry discovery focus and explain entry conditions. Link to the actual directory; do not create singular/plural landing-page copies.",
+      "gate": "Make the difference between a guide and an immediately playable game clear. Keep major live tournaments visible as the second entry."
+    },
+    {
+      "id": "freeroll-directory",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Compare poker freeroll programs and confirmed starts",
+      "primaryPage": "/freerolls",
+      "supportingPages": [],
+      "keywords": [
+        "poker freerolls",
+        "poker freeroll",
+        "freeroll poker",
+        "freeroll poker tournaments"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "poker freerolls",
+          "monthlySearchesEstimate": 390,
+          "difficultyPercent": 55,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-freerolls-01"
+        },
+        {
+          "country": "GB",
+          "keyword": "poker freerolls",
+          "monthlySearchesEstimate": 480,
+          "difficultyPercent": 59,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "uk-freerolls-04"
+        },
+        {
+          "country": "US",
+          "keyword": "freeroll poker tournaments",
+          "monthlySearchesEstimate": 210,
+          "difficultyPercent": 63,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-freerolls-05"
+        }
+      ],
+      "action": "Improve verified inventory, entry conditions, rewards, regions and official sources before expanding keyword coverage.",
+      "gate": "Do not imply all listed programs are available in the US or UK. Homepage and directory have overlapping demand: monitor which page ranks, do not duplicate their copy."
+    },
+    {
+      "id": "online-freeroll-discovery",
+      "priority": 2,
+      "status": "maintain",
+      "intent": "Find online free-entry tournament programs",
+      "primaryPage": "/freerolls",
+      "supportingPages": [
+        "/freerolls/pokerstars-freerolls",
+        "/freerolls/888poker-freerolls",
+        "/freerolls/partypoker-round-the-clock"
+      ],
+      "keywords": [
+        "free online poker tournaments",
+        "online poker freerolls",
+        "free poker tournaments online"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "free online poker tournaments",
+          "monthlySearchesEstimate": 390,
+          "difficultyPercent": 72,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-free-poker-tournaments-02"
+        },
+        {
+          "country": "US",
+          "keyword": "online poker freerolls",
+          "monthlySearchesEstimate": 90,
+          "difficultyPercent": 59,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-freerolls-09"
+        }
+      ],
+      "action": "Use the online filter and real program guides; improve official market eligibility.",
+      "gate": "Filter URLs remain noindex. No generic online-poker gameplay promise. A France-only offer does not satisfy US eligibility."
+    },
+    {
+      "id": "no-deposit-comparison",
+      "priority": 2,
+      "status": "conditional",
+      "intent": "Find genuinely no-deposit entry",
+      "primaryPage": "/freerolls",
+      "supportingPages": [
+        "/freerolls/pokerstars-freerolls"
+      ],
+      "keywords": [
+        "no deposit poker freerolls",
+        "best poker freerolls no deposit"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "best poker freerolls no deposit",
+          "monthlySearchesEstimate": 320,
+          "difficultyPercent": null,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-freerolls-02"
+        }
+      ],
+      "action": "Expand officially verified no-deposit inventory for the actual target market; keep a factual eligibility filter.",
+      "gate": "Zero buy-in alone is insufficient. No 'best' title without current, comparable eligible programs and published selection criteria. Exact shorter keyword volume remains unmeasured."
+    },
+    {
+      "id": "best-freeroll-comparison",
+      "priority": 2,
+      "status": "conditional",
+      "intent": "Compare useful freeroll options",
+      "primaryPage": "/freerolls",
+      "supportingPages": [],
+      "keywords": [
+        "best poker freerolls"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "best poker freerolls",
+          "monthlySearchesEstimate": 140,
+          "difficultyPercent": 39,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-freerolls-07"
+        }
+      ],
+      "action": "First build enough verified programs to compare availability, entry requirements and reward types.",
+      "gate": "No unsupported rankings or affiliate-led recommendations. A KD of 39 is relative difficulty, not easy guaranteed traffic."
+    },
+    {
+      "id": "cash-prize-freerolls",
+      "priority": 2,
+      "status": "conditional",
+      "intent": "Find zero-buy-in tournaments awarding cash",
+      "primaryPage": "/freerolls",
+      "supportingPages": [],
+      "keywords": [
+        "free poker tournaments for real money"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "free poker tournaments for real money",
+          "monthlySearchesEstimate": 40,
+          "difficultyPercent": 33,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-free-poker-tournaments-10"
+        }
+      ],
+      "action": "Describe verified reward types and eligibility in existing guides.",
+      "gate": "Cash, tickets, credits and gift certificates are different. Use this wording only for an officially confirmed cash-prize offer available in the stated market."
+    },
+    {
+      "id": "brand-freeroll-guides",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Understand a specific operator's official program",
+      "primaryPage": null,
+      "supportingPages": [
+        "/freerolls/pokerstars-freerolls",
+        "/freerolls/888poker-freerolls",
+        "/freerolls/partypoker-round-the-clock"
+      ],
+      "keywords": [
+        "pokerstars freerolls",
+        "888poker freerolls",
+        "partypoker freerolls"
+      ],
+      "metrics": [],
+      "action": "Each distinct program keeps its existing page, official bottom links and explicit region, deposit, ticket and reward conditions.",
+      "gate": "Monthly volume for these exact brand phrases was not measured. Do not substitute volume for password queries as their volume."
+    },
+    {
+      "id": "freerolls-today",
+      "priority": 2,
+      "status": "conditional",
+      "intent": "Find a confirmed dated start",
+      "primaryPage": "/freerolls",
+      "supportingPages": [],
+      "keywords": [
+        "freerolls today",
+        "freerolls this week"
+      ],
+      "metrics": [],
+      "action": "Use current date filters only when officially dated starts are known and fresh under the existing 48-hour policy.",
+      "gate": "No generated calendar from recurring text, no manufactured times, no stand-alone thin 'today' pages. Monthly volumes unmeasured."
+    },
+    {
+      "id": "wsop-circuit",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Find WSOP Circuit stops and plan attendance",
+      "primaryPage": "/tours/wsop",
+      "supportingPages": [],
+      "keywords": [
+        "wsop circuit schedule",
+        "wsop circuit event schedule",
+        "wsop circuit schedule 2026"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "wsop circuit schedule",
+          "monthlySearchesEstimate": 2900,
+          "difficultyPercent": 56,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-04"
+        },
+        {
+          "country": "US",
+          "keyword": "wsop circuit event schedule",
+          "monthlySearchesEstimate": 880,
+          "difficultyPercent": 53,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-07"
+        },
+        {
+          "country": "US",
+          "keyword": "wsop circuit schedule 2026",
+          "monthlySearchesEstimate": 720,
+          "difficultyPercent": 49,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-10"
+        }
+      ],
+      "action": "Maintain verified Circuit coverage, dates, featured buy-ins and official schedule links; use separate year-specific festival overviews.",
+      "gate": "Our selected coverage is not the entire worldwide WSOP schedule. Never copy a full schedule or invent a future edition."
+    },
+    {
+      "id": "las-vegas-destination",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Compare major Las Vegas poker festivals and travel",
+      "primaryPage": "/destinations/united-states/las-vegas",
+      "supportingPages": [
+        "/tournaments"
+      ],
+      "keywords": [
+        "las vegas poker tournaments",
+        "poker tournaments las vegas"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "las vegas poker tournaments",
+          "monthlySearchesEstimate": 3600,
+          "difficultyPercent": 72,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-03"
+        }
+      ],
+      "action": "Keep the destination guide useful for current festivals, venues, lodging and transport, with official links.",
+      "gate": "These broad terms include routine daily games outside our coverage. Describe major-festival scope, retain accurate dates, and avoid a duplicated word-order page."
+    },
+    {
+      "id": "wynn-festivals",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Find Wynn-hosted major poker festivals",
+      "primaryPage": "/tournaments/wpt-world-championship-wynn-las-vegas-2026",
+      "supportingPages": [
+        "/destinations/united-states/las-vegas",
+        "/tours/wpt"
+      ],
+      "keywords": [
+        "wynn poker tournaments"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "wynn poker tournaments",
+          "monthlySearchesEstimate": 1600,
+          "difficultyPercent": 50,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-08"
+        }
+      ],
+      "action": "Improve the verified WPT World Championship edition guide and link to Wynn's official schedule; maintain year-specific URLs.",
+      "gate": "A single festival overview must not claim to cover every Wynn tournament. Select a new edition target only after official confirmation."
+    },
+    {
+      "id": "venetian-festivals",
+      "priority": 1,
+      "status": "maintain",
+      "intent": "Find Venetian Las Vegas poker festivals",
+      "primaryPage": "/tournaments/wpt-venetian-las-vegas-fall-championship-2026",
+      "supportingPages": [
+        "/destinations/united-states/las-vegas",
+        "/tours/wpt"
+      ],
+      "keywords": [
+        "poker tournaments venetian las vegas"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "poker tournaments venetian las vegas",
+          "monthlySearchesEstimate": 1600,
+          "difficultyPercent": 50,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-07"
+        }
+      ],
+      "action": "Maintain the verified edition overview, hotel/transport context and official entry points.",
+      "gate": "Clearly identify festival dates versus the championship dates; do not imply complete year-round casino coverage."
+    },
+    {
+      "id": "local-live-discovery",
+      "priority": 2,
+      "status": "partial-coverage",
+      "intent": "Find nearby live tournaments",
+      "primaryPage": "/tournaments",
+      "supportingPages": [
+        "/destinations"
+      ],
+      "keywords": [
+        "poker tournaments near me",
+        "poker tournaments"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "poker tournaments near me",
+          "monthlySearchesEstimate": 8100,
+          "difficultyPercent": 66,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-01"
+        },
+        {
+          "country": "US",
+          "keyword": "poker tournaments",
+          "monthlySearchesEstimate": 5400,
+          "difficultyPercent": 65,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-02"
+        }
+      ],
+      "action": "Make existing country/city filters and substantial destination pages easy to use.",
+      "gate": "High search volume includes local daily games we do not list. Do not advertise comprehensive nearby results or generate unsupported city pages."
+    },
+    {
+      "id": "uncovered-venues-and-cities",
+      "priority": 2,
+      "status": "research",
+      "intent": "Find Borgata or Los Angeles tournaments",
+      "primaryPage": null,
+      "supportingPages": [],
+      "keywords": [
+        "borgata poker tournaments",
+        "poker tournaments in los angeles ca"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "borgata poker tournaments",
+          "monthlySearchesEstimate": 1300,
+          "difficultyPercent": 50,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-09"
+        },
+        {
+          "country": "US",
+          "keyword": "poker tournaments in los angeles ca",
+          "monthlySearchesEstimate": 1300,
+          "difficultyPercent": 48,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-10"
+        }
+      ],
+      "action": "Research future major festivals and primary travel sources; create a useful guide only when verified inventory exists.",
+      "gate": "Do not create empty destinations because of search volume. Follow the normal 180-day discovery window."
+    },
+    {
+      "id": "official-password-access",
+      "priority": 3,
+      "status": "hold",
+      "intent": "Find an official public password or access route",
+      "primaryPage": null,
+      "supportingPages": [
+        "/freerolls",
+        "/freerolls/888poker-freerolls"
+      ],
+      "keywords": [
+        "acr freeroll passwords",
+        "americas cardroom freeroll passwords",
+        "acr freeroll passwords today",
+        "888 freeroll password",
+        "888 poker freeroll passwords",
+        "888 poker freeroll passwords today",
+        "poker freeroll passwords"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "acr freeroll passwords",
+          "monthlySearchesEstimate": 720,
+          "difficultyPercent": 45,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-freerolls-01"
+        },
+        {
+          "country": "US",
+          "keyword": "americas cardroom freeroll passwords",
+          "monthlySearchesEstimate": 590,
+          "difficultyPercent": 47,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-freerolls-02"
+        },
+        {
+          "country": "US",
+          "keyword": "acr freeroll passwords today",
+          "monthlySearchesEstimate": 210,
+          "difficultyPercent": 45,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-freerolls-08"
+        },
+        {
+          "country": "GB",
+          "keyword": "888 freeroll password",
+          "monthlySearchesEstimate": 720,
+          "difficultyPercent": 50,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "uk-freerolls-01"
+        },
+        {
+          "country": "GB",
+          "keyword": "888 poker freeroll passwords",
+          "monthlySearchesEstimate": 590,
+          "difficultyPercent": 47,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "uk-freerolls-02"
+        },
+        {
+          "country": "GB",
+          "keyword": "888 poker freeroll passwords today",
+          "monthlySearchesEstimate": 480,
+          "difficultyPercent": 47,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "uk-freerolls-03"
+        }
+      ],
+      "action": "Explain official entry instructions where available. Investigate source supply before considering a distinct access guide.",
+      "gate": "No verified public current password feed was established. Do not publish private/invented passwords or call an old code 'today'. Do not redirect a password promise to an unrelated ticket program."
+    },
+    {
+      "id": "wsop-seasonal-and-archive",
+      "priority": 3,
+      "status": "seasonal-review",
+      "intent": "Find a specific WSOP year's schedule",
+      "primaryPage": "/tours/wsop",
+      "supportingPages": [],
+      "keywords": [
+        "wsop schedule",
+        "wsop 2026 schedule",
+        "wsop schedule 2026",
+        "wsop 2025 schedule",
+        "wsop 2026 daily deepstack schedule"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "wsop schedule",
+          "monthlySearchesEstimate": 4400,
+          "difficultyPercent": 42,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-03"
+        },
+        {
+          "country": "US",
+          "keyword": "wsop 2026 schedule",
+          "monthlySearchesEstimate": 4400,
+          "difficultyPercent": 41,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-02"
+        },
+        {
+          "country": "US",
+          "keyword": "wsop 2025 schedule",
+          "monthlySearchesEstimate": 6600,
+          "difficultyPercent": 56,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-01"
+        },
+        {
+          "country": "US",
+          "keyword": "wsop 2026 daily deepstack schedule",
+          "monthlySearchesEstimate": 1900,
+          "difficultyPercent": null,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-wsop-schedule-05"
+        }
+      ],
+      "action": "Separate Circuit, summer series and other WSOP stops. Preserve genuine historical editions and link confirmed subsequent editions.",
+      "gate": "Rolling average volume can reflect an already ended season. Do not resurrect 2025 as upcoming, imply a summer schedule is current, or infer an unannounced 2027 edition."
+    },
+    {
+      "id": "other-major-tours",
+      "priority": 2,
+      "status": "maintain",
+      "intent": "Find WPT, EPT and other major live series",
+      "primaryPage": null,
+      "supportingPages": [
+        "/tours/wpt",
+        "/tours/ept"
+      ],
+      "keywords": [
+        "wpt schedule",
+        "ept schedule",
+        "apt poker schedule",
+        "triton poker schedule"
+      ],
+      "metrics": [],
+      "action": "Keep the tour catalog and verified festival calendar coverage; rotate focused market research in later free-account reviews.",
+      "gate": "Exact keyword volumes and growth remain unmeasured. Existing useful coverage does not need a volume estimate to remain available."
+    },
+    {
+      "id": "outside-product-intent",
+      "priority": 4,
+      "status": "exclude",
+      "intent": "Non-poker games, bonuses, gameplay or retired tools",
+      "primaryPage": null,
+      "supportingPages": [],
+      "keywords": [
+        "freeroll monopoly go",
+        "free poker bankroll",
+        "no deposit poker bonus",
+        "free poker",
+        "poker online free",
+        "online poker tournaments",
+        "hand replayer",
+        "poker session tracker"
+      ],
+      "metrics": [
+        {
+          "country": "US",
+          "keyword": "freeroll monopoly go",
+          "monthlySearchesEstimate": 390,
+          "difficultyPercent": 59,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-freerolls-04"
+        },
+        {
+          "country": "US",
+          "keyword": "online poker tournaments",
+          "monthlySearchesEstimate": 1900,
+          "difficultyPercent": 74,
+          "observedOn": "2026-09-16",
+          "evidenceFile": "reports/research/2026-09-16-semrush-keywords.json",
+          "observationId": "us-poker-tournaments-06"
+        }
+      ],
+      "action": "Do not create pages to chase these terms under the current product scope.",
+      "gate": "Broad paid online play, instant games and bankroll tools are outside this directory. Actual freeroll questions remain covered in relevant groups."
+    }
+  ]
+}

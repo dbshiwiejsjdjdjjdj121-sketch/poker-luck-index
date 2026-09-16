@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "observedOn": "2026-09-16",
+  "provider": "Semrush",
+  "method": "Manual reading of logged-in Keyword Magic Tool visible first ten rows in each of six reports. No export, paid trial or API.",
+  "units": {
+    "monthlySearchesEstimate": "Estimated average monthly Google searches for the selected national database; not this website's visitors, clicks or unique people.",
+    "difficultyPercent": "Semrush keyword difficulty, 0–100. Unknown values remain null; lower is not a promise of ranking."
+  },
+  "limits": [
+    "60 table observations; 56 unique country/keyword pairs. Four US rows repeat across reports. Do not add variant volumes as unique audience.",
+    "US and GB values are separate markets; the UK report uses Semrush db=uk.",
+    "Observation date is not the data-refresh date. The UI included one-month-old records and records requiring a refresh; no paid refresh was used.",
+    "Only the visible first ten rows of each seed report were reviewed; this is not an exhaustive keyword database or competitor analysis.",
+    "No numeric Semrush historical monthly series was obtained. Six- or twelve-month growth cannot be calculated from these snapshots.",
+    "Displayed search intent is the provider's label, not a decision to target the query."
+  ],
+  "reports": [
+    {
+      "id": "us-poker-freerolls",
+      "product": "Keyword Magic Tool",
+      "country": "US",
+      "seed": "poker freerolls",
+      "url": "https://www.semrush.com/analytics/keywordmagic/?db=us&q=poker%20freerolls",
+      "rowsObserved": 10
+    },
+    {
+      "id": "us-free-poker-tournaments",
+      "product": "Keyword Magic Tool",
+      "country": "US",
+      "seed": "free poker tournaments",
+      "url": "https://www.semrush.com/analytics/keywordmagic/?db=us&q=free%20poker%20tournaments",
+      "rowsObserved": 10
+    },
+    {
+      "id": "us-poker-tournaments",
+      "product": "Keyword Magic Tool",
+      "country": "US",
+      "seed": "poker tournaments",
+      "url": "https://www.semrush.com/analytics/keywordmagic/?db=us&q=poker%20tournaments",
+      "rowsObserved": 10
+    },
+    {
+      "id": "us-wsop-schedule",
+      "product": "Keyword Magic Tool",
+      "country": "US",
+      "seed": "wsop schedule",
+      "url": "https://www.semrush.com/analytics/keywordmagic/?db=us&q=wsop%20schedule",
+      "rowsObserved": 10
+    },
+    {
+      "id": "us-freerolls",
+      "product": "Keyword Magic Tool",
+      "country": "US",
+      "seed": "freerolls",
+      "url": "https://www.semrush.com/analytics/keywordmagic/?db=us&q=freerolls",
+      "rowsObserved": 10
+    },
+    {
+      "id": "uk-freerolls",
+      "product": "Keyword Magic Tool",
+      "country": "GB",
+      "seed": "freerolls",
+      "url": "https://www.semrush.com/analytics/keywordmagic/?db=uk&q=freerolls",
+      "rowsObserved": 10
+    }
+  ],
+  "observations": [
+    {
+      "id": "us-poker-freerolls-01",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "poker freerolls",
+      "monthlySearchesEstimate": 390,
+      "difficultyPercent": 55,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-02",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "best poker freerolls no deposit",
+      "monthlySearchesEstimate": 320,
+      "difficultyPercent": null,
+      "providerIntent": "unknown",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-03",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "poker freeroll",
+      "monthlySearchesEstimate": 260,
+      "difficultyPercent": 57,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-04",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "freeroll poker",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 60,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-05",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "freeroll poker tournaments",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 63,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-06",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "acr poker freeroll passwords",
+      "monthlySearchesEstimate": 140,
+      "difficultyPercent": 47,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-07",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "best poker freerolls",
+      "monthlySearchesEstimate": 140,
+      "difficultyPercent": 39,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-08",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "freeroll poker games",
+      "monthlySearchesEstimate": 110,
+      "difficultyPercent": 52,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-09",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "online poker freerolls",
+      "monthlySearchesEstimate": 90,
+      "difficultyPercent": 59,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-freerolls-10",
+      "reportId": "us-poker-freerolls",
+      "country": "US",
+      "keyword": "poker freeroll passwords",
+      "monthlySearchesEstimate": 90,
+      "difficultyPercent": 50,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-01",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free poker tournaments",
+      "monthlySearchesEstimate": 880,
+      "difficultyPercent": 61,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-02",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free online poker tournaments",
+      "monthlySearchesEstimate": 390,
+      "difficultyPercent": 72,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-03",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free poker tournament",
+      "monthlySearchesEstimate": 140,
+      "difficultyPercent": 59,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-04",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free online poker tournament",
+      "monthlySearchesEstimate": 110,
+      "difficultyPercent": 71,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-05",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournaments online free",
+      "monthlySearchesEstimate": 90,
+      "difficultyPercent": 78,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-06",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free poker tournaments online",
+      "monthlySearchesEstimate": 70,
+      "difficultyPercent": 58,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-07",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournament online free",
+      "monthlySearchesEstimate": 70,
+      "difficultyPercent": 76,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-08",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "online poker tournaments free",
+      "monthlySearchesEstimate": 50,
+      "difficultyPercent": 56,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-09",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free poker tournament online",
+      "monthlySearchesEstimate": 40,
+      "difficultyPercent": 73,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-free-poker-tournaments-10",
+      "reportId": "us-free-poker-tournaments",
+      "country": "US",
+      "keyword": "free poker tournaments for real money",
+      "monthlySearchesEstimate": 40,
+      "difficultyPercent": 33,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-01",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournaments near me",
+      "monthlySearchesEstimate": 8100,
+      "difficultyPercent": 66,
+      "providerIntent": "informational; transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-02",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournaments",
+      "monthlySearchesEstimate": 5400,
+      "difficultyPercent": 65,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-03",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "las vegas poker tournaments",
+      "monthlySearchesEstimate": 3600,
+      "difficultyPercent": 72,
+      "providerIntent": "informational; commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-04",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournaments las vegas",
+      "monthlySearchesEstimate": 3600,
+      "difficultyPercent": 75,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-05",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournament",
+      "monthlySearchesEstimate": 2900,
+      "difficultyPercent": 74,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-06",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "online poker tournaments",
+      "monthlySearchesEstimate": 1900,
+      "difficultyPercent": 74,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-07",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournaments venetian las vegas",
+      "monthlySearchesEstimate": 1600,
+      "difficultyPercent": 50,
+      "providerIntent": "navigational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-08",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "wynn poker tournaments",
+      "monthlySearchesEstimate": 1600,
+      "difficultyPercent": 50,
+      "providerIntent": "informational; transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-09",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "borgata poker tournaments",
+      "monthlySearchesEstimate": 1300,
+      "difficultyPercent": 50,
+      "providerIntent": "informational; transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-poker-tournaments-10",
+      "reportId": "us-poker-tournaments",
+      "country": "US",
+      "keyword": "poker tournaments in los angeles ca",
+      "monthlySearchesEstimate": 1300,
+      "difficultyPercent": 48,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-01",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop 2025 schedule",
+      "monthlySearchesEstimate": 6600,
+      "difficultyPercent": 56,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-02",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop 2026 schedule",
+      "monthlySearchesEstimate": 4400,
+      "difficultyPercent": 41,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-03",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop schedule",
+      "monthlySearchesEstimate": 4400,
+      "difficultyPercent": 42,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-04",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop circuit schedule",
+      "monthlySearchesEstimate": 2900,
+      "difficultyPercent": 56,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-05",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop 2026 daily deepstack schedule",
+      "monthlySearchesEstimate": 1900,
+      "difficultyPercent": null,
+      "providerIntent": "unknown",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-06",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop schedule 2025",
+      "monthlySearchesEstimate": 1900,
+      "difficultyPercent": 55,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-07",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop circuit event schedule",
+      "monthlySearchesEstimate": 880,
+      "difficultyPercent": 53,
+      "providerIntent": "informational; transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-08",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop schedule 2026",
+      "monthlySearchesEstimate": 880,
+      "difficultyPercent": 33,
+      "providerIntent": "informational; transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-09",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "2025 wsop schedule",
+      "monthlySearchesEstimate": 720,
+      "difficultyPercent": 52,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-wsop-schedule-10",
+      "reportId": "us-wsop-schedule",
+      "country": "US",
+      "keyword": "wsop circuit schedule 2026",
+      "monthlySearchesEstimate": 720,
+      "difficultyPercent": 49,
+      "providerIntent": "transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-01",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "acr freeroll passwords",
+      "monthlySearchesEstimate": 720,
+      "difficultyPercent": 45,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-02",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "americas cardroom freeroll passwords",
+      "monthlySearchesEstimate": 590,
+      "difficultyPercent": 47,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-03",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "freeroll",
+      "monthlySearchesEstimate": 480,
+      "difficultyPercent": 71,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-04",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "freeroll monopoly go",
+      "monthlySearchesEstimate": 390,
+      "difficultyPercent": 59,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-05",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "poker freerolls",
+      "monthlySearchesEstimate": 390,
+      "difficultyPercent": 55,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-06",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "best poker freerolls no deposit",
+      "monthlySearchesEstimate": 320,
+      "difficultyPercent": null,
+      "providerIntent": "unknown",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-07",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "poker freeroll",
+      "monthlySearchesEstimate": 260,
+      "difficultyPercent": 57,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-08",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "acr freeroll passwords today",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 45,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-09",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "americas cardroom freeroll password",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 45,
+      "providerIntent": "commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "us-freerolls-10",
+      "reportId": "us-freerolls",
+      "country": "US",
+      "keyword": "freeroll poker",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 60,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-01",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "888 freeroll password",
+      "monthlySearchesEstimate": 720,
+      "difficultyPercent": 50,
+      "providerIntent": "informational; commercial",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-02",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "888 poker freeroll passwords",
+      "monthlySearchesEstimate": 590,
+      "difficultyPercent": 47,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-03",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "888 poker freeroll passwords today",
+      "monthlySearchesEstimate": 480,
+      "difficultyPercent": 47,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-04",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "poker freerolls",
+      "monthlySearchesEstimate": 480,
+      "difficultyPercent": 59,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-05",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "888 freeroll passwords",
+      "monthlySearchesEstimate": 320,
+      "difficultyPercent": 49,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-06",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "poker freeroll passwords",
+      "monthlySearchesEstimate": 320,
+      "difficultyPercent": 49,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-07",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "freeroll passwords",
+      "monthlySearchesEstimate": 260,
+      "difficultyPercent": 46,
+      "providerIntent": "informational; transactional",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-08",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "freeroll poker",
+      "monthlySearchesEstimate": 260,
+      "difficultyPercent": 67,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-09",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "freeroll",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 68,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    },
+    {
+      "id": "uk-freerolls-10",
+      "reportId": "uk-freerolls",
+      "country": "GB",
+      "keyword": "passwords freeroll",
+      "monthlySearchesEstimate": 210,
+      "difficultyPercent": 59,
+      "providerIntent": "informational",
+      "historicalMonthlyVolumes": null
+    }
+  ],
+  "overview": {
+    "url": "https://www.semrush.com/analytics/keywordoverview/?q=poker+freerolls&db=us",
+    "keyword": "poker freerolls",
+    "device": "Desktop",
+    "usMonthlySearchesEstimate": 390,
+    "usDifficultyPercent": 55,
+    "globalMonthlySearchesDisplay": "4.6K",
+    "globalMonthlySearchesApproximate": 4600,
+    "globalValueIsRounded": true,
+    "gbMonthlySearchesEstimate": 480
+  },
+  "trendEvidence": {
+    "path": "reports/research/2026-09-16-freeroll-trends.json",
+    "geography": "Worldwide",
+    "units": "Google Trends normalized relative interest, not searches",
+    "firstWindow": [
+      "2025-09-14",
+      "2026-03-08"
+    ],
+    "secondWindow": [
+      "2026-03-15",
+      "2026-09-06"
+    ],
+    "excludedPartialWeek": "2026-09-13",
+    "terms": [
+      {
+        "keyword": "poker freerolls",
+        "first26Mean": 20,
+        "last26Mean": 54.69,
+        "relativeChangePercent": 173.5
+      },
+      {
+        "keyword": "free poker tournaments",
+        "first26Mean": 18.04,
+        "last26Mean": 51.88,
+        "relativeChangePercent": 187.6
+      },
+      {
+        "keyword": "freeroll passwords",
+        "first26Mean": 35.38,
+        "last26Mean": 29.88,
+        "relativeChangePercent": -15.5
+      }
+    ],
+    "nationalGrowthEvidence": "Insufficient US/GB samples; do not describe the worldwide changes as national market growth."
+  },
+  "documentation": [
+    "https://www.semrush.com/kb/257-keyword-overview",
+    "https://www.semrush.com/kb/1138-date-range-in-kmt",
+    "https://www.semrush.com/kb/262-keyword-magic-tool",
+    "https://support.google.com/trends/answer/4365533?hl=en"
+  ]
+}

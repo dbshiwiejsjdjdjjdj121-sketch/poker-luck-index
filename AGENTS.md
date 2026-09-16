@@ -23,7 +23,8 @@ Public content requires no login. Only email-code authentication remains. No ban
 - Tour families and official calendar links live in `data/tours.json`. Keep major tour choices visible even with zero listed festivals; directory counts describe our coverage, not all events worldwide. Preserve legacy exact-series URLs alongside `brand` filters.
 
 ## Maintenance
-Read docs/daily-maintenance.md before daily content work. Daily runs may change data/ and reports/maintenance/ only.
+Read docs/daily-maintenance.md before daily content work. Before content additions or updates, also read docs/keyword-strategy.md and data/keyword-opportunities.json; prioritize verified useful information over keyword volume. Keep national market estimates, worldwide relative trends and private site performance separate.
+Daily repository changes are limited to data/ and reports/maintenance/. Only the narrowly scoped private analytics/review cache described in docs/keyword-strategy.md may be written outside the worktree; never commit private analytics or account details to this public repository. Weekly measurement and monthly keyword reviews belong inside the existing daily task, not new SEO schedules.
 Production Git remote is origin (poker-luck-index), branch main. Do not deploy the webpoker remote.
 Run npm run validate before publishing. Test representative desktop/mobile pages and production smoke checks. Old SEO automations stay paused.
 Existing user changes are preserved in stash entry "Preserve user SEO changes before ALL IN Poker Guide rebuild" and /tmp/poker-guide-pre-rebuild.patch.
