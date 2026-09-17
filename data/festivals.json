@@ -234,7 +234,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -435,7 +435,7 @@
     "sourceIds": [
       "austin-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1969,7 +1969,7 @@
       "sydney-schedule",
       "sydney-main-2026"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -2077,7 +2077,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
@@ -2154,7 +2154,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -2845,7 +2845,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -5137,7 +5137,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5635,7 +5635,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6238,7 +6238,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-17T06:19:58Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -7294,5 +7294,43 @@
         ]
       }
     ]
+  },
+  {
+    "id": "nottingham-2026",
+    "slug": "wsop-circuit-dusk-till-dawn-nottingham-2026",
+    "name": "WSOP Circuit Dusk Till Dawn Nottingham 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "united-kingdom/nottingham",
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-16",
+    "timezone": "Europe/London",
+    "dateNote": null,
+    "venue": {
+      "name": "Dusk Till Dawn",
+      "address": "Redfield Way, Lenton, Nottingham NG7 2UW, United Kingdom",
+      "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026"
+    },
+    "status": "scheduled",
+    "description": "WSOP Circuit returns to Dusk Till Dawn in Nottingham from 4–16 November 2026. Festival dates and the venue are confirmed; the individual schedule, main-event buy-in and entry flights are still awaiting publication.",
+    "registration": "The host requires WSOP+ LIVE for participants and describes cash entry at the venue or Luxon Pay when a tournament becomes available. Follow its official entry instructions below; this listing does not confirm that registration is open.",
+    "registrationUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
+    "scheduleUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
+    "scheduleCoverage": "Both the WSOP event page and the host’s schedule page say the detailed schedule is not yet published. Main-event dates, buy-ins, guarantees, structures and registration deadlines remain unconfirmed here.",
+    "sourceIds": [
+      "nottingham-2026-wsop",
+      "nottingham-2026-host",
+      "nottingham-2026-schedule",
+      "nottingham-2026-entry"
+    ],
+    "checkedAt": "2026-09-17T06:14:18Z",
+    "updatedAt": "2026-09-17T06:14:18Z",
+    "reviewNote": "The host’s 2026 event page includes a terms clause referring to recurring events from September 2025. Confirm the current edition’s deductions and conditions with the organizer; no deduction or fee has been inferred for a tournament.",
+    "changes": [
+      {
+        "date": "2026-09-17T06:14:18Z",
+        "text": "Added the confirmed November 4–16 Nottingham Circuit stop, official entry instructions and travel guidance; detailed event schedule pending."
+      }
+    ],
+    "tournaments": []
   }
 ]

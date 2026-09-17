@@ -1763,5 +1763,59 @@
     },
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "indexable": false
+  },
+  {
+    "id": "united-kingdom/nottingham",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "Nottingham",
+    "slug": "nottingham",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "Dusk Till Dawn is on Redfield Way in Lenton, outside Nottingham’s city centre. Compare the final journey to the club when choosing accommodation: a central hotel, the rail station and the poker venue are separate stops.",
+    "airport": {
+      "sourceId": "nottingham-airport-bus",
+      "url": "https://www.eastmidlandsairport.com/getting-to-and-from/by-bus/",
+      "title": "East Midlands Airport: onward buses to Nottingham",
+      "detail": "The airport lists Skylink Nottingham and Skylink Express connections. Buses depart beside the terminal. These serve Nottingham; plan a separate final connection to Dusk Till Dawn and check current timetables."
+    },
+    "transport": [
+      {
+        "sourceId": "nottingham-2026-host",
+        "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026",
+        "title": "Getting to Dusk Till Dawn",
+        "detail": "Use Redfield Way, Nottingham NG7 2UW for the club. The venue identifies Nottingham as its nearest mainline station and QMC as the closest tram stop, followed by a walk. Allow extra time for the final connection."
+      },
+      {
+        "sourceId": "nottingham-airport-bus",
+        "url": "https://www.eastmidlandsairport.com/getting-to-and-from/by-bus/",
+        "title": "Plan the airport and late return separately",
+        "detail": "The airport publishes daytime and night services for Skylink Nottingham, while Skylink Express has its own operating hours. Check the exact route and last usable connection before relying on public transport after a late finish."
+      }
+    ],
+    "hotels": [
+      {
+        "sourceId": "nottingham-holiday-inn",
+        "url": "https://www.ihg.com/holidayinn/hotels/us/en/nottingham/notuk/hoteldetail/directions",
+        "title": "Holiday Inn Nottingham — Castle Marina",
+        "detail": "An off-site option on Castle Bridge Road, Castle Marina Park, NG7 1GX. The hotel offers guest parking but lists no local or airport shuttle. Compare room and parking totals, cancellation terms and the onward route; no tournament rate is confirmed."
+      }
+    ],
+    "dining": [
+      {
+        "sourceId": "nottingham-holiday-inn-dining",
+        "url": "https://www.ihg.com/holidayinn/hotels/us/en/nottingham/notuk/hoteldetail/dining",
+        "title": "Holiday Inn dining and room service",
+        "detail": "The hotel lists breakfast, lunch and dinner, plus 24-hour room service for guests. This is a hotel dining option away from the poker venue. Check current kitchen hours before planning a meal around a tournament break."
+      }
+    ],
+    "tax": {
+      "text": "HMRC says that expertise or earning a living from gambling does not by itself make it a trade; income connected with services can be treated differently. This guide has not confirmed event-specific withholding. Ask the organizer about payout paperwork and check obligations in your country of tax residence. Organizer deductions from a prize pool are not automatically tax withholding.",
+      "sourceIds": [
+        "uk-gambling-tax"
+      ]
+    },
+    "updatedAt": "2026-09-17T06:14:18Z"
   }
 ]
