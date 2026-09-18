@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-17T06:14:18Z",
+    "checkedAt": "2026-09-18T05:16:36Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-17T06:14:18Z",
+    "checkedAt": "2026-09-18T05:16:36Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-18T05:16:36Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -484,8 +484,88 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-17T06:14:18Z",
+    "checkedAt": "2026-09-18T05:16:36Z",
     "updatedAt": "2026-09-17T06:14:18Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed."
+  },
+  {
+    "id": "riverchasers-live-poker",
+    "slug": "riverchasers-live-poker",
+    "title": "Riverchasers: free live poker in Pennsylvania & New Jersey",
+    "brand": "Riverchasers",
+    "description": "Free-entry No-Limit Hold’em at participating bars and restaurants in Pennsylvania and New Jersey. Local league games and the paid, qualification-only championships have different entry conditions.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Pennsylvania & New Jersey · United States",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "PA",
+        "NJ"
+      ],
+      "note": "In-person venues listed by the official Riverchasers league calendar. This guide does not establish online poker availability or eligibility in other states."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Ordinary live league games are open to the public, age 21 or older.",
+        "A free basic Bar Poker Open membership is required for rankings and rewards; use the organizer’s check-in instructions.",
+        "Food and drink purchases are encouraged. Confirm any venue-specific admission or spending conditions."
+      ],
+      "costNote": "Ordinary league participation has no entry charge. Championship finals require qualification and an entry fee. Optional paid online PRO membership is separate."
+    },
+    "reward": {
+      "label": "Local prizes / qualification opportunities",
+      "details": "The organizer advertises local prizes and routes to league championships. Check the venue’s current prize terms; a championship prize is not a guaranteed reward at an ordinary league game."
+    },
+    "schedule": {
+      "text": "A recurring live league. Use the official venue calendar for current locations and starts. No dated starts have been independently confirmed for this guide.",
+      "timezone": null,
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Can anyone enter the championship?",
+        "text": "No. The published Season 40 rules require qualification and an entry fee. Do not confuse those finals with the free public league games."
+      },
+      {
+        "title": "Where should I check before travelling?",
+        "text": "Open the Riverchasers calendar below and confirm the venue, date and check-in arrangements. The organizer also publishes instructions for new players on its website."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official league explanation and check-in guidance",
+        "url": "https://www.riverchasers.com/",
+        "kind": "explanation",
+        "sourceId": "riverchasers-home"
+      },
+      {
+        "label": "Official Riverchasers venue calendar",
+        "url": "https://barpokeropen.com/leagues/riverchasers",
+        "kind": "schedule",
+        "sourceId": "riverchasers-bpo"
+      },
+      {
+        "label": "Official championship qualification and fee rules",
+        "url": "https://www.riverchasers.com/news/season39championship-ytwhx",
+        "kind": "rules",
+        "sourceId": "riverchasers-season40"
+      }
+    ],
+    "sourceIds": [
+      "riverchasers-home",
+      "riverchasers-bpo",
+      "riverchasers-season40"
+    ],
+    "checkedAt": "2026-09-18T05:16:36Z",
+    "updatedAt": "2026-09-18T05:16:36Z",
+    "reviewNote": null
   }
 ]

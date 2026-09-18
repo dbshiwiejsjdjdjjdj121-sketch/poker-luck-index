@@ -171,5 +171,22 @@
     "featured": false,
     "description": "Circus Poker Series festivals at Namur. Use the official calendar to confirm entry details; coverage here includes selected highlights.",
     "checkedAt": "2026-09-13T06:27:30Z"
+  },
+  {
+    "id": "borgata",
+    "label": "Borgata Poker",
+    "fullName": "Borgata Poker Festivals",
+    "series": [
+      "Borgata Poker"
+    ],
+    "keywords": [
+      "Borgata",
+      "Atlantic City",
+      "Big Big Series"
+    ],
+    "officialUrl": "https://borgata.mgmresorts.com/en/casino/poker.html",
+    "featured": false,
+    "description": "Selected multi-day Borgata festivals in Atlantic City. Coverage excludes routine daily tournaments.",
+    "checkedAt": "2026-09-18T05:16:36Z"
   }
 ]

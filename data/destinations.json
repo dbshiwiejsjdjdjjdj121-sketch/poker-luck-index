@@ -1817,5 +1817,54 @@
       ]
     },
     "updatedAt": "2026-09-17T06:14:18Z"
+  },
+  {
+    "id": "united-states/atlantic-city",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Atlantic City",
+    "slug": "atlantic-city",
+    "region": "North America",
+    "indexable": false,
+    "intro": "Plan a Borgata poker trip in Atlantic City, New Jersey. This initial guide covers the host resort and arrival basics; it is not a comparison of every city hotel.",
+    "airport": {
+      "title": "Atlantic City International Airport",
+      "detail": "Borgata identifies Atlantic City International Airport as a local arrival option. Compare actual flights and arrange the final transfer before travelling; no fare or journey time is guaranteed here.",
+      "url": "https://borgata.mgmresorts.com/en/faq.html",
+      "sourceId": "borgata-travel"
+    },
+    "transport": [
+      {
+        "title": "Arriving at Borgata",
+        "detail": "The resort is at 1 Borgata Way. Its FAQ covers self-parking, valet and transfer contacts. Check current charges and your route before departure.",
+        "url": "https://borgata.mgmresorts.com/en/faq.html",
+        "sourceId": "borgata-travel"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Borgata and MGM Tower",
+        "detail": "Both are on-site accommodation options, with MGM Tower connected to the Borgata resort. Compare the total booking cost, resort fees and cancellation terms. No festival discount is confirmed in this guide.",
+        "url": "https://borgata.mgmresorts.com/en/faq.html",
+        "sourceId": "borgata-travel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "The Metropolitan",
+        "detail": "An on-site option for breakfast and casual American food. Its published hours currently end in the afternoon, so check another resort outlet for an evening tournament break.",
+        "url": "https://borgata.mgmresorts.com/en/restaurants/the-metropolitan.html",
+        "sourceId": "borgata-metropolitan"
+      }
+    ],
+    "tax": {
+      "text": "New Jersey treats gambling winnings from a New Jersey location as taxable for nonresidents too. Payer withholding is separate from final tax liability. For international visitors, federal withholding and treaty documentation depend on tax residence; consult the IRS guidance and the payout desk. Personal home-country obligations require separate advice. No individual tax amount is calculated here.",
+      "sourceIds": [
+        "us-tax",
+        "new-jersey-tax"
+      ]
+    },
+    "updatedAt": "2026-09-18T05:16:36Z"
   }
 ]
