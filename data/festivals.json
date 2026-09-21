@@ -234,7 +234,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -435,7 +435,7 @@
     "sourceIds": [
       "austin-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1780,7 +1780,7 @@
     "sourceIds": [
       "paradise-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1967,11 +1967,12 @@
     "sourceIds": [
       "sydney-festival-2026",
       "sydney-schedule",
-      "sydney-main-2026"
+      "sydney-main-2026",
+      "sydney-main-2026-details"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
-    "reviewNote": null,
+    "checkedAt": "2026-09-21T05:14:39Z",
+    "updatedAt": "2026-09-21T05:14:39Z",
+    "reviewNote": "WPT’s championship Details page lists a 12:00 start, 40-minute Day 1 levels and one re-entry per flight. Its Schedule tab lists 12:30, 60-minute levels and unlimited entries for the same AUD 5,000 championship. Previously confirmed values are retained pending clarification. Confirm the start, structure and registration deadline with The Star before attending.",
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
@@ -1980,6 +1981,10 @@
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Expanded this existing overview to the full September 10–30 WPT Australia festival, added the Main Tour championship and retained the Prime highlight and original URL."
+      },
+      {
+        "date": "2026-09-21T05:14:39Z",
+        "text": "Flagged conflicting official championship start times and structure rules; retained the last confirmed values."
       }
     ],
     "tournaments": [
@@ -2077,7 +2082,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
@@ -2154,7 +2159,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -2228,7 +2233,7 @@
     "sourceIds": [
       "san-jose-schedule"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -2845,7 +2850,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -3068,7 +3073,7 @@
       "taipei-schedule",
       "taipei-info"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -5137,7 +5142,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5635,7 +5640,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5810,7 +5815,7 @@
       "cambodia-2027-prime",
       "cambodia-2027-player-guide"
     ],
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-21T05:18:55Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -6238,7 +6243,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6815,7 +6820,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "Series dates are announced. Individual starting days, fee breakdowns and registration cutoffs have not yet been verified; use Triton’s official calendar for the latest schedule.",
-    "checkedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -7361,7 +7366,7 @@
       "borgata-big-big-2026-structures",
       "borgata-registration-faq"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:16:00Z",
     "updatedAt": "2026-09-18T05:16:36Z",
     "reviewNote": "Confirm the registration method for your chosen event. The edition-specific packet supports selected app entries; Borgata’s general poker FAQ still describes in-person registration.",
     "changes": [
@@ -7508,6 +7513,283 @@
         "sourceIds": [
           "borgata-big-big-2026-schedule",
           "borgata-big-big-2026-structures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "venetian-dse-iii-2026",
+    "slug": "venetian-deepstack-extravaganza-iii-2026",
+    "name": "Venetian DeepStack Extravaganza III 2026",
+    "tour": "Venetian Poker",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-27",
+    "dateNote": null,
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "The Venetian Resort — The Palazzo Poker Room",
+      "address": null,
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html"
+    },
+    "status": "scheduled",
+    "description": "A September poker festival at The Palazzo in Las Vegas. Its final week includes USD 400 and USD 600 multi-day Hold’em events. Compare those remaining options below, then open the official calendar for the wider series and individual structures.",
+    "registration": "Players must be 21+ and hold a Venetian Rewards card. Use the official schedule for registration cutoffs and the linked structures for rake, staff fees and re-entry terms. Poker suite rates have qualifying-play conditions; check the resort’s current terms before booking.",
+    "registrationUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "scheduleUrl": "https://www.venetianlasvegas.com/content/dam/vlvweb/casino/poker/deepstack/2026/dse-sep-2026-schedule.pdf",
+    "scheduleCoverage": "Two selected multi-day highlights, with selected entry flights and the published Day 2. This is not the full schedule or the complete series buy-in range. No single main event is designated here.",
+    "sourceIds": [
+      "venetian-deepstack-calendar",
+      "venetian-dse-iii-2026-schedule",
+      "venetian-poker-room",
+      "venetian-poker-rates-2026"
+    ],
+    "checkedAt": "2026-09-21T05:14:39Z",
+    "updatedAt": "2026-09-21T05:14:39Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-21T05:14:39Z",
+        "text": "Added the official festival dates, selected lower-buy-in highlights, entry conditions and Las Vegas planning links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-39",
+        "slug": "event-39",
+        "number": "39",
+        "name": "No-Limit Hold’em — USD 400",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 75000,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": "40 minutes",
+        "reentry": null,
+        "lateRegistration": "17:55 local time on the selected daytime flights; consult the official schedule for other flights.",
+        "endDate": "2026-09-23",
+        "sessions": [
+          {
+            "id": "event-39-1a",
+            "label": "Day 1A",
+            "date": "2026-09-21",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-39-1b",
+            "label": "Day 1B",
+            "date": "2026-09-22",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-39-day2",
+            "label": "Day 2",
+            "date": "2026-09-23",
+            "time": "11:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "venetian-dse-iii-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-44",
+        "slug": "event-44",
+        "number": "44",
+        "name": "No-Limit Hold’em — USD 600",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 150000,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": "40 minutes",
+        "reentry": null,
+        "lateRegistration": "17:55 local time on the selected daytime flights; consult the official schedule for other flights.",
+        "endDate": "2026-09-27",
+        "sessions": [
+          {
+            "id": "event-44-1a",
+            "label": "Day 1A",
+            "date": "2026-09-24",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-44-1b",
+            "label": "Day 1B",
+            "date": "2026-09-25",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-44-1c",
+            "label": "Day 1C",
+            "date": "2026-09-26",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-44-day2",
+            "label": "Day 2",
+            "date": "2026-09-27",
+            "time": "11:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "venetian-dse-iii-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "venetian-showdown-oct-2026",
+    "slug": "venetian-deepstack-showdown-october-2026",
+    "name": "Venetian DeepStack Showdown October 2026",
+    "tour": "Venetian Poker",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-27",
+    "dateNote": null,
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "The Venetian Resort — The Palazzo Poker Room",
+      "address": null,
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html"
+    },
+    "status": "scheduled",
+    "description": "A month-long Las Vegas series with lower-buy-in multi-day Hold’em at The Palazzo. Selected USD 250 and USD 300 events each have a USD 100,000 guarantee. The festival starts in September despite its October calendar label; it is separate from the later WPT Fall Festival.",
+    "registration": "Players must be 21+ and hold a Venetian Rewards card. Use the official schedule for registration cutoffs and the linked structures for rake, staff fees and re-entry terms. Poker suite rates have qualifying-play conditions; check the resort’s current terms before booking.",
+    "registrationUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "scheduleUrl": "https://www.venetianlasvegas.com/content/dam/vlvweb/casino/poker/deepstack/2026/dss-sep-2026-schedule.pdf",
+    "scheduleCoverage": "Two selected multi-day highlights, with selected entry flights and the published Day 2. This is not the full schedule or the complete series buy-in range. No single main event is designated here.",
+    "sourceIds": [
+      "venetian-deepstack-calendar",
+      "venetian-showdown-oct-2026-schedule",
+      "venetian-poker-room",
+      "venetian-poker-rates-2026"
+    ],
+    "checkedAt": "2026-09-21T05:14:39Z",
+    "updatedAt": "2026-09-21T05:14:39Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-21T05:14:39Z",
+        "text": "Added the official festival dates, selected lower-buy-in highlights, entry conditions and Las Vegas planning links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "event-3",
+        "slug": "event-3",
+        "number": "3",
+        "name": "No-Limit Hold’em — USD 250",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 250,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000,
+          "currency": "USD"
+        },
+        "startingStack": "30,000",
+        "levels": "40 minutes for these daytime flights; evening flights use 30 minutes.",
+        "reentry": null,
+        "lateRegistration": "15:40 local time on the selected daytime flights; consult the official schedule for other flights.",
+        "endDate": "2026-10-03",
+        "sessions": [
+          {
+            "id": "event-3-1a",
+            "label": "Day 1A",
+            "date": "2026-09-29",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-1b",
+            "label": "Day 1B",
+            "date": "2026-09-30",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-day2",
+            "label": "Day 2",
+            "date": "2026-10-03",
+            "time": "11:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "venetian-showdown-oct-2026-schedule"
+        ]
+      },
+      {
+        "id": "event-8",
+        "slug": "event-8",
+        "number": "8",
+        "name": "No-Limit Hold’em — USD 300",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 300,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 100000,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": "40 minutes",
+        "reentry": null,
+        "lateRegistration": "17:55 local time on the selected daytime flights; consult the official schedule for other flights.",
+        "endDate": "2026-10-08",
+        "sessions": [
+          {
+            "id": "event-8-1a",
+            "label": "Day 1A",
+            "date": "2026-10-04",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-8-1b",
+            "label": "Day 1B",
+            "date": "2026-10-05",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-8-day2",
+            "label": "Day 2",
+            "date": "2026-10-08",
+            "time": "11:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "venetian-showdown-oct-2026-schedule"
         ]
       }
     ]

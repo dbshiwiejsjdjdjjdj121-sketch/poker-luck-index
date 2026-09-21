@@ -17,7 +17,7 @@
     "officialUrl": "https://www.wsop.com/schedule/",
     "featured": true,
     "description": "Circuit stops, Super Circuit and bracelet festivals, together in one view.",
-    "checkedAt": "2026-09-16T05:14:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "wpt",
@@ -32,7 +32,7 @@
     "officialUrl": "https://www.worldpokertour.com/event/schedule/",
     "featured": true,
     "description": "Main Tour, Prime and special events. A festival can include more than one championship.",
-    "checkedAt": "2026-09-16T05:14:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "ept",
@@ -47,7 +47,7 @@
     "officialUrl": "https://www.pokerstarslive.com/ept/",
     "featured": true,
     "description": "Explore European Poker Tour festivals and their selected lower-buy-in highlights.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "apt",
@@ -60,7 +60,7 @@
     "officialUrl": "https://www.theasianpokertour.com/series",
     "featured": true,
     "description": "Asian Poker Tour festivals, with dates, selected buy-ins and official entry points.",
-    "checkedAt": "2026-09-16T05:14:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "triton",
@@ -93,7 +93,7 @@
     "officialUrl": "https://www.pokerstarslive.com/appt/",
     "featured": true,
     "description": "Asia Pacific Poker Tour festivals, including Korea and the Manila Championship.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "pokerstars-open",
@@ -108,7 +108,7 @@
     "officialUrl": "https://www.pokerstarslive.com/pokerstarsopen/",
     "featured": false,
     "description": "Browse the PokerStars Open calendar and the stops currently covered by the guide.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "bsop",
@@ -124,7 +124,7 @@
     "officialUrl": "https://bsop.com.br/",
     "featured": false,
     "description": "An official calendar entry for Brazil’s BSOP. Published coverage is shown separately from the organizer’s full calendar.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "irish-open",
@@ -154,7 +154,7 @@
     "officialUrl": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
     "featured": false,
     "description": "Belgian Poker Challenge editions, including the MegaStack festival in Namur.",
-    "checkedAt": "2026-09-16T05:14:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "cps",
@@ -170,7 +170,7 @@
     "officialUrl": "https://www.pokerstarslive.com/circuspokerseries/",
     "featured": false,
     "description": "Circus Poker Series festivals at Namur. Use the official calendar to confirm entry details; coverage here includes selected highlights.",
-    "checkedAt": "2026-09-13T06:27:30Z"
+    "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "borgata",
@@ -188,5 +188,22 @@
     "featured": false,
     "description": "Selected multi-day Borgata festivals in Atlantic City. Coverage excludes routine daily tournaments.",
     "checkedAt": "2026-09-18T05:16:36Z"
+  },
+  {
+    "id": "venetian",
+    "label": "Venetian Poker",
+    "fullName": "Venetian DeepStack Poker Festivals",
+    "series": [
+      "Venetian Poker"
+    ],
+    "keywords": [
+      "DeepStack Extravaganza",
+      "DeepStack Showdown",
+      "Venetian DeepStack"
+    ],
+    "officialUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "featured": false,
+    "description": "Selected Venetian DeepStack festivals in Las Vegas, with lower-buy-in highlights and official schedules. WPT co-branded editions remain under WPT.",
+    "checkedAt": "2026-09-21T05:14:39Z"
   }
 ]

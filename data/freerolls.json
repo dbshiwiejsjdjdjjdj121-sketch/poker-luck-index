@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected published starts for 16–29 September 2026, shown in Atlanta local time (America/New_York). This is a subset of the official calendar; no future weekly dates are generated automatically.",
+      "text": "Selected officially dated starts through 6 October 2026, in Atlanta local time (America/New_York). This is a subset of the calendar, not an automatically repeated weekly schedule. The ambiguous 2 October listing is omitted pending confirmation.",
       "endDate": null,
       "slots": [
         {
@@ -438,6 +438,94 @@
           "time": "20:00",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-30-1800",
+          "label": "Neighbor’s Pub",
+          "date": "2026-09-30",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-09-30-2000",
+          "label": "Limerick Junction Pub",
+          "date": "2026-09-30",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-01-1900",
+          "label": "Gino’s NY Pizza Bar",
+          "date": "2026-10-01",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-03-1300",
+          "label": "The Independent · turbo",
+          "date": "2026-10-03",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-03-1500",
+          "label": "The Independent · turbo",
+          "date": "2026-10-03",
+          "time": "15:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-04-1300",
+          "label": "The Independent",
+          "date": "2026-10-04",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-04-1600",
+          "label": "Milltown Arms Tavern 5 Points",
+          "date": "2026-10-04",
+          "time": "16:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-04-1900",
+          "label": "Little 5 Pub",
+          "date": "2026-10-04",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-05-1900",
+          "label": "Moe’s and Joe’s",
+          "date": "2026-10-05",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-06-1800",
+          "label": "Sweet Auburn BBQ",
+          "date": "2026-10-06",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-06-2000",
+          "label": "Little 5 Pub",
+          "date": "2026-10-06",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -484,9 +572,9 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
-    "updatedAt": "2026-09-17T06:14:18Z",
-    "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed."
+    "checkedAt": "2026-09-21T05:14:39Z",
+    "updatedAt": "2026-09-21T05:14:39Z",
+    "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
     "id": "riverchasers-live-poker",
@@ -564,8 +652,104 @@
       "riverchasers-bpo",
       "riverchasers-season40"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-21T05:14:39Z",
     "updatedAt": "2026-09-18T05:16:36Z",
+    "reviewNote": null
+  },
+  {
+    "id": "free-poker-network-live",
+    "slug": "free-poker-network-live",
+    "title": "Free Poker Network: free live poker leagues",
+    "brand": "Free Poker Network",
+    "description": "Find free live poker at participating US bars through Free Poker Network. Check local venues, the 21+ age rule and account requirements before playing for league points and championship invitations.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Participating US venues",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "CO",
+        "DE",
+        "FL",
+        "IL",
+        "IN",
+        "MN",
+        "NE",
+        "NV",
+        "NJ",
+        "NY",
+        "ND",
+        "SD",
+        "TX",
+        "WI"
+      ],
+      "note": "The official directory lists leagues in Colorado, Delaware, Florida, Illinois, Indiana, Minnesota, Nebraska, Nevada, New Jersey, New York, North Dakota, South Dakota, Texas and Wisconsin. Availability is venue-specific, not statewide. This guide covers live league play only."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "not-required",
+      "password": "not-required",
+      "requirements": [
+        "Players must be 21 or older and register an FPN account.",
+        "Verified contact details are required for points and prizes; mailed awards need a valid mailing address.",
+        "Hosts retain their own admission policies. Championship invitations must be earned and cannot be transferred."
+      ],
+      "costNote": "FPN describes its social games as free to play and prohibits forced consideration. Confirm individual venue policies and any optional spending before travelling."
+    },
+    "reward": {
+      "label": "League points and qualification opportunities",
+      "details": "Attendance earns points toward standings and championship invitations. Awards depend on the promotion and applicable restrictions; no fixed cash prize is promised for each local game."
+    },
+    "schedule": {
+      "text": "A recurring league programme. Find the host and its current event details through the official regional directory. No future dated starts are inferred from weekly play.",
+      "timezone": null,
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Where can I play?",
+        "text": "Choose a region, then inspect its participating venues. The directory includes Midwest leagues, Nevada and several East Coast states. A state in our filter means a listed league exists, not that every city has a game."
+      },
+      {
+        "title": "Is a championship seat automatic?",
+        "text": "No. Local play is an entry point into the league. Qualification and prizes follow the current promotion; earlier cash awards and travel packages are not guarantees for today’s games."
+      },
+      {
+        "title": "Who supports the league?",
+        "text": "FPN explains that sponsoring venues support its promotions. Its background page describes local league play and routes toward national finals. Use that explanation alongside the current participation rules."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official regions and venue directory",
+        "url": "https://freepokernetwork.com/regions",
+        "kind": "explanation",
+        "sourceId": "fpn-regions"
+      },
+      {
+        "label": "Official age, account and participation rules",
+        "url": "https://freepokernetwork.com/terms-of-services",
+        "kind": "rules",
+        "sourceId": "fpn-terms"
+      },
+      {
+        "label": "Official league and prize explanation",
+        "url": "https://freepokernetwork.com/about-us",
+        "kind": "explanation",
+        "sourceId": "fpn-about"
+      }
+    ],
+    "sourceIds": [
+      "fpn-terms",
+      "fpn-regions",
+      "fpn-about"
+    ],
+    "checkedAt": "2026-09-21T05:14:39Z",
+    "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   }
 ]
