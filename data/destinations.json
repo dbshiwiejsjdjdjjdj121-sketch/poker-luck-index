@@ -1866,5 +1866,65 @@
       ]
     },
     "updatedAt": "2026-09-18T05:16:36Z"
+  },
+  {
+    "id": "united-kingdom/leeds",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "Leeds",
+    "slug": "leeds",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "Grosvenor Casino Leeds Westgate is on Wellington Bridge Street. Plan the journey to this venue separately from arrival at Leeds railway station or your city-centre hotel.",
+    "airport": {
+      "title": "Leeds Bradford Airport",
+      "detail": "The airport lists FLYER buses to Leeds, Bradford and Harrogate, with onward rail connections. Use its transport page for current routes and timetables; a connecting bus is needed for train travel.",
+      "url": "https://www.leedsbradfordairport.co.uk/getting-to-and-from",
+      "sourceId": "leeds-airport"
+    },
+    "transport": [
+      {
+        "title": "Airport taxi and onward connections",
+        "detail": "Arrow Cars operates from the terminal front. Other private-hire pickups use designated areas. Check the pickup location and arrange your final journey to the casino.",
+        "url": "https://www.leedsbradfordairport.co.uk/getting-to-and-from",
+        "sourceId": "leeds-airport"
+      },
+      {
+        "title": "Arriving at Leeds Westgate",
+        "detail": "Use Wellington Bridge Street for the casino entrance and its on-site parking. Confirm access and parking conditions with the venue before travelling.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/leeds-westgate",
+        "sourceId": "leeds-westgate"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "DoubleTree by Hilton Leeds City Centre",
+        "detail": "An off-site option at Granary Wharf beside Leeds station’s southern entrance. The hotel lists paid parking and no airport shuttle. Compare the total room cost and the onward route to Westgate; no festival rate is confirmed.",
+        "url": "https://www.hilton.com/en-gb/hotels/lbaccdi-doubletree-leeds-city-centre/",
+        "sourceId": "leeds-doubletree"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the casino",
+        "detail": "The venue lists a restaurant and bar. Confirm kitchen hours around your tournament breaks; a casino being open 24 hours does not establish all-night food service.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/leeds-westgate",
+        "sourceId": "leeds-westgate"
+      },
+      {
+        "title": "The Lock Kitchen & Bar",
+        "detail": "The DoubleTree lists this on-site restaurant and room service. It is a hotel dining option away from the tournament venue; check meal times before returning from a late session.",
+        "url": "https://www.hilton.com/en-gb/hotels/lbaccdi-doubletree-leeds-city-centre/",
+        "sourceId": "leeds-doubletree"
+      }
+    ],
+    "tax": {
+      "text": "HMRC says that expertise or earning a living from gambling does not by itself make it a trade; income connected with services can be treated differently. This guide has not confirmed event-specific withholding. Ask the organizer about payout paperwork and check obligations in your country of tax residence. Organizer deductions from a prize pool are not automatically tax withholding.",
+      "sourceIds": [
+        "uk-gambling-tax"
+      ]
+    },
+    "updatedAt": "2026-09-22T05:14:42Z"
   }
 ]

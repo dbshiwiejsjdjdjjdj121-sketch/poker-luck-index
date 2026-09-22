@@ -234,7 +234,7 @@
     "sourceIds": [
       "liechtenstein-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1970,7 +1970,7 @@
       "sydney-main-2026",
       "sydney-main-2026-details"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": "WPT’s championship Details page lists a 12:00 start, 40-minute Day 1 levels and one re-entry per flight. Its Schedule tab lists 12:30, 60-minute levels and unlimited entries for the same AUD 5,000 championship. Previously confirmed values are retained pending clarification. Confirm the start, structure and registration deadline with The Star before attending.",
     "changes": [
@@ -2082,7 +2082,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
@@ -2159,7 +2159,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -2850,7 +2850,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -3057,7 +3057,7 @@
     "startDate": "2026-11-12",
     "endDate": "2026-11-29",
     "timezone": "Asia/Taipei",
-    "dateNote": null,
+    "dateNote": "The information page and event list begin November 12 with the Asia Gaming Industry Championship. The series calendar headline starts November 13. Check eligibility for the November 12 event; it is not assumed to be open to every visitor.",
     "venue": {
       "name": "Red Space",
       "address": null,
@@ -3073,13 +3073,17 @@
       "taipei-schedule",
       "taipei-info"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-09-22T05:14:42Z",
+    "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-09-22T05:14:42Z",
+        "text": "Clarified the November 12 opening listing versus the November 13 series headline."
       }
     ],
     "tournaments": [
@@ -4025,7 +4029,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5640,7 +5644,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6243,7 +6247,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6869,7 +6873,7 @@
     "registration": "The official guide requires players to be 21 or older. Non-EU residents need a passport; EU players may use a passport or eligible ID card. Driving licences are not accepted. On-site payment is listed in EUR cash or by debit/credit card; confirm current entry conditions with the venue.",
     "registrationUrl": "https://www.pokerstarslive.com/circuspokerseries/",
     "scheduleUrl": "https://www.circus-poker.com/en/ticketing/festival/details/d41844ef-c203-2b20-064d-3a1e1ae61e11",
-    "scheduleCoverage": "Selected main, Circus Cup and one satellite entry. Guarantees and the main-event finishing date are withheld where official sources disagree; check the linked organizer pages for the complete schedule.",
+    "scheduleCoverage": "Selected main, Circus Cup and one satellite entry. Confirm the disputed main-event finishing date with the organizer; use the official links for the complete schedule.",
     "sourceIds": [
       "cps-namur-2026-info",
       "cps-namur-2026-host",
@@ -6879,12 +6883,16 @@
       "namur-venue"
     ],
     "checkedAt": "2026-09-11T06:57:18.694Z",
-    "updatedAt": "2026-09-11T06:57:18.694Z",
-    "reviewNote": "The venue’s September 8 announcement lists an EUR 800,000 main guarantee and a November 29 finish; PokerStars Live lists EUR 750,000 and November 30. Circus Cup guarantees also differ (EUR 400,000 vs EUR 500,000). These disputed amounts and the main finish remain unconfirmed here.",
+    "updatedAt": "2026-09-22T05:14:42Z",
+    "reviewNote": "The venue announcement and PokerStars Live now agree on the EUR 800,000 main-event and EUR 400,000 Circus Cup guarantees. The main finish still differs: November 29 at the venue versus November 30 on PokerStars Live. Confirm return travel; the main finishing date remains unconfirmed here.",
     "changes": [
       {
         "date": "2026-09-11T06:57:18.694Z",
         "text": "Added official November festival dates, confirmed buy-ins, selected entries and venue guidance; conflicting guarantees and the main-event finish are flagged for review."
+      },
+      {
+        "date": "2026-09-22T05:14:42Z",
+        "text": "Confirmed matching main-event and Circus Cup guarantees across official announcements; the main finishing-date conflict remains."
       }
     ],
     "tournaments": [
@@ -6900,7 +6908,10 @@
           "currency": "EUR"
         },
         "fee": null,
-        "guarantee": null,
+        "guarantee": {
+          "amount": 800000,
+          "currency": "EUR"
+        },
         "startingStack": "50,000",
         "levels": "The venue announcement lists 60-minute levels for the main Day 1 flights; confirm the structure of each flight.",
         "reentry": null,
@@ -6953,7 +6964,10 @@
           "currency": "EUR"
         },
         "fee": null,
-        "guarantee": null,
+        "guarantee": {
+          "amount": 400000,
+          "currency": "EUR"
+        },
         "startingStack": "50,000",
         "levels": "Day 1A: 40 minutes",
         "reentry": "Unlimited re-entry on the published Day 1A.",
@@ -7366,7 +7380,7 @@
       "borgata-big-big-2026-structures",
       "borgata-registration-faq"
     ],
-    "checkedAt": "2026-09-21T05:16:00Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-18T05:16:36Z",
     "reviewNote": "Confirm the registration method for your chosen event. The edition-specific packet supports selected app entries; Borgata’s general poker FAQ still describes in-person registration.",
     "changes": [
@@ -7544,7 +7558,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7686,7 +7700,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-22T05:14:42Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7793,5 +7807,188 @@
         ]
       }
     ]
+  },
+  {
+    "id": "gukpt-leeds-2026",
+    "slug": "gukpt-leeds-2026",
+    "name": "GUKPT Leeds 2026",
+    "tour": "GUKPT",
+    "destinationId": "united-kingdom/leeds",
+    "startDate": "2026-09-24",
+    "endDate": "2026-10-04",
+    "timezone": "Europe/London",
+    "dateNote": "Live festival dates. The official schedule also lists a September 23 satellite and separate online closer on October 5–6.",
+    "venue": {
+      "name": "Grosvenor Casino Leeds Westgate",
+      "address": "Wellington Bridge Street, Leeds, United Kingdom",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/leeds-westgate"
+    },
+    "status": "scheduled",
+    "description": "A Leeds poker festival with a GBP 1,000 main event and GBP 250 Mini Main. Compare the selected entries, Westgate venue and travel options before visiting the official schedule.",
+    "registration": "Players must be 18 or older. Confirm entry availability and payment with Grosvenor; the link below is the official information page.",
+    "registrationUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+    "scheduleUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+    "scheduleCoverage": "Selected daytime flights and finals only; the official schedule includes additional entries and satellites.",
+    "sourceIds": [
+      "gukpt-2026-calendar",
+      "leeds-westgate"
+    ],
+    "checkedAt": "2026-09-22T05:14:42Z",
+    "updatedAt": "2026-09-22T05:14:42Z",
+    "reviewNote": "The official table labels Main Event Day 1C as turbo but also gives 60-minute levels. That flight’s structure is not reproduced here.",
+    "changes": [
+      {
+        "date": "2026-09-22T05:14:42Z",
+        "text": "Added Leeds dates, selected buy-ins, entry information and official travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "6",
+        "name": "GUKPT Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1000,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 100,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 200000,
+          "currency": "GBP"
+        },
+        "startingStack": "20,000",
+        "levels": "60 minutes on the selected daytime flights.",
+        "reentry": null,
+        "lateRegistration": "Start of Day 2.",
+        "endDate": "2026-10-04",
+        "sessions": [
+          {
+            "id": "main-1a",
+            "label": "Day 1A",
+            "date": "2026-10-01",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-1b",
+            "label": "Day 1B",
+            "date": "2026-10-02",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-2",
+            "label": "Day 2",
+            "date": "2026-10-03",
+            "time": "12:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-3",
+            "label": "Day 3",
+            "date": "2026-10-04",
+            "time": "12:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "gukpt-2026-calendar"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "number": "2",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 250,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 100000,
+          "currency": "GBP"
+        },
+        "startingStack": "20,000",
+        "levels": "40 minutes on the selected flight.",
+        "reentry": null,
+        "lateRegistration": "Start of Day 2.",
+        "endDate": "2026-09-30",
+        "sessions": [
+          {
+            "id": "mini-1a",
+            "label": "Day 1A",
+            "date": "2026-09-27",
+            "time": "18:00",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-2",
+            "label": "Day 2",
+            "date": "2026-09-29",
+            "time": "16:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "mini-3",
+            "label": "Day 3",
+            "date": "2026-09-30",
+            "time": "17:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "gukpt-2026-calendar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "borgata-fall-poker-open-2026",
+    "slug": "borgata-fall-poker-open-2026",
+    "name": "Borgata Fall Poker Open 2026",
+    "tour": "Borgata Poker",
+    "destinationId": "united-states/atlantic-city",
+    "startDate": "2026-11-03",
+    "endDate": "2026-11-17",
+    "timezone": "America/New_York",
+    "dateNote": null,
+    "venue": {
+      "name": "Borgata Hotel Casino & Spa",
+      "address": "1 Borgata Way, Atlantic City, NJ 08401, United States",
+      "url": "https://borgata.mgmresorts.com/en/casino/poker.html"
+    },
+    "status": "scheduled",
+    "description": "Borgata’s November live poker festival in Atlantic City, New Jersey. The organizer has confirmed the festival dates. Event-by-event buy-ins, flights and registration deadlines are not yet verified in this guide.",
+    "registration": "Borgata’s general rules require players to be 21 or older, with an MGM Rewards card and valid identification. Confirm the Fall Poker Open registration method when the edition-specific schedule is released.",
+    "registrationUrl": "https://borgata.mgmresorts.com/en/casino/poker.html",
+    "scheduleUrl": "https://borgata.mgmresorts.com/en/casino/poker.html",
+    "scheduleCoverage": "Dates and venue confirmed. No individual highlights are listed until edition-specific details are verified. The official link is the host’s poker information page.",
+    "sourceIds": [
+      "borgata-poker",
+      "borgata-2026-opens",
+      "borgata-registration-faq"
+    ],
+    "checkedAt": "2026-09-22T05:14:42Z",
+    "updatedAt": "2026-09-22T05:14:42Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-22T05:14:42Z",
+        "text": "Added officially confirmed November festival dates and venue; detailed entry information remains unconfirmed."
+      }
+    ],
+    "tournaments": []
   }
 ]
