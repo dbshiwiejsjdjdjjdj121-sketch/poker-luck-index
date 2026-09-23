@@ -1926,5 +1926,119 @@
       ]
     },
     "updatedAt": "2026-09-22T05:14:42Z"
+  },
+  {
+    "id": "united-kingdom/blackpool",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "Blackpool",
+    "slug": "blackpool",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "Grosvenor Casino Blackpool is in The Sandcastle on the South Promenade. Plan your final journey to South Beach separately from arrival at a railway station.",
+    "airport": {
+      "title": "Manchester Airport rail connections",
+      "detail": "The airport station is linked to the terminals by walkways and has regular trains to Manchester Piccadilly. Check a journey planner for your complete connection to Blackpool, including evening services; no fixed transfer time is assumed.",
+      "url": "https://www.manchesterairport.co.uk/getting-to-and-from/by-train/",
+      "sourceId": "manchester-airport-rail"
+    },
+    "transport": [
+      {
+        "title": "Reaching The Sandcastle",
+        "detail": "The complex lists Blackpool South as its nearest railway station. A tram stops outside; the tram network also serves Blackpool North station. Check the operator’s current route and final departure for a late finish.",
+        "url": "https://www.sandcastle-waterpark.co.uk/plan-your-visit/directions/",
+        "sourceId": "blackpool-sandcastle-directions"
+      },
+      {
+        "title": "Casino arrival and parking",
+        "detail": "Use the casino’s South Promenade visitor information for the entrance and on-site parking. Confirm access conditions before travelling.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool",
+        "sourceId": "blackpool-grosvenor"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Hampton by Hilton Blackpool",
+        "detail": "An off-site option at 595–601 New South Promenade. The hotel describes a short walk to Sandcastle Waterpark, a tram stop outside and included hot breakfast. Parking is charged separately; no festival rate is confirmed.",
+        "url": "https://www.hilton.com/en-gb/hotels/blkplhx-hampton-blackpool/",
+        "sourceId": "blackpool-hampton"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food at the casino",
+        "detail": "The venue offers food and drink. Check kitchen hours around your tournament breaks.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool",
+        "sourceId": "blackpool-grosvenor"
+      },
+      {
+        "title": "Hampton restaurant and bar",
+        "detail": "The hotel lists an on-site restaurant and bar, offering an alternative away from the casino. Confirm current serving times.",
+        "url": "https://www.hilton.com/en-gb/hotels/blkplhx-hampton-blackpool/",
+        "sourceId": "blackpool-hampton"
+      }
+    ],
+    "tax": {
+      "text": "HMRC says that expertise or earning a living from gambling does not by itself make it a trade; income connected with services can be treated differently. This guide has not confirmed event-specific withholding. Ask the organizer about payout paperwork and check obligations in your country of tax residence. Organizer deductions from a prize pool are not automatically tax withholding.",
+      "sourceIds": [
+        "uk-gambling-tax"
+      ]
+    },
+    "updatedAt": "2026-09-23T05:27:46Z"
+  },
+  {
+    "id": "united-kingdom/london",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "London",
+    "slug": "london",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "The Victoria poker venue is on Edgware Road. This guide focuses on that part of London, with Paddington and Edgware Road connections rather than assuming all London tournaments share one venue.",
+    "airport": {
+      "title": "Heathrow to Paddington",
+      "detail": "Heathrow lists the Heathrow Express and Elizabeth line for Paddington, plus the Piccadilly line for other London connections. Compare stops, fares and service times, then plan the last leg to Edgware Road.",
+      "url": "https://www.heathrow.com/transport-and-directions/by-rail-or-train",
+      "sourceId": "london-heathrow-rail"
+    },
+    "transport": [
+      {
+        "title": "The Victoria and nearby Underground stations",
+        "detail": "The casino is at 150–162 Edgware Road, W2 2DT. Its guide places the Circle, District and Hammersmith & City Edgware Road station about five minutes away on foot; the separate Bakerloo station is also nearby. On-site parking is listed.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria",
+        "sourceId": "london-victoria"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Hilton London Metropole",
+        "detail": "An off-site hotel at 225 Edgware Road, less than a mile from Paddington station. Compare the room total and route to The Victoria. No event-specific accommodation discount is confirmed.",
+        "url": "https://www.hilton.com/en/hotels/lonmetw-hilton-london-metropole/",
+        "sourceId": "london-metropole"
+      }
+    ],
+    "dining": [
+      {
+        "title": "The Victoria Restaurant and Terrace Bar",
+        "detail": "The casino lists a restaurant and bar. Check service hours before relying on a meal after a late tournament session.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria",
+        "sourceId": "london-victoria"
+      },
+      {
+        "title": "Dining at the Metropole",
+        "detail": "The hotel has four themed bars and restaurants. Check menus and serving times for a meal away from the tournament venue.",
+        "url": "https://www.hilton.com/en/hotels/lonmetw-hilton-london-metropole/",
+        "sourceId": "london-metropole"
+      }
+    ],
+    "tax": {
+      "text": "HMRC says that expertise or earning a living from gambling does not by itself make it a trade; income connected with services can be treated differently. This guide has not confirmed event-specific withholding. Ask the organizer about payout paperwork and check obligations in your country of tax residence. Organizer deductions from a prize pool are not automatically tax withholding.",
+      "sourceIds": [
+        "uk-gambling-tax"
+      ]
+    },
+    "updatedAt": "2026-09-23T05:27:46Z"
   }
 ]

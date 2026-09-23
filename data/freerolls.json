@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected officially dated starts through 13 October 2026, in Atlanta local time (America/New_York). This is a subset of the calendar, not an automatically repeated weekly schedule. The ambiguous 2 October listing is omitted pending confirmation.",
+      "text": "Selected officially dated starts through 22 October 2026, in Atlanta local time (America/New_York). This is a subset of the calendar, not an automatically repeated weekly schedule. The ambiguous 2 October listing is omitted pending confirmation.",
       "endDate": null,
       "slots": [
         {
@@ -622,6 +622,126 @@
           "time": "20:00",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-14-1800",
+          "label": "Neighbor's Pub",
+          "date": "2026-10-14",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-14-2000",
+          "label": "Limerick Junction Pub",
+          "date": "2026-10-14",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-15-1900",
+          "label": "Gino's NY Pizza Bar",
+          "date": "2026-10-15",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-16-1900",
+          "label": "Neighbor's Pub",
+          "date": "2026-10-16",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-17-1300",
+          "label": "The Independent",
+          "date": "2026-10-17",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-17-1500",
+          "label": "The Independent",
+          "date": "2026-10-17",
+          "time": "15:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-18-1300",
+          "label": "The Independent",
+          "date": "2026-10-18",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-18-1600",
+          "label": "Milltown Arms Tavern 5 Points",
+          "date": "2026-10-18",
+          "time": "16:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-18-1900",
+          "label": "Little 5 Pub",
+          "date": "2026-10-18",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-19-1900",
+          "label": "Moe's and Joe's",
+          "date": "2026-10-19",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-20-1800",
+          "label": "Sweet Auburn BBQ",
+          "date": "2026-10-20",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-20-2000",
+          "label": "Little 5 Pub",
+          "date": "2026-10-20",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-21-1800",
+          "label": "Neighbor's Pub",
+          "date": "2026-10-21",
+          "time": "18:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-21-2000",
+          "label": "Limerick Junction Pub",
+          "date": "2026-10-21",
+          "time": "20:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-22-1900",
+          "label": "Gino's NY Pizza Bar",
+          "date": "2026-10-22",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -668,8 +788,8 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
-    "updatedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
+    "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
@@ -713,14 +833,6 @@
       "endDate": null,
       "slots": [
         {
-          "id": "riverchasers-2026-09-22-ranch-city",
-          "label": "Ranch City Brewing · Easton, PA",
-          "date": "2026-09-22",
-          "time": "18:30",
-          "timezone": "America/New_York",
-          "sourceId": "riverchasers-bpo"
-        },
-        {
           "id": "riverchasers-2026-09-22-berties",
           "label": "Bertie’s Inn · Reading, PA",
           "date": "2026-09-22",
@@ -729,8 +841,16 @@
           "sourceId": "riverchasers-bpo"
         },
         {
-          "id": "riverchasers-2026-09-22-station-house",
-          "label": "Station House Tavern & Bar · Lancaster, PA",
+          "id": "riverchasers-2026-09-22-ranch-city",
+          "label": "Ranch City Brewing · Easton, PA",
+          "date": "2026-09-22",
+          "time": "18:30",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-22-5-west",
+          "label": "5 West · Palmyra, NJ",
           "date": "2026-09-22",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -745,8 +865,8 @@
           "sourceId": "riverchasers-bpo"
         },
         {
-          "id": "riverchasers-2026-09-22-5-west",
-          "label": "5 West · Palmyra, NJ",
+          "id": "riverchasers-2026-09-22-station-house",
+          "label": "Station House Tavern & Bar · Lancaster, PA",
           "date": "2026-09-22",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -769,10 +889,66 @@
           "sourceId": "riverchasers-bpo"
         },
         {
+          "id": "riverchasers-2026-09-23-pikeville",
+          "label": "Pikeville Sportsman’s Assoc. · Oley, PA",
+          "date": "2026-09-23",
+          "time": "18:30",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-23-hill-to-hill",
+          "label": "Hill to Hill Grille · Bethlehem, PA",
+          "date": "2026-09-23",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
           "id": "riverchasers-2026-09-23-italian-american",
           "label": "Italian American Club · Tuckerton, NJ",
           "date": "2026-09-23",
           "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-23-uno-bensalem",
+          "label": "UNO Pizzeria & Grill · Bensalem, PA",
+          "date": "2026-09-23",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-23-uno-newtown",
+          "label": "UNO Pizzeria & Grill · Newtown Square, PA",
+          "date": "2026-09-23",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-23-frans",
+          "label": "Fran’s Pub · New Hope, PA",
+          "date": "2026-09-23",
+          "time": "19:30",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-23-frosted-mug",
+          "label": "Frosted Mug · Vineland, NJ",
+          "date": "2026-09-23",
+          "time": "19:30",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-23-oreland",
+          "label": "Oreland Inn · Oreland, PA",
+          "date": "2026-09-23",
+          "time": "19:30",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -789,6 +965,70 @@
           "label": "Decades Restaurant and Bar · Hamilton, NJ",
           "date": "2026-09-24",
           "time": "18:30",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-24-liberty",
+          "label": "Liberty Fire Co 1 Social Quarters · Sinking Spring, PA",
+          "date": "2026-09-24",
+          "time": "18:30",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-24-bucks-club",
+          "label": "The Bucks Club · Jamison, PA",
+          "date": "2026-09-24",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-24-creekside",
+          "label": "Creekside Sports Bar · Limerick, PA",
+          "date": "2026-09-24",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-24-leaf",
+          "label": "Leaf Cigar Bar · Easton, PA",
+          "date": "2026-09-24",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-24-root-cellar",
+          "label": "Root Cellar Tavern · Dorothy, NJ",
+          "date": "2026-09-24",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-24-villa-nova",
+          "label": "Villa Nova Sports B&G · Lancaster, PA",
+          "date": "2026-09-24",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-25-reddogs",
+          "label": "Reddog’s Hi Point Pub · Absecon, NJ",
+          "date": "2026-09-25",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "riverchasers-2026-09-25-betterment",
+          "label": "Betterment Social Club · Trumbauersville, PA",
+          "date": "2026-09-25",
+          "time": "20:00",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -845,8 +1085,8 @@
       "riverchasers-bpo",
       "riverchasers-season40"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
-    "updatedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
+    "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   },
   {
@@ -941,8 +1181,102 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-21T05:14:39Z",
+    "reviewNote": null
+  },
+  {
+    "id": "world-tavern-poker-live",
+    "slug": "world-tavern-poker-live",
+    "title": "World Tavern Poker: free live bar poker",
+    "brand": "World Tavern Poker",
+    "description": "Find free-entry live poker at participating US bars. Check local age and customer policies, then use the official game finder; league points and championship qualification are separate from a guaranteed cash prize.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Participating US venues",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "MD",
+        "MI",
+        "NJ",
+        "NM",
+        "NY",
+        "NC",
+        "PA",
+        "TN",
+        "VA"
+      ],
+      "note": "The official 2026 regional pages confirm coverage in Maryland, Michigan, New Jersey, New Mexico, New York, North Carolina, Pennsylvania, Tennessee and Virginia. This is selected venue coverage, not statewide availability. Use the ZIP-code finder for an actual host; this guide covers live play only."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Register an organizer account and follow its instructions to sign up for a local tournament.",
+        "The league minimum is 18; many venues admit only players aged 21 or older. Championship participants must meet the separate 21-by-national-finals rule.",
+        "A venue may apply a general customer or minimum-purchase policy to all patrons. Check with the host before travelling."
+      ],
+      "costNote": "Ordinary bar tournaments have no buy-in. That does not guarantee a visit without spending: venue customer policies may apply. The rules prohibit awarding extra chips for purchases."
+    },
+    "reward": {
+      "label": "League points, prizes and qualification",
+      "details": "Local play earns points toward standings and later championships. Regional rewards can include event access passes or packages. Eligibility and prizes vary; no fixed cash payout is promised for an ordinary bar game."
+    },
+    "schedule": {
+      "text": "A recurring live league. The official introduction links to a ZIP-code game finder. No future dated starts are generated here from weekly play, and past regional finals are not advertised as upcoming open games.",
+      "timezone": null,
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "How do I find a game near me?",
+        "text": "Open the official league introduction below and follow Find A Game. Search by ZIP code, then confirm the host, start and admission policy before going. The introduction is a guide to the organizer’s finder, not a direct seat reservation."
+      },
+      {
+        "title": "Are championships open to every new player?",
+        "text": "No. Regional seats require qualification and cannot be transferred. The ordinary local game is the starting point; do not assume that free league entry grants access to a national final."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official live league explanation and game-finder link",
+        "url": "https://www.worldtavernpoker.info/poker-info-page",
+        "kind": "explanation",
+        "sourceId": "wtp-live-intro"
+      },
+      {
+        "label": "Official league rules",
+        "url": "https://www.worldtavernpoker.info/world-tavern-poker-rules-guide",
+        "kind": "rules",
+        "sourceId": "wtp-live-rules"
+      },
+      {
+        "label": "Official age, venue spending and registration rules",
+        "url": "https://www.worldtavernpoker.info/complete-rule-guide",
+        "kind": "rules",
+        "sourceId": "wtp-live-complete-rules"
+      },
+      {
+        "label": "Official regional coverage and championship qualification",
+        "url": "https://www.worldtavernpoker.info/regional-champs",
+        "kind": "explanation",
+        "sourceId": "wtp-live-regions"
+      }
+    ],
+    "sourceIds": [
+      "wtp-live-intro",
+      "wtp-live-rules",
+      "wtp-live-complete-rules",
+      "wtp-live-regions"
+    ],
+    "checkedAt": "2026-09-23T05:27:46Z",
+    "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   }
 ]

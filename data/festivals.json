@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1970,7 +1970,7 @@
       "sydney-main-2026",
       "sydney-main-2026-details"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": "WPT’s championship Details page lists a 12:00 start, 40-minute Day 1 levels and one re-entry per flight. Its Schedule tab lists 12:30, 60-minute levels and unlimited entries for the same AUD 5,000 championship. Previously confirmed values are retained pending clarification. Confirm the start, structure and registration deadline with The Star before attending.",
     "changes": [
@@ -2082,7 +2082,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "reviewNote": null,
     "changes": [
@@ -2159,7 +2159,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-13T06:27:30Z",
     "reviewNote": null,
     "changes": [
@@ -2850,7 +2850,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -4029,7 +4029,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4158,7 +4158,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4298,7 +4298,7 @@
     "sourceIds": [
       "durant-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -4482,7 +4482,7 @@
     "sourceIds": [
       "toledo-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4628,7 +4628,7 @@
     "sourceIds": [
       "playground-november-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4663,7 +4663,7 @@
     "sourceIds": [
       "scottsdale-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4698,7 +4698,7 @@
     "sourceIds": [
       "elgin-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4816,7 +4816,7 @@
     "sourceIds": [
       "panama-city-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4851,7 +4851,7 @@
     "sourceIds": [
       "middelkerke-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -5040,7 +5040,7 @@
     "sourceIds": [
       "new-orleans-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5075,7 +5075,7 @@
     "sourceIds": [
       "sanremo-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5110,7 +5110,7 @@
     "sourceIds": [
       "cherokee-november-2026-schedule"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5146,7 +5146,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5571,7 +5571,7 @@
       "wpt-seoul-2026-schedule",
       "wpt-seoul-2026-announcement"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5644,7 +5644,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6031,7 +6031,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6212,7 +6212,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "The organizer has not yet published the tournament schedule. Buy-ins, guarantees and entry days remain unconfirmed.",
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6247,7 +6247,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6649,7 +6649,7 @@
     "registration": "The organizer supports registration at the event cashier and through GameID after BSOP registration. Confirm accepted payment methods and any payment charges with the cashier.",
     "reviewNote": null,
     "scheduleCoverage": "Official key-tournament date ranges and buy-ins are published. The complete flight schedule is still to come; dates below show each highlighted event’s published opening date.",
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6788,7 +6788,7 @@
     "registration": "BSOP lists event-cashier and GameID registration. Confirm the published tournament programme before choosing an entry or booking a satellite package.",
     "reviewNote": null,
     "scheduleCoverage": "The organizer has not yet published the full tournament schedule. Buy-ins, guarantees and starting days remain unconfirmed.",
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6882,7 +6882,7 @@
       "cps-namur-2026-qualifier",
       "namur-venue"
     ],
-    "checkedAt": "2026-09-11T06:57:18.694Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": "The venue announcement and PokerStars Live now agree on the EUR 800,000 main-event and EUR 400,000 Circus Cup guarantees. The main finish still differs: November 29 at the venue versus November 30 on PokerStars Live. Confirm return travel; the main finishing date remains unconfirmed here.",
     "changes": [
@@ -7380,7 +7380,7 @@
       "borgata-big-big-2026-structures",
       "borgata-registration-faq"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-18T05:16:36Z",
     "reviewNote": "Confirm the registration method for your chosen event. The edition-specific packet supports selected app entries; Borgata’s general poker FAQ still describes in-person registration.",
     "changes": [
@@ -7558,7 +7558,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7700,7 +7700,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7833,7 +7833,7 @@
       "gukpt-2026-calendar",
       "leeds-westgate"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-23T05:27:46Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": "The official table labels Main Event Day 1C as turbo but also gives 60-minute levels. That flight’s structure is not reproduced here.",
     "changes": [
@@ -7990,5 +7990,217 @@
       }
     ],
     "tournaments": []
+  },
+  {
+    "id": "gukpt-blackpool-2026",
+    "slug": "gukpt-blackpool-2026",
+    "name": "GUKPT Blackpool 2026",
+    "tour": "GUKPT",
+    "destinationId": "united-kingdom/blackpool",
+    "startDate": "2026-10-29",
+    "endDate": "2026-11-08",
+    "timezone": "Europe/London",
+    "dateNote": "The tour calendar starts October 29; the detailed schedule’s first listed event is October 30. Separate online closer dates are excluded.",
+    "venue": {
+      "name": "Grosvenor Casino Blackpool",
+      "address": "The Sandcastle, South Promenade, Blackpool, United Kingdom",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool"
+    },
+    "status": "scheduled",
+    "description": "A South Promenade festival with a GBP 1,250 main event and GBP 250 Mini Main. Compare selected entries and travel information before opening the official schedule.",
+    "registration": "Players must be 18 or older. Confirm entry availability and payment with Grosvenor; the link below is the official information page.",
+    "registrationUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+    "scheduleUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+    "scheduleCoverage": "Selected daytime flights and finals only; the official schedule includes additional entries and satellites.",
+    "sourceIds": [
+      "gukpt-2026-calendar",
+      "blackpool-grosvenor"
+    ],
+    "checkedAt": "2026-09-23T05:27:46Z",
+    "updatedAt": "2026-09-23T05:27:46Z",
+    "reviewNote": "Confirm the opening date before booking. The official Main Event Day 1C row is labelled turbo but gives 60-minute levels; that flight is not reproduced here.",
+    "changes": [
+      {
+        "date": "2026-09-23T05:27:46Z",
+        "text": "Added confirmed festival dates, headline buy-ins, venue and travel guidance."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "8",
+        "name": "GUKPT Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1250,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 150,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 250000,
+          "currency": "GBP"
+        },
+        "startingStack": "20,000",
+        "levels": "60 minutes on the selected daytime flights.",
+        "reentry": null,
+        "lateRegistration": "Start of Day 2.",
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "main-1a",
+            "label": "Day 1A",
+            "date": "2026-11-05",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-1b",
+            "label": "Day 1B",
+            "date": "2026-11-06",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-2",
+            "label": "Day 2",
+            "date": "2026-11-07",
+            "time": "12:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-3",
+            "label": "Day 3",
+            "date": "2026-11-08",
+            "time": "12:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "gukpt-2026-calendar"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "number": "3",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 250,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 100000,
+          "currency": "GBP"
+        },
+        "startingStack": "20,000",
+        "levels": "40 minutes on the selected flight.",
+        "reentry": null,
+        "lateRegistration": "Start of Day 2.",
+        "endDate": "2026-11-04",
+        "sessions": [
+          {
+            "id": "mini-1a",
+            "label": "Day 1A",
+            "date": "2026-11-01",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-2",
+            "label": "Day 2",
+            "date": "2026-11-03",
+            "time": "16:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "mini-3",
+            "label": "Day 3",
+            "date": "2026-11-04",
+            "time": "17:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "gukpt-2026-calendar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gukpt-grand-final-london-2026",
+    "slug": "gukpt-grand-final-london-2026",
+    "name": "GUKPT Grand Final London 2026",
+    "tour": "GUKPT",
+    "destinationId": "united-kingdom/london",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-29",
+    "timezone": "Europe/London",
+    "dateNote": "Festival dates from the official tour calendar; individual main-event dates and times remain unconfirmed.",
+    "venue": {
+      "name": "Grosvenor Casino The Victoria",
+      "address": "150–162 Edgware Road, London W2 2DT, United Kingdom",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria"
+    },
+    "status": "scheduled",
+    "description": "GUKPT’s Grand Final at The Victoria has a GBP 2,000 main entry and GBP 500,000 guarantee. Use this overview for the festival window, venue and travel planning; individual starting flights are not yet confirmed here.",
+    "registration": "Players must be 18 or older and should bring valid photo ID. Confirm entry availability and payment with The Victoria. The official link is an information page.",
+    "registrationUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+    "scheduleUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+    "scheduleCoverage": "Headline entry information only. Check the organizer for the detailed schedule before choosing travel dates.",
+    "sourceIds": [
+      "gukpt-2026-calendar",
+      "london-victoria"
+    ],
+    "checkedAt": "2026-09-23T05:27:46Z",
+    "updatedAt": "2026-09-23T05:27:46Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-23T05:27:46Z",
+        "text": "Added confirmed festival dates, headline buy-ins, venue and travel guidance."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "main",
+        "name": "GUKPT Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2000,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 200,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 500000,
+          "currency": "GBP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "gukpt-2026-calendar"
+        ]
+      }
+    ]
   }
 ]

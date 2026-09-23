@@ -1,0 +1,486 @@
+{
+  "verifiedAt": "2026-09-23T05:27:46Z",
+  "note": "Successful editorial reads only; independent HTTP scan is reachability, not content verification. No private search metrics.",
+  "sources": [
+    {
+      "id": "council-bluffs-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-council-bluffs/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "lincoln-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "malta-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-malta/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "calgary-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-deerfoot-inn-and-casino-2026/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "pompano-beach-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "verona-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-turning-stone/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "lake-tahoe-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-republic-lake-tahoe/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "sydney-schedule",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "lodge-schedule",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cyprus-schedule",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "jeju-schedule",
+      "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "jeju-info",
+      "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "apt-app",
+      "url": "https://www.theasianpokertour.com/download",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "southern-indiana-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "madrid-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "durant-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "toledo-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "playground-november-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "scottsdale-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "elgin-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "panama-city-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "middelkerke-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "new-orleans-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "sanremo-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cherokee-november-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "namur-megastack-2026-schedule",
+      "url": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "namur-megastack-2026-host",
+      "url": "https://www.circus-poker.com/en/news/290_belgian-poker-challenge-megastack-edition-the-big-event-to-kick-off-the-new-season",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "namur-venue",
+      "url": "https://www.circus-poker.com/en/namur/contact",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "sydney-festival-2026",
+      "url": "https://www.starpoker.com.au/wpt-australia",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "sydney-main-2026",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-australia-championship-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wpt-seoul-2026-schedule",
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wpt-seoul-2026-announcement",
+      "url": "https://www.worldpokertour.com/article/world-poker-tour-makes-historic-debut-at-inspire-entertainment-resort-for-wpt-seoul",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "appt-manila-championship-2026-schedule",
+      "url": "https://www.pokerstarslive.com/appt/manilachampionship/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "kings-super-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-super-circuit-kings/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "rozvadov-transport",
+      "url": "https://kings-resort.com/contact",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "latam-super-2027-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "sunday-million-2026-info",
+      "url": "https://www.pokerstarslive.com/sunday-million-live/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "irish-calendar",
+      "url": "https://irishpokeropen.com/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "marrakech-location",
+      "url": "https://irishpokeropen.com/marrakech/location/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "marrakech-hotels",
+      "url": "https://irishpokeropen.com/marrakech/2026/08/10/where-to-stay-in-marrakech-your-festival-hotel-guide/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "bsop-calendar",
+      "url": "https://bsop.com.br/proximas-etapas/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "bsop-millions-2026-info",
+      "url": "https://bsop.com.br/bsop-millions/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "bsop-summer-2027-info",
+      "url": "https://bsop.com.br/summer/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "venetian-poker-room",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "venetian-poker-rates-2026",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cps-namur-2026-info",
+      "url": "https://www.pokerstarslive.com/circuspokerseries/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cps-namur-2026-host",
+      "url": "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cps-namur-2026-schedule",
+      "url": "https://www.circus-poker.com/en/ticketing/festival/details/d41844ef-c203-2b20-064d-3a1e1ae61e11",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cps-namur-2026-cup",
+      "url": "https://www.circus-poker.com/en/ticketing/ticket/details/2aa94186-3884-1c5d-2198-3a22d0df8904",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "cps-namur-2026-qualifier",
+      "url": "https://www.circus-poker.com/en/ticketing/ticket/details/3391ca34-65a3-61b9-daf7-3a2365256b7d",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-stars-fr",
+      "url": "https://www.pokerstars.fr/en/poker/free/freerolls/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-stars-help",
+      "url": "https://www.pokerstars.com/is/help/articles/finding-freerolls-fr/10918/?ooac=1",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-party-offer",
+      "url": "https://www.partypoker.com/en/poker/offers/round-the-clock-freerolls",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-party-help",
+      "url": "https://www.partypoker.com/en/poker/how-to-play/software/free-poker",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-888-offer",
+      "url": "https://www.888poker.com/poker-promotions/24-7-freerolls-festival/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-888-terms",
+      "url": "https://www.888poker.com/terms/24-7-freerolls-festival/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-atlanta-schedule",
+      "url": "https://www.freerollatlanta.com/schedule-2/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-atlanta-rules",
+      "url": "https://www.freerollatlanta.com/rules/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-atlanta-welcome",
+      "url": "https://www.freerollatlanta.com/welcome-to-freeroll-atlanta-poker/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "freeroll-atlanta-prizes",
+      "url": "https://www.freerollatlanta.com/prizes/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wynn-world-2026-main",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-world-championship-at-wynn-las-vegas-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wynn-world-2026-prime",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-championship-at-wynn-las-vegas-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wynn-world-2026-super-gold",
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-clubwpt-gold-super-gold-million-season-2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wynn-world-2026-schedule",
+      "url": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/09/WPT-World-Championship-Festival-Schedule-Season-24.pdf",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wynn-world-2026-hotel",
+      "url": "https://book.passkey.com/go/WPT2026",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "uk-gambling-tax",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim22017",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "riverchasers-home",
+      "url": "https://www.riverchasers.com/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "riverchasers-bpo",
+      "url": "https://barpokeropen.com/leagues/riverchasers",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "riverchasers-season40",
+      "url": "https://www.riverchasers.com/news/season39championship-ytwhx",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "borgata-poker",
+      "url": "https://borgata.mgmresorts.com/en/casino/poker.html",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "borgata-big-big-2026-news",
+      "url": "https://poker.betmgm.com/en/blog/press/big-big-series-featuring-6-million-guaranteed-at-borgata-hotel-casino-spa/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "borgata-big-big-2026-schedule",
+      "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/blt097db3224c693e87/borgata_BigBigBuyInEventSchedule2026.pdf",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "borgata-big-big-2026-structures",
+      "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/blt0d7f5a5291fa3ee7/borgata_big_big_series_combined_packet.pdf",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "borgata-registration-faq",
+      "url": "https://borgata.mgmresorts.com/en/casino/poker/frequently-asked-questions.html",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "venetian-deepstack-calendar",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "venetian-dse-iii-2026-schedule",
+      "url": "https://www.venetianlasvegas.com/content/dam/vlvweb/casino/poker/deepstack/2026/dse-sep-2026-schedule.pdf",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "venetian-showdown-oct-2026-schedule",
+      "url": "https://www.venetianlasvegas.com/content/dam/vlvweb/casino/poker/deepstack/2026/dss-sep-2026-schedule.pdf",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "sydney-main-2026-details",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-australia-championship-season-2026/details",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "fpn-terms",
+      "url": "https://freepokernetwork.com/terms-of-services",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "fpn-regions",
+      "url": "https://freepokernetwork.com/regions",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "fpn-about",
+      "url": "https://freepokernetwork.com/about-us",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "gukpt-2026-calendar",
+      "url": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "leeds-westgate",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/leeds-westgate",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "blackpool-grosvenor",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "blackpool-sandcastle-directions",
+      "url": "https://www.sandcastle-waterpark.co.uk/plan-your-visit/directions/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "blackpool-hampton",
+      "url": "https://www.hilton.com/en-gb/hotels/blkplhx-hampton-blackpool/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "manchester-airport-rail",
+      "url": "https://www.manchesterairport.co.uk/getting-to-and-from/by-train/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "london-victoria",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "london-heathrow-rail",
+      "url": "https://www.heathrow.com/transport-and-directions/by-rail-or-train",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "london-metropole",
+      "url": "https://www.hilton.com/en/hotels/lonmetw-hilton-london-metropole/",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wtp-live-intro",
+      "url": "https://www.worldtavernpoker.info/poker-info-page",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wtp-live-rules",
+      "url": "https://www.worldtavernpoker.info/world-tavern-poker-rules-guide",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wtp-live-complete-rules",
+      "url": "https://www.worldtavernpoker.info/complete-rule-guide",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    },
+    {
+      "id": "wtp-live-regions",
+      "url": "https://www.worldtavernpoker.info/regional-champs",
+      "checkedAt": "2026-09-23T05:27:46Z"
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "wynn-world-2026-announcement",
+      "preservedPreviousVerification": true
+    },
+    {
+      "id": "irish-marrakech-2026-info",
+      "preservedPreviousVerification": true
+    }
+  ]
+}

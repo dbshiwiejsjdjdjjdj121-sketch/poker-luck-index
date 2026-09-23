@@ -17,7 +17,7 @@
     "officialUrl": "https://www.wsop.com/schedule/",
     "featured": true,
     "description": "Circuit stops, Super Circuit and bracelet festivals, together in one view.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "wpt",
@@ -32,7 +32,7 @@
     "officialUrl": "https://www.worldpokertour.com/event/schedule/",
     "featured": true,
     "description": "Main Tour, Prime and special events. A festival can include more than one championship.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "ept",
@@ -60,7 +60,7 @@
     "officialUrl": "https://www.theasianpokertour.com/series",
     "featured": true,
     "description": "Asian Poker Tour festivals, with dates, selected buy-ins and official entry points.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "triton",
@@ -138,7 +138,7 @@
     "officialUrl": "https://irishpokeropen.com/",
     "featured": false,
     "description": "The Irish Poker Open and its international stops. Check the official site for the wider calendar.",
-    "checkedAt": "2026-09-16T05:14:30Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "bpc",
@@ -154,7 +154,7 @@
     "officialUrl": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
     "featured": false,
     "description": "Belgian Poker Challenge editions, including the MegaStack festival in Namur.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "cps",
@@ -170,7 +170,7 @@
     "officialUrl": "https://www.pokerstarslive.com/circuspokerseries/",
     "featured": false,
     "description": "Circus Poker Series festivals at Namur. Use the official calendar to confirm entry details; coverage here includes selected highlights.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "borgata",
@@ -187,7 +187,7 @@
     "officialUrl": "https://borgata.mgmresorts.com/en/casino/poker.html",
     "featured": false,
     "description": "Selected multi-day Borgata festivals in Atlantic City. Coverage excludes routine daily tournaments.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "venetian",
@@ -204,7 +204,7 @@
     "officialUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
     "featured": false,
     "description": "Selected Venetian DeepStack festivals in Las Vegas, with lower-buy-in highlights and official schedules. WPT co-branded editions remain under WPT.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "gukpt",
@@ -219,6 +219,6 @@
     "officialUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
     "featured": false,
     "description": "Grosvenor UK Poker Tour festivals, with selected entries and official schedules.",
-    "checkedAt": "2026-09-22T05:14:42Z"
+    "checkedAt": "2026-09-23T05:27:46Z"
   }
 ]
