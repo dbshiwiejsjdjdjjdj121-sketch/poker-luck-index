@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected officially dated starts through 22 October 2026, in Atlanta local time (America/New_York). This is a subset of the calendar, not an automatically repeated weekly schedule. The ambiguous 2 October listing is omitted pending confirmation.",
+      "text": "Selected officially dated starts through 23 October 2026, in Atlanta local time (America/New_York). This is a subset of the calendar, not an automatically repeated weekly schedule. The ambiguous 2 October listing is omitted pending confirmation.",
       "endDate": null,
       "slots": [
         {
@@ -742,6 +742,14 @@
           "time": "19:00",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-23-1900",
+          "label": "Neighbor's Pub",
+          "date": "2026-10-23",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -788,8 +796,8 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
+    "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
@@ -1085,7 +1093,7 @@
       "riverchasers-bpo",
       "riverchasers-season40"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   },
@@ -1181,7 +1189,7 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   },
@@ -1275,7 +1283,7 @@
       "wtp-live-complete-rules",
       "wtp-live-regions"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   }

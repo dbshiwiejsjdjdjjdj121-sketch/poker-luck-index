@@ -2040,5 +2040,103 @@
       ]
     },
     "updatedAt": "2026-09-23T05:27:46Z"
+  },
+  {
+    "id": "argentina/rosario",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "countrySlug": "argentina",
+    "city": "Rosario",
+    "slug": "rosario",
+    "region": "South America",
+    "indexable": true,
+    "intro": "City Center Rosario combines the casino with on-site lodging and dining. Plan the journey to the complex separately from a stay in central Rosario.",
+    "airport": {
+      "title": "Rosario airport arrival",
+      "detail": "The organizer places Rosario–Islas Malvinas Airport about 20 km from the complex and describes road transfers. Confirm transfer availability directly before booking.",
+      "url": "https://citycenterpoker.com.ar/torneo/wsopc",
+      "sourceId": "rosario-2026-host"
+    },
+    "transport": [
+      {
+        "title": "Choose the arrival airport carefully",
+        "detail": "The organizer also lists Buenos Aires airport connections, which require a longer onward trip to Rosario. Use its directions to compare the actual route; no fixed fare or guaranteed journey time is quoted here.",
+        "url": "https://citycenterpoker.com.ar/torneo/wsopc",
+        "sourceId": "rosario-2026-host"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Pullman Rosario — on-site option",
+        "detail": "Pullman is the organizer’s official accommodation at the casino complex. Use the venue’s hotel link for dates and availability; no tournament rate is assumed.",
+        "url": "https://citycenterpoker.com.ar/torneo/wsopc",
+        "sourceId": "rosario-2026-host"
+      },
+      {
+        "title": "Mercure Rosario — alternative",
+        "detail": "The organizer lists Mercure as another option. Verify the location, transfer plan and current terms before choosing an off-site stay.",
+        "url": "https://citycenterpoker.com.ar/torneo/wsopc",
+        "sourceId": "rosario-2026-host"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Dining at City Center",
+        "detail": "The complex has several dining spaces as well as its hotel restaurant. Check current opening hours against your playing day.",
+        "url": "https://www.citycenter-rosario.com.ar/es",
+        "sourceId": "rosario-complex"
+      }
+    ],
+    "tax": {
+      "text": "Destination-specific prize withholding has not yet been verified. Check the organizer’s payout requirements and the rules that apply to your tax residence before relying on a net prize amount.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-24T05:12:01Z"
+  },
+  {
+    "id": "ireland/dublin",
+    "country": "Ireland",
+    "countryCode": "IE",
+    "countrySlug": "ireland",
+    "city": "Dublin",
+    "slug": "dublin",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "For an Irish Open trip, focus on the RDS in Ballsbridge rather than assuming the venue is in central Dublin. Compare nearby lodging with the last leg from the airport or railway station.",
+    "airport": {
+      "title": "Dublin Airport to Ballsbridge",
+      "detail": "Aircoach 702 links Dublin Airport with Ballsbridge and has stops by the RDS and Clayton Hotel. Consult the operator’s current timetable for your arrival and return dates.",
+      "url": "https://www.aircoach.ie/timetables/702",
+      "sourceId": "dublin-aircoach-702"
+    },
+    "transport": [
+      {
+        "title": "DART access to the RDS",
+        "detail": "The RDS identifies Lansdowne Road and Sandymount as nearby DART stations. Check the venue entrance and evening return service for the day you play.",
+        "url": "https://www.rds.ie/getting-here/from-train-stations",
+        "sourceId": "dublin-rds-rail"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Clayton Hotel Ballsbridge",
+        "detail": "The hotel is at Merrion Road and Simmonscourt Road, next to the RDS Arena. It is a location-based option, with rates and availability checked directly at the hotel.",
+        "url": "https://www.claytonhotels.com/ballsbridge/location/",
+        "sourceId": "dublin-clayton-ballsbridge"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Food around Ballsbridge",
+        "detail": "The organizer describes restaurants and bars within walking distance of the RDS. Check individual opening hours; no 2027 festival meal package is confirmed here.",
+        "url": "https://irishpokeropen.com/location/",
+        "sourceId": "irish-dublin-location"
+      }
+    ],
+    "tax": {
+      "text": "Destination-specific prize withholding has not yet been verified. Check the organizer’s payout requirements and the rules that apply to your tax residence before relying on a net prize amount.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-09-24T05:12:01Z"
   }
 ]

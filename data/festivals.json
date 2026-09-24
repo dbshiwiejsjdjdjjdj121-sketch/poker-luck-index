@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1970,7 +1970,7 @@
       "sydney-main-2026",
       "sydney-main-2026-details"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": "WPT’s championship Details page lists a 12:00 start, 40-minute Day 1 levels and one re-entry per flight. Its Schedule tab lists 12:30, 60-minute levels and unlimited entries for the same AUD 5,000 championship. Previously confirmed values are retained pending clarification. Confirm the start, structure and registration deadline with The Star before attending.",
     "changes": [
@@ -2064,17 +2064,17 @@
     "name": "WPT Prime Lodge Championship 2026",
     "tour": "WPT Prime",
     "destinationId": "united-states/round-rock",
-    "startDate": "2026-10-08",
+    "startDate": "2026-09-24",
     "endDate": "2026-10-12",
     "timezone": "America/Chicago",
-    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "dateNote": "Published festival schedule: September 24–October 12. The WPT Prime Championship is October 8–12.",
     "venue": {
       "name": "Lodge Card Club Austin",
       "address": null,
       "url": "https://thelodgepokerclub.com/"
     },
     "status": "scheduled",
-    "description": "WPT Prime comes to Lodge Card Club Austin in Round Rock. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "description": "WPT’s Lodge festival starts September 24, ahead of the USD 1,100 Prime Championship on October 8–12. Choose a main-event flight or compare the surrounding side events and satellites. Events labelled Texas Freeroll can have a listed charge; check the exact format and club conditions.",
     "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
     "registrationUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
     "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
@@ -2082,8 +2082,8 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
+    "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
       {
@@ -2093,6 +2093,10 @@
       {
         "date": "2026-09-09T05:17:08.345Z",
         "text": "Added the organizer’s published October 8 championship start time, 12:15 local time."
+      },
+      {
+        "date": "2026-09-24T05:12:01Z",
+        "text": "Expanded the overview to the published surrounding festival dates and added selected entry information."
       }
     ],
     "tournaments": [
@@ -2123,9 +2127,30 @@
         "sessions": [
           {
             "id": "championship-start",
-            "label": "Published start",
+            "label": "Flight A",
             "date": "2026-10-08",
             "time": "12:15",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1b",
+            "label": "Flight B",
+            "date": "2026-10-09",
+            "time": "12:15",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1c",
+            "label": "Flight C",
+            "date": "2026-10-10",
+            "time": "11:15",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1d",
+            "label": "Flight D Turbo",
+            "date": "2026-10-10",
+            "time": "18:15",
             "kind": "entry"
           }
         ],
@@ -2141,17 +2166,17 @@
     "name": "WPT Prime Cyprus Championship 2026",
     "tour": "WPT Prime",
     "destinationId": "cyprus/kyrenia",
-    "startDate": "2026-10-15",
+    "startDate": "2026-10-07",
     "endDate": "2026-10-19",
     "timezone": "Asia/Famagusta",
-    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "dateNote": "Published festival schedule: October 7–19. The WPT Prime Championship remains October 15–19.",
     "venue": {
       "name": "Chamada Prestige Hotel & Spa",
       "address": null,
       "url": "https://www.chamadaprestige.com/"
     },
     "status": "scheduled",
-    "description": "WPT Prime comes to Chamada Prestige Hotel & Spa in Kyrenia / Çatalköy. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "description": "Plan a WPT Prime trip to Chamada Prestige around the October 7–19 festival. The USD 1,100 Championship starts October 15; earlier side events include the USD 660 Welcome Event. This overview keeps the main buy-in separate from satellite costs.",
     "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
     "registrationUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
     "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
@@ -2159,9 +2184,9 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-13T06:27:30Z",
-    "reviewNote": null,
+    "checkedAt": "2026-09-24T05:12:01Z",
+    "updatedAt": "2026-09-24T05:12:01Z",
+    "reviewNote": "The organizer lists different fee splits for regular and speed Championship flights although both total USD 1,100. The fee field remains unconfirmed; check your flight’s official breakdown.",
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
@@ -2170,6 +2195,10 @@
       {
         "date": "2026-09-13T06:27:30Z",
         "text": "Confirmed the published championship start at 12:00 venue local time from WPT’s event page."
+      },
+      {
+        "date": "2026-09-24T05:12:01Z",
+        "text": "Expanded the overview to the published surrounding festival dates and added selected entry information."
       }
     ],
     "tournaments": [
@@ -2189,17 +2218,82 @@
           "amount": 1000000,
           "currency": "USD"
         },
-        "startingStack": null,
-        "levels": null,
+        "startingStack": "40,000",
+        "levels": "40 minutes for regular starting flights; 20 for speed flights; 60 from Day 2.",
         "reentry": null,
-        "lateRegistration": null,
+        "lateRegistration": "Starting flights: 9 levels. Confirm the exact closing time for your flight.",
         "endDate": "2026-10-19",
         "sessions": [
           {
             "id": "championship-start",
-            "label": "Published start",
+            "label": "Day 1A",
             "date": "2026-10-15",
             "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1b",
+            "label": "Day 1B Speed",
+            "date": "2026-10-15",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1c",
+            "label": "Day 1C",
+            "date": "2026-10-16",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1d",
+            "label": "Day 1D",
+            "date": "2026-10-17",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1e",
+            "label": "Day 1E Speed",
+            "date": "2026-10-17",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "cyprus-schedule"
+        ]
+      },
+      {
+        "id": "welcome-event",
+        "slug": "welcome-event",
+        "number": "welcome-event",
+        "name": "Welcome Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 660,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 60,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 25000,
+          "currency": "USD"
+        },
+        "startingStack": "20,000",
+        "levels": "20 minutes",
+        "reentry": null,
+        "lateRegistration": "8 levels",
+        "endDate": "2026-10-07",
+        "sessions": [
+          {
+            "id": "welcome-start",
+            "label": "Published start",
+            "date": "2026-10-07",
+            "time": "16:00",
             "kind": "entry"
           }
         ],
@@ -2215,17 +2309,17 @@
     "name": "WPT Bay 101 Shooting Star Championship 2026",
     "tour": "WPT",
     "destinationId": "united-states/san-jose",
-    "startDate": "2026-10-23",
-    "endDate": "2026-10-27",
+    "startDate": "2026-10-16",
+    "endDate": "2026-11-01",
     "timezone": "America/Los_Angeles",
-    "dateNote": "Dates shown are for the published championship. Other festival events may fall outside this window.",
+    "dateNote": "Published festival schedule: October 16–November 1. The Shooting Star Championship remains October 23–27.",
     "venue": {
       "name": "Bay 101 Casino",
       "address": null,
       "url": "https://www.bay101.com/"
     },
     "status": "scheduled",
-    "description": "WPT comes to Bay 101 Casino in San Jose. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "description": "Bay 101’s Shooting Star schedule runs October 16–November 1 in San Jose. The USD 5,300 Championship takes place October 23–27; the USD 600 Opener provides an earlier entry option. Side events continue after the championship ends.",
     "registration": "Use the official WPT page for current entry requirements and the venue’s registration process. WPT account requirements are separate from an ALL IN account.",
     "registrationUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
     "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
@@ -2233,8 +2327,8 @@
     "sourceIds": [
       "san-jose-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
-    "updatedAt": "2026-09-13T06:27:30Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
+    "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
       {
@@ -2244,6 +2338,10 @@
       {
         "date": "2026-09-13T06:27:30Z",
         "text": "Confirmed the published championship start at 10:00 venue local time from WPT’s event page."
+      },
+      {
+        "date": "2026-09-24T05:12:01Z",
+        "text": "Expanded the overview to the published surrounding festival dates and added selected entry information."
       }
     ],
     "tournaments": [
@@ -2263,17 +2361,62 @@
           "currency": "USD"
         },
         "guarantee": null,
-        "startingStack": null,
-        "levels": null,
+        "startingStack": "50,000",
+        "levels": "60 minutes through Day 3; 90 minutes on Day 4.",
         "reentry": "One optional re-entry on each Day 1",
         "lateRegistration": "Entry is also permitted before the Day 2 restart.",
         "endDate": "2026-10-27",
         "sessions": [
           {
             "id": "championship-start",
-            "label": "Published start",
+            "label": "Day 1A",
             "date": "2026-10-23",
             "time": "10:00",
+            "kind": "entry"
+          },
+          {
+            "id": "championship-1b",
+            "label": "Day 1B",
+            "date": "2026-10-24",
+            "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "san-jose-schedule"
+        ]
+      },
+      {
+        "id": "shooting-star-opener",
+        "slug": "shooting-star-opener",
+        "number": "shooting-star-opener",
+        "name": "Shooting Star Opener",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 600,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": "30 minutes",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-10-18",
+        "sessions": [
+          {
+            "id": "opener-1a",
+            "label": "Day 1A",
+            "date": "2026-10-16",
+            "time": "09:15",
+            "kind": "entry"
+          },
+          {
+            "id": "opener-1b",
+            "label": "Day 1B",
+            "date": "2026-10-17",
+            "time": "09:15",
             "kind": "entry"
           }
         ],
@@ -2850,7 +2993,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -4029,7 +4172,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4158,7 +4301,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5146,7 +5289,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5644,7 +5787,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6247,7 +6390,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -7201,7 +7344,7 @@
       "wynn-world-2026-schedule",
       "wynn-world-2026-hotel"
     ],
-    "checkedAt": "2026-09-16T05:14:30Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -7558,7 +7701,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7700,7 +7843,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-24T05:12:01Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -8199,6 +8342,280 @@
         "sessions": [],
         "sourceIds": [
           "gukpt-2026-calendar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rosario-2026",
+    "slug": "wsop-circuit-rosario-2026",
+    "name": "WSOP Circuit City Center Rosario 2026",
+    "tour": "WSOP Circuit",
+    "destinationId": "argentina/rosario",
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-12",
+    "timezone": "America/Argentina/Cordoba",
+    "venue": {
+      "name": "City Center Rosario Casino",
+      "address": null,
+      "url": "https://www.citycenter-rosario.com.ar/es"
+    },
+    "description": "The WSOP Circuit visits Rosario on November 4–12. Compare the USD 1,700 Main Event with the USD 500 Mini Main and selected satellites, then follow the official schedule for your preferred flight. The series continues after the Main Event final.",
+    "status": "scheduled",
+    "dateNote": "Festival: November 4–12; Main Event: November 6–11. Times are local to Rosario.",
+    "registration": "The host links to WSOP+ for tournament registration. Confirm identification, payment and re-entry requirements with the organizer.",
+    "registrationUrl": "https://citycenterpoker.com.ar/torneo/wsopc",
+    "scheduleUrl": "https://citycenterpoker.com.ar/torneo/wsopc",
+    "scheduleCoverage": "Selected highlights only. Use the official links below for the complete schedule and current entry rules.",
+    "sourceIds": [
+      "rosario-2026-wsop",
+      "rosario-2026-host"
+    ],
+    "checkedAt": "2026-09-24T05:12:01Z",
+    "updatedAt": "2026-09-24T05:12:01Z",
+    "reviewNote": "The WSOP and venue calendars differ on some unlisted side-event numbering and dates. Selected Main Event and Mini Main starting flights agree; use the host for continuation days and confirm any other event before travel.",
+    "changes": [
+      {
+        "date": "2026-09-24T05:12:01Z",
+        "text": "Overview added with confirmed dates, selected published entry information and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "main-event",
+        "name": "Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "50,000",
+        "levels": "40 minutes on regular entry flights; 20 on turbo flights; 60 on continuation days.",
+        "reentry": null,
+        "lateRegistration": "Entry flights: level 12; confirm the flight-specific closing time with the host.",
+        "endDate": "2026-11-11",
+        "sessions": [
+          {
+            "id": "main-1a",
+            "label": "Day 1A",
+            "date": "2026-11-06",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-1b",
+            "label": "Day 1B",
+            "date": "2026-11-07",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "main-1c",
+            "label": "Day 1C Turbo",
+            "date": "2026-11-07",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-1d",
+            "label": "Day 1D",
+            "date": "2026-11-08",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "main-1e",
+            "label": "Day 1E Turbo",
+            "date": "2026-11-08",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-final",
+            "label": "Final",
+            "date": "2026-11-11",
+            "time": "12:30",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "rosario-2026-wsop",
+          "rosario-2026-host"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "number": "mini-main",
+        "name": "Mini Main",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 500,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-06",
+        "sessions": [
+          {
+            "id": "mini-1a",
+            "label": "Day 1A",
+            "date": "2026-11-04",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-1b",
+            "label": "Day 1B Turbo",
+            "date": "2026-11-04",
+            "time": "19:00",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-1c",
+            "label": "Day 1C",
+            "date": "2026-11-05",
+            "time": "12:30",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-1d",
+            "label": "Day 1D Turbo",
+            "date": "2026-11-05",
+            "time": "19:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "rosario-2026-wsop",
+          "rosario-2026-host"
+        ]
+      },
+      {
+        "id": "main-satellite",
+        "slug": "main-satellite",
+        "number": "main-satellite",
+        "name": "Main Event Landmark Satellite — selected start",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 220,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "sat-nov4",
+            "label": "Published start",
+            "date": "2026-11-04",
+            "time": "21:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "rosario-2026-host"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "irish-open-dublin-2027",
+    "slug": "irish-open-dublin-2027",
+    "name": "Irish Open Dublin 2027",
+    "tour": "Irish Poker Open",
+    "destinationId": "ireland/dublin",
+    "startDate": "2027-03-18",
+    "endDate": "2027-03-29",
+    "timezone": "Europe/Dublin",
+    "venue": {
+      "name": "Royal Dublin Society (RDS)",
+      "address": "Merrion Road, Ballsbridge, Dublin 4, D04 AK83, Ireland",
+      "url": "https://www.rds.ie/getting-here/from-train-stations"
+    },
+    "description": "The Irish Open returns to the RDS on March 18–29, 2027. The organizer confirms a EUR 1,150 Main Event with EUR 2.5 million guaranteed, plus a Mini Irish Open and Luxon Pay Mystery Bounty each with EUR 1 million guaranteed. Individual start days remain unconfirmed here.",
+    "status": "scheduled",
+    "dateNote": null,
+    "registration": "Online qualifiers have been announced. The registration guide explains payment options; confirm 2027 event availability before paying. The organizer requires participants to be over 18 with valid picture ID.",
+    "registrationUrl": "https://irishpokeropen.com/registration/",
+    "scheduleUrl": "https://irishpokeropen.com/blog/2026/09/04/ipoker-satellites-about-to-kick-off-for-2027-irish-open-monday-7th-september/",
+    "scheduleCoverage": "The 2027 announcement confirms festival dates and headline information. This is not a complete 2027 timetable; no dates or fees are copied from 2026.",
+    "sourceIds": [
+      "irish-dublin-2027-announcement",
+      "irish-registration"
+    ],
+    "checkedAt": "2026-09-24T05:12:01Z",
+    "updatedAt": "2026-09-24T05:12:01Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-24T05:12:01Z",
+        "text": "Overview added with confirmed dates, selected published entry information and travel links."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": "main-event",
+        "name": "Irish Open Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1150,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2500000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "irish-dublin-2027-announcement"
+        ]
+      },
+      {
+        "id": "mini-irish-open",
+        "slug": "mini-irish-open",
+        "number": "mini-irish-open",
+        "name": "Mini Irish Open",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": null,
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "irish-dublin-2027-announcement"
         ]
       }
     ]
