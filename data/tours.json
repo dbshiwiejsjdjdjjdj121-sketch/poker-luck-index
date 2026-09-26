@@ -17,7 +17,7 @@
     "officialUrl": "https://www.wsop.com/schedule/",
     "featured": true,
     "description": "Circuit stops, Super Circuit and bracelet festivals, together in one view.",
-    "checkedAt": "2026-09-23T05:27:46Z"
+    "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "wpt",
@@ -32,7 +32,7 @@
     "officialUrl": "https://www.worldpokertour.com/event/schedule/",
     "featured": true,
     "description": "Main Tour, Prime and special events. A festival can include more than one championship.",
-    "checkedAt": "2026-09-23T05:27:46Z"
+    "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "ept",
@@ -60,7 +60,7 @@
     "officialUrl": "https://www.theasianpokertour.com/series",
     "featured": true,
     "description": "Asian Poker Tour festivals, with dates, selected buy-ins and official entry points.",
-    "checkedAt": "2026-09-23T05:27:46Z"
+    "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "triton",
@@ -78,7 +78,7 @@
     "officialUrl": "https://tritonpokerseries.com/en-US/events",
     "featured": true,
     "description": "Follow Triton’s official calendar. Only independently verified festival overviews appear in this guide.",
-    "checkedAt": "2026-09-07T17:29:00Z"
+    "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "appt",
@@ -138,7 +138,7 @@
     "officialUrl": "https://irishpokeropen.com/",
     "featured": false,
     "description": "The Irish Poker Open and its international stops. Check the official site for the wider calendar.",
-    "checkedAt": "2026-09-23T05:27:46Z"
+    "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "bpc",
@@ -219,6 +219,39 @@
     "officialUrl": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
     "featured": false,
     "description": "Grosvenor UK Poker Tour festivals, with selected entries and official schedules.",
-    "checkedAt": "2026-09-23T05:27:46Z"
+    "checkedAt": "2026-09-26T05:15:30Z"
+  },
+  {
+    "id": "apat",
+    "label": "APAT",
+    "fullName": "APAT",
+    "series": [
+      "APAT"
+    ],
+    "keywords": [
+      "BCOAP",
+      "British Championship of Amateur Poker"
+    ],
+    "officialUrl": "https://www.apat.com/apat-2026-live-tour/",
+    "featured": false,
+    "description": "APAT amateur-poker festivals and championships; follow its official live calendar.",
+    "checkedAt": "2026-09-26T05:15:30Z"
+  },
+  {
+    "id": "bicycle",
+    "label": "Bicycle Casino",
+    "fullName": "Bicycle Casino",
+    "series": [
+      "Bicycle Casino"
+    ],
+    "keywords": [
+      "Big Poker Oktober",
+      "Parkwest Bicycle",
+      "Bell Gardens"
+    ],
+    "officialUrl": "https://www.thebike.com/play/major_tournaments.php",
+    "featured": false,
+    "description": "Major festivals hosted at Parkwest Bicycle Casino in Bell Gardens, California.",
+    "checkedAt": "2026-09-26T05:15:30Z"
   }
 ]

@@ -615,7 +615,7 @@
     "sourceIds": [
       "council-bluffs-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": "The organizer’s header starts on 17 September, but its event table includes an opening flight on 16 September. Confirm the opening date directly before booking.",
     "changes": [
@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1970,10 +1970,14 @@
       "sydney-main-2026",
       "sydney-main-2026-details"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
-    "updatedAt": "2026-09-21T05:14:39Z",
-    "reviewNote": "WPT’s championship Details page lists a 12:00 start, 40-minute Day 1 levels and one re-entry per flight. Its Schedule tab lists 12:30, 60-minute levels and unlimited entries for the same AUD 5,000 championship. Previously confirmed values are retained pending clarification. Confirm the start, structure and registration deadline with The Star before attending.",
+    "checkedAt": "2026-09-26T05:18:25Z",
+    "updatedAt": "2026-09-26T05:18:25Z",
+    "reviewNote": "WPT’s Details page gives a 12:00 championship start, while its Schedule lists 12:30 for the September 24–26 flights. The earlier confirmed opening time is retained; later flight times are left unconfirmed. Check directly with The Star before attending. Current official pages agree on unlimited re-entry; the schedule lists 60-minute Day 1 levels.",
     "changes": [
+      {
+        "date": "2026-09-26T05:18:25Z",
+        "text": "Updated the official AUD 400 fee component, re-entry rule and published Day 1 level length; retained the conflicting start-time warning."
+      },
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
@@ -2000,13 +2004,13 @@
           "currency": "AUD"
         },
         "fee": {
-          "amount": 500,
+          "amount": 400,
           "currency": "AUD"
         },
         "guarantee": null,
         "startingStack": null,
-        "levels": "Day 1: 40 minutes; later days: 60 minutes.",
-        "reentry": "One re-entry per flight",
+        "levels": "The current schedule lists 60-minute Day 1 levels.",
+        "reentry": "Unlimited re-entry until the start of level 10 on Day 1A, 1B and 1C.",
         "lateRegistration": "Registration closes at the start of Level 10.",
         "endDate": "2026-09-30",
         "sessions": [
@@ -2016,10 +2020,25 @@
             "date": "2026-09-24",
             "time": "12:00",
             "kind": "entry"
+          },
+          {
+            "id": "wpt-australia-championship-1b",
+            "label": "Day 1B — confirm start time",
+            "date": "2026-09-25",
+            "time": null,
+            "kind": "entry"
+          },
+          {
+            "id": "wpt-australia-championship-1c",
+            "label": "Day 1C — confirm start time",
+            "date": "2026-09-26",
+            "time": null,
+            "kind": "entry"
           }
         ],
         "sourceIds": [
-          "sydney-main-2026"
+          "sydney-main-2026",
+          "sydney-main-2026-details"
         ]
       },
       {
@@ -2082,7 +2101,7 @@
     "sourceIds": [
       "lodge-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
@@ -2184,7 +2203,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": "The organizer lists different fee splits for regular and speed Championship flights although both total USD 1,100. The fee field remains unconfirmed; check your flight’s official breakdown.",
     "changes": [
@@ -2327,7 +2346,7 @@
     "sourceIds": [
       "san-jose-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
@@ -2454,7 +2473,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-18T05:18:56Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -2733,7 +2752,7 @@
     "sourceIds": [
       "prague-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -2862,7 +2881,7 @@
     "sourceIds": [
       "aix-schedule"
     ],
-    "checkedAt": "2026-09-18T05:16:36Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -2993,7 +3012,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -4172,7 +4191,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4301,7 +4320,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5289,7 +5308,7 @@
       "namur-megastack-2026-schedule",
       "namur-megastack-2026-host"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-11T06:57:18.694Z",
     "reviewNote": null,
     "changes": [
@@ -5787,7 +5806,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6390,7 +6409,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -7466,34 +7485,187 @@
     "startDate": "2026-11-04",
     "endDate": "2026-11-16",
     "timezone": "Europe/London",
-    "dateNote": null,
+    "dateNote": "WSOP and the host list November 4–16; the published detailed grid begins November 6. Confirm arrangements for November 4–5 before travelling.",
     "venue": {
       "name": "Dusk Till Dawn",
       "address": "Redfield Way, Lenton, Nottingham NG7 2UW, United Kingdom",
       "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026"
     },
     "status": "scheduled",
-    "description": "WSOP Circuit returns to Dusk Till Dawn in Nottingham from 4–16 November 2026. Festival dates and the venue are confirmed; the individual schedule, main-event buy-in and entry flights are still awaiting publication.",
-    "registration": "The host requires WSOP+ LIVE for participants and describes cash entry at the venue or Luxon Pay when a tournament becomes available. Follow its official entry instructions below; this listing does not confirm that registration is open.",
+    "description": "WSOP Circuit Nottingham runs November 4–16 at Dusk Till Dawn. The published highlights are a £1,500 Main Event with a £1 million guarantee and a £300 Mini Main with a £200,000 guarantee that includes 15 Main Event seats. The latter is not an entirely cash prize pool.",
+    "registration": "WSOP+ LIVE is required. Buy in with cash at the venue or through Luxon Pay when the event appears in its merchant area. The host sets advance online entry cut-off at one hour before the start; capacity still applies.",
     "registrationUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
     "scheduleUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
-    "scheduleCoverage": "Both the WSOP event page and the host’s schedule page say the detailed schedule is not yet published. Main-event dates, buy-ins, guarantees, structures and registration deadlines remain unconfirmed here.",
+    "scheduleCoverage": "The detailed host schedule is now available. Selected Main, Mini Main and satellite starts are shown below; additional turbo flights and side events remain on the official schedule.",
     "sourceIds": [
       "nottingham-2026-wsop",
       "nottingham-2026-host",
       "nottingham-2026-schedule",
       "nottingham-2026-entry"
     ],
-    "checkedAt": "2026-09-17T06:14:18Z",
-    "updatedAt": "2026-09-17T06:14:18Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
+    "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": "The host’s 2026 event page includes a terms clause referring to recurring events from September 2025. Confirm the current edition’s deductions and conditions with the organizer; no deduction or fee has been inferred for a tournament.",
     "changes": [
+      {
+        "date": "2026-09-26T05:15:30Z",
+        "text": "Published main and Mini Main buy-ins, selected flights, structures and satellite entry; linked the newly available host schedule."
+      },
       {
         "date": "2026-09-17T06:14:18Z",
         "text": "Added the confirmed November 4–16 Nottingham Circuit stop, official entry instructions and travel guidance; detailed event schedule pending."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "name": "WSOP-C Main Event",
+        "number": "8",
+        "game": "No-Limit Hold'em",
+        "category": "main",
+        "buyIn": {
+          "amount": 1500,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 150,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "GBP"
+        },
+        "startingStack": "50,000",
+        "levels": "40 minutes for these Day 1 flights; 50 on Day 2; 60 on the final day.",
+        "reentry": "Re-entry during late registration.",
+        "lateRegistration": "Start of level 13 for these Day 1 flights.",
+        "endDate": "2026-11-16",
+        "sessions": [
+          {
+            "id": "main-1a",
+            "label": "Day 1A",
+            "date": "2026-11-12",
+            "time": "13:00",
+            "kind": "entry",
+            "registrationCloses": "22:20"
+          },
+          {
+            "id": "main-1b",
+            "label": "Day 1B",
+            "date": "2026-11-13",
+            "time": "13:00",
+            "kind": "entry",
+            "registrationCloses": "22:20"
+          },
+          {
+            "id": "main-1c",
+            "label": "Day 1C",
+            "date": "2026-11-14",
+            "time": "12:00",
+            "kind": "entry",
+            "registrationCloses": "21:20"
+          },
+          {
+            "id": "main-2",
+            "label": "Day 2",
+            "date": "2026-11-15",
+            "time": "15:00",
+            "kind": "continuation"
+          },
+          {
+            "id": "main-final",
+            "label": "Final day",
+            "date": "2026-11-16",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "nottingham-2026-schedule"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "name": "Mini Main — guarantee includes 15 Main Event seats",
+        "number": "1",
+        "game": "No-Limit Hold'em",
+        "category": "side",
+        "buyIn": {
+          "amount": 300,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 40,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 200000,
+          "currency": "GBP"
+        },
+        "startingStack": "30,000",
+        "levels": "30 minutes on Day 1.",
+        "reentry": "Re-entry during late registration.",
+        "lateRegistration": "Start of level 11.",
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "mini-1a",
+            "label": "Selected Day 1A",
+            "date": "2026-11-06",
+            "time": "12:00",
+            "kind": "entry",
+            "registrationCloses": "17:40"
+          },
+          {
+            "id": "mini-2",
+            "label": "Day 2",
+            "date": "2026-11-08",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "nottingham-2026-schedule"
+        ]
+      },
+      {
+        "id": "ring-satellite",
+        "slug": "ring-satellite",
+        "name": "Satellite — 10 £300 ring-event seats",
+        "number": "Satellite",
+        "game": "No-Limit Hold'em",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 5,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "20,000",
+        "levels": "20/15 minutes.",
+        "reentry": "Two reloads during late registration.",
+        "lateRegistration": "Start of level 9.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "sat-nov6",
+            "label": "Selected start",
+            "date": "2026-11-06",
+            "time": "20:30",
+            "kind": "entry",
+            "registrationCloses": "23:30"
+          }
+        ],
+        "sourceIds": [
+          "nottingham-2026-schedule"
+        ]
+      }
+    ]
   },
   {
     "id": "borgata-big-big-2026",
@@ -7701,7 +7873,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7843,7 +8015,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -7976,7 +8148,7 @@
       "gukpt-2026-calendar",
       "leeds-westgate"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": "The official table labels Main Event Day 1C as turbo but also gives 60-minute levels. That flight’s structure is not reproduced here.",
     "changes": [
@@ -8616,6 +8788,263 @@
         "sessions": [],
         "sourceIds": [
           "irish-dublin-2027-announcement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "apat-bcoap-london-2026",
+    "slug": "apat-bcoap-london-2026",
+    "name": "APAT British Championship of Amateur Poker London 2026",
+    "tour": "APAT",
+    "destinationId": "united-kingdom/london",
+    "startDate": "2026-10-19",
+    "endDate": "2026-10-25",
+    "timezone": "Europe/London",
+    "venue": {
+      "name": "Genting Casino Stratford",
+      "address": "Westfield Stratford City, The Loft, London E20 1ET, United Kingdom",
+      "url": "https://www.gentingcasinos.co.uk/casinos/genting-casino-stratford/"
+    },
+    "status": "scheduled",
+    "description": "The BCOAP brings a £140 main event and mixed-game championships to Genting Stratford. Satellites begin on October 19; championship events run October 22–25. Compare the main-event entry with the separate £25 satellite before planning your London trip.",
+    "registration": "Register in person at the venue, in advance or at the poker desk on the day. Genting membership and photo ID are required. Seats and alternate entry depend on capacity.",
+    "registrationUrl": "https://www.apat.com/bcoap-19-25-oct-2026-genting-stratford/",
+    "scheduleUrl": "https://www.apat.com/bcoap-19-25-oct-2026-genting-stratford/",
+    "scheduleCoverage": "Selected main-event flights and one satellite; use the official schedule for other formats and starts.",
+    "sourceIds": [
+      "apat-bcoap-2026-schedule",
+      "apat-2026-calendar"
+    ],
+    "checkedAt": "2026-09-26T05:15:30Z",
+    "updatedAt": "2026-09-26T05:15:30Z",
+    "reviewNote": "The October 22 flight has inconsistent Day 1 labels. Satellite ticket wording says UKCOAP; confirm ticket use with APAT.",
+    "dateNote": null,
+    "changes": [
+      {
+        "date": "2026-09-26T05:15:30Z",
+        "text": "Added the London BCOAP overview, main-event flights and official entry rules."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "amateur-championship",
+        "slug": "amateur-championship",
+        "name": "Amateur Poker Championship",
+        "number": "2",
+        "game": "No-Limit Hold'em",
+        "category": "main",
+        "buyIn": {
+          "amount": 140,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "100,000",
+        "levels": "25 minutes on Day 1; 50 on Day 2, reducing to 20 four-handed.",
+        "reentry": "One re-entry per flight; highest qualifying stack continues.",
+        "lateRegistration": "Through ten levels on Day 1.",
+        "endDate": "2026-10-25",
+        "sessions": [
+          {
+            "id": "oct22",
+            "label": "Opening flight (October 22)",
+            "date": "2026-10-22",
+            "time": "19:00",
+            "kind": "entry",
+            "registrationCloses": "23:50"
+          },
+          {
+            "id": "oct23",
+            "label": "Day 1B",
+            "date": "2026-10-23",
+            "time": "18:00",
+            "kind": "entry",
+            "registrationCloses": "22:50"
+          },
+          {
+            "id": "oct24",
+            "label": "Day 1C",
+            "date": "2026-10-24",
+            "time": "18:00",
+            "kind": "entry",
+            "registrationCloses": "22:50"
+          },
+          {
+            "id": "day2",
+            "label": "Day 2",
+            "date": "2026-10-25",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "apat-bcoap-2026-schedule"
+        ]
+      },
+      {
+        "id": "milestone-satellite",
+        "slug": "milestone-satellite",
+        "name": "Milestone satellite",
+        "number": "Satellite",
+        "game": "No-Limit Hold'em",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 5,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "20,000",
+        "levels": "20/15 minutes.",
+        "reentry": "Re-entry permitted.",
+        "lateRegistration": "Level 6.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "oct19",
+            "label": "Selected start",
+            "date": "2026-10-19",
+            "time": "13:00",
+            "kind": "entry",
+            "registrationCloses": "15:20"
+          }
+        ],
+        "sourceIds": [
+          "apat-bcoap-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "big-poker-oktober-bicycle-2026",
+    "slug": "big-poker-oktober-bicycle-2026",
+    "name": "Big Poker Oktober at Bicycle Casino 2026",
+    "tour": "Bicycle Casino",
+    "destinationId": "united-states/bell-gardens",
+    "startDate": "2026-10-02",
+    "endDate": "2026-11-08",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "Parkwest Bicycle Casino",
+      "address": "888 Bicycle Casino Drive, Bell Gardens, CA 90201, United States",
+      "url": "https://www.thebike.com/directions/"
+    },
+    "status": "scheduled",
+    "description": "Big Poker Oktober runs October 2–November 8 in Bell Gardens. Highlights include the $260 Kickoff and $400 Parkwest Classic VI entry flights. The Classic has a separate $1,600 direct Day 2 entry option. The wider schedule also includes mixed games, bounty events and Mini Mega Millions.",
+    "registration": "The selected event structures require a Parkwest Bicycle Casino Rewards card to register. Use the official schedule and linked structures for each event’s registration rules; this guide does not process entry.",
+    "registrationUrl": "https://www.thebike.com/play/major_tournament_bpo_2026.php",
+    "scheduleUrl": "https://www.thebike.com/play/major_tournament_bpo_2026.php",
+    "scheduleCoverage": "Two selected highlights, not the full buy-in range or schedule. No single festival Main Event is designated here.",
+    "sourceIds": [
+      "bicycle-bpo-2026-schedule",
+      "bicycle-calendar",
+      "bicycle-bpo-2026-kickoff",
+      "bicycle-bpo-2026-pwc"
+    ],
+    "checkedAt": "2026-09-26T05:15:30Z",
+    "updatedAt": "2026-09-26T05:15:30Z",
+    "reviewNote": null,
+    "dateNote": null,
+    "changes": [
+      {
+        "date": "2026-09-26T05:15:30Z",
+        "text": "Added official festival dates, selected entry costs and structures, and a Bell Gardens travel guide."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "kickoff",
+        "slug": "kickoff",
+        "name": "BPO Kickoff",
+        "number": "1",
+        "game": "Poker",
+        "category": "side",
+        "buyIn": {
+          "amount": 260,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 50,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 50000,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": "30 minutes for levels 1–9; 25 thereafter.",
+        "reentry": "Re-entry during first nine levels.",
+        "lateRegistration": "See official structure for registration-break placement.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "kickoff-start",
+            "label": "Start",
+            "date": "2026-10-02",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bicycle-bpo-2026-kickoff"
+        ]
+      },
+      {
+        "id": "parkwest-classic-vi",
+        "slug": "parkwest-classic-vi",
+        "name": "Parkwest Classic VI — entry flights",
+        "number": "10",
+        "game": "No-Limit Hold'em",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": {
+          "amount": 75,
+          "currency": "USD"
+        },
+        "guarantee": {
+          "amount": 500000,
+          "currency": "USD"
+        },
+        "startingStack": "40,000",
+        "levels": "30 minutes.",
+        "reentry": "Re-entry during first eight levels.",
+        "lateRegistration": "Day 2 direct entry is $1,600 including $200 fees, with re-entry for its first three levels.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "pwc-first",
+            "label": "Opening flight",
+            "date": "2026-10-11",
+            "time": "17:00",
+            "kind": "entry"
+          },
+          {
+            "id": "pwc-next",
+            "label": "Selected later flight",
+            "date": "2026-10-12",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "pwc-day2",
+            "label": "Day 2; direct entry has a different price",
+            "date": "2026-10-19",
+            "time": "11:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "bicycle-bpo-2026-pwc"
         ]
       }
     ]

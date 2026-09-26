@@ -1996,7 +1996,7 @@
     "slug": "london",
     "region": "Europe",
     "indexable": true,
-    "intro": "The Victoria poker venue is on Edgware Road. This guide focuses on that part of London, with Paddington and Edgware Road connections rather than assuming all London tournaments share one venue.",
+    "intro": "London festivals use different venues. The Victoria is on Edgware Road; Genting Stratford is inside Westfield Stratford City in east London. Match your hotel and final journey to the casino named on your event page.",
     "airport": {
       "title": "Heathrow to Paddington",
       "detail": "Heathrow lists the Heathrow Express and Elizabeth line for Paddington, plus the Piccadilly line for other London connections. Compare stops, fares and service times, then plan the last leg to Edgware Road.",
@@ -2009,6 +2009,12 @@
         "detail": "The casino is at 150–162 Edgware Road, W2 2DT. Its guide places the Circle, District and Hammersmith & City Edgware Road station about five minutes away on foot; the separate Bakerloo station is also nearby. On-site parking is listed.",
         "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria",
         "sourceId": "london-victoria"
+      },
+      {
+        "title": "Genting Stratford at Westfield",
+        "detail": "The casino is in The Loft at Westfield Stratford City, 312 Montfichet Road, E20 1ET. Use the venue directions for the final approach; this is a different location from The Victoria on Edgware Road.",
+        "url": "https://www.gentingcasinos.co.uk/casinos/genting-casino-stratford/",
+        "sourceId": "london-genting-stratford"
       }
     ],
     "hotels": [
@@ -2017,6 +2023,12 @@
         "detail": "An off-site hotel at 225 Edgware Road, less than a mile from Paddington station. Compare the room total and route to The Victoria. No event-specific accommodation discount is confirmed.",
         "url": "https://www.hilton.com/en/hotels/lonmetw-hilton-london-metropole/",
         "sourceId": "london-metropole"
+      },
+      {
+        "title": "Hyatt Regency London Stratford",
+        "detail": "A hotel inside Westfield Stratford City at 10A Chestnut Plaza, E20 1GL. Compare availability and the total stay cost directly with the hotel. No APAT room discount is confirmed.",
+        "url": "https://www.hyatt.com/hyatt-regency/en-US/lhrrs-hyatt-regency-london-stratford/",
+        "sourceId": "london-hyatt-stratford"
       }
     ],
     "dining": [
@@ -2031,6 +2043,12 @@
         "detail": "The hotel has four themed bars and restaurants. Check menus and serving times for a meal away from the tournament venue.",
         "url": "https://www.hilton.com/en/hotels/lonmetw-hilton-london-metropole/",
         "sourceId": "london-metropole"
+      },
+      {
+        "title": "Genting Stratford — Tanzibar and Terrace Bar",
+        "detail": "The casino lists Tanzibar for food and drinks and a separate Terrace Bar. Check service times before relying on a meal during a late session.",
+        "url": "https://www.gentingcasinos.co.uk/casinos/genting-casino-stratford/",
+        "sourceId": "london-genting-stratford"
       }
     ],
     "tax": {
@@ -2039,7 +2057,7 @@
         "uk-gambling-tax"
       ]
     },
-    "updatedAt": "2026-09-23T05:27:46Z"
+    "updatedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "argentina/rosario",
@@ -2138,5 +2156,53 @@
       "sourceIds": []
     },
     "updatedAt": "2026-09-24T05:12:01Z"
+  },
+  {
+    "id": "united-states/bell-gardens",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Bell Gardens",
+    "slug": "bell-gardens",
+    "region": "North America",
+    "indexable": true,
+    "intro": "Parkwest Bicycle Casino hosts major poker festivals in Bell Gardens, in the Los Angeles area. The property combines the tournament venue, hotel rooms and dining. Use its Bell Gardens address when comparing accommodation and travel routes.",
+    "airport": {
+      "title": "Los Angeles International Airport (LAX)",
+      "detail": "The casino publishes a driving route from LAX via I-405 south, I-105 east and I-710 north, exiting Florence East. Allow for traffic; a fixed transfer time is not promised here.",
+      "url": "https://www.thebike.com/directions/",
+      "sourceId": "bicycle-directions"
+    },
+    "transport": [
+      {
+        "title": "Casino access and parking",
+        "detail": "The venue is at 888 Bicycle Casino Drive, Bell Gardens, CA 90201. Its directions page lists free self-parking in the casino lot and separate valet terms. Check the current terms before arriving.",
+        "url": "https://www.thebike.com/directions/",
+        "sourceId": "bicycle-directions"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "On-site Bicycle hotel",
+        "detail": "The property lists king and double-queen rooms as well as suites. Compare room availability and total charges directly; no Big Poker Oktober accommodation discount is confirmed.",
+        "url": "https://www.thebike.com/stay/rooms_and_suites.php",
+        "sourceId": "bicycle-rooms"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Bike Cafe — 24-hour option",
+        "detail": "The official page lists 24-hour service near the valet entrance and an app for ordering ahead for pickup. Check the current menu and service before a tournament break.",
+        "url": "https://www.thebike.com/dine/bike_cafe.php",
+        "sourceId": "bicycle-cafe"
+      }
+    ],
+    "tax": {
+      "text": "IRS Publication 515 explains that US gambling-winnings withholding for nonresident players depends on tax residency and applicable treaty relief. Ask the payer about payout documents; withholding is separate from final tax liability. California and home-country obligations need a separate review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-26T05:15:30Z"
   }
 ]

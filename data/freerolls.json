@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -796,7 +796,7 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
@@ -1189,7 +1189,7 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   },
@@ -1283,8 +1283,164 @@
       "wtp-live-complete-rules",
       "wtp-live-regions"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-26T05:15:30Z",
     "updatedAt": "2026-09-23T05:27:46Z",
+    "reviewNote": null
+  },
+  {
+    "id": "world-free-poker-new-jersey",
+    "slug": "world-free-poker-new-jersey",
+    "title": "World Free Poker in New Jersey",
+    "brand": "World Free Poker",
+    "description": "Free live poker at New Jersey venues in Bayonne, Garfield and Elmwood Park. Ordinary games have no buy-in or drink minimum; monthly rewards require separate qualification, and spending receipts can affect points and awards.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "New Jersey, United States",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "NJ"
+      ],
+      "note": "Local in-person games only. Check the named venue and its latest notice before travelling."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Age 21 or older; bring valid ID for prizes.",
+        "Register online or with the dealer for ordinary games; unregistered arrivals may have to wait.",
+        "Finals require qualification. Receipts of $10 or more can earn points toward higher awards."
+      ],
+      "costNote": "No entry fee, cover charge or drink minimum for ordinary games. Venue spending is separate and can change points or finals awards."
+    },
+    "reward": {
+      "label": "Venue rewards and qualified finals",
+      "details": "The schedule lists gift-certificate competitions and a Winners betting-voucher final. These are not guaranteed cash payments to every participant."
+    },
+    "schedule": {
+      "text": "Recurring venue games; use the official calendar for availability. It says no BLVD games on September 26 and no Firehouse game on September 29. Monthly final dates marked TBA are not confirmed starts.",
+      "timezone": "America/New_York",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Can I join without paying?",
+        "text": "The FAQ permits free ordinary entry with no drink minimum. The scoring system separately uses qualifying results and spending receipts for some rewards."
+      },
+      {
+        "title": "Where should I check before leaving?",
+        "text": "Read the venue notices and registration page. Meadowlands play is marked suspended; do not treat its old voucher notices as current games."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official venue calendar and notices",
+        "url": "https://www.worldfreepoker.com/poker-schedule.html",
+        "kind": "schedule",
+        "sourceId": "wfp-nj-schedule"
+      },
+      {
+        "label": "Official entry FAQ",
+        "url": "https://www.worldfreepoker.com/poker-faq.html",
+        "kind": "explanation",
+        "sourceId": "wfp-nj-faq"
+      },
+      {
+        "label": "Official qualification and scoring rules",
+        "url": "https://www.worldfreepoker.com/poker-scores-online.html",
+        "kind": "rules",
+        "sourceId": "wfp-nj-scoring"
+      }
+    ],
+    "sourceIds": [
+      "wfp-nj-schedule",
+      "wfp-nj-faq",
+      "wfp-nj-scoring"
+    ],
+    "checkedAt": "2026-09-26T05:15:30Z",
+    "updatedAt": "2026-09-26T05:15:30Z",
+    "reviewNote": null
+  },
+  {
+    "id": "ggpoker-uk-freerolls",
+    "slug": "ggpoker-uk-freerolls",
+    "title": "GGPoker UK Daily and Weekly Freerolls",
+    "brand": "GGPoker UK",
+    "description": "A ticket-based UK freeroll programme. Official help describes a verified-new-account route to Daily Freeroll tickets, alongside deposit and real-money-play routes. Daily qualifiers award Weekly Freeroll tickets; a zero buy-in does not remove eligibility conditions.",
+    "mode": "online",
+    "status": "published",
+    "market": {
+      "label": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "usStates": [],
+      "note": "For eligible GGPoker UK accounts under the UK site’s age and location rules. This guide does not establish availability in the United States or other markets."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "required",
+      "password": "unknown",
+      "requirements": [
+        "Age 18 or older and an eligible verified UK account.",
+        "New-account tickets are limited to genuinely new GGPoker Network players; existing network accounts do not qualify.",
+        "UK players may need to opt in under My Promo. A valid ticket is required."
+      ],
+      "costNote": "A deposit is not part of the verified-new-account ticket route described in official help. Other qualification routes involve deposits or real-money play; they are not cost-free play."
+    },
+    "reward": {
+      "label": "Qualification tickets; weekly prize pool",
+      "details": "Daily paid-place finishers receive Weekly Freeroll tickets, not a cash award from that qualifier. The Weekly help page describes a $100,000 prize pool; confirm the current tournament and payout terms in the lobby."
+    },
+    "schedule": {
+      "text": "Help describes Daily qualifiers at 10:00 and 22:00 UTC and a Weekly final on Saturday at 16:00 UTC. These are recurring programme times, not verified dated lobby entries.",
+      "timezone": "Etc/UTC",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "How does the no-deposit route work?",
+        "text": "Official help describes three Daily tickets after a genuinely new account completes basic verification. Those tickets expire after seven days; Daily-won Weekly tickets expire after 30 days."
+      },
+      {
+        "title": "What should existing players check?",
+        "text": "Help also describes qualifying deposits, cash-game achievements and referral conditions. Check the official rules and your own My Promo eligibility before treating any route as available."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official Daily Freeroll explanation",
+        "url": "https://help.ggpoker.co.uk/article/Weekly-Freeroll---Daily-Freeroll-Questions-UK",
+        "kind": "explanation",
+        "sourceId": "gg-uk-daily-freeroll"
+      },
+      {
+        "label": "Official Weekly Freeroll rules",
+        "url": "https://help.ggpoker.co.uk/article/Weekly-Freeroll---Weekly-Freeroll-Questions-UK",
+        "kind": "rules",
+        "sourceId": "gg-uk-weekly-freeroll"
+      },
+      {
+        "label": "Official UK age and location rules",
+        "url": "https://ggpoker.co.uk/house-rules/",
+        "kind": "rules",
+        "sourceId": "gg-uk-house-rules"
+      }
+    ],
+    "sourceIds": [
+      "gg-uk-daily-freeroll",
+      "gg-uk-weekly-freeroll",
+      "gg-uk-house-rules"
+    ],
+    "checkedAt": "2026-09-26T05:15:30Z",
+    "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": null
   }
 ]
