@@ -2204,5 +2204,53 @@
       ]
     },
     "updatedAt": "2026-09-26T05:15:30Z"
+  },
+  {
+    "id": "united-states/commerce",
+    "country": "United States",
+    "countryCode": "US",
+    "countrySlug": "united-states",
+    "city": "Commerce",
+    "slug": "commerce",
+    "region": "North America",
+    "indexable": true,
+    "intro": "Commerce Casino & Hotel hosts the Los Angeles Poker Classic in Commerce, southeast of downtown Los Angeles. Use the Telegraph Road address when planning your stay; the tournament venue has its own hotel and dining.",
+    "airport": {
+      "title": "Airport transfer planning",
+      "detail": "A specific airport transfer has not been verified in this guide. Use the casino address to compare your arrival route and confirm transport before booking.",
+      "url": "https://commercecasino.com/contact/",
+      "sourceId": "commerce-contact"
+    },
+    "transport": [
+      {
+        "title": "Driving to Commerce Casino",
+        "detail": "The official address is 6131 Telegraph Road, Commerce, CA 90040. The venue directs drivers from Interstate 5 via the Washington exit and casino signs; transfer times are not fixed here.",
+        "url": "https://commercecasino.com/contact/",
+        "sourceId": "commerce-contact"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "The Commerce Casino & Hotel",
+        "detail": "The venue’s hotel is steps from the casino and offers direct reservations. Check availability and total charges; no LAPC 2027 room discount has been confirmed.",
+        "url": "https://commercecasino.com/hotel/",
+        "sourceId": "commerce-hotel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Commerce Cafe and River Bar",
+        "detail": "The property lists Commerce Cafe and the River Bar beside the casino floor, plus online food ordering. Check current service before a tournament break.",
+        "url": "https://commercecasino.com/dining/",
+        "sourceId": "commerce-dining"
+      }
+    ],
+    "tax": {
+      "text": "IRS Publication 515 explains that US gambling-winnings withholding for nonresident players depends on tax residency and applicable treaty relief. Ask the payer about payout documents; withholding is separate from final tax liability. California and home-country obligations need a separate review.",
+      "sourceIds": [
+        "us-tax"
+      ]
+    },
+    "updatedAt": "2026-09-30T05:20:09Z"
   }
 ]

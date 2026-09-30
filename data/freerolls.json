@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected officially dated starts through 23 October 2026, in Atlanta local time (America/New_York). This is a subset of the calendar, not an automatically repeated weekly schedule. The ambiguous 2 October listing is omitted pending confirmation.",
+      "text": "Selected official dated starts are verified through October 29, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
       "endDate": null,
       "slots": [
         {
@@ -750,6 +750,94 @@
           "time": "19:00",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-24-1300-the-independent-turbo-blinds",
+          "date": "2026-10-24",
+          "time": "13:00",
+          "label": "The Independent — Turbo Blinds",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-24-1500-the-independent-turbo-blinds",
+          "date": "2026-10-24",
+          "time": "15:00",
+          "label": "The Independent — Turbo Blinds",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-25-1300-the-independent",
+          "date": "2026-10-25",
+          "time": "13:00",
+          "label": "The Independent",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-25-1600-milltown-arms-tavern-5-points",
+          "date": "2026-10-25",
+          "time": "16:00",
+          "label": "Milltown Arms Tavern 5 Points",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-25-1900-little-5-pub",
+          "date": "2026-10-25",
+          "time": "19:00",
+          "label": "Little 5 Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-26-1900-moe-s-and-joe-s",
+          "date": "2026-10-26",
+          "time": "19:00",
+          "label": "Moe's and Joe's",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-27-1800-sweet-auburn-bbq",
+          "date": "2026-10-27",
+          "time": "18:00",
+          "label": "Sweet Auburn BBQ",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-27-2000-little-5-pub",
+          "date": "2026-10-27",
+          "time": "20:00",
+          "label": "Little 5 Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-28-1800-neighbor-s-pub",
+          "date": "2026-10-28",
+          "time": "18:00",
+          "label": "Neighbor's Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-28-2000-limerick-junction-pub",
+          "date": "2026-10-28",
+          "time": "20:00",
+          "label": "Limerick Junction Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "2026-10-29-1900-gino-s-ny-pizza-bar",
+          "date": "2026-10-29",
+          "time": "19:00",
+          "label": "Gino's NY Pizza Bar",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -796,8 +884,8 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
-    "updatedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
@@ -836,7 +924,7 @@
       "details": "The organizer advertises local prizes and routes to league championships. Check the venue’s current prize terms; a championship prize is not a guaranteed reward at an ordinary league game."
     },
     "schedule": {
-      "text": "Selected published league starts for September 22–26, 2026 in Pennsylvania and New Jersey, shown in local Eastern time. This is a subset of the official calendar, not a forecast of recurring weekly games. Check the venue listing before leaving.",
+      "text": "Selected official league starts are verified for September 30–October 3, 2026 in Pennsylvania and New Jersey. Times are local to each venue. The separate qualified championship is not an open-entry free league game; use the official calendar for last-minute changes.",
       "timezone": "America/New_York",
       "endDate": null,
       "slots": [
@@ -1055,6 +1143,166 @@
           "time": "19:00",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1830-pikeville-sportsman-s-association-oley-pa",
+          "date": "2026-09-30",
+          "time": "18:30",
+          "label": "Pikeville Sportsman’s Association — Oley, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1900-hill-to-hill-grille-bethlehem-pa",
+          "date": "2026-09-30",
+          "time": "19:00",
+          "label": "Hill to Hill Grille — Bethlehem, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1900-italian-american-club-tuckerton-nj",
+          "date": "2026-09-30",
+          "time": "19:00",
+          "label": "Italian American Club — Tuckerton, NJ",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1900-uno-pizzeria-grill-bensalem-pa",
+          "date": "2026-09-30",
+          "time": "19:00",
+          "label": "UNO Pizzeria & Grill — Bensalem, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1900-uno-pizzeria-grill-newtown-square-pa",
+          "date": "2026-09-30",
+          "time": "19:00",
+          "label": "UNO Pizzeria & Grill — Newtown Square, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1930-fran-s-pub-new-hope-pa",
+          "date": "2026-09-30",
+          "time": "19:30",
+          "label": "Fran’s Pub — New Hope, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1930-frosted-mug-vineland-nj",
+          "date": "2026-09-30",
+          "time": "19:30",
+          "label": "Frosted Mug — Vineland, NJ",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-09-30-1930-oreland-inn-oreland-pa",
+          "date": "2026-09-30",
+          "time": "19:30",
+          "label": "Oreland Inn — Oreland, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1800-westover-golf-club-norristown-pa",
+          "date": "2026-10-01",
+          "time": "18:00",
+          "label": "Westover Golf Club — Norristown, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1830-liberty-fire-co-1-social-quarters-sinking-spring-pa",
+          "date": "2026-10-01",
+          "time": "18:30",
+          "label": "Liberty Fire Co. 1 Social Quarters — Sinking Spring, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1830-decades-restaurant-and-bar-hamilton-nj",
+          "date": "2026-10-01",
+          "time": "18:30",
+          "label": "Decades Restaurant and Bar — Hamilton, NJ",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1900-villa-nova-sports-b-g-lancaster-pa",
+          "date": "2026-10-01",
+          "time": "19:00",
+          "label": "Villa Nova Sports B&G — Lancaster, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1900-the-bucks-club-jamison-pa",
+          "date": "2026-10-01",
+          "time": "19:00",
+          "label": "The Bucks Club — Jamison, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1900-root-cellar-tavern-dorothy-nj",
+          "date": "2026-10-01",
+          "time": "19:00",
+          "label": "Root Cellar Tavern — Dorothy, NJ",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1900-leaf-cigar-bar-easton-pa",
+          "date": "2026-10-01",
+          "time": "19:00",
+          "label": "Leaf Cigar Bar — Easton, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-01-1900-creekside-sports-bar-limerick-pa",
+          "date": "2026-10-01",
+          "time": "19:00",
+          "label": "Creekside Sports Bar — Limerick, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-02-1900-reddog-s-hi-point-pub-absecon-nj",
+          "date": "2026-10-02",
+          "time": "19:00",
+          "label": "Reddog’s Hi Point Pub — Absecon, NJ",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-02-2000-betterment-social-club-trumbauersville-pa",
+          "date": "2026-10-02",
+          "time": "20:00",
+          "label": "Betterment Social Club — Trumbauersville, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-03-1300-westover-golf-club-norristown-pa",
+          "date": "2026-10-03",
+          "time": "13:00",
+          "label": "Westover Golf Club — Norristown, PA",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-03-1900-root-cellar-tavern-dorothy-nj",
+          "date": "2026-10-03",
+          "time": "19:00",
+          "label": "Root Cellar Tavern — Dorothy, NJ",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
         }
       ]
     },
@@ -1093,8 +1341,8 @@
       "riverchasers-bpo",
       "riverchasers-season40"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
-    "updatedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": null
   },
   {
@@ -1189,7 +1437,7 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   },
@@ -1283,7 +1531,7 @@
       "wtp-live-complete-rules",
       "wtp-live-regions"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   },
@@ -1313,7 +1561,7 @@
       "requirements": [
         "Age 21 or older; bring valid ID for prizes.",
         "Register online or with the dealer for ordinary games; unregistered arrivals may have to wait.",
-        "Finals require qualification. Receipts of $10 or more can earn points toward higher awards."
+        "Gift-certificate finals require a venue top-10 finish; Winners voucher entry requires a qualifying win, while Pasadena uses the top 25. Check the official qualifying list. Receipts of $10 or more can affect points and awards."
       ],
       "costNote": "No entry fee, cover charge or drink minimum for ordinary games. Venue spending is separate and can change points or finals awards."
     },
@@ -1322,10 +1570,67 @@
       "details": "The schedule lists gift-certificate competitions and a Winners betting-voucher final. These are not guaranteed cash payments to every participant."
     },
     "schedule": {
-      "text": "Recurring venue games; use the official calendar for availability. It says no BLVD games on September 26 and no Firehouse game on September 29. Monthly final dates marked TBA are not confirmed starts.",
+      "text": "Selected October finals are listed below for qualified players. Buttero’s Thursday game has moved to Friday. Ordinary weekly games remain on the official calendar; no future dates have been generated from that recurring timetable.",
       "timezone": "America/New_York",
       "endDate": null,
-      "slots": []
+      "slots": [
+        {
+          "id": "2026-10-02-1900-buttero-bayonne-qualified-gift-certificate-final",
+          "date": "2026-10-02",
+          "time": "19:00",
+          "label": "Buttero, Bayonne — qualified gift-certificate final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        },
+        {
+          "id": "2026-10-03-1500-blvd-elmwood-park-qualified-gift-certificate-final",
+          "date": "2026-10-03",
+          "time": "15:00",
+          "label": "BLVD, Elmwood Park — qualified gift-certificate final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        },
+        {
+          "id": "2026-10-04-1300-winners-bayonne-qualified-betting-voucher-final",
+          "date": "2026-10-04",
+          "time": "13:00",
+          "label": "Winners, Bayonne — qualified betting-voucher final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        },
+        {
+          "id": "2026-10-06-1900-buttero-bayonne-qualified-gift-certificate-final",
+          "date": "2026-10-06",
+          "time": "19:00",
+          "label": "Buttero, Bayonne — qualified gift-certificate final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        },
+        {
+          "id": "2026-10-06-1900-firehouse-garfield-qualified-gift-certificate-final",
+          "date": "2026-10-06",
+          "time": "19:00",
+          "label": "Firehouse, Garfield — qualified gift-certificate final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        },
+        {
+          "id": "2026-10-07-1900-blvd-elmwood-park-qualified-gift-certificate-final",
+          "date": "2026-10-07",
+          "time": "19:00",
+          "label": "BLVD, Elmwood Park — qualified gift-certificate final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        },
+        {
+          "id": "2026-10-18-1300-winners-bayonne-qualified-pasadena-final",
+          "date": "2026-10-18",
+          "time": "13:00",
+          "label": "Winners, Bayonne — qualified Pasadena final",
+          "timezone": "America/New_York",
+          "sourceId": "wfp-nj-schedule"
+        }
+      ]
     },
     "sections": [
       {
@@ -1335,6 +1640,10 @@
       {
         "title": "Where should I check before leaving?",
         "text": "Read the venue notices and registration page. Meadowlands play is marked suspended; do not treat its old voucher notices as current games."
+      },
+      {
+        "title": "Are the dated finals open to everyone?",
+        "text": "No. The listed starts require prior qualification. Gift certificates and betting vouchers are different rewards from cash; ordinary games and their availability should be checked separately."
       }
     ],
     "officialLinks": [
@@ -1362,8 +1671,8 @@
       "wfp-nj-faq",
       "wfp-nj-scoring"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
-    "updatedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": null
   },
   {
@@ -1439,8 +1748,78 @@
       "gg-uk-weekly-freeroll",
       "gg-uk-house-rules"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-26T05:15:30Z",
+    "reviewNote": null
+  },
+  {
+    "id": "redtooth-tavern-uk",
+    "slug": "redtooth-tavern-uk",
+    "title": "Redtooth Tavern Online Freeroll — UK Members",
+    "brand": "Redtooth Poker",
+    "description": "A zero-buy-in online league on PartyPoker for active Redtooth pub members. Compete for regional-final qualification and online-event tickets; membership, operator eligibility and later final fees still apply.",
+    "mode": "online",
+    "status": "published",
+    "market": {
+      "label": "United Kingdom — active Redtooth venue members",
+      "countries": [
+        "GB"
+      ],
+      "usStates": [],
+      "note": "For eligible UK pub-league members with access to PartyPoker. This guide does not establish availability in the United States."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "not-required",
+      "password": "required",
+      "requirements": [
+        "Age 18 or older and registered membership of an active Redtooth venue.",
+        "Eligible PartyPoker account; obtain the current password through Redtooth’s official member area.",
+        "Confirm operator deposit conditions: the public Redtooth explanation does not establish a no-deposit exemption."
+      ],
+      "costNote": "Online Tavern entry is free. Regional and national finals charge GBP 10 under the published terms; venue games can have their own costs."
+    },
+    "reward": {
+      "label": "Regional-final qualification and online tickets",
+      "details": "The season’s top 15 qualify for their allocated regional final. Venue qualification takes precedence, and seats cannot be transferred. These rewards are not a guaranteed cash payout."
+    },
+    "schedule": {
+      "text": "The organizer describes Sunday play at 14:00, with registration from noon, during a 13-week league season. It does not specify a timezone or dated upcoming starts here; check the lobby.",
+      "timezone": null,
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Can anyone join this freeroll?",
+        "text": "No. Active pub-venue membership is required. This guide covers the Tavern league; separately advertised paid qualifiers are not included."
+      },
+      {
+        "title": "Where is the official entry information?",
+        "text": "Use the public program explanation and rules below. Member passwords remain with the organizer."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official Tavern program explanation",
+        "url": "https://www.redtoothpoker.com/online",
+        "kind": "explanation",
+        "sourceId": "redtooth-tavern-online"
+      },
+      {
+        "label": "Official membership and final-fee rules",
+        "url": "https://www.redtoothpoker.com/terms",
+        "kind": "rules",
+        "sourceId": "redtooth-tavern-terms"
+      }
+    ],
+    "sourceIds": [
+      "redtooth-tavern-online",
+      "redtooth-tavern-terms"
+    ],
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": null
   }
 ]

@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1780,7 +1780,7 @@
     "sourceIds": [
       "paradise-schedule"
     ],
-    "checkedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -2099,9 +2099,10 @@
     "scheduleUrl": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
     "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
     "sourceIds": [
-      "lodge-schedule"
+      "lodge-schedule",
+      "lodge-2026-details"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:28:09Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
@@ -2174,7 +2175,8 @@
           }
         ],
         "sourceIds": [
-          "lodge-schedule"
+          "lodge-schedule",
+          "lodge-2026-details"
         ]
       }
     ]
@@ -2203,7 +2205,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:28:09Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": "The organizer lists different fee splits for regular and speed Championship flights although both total USD 1,100. The fee field remains unconfirmed; check your flight’s official breakdown.",
     "changes": [
@@ -2344,11 +2346,12 @@
     "scheduleUrl": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
     "scheduleCoverage": "A selection of headline and accessible events to help compare the trip. Follow the official link below for every tournament, flight and live registration detail.",
     "sourceIds": [
-      "san-jose-schedule"
+      "san-jose-schedule",
+      "san-jose-2026-details"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
-    "updatedAt": "2026-09-24T05:12:01Z",
-    "reviewNote": null,
+    "checkedAt": "2026-09-30T05:28:09Z",
+    "updatedAt": "2026-09-30T05:28:09Z",
+    "reviewNote": "WPT’s schedule shows 60-minute levels through Day 3 and 90-minute levels on Day 4, while its rules page says 90-minute levels begin with 36 players remaining. The schedule-based summary is retained; confirm the transition with the tournament team.",
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
@@ -2361,6 +2364,10 @@
       {
         "date": "2026-09-24T05:12:01Z",
         "text": "Expanded the overview to the published surrounding festival dates and added selected entry information."
+      },
+      {
+        "date": "2026-09-30T05:28:09Z",
+        "text": "Flagged differing official descriptions of the transition to 90-minute championship levels."
       }
     ],
     "tournaments": [
@@ -2402,7 +2409,8 @@
           }
         ],
         "sourceIds": [
-          "san-jose-schedule"
+          "san-jose-schedule",
+          "san-jose-2026-details"
         ]
       },
       {
@@ -3235,7 +3243,7 @@
       "taipei-schedule",
       "taipei-info"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": null,
     "changes": [
@@ -4191,7 +4199,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4320,7 +4328,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4460,7 +4468,7 @@
     "sourceIds": [
       "durant-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -4644,7 +4652,7 @@
     "sourceIds": [
       "toledo-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4782,24 +4790,112 @@
       "url": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/"
     },
     "status": "scheduled",
-    "description": "Playground hosts this WSOP stop in Kahnawake. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
-    "registration": null,
+    "description": "Playground’s November WSOP Circuit stop offers a CAD 2,500 main event and a CAD 400 Mini Main in Kahnawake. Main-event entry flights run November 12–14, while the lower-buy-in opening event starts November 2.",
+    "registration": "Use the official WSOP event page and its WSOP LIVE app guidance for current registration details.",
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
-    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "scheduleCoverage": "Selected main and Mini Main flights, not the full schedule. Main re-entry, fee splits and event finishing dates remain unconfirmed here.",
     "sourceIds": [
       "playground-november-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-30T05:20:09Z",
+        "text": "Added main and Mini Main buy-ins, selected entry flights, stacks and published registration levels."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Main Event",
+        "number": "11",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2500,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "50,000",
+        "levels": "40 minutes",
+        "reentry": null,
+        "lateRegistration": "Level 13 is listed; confirm the exact cutoff with the organizer.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-1",
+            "label": "Flight A",
+            "date": "2026-11-12",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-2",
+            "label": "Flight B",
+            "date": "2026-11-13",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-3",
+            "label": "Flight C",
+            "date": "2026-11-14",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "playground-november-2026-schedule"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "name": "Mini Main Event",
+        "number": "1",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "CAD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": "30 minutes",
+        "reentry": "Unlimited re-entry.",
+        "lateRegistration": "Level 9 is listed; confirm the exact cutoff.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "mini-main-1",
+            "label": "Flight A — selected entry",
+            "date": "2026-11-02",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-main-2",
+            "label": "Flight C — selected entry",
+            "date": "2026-11-04",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "playground-november-2026-schedule"
+        ]
+      }
+    ]
   },
   {
     "id": "scottsdale-2026",
@@ -4825,7 +4921,7 @@
     "sourceIds": [
       "scottsdale-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4860,7 +4956,7 @@
     "sourceIds": [
       "elgin-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4970,24 +5066,99 @@
       "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/"
     },
     "status": "scheduled",
-    "description": "Sortis Hotel, Spa & Casino hosts this WSOP stop in Panama City. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "description": "The November Circuit at Sortis Hotel, Spa & Casino has published Main Event entry flights from November 7 and Mini Main flights from November 5. The selected events differ in stack, level length and registration cutoff.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
-    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "scheduleCoverage": "Selected flights from the newly published schedule. The source labels the main $1,700 and Mini Main $500 without an ISO currency code; numeric buy-in filters remain unfilled until the currency is confirmed.",
     "sourceIds": [
       "panama-city-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
-    "reviewNote": null,
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
+    "reviewNote": "Confirm the dollar currency and fee breakdown with the organizer before budgeting; the source uses a dollar symbol only.",
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-30T05:20:09Z",
+        "text": "Added selected main and Mini Main entry dates, stacks and registration rules; currency remains pending confirmation."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Main Event",
+        "number": "3",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": null,
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "50,000",
+        "levels": "40/60 minutes for the selected flights.",
+        "reentry": "Unlimited re-entry.",
+        "lateRegistration": "Start of Level 13.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-1",
+            "label": "Flight A — selected entry",
+            "date": "2026-11-07",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-2",
+            "label": "Flight B — selected entry",
+            "date": "2026-11-08",
+            "time": "13:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "panama-city-2026-schedule"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "name": "Mini Main Event",
+        "number": "1",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": null,
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": "30 minutes",
+        "reentry": "Unlimited re-entry.",
+        "lateRegistration": "Start of Level 11.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "mini-main-1",
+            "label": "Flight A — selected entry",
+            "date": "2026-11-05",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-main-2",
+            "label": "Flight B — selected entry",
+            "date": "2026-11-05",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "panama-city-2026-schedule"
+        ]
+      }
+    ]
   },
   {
     "id": "middelkerke-2026",
@@ -5013,7 +5184,7 @@
     "sourceIds": [
       "middelkerke-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -5202,7 +5373,7 @@
     "sourceIds": [
       "new-orleans-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5237,7 +5408,7 @@
     "sourceIds": [
       "sanremo-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5264,24 +5435,111 @@
       "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/"
     },
     "status": "scheduled",
-    "description": "Harrah’s Cherokee hosts this WSOP stop in Cherokee. The organizer has confirmed the festival dates and venue; detailed buy-ins and travel options will be added as they are verified.",
+    "description": "Harrah’s Cherokee’s Thanksgiving-season Circuit includes a USD 1,700 main event with a USD 1.5 million guarantee. Its USD 400 Mini Main has a separate USD 750,000 guarantee and starts a week earlier, offering two different entry budgets.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
-    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins and structures are not yet verified in this overview; use the official event page below.",
+    "scheduleCoverage": "Main flights and selected Mini Main entries from the published WSOP schedule. Guarantees apply to the named events, not every flight. Unpublished stacks, fees and deadlines remain unconfirmed.",
     "sourceIds": [
       "cherokee-november-2026-schedule"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-09-30T05:20:09Z",
+        "text": "Added main and Mini Main buy-ins, separate guarantees, entry flights and re-entry rules."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Main Event",
+        "number": "13",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1500000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Two re-entries per flight.",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-1",
+            "label": "Flight A",
+            "date": "2026-12-04",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "main-2",
+            "label": "Flight B",
+            "date": "2026-12-05",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "cherokee-november-2026-schedule"
+        ]
+      },
+      {
+        "id": "mini-main",
+        "slug": "mini-main",
+        "name": "Mini Main Event",
+        "number": "2",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 750000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited re-entry.",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "mini-main-1",
+            "label": "Flight A — selected entry",
+            "date": "2026-11-27",
+            "time": "11:00",
+            "kind": "entry"
+          },
+          {
+            "id": "mini-main-2",
+            "label": "Flight C — selected entry",
+            "date": "2026-11-28",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "cherokee-november-2026-schedule"
+        ]
+      }
+    ]
   },
   {
     "id": "namur-megastack-2026",
@@ -5806,7 +6064,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6374,7 +6632,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "The organizer has not yet published the tournament schedule. Buy-ins, guarantees and entry days remain unconfirmed.",
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6409,7 +6667,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6770,18 +7028,85 @@
   {
     "status": "scheduled",
     "dateNote": null,
-    "registration": "The organizer requires players to be over 18 and carry valid photo ID. Its event page links festival accommodation offers; confirm the applicable terms and booking procedure directly.",
-    "reviewNote": "The organizer’s Marrakech schedule link currently opens a Sydney PDF, and its FAQ mixes destinations. Marrakech buy-ins and entry rules remain unconfirmed. Check the correct local schedule with the organizer.",
-    "scheduleCoverage": "Festival dates and venue are confirmed. Individual buy-ins, guarantees and entry days remain unconfirmed while the correct Marrakech schedule is checked.",
-    "checkedAt": "2026-09-16T05:14:30Z",
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "registration": "Strictly over 18; valid photo ID is required. All casino transactions are in MAD. Published EUR prices may change with the exchange rate; confirm the final price and fees before entering.",
+    "reviewNote": "Published EUR amounts are indicative, not a fixed MAD quotation. The announcement’s comparisons with overseas timezones are inconsistent with seasonal clock changes; use venue-local times.",
+    "scheduleCoverage": "Selected main and Mini Irish Open highlights from the new announcement; the official schedule covers the other flights and side events.",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "changes": [
       {
         "date": "2026-09-09T05:17:08.345Z",
         "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      },
+      {
+        "date": "2026-09-30T05:20:09Z",
+        "text": "Added published main and Mini Irish Open highlights and clarified indicative EUR prices versus MAD payment."
       }
     ],
-    "tournaments": [],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Main Event — indicative EUR price",
+        "number": "main",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1155,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "50,000",
+        "levels": "40 minutes in Flights A–C; 15 minutes in turbo Flight D.",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-15",
+        "sessions": [
+          {
+            "id": "main-1",
+            "label": "Day 1A — selected flight",
+            "date": "2026-11-11",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "irish-marrakech-2026-announcement"
+        ]
+      },
+      {
+        "id": "mini",
+        "slug": "mini",
+        "name": "Mini Irish Open — indicative EUR price",
+        "number": "mini",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 350,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "30,000",
+        "levels": "30 minutes",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "mini-1",
+            "label": "Published start",
+            "date": "2026-11-14",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "irish-marrakech-2026-announcement"
+        ]
+      }
+    ],
     "id": "irish-open-marrakech-2026",
     "slug": "irish-open-marrakech-2026",
     "name": "Irish Open Marrakech 2026",
@@ -6795,14 +7120,15 @@
       "address": "Rue Ibrahim El Mazini, Hivernage, Marrakech, Morocco",
       "url": "https://www.essaadi.com/en/"
     },
-    "description": "Irish Open Marrakech is confirmed for November 10–15 at Casino de Marrakech in the Es Saadi Resort. This stop combines a resort playing venue with nearby hotel alternatives. Individual tournament dates and buy-ins are still being verified.",
+    "description": "Irish Open Marrakech runs November 10–15 at Casino de Marrakech in the Es Saadi Resort. The organizer lists an indicative EUR 1,155 main event and EUR 350 Mini Irish Open. Payments are in Moroccan dirham, so confirm the final MAD amount.",
     "registrationUrl": "https://irishpokeropen.com/marrakech/",
     "scheduleUrl": "https://irishpokeropen.com/marrakech/",
     "sourceIds": [
       "irish-marrakech-2026-info",
       "irish-calendar",
       "marrakech-location",
-      "marrakech-hotels"
+      "marrakech-hotels",
+      "irish-marrakech-2026-announcement"
     ]
   },
   {
@@ -6810,22 +7136,26 @@
     "dateNote": null,
     "registration": "The organizer supports registration at the event cashier and through GameID after BSOP registration. Confirm accepted payment methods and any payment charges with the cashier.",
     "reviewNote": null,
-    "scheduleCoverage": "Official key-tournament date ranges and buy-ins are published. The complete flight schedule is still to come; dates below show each highlighted event’s published opening date.",
-    "checkedAt": "2026-09-23T05:27:46Z",
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "scheduleCoverage": "The organizer has published a detailed schedule. Three highlights and their opening flights are summarized here; use the official schedule for other flights, structures and registration deadlines.",
+    "checkedAt": "2026-09-30T05:28:09Z",
+    "updatedAt": "2026-09-30T05:28:09Z",
     "changes": [
       {
         "date": "2026-09-09T05:17:08.345Z",
         "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      },
+      {
+        "date": "2026-09-30T05:28:09Z",
+        "text": "Added published opening-flight times and stacks from the newly available detailed schedule."
       }
     ],
     "tournaments": [
       {
         "id": "main-event",
         "slug": "main-event",
-        "number": "main-event",
+        "number": "26",
         "name": "Main Event",
-        "game": "Not confirmed",
+        "game": "Hold'em",
         "category": "main",
         "buyIn": {
           "amount": 5000,
@@ -6836,8 +7166,8 @@
           "amount": 10000000,
           "currency": "BRL"
         },
-        "startingStack": null,
-        "levels": null,
+        "startingStack": "40,000",
+        "levels": "Day 1A: 60 minutes. Later starting flights include 30-minute levels.",
         "reentry": null,
         "lateRegistration": null,
         "endDate": "2026-11-23",
@@ -6845,8 +7175,8 @@
           {
             "id": "main-event-start-1",
             "date": "2026-11-16",
-            "time": null,
-            "label": "Published start",
+            "time": "12:00",
+            "label": "Day 1A — selected opening flight",
             "kind": "entry"
           }
         ],
@@ -6857,9 +7187,9 @@
       {
         "id": "millionaire-maker",
         "slug": "millionaire-maker",
-        "number": "millionaire-maker",
+        "number": "38",
         "name": "Millionaire Maker",
-        "game": "Not confirmed",
+        "game": "Hold'em",
         "category": "side",
         "buyIn": {
           "amount": 1200,
@@ -6870,8 +7200,8 @@
           "amount": 5000000,
           "currency": "BRL"
         },
-        "startingStack": null,
-        "levels": null,
+        "startingStack": "30,000",
+        "levels": "Day 1A: 30 minutes. Later starting flights include 20-minute levels.",
         "reentry": null,
         "lateRegistration": null,
         "endDate": "2026-11-24",
@@ -6879,8 +7209,8 @@
           {
             "id": "millionaire-maker-start-1",
             "date": "2026-11-18",
-            "time": null,
-            "label": "Published start",
+            "time": "12:00",
+            "label": "Day 1A — selected opening flight",
             "kind": "entry"
           }
         ],
@@ -6891,9 +7221,9 @@
       {
         "id": "bsop-championship",
         "slug": "bsop-championship",
-        "number": "bsop-championship",
+        "number": "57",
         "name": "BSOP Championship",
-        "game": "Not confirmed",
+        "game": "Hold'em",
         "category": "side",
         "buyIn": {
           "amount": 25000,
@@ -6904,8 +7234,8 @@
           "amount": 15000000,
           "currency": "BRL"
         },
-        "startingStack": null,
-        "levels": null,
+        "startingStack": "100,000",
+        "levels": "Published structure: 60/90 minutes; check the organizer’s structure for the transition.",
         "reentry": null,
         "lateRegistration": null,
         "endDate": "2026-11-28",
@@ -6913,8 +7243,8 @@
           {
             "id": "bsop-championship-start-1",
             "date": "2026-11-21",
-            "time": null,
-            "label": "Published start",
+            "time": "12:00",
+            "label": "Day 1A — selected opening flight",
             "kind": "entry"
           }
         ],
@@ -6982,19 +7312,131 @@
   },
   {
     "status": "scheduled",
-    "dateNote": "Dates follow the organizer’s September 2026 announcement. Confirm individual entry days, buy-in currency and fees with Triton before booking.",
-    "registration": null,
-    "reviewNote": null,
-    "scheduleCoverage": "Series dates are announced. Individual starting days, fee breakdowns and registration cutoffs have not yet been verified; use Triton’s official calendar for the latest schedule.",
-    "checkedAt": "2026-09-21T05:14:39Z",
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "dateNote": "ONE and SHRS dates are separately published. Exact local start times are withheld because the detail pages label their schedule GMT+3.",
+    "registration": "The ONE page directs players to create a Triton Poker Plus account and complete identity verification. Check event-specific registration and the room/timezone discrepancies before booking.",
+    "reviewNote": "The ONE page names Merit Royal Diamond, while the earlier announcement names Merit Royal Premium. Confirm the correct tournament room. Both schedule pages label times GMT+3, which differs from Asia/Famagusta in November; no unverified time conversion is shown.",
+    "scheduleCoverage": "A few highlights from both schedules. The SHRS NLH event is used as this combined guide’s main buy-in; ONE has a separate USD 8,000 main. Fee splits and re-entry rules remain unconfirmed.",
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
     "changes": [
       {
         "date": "2026-09-09T05:17:08.345Z",
         "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      },
+      {
+        "date": "2026-09-30T05:20:09Z",
+        "text": "Added ONE and SHRS event highlights; flagged venue and timezone discrepancies without inventing local start times."
       }
     ],
-    "tournaments": [],
+    "tournaments": [
+      {
+        "id": "shrs-nlh-main",
+        "slug": "shrs-nlh-main",
+        "name": "SHRS NLH Main Event",
+        "number": "9",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 100000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "250,000",
+        "levels": "50 minutes",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-24",
+        "sessions": [
+          {
+            "id": "shrs-nlh-main-1",
+            "label": "Published Day 1 — time pending clarification",
+            "date": "2026-11-22",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "triton-shrs-cyprus-2026-schedule"
+        ]
+      },
+      {
+        "id": "one-main",
+        "slug": "one-main",
+        "name": "Triton ONE Main Event",
+        "number": "12",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 8000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "250,000",
+        "levels": "40 minutes in entry flights; 60 minutes from Day 2.",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-15",
+        "sessions": [
+          {
+            "id": "one-main-1",
+            "label": "Flight A — local time unconfirmed",
+            "date": "2026-11-10",
+            "time": null,
+            "kind": "entry"
+          },
+          {
+            "id": "one-main-2",
+            "label": "Flight B — local time unconfirmed",
+            "date": "2026-11-11",
+            "time": null,
+            "kind": "entry"
+          },
+          {
+            "id": "one-main-3",
+            "label": "Flight C — local time unconfirmed",
+            "date": "2026-11-12",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "triton-one-cyprus-2026-schedule"
+        ]
+      },
+      {
+        "id": "one-genesis",
+        "slug": "one-genesis",
+        "name": "Triton ONE QQPK Genesis",
+        "number": "1",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 3000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "250,000",
+        "levels": "40 minutes in Flight A.",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-07",
+        "sessions": [
+          {
+            "id": "one-genesis-1",
+            "label": "Flight A — selected entry",
+            "date": "2026-11-05",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "triton-one-cyprus-2026-schedule"
+        ]
+      }
+    ],
     "id": "triton-north-cyprus-2026",
     "slug": "triton-north-cyprus-2026",
     "name": "Triton North Cyprus 2026",
@@ -7008,11 +7450,13 @@
       "address": null,
       "url": "https://tritonpokerseries.com/news/thetritontimes/2nd"
     },
-    "description": "Triton’s September announcement places its North Cyprus return at Merit Royal Premium. The trip combines Triton ONE, November 5–15, and the Super High Roller Series, November 15–30. Choose the appropriate series before planning the length of your stay.",
+    "description": "The North Cyprus stop combines Triton ONE on November 5–15 and the Super High Roller Series on November 15–30. Published highlights include the USD 8,000 ONE Main Event, USD 3,000 QQPK Genesis and USD 100,000 SHRS NLH Main Event.",
     "registrationUrl": "https://tritonpokerseries.com/en-US/events",
     "scheduleUrl": "https://tritonpokerseries.com/en-US/events",
     "sourceIds": [
-      "triton-cyprus-2026-announcement"
+      "triton-cyprus-2026-announcement",
+      "triton-one-cyprus-2026-schedule",
+      "triton-shrs-cyprus-2026-schedule"
     ]
   },
   {
@@ -8816,7 +9260,7 @@
       "apat-bcoap-2026-schedule",
       "apat-2026-calendar"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:20:09Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": "The October 22 flight has inconsistent Day 1 labels. Satellite ticket wording says UKCOAP; confirm ticket use with APAT.",
     "dateNote": null,
@@ -8948,7 +9392,7 @@
       "bicycle-bpo-2026-kickoff",
       "bicycle-bpo-2026-pwc"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-09-30T05:28:09Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": null,
     "dateNote": null,
@@ -9045,6 +9489,74 @@
         ],
         "sourceIds": [
           "bicycle-bpo-2026-pwc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wpt-lapc-commerce-2027",
+    "slug": "wpt-lapc-commerce-2027",
+    "name": "WPT Los Angeles Poker Classic 2027",
+    "tour": "WPT",
+    "destinationId": "united-states/commerce",
+    "startDate": "2027-01-15",
+    "endDate": "2027-03-07",
+    "timezone": "America/Los_Angeles",
+    "dateNote": "The whole LAPC festival runs January 15–March 7. The WPT Championship runs February 26–March 3.",
+    "venue": {
+      "name": "The Commerce Casino & Hotel",
+      "address": "6131 Telegraph Road, Commerce, CA 90040",
+      "url": "https://commercecasino.com/"
+    },
+    "status": "scheduled",
+    "description": "WPT returns to the Los Angeles Poker Classic at Commerce in 2027. The festival spans January 15–March 7, with a USD 10,000 freezeout championship from February 26–March 3. Side-event and satellite details are still pending.",
+    "registration": "Players must be 21 or older. WPT has announced the event; use the official announcement for updates, not as a confirmed registration form.",
+    "registrationUrl": "https://www.worldpokertour.com/article/wpt-returns-to-the-commerce-casino-hotel-for-the-wpt-lapc-championship-in-season-25",
+    "scheduleUrl": "https://www.worldpokertour.com/article/wpt-returns-to-the-commerce-casino-hotel-for-the-wpt-lapc-championship-in-season-25",
+    "scheduleCoverage": "Confirmed festival and championship dates with the announced main buy-in. The complete schedule, fee split and qualifying promotions have not yet been published.",
+    "sourceIds": [
+      "wpt-lapc-2027-announcement",
+      "commerce-contact"
+    ],
+    "checkedAt": "2026-09-30T05:20:09Z",
+    "updatedAt": "2026-09-30T05:20:09Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-09-30T05:20:09Z",
+        "text": "Added the newly announced 2027 LAPC festival, championship dates and freezeout buy-in."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "WPT LAPC Championship",
+        "number": "main",
+        "game": "Not confirmed",
+        "category": "main",
+        "buyIn": {
+          "amount": 10000,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Freezeout.",
+        "lateRegistration": null,
+        "endDate": "2027-03-03",
+        "sessions": [
+          {
+            "id": "main-1",
+            "label": "Championship begins — time not announced",
+            "date": "2027-02-26",
+            "time": null,
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "wpt-lapc-2027-announcement"
         ]
       }
     ]
