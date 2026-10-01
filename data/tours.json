@@ -253,5 +253,22 @@
     "featured": false,
     "description": "Major festivals hosted at Parkwest Bicycle Casino in Bell Gardens, California.",
     "checkedAt": "2026-09-26T05:15:30Z"
+  },
+  {
+    "id": "pokerstars-manila",
+    "label": "PokerStars Manila",
+    "fullName": "PokerStars Live Manila",
+    "series": [
+      "Manila Megastack",
+      "Manila Super Series"
+    ],
+    "keywords": [
+      "Manila Megastack",
+      "Manila Super Series"
+    ],
+    "officialUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "featured": false,
+    "description": "Major PokerStars Live Manila festivals at Okada Manila. Routine daily tournaments are excluded.",
+    "checkedAt": "2026-10-01T05:19:00Z"
   }
 ]

@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -2102,7 +2102,7 @@
       "lodge-schedule",
       "lodge-2026-details"
     ],
-    "checkedAt": "2026-09-30T05:28:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
@@ -2205,7 +2205,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-09-30T05:28:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": "The organizer lists different fee splits for regular and speed Championship flights although both total USD 1,100. The fee field remains unconfirmed; check your flight’s official breakdown.",
     "changes": [
@@ -2349,7 +2349,7 @@
       "san-jose-schedule",
       "san-jose-2026-details"
     ],
-    "checkedAt": "2026-09-30T05:28:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-30T05:28:09Z",
     "reviewNote": "WPT’s schedule shows 60-minute levels through Day 3 and 90-minute levels on Day 4, while its rules page says 90-minute levels begin with 36 players remaining. The schedule-based summary is retained; confirm the transition with the tournament team.",
     "changes": [
@@ -3020,7 +3020,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -4199,7 +4199,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4328,7 +4328,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4468,7 +4468,7 @@
     "sourceIds": [
       "durant-2026-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -4652,7 +4652,7 @@
     "sourceIds": [
       "toledo-2026-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5991,7 +5991,7 @@
       "wpt-seoul-2026-schedule",
       "wpt-seoul-2026-announcement"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6064,7 +6064,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6451,7 +6451,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-10-01T05:21:28Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6667,7 +6667,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -7488,7 +7488,7 @@
       "cps-namur-2026-qualifier",
       "namur-venue"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-10-01T05:21:28Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": "The venue announcement and PokerStars Live now agree on the EUR 800,000 main-event and EUR 400,000 Circus Cup guarantees. The main finish still differs: November 29 at the venue versus November 30 on PokerStars Live. Confirm return travel; the main finishing date remains unconfirmed here.",
     "changes": [
@@ -8459,7 +8459,7 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null,
     "changes": [
@@ -8592,7 +8592,7 @@
       "gukpt-2026-calendar",
       "leeds-westgate"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-10-01T05:21:28Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": "The official table labels Main Event Day 1C as turbo but also gives 60-minute levels. That flight’s structure is not reproduced here.",
     "changes": [
@@ -9175,7 +9175,7 @@
       "irish-dublin-2027-announcement",
       "irish-registration"
     ],
-    "checkedAt": "2026-09-24T05:12:01Z",
+    "checkedAt": "2026-10-01T05:21:28Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
@@ -9260,7 +9260,7 @@
       "apat-bcoap-2026-schedule",
       "apat-2026-calendar"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": "The October 22 flight has inconsistent Day 1 labels. Satellite ticket wording says UKCOAP; confirm ticket use with APAT.",
     "dateNote": null,
@@ -9392,7 +9392,7 @@
       "bicycle-bpo-2026-kickoff",
       "bicycle-bpo-2026-pwc"
     ],
-    "checkedAt": "2026-09-30T05:28:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": null,
     "dateNote": null,
@@ -9560,5 +9560,321 @@
         ]
       }
     ]
+  },
+  {
+    "id": "apat-blackpool-2026",
+    "slug": "apat-blackpool-2026",
+    "name": "APAT Blackpool 2026",
+    "tour": "APAT",
+    "destinationId": "united-kingdom/blackpool",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-11",
+    "dateNote": null,
+    "timezone": "Europe/London",
+    "venue": {
+      "name": "Grosvenor Casino Blackpool",
+      "address": "South Promenade, Blackpool, England FY4 1BB",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool"
+    },
+    "status": "scheduled",
+    "description": "A Blackpool weekend with a GBP 140 main event and a GBP 70 Sunday side event. Three main-event flights feed into Sunday’s final; compare the slower daytime flights with Saturday’s turbo before arranging your stay.",
+    "registration": "Pre-register at a Grosvenor casino hosting live poker, or visit the poker-room desk on the day. Grosvenor membership and photo ID are required. Full events use an alternates list.",
+    "registrationUrl": "https://www.apat.com/apat-blackpool-9-11-oct-2026/",
+    "scheduleUrl": "https://www.apat.com/apat-blackpool-9-11-oct-2026/",
+    "scheduleCoverage": "Main-event flights and one lower-buy-in highlight. The official schedule also lists a mixed-game championship.",
+    "sourceIds": [
+      "apat-blackpool-2026-schedule",
+      "apat-2026-calendar"
+    ],
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:19:00Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-01T05:19:00Z",
+        "text": "Added confirmed festival dates, selected buy-ins and entry rules."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": null,
+        "name": "APAT Main Event Championship",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 140,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "50,000",
+        "levels": "25 minutes on Day 1A/1B; 15 on 1C; 40 on Day 2.",
+        "reentry": "One re-entry per flight. Players who bag cannot enter a later flight.",
+        "lateRegistration": "Through level 10.",
+        "endDate": "2026-10-11",
+        "sessions": [
+          {
+            "id": "day1a",
+            "label": "Day 1A",
+            "date": "2026-10-09",
+            "time": "18:00",
+            "kind": "entry"
+          },
+          {
+            "id": "day1b",
+            "label": "Day 1B",
+            "date": "2026-10-10",
+            "time": "15:00",
+            "kind": "entry"
+          },
+          {
+            "id": "day1c",
+            "label": "Day 1C (turbo)",
+            "date": "2026-10-10",
+            "time": "20:00",
+            "kind": "entry"
+          },
+          {
+            "id": "day2",
+            "label": "Day 2",
+            "date": "2026-10-11",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "apat-blackpool-2026-schedule"
+        ]
+      },
+      {
+        "id": "nlhe-side",
+        "slug": "nlhe-side",
+        "number": null,
+        "name": "NLHE Side Event",
+        "game": "No-Limit Hold'em",
+        "category": "side",
+        "buyIn": {
+          "amount": 70,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 12,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "20,000",
+        "levels": "15 minutes.",
+        "reentry": "Re-entry permitted.",
+        "lateRegistration": "Through level 8.",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "sunday",
+            "label": "Sunday start",
+            "date": "2026-10-11",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "apat-blackpool-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "manila-megastack-25-2026",
+    "slug": "manila-megastack-25-2026",
+    "name": "Manila Megastack 25 — 2026",
+    "tour": "Manila Megastack",
+    "destinationId": "philippines/manila",
+    "startDate": "2026-11-26",
+    "endDate": "2026-12-07",
+    "dateNote": null,
+    "timezone": "Asia/Manila",
+    "venue": {
+      "name": "PokerStars Live at Okada Manila",
+      "address": "New Seaside Drive, Entertainment City, Parañaque 1701, Metro Manila, Philippines",
+      "url": "https://www.pokerstarslivemanila.com/venue/"
+    },
+    "status": "scheduled",
+    "description": "Manila Megastack 25 runs at Okada Manila from November 26 to December 7. The main event has a PHP 45,000 buy-in and a PHP 20 million guarantee. Individual flight dates and structures have not yet been published on the calendar.",
+    "registration": "Players must be 21 or older and bring valid ID, such as a passport, for casino reward-card and PS Live-card registration. Confirm seats and payment with the poker room. Events remain subject to regulatory approval.",
+    "registrationUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "scheduleUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "scheduleCoverage": "Confirmed festival dates and main-event price only. Open the official calendar for flight dates, structures and fee details when published.",
+    "sourceIds": [
+      "pokerstars-manila-calendar",
+      "pokerstars-manila-venue"
+    ],
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:19:00Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-01T05:19:00Z",
+        "text": "Added official dates, main-event buy-in, guarantee and admission guidance."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": null,
+        "name": "Manila Megastack Main Event",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 45000,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 20000000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "pokerstars-manila-calendar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "manila-super-series-25-2027",
+    "slug": "manila-super-series-25-2027",
+    "name": "Manila Super Series 25 — 2027",
+    "tour": "Manila Super Series",
+    "destinationId": "philippines/manila",
+    "startDate": "2027-01-22",
+    "endDate": "2027-01-31",
+    "dateNote": null,
+    "timezone": "Asia/Manila",
+    "venue": {
+      "name": "PokerStars Live at Okada Manila",
+      "address": "New Seaside Drive, Entertainment City, Parañaque 1701, Metro Manila, Philippines",
+      "url": "https://www.pokerstarslivemanila.com/venue/"
+    },
+    "status": "scheduled",
+    "description": "A January 22–31 festival at Okada Manila, with a PHP 18,500 main event and PHP 10 million main-event guarantee. Individual start times remain unannounced.",
+    "registration": "Players must be 21 or older and bring valid ID, such as a passport, for casino reward-card and PS Live-card registration. Confirm seats and payment with the poker room. Events remain subject to regulatory approval.",
+    "registrationUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "scheduleUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "scheduleCoverage": "Confirmed festival dates and main-event price only. Open the official calendar for flight dates, structures and fee details when published.",
+    "sourceIds": [
+      "pokerstars-manila-calendar",
+      "pokerstars-manila-venue"
+    ],
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:22:17Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-01T05:22:17Z",
+        "text": "Added the officially announced edition, dates and available main-event information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": null,
+        "name": "Manila Super Series Main Event",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 18500,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 10000000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "pokerstars-manila-calendar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "manila-megastack-26-2027",
+    "slug": "manila-megastack-26-2027",
+    "name": "Manila Megastack 26 — 2027",
+    "tour": "Manila Megastack",
+    "destinationId": "philippines/manila",
+    "startDate": "2027-02-22",
+    "endDate": "2027-03-07",
+    "dateNote": null,
+    "timezone": "Asia/Manila",
+    "venue": {
+      "name": "PokerStars Live at Okada Manila",
+      "address": "New Seaside Drive, Entertainment City, Parañaque 1701, Metro Manila, Philippines",
+      "url": "https://www.pokerstarslivemanila.com/venue/"
+    },
+    "status": "scheduled",
+    "description": "The next Manila Megastack edition runs February 22–March 7 at Okada Manila. The calendar lists a PHP 45,000 main event; individual flights remain unannounced.",
+    "registration": "Players must be 21 or older and bring valid ID, such as a passport, for casino reward-card and PS Live-card registration. Confirm seats and payment with the poker room. Events remain subject to regulatory approval.",
+    "registrationUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "scheduleUrl": "https://www.pokerstarslivemanila.com/tournaments/",
+    "scheduleCoverage": "Confirmed festival dates and main-event price only. Open the official calendar for flight dates, structures and fee details when published.",
+    "sourceIds": [
+      "pokerstars-manila-calendar",
+      "pokerstars-manila-venue"
+    ],
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:22:17Z",
+    "reviewNote": "The calendar gives PHP 20 million for the main event, but its separate series-total row appears inconsistent. No series-total guarantee is reproduced here; confirm final guarantees with the organizer.",
+    "changes": [
+      {
+        "date": "2026-10-01T05:22:17Z",
+        "text": "Added the officially announced edition, dates and available main-event information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "number": null,
+        "name": "Manila Megastack Main Event",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 45000,
+          "currency": "PHP"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 20000000,
+          "currency": "PHP"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "pokerstars-manila-calendar"
+        ]
+      }
+    ],
+    "previousEditionId": "manila-megastack-25-2026"
   }
 ]

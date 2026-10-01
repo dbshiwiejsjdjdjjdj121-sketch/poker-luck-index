@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected official dated starts are verified through October 29, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
+      "text": "Selected official dated starts are verified through October 30, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
       "endDate": null,
       "slots": [
         {
@@ -838,6 +838,14 @@
           "label": "Gino's NY Pizza Bar",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-30-1900",
+          "label": "Neighbor’s Pub",
+          "date": "2026-10-30",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -884,8 +892,8 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
-    "updatedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:19:00Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
@@ -924,7 +932,7 @@
       "details": "The organizer advertises local prizes and routes to league championships. Check the venue’s current prize terms; a championship prize is not a guaranteed reward at an ordinary league game."
     },
     "schedule": {
-      "text": "Selected official league starts are verified for September 30–October 3, 2026 in Pennsylvania and New Jersey. Times are local to each venue. The separate qualified championship is not an open-entry free league game; use the official calendar for last-minute changes.",
+      "text": "Selected official league starts are verified for October 1–6, 2026 in Pennsylvania and New Jersey. Times are local to each venue. The separate qualified championship is not an open-entry free league game; use the official calendar for last-minute changes.",
       "timezone": "America/New_York",
       "endDate": null,
       "slots": [
@@ -1303,6 +1311,14 @@
           "label": "Root Cellar Tavern — Dorothy, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
+        },
+        {
+          "id": "2026-10-06-1900-5-west-palmyra-nj",
+          "label": "5 West — Palmyra, NJ",
+          "date": "2026-10-06",
+          "time": "19:00",
+          "timezone": "America/New_York",
+          "sourceId": "riverchasers-bpo"
         }
       ]
     },
@@ -1341,8 +1357,8 @@
       "riverchasers-bpo",
       "riverchasers-season40"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
-    "updatedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:19:00Z",
     "reviewNote": null
   },
   {
@@ -1437,7 +1453,7 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   },
@@ -1531,7 +1547,7 @@
       "wtp-live-complete-rules",
       "wtp-live-regions"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   },
@@ -1671,9 +1687,9 @@
       "wfp-nj-faq",
       "wfp-nj-scoring"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
-    "updatedAt": "2026-09-30T05:20:09Z",
-    "reviewNote": null
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:19:00Z",
+    "reviewNote": "The current notice and timetable put the Winners voucher final on October 4, but a lower paragraph still headed September gives October 18. We retain the previously confirmed October 4 listing; ask the organizer to confirm before travelling."
   },
   {
     "id": "ggpoker-uk-freerolls",
@@ -1748,7 +1764,7 @@
       "gg-uk-weekly-freeroll",
       "gg-uk-house-rules"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": null
   },
@@ -1818,8 +1834,80 @@
       "redtooth-tavern-online",
       "redtooth-tavern-terms"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
+    "checkedAt": "2026-10-01T05:19:00Z",
     "updatedAt": "2026-09-30T05:20:09Z",
+    "reviewNote": null
+  },
+  {
+    "id": "maverick-poker-league-michigan",
+    "slug": "maverick-poker-league-michigan",
+    "title": "Maverick Poker League: free live poker in Michigan",
+    "brand": "Maverick Poker League",
+    "description": "Free-entry live poker at Michigan venues in Lapeer, Burton, Flint and Metamora. Players earn tokens toward prizes, merchandise and tournament entries; regular league games and qualified championships have different entry conditions.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Michigan, United States",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "MI"
+      ],
+      "note": "In-person league venues only; this is not a statewide online poker offer."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "not-required",
+      "password": "not-required",
+      "requirements": [
+        "Age 21 or older.",
+        "Register your name, phone number and email once to be eligible for prizes.",
+        "A game needs at least six players; prizes require at least eight. Qualified championship events have separate conditions."
+      ],
+      "costNote": "The FAQ states no buy-ins or entry fees. Dealer tips are optional. Venue purchases are separate; outside food and drinks are prohibited."
+    },
+    "reward": {
+      "label": "Tokens, prizes and tournament entries",
+      "details": "Tokens can be redeemed for merchandise, prizes or entries to casino and charity tournaments. This is not a promise of cash winnings at every league game."
+    },
+    "schedule": {
+      "text": "Recurring first starts: Mayfield Tavern and Trapper Joe’s on Tuesday at 6 pm; Timothy’s Pub on Wednesday at 6 pm; BJ’s Bar on Thursday at 6 pm; Cascaddan Lounge on Saturday at 3 pm. Later games have approximate starts. Check the official timetable and venue notices before travelling.",
+      "timezone": "America/Detroit",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Where can I play?",
+        "text": "The official directory lists Mayfield Tavern in Lapeer, BJ’s Bar and Trapper Joe’s in Burton, Timothy’s Pub in Flint, and Cascaddan Lounge in Metamora."
+      },
+      {
+        "title": "Is every championship open to a new player?",
+        "text": "Regular league entry and qualified finals are separate. Check the organizer’s eligibility rules for the championship you want to attend."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official free-entry FAQ",
+        "url": "https://maverickpokerleague.com/faq/",
+        "kind": "explanation",
+        "sourceId": "maverick-mi-faq"
+      },
+      {
+        "label": "Official venues, weekly timetable and league rules",
+        "url": "https://maverickpokerleague.com/locations",
+        "kind": "schedule",
+        "sourceId": "maverick-mi-locations"
+      }
+    ],
+    "sourceIds": [
+      "maverick-mi-faq",
+      "maverick-mi-locations"
+    ],
+    "checkedAt": "2026-10-01T05:19:00Z",
+    "updatedAt": "2026-10-01T05:19:00Z",
     "reviewNote": null
   }
 ]
