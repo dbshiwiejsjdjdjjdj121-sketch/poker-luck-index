@@ -224,7 +224,7 @@
     "city": "St. Julian’s",
     "slug": "st-julians",
     "region": "Europe",
-    "intro": "Use Casino Malta as the starting point for your St. Julian’s tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "intro": "St. Julian’s hosts events at different venues: WSOP Circuit uses Casino Malta, while the APAT Malta Open is at Portomaso Casino. Match the venue on your festival page before choosing accommodation or planning your arrival.",
     "airport": {
       "title": "Malta International (MLA)",
       "detail": "An airport option to compare for your trip to St. Julian’s. Use the operator’s passenger information for ground transport and current arrival guidance; transfer times depend on the route and traffic.",
@@ -235,15 +235,15 @@
     "hotels": [
       {
         "title": "Casino Malta visitor information",
-        "detail": "Start with the official venue’s accommodation or visitor information. Compare the full room cost, cancellation terms and the journey to the tournament room before reserving. No live rates are quoted.",
+        "detail": "This visitor link is for Casino Malta. APAT plays at Portomaso, so compare the journey to your actual tournament venue before booking. No confirmed APAT hotel offer or live room price is listed here.",
         "url": "https://casinomalta.com.mt/",
         "sourceId": "malta-venue"
       }
     ],
     "dining": [
       {
-        "title": "Food at the venue",
-        "detail": "Use the official venue directory to check available dining. Confirm service hours for your tournament days, especially if play finishes late.",
+        "title": "Casino Malta bar information",
+        "detail": "Casino Malta lists bar service on its official site. This is a different venue from Portomaso, which hosts APAT; confirm food options and service hours with your own tournament venue.",
         "url": "https://casinomalta.com.mt/",
         "sourceId": "malta-venue"
       }
@@ -252,7 +252,7 @@
       "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
       "sourceIds": []
     },
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-10-02T05:22:15Z",
     "indexable": false
   },
   {

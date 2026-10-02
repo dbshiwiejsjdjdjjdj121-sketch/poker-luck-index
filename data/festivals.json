@@ -786,7 +786,7 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -949,7 +949,7 @@
     "sourceIds": [
       "malta-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1134,7 +1134,7 @@
     "sourceIds": [
       "calgary-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1277,7 +1277,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1450,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1630,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -2102,7 +2102,7 @@
       "lodge-schedule",
       "lodge-2026-details"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": null,
     "changes": [
@@ -2205,7 +2205,7 @@
     "sourceIds": [
       "cyprus-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-24T05:12:01Z",
     "reviewNote": "The organizer lists different fee splits for regular and speed Championship flights although both total USD 1,100. The fee field remains unconfirmed; check your flight’s official breakdown.",
     "changes": [
@@ -2889,7 +2889,7 @@
     "sourceIds": [
       "aix-schedule"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -3020,7 +3020,7 @@
       "jeju-info",
       "apt-app"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-06T18:27:47.540764+00:00",
     "reviewNote": null,
     "changes": [
@@ -4199,7 +4199,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4328,7 +4328,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4468,7 +4468,7 @@
     "sourceIds": [
       "durant-2026-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -4652,7 +4652,7 @@
     "sourceIds": [
       "toledo-2026-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -5991,7 +5991,7 @@
       "wpt-seoul-2026-schedule",
       "wpt-seoul-2026-announcement"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6064,7 +6064,7 @@
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -6451,7 +6451,7 @@
     "registration": null,
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-10-01T05:21:28Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -6667,7 +6667,7 @@
     "registration": "Players must be 18 or older and bring a valid passport or EU citizen ID card. The organizer lists on-site cash, card and wire-transfer buy-ins; confirm the procedure and restrictions before sending funds.",
     "reviewNote": null,
     "scheduleCoverage": "Selected highlights for comparing a trip. Use the official entry points below for the full programme, all flights and current registration rules.",
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -7280,7 +7280,7 @@
     "registration": "BSOP lists event-cashier and GameID registration. Confirm the published tournament programme before choosing an entry or booking a satellite package.",
     "reviewNote": null,
     "scheduleCoverage": "The organizer has not yet published the full tournament schedule. Buy-ins, guarantees and starting days remain unconfirmed.",
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-09T05:17:08.345Z",
     "changes": [
       {
@@ -8459,13 +8459,17 @@
       "venetian-poker-room",
       "venetian-poker-rates-2026"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
-    "updatedAt": "2026-09-21T05:14:39Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-21T05:14:39Z",
         "text": "Added the official festival dates, selected lower-buy-in highlights, entry conditions and Las Vegas planning links."
+      },
+      {
+        "date": "2026-10-02T05:22:15Z",
+        "text": "Added the remaining October 2 entry flight for the selected USD 250 event."
       }
     ],
     "tournaments": [
@@ -8502,6 +8506,13 @@
             "id": "event-3-1b",
             "label": "Day 1B",
             "date": "2026-09-30",
+            "time": "11:10",
+            "kind": "entry"
+          },
+          {
+            "id": "event-3-1f",
+            "label": "Day 1F",
+            "date": "2026-10-02",
             "time": "11:10",
             "kind": "entry"
           },
@@ -8592,7 +8603,7 @@
       "gukpt-2026-calendar",
       "leeds-westgate"
     ],
-    "checkedAt": "2026-10-01T05:21:28Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-22T05:14:42Z",
     "reviewNote": "The official table labels Main Event Day 1C as turbo but also gives 60-minute levels. That flight’s structure is not reproduced here.",
     "changes": [
@@ -8921,7 +8932,7 @@
       "gukpt-2026-calendar",
       "london-victoria"
     ],
-    "checkedAt": "2026-09-23T05:27:46Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null,
     "changes": [
@@ -9260,7 +9271,7 @@
       "apat-bcoap-2026-schedule",
       "apat-2026-calendar"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": "The October 22 flight has inconsistent Day 1 labels. Satellite ticket wording says UKCOAP; confirm ticket use with APAT.",
     "dateNote": null,
@@ -9392,7 +9403,7 @@
       "bicycle-bpo-2026-kickoff",
       "bicycle-bpo-2026-pwc"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": null,
     "dateNote": null,
@@ -9577,7 +9588,7 @@
       "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool"
     },
     "status": "scheduled",
-    "description": "A Blackpool weekend with a GBP 140 main event and a GBP 70 Sunday side event. Three main-event flights feed into Sunday’s final; compare the slower daytime flights with Saturday’s turbo before arranging your stay.",
+    "description": "A Blackpool weekend with a GBP 140 main event and a GBP 70 Sunday side event. Three main-event flights feed into Sunday’s final; compare the 25-minute opening flights with Saturday evening’s 15-minute turbo before arranging your stay.",
     "registration": "Pre-register at a Grosvenor casino hosting live poker, or visit the poker-room desk on the day. Grosvenor membership and photo ID are required. Full events use an alternates list.",
     "registrationUrl": "https://www.apat.com/apat-blackpool-9-11-oct-2026/",
     "scheduleUrl": "https://www.apat.com/apat-blackpool-9-11-oct-2026/",
@@ -9586,13 +9597,17 @@
       "apat-blackpool-2026-schedule",
       "apat-2026-calendar"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
-    "updatedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-10-01T05:19:00Z",
         "text": "Added confirmed festival dates, selected buy-ins and entry rules."
+      },
+      {
+        "date": "2026-10-02T05:22:15Z",
+        "text": "Clarified the opening-flight structures; Friday starts in the evening."
       }
     ],
     "tournaments": [
@@ -9876,5 +9891,127 @@
       }
     ],
     "previousEditionId": "manila-megastack-25-2026"
+  },
+  {
+    "id": "apat-malta-october-2026",
+    "slug": "apat-malta-october-2026",
+    "name": "APAT Malta Open Championship October 2026",
+    "tour": "APAT",
+    "destinationId": "malta/st-julians",
+    "startDate": "2026-10-30",
+    "endDate": "2026-11-01",
+    "dateNote": "These dates cover the APAT championship, not the entire Malta Poker Festival.",
+    "timezone": "Europe/Malta",
+    "venue": {
+      "name": "Portomaso Casino",
+      "address": null,
+      "url": null
+    },
+    "status": "scheduled",
+    "description": "A EUR 150 APAT championship at Portomaso Casino in St. Julian’s, with Friday and Saturday entry flights and a Sunday final. Compare the entry rules below, then use APAT’s official event page for the latest instructions.",
+    "registration": "Register at the Portomaso MPF desk. Casino membership and photo ID are required; sold-out events use an alternates list.",
+    "registrationUrl": "https://www.apat.com/apat-malta-championship-oct-2026/",
+    "scheduleUrl": "https://www.apat.com/apat-malta-championship-oct-2026/",
+    "scheduleCoverage": "Selected championship stages only. The broader Malta Poker Festival is separate.",
+    "sourceIds": [
+      "apat-malta-oct-2026-schedule",
+      "apat-2026-calendar"
+    ],
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
+    "reviewNote": "Day 1A has conflicting official clocks: the event page says 15 minutes; the annual calendar says 20. Confirm that flight’s structure with APAT.",
+    "changes": [
+      {
+        "date": "2026-10-02T05:22:15Z",
+        "text": "Added confirmed dates, buy-in and official entry information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "name": "APAT Malta Open Championship",
+        "number": "Main",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 150,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": "100,000",
+        "levels": "Day 1A: awaiting clarification. Day 1B: 25 minutes. Day 2: 40, reducing to 20 four-handed.",
+        "reentry": "One re-entry per flight; the highest qualifying stack continues.",
+        "lateRegistration": "Ten levels on Day 1.",
+        "endDate": "2026-11-01",
+        "sessions": [
+          {
+            "id": "day1a",
+            "label": "Day 1A",
+            "date": "2026-10-30",
+            "time": "21:00",
+            "kind": "entry"
+          },
+          {
+            "id": "day1b",
+            "label": "Day 1B",
+            "date": "2026-10-31",
+            "time": "15:00",
+            "kind": "entry"
+          },
+          {
+            "id": "day2",
+            "label": "Day 2 / final",
+            "date": "2026-11-01",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "apat-malta-oct-2026-schedule",
+          "apat-2026-calendar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "venetian-dse-iv-2026",
+    "slug": "venetian-deepstack-extravaganza-iv-2026",
+    "name": "Venetian DeepStack Extravaganza IV 2026",
+    "tour": "Venetian Poker",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-11-16",
+    "endDate": "2026-12-23",
+    "dateNote": null,
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "The Venetian Resort — The Palazzo Poker Room",
+      "address": null,
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html"
+    },
+    "status": "scheduled",
+    "description": "The Venetian has confirmed November 16–December 23 for DeepStack Extravaganza IV in Las Vegas. Tournament buy-ins and individual starts are still pending. Use this date overview to compare your travel window; check the official calendar before committing to a particular event.",
+    "registration": "Registration instructions for this series have not yet been published. Check the official calendar for the tournament programme and entry requirements.",
+    "registrationUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "scheduleUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "scheduleCoverage": "Festival dates only. The organizer says more details are coming; no main event, buy-in range or guarantee is assumed.",
+    "sourceIds": [
+      "venetian-deepstack-calendar",
+      "venetian-poker-room"
+    ],
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-02T05:22:15Z",
+        "text": "Added the confirmed festival dates and venue; tournament details remain pending."
+      }
+    ],
+    "tournaments": []
   }
 ]

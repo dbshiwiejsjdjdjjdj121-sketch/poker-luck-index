@@ -65,7 +65,7 @@
       "freeroll-stars-fr",
       "freeroll-stars-help"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -135,7 +135,7 @@
       "freeroll-party-offer",
       "freeroll-party-help"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -205,7 +205,7 @@
       "freeroll-888-offer",
       "freeroll-888-terms"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-16T03:54:20Z",
     "reviewNote": null
   },
@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected official dated starts are verified through October 30, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
+      "text": "Selected official dated starts are verified through October 31, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
       "endDate": null,
       "slots": [
         {
@@ -846,6 +846,22 @@
           "time": "19:00",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-31-1300",
+          "label": "The Independent · turbo",
+          "date": "2026-10-31",
+          "time": "13:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-10-31-1500",
+          "label": "The Independent · turbo",
+          "date": "2026-10-31",
+          "time": "15:00",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -892,8 +908,8 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
-    "updatedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
@@ -1357,7 +1373,7 @@
       "riverchasers-bpo",
       "riverchasers-season40"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-10-01T05:19:00Z",
     "reviewNote": null
   },
@@ -1453,7 +1469,7 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   },
@@ -1547,7 +1563,7 @@
       "wtp-live-complete-rules",
       "wtp-live-regions"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-23T05:27:46Z",
     "reviewNote": null
   },
@@ -1687,7 +1703,7 @@
       "wfp-nj-faq",
       "wfp-nj-scoring"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-10-01T05:19:00Z",
     "reviewNote": "The current notice and timetable put the Winners voucher final on October 4, but a lower paragraph still headed September gives October 18. We retain the previously confirmed October 4 listing; ask the organizer to confirm before travelling."
   },
@@ -1764,7 +1780,7 @@
       "gg-uk-weekly-freeroll",
       "gg-uk-house-rules"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-26T05:15:30Z",
     "reviewNote": null
   },
@@ -1834,7 +1850,7 @@
       "redtooth-tavern-online",
       "redtooth-tavern-terms"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-09-30T05:20:09Z",
     "reviewNote": null
   },
@@ -1906,8 +1922,227 @@
       "maverick-mi-faq",
       "maverick-mi-locations"
     ],
-    "checkedAt": "2026-10-01T05:19:00Z",
+    "checkedAt": "2026-10-02T05:22:15Z",
     "updatedAt": "2026-10-01T05:19:00Z",
     "reviewNote": null
+  },
+  {
+    "id": "not-quite-vegas-florida",
+    "slug": "not-quite-vegas-florida",
+    "title": "Not Quite Vegas: Free Bar Poker in Florida",
+    "brand": "Not Quite Vegas",
+    "description": "Free-entry live Hold’em around Florida’s Space Coast and Treasure Coast. Venue spending can add chips, and league wins qualify players for a separate championship. Check the local venue’s age policy before visiting.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Florida — Brevard and Indian River counties",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "FL"
+      ],
+      "note": "In-person venues around Melbourne, Rockledge, Sebastian and Vero Beach; this is not a statewide online offer."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "not-required",
+      "password": "not-required",
+      "requirements": [
+        "League minimum age is 18; many venues require 21+.",
+        "Ordinary games use first-come seating. Championship entry requires recorded league wins."
+      ],
+      "costNote": "Entry is free and dealer tips are optional. Food, drink and other purchases can earn bonus chips; zero buy-in does not mean everyone receives the same stack."
+    },
+    "reward": {
+      "label": "League wins and championship qualification",
+      "details": "Record wins on the Player Card and bring it to the championship. No fixed nightly cash payout is promised here."
+    },
+    "schedule": {
+      "text": "Use the official site’s venue timetable and notices. No future dated starts have been generated from its recurring schedule.",
+      "timezone": "America/New_York",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Where can I play?",
+        "text": "The league covers Brevard and Indian River counties. Open the official venue directory for a location near you, then confirm the game and the venue’s entry policy."
+      },
+      {
+        "title": "Is it completely free?",
+        "text": "There is no tournament entry fee. The rules award extra chips for certain purchases, so review those conditions before choosing a game."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official league rules",
+        "url": "https://notquitevegas.net/rules",
+        "kind": "rules",
+        "sourceId": "nqv-florida-rules"
+      },
+      {
+        "label": "Official timetable, venues and notices",
+        "url": "https://notquitevegas.net/",
+        "kind": "schedule",
+        "sourceId": "nqv-florida-home"
+      }
+    ],
+    "sourceIds": [
+      "nqv-florida-rules",
+      "nqv-florida-home"
+    ],
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
+    "reviewNote": null
+  },
+  {
+    "id": "straight-flush-minnesota",
+    "slug": "straight-flush-minnesota",
+    "title": "Straight Flush: Free Bar Poker in Minnesota",
+    "brand": "Straight Flush Entertainment",
+    "description": "Free live Texas Hold’em at participating Minnesota bars, with no purchase required by league rules. Compare selected dated starts, venue age policies and championship prize conditions before attending.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Minnesota — participating Twin Cities venues",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "MN"
+      ],
+      "note": "A local live league; availability depends on the named Minnesota venue, not US-wide online access."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "not-required",
+      "password": "not-required",
+      "requirements": [
+        "Players must be 18+ and meet the venue’s admission policy.",
+        "Sign the registration sheet at the venue; championship qualification is separate."
+      ],
+      "costNote": "League rules say no purchase is necessary. Food and drink are separate personal expenses."
+    },
+    "reward": {
+      "label": "League standings and championship opportunities",
+      "details": "Championship rewards vary. Noncash grand prizes require age 21; the rules describe a reduced cash alternative for younger eligible winners. No guaranteed cash prize per weekly game is listed here."
+    },
+    "schedule": {
+      "text": "Selected starts explicitly listed on the official October 2026 calendar. Check organizer notices before travelling. The Dog House game on October 4 is excluded because a newer notice says it will not run.",
+      "timezone": "America/Chicago",
+      "endDate": null,
+      "slots": [
+        {
+          "id": "straight-flush-2026-10-02-0",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-02",
+          "time": "20:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-03-1",
+          "label": "MC’s Pub",
+          "date": "2026-10-03",
+          "time": "15:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-04-2",
+          "label": "MC’s Pub",
+          "date": "2026-10-04",
+          "time": "16:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-05-3",
+          "label": "Chanhassen Legion Post 580",
+          "date": "2026-10-05",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-05-4",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-05",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-06-5",
+          "label": "Jersey’s Bar & Grill",
+          "date": "2026-10-06",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-06-6",
+          "label": "Muddy Chicken",
+          "date": "2026-10-06",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-07-7",
+          "label": "Mad Jacks Sports Cafe",
+          "date": "2026-10-07",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-07-8",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-07",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "How do I join a weekly game?",
+        "text": "Sign in at the venue. The rules allow late arrivals only through the first break and require their chips to be set out and blinded."
+      },
+      {
+        "title": "Where are the games?",
+        "text": "The organizer lists Scratch Pizzeria, MC’s Pub, Chanhassen Legion, Jersey’s, Muddy Chicken and Mad Jacks among its venues. Use its location links for addresses."
+      },
+      {
+        "title": "What about the October 4 Dog House listing?",
+        "text": "An organizer notice cancels that game despite its calendar entry. Other venue starts are listed below; confirm any last-minute changes with the host."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official league rules",
+        "url": "https://sfpokertour.com/rules-play/",
+        "kind": "rules",
+        "sourceId": "straight-flush-mn-rules"
+      },
+      {
+        "label": "Official calendar, locations and notices",
+        "url": "https://sfpokertour.com/",
+        "kind": "schedule",
+        "sourceId": "straight-flush-mn-calendar"
+      }
+    ],
+    "sourceIds": [
+      "straight-flush-mn-rules",
+      "straight-flush-mn-calendar"
+    ],
+    "checkedAt": "2026-10-02T05:22:15Z",
+    "updatedAt": "2026-10-02T05:22:15Z",
+    "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
   }
 ]
