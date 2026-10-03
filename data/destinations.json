@@ -2252,5 +2252,44 @@
       ]
     },
     "updatedAt": "2026-09-30T05:20:09Z"
+  },
+  {
+    "id": "united-kingdom/reading",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "Reading",
+    "slug": "reading",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "APAT Reading is hosted at Grosvenor Casino Reading South on Rose Kiln Lane. Check the South venue when arranging your final journey.",
+    "airport": {
+      "title": "Arrival route pending verification",
+      "detail": "No airport transfer is verified in this guide. Use the venue address to plan your journey before booking.",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/reading-south",
+      "sourceId": "reading-grosvenor-south"
+    },
+    "transport": [
+      {
+        "title": "Venue and parking",
+        "detail": "The venue lists on-site parking at Rose Kiln Lane. Confirm access conditions before travelling.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/reading-south",
+        "sourceId": "reading-grosvenor-south"
+      }
+    ],
+    "hotels": [],
+    "dining": [
+      {
+        "title": "Food and drink at Reading South",
+        "detail": "The casino lists food and drink facilities. Check kitchen service around tournament breaks.",
+        "url": "https://www.grosvenorcasinos.com/local-casinos/reading-south",
+        "sourceId": "reading-grosvenor-south"
+      }
+    ],
+    "tax": {
+      "text": "Event-specific withholding and payout paperwork have not been verified. Ask the organizer and check obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-03T05:10:54Z"
   }
 ]
