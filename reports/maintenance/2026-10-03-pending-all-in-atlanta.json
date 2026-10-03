@@ -1,0 +1,80 @@
+{
+  "status": "verified-not-published",
+  "reason": "Release gate tests/freerolls.test.ts:17 hard-codes exactly one Georgia live guide. Product/test edit is outside daily data-only authority. Re-read source before staging after repair.",
+  "verifiedAt": "2026-10-03T05:10:54Z",
+  "sources": [
+    {
+      "id": "all-in-atlanta-official",
+      "title": "All In Atlanta — weekly games, rules and eligibility",
+      "url": "https://allinatlanta.com/",
+      "kind": "organizer",
+      "checkedAt": "2026-10-03T05:10:54Z"
+    }
+  ],
+  "freerolls": [
+    {
+      "id": "all-in-atlanta-georgia",
+      "slug": "all-in-atlanta-georgia",
+      "title": "All In Atlanta: Free Live Poker in Georgia",
+      "brand": "All In Atlanta",
+      "description": "Zero-buy-in live Hold’em in Atlanta for players aged 21+. Compare optional bonus-chip promotions and venue prizes before attending.",
+      "mode": "live",
+      "status": "published",
+      "market": {
+        "label": "Georgia — Atlanta venues",
+        "countries": [
+          "US"
+        ],
+        "usStates": [
+          "GA"
+        ],
+        "note": "Local venue games, not US-wide online access."
+      },
+      "entry": {
+        "buyIn": 0,
+        "deposit": "not-required",
+        "ticket": "not-required",
+        "password": "unknown",
+        "requirements": [
+          "Players must be 21+ and physically present.",
+          "Check in through Active Games when the host opens registration."
+        ],
+        "costNote": "No purchase is required to enter or win. Optional purchases can earn capped bonus chips during the first five rounds; free alternatives are available."
+      },
+      "reward": {
+        "label": "Venue prizes and league points",
+        "details": "Prizes vary by venue; no fixed cash award is confirmed. Quarterly championships have separate qualification rules."
+      },
+      "schedule": {
+        "text": "The organizer advertises Monday and Thursday at Wicked Wolf, and Wednesday at 5 Paces, at 8pm Atlanta time. Confirm operation before travelling; no dated starts are published here.",
+        "timezone": "America/New_York",
+        "endDate": null,
+        "slots": []
+      },
+      "sections": [
+        {
+          "title": "Can I play without buying anything?",
+          "text": "Yes. A free starting stack and non-purchase bonus-chip options are offered."
+        },
+        {
+          "title": "How do I check the next game?",
+          "text": "Open the official Active Games section. Check-in opens when the host starts the game."
+        }
+      ],
+      "officialLinks": [
+        {
+          "label": "Official games and league rules",
+          "url": "https://allinatlanta.com/",
+          "kind": "explanation",
+          "sourceId": "all-in-atlanta-official"
+        }
+      ],
+      "sourceIds": [
+        "all-in-atlanta-official"
+      ],
+      "checkedAt": "2026-10-03T05:10:54Z",
+      "updatedAt": "2026-10-03T05:10:54Z",
+      "reviewNote": null
+    }
+  ]
+}
