@@ -38,3 +38,18 @@ export function filterFreerolls(items: Freeroll[], filters: FreerollFilters, now
   });
 }
 export const entryLabel = (f: Freeroll) => f.entry.deposit === "not-required" ? "No deposit required" : f.entry.deposit === "required" ? "Deposit condition" : "Other costs / conditions";
+
+const stateNames: Record<string,string> = {CO:"Colorado",DE:"Delaware",FL:"Florida",GA:"Georgia",IL:"Illinois",IN:"Indiana",MD:"Maryland",MI:"Michigan",MN:"Minnesota",NE:"Nebraska",NV:"Nevada",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",PA:"Pennsylvania",SD:"South Dakota",TN:"Tennessee",TX:"Texas",VA:"Virginia",WI:"Wisconsin"};
+export function listedStates(items: Freeroll[], now = new Date()) {
+  return [...new Set(filterFreerolls(items,{country:"US"},now).flatMap(f=>f.market.usStates))]
+    .map(code=>({code,name:stateNames[code] || code})).sort((a,b)=>a.name.localeCompare(b.name));
+}
+export function featuredFreerolls(items: Freeroll[], country: "US"|"GB", now = new Date()) {
+  const priority = country === "US" ? ["straight-flush-minnesota","free-poker-network-live","maverick-poker-league-michigan"] : ["ggpoker-uk-freerolls","redtooth-tavern-uk"];
+  const rank=(f:Freeroll)=>{const index=priority.indexOf(f.id);return index<0?priority.length:index;};
+  return filterFreerolls(items,{country},now).sort((a,b)=>rank(a)-rank(b)||a.title.localeCompare(b.title)).slice(0,country==="US"?3:2);
+}
+export function relatedFreerolls(items: Freeroll[], current: Freeroll, now = new Date()) {
+  return filterFreerolls(items,{},now).filter(f=>f.id!==current.id && f.market.countries.some(c=>current.market.countries.includes(c)) &&
+    (!current.market.countries.includes("US") || f.market.usStates.some(s=>current.market.usStates.includes(s)))).slice(0,3);
+}

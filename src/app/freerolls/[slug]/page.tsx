@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { freerolls,freerollBySlug } from "@/lib/freeroll-data";
-import { availableSlots,entryLabel,freerollEnded,freerollStale } from "@/lib/freerolls";
+import { availableSlots,entryLabel,freerollEnded,freerollStale,relatedFreerolls } from "@/lib/freerolls";
 import { pageMeta,SITE_URL } from "@/lib/site";
 import { formatDate,serializeJsonLd } from "@/lib/guide-utils";
 import { festivalBreadcrumbs } from "@/lib/festival-seo";
@@ -13,7 +13,7 @@ const conditionLabels: Record<string,string> = {required:"Required", "not-requir
 export async function generateMetadata({params}:Props){const f=freerollBySlug((await params).slug);return f?pageMeta(f.title,f.description,"/freerolls/"+f.slug):{};}
 export default async function FreerollGuide({params}:Props){
  const f=freerollBySlug((await params).slug);if(!f)notFound();
- const stale=freerollStale(f),ended=freerollEnded(f),slots=availableSlots(f);const crumbs=[{label:"Freerolls",href:"/freerolls"},{label:f.title}];
+ const stale=freerollStale(f),ended=freerollEnded(f),slots=availableSlots(f),related=relatedFreerolls(freerolls,f);const crumbs=[{label:"Freerolls",href:"/freerolls"},{label:f.title}];
  return <main id="main" className="container page fr-detail"><Breadcrumbs items={crumbs}/><header className="fr-heading"><p className="eyebrow">{f.mode === "online" ? "ONLINE PROGRAM" : "LIVE / LOCAL LEAGUE"} · {f.brand}</p><h1>{f.title}</h1><p className="lead">{f.description}</p><p className="muted">Independent guide by <Link href="/about">ALL IN Poker Guide</Link> · Information updated {formatDate(f.updatedAt.slice(0,10),true)}</p></header>
  {(ended||f.status!=="published"||stale)&&<p className="notice" role="status">{ended?"This program has ended. Details below are historical.":f.status!=="published"?"This listing is paused while availability is reviewed.":"Recheck due: the last successful source check is more than 48 hours old. Confirm current availability with the organizer; dated starts are withheld until rechecked."}</p>}
  <nav className="anchor-nav fr-detail-nav" aria-label="On this freeroll guide"><a href="#entry">Entry conditions</a><a href="#eligibility">Eligible regions</a><a href="#rewards">Prizes</a><a href="#schedule">Starts</a><a href="#official">Official links</a></nav>
@@ -24,6 +24,7 @@ export default async function FreerollGuide({params}:Props){
  {f.reviewNote&&<p className="notice">Source discrepancy: {f.reviewNote}</p>}
  {f.sections.map(s=><section className="fr-block" key={s.title}><h2>{s.title}</h2><p>{s.text}</p></section>)}</div>
  <aside className="fr-side"><p className="eyebrow">SOURCE CHECK</p><strong>{formatDate(f.checkedAt.slice(0,10),true)}</strong><p>{stale?"Recheck due":"Successfully read official information"}</p><p>This guide summarizes an organizer’s program. Read the linked conditions for your account and location.</p><a href="#official" className="button button-outline">Official information ↓</a><Link className="text-link" href="/freerolls">Compare freeroll guides ↗</Link><Link className="text-link" href="/tournaments">Explore live festivals ↗</Link></aside></div>
+ <section className="fr-block fr-related"><p className="eyebrow">COMPARE BEFORE YOU CHOOSE</p><h2>Other guides for your region</h2><p>Compare each program’s location, membership and entry rules separately. These guides do not guarantee a place or matching eligibility.</p><div className="fr-quick-links">{f.market.countries.filter(c=>c==="US"||c==="GB").map(c=><Link key={c} href={`/freerolls?country=${c}`}>{c==="US"?"Compare US live poker":"Compare UK freeroll programs"} ↗</Link>)}{f.market.usStates.map(state=><Link key={state} href={`/freerolls?country=US&state=${state}`}>More guides in {state} ↗</Link>)}</div>{related.length>0&&<ul className="fr-market-comparison">{related.map(g=><li key={g.id}><Link href={`/freerolls/${g.slug}`}>{g.title} ↗</Link><p>{g.entry.costNote}</p><small>Reward: {g.reward.label}</small></li>)}</ul>}</section>
  <section id="official" className="fr-official"><p className="eyebrow">CONTINUE WITH THE ORGANIZER</p><h2>Official rules & how to enter</h2><p>Use the organizer’s official rules, explanation or calendar below to confirm eligibility and the next available game. Follow its instructions to enter through the official website, app or venue; ALL IN Poker Guide does not take registrations.</p><div className="fr-official-links">{f.officialLinks.map(l=><ExternalLink key={l.url} href={l.url} className="button button-outline">{l.label}</ExternalLink>)}</div><SourceList ids={f.sourceIds}/></section>
  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeJsonLd({"@context":"https://schema.org","@type":"WebPage",name:f.title,description:f.description,url:SITE_URL+"/freerolls/"+f.slug,dateModified:f.updatedAt,inLanguage:"en",about:{"@type":"Thing",name:f.brand},author:{"@type":"Organization",name:"ALL IN Poker Guide",url:SITE_URL+"/about"}})}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeJsonLd(festivalBreadcrumbs(crumbs))}}/>
  </main>;

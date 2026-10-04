@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import type { Freeroll,Source } from "../src/lib/guide-types";
 import { validateFreerolls } from "../src/lib/validate-guide";
-import { filterFreerolls,availableSlots,freerollStale,freerollEnded } from "../src/lib/freerolls";
+import { filterFreerolls,availableSlots,freerollStale,freerollEnded,listedStates,featuredFreerolls,relatedFreerolls } from "../src/lib/freerolls";
 import { stageFreerolls } from "../src/lib/stage-freerolls";
 const items=JSON.parse(readFileSync("data/freerolls.json","utf8")) as Freeroll[];
 const sources=JSON.parse(readFileSync("data/sources.json","utf8")) as Source[];
@@ -13,9 +13,24 @@ test("source-backed freeroll catalog is valid; paid and unknown eligibility neve
  assert.deepEqual(validateFreerolls(items,sources,new Date()),[]);
  const free=fixture(),paid={...fixture(),id:"paid",entry:{...fixture().entry,deposit:"required" as const}},unknown={...fixture(),id:"unknown",entry:{...fixture().entry,deposit:"unknown" as const}};
  assert.deepEqual(filterFreerolls([free,paid,unknown],{entry:"no-deposit"},now).map(f=>f.id),[free.id]);
- assert.equal(filterFreerolls(items,{country:"US",mode:"online"},now).length,0);
- assert.equal(filterFreerolls(items,{country:"US",state:"GA",mode:"live"},now).length,1);
- assert.equal(filterFreerolls(items,{state:"CA"},now).length,0);
+ const georgia={...fixture(),id:"georgia",mode:"live" as const,market:{label:"Georgia",countries:["US"],usStates:["GA"],note:"Local venues"}};
+ const minnesota={...structuredClone(georgia),id:"minnesota",market:{...georgia.market,usStates:["MN"]}};
+ const uk={...fixture(),id:"uk",mode:"online" as const,market:{label:"UK",countries:["GB"],usStates:[],note:"Eligible accounts"}};
+ assert.deepEqual(filterFreerolls([georgia,minnesota,uk],{country:"US",state:"GA",mode:"live"},now).map(f=>f.id),["georgia"]);
+ assert.equal(filterFreerolls([georgia,minnesota,uk],{country:"US",mode:"online"},now).length,0);
+ assert.equal(filterFreerolls([georgia,minnesota,uk],{state:"CA"},now).length,0);
+});
+test("market discovery follows live coverage and excludes wrong-country, paused and ended guides",()=>{
+ const mn={...fixture(),id:"straight-flush-minnesota",market:{label:"Minnesota",countries:["US"],usStates:["MN"],note:"Local"}};
+ const nj={...structuredClone(mn),id:"nj",market:{...mn.market,usStates:["NJ","MN"]}};
+ const ended={...structuredClone(mn),id:"ended",status:"ended" as const,market:{...mn.market,usStates:["CA"]}};
+ const paused={...structuredClone(mn),id:"paused",status:"paused" as const,market:{...mn.market,usStates:["GA"]}};
+ const uk={...fixture(),id:"ggpoker-uk-freerolls",market:{label:"UK",countries:["GB"],usStates:[],note:"UK accounts"}};
+ const catalog=[uk,mn,nj,ended,paused];
+ assert.deepEqual(listedStates(catalog,now),[{code:"MN",name:"Minnesota"},{code:"NJ",name:"New Jersey"}]);
+ assert.deepEqual(featuredFreerolls(catalog,"GB",now).map(f=>f.id),[uk.id]);
+ assert.ok(featuredFreerolls(catalog,"US",now).every(f=>f.market.countries.includes("US")&&f.status==="published"));
+ assert.deepEqual(relatedFreerolls(catalog,mn,now).map(f=>f.id),[nj.id]);
 });
 test("local date windows cross months and daylight saving; unknown time remains date-only",()=>{
  const f=fixture();f.checkedAt="2026-10-31T10:00:00Z";

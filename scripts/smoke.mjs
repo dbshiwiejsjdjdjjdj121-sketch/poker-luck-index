@@ -83,6 +83,18 @@ assert.match(freeEmpty.html,/No verified matches/);assert.match(freeEmpty.html,/
 const noDeposit=await get("/freerolls?entry=no-deposit");
 assert.ok(noDeposit.html.includes('href="/freerolls/pokerstars-freerolls"'));
 assert.ok(!noDeposit.html.includes('href="/freerolls/888poker-freerolls"'));
+const marketHome=await get("/");
+assert.ok(marketHome.html.includes('id="united-states"')&&marketHome.html.includes('id="united-kingdom"'));
+assert.ok(marketHome.html.includes('href="/freerolls/straight-flush-minnesota"'));
+assert.ok(marketHome.html.includes('href="/freerolls/ggpoker-uk-freerolls"'));
+const freeDirectory=await get("/freerolls");
+for(const state of new Set(freerolls.filter(f=>f.status==="published"&&(!f.schedule.endDate||f.schedule.endDate>=new Intl.DateTimeFormat("en-CA",{timeZone:f.schedule.timezone||"Etc/UTC",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date()))&&f.market.countries.includes("US")).flatMap(f=>f.market.usStates)))assert.ok(freeDirectory.html.includes(`value="${state}"`),"state option "+state);
+const minnesota=await get("/freerolls?country=US&state=MN");
+assert.ok(minnesota.html.includes('href="/freerolls/straight-flush-minnesota"'));
+assert.ok(!minnesota.html.includes('href="/freerolls/freeroll-atlanta"'));
+const ukMarket=await get("/freerolls?country=GB");
+assert.ok(ukMarket.html.includes('href="/freerolls/ggpoker-uk-freerolls"'));
+assert.ok(!ukMarket.html.includes('href="/freerolls/pokerstars-freerolls"'));
 const sitemap=(await get("/sitemap.xml")).html;
 for(const f of freerolls)assert.ok(sitemap.includes("/freerolls/"+f.slug));
 assert.ok(!sitemap.includes("/freerolls?"));
