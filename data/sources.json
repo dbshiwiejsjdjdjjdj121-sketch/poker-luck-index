@@ -1,203 +1,203 @@
 [
   {
     "id": "virginia-schedule",
-    "title": "WSOP Circuit Caesars Virginia 2026 \u2014 official event page",
+    "title": "WSOP Circuit Caesars Virginia 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-virginia/",
     "kind": "schedule",
     "checkedAt": "2026-09-13T06:27:30Z"
   },
   {
     "id": "virginia-airport",
-    "title": "Piedmont Triad International (GSO) \u2014 official airport",
+    "title": "Piedmont Triad International (GSO) — official airport",
     "url": "https://flyfrompti.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "us-tax",
-    "title": "IRS Publication 515 \u2014 nonresident withholding",
+    "title": "IRS Publication 515 — nonresident withholding",
     "url": "https://www.irs.gov/publications/p515",
     "kind": "tax",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "liechtenstein-schedule",
-    "title": "WSOP Circuit Grand Casino Liechtenstein 2026 \u2014 official event page",
+    "title": "WSOP Circuit Grand Casino Liechtenstein 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-casino-liechtenstein/",
     "kind": "schedule",
     "checkedAt": "2026-09-22T05:14:42Z"
   },
   {
     "id": "liechtenstein-airport",
-    "title": "Zurich Airport (ZRH) \u2014 official airport",
+    "title": "Zurich Airport (ZRH) — official airport",
     "url": "https://www.flughafen-zuerich.ch/en/passengers",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "austin-schedule",
-    "title": "WSOP Circuit Texas Card House 2026 \u2014 official event page",
+    "title": "WSOP Circuit Texas Card House 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-texas-card-house/",
     "kind": "schedule",
     "checkedAt": "2026-09-21T05:14:39Z"
   },
   {
     "id": "austin-airport",
-    "title": "Austin-Bergstrom International (AUS) \u2014 official airport",
+    "title": "Austin-Bergstrom International (AUS) — official airport",
     "url": "https://www.flyaustin.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "austin-venue",
-    "title": "Texas Card House \u2014 official visitor information",
+    "title": "Texas Card House — official visitor information",
     "url": "https://www.texascardhouse.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "council-bluffs-schedule",
-    "title": "WSOP Circuit Horseshoe Council Bluffs 2026 \u2014 official event page",
+    "title": "WSOP Circuit Horseshoe Council Bluffs 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-council-bluffs/",
     "kind": "schedule",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "council-bluffs-airport",
-    "title": "Omaha Eppley Airfield (OMA) \u2014 official airport",
+    "title": "Omaha Eppley Airfield (OMA) — official airport",
     "url": "https://www.flyoma.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "lincoln-schedule",
-    "title": "WSOP Circuit Thunder Valley Casino Resort 2026 \u2014 official event page",
+    "title": "WSOP Circuit Thunder Valley Casino Resort 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:01.563201Z"
   },
   {
     "id": "lincoln-airport",
-    "title": "Sacramento International (SMF) \u2014 official airport",
+    "title": "Sacramento International (SMF) — official airport",
     "url": "https://flysmf.gov/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "lincoln-venue",
-    "title": "Thunder Valley Casino Resort \u2014 official visitor information",
+    "title": "Thunder Valley Casino Resort — official visitor information",
     "url": "https://www.thundervalleyresort.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "malta-schedule",
-    "title": "WSOP Circuit Casino Malta 2026 \u2014 official event page",
+    "title": "WSOP Circuit Casino Malta 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-malta/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "malta-airport",
-    "title": "Malta International (MLA) \u2014 official airport",
+    "title": "Malta International (MLA) — official airport",
     "url": "https://maltairport.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "malta-venue",
-    "title": "Casino Malta \u2014 official visitor information",
+    "title": "Casino Malta — official visitor information",
     "url": "https://casinomalta.com.mt/",
     "kind": "travel",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "calgary-schedule",
-    "title": "WSOP Circuit Deerfoot Inn & Casino 2026 \u2014 official event page",
+    "title": "WSOP Circuit Deerfoot Inn & Casino 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-deerfoot-inn-and-casino-2026/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "calgary-airport",
-    "title": "Calgary International (YYC) \u2014 official airport",
+    "title": "Calgary International (YYC) — official airport",
     "url": "https://www.yyc.com/en-us/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "calgary-venue",
-    "title": "Deerfoot Inn & Casino \u2014 official visitor information",
+    "title": "Deerfoot Inn & Casino — official visitor information",
     "url": "https://deerfootinn.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "pompano-beach-schedule",
-    "title": "WSOP Circuit Harrah\u2019s Pompano Beach 2026 \u2014 official event page",
+    "title": "WSOP Circuit Harrah’s Pompano Beach 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:01.417644Z"
   },
   {
     "id": "pompano-beach-airport",
-    "title": "Fort Lauderdale\u2013Hollywood International (FLL) \u2014 official airport",
+    "title": "Fort Lauderdale–Hollywood International (FLL) — official airport",
     "url": "https://www.broward.org/airport/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "verona-schedule",
-    "title": "WSOP Circuit Turning Stone Resort Casino 2026 \u2014 official event page",
+    "title": "WSOP Circuit Turning Stone Resort Casino 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-turning-stone/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:01.358650Z"
   },
   {
     "id": "verona-airport",
-    "title": "Syracuse Hancock International (SYR) \u2014 official airport",
+    "title": "Syracuse Hancock International (SYR) — official airport",
     "url": "https://syrairport.org/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "verona-venue",
-    "title": "Turning Stone Resort Casino \u2014 official visitor information",
+    "title": "Turning Stone Resort Casino — official visitor information",
     "url": "https://www.turningstone.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "lake-tahoe-schedule",
-    "title": "WSOP Circuit Caesars Republic Lake Tahoe 2026 \u2014 official event page",
+    "title": "WSOP Circuit Caesars Republic Lake Tahoe 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-republic-lake-tahoe/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:01.460454Z"
   },
   {
     "id": "lake-tahoe-airport",
-    "title": "Reno\u2013Tahoe International (RNO) \u2014 official airport",
+    "title": "Reno–Tahoe International (RNO) — official airport",
     "url": "https://www.renoairport.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "paradise-schedule",
-    "title": "WSOP Paradise 2026 \u2014 official event page",
+    "title": "WSOP Paradise 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/2026-wsop-paradise/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "paradise-airport",
-    "title": "Lynden Pindling International (NAS) \u2014 official airport",
+    "title": "Lynden Pindling International (NAS) — official airport",
     "url": "https://nassaulpia.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "paradise-venue",
-    "title": "Baha Mar Resort \u2014 official visitor information",
+    "title": "Baha Mar Resort — official visitor information",
     "url": "https://bahamar.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
@@ -211,133 +211,133 @@
   },
   {
     "id": "sydney-schedule",
-    "title": "WPT Prime Australia Championship 2026 \u2014 official event page",
+    "title": "WPT Prime Australia Championship 2026 — official event page",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-australia-championship-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "sydney-airport",
-    "title": "Sydney Airport (SYD) \u2014 official airport",
+    "title": "Sydney Airport (SYD) — official airport",
     "url": "https://www.sydneyairport.com.au/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "lodge-schedule",
-    "title": "WPT Prime Lodge Championship 2026 \u2014 official event page",
+    "title": "WPT Prime Lodge Championship 2026 — official event page",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "lodge-airport",
-    "title": "Austin-Bergstrom International (AUS) \u2014 official airport",
+    "title": "Austin-Bergstrom International (AUS) — official airport",
     "url": "https://www.flyaustin.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "cyprus-schedule",
-    "title": "WPT Prime Cyprus Championship 2026 \u2014 official event page",
+    "title": "WPT Prime Cyprus Championship 2026 — official event page",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cyprus-championship-season-2026-2",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "san-jose-schedule",
-    "title": "WPT Bay 101 Shooting Star Championship 2026 \u2014 official event page",
+    "title": "WPT Bay 101 Shooting Star Championship 2026 — official event page",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "san-jose-airport",
-    "title": "San Jos\u00e9 Mineta International (SJC) \u2014 official airport",
+    "title": "San José Mineta International (SJC) — official airport",
     "url": "https://www.flysanjose.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "san-jose-venue",
-    "title": "Bay 101 Casino \u2014 official visitor information",
+    "title": "Bay 101 Casino — official visitor information",
     "url": "https://www.bay101.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "las-vegas-schedule",
-    "title": "WPT Venetian Las Vegas Fall Championship 2026 \u2014 official event page",
+    "title": "WPT Venetian Las Vegas Fall Championship 2026 — official event page",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-venetian-las-vegas-fall-championship-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "las-vegas-airport",
-    "title": "Harry Reid International (LAS) \u2014 official airport",
+    "title": "Harry Reid International (LAS) — official airport",
     "url": "https://www.harryreidairport.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "las-vegas-venue",
-    "title": "The Venetian Resort \u2014 official visitor information",
+    "title": "The Venetian Resort — official visitor information",
     "url": "https://www.venetianlasvegas.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "prague-schedule",
-    "title": "EPT Prague 2026 \u2014 official event page",
+    "title": "EPT Prague 2026 — official event page",
     "url": "https://www.pokerstarslive.com/ept/prague/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "prague-airport",
-    "title": "V\u00e1clav Havel Airport Prague (PRG) \u2014 official airport",
+    "title": "Václav Havel Airport Prague (PRG) — official airport",
     "url": "https://www.prg.aero/en",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "prague-venue",
-    "title": "Hilton Prague Atrium \u2014 official visitor information",
+    "title": "Hilton Prague Atrium — official visitor information",
     "url": "https://www.hilton.com/en/hotels/prghitw-hilton-prague-atrium/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "aix-schedule",
-    "title": "PokerStars Open Aix-en-Provence 2026 \u2014 official event page",
+    "title": "PokerStars Open Aix-en-Provence 2026 — official event page",
     "url": "https://www.pokerstarslive.com/pokerstarsopen/aixenprovence/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "aix-airport",
-    "title": "Marseille Provence Airport (MRS) \u2014 official airport",
+    "title": "Marseille Provence Airport (MRS) — official airport",
     "url": "https://www.marseille-airport.com/",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
   },
   {
     "id": "jeju-schedule",
-    "title": "APT Jeju 2026 \u2014 official event page",
+    "title": "APT Jeju 2026 — official event page",
     "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "jeju-info",
-    "title": "APT Jeju 2026 \u2014 organizer travel and entry information",
+    "title": "APT Jeju 2026 — organizer travel and entry information",
     "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "jeju-airport",
-    "title": "Jeju International (CJU) \u2014 official airport",
+    "title": "Jeju International (CJU) — official airport",
     "url": "https://www.airport.co.kr/jejueng/index.do",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
@@ -351,21 +351,21 @@
   },
   {
     "id": "taipei-schedule",
-    "title": "APT Championship Taipei 2026 \u2014 official event page",
+    "title": "APT Championship Taipei 2026 — official event page",
     "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/events",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "taipei-info",
-    "title": "APT Championship Taipei 2026 \u2014 organizer travel and entry information",
+    "title": "APT Championship Taipei 2026 — organizer travel and entry information",
     "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
     "kind": "organizer",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "taipei-venue",
-    "title": "Red Space \u2014 official visitor information",
+    "title": "Red Space — official visitor information",
     "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
     "kind": "travel",
     "checkedAt": "2026-09-06T17:56:10+00:00"
@@ -379,21 +379,21 @@
   },
   {
     "id": "danville-hotel",
-    "title": "Caesars Virginia \u2014 stay at the venue",
+    "title": "Caesars Virginia — stay at the venue",
     "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/overview",
     "checkedAt": "2026-09-06T18:08:39.263494+00:00",
     "kind": "travel"
   },
   {
     "id": "danville-food",
-    "title": "Quick meals and Ramsay\u2019s Kitchen",
+    "title": "Quick meals and Ramsay’s Kitchen",
     "url": "https://www.wyndhamhotels.com/caesars-rewards/danville-virginia/caesars-virginia/dining",
     "checkedAt": "2026-09-06T18:08:39.263494+00:00",
     "kind": "travel"
   },
   {
     "id": "gamprin-hotel",
-    "title": "GC Hotel \u2014 in the casino building",
+    "title": "GC Hotel — in the casino building",
     "url": "https://gchotel.li/en/zimmer/",
     "checkedAt": "2026-09-06T18:08:39.263494+00:00",
     "kind": "travel"
@@ -414,7 +414,7 @@
   },
   {
     "id": "tahoe-hotel",
-    "title": "Caesars Republic Lake Tahoe \u2014 venue hotel",
+    "title": "Caesars Republic Lake Tahoe — venue hotel",
     "url": "https://www.wyndhamhotels.com/caesars-rewards/stateline-nevada/caesars-republic-lake-tahoe/overview",
     "checkedAt": "2026-09-06T18:08:39.263494+00:00",
     "kind": "travel"
@@ -463,469 +463,469 @@
   },
   {
     "id": "playground-super-2026-schedule",
-    "title": "WSOP Super Circuit Canada 2026 \u2014 official event page",
+    "title": "WSOP Super Circuit Canada 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-super-circuit-canada/",
     "kind": "schedule",
     "checkedAt": "2026-09-11T06:57:18.694Z"
   },
   {
     "id": "tulsa-2026-schedule",
-    "title": "WSOP Circuit Hard Rock Tulsa 2026 \u2014 official event page",
+    "title": "WSOP Circuit Hard Rock Tulsa 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-hard-rock-tulsa/",
     "kind": "schedule",
     "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "mexico-city-2026-schedule",
-    "title": "WSOP Circuit Big Bola Casinos Mexico City 2026 \u2014 official event page",
+    "title": "WSOP Circuit Big Bola Casinos Mexico City 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-big-bola-casinos-santa-fe-barcelo-mexico-santa-fe-hotel/",
     "kind": "schedule",
     "checkedAt": "2026-09-11T06:57:18.694Z"
   },
   {
     "id": "paris-2026-schedule",
-    "title": "WSOP Circuit Partouche Pasino Club Paris 2026 \u2014 official event page",
+    "title": "WSOP Circuit Partouche Pasino Club Paris 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-partouche-casino-club/",
     "kind": "schedule",
     "checkedAt": "2026-09-13T06:27:30Z"
   },
   {
     "id": "southern-indiana-2026-schedule",
-    "title": "WSOP Circuit Caesars Southern Indiana 2026 \u2014 official event page",
+    "title": "WSOP Circuit Caesars Southern Indiana 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-southern-indiana/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:02.389090Z"
   },
   {
     "id": "madrid-2026-schedule",
-    "title": "WSOP Circuit Casino Gran V\u00eda 2026 \u2014 official event page",
+    "title": "WSOP Circuit Casino Gran Vía 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-gran-via/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:02.474801Z"
   },
   {
     "id": "durant-2026-schedule",
-    "title": "WSOP Circuit Choctaw Durant October 2026 \u2014 official event page",
+    "title": "WSOP Circuit Choctaw Durant October 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:02.512422Z"
   },
   {
     "id": "toledo-2026-schedule",
-    "title": "WSOP Circuit The Reserve Poker Club 2026 \u2014 official event page",
+    "title": "WSOP Circuit The Reserve Poker Club 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:02.486075Z"
   },
   {
     "id": "playground-november-2026-schedule",
-    "title": "WSOP Circuit Playground November 2026 \u2014 official event page",
+    "title": "WSOP Circuit Playground November 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "scottsdale-2026-schedule",
-    "title": "WSOP Circuit Talking Stick 2026 \u2014 official event page",
+    "title": "WSOP Circuit Talking Stick 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "elgin-2026-schedule",
-    "title": "WSOP Circuit Grand Victoria 2026 \u2014 official event page",
+    "title": "WSOP Circuit Grand Victoria 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "panama-city-2026-schedule",
-    "title": "WSOP Circuit Panama City 2026 \u2014 official event page",
+    "title": "WSOP Circuit Panama City 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "middelkerke-2026-schedule",
-    "title": "WSOP Circuit Casino Middelkerke 2026 \u2014 official event page",
+    "title": "WSOP Circuit Casino Middelkerke 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "new-orleans-2026-schedule",
-    "title": "WSOP Circuit Caesars New Orleans 2026 \u2014 official event page",
+    "title": "WSOP Circuit Caesars New Orleans 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "sanremo-2026-schedule",
-    "title": "WSOP Circuit Casino Sanremo 2026 \u2014 official event page",
+    "title": "WSOP Circuit Casino Sanremo 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "cherokee-november-2026-schedule",
-    "title": "WSOP Circuit Harrah\u2019s Cherokee November 2026 \u2014 official event page",
+    "title": "WSOP Circuit Harrah’s Cherokee November 2026 — official event page",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "mexico-santa-fe-hotel",
-    "title": "Barcel\u00f3 M\u00e9xico Santa Fe \u2014 hotel and services",
+    "title": "Barceló México Santa Fe — hotel and services",
     "url": "https://www.barcelo.com/en-us/barcelo-mexico-santa-fe/",
     "kind": "travel",
     "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "mexico-santa-fe-dining",
-    "title": "Barcel\u00f3 M\u00e9xico Santa Fe \u2014 dining",
+    "title": "Barceló México Santa Fe — dining",
     "url": "https://www.barcelo.com/en-ww/barcelo-mexico-santa-fe/cuisine/",
     "kind": "travel",
     "checkedAt": "2026-09-07T05:15:28Z"
   },
   {
     "id": "namur-megastack-2026-schedule",
-    "title": "PokerStars Live \u2014 BPC MegaStack Edition 2026",
+    "title": "PokerStars Live — BPC MegaStack Edition 2026",
     "url": "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
     "kind": "schedule",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "namur-megastack-2026-host",
-    "title": "Circus Poker \u2014 BPC MegaStack schedule",
+    "title": "Circus Poker — BPC MegaStack schedule",
     "url": "https://www.circus-poker.com/en/news/290_belgian-poker-challenge-megastack-edition-the-big-event-to-kick-off-the-new-season",
     "kind": "schedule",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "namur-venue",
-    "title": "Circus Casino Resort Namur \u2014 visitor information",
+    "title": "Circus Casino Resort Namur — visitor information",
     "url": "https://www.circus-poker.com/en/namur/contact",
     "kind": "travel",
     "checkedAt": "2026-10-01T05:21:28Z"
   },
   {
     "id": "sydney-festival-2026",
-    "title": "The Star Poker \u2014 WPT Australia festival 2026",
+    "title": "The Star Poker — WPT Australia festival 2026",
     "url": "https://www.starpoker.com.au/wpt-australia",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "sydney-main-2026",
-    "title": "WPT Australia Championship 2026 \u2014 official details",
+    "title": "WPT Australia Championship 2026 — official details",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-australia-championship-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-09-26T05:18:25Z"
   },
   {
     "id": "jacksonville-2026-schedule",
-    "title": "WPT bestbet Scramble Championship 2026 \u2014 official details",
+    "title": "WPT bestbet Scramble Championship 2026 — official details",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026/details",
     "kind": "schedule",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "jacksonville-2026-live",
-    "title": "WPT bestbet Scramble Championship 2026 \u2014 live updates",
+    "title": "WPT bestbet Scramble Championship 2026 — live updates",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-bestbet-scramble-championship-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "appt-korea-2026-schedule",
-    "title": "PokerStars Live \u2014 APPT Korea 2026",
+    "title": "PokerStars Live — APPT Korea 2026",
     "url": "https://www.pokerstarslive.com/appt/korea/",
     "kind": "schedule",
     "checkedAt": "2026-09-13T06:27:30Z"
   },
   {
     "id": "wpt-seoul-2026-schedule",
-    "title": "WPT Seoul 2026 \u2014 official event details",
+    "title": "WPT Seoul 2026 — official event details",
     "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "wpt-seoul-2026-announcement",
-    "title": "WPT \u2014 Seoul festival at INSPIRE, 2026 announcement",
+    "title": "WPT — Seoul festival at INSPIRE, 2026 announcement",
     "url": "https://www.worldpokertour.com/article/world-poker-tour-makes-historic-debut-at-inspire-entertainment-resort-for-wpt-seoul",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "appt-manila-championship-2026-schedule",
-    "title": "PokerStars Live \u2014 APPT Manila Championship 2026",
+    "title": "PokerStars Live — APPT Manila Championship 2026",
     "url": "https://www.pokerstarslive.com/appt/manilachampionship/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "cambodia-2027-announcement",
-    "title": "WPT \u2014 Cambodia festival January 12\u2013February 2, 2027",
+    "title": "WPT — Cambodia festival January 12–February 2, 2027",
     "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "cambodia-2027-main",
-    "title": "WPT Cambodia Championship 2027 \u2014 official event",
+    "title": "WPT Cambodia Championship 2027 — official event",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "cambodia-2027-prime",
-    "title": "WPT Prime Cambodia Championship 2027 \u2014 official event",
+    "title": "WPT Prime Cambodia Championship 2027 — official event",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cambodia-championship-season-2027",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "kings-super-2026-schedule",
-    "title": "WSOP Super Circuit KINGS 2026 \u2014 official schedule",
+    "title": "WSOP Super Circuit KINGS 2026 — official schedule",
     "url": "https://www.wsop.com/tournaments/wsop-super-circuit-kings/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "rozvadov-resort",
-    "title": "King\u2019s Resort \u2014 accommodation and dining",
+    "title": "King’s Resort — accommodation and dining",
     "url": "https://kings-resort.com/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "rozvadov-transport",
-    "title": "King\u2019s Resort \u2014 arrival directions and transfers",
+    "title": "King’s Resort — arrival directions and transfers",
     "url": "https://kings-resort.com/contact",
     "kind": "travel",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "latam-super-2027-schedule",
-    "title": "WSOP Super Circuit LATAM 2027 \u2014 official announcement",
+    "title": "WSOP Super Circuit LATAM 2027 — official announcement",
     "url": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "punta-cana-resort",
-    "title": "Hard Rock Hotel & Casino Punta Cana \u2014 official resort",
+    "title": "Hard Rock Hotel & Casino Punta Cana — official resort",
     "url": "https://hotel.hardrock.com/punta-cana/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "punta-cana-transport",
-    "title": "Hard Rock Punta Cana \u2014 airport transfers",
+    "title": "Hard Rock Punta Cana — airport transfers",
     "url": "https://hotel.hardrock.com/punta-cana/book-transportation.aspx",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "sunday-million-2026-info",
-    "title": "Sunday Million Live 2026 \u2014 official dates and entry information",
+    "title": "Sunday Million Live 2026 — official dates and entry information",
     "url": "https://www.pokerstarslive.com/sunday-million-live/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "campione-arrival",
-    "title": "Casin\u00f2 di Campione \u2014 official arrival directions",
+    "title": "Casinò di Campione — official arrival directions",
     "url": "https://casinocampioneditalia.it/come-raggiungerci/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "campione-dining",
-    "title": "Casin\u00f2 di Campione \u2014 Riviera Restaurant",
+    "title": "Casinò di Campione — Riviera Restaurant",
     "url": "https://casinocampioneditalia.it/ristorante/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "irish-calendar",
-    "title": "Irish Poker Open \u2014 official international stops",
+    "title": "Irish Poker Open — official international stops",
     "url": "https://irishpokeropen.com/",
     "kind": "organizer",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "irish-sydney-2026-schedule",
-    "title": "Irish Open Sydney 2026 \u2014 official schedule PDF",
+    "title": "Irish Open Sydney 2026 — official schedule PDF",
     "url": "https://irishpokeropen.com/wp-content/uploads/sites/4/2026/06/IrishOpen2026-SydneySchedule-NoFees.pdf",
     "kind": "schedule",
     "checkedAt": "2026-09-13T06:27:30Z"
   },
   {
     "id": "irish-sydney-2026-main",
-    "title": "Irish Open Sydney \u2014 September 6 main-event update",
+    "title": "Irish Open Sydney — September 6 main-event update",
     "url": "https://irishpokeropen.com/sydney/2026/09/06/irish-open-sydney-the-a1000000-main-event-is-finally-here-while-the-lucky-8s-has-its-final/",
     "kind": "schedule",
     "checkedAt": "2026-09-13T06:27:30Z"
   },
   {
     "id": "irish-sydney-location",
-    "title": "Irish Open Sydney \u2014 Poker Palace location",
+    "title": "Irish Open Sydney — Poker Palace location",
     "url": "https://irishpokeropen.com/sydney/location/",
     "kind": "travel",
     "checkedAt": "2026-09-13T06:27:30Z"
   },
   {
     "id": "irish-sydney-hotels",
-    "title": "Irish Open Sydney \u2014 accommodation options",
+    "title": "Irish Open Sydney — accommodation options",
     "url": "https://irishpokeropen.com/sydney/hotels/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "irish-marrakech-2026-info",
-    "title": "Irish Open Marrakech 2026 \u2014 official event page",
+    "title": "Irish Open Marrakech 2026 — official event page",
     "url": "https://irishpokeropen.com/marrakech/",
     "kind": "organizer",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "marrakech-location",
-    "title": "Irish Open Marrakech \u2014 Casino de Marrakech location",
+    "title": "Irish Open Marrakech — Casino de Marrakech location",
     "url": "https://irishpokeropen.com/marrakech/location/",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "marrakech-hotels",
-    "title": "Irish Open Marrakech \u2014 hotel guide",
+    "title": "Irish Open Marrakech — hotel guide",
     "url": "https://irishpokeropen.com/marrakech/2026/08/10/where-to-stay-in-marrakech-your-festival-hotel-guide/",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "marrakech-resort",
-    "title": "Es Saadi Marrakech Resort \u2014 official accommodation",
+    "title": "Es Saadi Marrakech Resort — official accommodation",
     "url": "https://www.essaadi.com/en/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "marrakech-dining",
-    "title": "Es Saadi \u2014 L\u2019\u00c9picurien restaurant",
+    "title": "Es Saadi — L’Épicurien restaurant",
     "url": "https://www.essaadi.com/en/restaurants-marrakech/late-night-restaurants/epicurien/",
     "kind": "travel",
     "checkedAt": "2026-09-09T05:17:08.345Z"
   },
   {
     "id": "bsop-calendar",
-    "title": "BSOP \u2014 official upcoming stops",
+    "title": "BSOP — official upcoming stops",
     "url": "https://bsop.com.br/proximas-etapas/",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "bsop-millions-2026-info",
-    "title": "BSOP Millions 2026 \u2014 official key tournaments and travel information",
+    "title": "BSOP Millions 2026 — official key tournaments and travel information",
     "url": "https://bsop.com.br/bsop-millions/",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:28:09Z"
   },
   {
     "id": "bsop-summer-2027-info",
-    "title": "BSOP Summer 2027 \u2014 official dates and resort information",
+    "title": "BSOP Summer 2027 — official dates and resort information",
     "url": "https://bsop.com.br/summer/",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "triton-cyprus-2026-announcement",
-    "title": "Triton Times \u2014 September 2026 issue, North Cyprus announcement",
+    "title": "Triton Times — September 2026 issue, North Cyprus announcement",
     "url": "https://tritonpokerseries.com/news/thetritontimes/2nd",
     "kind": "organizer",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "venetian-fall-2026-announcement",
-    "title": "WPT Venetian Fall Festival 2026 \u2014 organizer announcement",
+    "title": "WPT Venetian Fall Festival 2026 — organizer announcement",
     "url": "https://www.worldpokertour.com/article/world-poker-tour-returns-to-the-venetian-resort-las-vegas-with-2-million-guaranteed-championship-event",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "venetian-fall-2026-guide",
-    "title": "WPT Venetian Fall Festival 2026 \u2014 player guide and schedule",
+    "title": "WPT Venetian Fall Festival 2026 — player guide and schedule",
     "url": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/08/WPT-Venetian-Fall-Festival-2026-Player-Guide-low-res.pdf",
     "kind": "schedule",
     "checkedAt": "2026-09-18T05:18:56Z"
   },
   {
     "id": "venetian-poker-room",
-    "title": "The Venetian Resort \u2014 poker room location",
+    "title": "The Venetian Resort — poker room location",
     "url": "https://www.venetianlasvegas.com/resort/casino/poker.html",
     "kind": "travel",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "venetian-poker-rates-2026",
-    "title": "The Venetian Resort \u2014 2026 poker suite rate conditions",
+    "title": "The Venetian Resort — 2026 poker suite rate conditions",
     "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
     "kind": "travel",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "cps-namur-2026-info",
-    "title": "Circus Poker Series 2026 \u2014 PokerStars Live overview",
+    "title": "Circus Poker Series 2026 — PokerStars Live overview",
     "url": "https://www.pokerstarslive.com/circuspokerseries/",
     "kind": "organizer",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "cps-namur-2026-host",
-    "title": "Circus Poker Series 2026 \u2014 September 8 venue announcement",
+    "title": "Circus Poker Series 2026 — September 8 venue announcement",
     "url": "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:21:28Z"
   },
   {
     "id": "cps-namur-2026-schedule",
-    "title": "Circus Poker Series 2026 \u2014 venue calendar",
+    "title": "Circus Poker Series 2026 — venue calendar",
     "url": "https://www.circus-poker.com/en/ticketing/festival/details/d41844ef-c203-2b20-064d-3a1e1ae61e11",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "cps-namur-2026-cup",
-    "title": "Circus Cup 2026 \u2014 Day 1A and entry rules",
+    "title": "Circus Cup 2026 — Day 1A and entry rules",
     "url": "https://www.circus-poker.com/en/ticketing/ticket/details/2aa94186-3884-1c5d-2198-3a22d0df8904",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "cps-namur-2026-qualifier",
-    "title": "Circus Poker Series 2026 \u2014 November 18 main-event qualifier",
+    "title": "Circus Poker Series 2026 — November 18 main-event qualifier",
     "url": "https://www.circus-poker.com/en/ticketing/ticket/details/3391ca34-65a3-61b9-daf7-3a2365256b7d",
     "kind": "schedule",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "guide-wsop-calendar",
-    "title": "World Series of Poker \u2014 official live tournament calendar",
+    "title": "World Series of Poker — official live tournament calendar",
     "url": "https://www.wsop.com/schedule/",
     "checkedAt": "2026-10-01T05:19:00Z",
     "kind": "organizer"
   },
   {
     "id": "guide-wpt-calendar",
-    "title": "World Poker Tour \u2014 Main Tour, Prime and special-event calendar",
+    "title": "World Poker Tour — Main Tour, Prime and special-event calendar",
     "url": "https://www.worldpokertour.com/event/schedule/",
     "checkedAt": "2026-10-01T05:19:00Z",
     "kind": "organizer"
   },
   {
     "id": "guide-ept-calendar",
-    "title": "PokerStars Live \u2014 European Poker Tour calendar",
+    "title": "PokerStars Live — European Poker Tour calendar",
     "url": "https://www.pokerstarslive.com/ept/",
     "checkedAt": "2026-10-01T05:19:00Z",
     "kind": "organizer"
@@ -953,259 +953,259 @@
   },
   {
     "id": "freeroll-stars-fr",
-    "title": "PokerStars.fr \u2014 Stars Freerolls",
+    "title": "PokerStars.fr — Stars Freerolls",
     "url": "https://www.pokerstars.fr/en/poker/free/freerolls/",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "freeroll-stars-help",
-    "title": "PokerStars \u2014 freeroll tournament help",
+    "title": "PokerStars — freeroll tournament help",
     "url": "https://www.pokerstars.com/is/help/articles/finding-freerolls-fr/10918/?ooac=1",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "freeroll-party-offer",
-    "title": "PartyPoker \u2014 Round-the-Clock terms",
+    "title": "PartyPoker — Round-the-Clock terms",
     "url": "https://www.partypoker.com/en/poker/offers/round-the-clock-freerolls",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "freeroll-party-help",
-    "title": "PartyPoker \u2014 free poker eligibility",
+    "title": "PartyPoker — free poker eligibility",
     "url": "https://www.partypoker.com/en/poker/how-to-play/software/free-poker",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "freeroll-888-offer",
-    "title": "888poker \u2014 24/7 Freerolls Festival",
+    "title": "888poker — 24/7 Freerolls Festival",
     "url": "https://www.888poker.com/poker-promotions/24-7-freerolls-festival/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "freeroll-888-terms",
-    "title": "888poker \u2014 24/7 eligibility and rules",
+    "title": "888poker — 24/7 eligibility and rules",
     "url": "https://www.888poker.com/terms/24-7-freerolls-festival/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "freeroll-atlanta-schedule",
-    "title": "Freeroll Atlanta \u2014 dated schedule",
+    "title": "Freeroll Atlanta — dated schedule",
     "url": "https://www.freerollatlanta.com/schedule-2/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "freeroll-atlanta-rules",
-    "title": "Freeroll Atlanta \u2014 rules and spending conditions",
+    "title": "Freeroll Atlanta — rules and spending conditions",
     "url": "https://www.freerollatlanta.com/rules/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "freeroll-atlanta-welcome",
-    "title": "Freeroll Atlanta \u2014 player introduction",
+    "title": "Freeroll Atlanta — player introduction",
     "url": "https://www.freerollatlanta.com/welcome-to-freeroll-atlanta-poker/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "freeroll-atlanta-prizes",
-    "title": "Freeroll Atlanta \u2014 prizes",
+    "title": "Freeroll Atlanta — prizes",
     "url": "https://www.freerollatlanta.com/prizes/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "wynn-world-2026-announcement",
-    "title": "WPT World Championship 2026 \u2014 official festival announcement",
+    "title": "WPT World Championship 2026 — official festival announcement",
     "url": "https://www.worldpokertour.com/article/wpt-world-championship-at-wynn-las-vegas-set-for-season-24-finale-with-over-85-events-and-20m-in-gte",
     "kind": "organizer",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "wynn-world-2026-main",
-    "title": "WPT World Championship 2026 \u2014 official main event",
+    "title": "WPT World Championship 2026 — official main event",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-world-championship-at-wynn-las-vegas-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "wynn-world-2026-prime",
-    "title": "WPT Prime Championship 2026 \u2014 official event",
+    "title": "WPT Prime Championship 2026 — official event",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-championship-at-wynn-las-vegas-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "wynn-world-2026-super-gold",
-    "title": "Super Gold Million 2026 \u2014 official event",
+    "title": "Super Gold Million 2026 — official event",
     "url": "https://www.worldpokertour.com/event/special-events-special-event-clubwpt-gold-super-gold-million-season-2026",
     "kind": "schedule",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "wynn-world-2026-schedule",
-    "title": "WPT World Championship 2026 \u2014 official festival schedule PDF",
+    "title": "WPT World Championship 2026 — official festival schedule PDF",
     "url": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/09/WPT-World-Championship-Festival-Schedule-Season-24.pdf",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "wynn-world-2026-hotel",
-    "title": "WPT World Championship 2026 \u2014 official Wynn and Encore hotel offer",
+    "title": "WPT World Championship 2026 — official Wynn and Encore hotel offer",
     "url": "https://book.passkey.com/go/WPT2026",
     "kind": "travel",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "wynn-poker-room",
-    "title": "Wynn and Encore \u2014 official poker room and player room-rate information",
+    "title": "Wynn and Encore — official poker room and player room-rate information",
     "url": "https://www.wynnlasvegas.com/casino/poker",
     "kind": "travel",
     "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "wynn-dining",
-    "title": "Wynn and Encore \u2014 official dining directory",
+    "title": "Wynn and Encore — official dining directory",
     "url": "https://www.wynnlasvegas.com/dining",
     "kind": "travel",
     "checkedAt": "2026-09-16T05:14:30Z"
   },
   {
     "id": "nottingham-2026-wsop",
-    "title": "WSOP \u2014 Dusk Till Dawn 2026 confirmed dates",
+    "title": "WSOP — Dusk Till Dawn 2026 confirmed dates",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-dusk-till-dawn/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "nottingham-2026-host",
-    "title": "Dusk Till Dawn \u2014 WSOP-C UK 2026 and travel information",
+    "title": "Dusk Till Dawn — WSOP-C UK 2026 and travel information",
     "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "nottingham-2026-schedule",
-    "title": "Dusk Till Dawn \u2014 WSOP-C UK 2026 official schedule and structures",
+    "title": "Dusk Till Dawn — WSOP-C UK 2026 official schedule and structures",
     "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
     "kind": "schedule",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "nottingham-2026-entry",
-    "title": "Dusk Till Dawn \u2014 WSOP-C UK entry instructions",
+    "title": "Dusk Till Dawn — WSOP-C UK entry instructions",
     "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "nottingham-airport-bus",
-    "title": "East Midlands Airport \u2014 Nottingham bus connections",
+    "title": "East Midlands Airport — Nottingham bus connections",
     "url": "https://www.eastmidlandsairport.com/getting-to-and-from/by-bus/",
     "kind": "travel",
     "checkedAt": "2026-09-17T06:14:18Z"
   },
   {
     "id": "nottingham-holiday-inn",
-    "title": "Holiday Inn Nottingham \u2014 location and transport",
+    "title": "Holiday Inn Nottingham — location and transport",
     "url": "https://www.ihg.com/holidayinn/hotels/us/en/nottingham/notuk/hoteldetail/directions",
     "kind": "travel",
     "checkedAt": "2026-09-17T06:14:18Z"
   },
   {
     "id": "nottingham-holiday-inn-dining",
-    "title": "Holiday Inn Nottingham \u2014 dining and room service",
+    "title": "Holiday Inn Nottingham — dining and room service",
     "url": "https://www.ihg.com/holidayinn/hotels/us/en/nottingham/notuk/hoteldetail/dining",
     "kind": "travel",
     "checkedAt": "2026-09-17T06:14:18Z"
   },
   {
     "id": "uk-gambling-tax",
-    "title": "HMRC \u2014 gambling and the meaning of a trade",
+    "title": "HMRC — gambling and the meaning of a trade",
     "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim22017",
     "kind": "tax",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "riverchasers-home",
-    "title": "Riverchasers \u2014 live league and membership",
+    "title": "Riverchasers — live league and membership",
     "url": "https://www.riverchasers.com/",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "riverchasers-bpo",
-    "title": "Bar Poker Open \u2014 Riverchasers venue calendar",
+    "title": "Bar Poker Open — Riverchasers venue calendar",
     "url": "https://barpokeropen.com/leagues/riverchasers",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "riverchasers-season40",
-    "title": "Riverchasers \u2014 Season 40 qualification and championship rules",
+    "title": "Riverchasers — Season 40 qualification and championship rules",
     "url": "https://www.riverchasers.com/news/season39championship-ytwhx",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "borgata-poker",
-    "title": "Borgata \u2014 official poker festivals",
+    "title": "Borgata — official poker festivals",
     "url": "https://borgata.mgmresorts.com/en/casino/poker.html",
     "kind": "organizer",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "borgata-big-big-2026-news",
-    "title": "BetMGM \u2014 Big, Big Series 2026 announcement",
+    "title": "BetMGM — Big, Big Series 2026 announcement",
     "url": "https://poker.betmgm.com/en/blog/press/big-big-series-featuring-6-million-guaranteed-at-borgata-hotel-casino-spa/",
     "kind": "organizer",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "borgata-big-big-2026-schedule",
-    "title": "Borgata \u2014 Big, Big Series 2026 schedule",
+    "title": "Borgata — Big, Big Series 2026 schedule",
     "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/blt097db3224c693e87/borgata_BigBigBuyInEventSchedule2026.pdf",
     "kind": "schedule",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "borgata-big-big-2026-structures",
-    "title": "Borgata \u2014 Big, Big Series 2026 event structures",
+    "title": "Borgata — Big, Big Series 2026 event structures",
     "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/blt0d7f5a5291fa3ee7/borgata_big_big_series_combined_packet.pdf",
     "kind": "schedule",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "borgata-travel",
-    "title": "Borgata \u2014 accommodation, dining and arrival FAQ",
+    "title": "Borgata — accommodation, dining and arrival FAQ",
     "url": "https://borgata.mgmresorts.com/en/faq.html",
     "kind": "travel",
     "checkedAt": "2026-09-18T05:16:36Z"
   },
   {
     "id": "borgata-metropolitan",
-    "title": "Borgata \u2014 The Metropolitan dining details",
+    "title": "Borgata — The Metropolitan dining details",
     "url": "https://borgata.mgmresorts.com/en/restaurants/the-metropolitan.html",
     "kind": "travel",
     "checkedAt": "2026-09-18T05:16:36Z"
   },
   {
     "id": "new-jersey-tax",
-    "title": "New Jersey Division of Taxation \u2014 gambling winnings",
+    "title": "New Jersey Division of Taxation — gambling winnings",
     "url": "https://www.nj.gov/treasury/taxation/lotterygamblingwinnings.shtml",
     "kind": "tax",
     "checkedAt": "2026-09-18T05:16:36Z"
   },
   {
     "id": "borgata-registration-faq",
-    "title": "Borgata \u2014 general poker registration FAQ",
+    "title": "Borgata — general poker registration FAQ",
     "url": "https://borgata.mgmresorts.com/en/casino/poker/frequently-asked-questions.html",
     "kind": "organizer",
     "checkedAt": "2026-09-23T05:27:46Z"
@@ -1226,7 +1226,7 @@
   },
   {
     "id": "venetian-showdown-oct-2026-schedule",
-    "title": "DeepStack Showdown September\u2013October 2026 official schedule",
+    "title": "DeepStack Showdown September–October 2026 official schedule",
     "url": "https://www.venetianlasvegas.com/content/dam/vlvweb/casino/poker/deepstack/2026/dss-sep-2026-schedule.pdf",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
@@ -1261,371 +1261,371 @@
   },
   {
     "id": "gukpt-2026-calendar",
-    "title": "Grosvenor UK Poker Tour \u2014 2026 calendar and published stop schedules",
+    "title": "Grosvenor UK Poker Tour — 2026 calendar and published stop schedules",
     "url": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "leeds-westgate",
-    "title": "Grosvenor Casino Leeds Westgate \u2014 venue and facilities",
+    "title": "Grosvenor Casino Leeds Westgate — venue and facilities",
     "url": "https://www.grosvenorcasinos.com/local-casinos/leeds-westgate",
     "kind": "travel",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "leeds-airport",
-    "title": "Leeds Bradford Airport \u2014 ground transport",
+    "title": "Leeds Bradford Airport — ground transport",
     "url": "https://www.leedsbradfordairport.co.uk/getting-to-and-from",
     "kind": "travel",
     "checkedAt": "2026-09-22T05:14:42Z"
   },
   {
     "id": "leeds-doubletree",
-    "title": "DoubleTree by Hilton Leeds City Centre \u2014 hotel and dining",
+    "title": "DoubleTree by Hilton Leeds City Centre — hotel and dining",
     "url": "https://www.hilton.com/en-gb/hotels/lbaccdi-doubletree-leeds-city-centre/",
     "kind": "travel",
     "checkedAt": "2026-09-22T05:14:42Z"
   },
   {
     "id": "borgata-2026-opens",
-    "title": "BetMGM \u2014 official 2026 Borgata Poker Open dates",
+    "title": "BetMGM — official 2026 Borgata Poker Open dates",
     "url": "https://poker.betmgm.com/en/blog/press/blake-vodges-wins-borgata-winter-poker-open-championship/",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "blackpool-grosvenor",
-    "title": "Grosvenor Casino Blackpool \u2014 venue information",
+    "title": "Grosvenor Casino Blackpool — venue information",
     "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool",
     "kind": "travel",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "blackpool-sandcastle-directions",
-    "title": "Sandcastle Waterpark \u2014 South Beach transport",
+    "title": "Sandcastle Waterpark — South Beach transport",
     "url": "https://www.sandcastle-waterpark.co.uk/plan-your-visit/directions/",
     "kind": "travel",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "blackpool-hampton",
-    "title": "Hampton by Hilton Blackpool \u2014 location and facilities",
+    "title": "Hampton by Hilton Blackpool — location and facilities",
     "url": "https://www.hilton.com/en-gb/hotels/blkplhx-hampton-blackpool/",
     "kind": "travel",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "manchester-airport-rail",
-    "title": "Manchester Airport \u2014 train connections",
+    "title": "Manchester Airport — train connections",
     "url": "https://www.manchesterairport.co.uk/getting-to-and-from/by-train/",
     "kind": "travel",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "london-victoria",
-    "title": "Grosvenor Casino The Victoria \u2014 visitor information",
+    "title": "Grosvenor Casino The Victoria — visitor information",
     "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria",
     "kind": "travel",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "london-heathrow-rail",
-    "title": "Heathrow Airport \u2014 rail and Underground connections",
+    "title": "Heathrow Airport — rail and Underground connections",
     "url": "https://www.heathrow.com/transport-and-directions/by-rail-or-train",
     "kind": "travel",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "london-metropole",
-    "title": "Hilton London Metropole \u2014 location and dining",
+    "title": "Hilton London Metropole — location and dining",
     "url": "https://www.hilton.com/en/hotels/lonmetw-hilton-london-metropole/",
     "kind": "travel",
     "checkedAt": "2026-09-23T05:27:46Z"
   },
   {
     "id": "wtp-live-intro",
-    "title": "World Tavern Poker \u2014 live league introduction and game finder",
+    "title": "World Tavern Poker — live league introduction and game finder",
     "url": "https://www.worldtavernpoker.info/poker-info-page",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "wtp-live-rules",
-    "title": "World Tavern Poker \u2014 current league rules guide",
+    "title": "World Tavern Poker — current league rules guide",
     "url": "https://www.worldtavernpoker.info/world-tavern-poker-rules-guide",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "wtp-live-complete-rules",
-    "title": "World Tavern Poker \u2014 age, venue policies and registration",
+    "title": "World Tavern Poker — age, venue policies and registration",
     "url": "https://www.worldtavernpoker.info/complete-rule-guide",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "wtp-live-regions",
-    "title": "World Tavern Poker \u2014 regional coverage and qualification",
+    "title": "World Tavern Poker — regional coverage and qualification",
     "url": "https://www.worldtavernpoker.info/regional-champs",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "rosario-2026-wsop",
-    "title": "WSOP Circuit City Center Rosario 2026 \u2014 official calendar",
+    "title": "WSOP Circuit City Center Rosario 2026 — official calendar",
     "url": "https://www.wsop.com/tournaments/wsop-circuit-city-center-rosario/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "rosario-2026-host",
-    "title": "City Center Rosario \u2014 WSOPC 2026 schedule, travel and lodging",
+    "title": "City Center Rosario — WSOPC 2026 schedule, travel and lodging",
     "url": "https://citycenterpoker.com.ar/torneo/wsopc",
     "kind": "schedule",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "rosario-complex",
-    "title": "City Center Rosario \u2014 hotel, casino and dining",
+    "title": "City Center Rosario — hotel, casino and dining",
     "url": "https://www.citycenter-rosario.com.ar/es",
     "kind": "travel",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "irish-dublin-2027-announcement",
-    "title": "Irish Open 2027 \u2014 dates, main buy-in and guarantees",
+    "title": "Irish Open 2027 — dates, main buy-in and guarantees",
     "url": "https://irishpokeropen.com/blog/2026/09/04/ipoker-satellites-about-to-kick-off-for-2027-irish-open-monday-7th-september/",
     "kind": "organizer",
     "checkedAt": "2026-10-01T05:21:28Z"
   },
   {
     "id": "irish-registration",
-    "title": "Irish Open \u2014 registration methods",
+    "title": "Irish Open — registration methods",
     "url": "https://irishpokeropen.com/registration/",
     "kind": "organizer",
     "checkedAt": "2026-10-01T05:21:28Z"
   },
   {
     "id": "irish-dublin-location",
-    "title": "Irish Open \u2014 RDS location and neighbourhood",
+    "title": "Irish Open — RDS location and neighbourhood",
     "url": "https://irishpokeropen.com/location/",
     "kind": "travel",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "dublin-aircoach-702",
-    "title": "Aircoach \u2014 Dublin Airport to Ballsbridge route 702",
+    "title": "Aircoach — Dublin Airport to Ballsbridge route 702",
     "url": "https://www.aircoach.ie/timetables/702",
     "kind": "travel",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "dublin-rds-rail",
-    "title": "RDS \u2014 DART stations and venue access",
+    "title": "RDS — DART stations and venue access",
     "url": "https://www.rds.ie/getting-here/from-train-stations",
     "kind": "travel",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "dublin-clayton-ballsbridge",
-    "title": "Clayton Hotel Ballsbridge \u2014 location and transport",
+    "title": "Clayton Hotel Ballsbridge — location and transport",
     "url": "https://www.claytonhotels.com/ballsbridge/location/",
     "kind": "travel",
     "checkedAt": "2026-09-24T05:12:01Z"
   },
   {
     "id": "apat-bcoap-2026-schedule",
-    "title": "APAT \u2014 BCOAP 2026 official schedule and entry rules",
+    "title": "APAT — BCOAP 2026 official schedule and entry rules",
     "url": "https://www.apat.com/bcoap-19-25-oct-2026-genting-stratford/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "apat-2026-calendar",
-    "title": "APAT \u2014 2026 live tour calendar",
+    "title": "APAT — 2026 live tour calendar",
     "url": "https://www.apat.com/apat-2026-live-tour/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:12.805971Z"
   },
   {
     "id": "london-genting-stratford",
-    "title": "Genting Stratford \u2014 venue and dining",
+    "title": "Genting Stratford — venue and dining",
     "url": "https://www.gentingcasinos.co.uk/casinos/genting-casino-stratford/",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "london-hyatt-stratford",
-    "title": "Hyatt Regency London Stratford \u2014 official hotel",
+    "title": "Hyatt Regency London Stratford — official hotel",
     "url": "https://www.hyatt.com/hyatt-regency/en-US/lhrrs-hyatt-regency-london-stratford/",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "wfp-nj-schedule",
-    "title": "World Free Poker \u2014 New Jersey venues and notices",
+    "title": "World Free Poker — New Jersey venues and notices",
     "url": "https://www.worldfreepoker.com/poker-schedule.html",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "wfp-nj-faq",
-    "title": "World Free Poker \u2014 entry costs, age and registration",
+    "title": "World Free Poker — entry costs, age and registration",
     "url": "https://www.worldfreepoker.com/poker-faq.html",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "wfp-nj-scoring",
-    "title": "World Free Poker \u2014 finals qualification and receipt points",
+    "title": "World Free Poker — finals qualification and receipt points",
     "url": "https://www.worldfreepoker.com/poker-scores-online.html",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "bicycle-calendar",
-    "title": "Parkwest Bicycle Casino \u2014 major festival calendar",
+    "title": "Parkwest Bicycle Casino — major festival calendar",
     "url": "https://www.thebike.com/play/major_tournaments.php",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "bicycle-bpo-2026-schedule",
-    "title": "Big Poker Oktober 2026 \u2014 official festival schedule",
+    "title": "Big Poker Oktober 2026 — official festival schedule",
     "url": "https://www.thebike.com/play/major_tournament_bpo_2026.php",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "bicycle-bpo-2026-kickoff",
-    "title": "Big Poker Oktober 2026 \u2014 Kickoff structure",
+    "title": "Big Poker Oktober 2026 — Kickoff structure",
     "url": "https://www.thebike.com/pdf/tournaments_yearly/2026-bpo/bpo_event01_2026.pdf",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "bicycle-bpo-2026-pwc",
-    "title": "Big Poker Oktober 2026 \u2014 Parkwest Classic VI structure",
+    "title": "Big Poker Oktober 2026 — Parkwest Classic VI structure",
     "url": "https://www.thebike.com/pdf/tournaments_yearly/2026-bpo/bpo_event10_2026.pdf",
     "kind": "schedule",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "bicycle-directions",
-    "title": "Parkwest Bicycle Casino \u2014 directions and parking",
+    "title": "Parkwest Bicycle Casino — directions and parking",
     "url": "https://www.thebike.com/directions/",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "bicycle-rooms",
-    "title": "Parkwest Bicycle Casino \u2014 hotel rooms and suites",
+    "title": "Parkwest Bicycle Casino — hotel rooms and suites",
     "url": "https://www.thebike.com/stay/rooms_and_suites.php",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "bicycle-cafe",
-    "title": "Parkwest Bicycle Casino \u2014 Bike Cafe hours and location",
+    "title": "Parkwest Bicycle Casino — Bike Cafe hours and location",
     "url": "https://www.thebike.com/dine/bike_cafe.php",
     "kind": "travel",
     "checkedAt": "2026-09-26T05:15:30Z"
   },
   {
     "id": "gg-uk-daily-freeroll",
-    "title": "GGPoker UK \u2014 Daily Freeroll ticket qualification",
+    "title": "GGPoker UK — Daily Freeroll ticket qualification",
     "url": "https://help.ggpoker.co.uk/article/Weekly-Freeroll---Daily-Freeroll-Questions-UK",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "gg-uk-weekly-freeroll",
-    "title": "GGPoker UK \u2014 Weekly Freeroll qualification and rewards",
+    "title": "GGPoker UK — Weekly Freeroll qualification and rewards",
     "url": "https://help.ggpoker.co.uk/article/Weekly-Freeroll---Weekly-Freeroll-Questions-UK",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "gg-uk-house-rules",
-    "title": "GGPoker UK \u2014 age and regional access rules",
+    "title": "GGPoker UK — age and regional access rules",
     "url": "https://ggpoker.co.uk/house-rules/",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "redtooth-tavern-online",
-    "title": "Redtooth \u2014 online Tavern program and prize routes",
+    "title": "Redtooth — online Tavern program and prize routes",
     "url": "https://www.redtoothpoker.com/online",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "redtooth-tavern-terms",
-    "title": "Redtooth \u2014 membership, final qualification and fees",
+    "title": "Redtooth — membership, final qualification and fees",
     "url": "https://www.redtoothpoker.com/terms",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "irish-marrakech-2026-announcement",
-    "title": "Irish Open \u2014 Marrakech schedule announced 28 September",
+    "title": "Irish Open — Marrakech schedule announced 28 September",
     "url": "https://irishpokeropen.com/marrakech/2026/09/28/marrakech_schedule_announced/",
     "kind": "organizer",
     "checkedAt": "2026-10-01T05:19:00Z"
   },
   {
     "id": "triton-one-cyprus-2026-schedule",
-    "title": "Triton ONE North Cyprus \u2014 official schedule and venue",
+    "title": "Triton ONE North Cyprus — official schedule and venue",
     "url": "https://tritonpokerseries.com/en-US/events/Triton_ONE_N.Cyprus_2026",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "triton-shrs-cyprus-2026-schedule",
-    "title": "Triton SHRS North Cyprus \u2014 official event schedule",
+    "title": "Triton SHRS North Cyprus — official event schedule",
     "url": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_N.Cyprus_S5",
     "kind": "schedule",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "wpt-lapc-2027-announcement",
-    "title": "WPT \u2014 LAPC returns to Commerce in 2027",
+    "title": "WPT — LAPC returns to Commerce in 2027",
     "url": "https://www.worldpokertour.com/article/wpt-returns-to-the-commerce-casino-hotel-for-the-wpt-lapc-championship-in-season-25",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "commerce-contact",
-    "title": "Commerce Casino \u2014 address, directions and age requirement",
+    "title": "Commerce Casino — address, directions and age requirement",
     "url": "https://commercecasino.com/contact/",
     "kind": "travel",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "commerce-hotel",
-    "title": "Commerce Casino \u2014 on-site hotel",
+    "title": "Commerce Casino — on-site hotel",
     "url": "https://commercecasino.com/hotel/",
     "kind": "travel",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "commerce-dining",
-    "title": "Commerce Casino \u2014 cafe and River Bar",
+    "title": "Commerce Casino — cafe and River Bar",
     "url": "https://commercecasino.com/dining/",
     "kind": "travel",
     "checkedAt": "2026-09-30T05:20:09Z"
   },
   {
     "id": "lodge-2026-details",
-    "title": "WPT Prime Lodge 2026 \u2014 championship entry rules",
+    "title": "WPT Prime Lodge 2026 — championship entry rules",
     "url": "https://www.worldpokertour.com/event/prime-wpt-prime-lodge-championship-season-2026/details",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
   },
   {
     "id": "san-jose-2026-details",
-    "title": "WPT Bay 101 Shooting Star 2026 \u2014 championship entry rules",
+    "title": "WPT Bay 101 Shooting Star 2026 — championship entry rules",
     "url": "https://www.worldpokertour.com/event/main-tour-wpt-bay-101-shooting-star-championship-season-2026/details",
     "kind": "organizer",
     "checkedAt": "2026-10-02T05:22:15Z"
@@ -1667,51 +1667,72 @@
   },
   {
     "id": "apat-malta-oct-2026-schedule",
-    "title": "APAT \u2014 Malta Open Championship October 2026",
+    "title": "APAT — Malta Open Championship October 2026",
     "url": "https://www.apat.com/apat-malta-championship-oct-2026/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "nqv-florida-rules",
-    "title": "Not Quite Vegas \u2014 eligibility, costs and league rules",
+    "title": "Not Quite Vegas — eligibility, costs and league rules",
     "url": "https://notquitevegas.net/rules",
     "kind": "organizer",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "nqv-florida-home",
-    "title": "Not Quite Vegas \u2014 Florida venues and current notices",
+    "title": "Not Quite Vegas — Florida venues and current notices",
     "url": "https://notquitevegas.net/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "straight-flush-mn-rules",
-    "title": "Straight Flush \u2014 Minnesota free bar poker rules",
+    "title": "Straight Flush — Minnesota free bar poker rules",
     "url": "https://sfpokertour.com/rules-play/",
     "kind": "organizer",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:16.404571Z"
   },
   {
     "id": "straight-flush-mn-calendar",
-    "title": "Straight Flush \u2014 dated calendar and cancellation notices",
+    "title": "Straight Flush — dated calendar and cancellation notices",
     "url": "https://sfpokertour.com/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-04T06:13:15.727572Z"
   },
   {
     "id": "apat-reading-2026-schedule",
-    "title": "APAT Reading 2026 \u2014 dates, selected structures and entry rules",
+    "title": "APAT Reading 2026 — dates, selected structures and entry rules",
     "url": "https://www.apat.com/apat-reading-20-22-nov-2026/",
     "kind": "schedule",
     "checkedAt": "2026-10-03T05:10:54Z"
   },
   {
     "id": "reading-grosvenor-south",
-    "title": "Grosvenor Reading South \u2014 visitor information",
+    "title": "Grosvenor Reading South — visitor information",
     "url": "https://www.grosvenorcasinos.com/local-casinos/reading-south",
     "kind": "travel",
     "checkedAt": "2026-10-03T05:10:54Z"
+  },
+  {
+    "id": "apat-squads-manchester-2026",
+    "title": "APAT Poker Squads Live 2026 — team entry and selected phases",
+    "url": "https://www.apat.com/poker-squads-live-27-29-nov-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-04T06:16:50.972143Z"
+  },
+  {
+    "id": "manchester235-poker",
+    "title": "Manchester235 — poker room and tournament parking",
+    "url": "https://www.metropolitancasinos.com/venues/manchester/casino/poker/",
+    "kind": "travel",
+    "checkedAt": "2026-10-04T06:16:50.972143Z"
+  },
+  {
+    "id": "manchester235-dining",
+    "title": "Manchester235 — dining and bar information",
+    "url": "https://www.metropolitancasinos.com/venues/manchester/food-and-drink/",
+    "kind": "travel",
+    "checkedAt": "2026-10-04T06:16:50.972143Z"
   }
 ]

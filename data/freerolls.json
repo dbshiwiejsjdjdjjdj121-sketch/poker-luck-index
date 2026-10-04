@@ -8,7 +8,7 @@
     "mode": "online",
     "status": "published",
     "market": {
-      "label": "France \u00b7 PokerStars.fr",
+      "label": "France · PokerStars.fr",
       "countries": [
         "FR"
       ],
@@ -28,8 +28,8 @@
       "costNote": "Free qualifier entry; weekly finals require a qualification ticket. This is not a deposit-bonus offer."
     },
     "reward": {
-      "label": "\u20ac1,500 cash / T\u20ac500",
-      "details": "The Sunday final advertises \u20ac1,500 cash; Wednesday advertises T\u20ac500 in tournament money. These are separate pools, not a payout to every entrant."
+      "label": "€1,500 cash / T€500",
+      "details": "The Sunday final advertises €1,500 cash; Wednesday advertises T€500 in tournament money. These are separate pools, not a payout to every entrant."
     },
     "schedule": {
       "text": "Daily qualifier at 20:00; Wednesday final at 20:00 and Sunday final at 16:00. The official page labels final times CET. Check the lobby for daylight-saving handling and the next dated occurrence.",
@@ -40,11 +40,11 @@
     "sections": [
       {
         "title": "What the listing covers",
-        "text": "This is a recurring program, not a confirmed seat in today\u2019s tournament. The qualifier and final have different entry conditions."
+        "text": "This is a recurring program, not a confirmed seat in today’s tournament. The qualifier and final have different entry conditions."
       },
       {
         "title": "Finding other PokerStars freerolls",
-        "text": "PokerStars\u2019 help page explains that freerolls are listed in the tournament lobby, sometimes with ticket or password requirements. Availability differs by market; an empty lobby filter means none are available at that time."
+        "text": "PokerStars’ help page explains that freerolls are listed in the tournament lobby, sometimes with ticket or password requirements. Availability differs by market; an empty lobby filter means none are available at that time."
       }
     ],
     "officialLinks": [
@@ -93,13 +93,13 @@
       "requirements": [
         "Verified eligible real-money account, poker client, and access to promotions.",
         "18+; the offer specifies 19+ in Canada, whose local availability is not confirmed here.",
-        "PartyPoker\u2019s general freeroll guide says real-money players must have made at least one deposit."
+        "PartyPoker’s general freeroll guide says real-money players must have made at least one deposit."
       ],
       "costNote": "Do not treat zero tournament entry as no-deposit eligibility. A funded-account condition is described in the official general guide."
     },
     "reward": {
       "label": "P$ or tournament tickets",
-      "details": "Current offer advertises $20\u2013$50 pools and $500 total per day across tournaments. Party Dollars cannot be exchanged for cash; they expire after 12 months."
+      "details": "Current offer advertises $20–$50 pools and $500 total per day across tournaments. Party Dollars cannot be exchanged for cash; they expire after 12 months."
     },
     "schedule": {
       "text": "The offer describes starts on the hour, daily until further notice. Exact dated tournaments and pool details are in the lobby. Single entry; the promotion terms describe 60 minutes of late entry.",
@@ -148,7 +148,7 @@
     "mode": "online",
     "status": "published",
     "market": {
-      "label": "Great Britain \u00b7 eligible accounts",
+      "label": "Great Britain · eligible accounts",
       "countries": [
         "GB"
       ],
@@ -169,7 +169,7 @@
     },
     "reward": {
       "label": "Prize varies by freeroll",
-      "details": "The promotional page advertises over $9,000 across the week, not for one tournament. Confirm each event\u2019s payout and reward type in the lobby; wheel rewards and tournament prizes are different."
+      "details": "The promotional page advertises over $9,000 across the week, not for one tournament. Confirm each event’s payout and reward type in the lobby; wheel rewards and tournament prizes are different."
     },
     "schedule": {
       "text": "Ongoing daily promotion. The operator sets individual start times; exact dated starts are not published on the source page.",
@@ -214,11 +214,11 @@
     "slug": "freeroll-atlanta",
     "title": "Freeroll Atlanta: free-entry live poker",
     "brand": "Freeroll Atlanta",
-    "description": "A local No-Limit Hold\u2019em league in Atlanta bars and restaurants. Entry is free, but qualifying for points or gift certificates requires venue spending.",
+    "description": "A local No-Limit Hold’em league in Atlanta bars and restaurants. Entry is free, but qualifying for points or gift certificates requires venue spending.",
     "mode": "live",
     "status": "published",
     "market": {
-      "label": "Atlanta, Georgia \u00b7 United States",
+      "label": "Atlanta, Georgia · United States",
       "countries": [
         "US"
       ],
@@ -244,12 +244,12 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected official dated starts are verified through October 31, 2026. Times are Atlanta local time. The October 2 Neighbor\u2019s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
+      "text": "Selected official dated starts are verified through October 31, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
       "endDate": null,
       "slots": [
         {
           "id": "atlanta-2026-09-16-1800",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-09-16",
           "time": "18:00",
           "timezone": "America/New_York",
@@ -265,7 +265,7 @@
         },
         {
           "id": "atlanta-2026-09-17-1900",
-          "label": "Gino\u2019s NY Pizza Bar",
+          "label": "Gino’s NY Pizza Bar",
           "date": "2026-09-17",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -273,7 +273,7 @@
         },
         {
           "id": "atlanta-2026-09-18-1900",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-09-18",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -281,7 +281,7 @@
         },
         {
           "id": "atlanta-2026-09-19-1300",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-09-19",
           "time": "13:00",
           "timezone": "America/New_York",
@@ -289,7 +289,7 @@
         },
         {
           "id": "atlanta-2026-09-19-1500",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-09-19",
           "time": "15:00",
           "timezone": "America/New_York",
@@ -321,7 +321,7 @@
         },
         {
           "id": "atlanta-2026-09-21-1900",
-          "label": "Moe\u2019s and Joe\u2019s",
+          "label": "Moe’s and Joe’s",
           "date": "2026-09-21",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -345,7 +345,7 @@
         },
         {
           "id": "atlanta-2026-09-23-1800",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-09-23",
           "time": "18:00",
           "timezone": "America/New_York",
@@ -361,7 +361,7 @@
         },
         {
           "id": "atlanta-2026-09-24-1900",
-          "label": "Gino\u2019s NY Pizza Bar",
+          "label": "Gino’s NY Pizza Bar",
           "date": "2026-09-24",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -369,7 +369,7 @@
         },
         {
           "id": "atlanta-2026-09-25-1900",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-09-25",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -377,7 +377,7 @@
         },
         {
           "id": "atlanta-2026-09-26-1300",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-09-26",
           "time": "13:00",
           "timezone": "America/New_York",
@@ -385,7 +385,7 @@
         },
         {
           "id": "atlanta-2026-09-26-1500",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-09-26",
           "time": "15:00",
           "timezone": "America/New_York",
@@ -417,7 +417,7 @@
         },
         {
           "id": "atlanta-2026-09-28-1900",
-          "label": "Moe\u2019s and Joe\u2019s",
+          "label": "Moe’s and Joe’s",
           "date": "2026-09-28",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -441,7 +441,7 @@
         },
         {
           "id": "atlanta-2026-09-30-1800",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-09-30",
           "time": "18:00",
           "timezone": "America/New_York",
@@ -457,7 +457,7 @@
         },
         {
           "id": "atlanta-2026-10-01-1900",
-          "label": "Gino\u2019s NY Pizza Bar",
+          "label": "Gino’s NY Pizza Bar",
           "date": "2026-10-01",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -465,7 +465,7 @@
         },
         {
           "id": "atlanta-2026-10-03-1300",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-10-03",
           "time": "13:00",
           "timezone": "America/New_York",
@@ -473,7 +473,7 @@
         },
         {
           "id": "atlanta-2026-10-03-1500",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-10-03",
           "time": "15:00",
           "timezone": "America/New_York",
@@ -505,7 +505,7 @@
         },
         {
           "id": "atlanta-2026-10-05-1900",
-          "label": "Moe\u2019s and Joe\u2019s",
+          "label": "Moe’s and Joe’s",
           "date": "2026-10-05",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -529,7 +529,7 @@
         },
         {
           "id": "atlanta-2026-10-07-1800",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-10-07",
           "time": "18:00",
           "timezone": "America/New_York",
@@ -545,7 +545,7 @@
         },
         {
           "id": "atlanta-2026-10-08-1900",
-          "label": "Gino\u2019s NY Pizza Bar",
+          "label": "Gino’s NY Pizza Bar",
           "date": "2026-10-08",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -553,7 +553,7 @@
         },
         {
           "id": "atlanta-2026-10-09-1900",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-10-09",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -561,7 +561,7 @@
         },
         {
           "id": "atlanta-2026-10-10-1300",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-10-10",
           "time": "13:00",
           "timezone": "America/New_York",
@@ -569,7 +569,7 @@
         },
         {
           "id": "atlanta-2026-10-10-1500",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-10-10",
           "time": "15:00",
           "timezone": "America/New_York",
@@ -601,7 +601,7 @@
         },
         {
           "id": "atlanta-2026-10-12-1900",
-          "label": "Moe\u2019s and Joe\u2019s",
+          "label": "Moe’s and Joe’s",
           "date": "2026-10-12",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -755,7 +755,7 @@
           "id": "2026-10-24-1300-the-independent-turbo-blinds",
           "date": "2026-10-24",
           "time": "13:00",
-          "label": "The Independent \u2014 Turbo Blinds",
+          "label": "The Independent — Turbo Blinds",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
         },
@@ -763,7 +763,7 @@
           "id": "2026-10-24-1500-the-independent-turbo-blinds",
           "date": "2026-10-24",
           "time": "15:00",
-          "label": "The Independent \u2014 Turbo Blinds",
+          "label": "The Independent — Turbo Blinds",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
         },
@@ -841,7 +841,7 @@
         },
         {
           "id": "atlanta-2026-10-30-1900",
-          "label": "Neighbor\u2019s Pub",
+          "label": "Neighbor’s Pub",
           "date": "2026-10-30",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -849,7 +849,7 @@
         },
         {
           "id": "atlanta-2026-10-31-1300",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-10-31",
           "time": "13:00",
           "timezone": "America/New_York",
@@ -857,7 +857,7 @@
         },
         {
           "id": "atlanta-2026-10-31-1500",
-          "label": "The Independent \u00b7 turbo",
+          "label": "The Independent · turbo",
           "date": "2026-10-31",
           "time": "15:00",
           "timezone": "America/New_York",
@@ -873,7 +873,7 @@
       },
       {
         "title": "Confirm before travelling",
-        "text": "Check the official venue link and day\u2019s listing. Late-entry limits conflict between the schedule and rules, so arrive before the published start or contact the organizer."
+        "text": "Check the official venue link and day’s listing. Late-entry limits conflict between the schedule and rules, so arrive before the published start or contact the organizer."
       }
     ],
     "officialLinks": [
@@ -917,11 +917,11 @@
     "slug": "riverchasers-live-poker",
     "title": "Riverchasers: free live poker in Pennsylvania & New Jersey",
     "brand": "Riverchasers",
-    "description": "Free-entry No-Limit Hold\u2019em at participating bars and restaurants in Pennsylvania and New Jersey. Local league games and the paid, qualification-only championships have different entry conditions.",
+    "description": "Free-entry No-Limit Hold’em at participating bars and restaurants in Pennsylvania and New Jersey. Local league games and the paid, qualification-only championships have different entry conditions.",
     "mode": "live",
     "status": "published",
     "market": {
-      "label": "Pennsylvania & New Jersey \u00b7 United States",
+      "label": "Pennsylvania & New Jersey · United States",
       "countries": [
         "US"
       ],
@@ -938,23 +938,23 @@
       "password": "unknown",
       "requirements": [
         "Ordinary live league games are open to the public, age 21 or older.",
-        "A free basic Bar Poker Open membership is required for rankings and rewards; use the organizer\u2019s check-in instructions.",
+        "A free basic Bar Poker Open membership is required for rankings and rewards; use the organizer’s check-in instructions.",
         "Food and drink purchases are encouraged. Confirm any venue-specific admission or spending conditions."
       ],
       "costNote": "Ordinary league participation has no entry charge. Championship finals require qualification and an entry fee. Optional paid online PRO membership is separate."
     },
     "reward": {
       "label": "Local prizes / qualification opportunities",
-      "details": "The organizer advertises local prizes and routes to league championships. Check the venue\u2019s current prize terms; a championship prize is not a guaranteed reward at an ordinary league game."
+      "details": "The organizer advertises local prizes and routes to league championships. Check the venue’s current prize terms; a championship prize is not a guaranteed reward at an ordinary league game."
     },
     "schedule": {
-      "text": "Selected official league starts are verified for October 1\u20136, 2026 in Pennsylvania and New Jersey. Times are local to each venue. The separate qualified championship is not an open-entry free league game; use the official calendar for last-minute changes.",
+      "text": "Selected official league starts are verified for October 1–6, 2026 in Pennsylvania and New Jersey. Times are local to each venue. The separate qualified championship is not an open-entry free league game; use the official calendar for last-minute changes.",
       "timezone": "America/New_York",
       "endDate": null,
       "slots": [
         {
           "id": "riverchasers-2026-09-22-berties",
-          "label": "Bertie\u2019s Inn \u00b7 Reading, PA",
+          "label": "Bertie’s Inn · Reading, PA",
           "date": "2026-09-22",
           "time": "18:30",
           "timezone": "America/New_York",
@@ -962,7 +962,7 @@
         },
         {
           "id": "riverchasers-2026-09-22-ranch-city",
-          "label": "Ranch City Brewing \u00b7 Easton, PA",
+          "label": "Ranch City Brewing · Easton, PA",
           "date": "2026-09-22",
           "time": "18:30",
           "timezone": "America/New_York",
@@ -970,7 +970,7 @@
         },
         {
           "id": "riverchasers-2026-09-22-5-west",
-          "label": "5 West \u00b7 Palmyra, NJ",
+          "label": "5 West · Palmyra, NJ",
           "date": "2026-09-22",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -978,7 +978,7 @@
         },
         {
           "id": "riverchasers-2026-09-22-creekside",
-          "label": "Creekside Sports Bar \u00b7 Limerick, PA",
+          "label": "Creekside Sports Bar · Limerick, PA",
           "date": "2026-09-22",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -986,7 +986,7 @@
         },
         {
           "id": "riverchasers-2026-09-22-station-house",
-          "label": "Station House Tavern & Bar \u00b7 Lancaster, PA",
+          "label": "Station House Tavern & Bar · Lancaster, PA",
           "date": "2026-09-22",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -994,7 +994,7 @@
         },
         {
           "id": "riverchasers-2026-09-22-chambers",
-          "label": "Chambers 19 \u00b7 Doylestown, PA",
+          "label": "Chambers 19 · Doylestown, PA",
           "date": "2026-09-22",
           "time": "19:30",
           "timezone": "America/New_York",
@@ -1002,7 +1002,7 @@
         },
         {
           "id": "riverchasers-2026-09-22-jerzees",
-          "label": "Jerzee\u2019s Sports Bar \u00b7 Glenside, PA",
+          "label": "Jerzee’s Sports Bar · Glenside, PA",
           "date": "2026-09-22",
           "time": "20:00",
           "timezone": "America/New_York",
@@ -1010,7 +1010,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-pikeville",
-          "label": "Pikeville Sportsman\u2019s Assoc. \u00b7 Oley, PA",
+          "label": "Pikeville Sportsman’s Assoc. · Oley, PA",
           "date": "2026-09-23",
           "time": "18:30",
           "timezone": "America/New_York",
@@ -1018,7 +1018,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-hill-to-hill",
-          "label": "Hill to Hill Grille \u00b7 Bethlehem, PA",
+          "label": "Hill to Hill Grille · Bethlehem, PA",
           "date": "2026-09-23",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1026,7 +1026,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-italian-american",
-          "label": "Italian American Club \u00b7 Tuckerton, NJ",
+          "label": "Italian American Club · Tuckerton, NJ",
           "date": "2026-09-23",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1034,7 +1034,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-uno-bensalem",
-          "label": "UNO Pizzeria & Grill \u00b7 Bensalem, PA",
+          "label": "UNO Pizzeria & Grill · Bensalem, PA",
           "date": "2026-09-23",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1042,7 +1042,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-uno-newtown",
-          "label": "UNO Pizzeria & Grill \u00b7 Newtown Square, PA",
+          "label": "UNO Pizzeria & Grill · Newtown Square, PA",
           "date": "2026-09-23",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1050,7 +1050,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-frans",
-          "label": "Fran\u2019s Pub \u00b7 New Hope, PA",
+          "label": "Fran’s Pub · New Hope, PA",
           "date": "2026-09-23",
           "time": "19:30",
           "timezone": "America/New_York",
@@ -1058,7 +1058,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-frosted-mug",
-          "label": "Frosted Mug \u00b7 Vineland, NJ",
+          "label": "Frosted Mug · Vineland, NJ",
           "date": "2026-09-23",
           "time": "19:30",
           "timezone": "America/New_York",
@@ -1066,7 +1066,7 @@
         },
         {
           "id": "riverchasers-2026-09-23-oreland",
-          "label": "Oreland Inn \u00b7 Oreland, PA",
+          "label": "Oreland Inn · Oreland, PA",
           "date": "2026-09-23",
           "time": "19:30",
           "timezone": "America/New_York",
@@ -1074,7 +1074,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-westover",
-          "label": "Westover Golf Club \u00b7 Norristown, PA",
+          "label": "Westover Golf Club · Norristown, PA",
           "date": "2026-09-24",
           "time": "18:00",
           "timezone": "America/New_York",
@@ -1082,7 +1082,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-decades",
-          "label": "Decades Restaurant and Bar \u00b7 Hamilton, NJ",
+          "label": "Decades Restaurant and Bar · Hamilton, NJ",
           "date": "2026-09-24",
           "time": "18:30",
           "timezone": "America/New_York",
@@ -1090,7 +1090,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-liberty",
-          "label": "Liberty Fire Co 1 Social Quarters \u00b7 Sinking Spring, PA",
+          "label": "Liberty Fire Co 1 Social Quarters · Sinking Spring, PA",
           "date": "2026-09-24",
           "time": "18:30",
           "timezone": "America/New_York",
@@ -1098,7 +1098,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-bucks-club",
-          "label": "The Bucks Club \u00b7 Jamison, PA",
+          "label": "The Bucks Club · Jamison, PA",
           "date": "2026-09-24",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1106,7 +1106,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-creekside",
-          "label": "Creekside Sports Bar \u00b7 Limerick, PA",
+          "label": "Creekside Sports Bar · Limerick, PA",
           "date": "2026-09-24",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1114,7 +1114,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-leaf",
-          "label": "Leaf Cigar Bar \u00b7 Easton, PA",
+          "label": "Leaf Cigar Bar · Easton, PA",
           "date": "2026-09-24",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1122,7 +1122,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-root-cellar",
-          "label": "Root Cellar Tavern \u00b7 Dorothy, NJ",
+          "label": "Root Cellar Tavern · Dorothy, NJ",
           "date": "2026-09-24",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1130,7 +1130,7 @@
         },
         {
           "id": "riverchasers-2026-09-24-villa-nova",
-          "label": "Villa Nova Sports B&G \u00b7 Lancaster, PA",
+          "label": "Villa Nova Sports B&G · Lancaster, PA",
           "date": "2026-09-24",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1138,7 +1138,7 @@
         },
         {
           "id": "riverchasers-2026-09-25-reddogs",
-          "label": "Reddog\u2019s Hi Point Pub \u00b7 Absecon, NJ",
+          "label": "Reddog’s Hi Point Pub · Absecon, NJ",
           "date": "2026-09-25",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1146,7 +1146,7 @@
         },
         {
           "id": "riverchasers-2026-09-25-betterment",
-          "label": "Betterment Social Club \u00b7 Trumbauersville, PA",
+          "label": "Betterment Social Club · Trumbauersville, PA",
           "date": "2026-09-25",
           "time": "20:00",
           "timezone": "America/New_York",
@@ -1154,7 +1154,7 @@
         },
         {
           "id": "riverchasers-2026-09-26-westover",
-          "label": "Westover Golf Club \u00b7 Norristown, PA",
+          "label": "Westover Golf Club · Norristown, PA",
           "date": "2026-09-26",
           "time": "13:00",
           "timezone": "America/New_York",
@@ -1162,7 +1162,7 @@
         },
         {
           "id": "riverchasers-2026-09-26-root-cellar",
-          "label": "Root Cellar Tavern \u00b7 Dorothy, NJ",
+          "label": "Root Cellar Tavern · Dorothy, NJ",
           "date": "2026-09-26",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1172,7 +1172,7 @@
           "id": "2026-09-30-1830-pikeville-sportsman-s-association-oley-pa",
           "date": "2026-09-30",
           "time": "18:30",
-          "label": "Pikeville Sportsman\u2019s Association \u2014 Oley, PA",
+          "label": "Pikeville Sportsman’s Association — Oley, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1180,7 +1180,7 @@
           "id": "2026-09-30-1900-hill-to-hill-grille-bethlehem-pa",
           "date": "2026-09-30",
           "time": "19:00",
-          "label": "Hill to Hill Grille \u2014 Bethlehem, PA",
+          "label": "Hill to Hill Grille — Bethlehem, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1188,7 +1188,7 @@
           "id": "2026-09-30-1900-italian-american-club-tuckerton-nj",
           "date": "2026-09-30",
           "time": "19:00",
-          "label": "Italian American Club \u2014 Tuckerton, NJ",
+          "label": "Italian American Club — Tuckerton, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1196,7 +1196,7 @@
           "id": "2026-09-30-1900-uno-pizzeria-grill-bensalem-pa",
           "date": "2026-09-30",
           "time": "19:00",
-          "label": "UNO Pizzeria & Grill \u2014 Bensalem, PA",
+          "label": "UNO Pizzeria & Grill — Bensalem, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1204,7 +1204,7 @@
           "id": "2026-09-30-1900-uno-pizzeria-grill-newtown-square-pa",
           "date": "2026-09-30",
           "time": "19:00",
-          "label": "UNO Pizzeria & Grill \u2014 Newtown Square, PA",
+          "label": "UNO Pizzeria & Grill — Newtown Square, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1212,7 +1212,7 @@
           "id": "2026-09-30-1930-fran-s-pub-new-hope-pa",
           "date": "2026-09-30",
           "time": "19:30",
-          "label": "Fran\u2019s Pub \u2014 New Hope, PA",
+          "label": "Fran’s Pub — New Hope, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1220,7 +1220,7 @@
           "id": "2026-09-30-1930-frosted-mug-vineland-nj",
           "date": "2026-09-30",
           "time": "19:30",
-          "label": "Frosted Mug \u2014 Vineland, NJ",
+          "label": "Frosted Mug — Vineland, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1228,7 +1228,7 @@
           "id": "2026-09-30-1930-oreland-inn-oreland-pa",
           "date": "2026-09-30",
           "time": "19:30",
-          "label": "Oreland Inn \u2014 Oreland, PA",
+          "label": "Oreland Inn — Oreland, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1236,7 +1236,7 @@
           "id": "2026-10-01-1800-westover-golf-club-norristown-pa",
           "date": "2026-10-01",
           "time": "18:00",
-          "label": "Westover Golf Club \u2014 Norristown, PA",
+          "label": "Westover Golf Club — Norristown, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1244,7 +1244,7 @@
           "id": "2026-10-01-1830-liberty-fire-co-1-social-quarters-sinking-spring-pa",
           "date": "2026-10-01",
           "time": "18:30",
-          "label": "Liberty Fire Co. 1 Social Quarters \u2014 Sinking Spring, PA",
+          "label": "Liberty Fire Co. 1 Social Quarters — Sinking Spring, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1252,7 +1252,7 @@
           "id": "2026-10-01-1830-decades-restaurant-and-bar-hamilton-nj",
           "date": "2026-10-01",
           "time": "18:30",
-          "label": "Decades Restaurant and Bar \u2014 Hamilton, NJ",
+          "label": "Decades Restaurant and Bar — Hamilton, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1260,7 +1260,7 @@
           "id": "2026-10-01-1900-villa-nova-sports-b-g-lancaster-pa",
           "date": "2026-10-01",
           "time": "19:00",
-          "label": "Villa Nova Sports B&G \u2014 Lancaster, PA",
+          "label": "Villa Nova Sports B&G — Lancaster, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1268,7 +1268,7 @@
           "id": "2026-10-01-1900-the-bucks-club-jamison-pa",
           "date": "2026-10-01",
           "time": "19:00",
-          "label": "The Bucks Club \u2014 Jamison, PA",
+          "label": "The Bucks Club — Jamison, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1276,7 +1276,7 @@
           "id": "2026-10-01-1900-root-cellar-tavern-dorothy-nj",
           "date": "2026-10-01",
           "time": "19:00",
-          "label": "Root Cellar Tavern \u2014 Dorothy, NJ",
+          "label": "Root Cellar Tavern — Dorothy, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1284,7 +1284,7 @@
           "id": "2026-10-01-1900-leaf-cigar-bar-easton-pa",
           "date": "2026-10-01",
           "time": "19:00",
-          "label": "Leaf Cigar Bar \u2014 Easton, PA",
+          "label": "Leaf Cigar Bar — Easton, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1292,7 +1292,7 @@
           "id": "2026-10-01-1900-creekside-sports-bar-limerick-pa",
           "date": "2026-10-01",
           "time": "19:00",
-          "label": "Creekside Sports Bar \u2014 Limerick, PA",
+          "label": "Creekside Sports Bar — Limerick, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1300,7 +1300,7 @@
           "id": "2026-10-02-1900-reddog-s-hi-point-pub-absecon-nj",
           "date": "2026-10-02",
           "time": "19:00",
-          "label": "Reddog\u2019s Hi Point Pub \u2014 Absecon, NJ",
+          "label": "Reddog’s Hi Point Pub — Absecon, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1308,7 +1308,7 @@
           "id": "2026-10-02-2000-betterment-social-club-trumbauersville-pa",
           "date": "2026-10-02",
           "time": "20:00",
-          "label": "Betterment Social Club \u2014 Trumbauersville, PA",
+          "label": "Betterment Social Club — Trumbauersville, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1316,7 +1316,7 @@
           "id": "2026-10-03-1300-westover-golf-club-norristown-pa",
           "date": "2026-10-03",
           "time": "13:00",
-          "label": "Westover Golf Club \u2014 Norristown, PA",
+          "label": "Westover Golf Club — Norristown, PA",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
@@ -1324,13 +1324,13 @@
           "id": "2026-10-03-1900-root-cellar-tavern-dorothy-nj",
           "date": "2026-10-03",
           "time": "19:00",
-          "label": "Root Cellar Tavern \u2014 Dorothy, NJ",
+          "label": "Root Cellar Tavern — Dorothy, NJ",
           "timezone": "America/New_York",
           "sourceId": "riverchasers-bpo"
         },
         {
           "id": "2026-10-06-1900-5-west-palmyra-nj",
-          "label": "5 West \u2014 Palmyra, NJ",
+          "label": "5 West — Palmyra, NJ",
           "date": "2026-10-06",
           "time": "19:00",
           "timezone": "America/New_York",
@@ -1437,7 +1437,7 @@
       },
       {
         "title": "Is a championship seat automatic?",
-        "text": "No. Local play is an entry point into the league. Qualification and prizes follow the current promotion; earlier cash awards and travel packages are not guarantees for today\u2019s games."
+        "text": "No. Local play is an entry point into the league. Qualification and prizes follow the current promotion; earlier cash awards and travel packages are not guarantees for today’s games."
       },
       {
         "title": "Who supports the league?",
@@ -1524,7 +1524,7 @@
     "sections": [
       {
         "title": "How do I find a game near me?",
-        "text": "Open the official league introduction below and follow Find A Game. Search by ZIP code, then confirm the host, start and admission policy before going. The introduction is a guide to the organizer\u2019s finder, not a direct seat reservation."
+        "text": "Open the official league introduction below and follow Find A Game. Search by ZIP code, then confirm the host, start and admission policy before going. The introduction is a guide to the organizer’s finder, not a direct seat reservation."
       },
       {
         "title": "Are championships open to every new player?",
@@ -1602,7 +1602,7 @@
       "details": "The schedule lists gift-certificate competitions and a Winners betting-voucher final. These are not guaranteed cash payments to every participant."
     },
     "schedule": {
-      "text": "Selected October finals are listed below for qualified players. Buttero\u2019s Thursday game has moved to Friday. Ordinary weekly games remain on the official calendar; no future dates have been generated from that recurring timetable.",
+      "text": "Selected October finals are listed below for qualified players. Buttero’s Thursday game has moved to Friday. Ordinary weekly games remain on the official calendar; no future dates have been generated from that recurring timetable.",
       "timezone": "America/New_York",
       "endDate": null,
       "slots": [
@@ -1610,7 +1610,7 @@
           "id": "2026-10-02-1900-buttero-bayonne-qualified-gift-certificate-final",
           "date": "2026-10-02",
           "time": "19:00",
-          "label": "Buttero, Bayonne \u2014 qualified gift-certificate final",
+          "label": "Buttero, Bayonne — qualified gift-certificate final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         },
@@ -1618,7 +1618,7 @@
           "id": "2026-10-03-1500-blvd-elmwood-park-qualified-gift-certificate-final",
           "date": "2026-10-03",
           "time": "15:00",
-          "label": "BLVD, Elmwood Park \u2014 qualified gift-certificate final",
+          "label": "BLVD, Elmwood Park — qualified gift-certificate final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         },
@@ -1626,7 +1626,7 @@
           "id": "2026-10-04-1300-winners-bayonne-qualified-betting-voucher-final",
           "date": "2026-10-04",
           "time": "13:00",
-          "label": "Winners, Bayonne \u2014 qualified betting-voucher final",
+          "label": "Winners, Bayonne — qualified betting-voucher final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         },
@@ -1634,7 +1634,7 @@
           "id": "2026-10-06-1900-buttero-bayonne-qualified-gift-certificate-final",
           "date": "2026-10-06",
           "time": "19:00",
-          "label": "Buttero, Bayonne \u2014 qualified gift-certificate final",
+          "label": "Buttero, Bayonne — qualified gift-certificate final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         },
@@ -1642,7 +1642,7 @@
           "id": "2026-10-06-1900-firehouse-garfield-qualified-gift-certificate-final",
           "date": "2026-10-06",
           "time": "19:00",
-          "label": "Firehouse, Garfield \u2014 qualified gift-certificate final",
+          "label": "Firehouse, Garfield — qualified gift-certificate final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         },
@@ -1650,7 +1650,7 @@
           "id": "2026-10-07-1900-blvd-elmwood-park-qualified-gift-certificate-final",
           "date": "2026-10-07",
           "time": "19:00",
-          "label": "BLVD, Elmwood Park \u2014 qualified gift-certificate final",
+          "label": "BLVD, Elmwood Park — qualified gift-certificate final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         },
@@ -1658,7 +1658,7 @@
           "id": "2026-10-18-1300-winners-bayonne-qualified-pasadena-final",
           "date": "2026-10-18",
           "time": "13:00",
-          "label": "Winners, Bayonne \u2014 qualified Pasadena final",
+          "label": "Winners, Bayonne — qualified Pasadena final",
           "timezone": "America/New_York",
           "sourceId": "wfp-nj-schedule"
         }
@@ -1721,7 +1721,7 @@
         "GB"
       ],
       "usStates": [],
-      "note": "For eligible GGPoker UK accounts under the UK site\u2019s age and location rules. This guide does not establish availability in the United States or other markets."
+      "note": "For eligible GGPoker UK accounts under the UK site’s age and location rules. This guide does not establish availability in the United States or other markets."
     },
     "entry": {
       "buyIn": 0,
@@ -1787,13 +1787,13 @@
   {
     "id": "redtooth-tavern-uk",
     "slug": "redtooth-tavern-uk",
-    "title": "Redtooth Tavern Online Freeroll \u2014 UK Members",
+    "title": "Redtooth Tavern Online Freeroll — UK Members",
     "brand": "Redtooth Poker",
     "description": "A zero-buy-in online league on PartyPoker for active Redtooth pub members. Compete for regional-final qualification and online-event tickets; membership, operator eligibility and later final fees still apply.",
     "mode": "online",
     "status": "published",
     "market": {
-      "label": "United Kingdom \u2014 active Redtooth venue members",
+      "label": "United Kingdom — active Redtooth venue members",
       "countries": [
         "GB"
       ],
@@ -1807,14 +1807,14 @@
       "password": "required",
       "requirements": [
         "Age 18 or older and registered membership of an active Redtooth venue.",
-        "Eligible PartyPoker account; obtain the current password through Redtooth\u2019s official member area.",
+        "Eligible PartyPoker account; obtain the current password through Redtooth’s official member area.",
         "Confirm operator deposit conditions: the public Redtooth explanation does not establish a no-deposit exemption."
       ],
       "costNote": "Online Tavern entry is free. Regional and national finals charge GBP 10 under the published terms; venue games can have their own costs."
     },
     "reward": {
       "label": "Regional-final qualification and online tickets",
-      "details": "The season\u2019s top 15 qualify for their allocated regional final. Venue qualification takes precedence, and seats cannot be transferred. These rewards are not a guaranteed cash payout."
+      "details": "The season’s top 15 qualify for their allocated regional final. Venue qualification takes precedence, and seats cannot be transferred. These rewards are not a guaranteed cash payout."
     },
     "schedule": {
       "text": "The organizer describes Sunday play at 14:00, with registration from noon, during a 13-week league season. It does not specify a timezone or dated upcoming starts here; check the lobby.",
@@ -1889,7 +1889,7 @@
       "details": "Tokens can be redeemed for merchandise, prizes or entries to casino and charity tournaments. This is not a promise of cash winnings at every league game."
     },
     "schedule": {
-      "text": "Recurring first starts: Mayfield Tavern and Trapper Joe\u2019s on Tuesday at 6 pm; Timothy\u2019s Pub on Wednesday at 6 pm; BJ\u2019s Bar on Thursday at 6 pm; Cascaddan Lounge on Saturday at 3 pm. Later games have approximate starts. Check the official timetable and venue notices before travelling.",
+      "text": "Recurring first starts: Mayfield Tavern and Trapper Joe’s on Tuesday at 6 pm; Timothy’s Pub on Wednesday at 6 pm; BJ’s Bar on Thursday at 6 pm; Cascaddan Lounge on Saturday at 3 pm. Later games have approximate starts. Check the official timetable and venue notices before travelling.",
       "timezone": "America/Detroit",
       "endDate": null,
       "slots": []
@@ -1897,11 +1897,11 @@
     "sections": [
       {
         "title": "Where can I play?",
-        "text": "The official directory lists Mayfield Tavern in Lapeer, BJ\u2019s Bar and Trapper Joe\u2019s in Burton, Timothy\u2019s Pub in Flint, and Cascaddan Lounge in Metamora."
+        "text": "The official directory lists Mayfield Tavern in Lapeer, BJ’s Bar and Trapper Joe’s in Burton, Timothy’s Pub in Flint, and Cascaddan Lounge in Metamora."
       },
       {
         "title": "Is every championship open to a new player?",
-        "text": "Regular league entry and qualified finals are separate. Check the organizer\u2019s eligibility rules for the championship you want to attend."
+        "text": "Regular league entry and qualified finals are separate. Check the organizer’s eligibility rules for the championship you want to attend."
       }
     ],
     "officialLinks": [
@@ -1931,11 +1931,11 @@
     "slug": "not-quite-vegas-florida",
     "title": "Not Quite Vegas: Free Bar Poker in Florida",
     "brand": "Not Quite Vegas",
-    "description": "Free-entry live Hold\u2019em around Florida\u2019s Space Coast and Treasure Coast. Venue spending can add chips, and league wins qualify players for a separate championship. Check the local venue\u2019s age policy before visiting.",
+    "description": "Free-entry live Hold’em around Florida’s Space Coast and Treasure Coast. Venue spending can add chips, and league wins qualify players for a separate championship. Check the local venue’s age policy before visiting.",
     "mode": "live",
     "status": "published",
     "market": {
-      "label": "Florida \u2014 Brevard and Indian River counties",
+      "label": "Florida — Brevard and Indian River counties",
       "countries": [
         "US"
       ],
@@ -1960,7 +1960,7 @@
       "details": "Record wins on the Player Card and bring it to the championship. No fixed nightly cash payout is promised here."
     },
     "schedule": {
-      "text": "Use the official site\u2019s venue timetable and notices. No future dated starts have been generated from its recurring schedule.",
+      "text": "Use the official site’s venue timetable and notices. No future dated starts have been generated from its recurring schedule.",
       "timezone": "America/New_York",
       "endDate": null,
       "slots": []
@@ -1968,7 +1968,7 @@
     "sections": [
       {
         "title": "Where can I play?",
-        "text": "The league covers Brevard and Indian River counties. Open the official venue directory for a location near you, then confirm the game and the venue\u2019s entry policy."
+        "text": "The league covers Brevard and Indian River counties. Open the official venue directory for a location near you, then confirm the game and the venue’s entry policy."
       },
       {
         "title": "Is it completely free?",
@@ -2002,11 +2002,11 @@
     "slug": "straight-flush-minnesota",
     "title": "Straight Flush: Free Bar Poker in Minnesota",
     "brand": "Straight Flush Entertainment",
-    "description": "Free live Texas Hold\u2019em at participating Minnesota bars, with no purchase required by league rules. Compare selected dated starts, venue age policies and championship prize conditions before attending.",
+    "description": "Free live Texas Hold’em at participating Minnesota bars, with no purchase required by league rules. Compare selected dated starts, venue age policies and championship prize conditions before attending.",
     "mode": "live",
     "status": "published",
     "market": {
-      "label": "Minnesota \u2014 participating Twin Cities venues",
+      "label": "Minnesota — participating Twin Cities venues",
       "countries": [
         "US"
       ],
@@ -2021,7 +2021,7 @@
       "ticket": "not-required",
       "password": "not-required",
       "requirements": [
-        "Players must be 18+ and meet the venue\u2019s admission policy.",
+        "Players must be 18+ and meet the venue’s admission policy.",
         "Sign the registration sheet at the venue; championship qualification is separate."
       ],
       "costNote": "League rules say no purchase is necessary. Food and drink are separate personal expenses."
@@ -2045,7 +2045,7 @@
         },
         {
           "id": "straight-flush-2026-10-03-1",
-          "label": "MC\u2019s Pub",
+          "label": "MC’s Pub",
           "date": "2026-10-03",
           "time": "15:30",
           "timezone": "America/Chicago",
@@ -2053,7 +2053,7 @@
         },
         {
           "id": "straight-flush-2026-10-04-2",
-          "label": "MC\u2019s Pub",
+          "label": "MC’s Pub",
           "date": "2026-10-04",
           "time": "16:00",
           "timezone": "America/Chicago",
@@ -2077,7 +2077,7 @@
         },
         {
           "id": "straight-flush-2026-10-06-5",
-          "label": "Jersey\u2019s Bar & Grill",
+          "label": "Jersey’s Bar & Grill",
           "date": "2026-10-06",
           "time": "19:00",
           "timezone": "America/Chicago",
@@ -2114,6 +2114,78 @@
           "time": "20:30",
           "timezone": "America/Chicago",
           "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-10-1530-mcs",
+          "label": "MC’s Pub",
+          "date": "2026-10-10",
+          "time": "15:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-11-1600-mcs",
+          "label": "MC’s Pub",
+          "date": "2026-10-11",
+          "time": "16:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-12-1900-chanhassen",
+          "label": "Chanhassen Legion Post 580",
+          "date": "2026-10-12",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-12-1900-scratch",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-12",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-13-1900-jerseys",
+          "label": "Jersey’s Bar & Grill",
+          "date": "2026-10-13",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-13-1900-muddy",
+          "label": "Muddy Chicken",
+          "date": "2026-10-13",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-14-1900-mad",
+          "label": "Mad Jacks Sports Cafe",
+          "date": "2026-10-14",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-14-1900-scratch",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-14",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-16-2030-scratch",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-16",
+          "time": "20:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
         }
       ]
     },
@@ -2124,7 +2196,7 @@
       },
       {
         "title": "Where are the games?",
-        "text": "The organizer lists Scratch Pizzeria, MC\u2019s Pub, Chanhassen Legion, Jersey\u2019s, Muddy Chicken and Mad Jacks among its venues. Use its location links for addresses."
+        "text": "The organizer lists Scratch Pizzeria, MC’s Pub, Chanhassen Legion, Jersey’s, Muddy Chicken and Mad Jacks among its venues. Use its location links for addresses."
       },
       {
         "title": "What about the October 4 Dog House listing?",
@@ -2149,8 +2221,8 @@
       "straight-flush-mn-rules",
       "straight-flush-mn-calendar"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
-    "updatedAt": "2026-10-03T05:10:54Z",
-    "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer\u2019s newer cancellation notice; that start is not listed here."
+    "checkedAt": "2026-10-04T06:13:15.727572Z",
+    "updatedAt": "2026-10-04T06:13:15.727572Z",
+    "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
   }
 ]

@@ -2291,5 +2291,44 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-03T05:10:54Z"
+  },
+  {
+    "id": "united-kingdom/manchester",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "Manchester",
+    "slug": "manchester",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Manchester235 hosts APAT Poker Squads at 2 Watson Street in the Great Northern area. Confirm team availability before arranging a trip.",
+    "airport": {
+      "title": "Arrival route pending verification",
+      "detail": "No airport transfer is verified here. Use the casino address to plan arrival before booking.",
+      "url": "https://www.metropolitancasinos.com/venues/manchester/casino/poker/",
+      "sourceId": "manchester235-poker"
+    },
+    "transport": [
+      {
+        "title": "Tournament parking",
+        "detail": "The poker room advertises complimentary parking for tournament players. Ask the poker desk about access and validation.",
+        "url": "https://www.metropolitancasinos.com/venues/manchester/casino/poker/",
+        "sourceId": "manchester235-poker"
+      }
+    ],
+    "hotels": [],
+    "dining": [
+      {
+        "title": "Food at Manchester235",
+        "detail": "Vega Lounge advertises bar food from midday to 03:30. Confirm kitchen hours around your tournament breaks.",
+        "url": "https://www.metropolitancasinos.com/venues/manchester/food-and-drink/",
+        "sourceId": "manchester235-dining"
+      }
+    ],
+    "tax": {
+      "text": "Event-specific withholding and payout paperwork have not been verified. Ask the organizer and check obligations in your country of tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-04T06:16:50.972143Z"
   }
 ]

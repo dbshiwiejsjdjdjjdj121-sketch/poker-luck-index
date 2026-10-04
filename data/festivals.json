@@ -778,7 +778,7 @@
       "url": "https://www.thundervalleyresort.com/"
     },
     "status": "scheduled",
-    "description": "WSOP Circuit comes to Thunder Valley Casino Resort in Lincoln. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "description": "Thunder Valley's USD 1,700 main-event entry flights were October 2–3. The series continues through October 5, with a USD 400 NLH Series Finale at 11:00 on the final day. Follow WSOP for remaining entry options.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-thunder-valley/",
@@ -786,13 +786,17 @@
     "sourceIds": [
       "lincoln-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-10-04T06:13:01.563201Z",
+    "updatedAt": "2026-10-04T06:16:50.972143Z",
     "reviewNote": null,
     "changes": [
       {
-        "date": "2026-09-06T17:56:10+00:00",
+        "date": "2026-09-06T17:56:10Z",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-10-04T06:16:50.972143Z",
+        "text": "Added the October 5 USD 400 Series Finale as a later entry option after main-event flights."
       }
     ],
     "tournaments": [
@@ -916,6 +920,37 @@
             "label": "Flight D",
             "date": "2026-09-26",
             "time": "10:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "lincoln-schedule"
+        ]
+      },
+      {
+        "id": "event-16",
+        "slug": "event-16",
+        "number": "16",
+        "name": "NLH Series Finale",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "20,000",
+        "levels": null,
+        "reentry": "1 Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "finale-start",
+            "label": "Published start",
+            "date": "2026-10-05",
+            "time": "11:00",
             "kind": "entry"
           }
         ],
@@ -1277,7 +1312,7 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:01.417644Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1450,7 +1485,7 @@
     "sourceIds": [
       "verona-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:01.358650Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -1630,7 +1665,7 @@
     "sourceIds": [
       "lake-tahoe-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:01.460454Z",
     "updatedAt": "2026-09-06T17:56:10+00:00",
     "reviewNote": null,
     "changes": [
@@ -4199,7 +4234,7 @@
     "sourceIds": [
       "southern-indiana-2026-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:02.389090Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4328,7 +4363,7 @@
     "sourceIds": [
       "madrid-2026-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:02.474801Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -4468,7 +4503,7 @@
     "sourceIds": [
       "durant-2026-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:02.512422Z",
     "updatedAt": "2026-09-16T05:14:30Z",
     "reviewNote": null,
     "changes": [
@@ -4652,7 +4687,7 @@
     "sourceIds": [
       "toledo-2026-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-04T06:13:02.486075Z",
     "updatedAt": "2026-09-07T05:15:28Z",
     "reviewNote": null,
     "changes": [
@@ -10137,6 +10172,117 @@
         ],
         "sourceIds": [
           "apat-reading-2026-schedule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "apat-squads-manchester-2026",
+    "slug": "apat-poker-squads-manchester-2026",
+    "name": "APAT Poker Squads Manchester 2026",
+    "tour": "APAT",
+    "destinationId": "united-kingdom/manchester",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-29",
+    "dateNote": null,
+    "timezone": "Europe/London",
+    "venue": {
+      "name": "235 Poker Lounge, Manchester235 Casino",
+      "address": "2 Watson Street, Manchester M3 4LP",
+      "url": "https://www.metropolitancasinos.com/venues/manchester/casino/poker/"
+    },
+    "status": "scheduled",
+    "description": "A four-person team weekend at Manchester235. Team entry is GBP 560 in total (GBP 140 per player, including a GBP 25 fee). Teams are already confirmed; APAT maintains a reserve list. The wider weekend also includes individual side events.",
+    "registration": "The October 1 team-payment deadline has passed. Contact APAT via its official information page for reserve-list availability before booking. Venue entry requires photo ID; the casino is 18+.",
+    "registrationUrl": "https://www.apat.com/poker-squads-live-27-29-nov-2026/",
+    "scheduleUrl": "https://www.apat.com/poker-squads-live-27-29-nov-2026/",
+    "scheduleCoverage": "Selected team phases and one lower-buy-in side event; use the official pages for the full weekend schedule.",
+    "sourceIds": [
+      "apat-squads-manchester-2026",
+      "apat-2026-calendar",
+      "manchester235-poker"
+    ],
+    "checkedAt": "2026-10-04T06:13:12.805971Z",
+    "updatedAt": "2026-10-04T06:16:50.972143Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-04T06:16:50.972143Z",
+        "text": "Added confirmed dates, per-player and full-team cost, reserve-list restrictions and selected highlights."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "poker-squads",
+        "slug": "poker-squads",
+        "number": null,
+        "name": "Poker Squads — per-player entry (four-person team)",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 140,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "30,000 in Phase 1; Day 2 stacks depend on team standings.",
+        "levels": "20/15 minutes in Phase 1.",
+        "reentry": null,
+        "lateRegistration": "Confirmed teams only; contact APAT about the reserve list.",
+        "endDate": "2026-11-29",
+        "sessions": [
+          {
+            "id": "phase1",
+            "label": "Day 1 — Phase 1",
+            "date": "2026-11-28",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "day2",
+            "label": "Day 2 — qualified teams",
+            "date": "2026-11-29",
+            "time": "13:00",
+            "kind": "continuation"
+          }
+        ],
+        "sourceIds": [
+          "apat-squads-manchester-2026",
+          "apat-2026-calendar"
+        ]
+      },
+      {
+        "id": "sunday-nlhe",
+        "slug": "sunday-nlhe",
+        "number": null,
+        "name": "Sunday NLHE",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 70,
+          "currency": "GBP"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "sunday-start",
+            "label": "Published start",
+            "date": "2026-11-29",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "apat-2026-calendar"
         ]
       }
     ]
