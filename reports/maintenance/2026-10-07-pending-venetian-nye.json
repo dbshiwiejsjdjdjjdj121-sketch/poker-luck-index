@@ -1,0 +1,44 @@
+{
+  "status": "verified-not-published",
+  "reason": "data:stage quarantines independent editions sharing tour, destination, start year and calendar URL as duplicate identities. Do not bypass or change product code in daily maintenance. Re-read before retry after validator repair.",
+  "festival": {
+    "id": "venetian-dse-nye-2026",
+    "slug": "venetian-deepstack-extravaganza-nye-2026",
+    "name": "Venetian DeepStack Extravaganza NYE 2026\u20132027",
+    "tour": "Venetian Poker",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-12-24",
+    "endDate": "2027-01-10",
+    "dateNote": null,
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "The Venetian Resort \u2014 The Palazzo Poker Room",
+      "address": null,
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html"
+    },
+    "status": "scheduled",
+    "description": "The Venetian confirms a December 24\u2013January 10 New Year festival in Las Vegas. Buy-ins and individual tournament details are pending; use the official calendar before choosing a flight or booking a trip.",
+    "registration": "Registration instructions for this series have not yet been published. Check the official calendar for the tournament programme and entry requirements.",
+    "registrationUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "scheduleUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+    "scheduleCoverage": "Confirmed festival dates only; tournament details are pending.",
+    "sourceIds": [
+      "venetian-deepstack-calendar",
+      "venetian-poker-room"
+    ],
+    "checkedAt": "2026-10-07T04:21:35Z",
+    "updatedAt": "2026-10-07T04:21:35Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-07T04:21:35Z",
+        "text": "Added the officially confirmed New Year festival dates."
+      }
+    ],
+    "tournaments": []
+  },
+  "successfulSourceIds": [
+    "venetian-deepstack-calendar",
+    "venetian-poker-room"
+  ]
+}

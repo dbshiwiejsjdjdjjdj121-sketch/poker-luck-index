@@ -244,7 +244,7 @@
       "details": "Nightly prizes vary by venue. The prize page describes venue credit for top finishers. The schedule separately labels selected cash-prize nights; no fixed payout is assumed here."
     },
     "schedule": {
-      "text": "Selected official dated starts are verified through October 31, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
+      "text": "Selected official dated starts are verified through November 5, 2026. Times are Atlanta local time. The October 2 Neighbor’s Pub listing appears twice, including a qualifiers-only final, so that ambiguous start remains omitted. Check the organizer for venue notices and eligibility.",
       "endDate": null,
       "slots": [
         {
@@ -862,6 +862,78 @@
           "time": "15:00",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-01-1300",
+          "date": "2026-11-01",
+          "time": "13:00",
+          "label": "The Independent",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-01-1600",
+          "date": "2026-11-01",
+          "time": "16:00",
+          "label": "Milltown Arms Tavern 5 Points",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-01-1900",
+          "date": "2026-11-01",
+          "time": "19:00",
+          "label": "Little 5 Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-02-1900",
+          "date": "2026-11-02",
+          "time": "19:00",
+          "label": "Moe’s and Joe’s",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-03-1800",
+          "date": "2026-11-03",
+          "time": "18:00",
+          "label": "Sweet Auburn BBQ",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-03-2000",
+          "date": "2026-11-03",
+          "time": "20:00",
+          "label": "Little 5 Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-04-1800",
+          "date": "2026-11-04",
+          "time": "18:00",
+          "label": "Neighbor’s Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-04-2000",
+          "date": "2026-11-04",
+          "time": "20:00",
+          "label": "Limerick Junction Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-05-1900",
+          "date": "2026-11-05",
+          "time": "19:00",
+          "label": "Gino’s NY Pizza Bar",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -908,8 +980,8 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
-    "updatedAt": "2026-10-02T05:22:15Z",
+    "checkedAt": "2026-10-07T04:21:27Z",
+    "updatedAt": "2026-10-07T04:21:36Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
   {
@@ -1469,7 +1541,7 @@
       "fpn-regions",
       "fpn-about"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
+    "checkedAt": "2026-10-07T04:21:24Z",
     "updatedAt": "2026-09-21T05:14:39Z",
     "reviewNote": null
   },
@@ -2224,5 +2296,65 @@
     "checkedAt": "2026-10-04T06:13:15.727572Z",
     "updatedAt": "2026-10-04T06:13:15.727572Z",
     "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
+  },
+  {
+    "id": "all-in-atlanta-georgia",
+    "slug": "all-in-atlanta-georgia",
+    "title": "All In Atlanta: Free Live Poker in Georgia",
+    "brand": "All In Atlanta",
+    "description": "Free live Hold’em in Atlanta for players aged 21+. Check bonus-chip conditions and venue prizes before attending.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Georgia — Atlanta venues",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "GA"
+      ],
+      "note": "Local venue games, not US-wide online access."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Age 21+; attend in person.",
+        "Use Active Games check-in when opened by the host."
+      ],
+      "costNote": "No purchase required. Optional purchases earn capped bonus chips in the first five rounds; free alternatives are available."
+    },
+    "reward": {
+      "label": "Venue prizes and league points",
+      "details": "Venue prizes vary. Quarterly championships require separate qualification; no fixed cash prize is confirmed."
+    },
+    "schedule": {
+      "text": "Weekly games: Monday and Thursday at Wicked Wolf; Wednesday at 5 Paces. All start at 8pm Atlanta time. Confirm operation with the host; dated starts are not published here.",
+      "timezone": "America/New_York",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Can I play without a purchase?",
+        "text": "Yes. The starting stack is free; ask the tournament director about free bonus-chip options."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official games and league rules",
+        "url": "https://allinatlanta.com/",
+        "kind": "explanation",
+        "sourceId": "all-in-atlanta-official"
+      }
+    ],
+    "sourceIds": [
+      "all-in-atlanta-official"
+    ],
+    "checkedAt": "2026-10-07T04:21:41Z",
+    "updatedAt": "2026-10-07T04:21:41Z",
+    "reviewNote": null
   }
 ]

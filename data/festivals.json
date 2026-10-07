@@ -1304,7 +1304,7 @@
       "url": "https://www.caesars.com/harrahs-pompano-beach"
     },
     "status": "scheduled",
-    "description": "WSOP Circuit comes to Harrah’s Pompano Beach in Pompano Beach. Compare the published main-event entry and dates, then use the official organizer links to choose your starting day and confirm the rules.",
+    "description": "Harrah’s Pompano Beach hosts this October 1–12 Circuit stop. The USD 1,700 main event has three entry flights on October 8–10; the USD 400 Double Stack Closer starts October 12. Check the official schedule and WSOP LIVE app for complete entry details.",
     "registration": null,
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-pompano-beach-2026/",
@@ -1312,13 +1312,17 @@
     "sourceIds": [
       "pompano-beach-schedule"
     ],
-    "checkedAt": "2026-10-04T06:13:01.417644Z",
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "checkedAt": "2026-10-07T04:21:32Z",
+    "updatedAt": "2026-10-07T04:21:32Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-06T17:56:10+00:00",
         "text": "Overview added with official dates, selected buy-ins and travel links."
+      },
+      {
+        "date": "2026-10-07T04:21:32Z",
+        "text": "Added the October 12 USD 400 closer as an accessible remaining entry option."
       }
     ],
     "tournaments": [
@@ -1452,6 +1456,40 @@
             "label": "Flight D",
             "date": "2026-10-03",
             "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "pompano-beach-schedule"
+        ]
+      },
+      {
+        "id": "event-18",
+        "slug": "event-18",
+        "number": "18",
+        "name": "$400 NLH Double Stack Closer $50K GTD",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 50000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": "Unlimited Re-Entry",
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "18-2026-10-12-0",
+            "label": "Published start",
+            "date": "2026-10-12",
+            "time": "10:00",
             "kind": "entry"
           }
         ],
@@ -10029,22 +10067,26 @@
       "url": "https://www.venetianlasvegas.com/resort/casino/poker.html"
     },
     "status": "scheduled",
-    "description": "The Venetian has confirmed November 16–December 23 for DeepStack Extravaganza IV in Las Vegas. Tournament buy-ins and individual starts are still pending. Use this date overview to compare your travel window; check the official calendar before committing to a particular event.",
-    "registration": "Registration instructions for this series have not yet been published. Check the official calendar for the tournament programme and entry requirements.",
+    "description": "A November 16–December 23 Las Vegas series. Published highlights include USD 800 Hold’em on December 3–6 and the USD 2,200 PokerAtlas Championship title event on December 12–14. Exact entry-flight times remain unconfirmed here.",
+    "registration": "Check the official calendar and poker room for entry requirements and payment instructions before travelling.",
     "registrationUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
     "scheduleUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
-    "scheduleCoverage": "Festival dates only. The organizer says more details are coming; no main event, buy-in range or guarantee is assumed.",
+    "scheduleCoverage": "Selected published event windows; use the official schedule for entry flights and full structures.",
     "sourceIds": [
       "venetian-deepstack-calendar",
       "venetian-poker-room"
     ],
-    "checkedAt": "2026-10-02T05:22:15Z",
-    "updatedAt": "2026-10-02T05:22:15Z",
+    "checkedAt": "2026-10-07T04:21:35Z",
+    "updatedAt": "2026-10-07T04:21:35Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-10-02T05:22:15Z",
         "text": "Added the confirmed festival dates and venue; tournament details remain pending."
+      },
+      {
+        "date": "2026-10-07T04:21:35Z",
+        "text": "Added published December headline buy-ins and event windows; precise entry starts remain unconfirmed."
       }
     ],
     "tournaments": []
