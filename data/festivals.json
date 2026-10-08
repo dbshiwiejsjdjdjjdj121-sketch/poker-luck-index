@@ -10328,5 +10328,76 @@
         ]
       }
     ]
+  },
+  {
+    "id": "apt-jeju-classic-2027",
+    "slug": "apt-jeju-classic-2027",
+    "name": "APT Jeju Classic 2027",
+    "tour": "APT",
+    "destinationId": "south-korea/jeju",
+    "startDate": "2027-01-22",
+    "endDate": "2027-01-31",
+    "dateNote": "The festival runs January 22–31. The currently published main-event flights start January 24; the full festival schedule is not yet available.",
+    "timezone": "Asia/Seoul",
+    "venue": {
+      "name": "LES A Casino, Jeju Shinhwa World",
+      "address": "38 Sinhwayeoksa-ro, Seogwipo-si, Jeju-do, South Korea",
+      "url": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/info"
+    },
+    "status": "scheduled",
+    "description": "A January poker festival at LES A Casino in Jeju. The published main event costs KRW 2,200,000 and has a KRW 2.2 billion guarantee. Compare the confirmed dates and entry requirements before planning your trip; side-event details remain unpublished.",
+    "registration": "The official information page requires casino guests to be 19+ and carry accepted identification. Foreign citizens need a valid foreign passport; expatriate Koreans have additional document requirements. Follow APT member registration and ask the organizer about payment and entry rules. Free casino admission does not mean free tournament entry.",
+    "registrationUrl": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/info",
+    "scheduleUrl": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/events",
+    "scheduleCoverage": "One selected main-event highlight. Only its opening flight is shown here; use the official schedule for other flights and continuing days. No side events or fee split are assumed.",
+    "sourceIds": [
+      "apt-jeju-classic-2027-events",
+      "apt-jeju-classic-2027-info"
+    ],
+    "checkedAt": "2026-10-08T05:24:14.357579Z",
+    "updatedAt": "2026-10-08T05:25:27.635410Z",
+    "reviewNote": "The January information page links official JSW hotel booking. No room price, event discount or January airport-transfer timetable has been verified. September 2026 travel arrangements do not apply automatically.",
+    "changes": [
+      {
+        "date": "2026-10-08T05:25:27.635410Z",
+        "text": "Added confirmed January festival dates, main-event buy-in and guarantee, casino entry guidance and official entry points."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "name": "APT Main Event",
+        "number": "1",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2200000,
+          "currency": "KRW"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2200000000,
+          "currency": "KRW"
+        },
+        "startingStack": null,
+        "levels": "60 minutes in Flight A. Other flights have different published structures.",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-30",
+        "sessions": [
+          {
+            "id": "flight-a",
+            "label": "Flight A — selected entry",
+            "date": "2027-01-24",
+            "time": "11:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "apt-jeju-classic-2027-events"
+        ]
+      }
+    ]
   }
 ]

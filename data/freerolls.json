@@ -980,7 +980,7 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-10-07T04:21:27Z",
+    "checkedAt": "2026-10-08T05:22:01.553378Z",
     "updatedAt": "2026-10-07T04:21:36Z",
     "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
   },
@@ -2045,6 +2045,10 @@
       {
         "title": "Is it completely free?",
         "text": "There is no tournament entry fee. The rules award extra chips for certain purchases, so review those conditions before choosing a game."
+      },
+      {
+        "title": "When is the next Quads tournament?",
+        "text": "The organizer announces November 7, 2026 at 13:00 at Melbourne Moose Lodge, with qualification running September 1–October 31. This is a separate qualifying event, not an unrestricted walk-in game. Ask NQV to confirm your eligibility; the ordinary venue games remain listed on its official timetable."
       }
     ],
     "officialLinks": [
@@ -2065,8 +2069,8 @@
       "nqv-florida-rules",
       "nqv-florida-home"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
-    "updatedAt": "2026-10-02T05:22:15Z",
+    "checkedAt": "2026-10-08T05:22:13.906744Z",
+    "updatedAt": "2026-10-08T05:25:27.635410Z",
     "reviewNote": null
   },
   {
@@ -2258,6 +2262,78 @@
           "time": "20:30",
           "timezone": "America/Chicago",
           "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-17-1530-mcs",
+          "label": "MC’s Pub",
+          "date": "2026-10-17",
+          "time": "15:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-18-1600-mcs",
+          "label": "MC’s Pub",
+          "date": "2026-10-18",
+          "time": "16:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-18-1900-doghouse",
+          "label": "The Dog House Bar & Grill",
+          "date": "2026-10-18",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-19-1900-chanhassen",
+          "label": "Chanhassen Legion Post 580",
+          "date": "2026-10-19",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-19-1900-scratch",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-19",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-20-1900-jerseys",
+          "label": "Jersey’s Bar & Grill",
+          "date": "2026-10-20",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-20-1900-muddy",
+          "label": "Muddy Chicken",
+          "date": "2026-10-20",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-21-1900-mad",
+          "label": "Mad Jacks Sports Cafe",
+          "date": "2026-10-21",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-21-1900-scratch",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-21",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
         }
       ]
     },
@@ -2273,6 +2349,10 @@
       {
         "title": "What about the October 4 Dog House listing?",
         "text": "An organizer notice cancels that game despite its calendar entry. Other venue starts are listed below; confirm any last-minute changes with the host."
+      },
+      {
+        "title": "Can anyone enter the October 17 noon tournament?",
+        "text": "The calendar lists a separate Tournament of Champions for the July–September session at The Dog House on October 17 at noon. The organizer has announced a qualifier list; do not treat it as an open weekly game. The 15:30 MC’s Pub listing is a separate ordinary game."
       }
     ],
     "officialLinks": [
@@ -2293,8 +2373,8 @@
       "straight-flush-mn-rules",
       "straight-flush-mn-calendar"
     ],
-    "checkedAt": "2026-10-04T06:13:15.727572Z",
-    "updatedAt": "2026-10-04T06:13:15.727572Z",
+    "checkedAt": "2026-10-08T05:22:14.229254Z",
+    "updatedAt": "2026-10-08T05:25:27.635410Z",
     "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
   },
   {

@@ -796,22 +796,22 @@
     },
     "transport": [
       {
-        "title": "APT airport transfer information",
-        "detail": "APT publishes an airport-transfer schedule for its September 25–October 7 Jeju festival. Check pickup points, operating dates and eligibility; do not assume this arrangement covers other organizers’ events at LES A Casino.",
-        "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
-        "sourceId": "jeju-info"
+        "title": "January 2027 arrival planning",
+        "detail": "A January airport-transfer timetable has not been verified. Check the organizer’s current information and ask about pickup arrangements before travelling. The September 25–October 7, 2026 APT transfer information belongs to an ended edition.",
+        "url": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/info",
+        "sourceId": "apt-jeju-classic-2027-info"
       }
     ],
     "hotels": [
       {
-        "title": "APT Jeju accommodation information",
-        "detail": "APT links its hotel-booking information from the event page. Confirm the property, transfer arrangements and total package cost through that official link before reserving.",
-        "url": "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info",
-        "sourceId": "jeju-info"
+        "title": "APT Jeju Classic 2027 hotel booking",
+        "detail": "The January event information links the official JSW hotel-booking website. Compare current room terms there; no tournament discount or room price has been verified.",
+        "url": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/info",
+        "sourceId": "apt-jeju-classic-2027-info"
       },
       {
         "title": "Marriott resort listed by Triton",
-        "detail": "Triton’s September 2026 event page names Jeju Shinhwa World Marriott Resort as its accommodation. Confirm availability, room terms and any event arrangement with Triton or the hotel; no room price or discount has been verified here.",
+        "detail": "Triton’s ended September 2026 event listed Jeju Shinhwa World Marriott Resort. That historical listing does not establish a current event offer; check the hotel or the relevant organizer for availability and terms.",
         "url": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
         "sourceId": "triton-jeju-september-2026-schedule"
       }
@@ -836,7 +836,7 @@
         "kr-tax"
       ]
     },
-    "updatedAt": "2026-09-13T06:27:30Z",
+    "updatedAt": "2026-10-08T05:25:27.635410Z",
     "indexable": true
   },
   {
