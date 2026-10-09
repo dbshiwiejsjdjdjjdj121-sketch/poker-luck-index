@@ -6130,20 +6130,24 @@
     },
     "status": "scheduled",
     "description": "Okada Manila hosts a broad APPT programme, from the PHP 3,500 kickoff to the PHP 165,000 championship. The championship’s PHP 60 million guarantee applies to that event; the National and Mini Championship have separate buy-ins and guarantees.",
-    "registration": "The organizer lists a minimum age of 21 and casual dress. Follow its buy-in guidance to confirm identification, payment options and entry deadlines.",
+    "registration": "Minimum age 21; bring valid ID such as a passport. Obtain an Okada Rewards Circle membership card, then create a PokerStars Live card at its sign-up counter and register at the tournament registration area. Check the official buy-in guidance for payment options and deadlines.",
     "registrationUrl": "https://www.pokerstarslive.com/appt/manilachampionship/",
     "scheduleUrl": "https://www.pokerstarslive.com/appt/manilachampionship/",
     "scheduleCoverage": "Selected main and lower-buy-in highlights for comparing the trip. The official links below contain all flights, structures and current registration details.",
     "sourceIds": [
       "appt-manila-championship-2026-schedule"
     ],
-    "checkedAt": "2026-10-03T05:10:54Z",
-    "updatedAt": "2026-09-07T05:15:28Z",
+    "checkedAt": "2026-10-09T05:06:08.081322Z",
+    "updatedAt": "2026-10-09T05:06:08.081322Z",
     "reviewNote": null,
     "changes": [
       {
         "date": "2026-09-07T05:15:28Z",
         "text": "Overview added from the official organizer’s confirmed dates, venue and available event highlights."
+      },
+      {
+        "date": "2026-10-09T05:06:08.081322Z",
+        "text": "Clarified the organizer’s ID, venue membership and PokerStars Live registration steps."
       }
     ],
     "tournaments": [

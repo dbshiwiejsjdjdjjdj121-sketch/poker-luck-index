@@ -662,7 +662,7 @@
     "title": "PokerStars Live — APPT Manila Championship 2026",
     "url": "https://www.pokerstarslive.com/appt/manilachampionship/",
     "kind": "schedule",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-09T05:06:08.081322Z"
   },
   {
     "id": "cambodia-2027-announcement",
@@ -1755,5 +1755,26 @@
     "url": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/info",
     "kind": "organizer",
     "checkedAt": "2026-10-08T05:24:15.219195Z"
+  },
+  {
+    "id": "florida-free-home",
+    "title": "Florida Free Poker — official venues and current program",
+    "url": "https://floridafreepoker.net/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-09T05:06:08.081322Z"
+  },
+  {
+    "id": "florida-free-rules",
+    "title": "Florida Free Poker — game rules and purchase bonuses",
+    "url": "https://floridafreepoker.net/policies-rules-safety/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-09T05:06:08.081322Z"
+  },
+  {
+    "id": "florida-free-tournaments",
+    "title": "Florida Free Poker — championship eligibility",
+    "url": "https://floridafreepoker.net/tournament-information/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-09T05:06:08.081322Z"
   }
 ]

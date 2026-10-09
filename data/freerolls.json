@@ -2436,5 +2436,88 @@
     "checkedAt": "2026-10-07T04:21:41Z",
     "updatedAt": "2026-10-07T04:21:41Z",
     "reviewNote": null
+  },
+  {
+    "id": "florida-free-poker",
+    "slug": "florida-free-poker",
+    "title": "Florida Free Poker: Central Florida live league",
+    "brand": "Florida Free Poker",
+    "description": "Free-entry Texas Hold’em in Leesburg, Tavares and Eustis. Venue purchases and tips can add chips; quarterly tournaments require prior league participation.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Central Florida · United States",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "FL"
+      ],
+      "note": "In-person participating venues only. Ask the host about admission and age rules; these pages do not confirm an age minimum. This is not an online or statewide offer."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "varies",
+      "password": "unknown",
+      "requirements": [
+        "Choose a participating venue from the official weekly listing; sign-up opens 30 minutes before its start.",
+        "Quarterly tournament eligibility requires five sessions. The October quarterly listing identifies July–September as qualifying months.",
+        "Confirm venue admission and any championship invitation with the organizer."
+      ],
+      "costNote": "Entry is advertised as free. Food/drink purchases, merchandise and dealer tips can provide extra chips. Do not assume equal starting chips or describe every optional activity as free."
+    },
+    "reward": {
+      "label": "League points / championship prizes",
+      "details": "Regular games award points used for quarterly bonus chips. The organizer advertises prizes without a fixed current payout or clearly specified reward type; no cash amount is promised."
+    },
+    "schedule": {
+      "text": "A recurring venue program: Monday–Thursday listings start at 17:00; Friday and Saturday at 13:00. Follow the official venue calendar for changes. No future dated starts are generated from this weekly pattern.",
+      "timezone": "America/New_York",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Is the October 10 tournament open to a first-time visitor?",
+        "text": "It is a quarterly event at Salsa Restaurant and Bar, with a published 12:30 start and July–September qualifying period. The five-session rule applies; confirm eligibility before travelling. It is not listed here as an unrestricted upcoming game."
+      },
+      {
+        "title": "What do extra chips cost?",
+        "text": "The regular-game rules describe food or alcohol spending above USD 12 before tax for meal chips, plus drink, merchandise and tip bonuses. Quarterly events have different bonuses. Optional paid raffles and high-hand activities are separate from zero-entry league play."
+      },
+      {
+        "title": "Where can I check venues and rules?",
+        "text": "Use the organizer pages below for the current venue list, game rules and qualification details. These are information pages; they do not reserve a seat."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official venue program and notices",
+        "url": "https://floridafreepoker.net/",
+        "kind": "schedule",
+        "sourceId": "florida-free-home"
+      },
+      {
+        "label": "Official rules and chip bonuses",
+        "url": "https://floridafreepoker.net/policies-rules-safety/",
+        "kind": "rules",
+        "sourceId": "florida-free-rules"
+      },
+      {
+        "label": "Official tournament eligibility",
+        "url": "https://floridafreepoker.net/tournament-information/",
+        "kind": "rules",
+        "sourceId": "florida-free-tournaments"
+      }
+    ],
+    "sourceIds": [
+      "florida-free-home",
+      "florida-free-rules",
+      "florida-free-tournaments"
+    ],
+    "checkedAt": "2026-10-09T05:06:08.081322Z",
+    "updatedAt": "2026-10-09T05:06:08.081322Z",
+    "reviewNote": null
   }
 ]
