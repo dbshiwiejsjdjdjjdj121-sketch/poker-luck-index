@@ -2049,6 +2049,10 @@
       {
         "title": "When is the next Quads tournament?",
         "text": "The organizer announces November 7, 2026 at 13:00 at Melbourne Moose Lodge, with qualification running September 1–October 31. This is a separate qualifying event, not an unrestricted walk-in game. Ask NQV to confirm your eligibility; the ordinary venue games remain listed on its official timetable."
+      },
+      {
+        "title": "Is Pockets & Putters running on October 10?",
+        "text": "The organizer explicitly says there is no poker at Pockets & Putters on Saturday, October 10, 2026, despite its ordinary timetable. This notice applies to that venue and date, not the whole league."
       }
     ],
     "officialLinks": [
@@ -2069,8 +2073,8 @@
       "nqv-florida-rules",
       "nqv-florida-home"
     ],
-    "checkedAt": "2026-10-08T05:22:13.906744Z",
-    "updatedAt": "2026-10-08T05:25:27.635410Z",
+    "checkedAt": "2026-10-10T05:30:16.148828Z",
+    "updatedAt": "2026-10-10T05:33:51.662089Z",
     "reviewNote": null
   },
   {
@@ -2334,6 +2338,102 @@
           "time": "19:00",
           "timezone": "America/Chicago",
           "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-23-confirmed-0",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-23",
+          "time": "20:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-24-confirmed-1",
+          "label": "MC’s Pub",
+          "date": "2026-10-24",
+          "time": "15:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-25-confirmed-2",
+          "label": "MC’s Pub",
+          "date": "2026-10-25",
+          "time": "16:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-25-confirmed-3",
+          "label": "The Dog House Bar & Grill",
+          "date": "2026-10-25",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-26-confirmed-4",
+          "label": "Chanhassen Legion Post 580",
+          "date": "2026-10-26",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-26-confirmed-5",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-26",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-27-confirmed-6",
+          "label": "Jersey’s Bar & Grill",
+          "date": "2026-10-27",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-27-confirmed-7",
+          "label": "Muddy Chicken",
+          "date": "2026-10-27",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-28-confirmed-8",
+          "label": "Mad Jacks Sports Cafe",
+          "date": "2026-10-28",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-28-confirmed-9",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-28",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-30-confirmed-10",
+          "label": "Scratch Pizzeria",
+          "date": "2026-10-30",
+          "time": "20:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-31-confirmed-11",
+          "label": "MC’s Pub",
+          "date": "2026-10-31",
+          "time": "15:30",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
         }
       ]
     },
@@ -2373,8 +2473,8 @@
       "straight-flush-mn-rules",
       "straight-flush-mn-calendar"
     ],
-    "checkedAt": "2026-10-08T05:22:14.229254Z",
-    "updatedAt": "2026-10-08T05:25:27.635410Z",
+    "checkedAt": "2026-10-10T05:29:56.384732Z",
+    "updatedAt": "2026-10-10T05:33:51.662089Z",
     "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
   },
   {

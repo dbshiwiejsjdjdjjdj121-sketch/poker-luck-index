@@ -9252,7 +9252,7 @@
       "address": "Merrion Road, Ballsbridge, Dublin 4, D04 AK83, Ireland",
       "url": "https://www.rds.ie/getting-here/from-train-stations"
     },
-    "description": "The Irish Open returns to the RDS on March 18–29, 2027. The organizer confirms a EUR 1,150 Main Event with EUR 2.5 million guaranteed, plus a Mini Irish Open and Luxon Pay Mystery Bounty each with EUR 1 million guaranteed. Individual start days remain unconfirmed here.",
+    "description": "The last confirmed Irish Open dates at the RDS are March 18–29, 2027; another official page conflicts with these dates. See the review note before booking. The organizer confirms a EUR 1,150 Main Event with EUR 2.5 million guaranteed, plus a Mini Irish Open and Luxon Pay Mystery Bounty each with EUR 1 million guaranteed. Individual start days remain unconfirmed here.",
     "status": "scheduled",
     "dateNote": null,
     "registration": "Online qualifiers have been announced. The registration guide explains payment options; confirm 2027 event availability before paying. The organizer requires participants to be over 18 with valid picture ID.",
@@ -9261,15 +9261,20 @@
     "scheduleCoverage": "The 2027 announcement confirms festival dates and headline information. This is not a complete 2027 timetable; no dates or fees are copied from 2026.",
     "sourceIds": [
       "irish-dublin-2027-announcement",
-      "irish-registration"
+      "irish-registration",
+      "irish-dublin-2027-about"
     ],
     "checkedAt": "2026-10-01T05:21:28Z",
-    "updatedAt": "2026-09-24T05:12:01Z",
-    "reviewNote": null,
+    "updatedAt": "2026-10-10T05:33:51.662089+00:00",
+    "reviewNote": "Official pages disagree: the dated September 4 announcement lists March 18–29, while the About page lists March 26–April 6, 2027. We retain the last confirmed dates. Confirm with the organizer before booking.",
     "changes": [
       {
         "date": "2026-09-24T05:12:01Z",
         "text": "Overview added with confirmed dates, selected published entry information and travel links."
+      },
+      {
+        "date": "2026-10-10T05:33:51.662089+00:00",
+        "text": "Flagged conflicting official 2027 dates; retained the previously confirmed festival dates."
       }
     ],
     "tournaments": [
@@ -10403,5 +10408,42 @@
         ]
       }
     ]
+  },
+  {
+    "id": "dublin-poker-festival-2027",
+    "slug": "dublin-poker-festival-2027",
+    "name": "Dublin Poker Festival 2027",
+    "tour": "Dublin Poker Festival",
+    "destinationId": "ireland/dublin",
+    "startDate": "2027-02-11",
+    "endDate": "2027-02-21",
+    "dateNote": "The schedule is subject to licence and organizer changes.",
+    "timezone": "Europe/Dublin",
+    "venue": {
+      "name": "Bonnington Hotel Conference Centre",
+      "address": "Swords Road, Whitehall, Dublin 9, Ireland D09 C7F8",
+      "url": "https://www.bonningtondublin.com/"
+    },
+    "status": "scheduled",
+    "description": "Dublin Poker Festival runs February 11–21, 2027 at the Bonnington Hotel Conference Centre. The European Deepstack, Amateur Championship, Irish Seniors and Irish Ladies events are announced. Over EUR 400,000 is guaranteed across the festival, not for one tournament. Individual buy-ins remain unconfirmed here.",
+    "registration": "Use the official overview and schedule for entry announcements. WPT Global satellites are planned; their timetable is not yet confirmed here. The schedule states a 3% prize-pool deduction for staffing, excluding satellites. The organizer advertises an on-site hotel offer with code DPF27 and a three-night minimum; confirm availability and terms directly.",
+    "registrationUrl": "https://dublinpokerfestival.squarespace.com/",
+    "scheduleUrl": "https://dublinpokerfestival.squarespace.com/schedule",
+    "scheduleCoverage": "Festival overview only. The embedded timetable could not be read reliably; individual starts, buy-ins and fees are not reproduced.",
+    "sourceIds": [
+      "dpf-2027-info",
+      "dpf-2027-schedule",
+      "dublin-bonnington"
+    ],
+    "checkedAt": "2026-10-10T05:33:51.662089+00:00",
+    "updatedAt": "2026-10-10T05:33:51.662089+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-10T05:33:51.662089+00:00",
+        "text": "Added confirmed 2027 dates, venue, named championships and official information links."
+      }
+    ],
+    "tournaments": []
   }
 ]

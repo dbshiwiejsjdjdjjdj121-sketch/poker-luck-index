@@ -1677,28 +1677,28 @@
     "title": "Not Quite Vegas — eligibility, costs and league rules",
     "url": "https://notquitevegas.net/rules",
     "kind": "organizer",
-    "checkedAt": "2026-10-08T05:22:13.906744Z"
+    "checkedAt": "2026-10-10T05:30:16.148828Z"
   },
   {
     "id": "nqv-florida-home",
     "title": "Not Quite Vegas — Florida venues and current notices",
     "url": "https://notquitevegas.net/",
     "kind": "schedule",
-    "checkedAt": "2026-10-08T05:22:14.079473Z"
+    "checkedAt": "2026-10-10T05:30:16.215936Z"
   },
   {
     "id": "straight-flush-mn-rules",
     "title": "Straight Flush — Minnesota free bar poker rules",
     "url": "https://sfpokertour.com/rules-play/",
     "kind": "organizer",
-    "checkedAt": "2026-10-08T05:22:14.229254Z"
+    "checkedAt": "2026-10-10T05:29:56.384732Z"
   },
   {
     "id": "straight-flush-mn-calendar",
     "title": "Straight Flush — dated calendar and cancellation notices",
     "url": "https://sfpokertour.com/",
     "kind": "schedule",
-    "checkedAt": "2026-10-08T05:22:18.257803Z"
+    "checkedAt": "2026-10-10T05:30:12.375732Z"
   },
   {
     "id": "apat-reading-2026-schedule",
@@ -1776,5 +1776,33 @@
     "url": "https://floridafreepoker.net/tournament-information/",
     "kind": "schedule",
     "checkedAt": "2026-10-09T05:06:08.081322Z"
+  },
+  {
+    "id": "dpf-2027-info",
+    "title": "Dublin Poker Festival 2027 official overview",
+    "url": "https://dublinpokerfestival.squarespace.com/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-10T05:33:51.662089Z"
+  },
+  {
+    "id": "dpf-2027-schedule",
+    "title": "Dublin Poker Festival 2027 schedule and conditions",
+    "url": "https://dublinpokerfestival.squarespace.com/schedule",
+    "kind": "schedule",
+    "checkedAt": "2026-10-10T05:33:51.662089Z"
+  },
+  {
+    "id": "dublin-bonnington",
+    "title": "Bonnington Dublin hotel, location and dining",
+    "url": "https://www.bonningtondublin.com/",
+    "kind": "travel",
+    "checkedAt": "2026-10-10T05:33:51.662089Z"
+  },
+  {
+    "id": "irish-dublin-2027-about",
+    "title": "Irish Poker Open About page — conflicting 2027 dates",
+    "url": "https://irishpokeropen.com/about/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-10T05:33:51.662089Z"
   }
 ]

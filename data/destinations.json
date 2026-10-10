@@ -2120,7 +2120,7 @@
     "slug": "dublin",
     "region": "Europe",
     "indexable": true,
-    "intro": "For an Irish Open trip, focus on the RDS in Ballsbridge rather than assuming the venue is in central Dublin. Compare nearby lodging with the last leg from the airport or railway station.",
+    "intro": "Confirm your festival venue before booking: the Irish Open uses the RDS in Ballsbridge, while Dublin Poker Festival 2027 uses the Bonnington in Whitehall. Choose accommodation and your final airport transfer for the actual venue.",
     "airport": {
       "title": "Dublin Airport to Ballsbridge",
       "detail": "Aircoach 702 links Dublin Airport with Ballsbridge and has stops by the RDS and Clayton Hotel. Consult the operator’s current timetable for your arrival and return dates.",
@@ -2133,6 +2133,12 @@
         "detail": "The RDS identifies Lansdowne Road and Sandymount as nearby DART stations. Check the venue entrance and evening return service for the day you play.",
         "url": "https://www.rds.ie/getting-here/from-train-stations",
         "sourceId": "dublin-rds-rail"
+      },
+      {
+        "title": "Bonnington location and parking",
+        "detail": "The hotel describes its location as 6 km from Dublin Airport and 3 km north of the city centre. Parking is limited and first come; register your vehicle at reception.",
+        "url": "https://www.bonningtondublin.com/",
+        "sourceId": "dublin-bonnington"
       }
     ],
     "hotels": [
@@ -2141,6 +2147,12 @@
         "detail": "The hotel is at Merrion Road and Simmonscourt Road, next to the RDS Arena. It is a location-based option, with rates and availability checked directly at the hotel.",
         "url": "https://www.claytonhotels.com/ballsbridge/location/",
         "sourceId": "dublin-clayton-ballsbridge"
+      },
+      {
+        "title": "Bonnington — Dublin Poker Festival venue hotel",
+        "detail": "The festival venue includes on-site accommodation in Whitehall. Check room availability directly; festival-specific offers belong to the event overview.",
+        "url": "https://www.bonningtondublin.com/",
+        "sourceId": "dublin-bonnington"
       }
     ],
     "dining": [
@@ -2149,13 +2161,19 @@
         "detail": "The organizer describes restaurants and bars within walking distance of the RDS. Check individual opening hours; no 2027 festival meal package is confirmed here.",
         "url": "https://irishpokeropen.com/location/",
         "sourceId": "irish-dublin-location"
+      },
+      {
+        "title": "Bonnington on-site dining",
+        "detail": "The hotel lists McGettigan’s Pub, The Croft Bar and Casa Della Pizza. Confirm opening hours around your tournament before relying on a meal break.",
+        "url": "https://www.bonningtondublin.com/",
+        "sourceId": "dublin-bonnington"
       }
     ],
     "tax": {
       "text": "Destination-specific prize withholding has not yet been verified. Check the organizer’s payout requirements and the rules that apply to your tax residence before relying on a net prize amount.",
       "sourceIds": []
     },
-    "updatedAt": "2026-09-24T05:12:01Z"
+    "updatedAt": "2026-10-10T05:33:51.662089+00:00"
   },
   {
     "id": "united-states/bell-gardens",
