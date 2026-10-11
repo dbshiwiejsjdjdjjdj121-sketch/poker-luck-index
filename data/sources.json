@@ -1691,14 +1691,14 @@
     "title": "Straight Flush — Minnesota free bar poker rules",
     "url": "https://sfpokertour.com/rules-play/",
     "kind": "organizer",
-    "checkedAt": "2026-10-10T05:29:56.384732Z"
+    "checkedAt": "2026-10-11T07:15:15.792149Z"
   },
   {
     "id": "straight-flush-mn-calendar",
     "title": "Straight Flush — dated calendar and cancellation notices",
     "url": "https://sfpokertour.com/",
     "kind": "schedule",
-    "checkedAt": "2026-10-10T05:30:12.375732Z"
+    "checkedAt": "2026-10-11T07:15:16.294650Z"
   },
   {
     "id": "apat-reading-2026-schedule",
@@ -1804,5 +1804,54 @@
     "url": "https://irishpokeropen.com/about/",
     "kind": "organizer",
     "checkedAt": "2026-10-10T05:33:51.662089Z"
+  },
+  {
+    "id": "festival-tallinn-2026",
+    "title": "The Festival Tallinn 2026 overview and published table",
+    "url": "https://www.thefestival.com/the-festival-series-tallinn-2026",
+    "kind": "schedule",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "tallinn-hilton",
+    "title": "Hilton Tallinn Park — location, accommodation and dining",
+    "url": "https://www.hilton.com/en/hotels/tllhihi-hilton-tallinn-park/",
+    "kind": "travel",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "tallinn-airport",
+    "title": "Tallinn Airport public transport",
+    "url": "https://airport.ee/en/public-transport/",
+    "kind": "travel",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "tallinn-olympic",
+    "title": "Olympic Park Casino visitor information",
+    "url": "https://olympic-casino.ee/en/casino/olympic-park-casino",
+    "kind": "travel",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "smokenaces-rules",
+    "title": "Smoke’n Aces official league rules",
+    "url": "https://smokenacespoker.com/rules/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "smokenaces-locations",
+    "title": "Smoke’n Aces official location finder",
+    "url": "https://smokenacespoker.com/where/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "smokenaces-kenosha-calendar",
+    "title": "58 Below — October 15, 2026 poker event",
+    "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-15/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-11T07:16:48.950553Z"
   }
 ]

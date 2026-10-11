@@ -2348,5 +2348,57 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-04T06:16:50.972143Z"
+  },
+  {
+    "id": "estonia/tallinn",
+    "country": "Estonia",
+    "countryCode": "EE",
+    "countrySlug": "estonia",
+    "city": "Tallinn",
+    "slug": "tallinn",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "For Olympic Park Casino events, use Hilton Tallinn Park on Kreutzwaldi Street as your arrival point. Staying in the connected hotel avoids a separate venue transfer; compare its total room price with nearby alternatives yourself.",
+    "airport": {
+      "title": "Tallinn Airport (TLL)",
+      "detail": "Follow the Arrivals signs to the public transport centre at the city end of the terminal. The airport lists tram and bus connections; check the current timetable for the final leg to your hotel.",
+      "url": "https://airport.ee/en/public-transport/",
+      "sourceId": "tallinn-airport"
+    },
+    "transport": [
+      {
+        "title": "Airport tram, bus and tickets",
+        "detail": "The airport lists T2 and T4 trams, with bus 2 stopping on Tartu highway a short walk from the terminal. Check current routing before travel and validate the ticket when boarding.",
+        "url": "https://airport.ee/en/public-transport/",
+        "sourceId": "tallinn-airport"
+      },
+      {
+        "title": "Venue address and hotel access",
+        "detail": "Hilton Tallinn Park is at Fr. R. Kreutzwaldi 23, Tallinn 10147 and is connected to Olympic Park Casino. Its location page says an airport shuttle is not available.",
+        "url": "https://www.hilton.com/en/hotels/tllhihi-hilton-tallinn-park/",
+        "sourceId": "tallinn-hilton"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Hilton Tallinn Park — connected venue hotel",
+        "detail": "The hotel is connected to Olympic Park Casino, with room service and an on-site restaurant. Confirm rates and cancellation terms directly; no live room price is quoted here.",
+        "url": "https://www.hilton.com/en/hotels/tllhihi-hilton-tallinn-park/",
+        "sourceId": "tallinn-hilton"
+      }
+    ],
+    "dining": [
+      {
+        "title": "The Able Butcher and Café and Bar Linnutee",
+        "detail": "The hotel lists a steakhouse, a lobby café/bar serving quick bites, and room service. Check current hours against your tournament breaks.",
+        "url": "https://www.hilton.com/en/hotels/tllhihi-hilton-tallinn-park/",
+        "sourceId": "tallinn-hilton"
+      }
+    ],
+    "tax": {
+      "text": "Estonia-specific tournament prize withholding has not been verified here. Ask the organizer about payout documents and review the rules for your tax residence before assuming a net prize amount.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-11T07:16:48.950553Z"
   }
 ]

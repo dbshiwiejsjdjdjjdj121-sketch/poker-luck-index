@@ -10445,5 +10445,136 @@
       }
     ],
     "tournaments": []
+  },
+  {
+    "id": "the-festival-tallinn-2026",
+    "slug": "the-festival-tallinn-2026",
+    "name": "The Festival Tallinn 2026",
+    "tour": "The Festival Series",
+    "destinationId": "estonia/tallinn",
+    "startDate": "2026-11-19",
+    "endDate": "2026-11-29",
+    "dateNote": "Advertised festival: November 20–29. The table also lists a November 19 preparatory satellite, included in this overview’s date range.",
+    "timezone": "Europe/Tallinn",
+    "venue": {
+      "name": "Olympic Park Casino at Hilton Tallinn Park",
+      "address": "Fr. R. Kreutzwaldi 23, Tallinn 10147, Estonia",
+      "url": "https://olympic-casino.ee/en/casino/olympic-park-casino"
+    },
+    "status": "scheduled",
+    "description": "Hold’em and mixed games at Olympic Park Casino. The published table lists a EUR 555 NLH Main Event, EUR 350 Hendon Mob Championship and EUR 80 main-event satellites. Stay at the connected Hilton or arrange a separate transfer.",
+    "registration": "Casino admission requires age 21+ and ID or passport. Registered visitors receive a membership card. Check the organizer’s current entry instructions.",
+    "registrationUrl": "https://www.thefestival.com/the-festival-series-tallinn-2026",
+    "scheduleUrl": "https://www.thefestival.com/the-festival-series-tallinn-2026",
+    "scheduleCoverage": "Selected paid poker highlights from the published table; follow the official page for other flights and formats.",
+    "sourceIds": [
+      "festival-tallinn-2026",
+      "tallinn-olympic",
+      "tallinn-hilton"
+    ],
+    "checkedAt": "2026-10-11T07:16:48.950553Z",
+    "updatedAt": "2026-10-11T07:16:48.950553Z",
+    "reviewNote": "The FAQ still says the schedule is unreleased despite the visible table. TORSES prices disagree (EUR 550 in prose, EUR 555 in the table), so that buy-in remains unlisted. Freebuy entry and rebuy conditions need verification.",
+    "changes": [
+      {
+        "date": "2026-10-11T07:16:48.950553Z",
+        "text": "Added overview, selected published highlights and verified Tallinn travel sources."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "nlh-main",
+        "slug": "nlh-main",
+        "name": "NLH Main Event",
+        "number": "nlh-main",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 555,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": "30 minutes for the selected flight.",
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-29",
+        "sessions": [
+          {
+            "id": "nlh-main-start",
+            "label": "Selected published start",
+            "date": "2026-11-25",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "festival-tallinn-2026"
+        ]
+      },
+      {
+        "id": "hendon-mob",
+        "slug": "hendon-mob",
+        "name": "The Hendon Mob Championship",
+        "number": "hendon-mob",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 350,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "hendon-mob-start",
+            "label": "Selected published start",
+            "date": "2026-11-20",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "festival-tallinn-2026"
+        ]
+      },
+      {
+        "id": "main-satellite",
+        "slug": "main-satellite",
+        "name": "NLH Main Event Mega-Satellite",
+        "number": "main-satellite",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 80,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-satellite-start",
+            "label": "Selected published start",
+            "date": "2026-11-24",
+            "time": "22:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "festival-tallinn-2026"
+        ]
+      }
+    ]
   }
 ]

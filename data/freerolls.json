@@ -2434,6 +2434,14 @@
           "time": "15:30",
           "timezone": "America/Chicago",
           "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-10-11-1900-doghouse",
+          "label": "The Dog House Bar & Grill",
+          "date": "2026-10-11",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
         }
       ]
     },
@@ -2473,8 +2481,8 @@
       "straight-flush-mn-rules",
       "straight-flush-mn-calendar"
     ],
-    "checkedAt": "2026-10-10T05:29:56.384732Z",
-    "updatedAt": "2026-10-10T05:33:51.662089Z",
+    "checkedAt": "2026-10-11T07:15:15.792149Z",
+    "updatedAt": "2026-10-11T07:17:40.538236Z",
     "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
   },
   {
@@ -2619,5 +2627,92 @@
     "checkedAt": "2026-10-09T05:06:08.081322Z",
     "updatedAt": "2026-10-09T05:06:08.081322Z",
     "reviewNote": null
+  },
+  {
+    "id": "smokenaces-wisconsin",
+    "slug": "smokenaces-wisconsin",
+    "title": "Smoke’n Aces: Free Live Poker in Kenosha, Wisconsin",
+    "brand": "Smoke’n Aces Poker League",
+    "description": "Free-entry live Hold’em at 58 Below in Kenosha for players aged 21+. No purchase is required by the venue’s listing. League points and qualification are separate from cash prizes at a monthly final.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Wisconsin — 58 Below, Kenosha",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "WI"
+      ],
+      "note": "Verified venue: 504 58th Street, Kenosha, WI 53140. Other league venues are not verified by this guide. Organizer promotions exclude New York residents and are void where prohibited."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "not-required",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Age 21+; attend the named venue in person.",
+        "Check the player account and venue for schedule changes. Monthly finals require league qualification."
+      ],
+      "costNote": "The venue states no purchase required. Food, drinks and tips are separate; bonus-chip options may apply. Confirm current bonus rules with the host."
+    },
+    "reward": {
+      "label": "League points and monthly-final qualification",
+      "details": "The organizer describes point leaders qualifying for a cash-prize Main Event. Chips have no cash value. No guaranteed nightly cash payout or October prize total is claimed here."
+    },
+    "schedule": {
+      "text": "The venue lists October 15, 2026 at 18:30. Its event body still mentions March; confirm operation before travelling. No future starts are generated from weekly recurrence.",
+      "timezone": "America/Chicago",
+      "endDate": null,
+      "slots": [
+        {
+          "id": "smokenaces-kenosha-2026-10-15",
+          "label": "58 Below — confirm with venue",
+          "date": "2026-10-15",
+          "time": "18:30",
+          "timezone": "America/Chicago",
+          "sourceId": "smokenaces-kenosha-calendar"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "How do I join?",
+        "text": "Use the official location finder and player account for check-in instructions, then confirm the named venue’s current game. This guide does not register you."
+      },
+      {
+        "title": "Can I enter a cash final immediately?",
+        "text": "No automatic final seat is promised. Points are recorded by location and district; review the organizer’s qualification rules separately."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official league entry and qualification rules",
+        "url": "https://smokenacespoker.com/rules/",
+        "kind": "rules",
+        "sourceId": "smokenaces-rules"
+      },
+      {
+        "label": "Official venue finder and check-in explanation",
+        "url": "https://smokenacespoker.com/where/",
+        "kind": "explanation",
+        "sourceId": "smokenaces-locations"
+      },
+      {
+        "label": "58 Below official dated event listing",
+        "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-15/",
+        "kind": "schedule",
+        "sourceId": "smokenaces-kenosha-calendar"
+      }
+    ],
+    "sourceIds": [
+      "smokenaces-rules",
+      "smokenaces-locations",
+      "smokenaces-kenosha-calendar"
+    ],
+    "checkedAt": "2026-10-11T07:16:48.950553Z",
+    "updatedAt": "2026-10-11T07:16:48.950553Z",
+    "reviewNote": "The October 15 event page reuses March promotional copy. Its date/time are explicitly published, but current prize and bonus offers need venue confirmation."
   }
 ]
