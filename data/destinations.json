@@ -2400,5 +2400,37 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "slovakia/bratislava",
+    "country": "Slovakia",
+    "countryCode": "SK",
+    "countrySlug": "slovakia",
+    "city": "Bratislava",
+    "slug": "bratislava",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Banco Casino Bratislava is at Hodžovo námestie 2, opposite the Presidential Palace. Accommodation and detailed transfer guidance for this edition are still being checked.",
+    "airport": {
+      "title": "Bratislava Airport (BTS)",
+      "detail": "Use the airport’s official arrivals and ground-transport information to plan your onward journey. No transfer time or fare is estimated here.",
+      "url": "https://www.bts.aero/en/",
+      "sourceId": "bratislava-airport"
+    },
+    "transport": [
+      {
+        "title": "Casino arrival point",
+        "detail": "Use Hodžovo námestie 2 as the destination when arranging the final leg to Banco Casino.",
+        "url": "https://www.bancocasino.sk/ba/en",
+        "sourceId": "bratislava-banco"
+      }
+    ],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Local tournament prize withholding has not been verified here. Confirm payout documentation and your tax-residence requirements with the organizer and an adviser.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-12T05:07:38.206095+00:00"
   }
 ]

@@ -1853,5 +1853,26 @@
     "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-15/",
     "kind": "schedule",
     "checkedAt": "2026-10-11T07:16:48.950553Z"
+  },
+  {
+    "id": "festival-bratislava-2027",
+    "title": "The Festival Bratislava 2027 official announcement",
+    "url": "https://www.thefestival.com/news/the-festival-is-coming-back-to-bratislava-in-2027",
+    "kind": "organizer",
+    "checkedAt": "2026-10-12T05:07:38.206095+00:00"
+  },
+  {
+    "id": "bratislava-banco",
+    "title": "Banco Casino Bratislava official venue information",
+    "url": "https://www.bancocasino.sk/ba/en",
+    "kind": "travel",
+    "checkedAt": "2026-10-12T05:07:38.206095+00:00"
+  },
+  {
+    "id": "bratislava-airport",
+    "title": "Bratislava Airport official passenger information",
+    "url": "https://www.bts.aero/en/",
+    "kind": "travel",
+    "checkedAt": "2026-10-12T05:07:38.206095+00:00"
   }
 ]

@@ -10576,5 +10576,39 @@
         ]
       }
     ]
+  },
+  {
+    "id": "the-festival-bratislava-2027",
+    "slug": "the-festival-bratislava-2027",
+    "name": "The Festival Bratislava 2027",
+    "tour": "The Festival Series",
+    "destinationId": "slovakia/bratislava",
+    "startDate": "2027-02-08",
+    "endDate": "2027-02-14",
+    "timezone": "Europe/Bratislava",
+    "venue": {
+      "name": "Banco Casino Bratislava",
+      "address": "Hodžovo námestie 2, Bratislava, Slovakia",
+      "url": "https://www.bancocasino.sk/ba/en"
+    },
+    "status": "scheduled",
+    "description": "The Festival returns to Banco Casino on February 8–14, 2027. Hold’em and mixed games are planned, with the Hendon Mob Championship returning. The full schedule and buy-ins are not yet announced; this overview confirms dates and venue for early trip planning.",
+    "registration": "Entry rules and registration options for the 2027 edition have not yet been verified. Follow the official announcement for updates before making travel or entry commitments.",
+    "registrationUrl": "https://www.thefestival.com/news/the-festival-is-coming-back-to-bratislava-in-2027",
+    "scheduleUrl": "https://www.thefestival.com/news/the-festival-is-coming-back-to-bratislava-in-2027",
+    "scheduleCoverage": "Dates and venue confirmed; full schedule and buy-ins awaiting announcement.",
+    "sourceIds": [
+      "festival-bratislava-2027",
+      "bratislava-banco"
+    ],
+    "checkedAt": "2026-10-12T05:07:38.206095+00:00",
+    "updatedAt": "2026-10-12T05:07:38.206095+00:00",
+    "changes": [
+      {
+        "date": "2026-10-12T05:07:38.206095+00:00",
+        "text": "Added officially confirmed 2027 dates and venue; buy-ins and detailed schedule remain unknown."
+      }
+    ],
+    "tournaments": []
   }
 ]
