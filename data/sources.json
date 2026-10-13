@@ -1874,5 +1874,33 @@
     "url": "https://www.bts.aero/en/",
     "kind": "travel",
     "checkedAt": "2026-10-12T05:07:38.206095+00:00"
+  },
+  {
+    "id": "killarney-2026-official",
+    "title": "Killarney Festival 2026 official schedule",
+    "url": "https://irishpokertour.com/poker-festivals/the-killarney-festival-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-13T05:06:11.664518+00:00"
+  },
+  {
+    "id": "killarney-gleneagle",
+    "title": "Gleneagle official accommodation and dining",
+    "url": "https://www.gleneaglekillarney.ie/",
+    "kind": "travel",
+    "checkedAt": "2026-10-13T05:06:11.664518+00:00"
+  },
+  {
+    "id": "killarney-airport",
+    "title": "Kerry Airport official passenger information",
+    "url": "https://kerryairport.ie/",
+    "kind": "travel",
+    "checkedAt": "2026-10-13T05:06:11.664518+00:00"
+  },
+  {
+    "id": "killarney-airport-transport",
+    "title": "Kerry Airport official ground transport",
+    "url": "https://kerryairport.ie/transport/",
+    "kind": "travel",
+    "checkedAt": "2026-10-13T05:06:22.133950+00:00"
   }
 ]

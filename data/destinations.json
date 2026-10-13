@@ -2432,5 +2432,57 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-12T05:07:38.206095+00:00"
+  },
+  {
+    "id": "ireland/killarney",
+    "country": "Ireland",
+    "countryCode": "IE",
+    "countrySlug": "ireland",
+    "city": "Killarney",
+    "slug": "killarney",
+    "region": "Europe",
+    "indexable": true,
+    "intro": "Use Gleneagle on Muckross Road for the arena festival. Rooms, apartments and dining are part of the same hotel destination; compare cancellation terms before booking.",
+    "airport": {
+      "title": "Kerry Airport",
+      "detail": "An airport option for Killarney. Its official passenger site links to bus, train, taxi and car-hire information; check the final connection to Muckross Road.",
+      "url": "https://kerryairport.ie/",
+      "sourceId": "killarney-airport"
+    },
+    "transport": [
+      {
+        "title": "Bus from Kerry Airport",
+        "detail": "The airport lists a terminal bus stop with direct services to Killarney. Check current Bus Éireann times; arrange the separate final leg to Gleneagle on Muckross Road.",
+        "url": "https://kerryairport.ie/transport/",
+        "sourceId": "killarney-airport-transport"
+      },
+      {
+        "title": "Arena arrival point",
+        "detail": "Gleneagle is on Muckross Road, Killarney, Co. Kerry V93 V6WF. Confirm your final transfer to the arena with the hotel.",
+        "url": "https://www.gleneaglekillarney.ie/",
+        "sourceId": "killarney-gleneagle"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Gleneagle — venue hotel",
+        "detail": "The property offers rooms, suites and self-catering apartments alongside its live venues. No tournament rate or live availability is claimed.",
+        "url": "https://www.gleneaglekillarney.ie/",
+        "sourceId": "killarney-gleneagle"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Fiadh Restaurant, Backstage Bar and O’Ds",
+        "detail": "These on-site dining options are listed by the hotel. Check opening times against your session breaks.",
+        "url": "https://www.gleneaglekillarney.ie/",
+        "sourceId": "killarney-gleneagle"
+      }
+    ],
+    "tax": {
+      "text": "Irish tournament tax treatment has not been verified here. Organizer prize-pool deductions are not a personal tax calculation; ask about payout documents and your tax residence.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-13T05:06:11.664518+00:00"
   }
 ]

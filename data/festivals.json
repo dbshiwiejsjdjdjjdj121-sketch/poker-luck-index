@@ -10610,5 +10610,148 @@
       }
     ],
     "tournaments": []
+  },
+  {
+    "id": "killarney-festival-2026",
+    "slug": "killarney-festival-2026",
+    "name": "Killarney Festival 2026",
+    "tour": "Irish Poker Tour",
+    "destinationId": "ireland/killarney",
+    "startDate": "2026-10-13",
+    "endDate": "2026-10-18",
+    "timezone": "Europe/Dublin",
+    "venue": {
+      "name": "The Gleneagle Arena",
+      "address": "Muckross Road, Killarney, Co. Kerry V93 V6WF, Ireland",
+      "url": "https://www.gleneaglekillarney.ie/"
+    },
+    "status": "scheduled",
+    "description": "Six days at Gleneagle Arena, with a EUR 700 main entry and EUR 400,000 main guarantee. Selected lower-cost options include a EUR 200 opener and EUR 120 main satellite.",
+    "registration": "Follow the official schedule and structure sheets for entry instructions. Confirm availability with the organizer. Prize pools have 3% staff/expense and 1% leaderboard deductions.",
+    "registrationUrl": "https://irishpokertour.com/poker-festivals/the-killarney-festival-2026/",
+    "scheduleUrl": "https://irishpokertour.com/poker-festivals/the-killarney-festival-2026/",
+    "scheduleCoverage": "Selected main flight, opener and satellite only; other flights remain on the official schedule.",
+    "sourceIds": [
+      "killarney-2026-official",
+      "killarney-gleneagle"
+    ],
+    "checkedAt": "2026-10-13T05:06:11.664518+00:00",
+    "updatedAt": "2026-10-13T05:06:11.664518+00:00",
+    "changes": [
+      {
+        "date": "2026-10-13T05:06:11.664518+00:00",
+        "text": "Added official dates, selected entry costs and verified venue travel information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Killarney Main Event",
+        "number": "main",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 80,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 400000,
+          "currency": "EUR"
+        },
+        "startingStack": 40000,
+        "levels": "40 minutes for selected Day 1A.",
+        "reentry": "Two re-entries",
+        "lateRegistration": "Level 9 for selected Day 1A.",
+        "endDate": "2026-10-18",
+        "sessions": [
+          {
+            "id": "main-start",
+            "label": "Selected published start",
+            "date": "2026-10-15",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "killarney-2026-official"
+        ]
+      },
+      {
+        "id": "opener",
+        "slug": "opener",
+        "name": "Killarney Festival Opener",
+        "number": "opener",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 200,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 15000,
+          "currency": "EUR"
+        },
+        "startingStack": 30000,
+        "levels": "25 minutes",
+        "reentry": "Two re-entries",
+        "lateRegistration": "Level 9",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "opener-start",
+            "label": "Selected published start",
+            "date": "2026-10-13",
+            "time": "16:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "killarney-2026-official"
+        ]
+      },
+      {
+        "id": "main-satellite",
+        "slug": "main-satellite",
+        "name": "Main Event Target Satellite",
+        "number": "main-satellite",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 120,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 20,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": 15000,
+        "levels": "15 minutes",
+        "reentry": "Unlimited re-entry",
+        "lateRegistration": "Level 8",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-satellite-start",
+            "label": "Selected published start",
+            "date": "2026-10-14",
+            "time": "15:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "killarney-2026-official"
+        ]
+      }
+    ]
   }
 ]
