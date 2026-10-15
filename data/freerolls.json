@@ -934,6 +934,102 @@
           "label": "Gino’s NY Pizza Bar",
           "timezone": "America/New_York",
           "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-07-1300",
+          "date": "2026-11-07",
+          "time": "13:00",
+          "label": "The Independent — Turbo Blinds",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-07-1500",
+          "date": "2026-11-07",
+          "time": "15:00",
+          "label": "The Independent — Turbo Blinds",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-08-1300",
+          "date": "2026-11-08",
+          "time": "13:00",
+          "label": "The Independent",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-08-1600",
+          "date": "2026-11-08",
+          "time": "16:00",
+          "label": "Milltown Arms Tavern 5 Points",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-08-1900",
+          "date": "2026-11-08",
+          "time": "19:00",
+          "label": "Little 5 Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-09-1900",
+          "date": "2026-11-09",
+          "time": "19:00",
+          "label": "Moe’s and Joe’s",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-10-1800",
+          "date": "2026-11-10",
+          "time": "18:00",
+          "label": "Sweet Auburn BBQ",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-10-2000",
+          "date": "2026-11-10",
+          "time": "20:00",
+          "label": "Little 5 Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-11-1800",
+          "date": "2026-11-11",
+          "time": "18:00",
+          "label": "Neighbor’s Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-11-2000",
+          "date": "2026-11-11",
+          "time": "20:00",
+          "label": "Limerick Junction Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-12-1900",
+          "date": "2026-11-12",
+          "time": "19:00",
+          "label": "Gino’s NY Pizza Bar",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
+        },
+        {
+          "id": "atlanta-2026-11-13-1900",
+          "date": "2026-11-13",
+          "time": "19:00",
+          "label": "Neighbor’s Pub",
+          "timezone": "America/New_York",
+          "sourceId": "freeroll-atlanta-schedule"
         }
       ],
       "timezone": "America/New_York"
@@ -980,9 +1076,9 @@
       "freeroll-atlanta-welcome",
       "freeroll-atlanta-prizes"
     ],
-    "checkedAt": "2026-10-08T05:22:01.553378Z",
-    "updatedAt": "2026-10-07T04:21:36Z",
-    "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed."
+    "checkedAt": "2026-10-15T07:11:49.515106Z",
+    "updatedAt": "2026-10-15T07:12:59.573271Z",
+    "reviewNote": "The schedule says late entry lasts 1 hour 40 minutes, while the rules say 1 hour. A registration deadline is not confirmed. The 2 October 19:00 calendar entries overlap and one is marked qualifiers only; eligibility for that start is not confirmed. The November 6 19:00 entries also overlap, with one marked monthly qualifiers only; no November 6 start is listed pending clarification."
   },
   {
     "id": "riverchasers-live-poker",
