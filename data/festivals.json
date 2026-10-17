@@ -10753,5 +10753,150 @@
         ]
       }
     ]
+  },
+  {
+    "id": "glasgow-festival-2026",
+    "slug": "glasgow-poker-festival-2026",
+    "name": "Glasgow Poker Festival 2026",
+    "tour": "Irish Poker Tour",
+    "destinationId": "united-kingdom/glasgow",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-08",
+    "dateNote": "Official festival headline: November 3–8. The same schedule also lists a November 2 preliminary flight, included in this overview’s date range.",
+    "timezone": "Europe/London",
+    "venue": {
+      "name": "Alea Casino Glasgow",
+      "address": "Springfield Quay, Glasgow G5 8NP, United Kingdom",
+      "url": "https://www.metropolitancasinos.com/venues/glasgow/contact-us/"
+    },
+    "status": "scheduled",
+    "description": "Live poker at Alea Glasgow with a GBP 400 main entry and GBP 200,000 main guarantee. Selected alternatives include a GBP 150 side tournament and GBP 85 main satellite.",
+    "registration": "18+. Confirm entry with the organizer and casino. Prize-pool deductions are 3% for staff/expenses and 1% for the leaderboard; these are not personal tax rates.",
+    "registrationUrl": "https://irishpokertour.com/poker-festivals/glasgow-poker-festival-2026/",
+    "scheduleUrl": "https://irishpokertour.com/poker-festivals/glasgow-poker-festival-2026/",
+    "scheduleCoverage": "Selected main flight, side tournament and satellite only. Other flights and structures are on the official schedule.",
+    "sourceIds": [
+      "glasgow-2026-official",
+      "glasgow-alea-contact"
+    ],
+    "checkedAt": "2026-10-17T05:04:25.062706Z",
+    "updatedAt": "2026-10-17T05:04:25.062706Z",
+    "reviewNote": "The Glasgow 250 Hyper amount and the Poker Cup satellite currency differ from nearby listings; those entries are excluded pending confirmation.",
+    "changes": [
+      {
+        "date": "2026-10-17T05:04:25.062706Z",
+        "text": "Added verified Glasgow dates, selected entries and venue travel information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Glasgow Main Event",
+        "number": "main",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 400,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 50,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 200000,
+          "currency": "GBP"
+        },
+        "startingStack": "40000",
+        "levels": "30 minutes for selected Day 1A.",
+        "reentry": "Two re-entries",
+        "lateRegistration": "Level 9 for selected Day 1A.",
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "main-start",
+            "label": "Selected published start",
+            "date": "2026-11-04",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "glasgow-2026-official"
+        ]
+      },
+      {
+        "id": "wednesday-side",
+        "slug": "wednesday-side",
+        "name": "Wednesday GBP 5k",
+        "number": "wednesday-side",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 150,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 5000,
+          "currency": "GBP"
+        },
+        "startingStack": "25000",
+        "levels": "25 minutes",
+        "reentry": "Two re-entries",
+        "lateRegistration": "Level 8",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "wednesday-side-start",
+            "label": "Selected published start",
+            "date": "2026-11-04",
+            "time": "19:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "glasgow-2026-official"
+        ]
+      },
+      {
+        "id": "main-satellite",
+        "slug": "main-satellite",
+        "name": "Main Event Target Satellite",
+        "number": "main-satellite",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 85,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 15,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "15000",
+        "levels": "15 minutes",
+        "reentry": "Unlimited re-entry",
+        "lateRegistration": "Level 8",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-satellite-start",
+            "label": "Selected published start",
+            "date": "2026-11-03",
+            "time": "21:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "glasgow-2026-official"
+        ]
+      }
+    ]
   }
 ]

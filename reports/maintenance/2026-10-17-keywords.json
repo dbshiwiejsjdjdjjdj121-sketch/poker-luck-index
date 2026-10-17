@@ -1,0 +1,66 @@
+{
+  "observedAt": "2026-10-17T05:05:51.062137Z",
+  "provider": "Google Trends",
+  "queries": [
+    "poker freerolls",
+    "free poker tournaments"
+  ],
+  "searchType": "Web Search",
+  "category": "all",
+  "requestedPeriod": "today 3-m",
+  "displayedDateRange": [
+    "2026-07-17",
+    "2026-10-17"
+  ],
+  "unit": "normalized relative interest, 0\u2013100 within each comparison",
+  "encoding": "93 displayed daily rows per country. Rows not in nonzeroRows displayed zero, which does not establish no searches. Latest day may be partial.",
+  "markets": [
+    {
+      "country": "US",
+      "nonzeroRows": [
+        {
+          "date": "2026-07-22",
+          "values": [
+            0,
+            100
+          ]
+        },
+        {
+          "date": "2026-08-29",
+          "values": [
+            0,
+            70
+          ]
+        },
+        {
+          "date": "2026-09-08",
+          "values": [
+            59,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "country": "GB",
+      "nonzeroRows": [
+        {
+          "date": "2026-10-10",
+          "values": [
+            100,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "decision": "Samples are too sparse to infer sustained national growth or change strategy. No absolute search volume or site traffic is measured. Retain existing editorial priorities.",
+  "semrush": {
+    "status": "sign-in-required",
+    "attemptedAt": "2026-10-17T05:05:51.062137Z",
+    "country": "US",
+    "query": "poker freerolls",
+    "reportsRead": 0,
+    "historicalEvidenceRetained": "2026-09-16"
+  }
+}

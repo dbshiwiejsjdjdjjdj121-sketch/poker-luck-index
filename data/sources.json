@@ -1838,21 +1838,21 @@
     "title": "Smoke’n Aces official league rules",
     "url": "https://smokenacespoker.com/rules/",
     "kind": "organizer",
-    "checkedAt": "2026-10-11T07:16:48.950553Z"
+    "checkedAt": "2026-10-17T05:03:33.572669Z"
   },
   {
     "id": "smokenaces-locations",
     "title": "Smoke’n Aces official location finder",
     "url": "https://smokenacespoker.com/where/",
     "kind": "organizer",
-    "checkedAt": "2026-10-11T07:16:48.950553Z"
+    "checkedAt": "2026-10-17T05:03:34.071790Z"
   },
   {
     "id": "smokenaces-kenosha-calendar",
     "title": "58 Below — October 15, 2026 poker event",
     "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-15/",
     "kind": "schedule",
-    "checkedAt": "2026-10-11T07:16:48.950553Z"
+    "checkedAt": "2026-10-17T05:03:34.499611Z"
   },
   {
     "id": "festival-bratislava-2027",
@@ -1902,5 +1902,40 @@
     "url": "https://kerryairport.ie/transport/",
     "kind": "travel",
     "checkedAt": "2026-10-13T05:06:22.133950+00:00"
+  },
+  {
+    "id": "glasgow-2026-official",
+    "title": "Glasgow Poker Festival 2026 official schedule",
+    "url": "https://irishpokertour.com/poker-festivals/glasgow-poker-festival-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-17T05:04:25.062706Z"
+  },
+  {
+    "id": "glasgow-alea-contact",
+    "title": "Alea Glasgow official location and admission information",
+    "url": "https://www.metropolitancasinos.com/venues/glasgow/contact-us/",
+    "kind": "travel",
+    "checkedAt": "2026-10-17T05:04:25.062706Z"
+  },
+  {
+    "id": "glasgow-airport-bus",
+    "title": "Glasgow Airport official bus and diversion information",
+    "url": "https://www.glasgowairport.com/to-and-from/bus/",
+    "kind": "travel",
+    "checkedAt": "2026-10-17T05:04:25.062706Z"
+  },
+  {
+    "id": "smokenaces-kenosha-2026-10-29",
+    "title": "58 Below official poker listing 2026-10-29",
+    "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-29/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-17T05:04:25.062706Z"
+  },
+  {
+    "id": "smokenaces-kenosha-2026-11-05",
+    "title": "58 Below official poker listing 2026-11-05",
+    "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-11-05/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-17T05:04:25.062706Z"
   }
 ]

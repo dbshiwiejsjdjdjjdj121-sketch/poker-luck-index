@@ -2484,5 +2484,43 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-13T05:06:11.664518+00:00"
+  },
+  {
+    "id": "united-kingdom/glasgow",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "countrySlug": "united-kingdom",
+    "city": "Glasgow",
+    "slug": "glasgow",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Alea Glasgow is on Springfield Quay by the River Clyde. Check the airport connection and final transfer to the casino before travelling.",
+    "airport": {
+      "title": "Glasgow Airport",
+      "detail": "The airport lists bus links to central Glasgow. This is a city connection; arrange the final leg to Springfield Quay separately.",
+      "url": "https://www.glasgowairport.com/to-and-from/bus/",
+      "sourceId": "glasgow-airport-bus"
+    },
+    "transport": [
+      {
+        "title": "Airport Express 500: check diverted stops",
+        "detail": "The airport warns that North Hanover Street roadworks affect several 500 stops. Check its current diversion notice and allow extra time.",
+        "url": "https://www.glasgowairport.com/to-and-from/bus/",
+        "sourceId": "glasgow-airport-bus"
+      },
+      {
+        "title": "Alea arrival and parking",
+        "detail": "The casino is next to the M8 and ODEON Luxe Glasgow Quay, off Paisley Road West. Its contact page lists free on-site parking.",
+        "url": "https://www.metropolitancasinos.com/venues/glasgow/contact-us/",
+        "sourceId": "glasgow-alea-contact"
+      }
+    ],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Personal tax treatment has not been verified. Organizer prize-pool deductions are separate from tax obligations.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-17T05:04:25.062706Z"
   }
 ]

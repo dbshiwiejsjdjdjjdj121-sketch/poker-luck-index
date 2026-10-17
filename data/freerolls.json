@@ -2758,7 +2758,7 @@
       "details": "The organizer describes point leaders qualifying for a cash-prize Main Event. Chips have no cash value. No guaranteed nightly cash payout or October prize total is claimed here."
     },
     "schedule": {
-      "text": "The venue lists October 15, 2026 at 18:30. Its event body still mentions March; confirm operation before travelling. No future starts are generated from weekly recurrence.",
+      "text": "Official dated listings confirm October 29 and November 5, 2026 at 18:30 Kenosha local time. Their event bodies still mention March; confirm operation before travelling. No dates are generated from recurrence.",
       "timezone": "America/Chicago",
       "endDate": null,
       "slots": [
@@ -2769,6 +2769,22 @@
           "time": "18:30",
           "timezone": "America/Chicago",
           "sourceId": "smokenaces-kenosha-calendar"
+        },
+        {
+          "id": "smokenaces-kenosha-2026-10-29",
+          "label": "58 Below — confirm with venue",
+          "date": "2026-10-29",
+          "time": "18:30",
+          "timezone": "America/Chicago",
+          "sourceId": "smokenaces-kenosha-2026-10-29"
+        },
+        {
+          "id": "smokenaces-kenosha-2026-11-05",
+          "label": "58 Below — confirm with venue",
+          "date": "2026-11-05",
+          "time": "18:30",
+          "timezone": "America/Chicago",
+          "sourceId": "smokenaces-kenosha-2026-11-05"
         }
       ]
     },
@@ -2800,15 +2816,29 @@
         "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-15/",
         "kind": "schedule",
         "sourceId": "smokenaces-kenosha-calendar"
+      },
+      {
+        "label": "58 Below official 2026-10-29 listing",
+        "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-29/",
+        "kind": "schedule",
+        "sourceId": "smokenaces-kenosha-2026-10-29"
+      },
+      {
+        "label": "58 Below official 2026-11-05 listing",
+        "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-11-05/",
+        "kind": "schedule",
+        "sourceId": "smokenaces-kenosha-2026-11-05"
       }
     ],
     "sourceIds": [
       "smokenaces-rules",
       "smokenaces-locations",
-      "smokenaces-kenosha-calendar"
+      "smokenaces-kenosha-calendar",
+      "smokenaces-kenosha-2026-10-29",
+      "smokenaces-kenosha-2026-11-05"
     ],
-    "checkedAt": "2026-10-11T07:16:48.950553Z",
-    "updatedAt": "2026-10-11T07:16:48.950553Z",
-    "reviewNote": "The October 15 event page reuses March promotional copy. Its date/time are explicitly published, but current prize and bonus offers need venue confirmation."
+    "checkedAt": "2026-10-17T05:03:33.572669Z",
+    "updatedAt": "2026-10-17T05:04:25.062706Z",
+    "reviewNote": "The dated venue pages reuse March promotional copy. Dates and times are explicit; current prizes and bonus offers need venue confirmation."
   }
 ]
