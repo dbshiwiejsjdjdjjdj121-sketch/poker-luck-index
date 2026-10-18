@@ -2120,9 +2120,9 @@
     "slug": "dublin",
     "region": "Europe",
     "indexable": true,
-    "intro": "Confirm your festival venue before booking: the Irish Open uses the RDS in Ballsbridge, while Dublin Poker Festival 2027 uses the Bonnington in Whitehall. Choose accommodation and your final airport transfer for the actual venue.",
+    "intro": "Choose the actual festival venue before booking: Green Isle Hotel is in Clondalkin, the Irish Open uses the RDS in Ballsbridge, and Dublin Poker Festival 2027 uses the Bonnington in Whitehall. These require different final transfers.",
     "airport": {
-      "title": "Dublin Airport to Ballsbridge",
+      "title": "Airport link for RDS / Ballsbridge: Aircoach 702",
       "detail": "Aircoach 702 links Dublin Airport with Ballsbridge and has stops by the RDS and Clayton Hotel. Consult the operator’s current timetable for your arrival and return dates.",
       "url": "https://www.aircoach.ie/timetables/702",
       "sourceId": "dublin-aircoach-702"
@@ -2139,6 +2139,12 @@
         "detail": "The hotel describes its location as 6 km from Dublin Airport and 3 km north of the city centre. Parking is limited and first come; register your vehicle at reception.",
         "url": "https://www.bonningtondublin.com/",
         "sourceId": "dublin-bonnington"
+      },
+      {
+        "title": "Green Isle: Clondalkin transfers and parking",
+        "detail": "The hotel lists a Route 69 stop directly outside and road access via the M50/N7. Check current routes with TFI. Parking is free for the first three hours, then EUR 1/hour up to EUR 5/day; overnight guests park free during their stay.",
+        "url": "https://greenislehotel.com/getting-here/",
+        "sourceId": "dublin-green-isle-transport"
       }
     ],
     "hotels": [
@@ -2153,6 +2159,12 @@
         "detail": "The festival venue includes on-site accommodation in Whitehall. Check room availability directly; festival-specific offers belong to the event overview.",
         "url": "https://www.bonningtondublin.com/",
         "sourceId": "dublin-bonnington"
+      },
+      {
+        "title": "Green Isle — Dublin Winter Festival venue hotel",
+        "detail": "On-site rooms in Clondalkin, Dublin 22. Check availability and cancellation terms directly; no festival room price is confirmed here.",
+        "url": "https://greenislehotel.com/",
+        "sourceId": "dublin-green-isle"
       }
     ],
     "dining": [
@@ -2167,13 +2179,19 @@
         "detail": "The hotel lists McGettigan’s Pub, The Croft Bar and Casa Della Pizza. Confirm opening hours around your tournament before relying on a meal break.",
         "url": "https://www.bonningtondublin.com/",
         "sourceId": "dublin-bonnington"
+      },
+      {
+        "title": "Green Isle bar and restaurant",
+        "detail": "The hotel lists carvery and à la carte dining. Confirm service times around your sessions.",
+        "url": "https://greenislehotel.com/",
+        "sourceId": "dublin-green-isle"
       }
     ],
     "tax": {
       "text": "Destination-specific prize withholding has not yet been verified. Check the organizer’s payout requirements and the rules that apply to your tax residence before relying on a net prize amount.",
       "sourceIds": []
     },
-    "updatedAt": "2026-10-10T05:33:51.662089+00:00"
+    "updatedAt": "2026-10-18T06:18:31.568937Z"
   },
   {
     "id": "united-states/bell-gardens",

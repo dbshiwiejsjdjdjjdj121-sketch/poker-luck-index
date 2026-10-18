@@ -1691,14 +1691,14 @@
     "title": "Straight Flush — Minnesota free bar poker rules",
     "url": "https://sfpokertour.com/rules-play/",
     "kind": "organizer",
-    "checkedAt": "2026-10-11T07:15:15.792149Z"
+    "checkedAt": "2026-10-18T06:17:04.574461Z"
   },
   {
     "id": "straight-flush-mn-calendar",
     "title": "Straight Flush — dated calendar and cancellation notices",
     "url": "https://sfpokertour.com/",
     "kind": "schedule",
-    "checkedAt": "2026-10-11T07:15:16.294650Z"
+    "checkedAt": "2026-10-18T06:17:05.107862Z"
   },
   {
     "id": "apat-reading-2026-schedule",
@@ -1937,5 +1937,33 @@
     "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-11-05/",
     "kind": "schedule",
     "checkedAt": "2026-10-17T05:04:25.062706Z"
+  },
+  {
+    "id": "dublin-winter-2026-official",
+    "title": "Dublin Winter Festival 2026 official schedule",
+    "url": "https://irishpokertour.com/poker-festivals/dublin-winter-festival-2026/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-18T06:18:31.568937Z"
+  },
+  {
+    "id": "dublin-green-isle",
+    "title": "Green Isle Hotel official accommodation and dining",
+    "url": "https://greenislehotel.com/",
+    "kind": "travel",
+    "checkedAt": "2026-10-18T06:18:31.568937Z"
+  },
+  {
+    "id": "dublin-green-isle-transport",
+    "title": "Green Isle Hotel official directions and parking",
+    "url": "https://greenislehotel.com/getting-here/",
+    "kind": "travel",
+    "checkedAt": "2026-10-18T06:18:31.568937Z"
+  },
+  {
+    "id": "dublin-winter-2026-satellite-structure",
+    "title": "Dublin Winter Festival official satellite structure and age rules",
+    "url": "https://irishpokertour.com/wp-content/uploads/2026/08/Dublin-Winter-Festival-Freeroll-Satellite.pdf",
+    "kind": "schedule",
+    "checkedAt": "2026-10-18T06:18:57.937889Z"
   }
 ]

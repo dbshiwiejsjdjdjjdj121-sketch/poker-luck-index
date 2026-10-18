@@ -10898,5 +10898,149 @@
         ]
       }
     ]
+  },
+  {
+    "id": "dublin-winter-2026",
+    "slug": "dublin-winter-festival-2026",
+    "name": "Dublin Winter Festival 2026",
+    "tour": "Irish Poker Tour",
+    "destinationId": "ireland/dublin",
+    "startDate": "2026-11-26",
+    "endDate": "2026-11-29",
+    "dateNote": null,
+    "timezone": "Europe/Dublin",
+    "venue": {
+      "name": "The Green Isle Hotel",
+      "address": "St John’s Drive, Newlands Cross, Clondalkin, Dublin 22, Ireland, D22 F9F4",
+      "url": "https://greenislehotel.com/"
+    },
+    "status": "scheduled",
+    "description": "Four days in Clondalkin with a EUR 200 main entry and EUR 150,000 main guarantee. Selected highlights include a EUR 150 side event and a free initial satellite entry with paid re-entries.",
+    "registration": "Age 18+ under the official structure rules. Confirm entry availability with the organizer. The selected freeroll satellite offers free initial entry; optional re-entries cost EUR 20. Prize-pool deductions are 3% for staff/expenses and 1% for the leaderboard.",
+    "registrationUrl": "https://irishpokertour.com/poker-festivals/dublin-winter-festival-2026/",
+    "scheduleUrl": "https://irishpokertour.com/poker-festivals/dublin-winter-festival-2026/",
+    "scheduleCoverage": "Selected main flight, Friday side event and Thursday satellite only; not the complete schedule.",
+    "sourceIds": [
+      "dublin-winter-2026-official",
+      "dublin-green-isle",
+      "dublin-winter-2026-satellite-structure"
+    ],
+    "checkedAt": "2026-10-18T06:18:31.568937Z",
+    "updatedAt": "2026-10-18T06:18:31.568937Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-18T06:18:31.568937Z",
+        "text": "Added verified festival dates, selected entry costs and Clondalkin venue travel guidance."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Dublin Winter Main Event",
+        "number": "main",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 200,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 150000,
+          "currency": "EUR"
+        },
+        "startingStack": "30000",
+        "levels": "30 minutes for selected Day 1A.",
+        "reentry": "Two re-entries",
+        "lateRegistration": "Level 9 for selected Day 1A.",
+        "endDate": "2026-11-29",
+        "sessions": [
+          {
+            "id": "main-start",
+            "label": "Selected published start",
+            "date": "2026-11-26",
+            "time": "18:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "dublin-winter-2026-official"
+        ]
+      },
+      {
+        "id": "friday-side",
+        "slug": "friday-side",
+        "name": "DWF Friday NLH",
+        "number": "friday-side",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 150,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 5000,
+          "currency": "EUR"
+        },
+        "startingStack": "25000",
+        "levels": "20 minutes",
+        "reentry": "Two re-entries",
+        "lateRegistration": "Level 8",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "friday-side-start",
+            "label": "Selected published start",
+            "date": "2026-11-27",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "dublin-winter-2026-official"
+        ]
+      },
+      {
+        "id": "main-satellite",
+        "slug": "main-satellite",
+        "name": "Main Event Freeroll Satellite — paid re-entries",
+        "number": "main-satellite",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 0,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": "10,000 initial / 15,000 re-entry",
+        "levels": "15/10 minutes",
+        "reentry": "Free initial entry; optional unlimited EUR 20 re-entries.",
+        "lateRegistration": "Level 8",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-satellite-start",
+            "label": "Selected published start",
+            "date": "2026-11-26",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "dublin-winter-2026-official",
+          "dublin-winter-2026-satellite-structure"
+        ]
+      }
+    ]
   }
 ]

@@ -2207,7 +2207,7 @@
       "details": "Championship rewards vary. Noncash grand prizes require age 21; the rules describe a reduced cash alternative for younger eligible winners. No guaranteed cash prize per weekly game is listed here."
     },
     "schedule": {
-      "text": "Selected starts explicitly listed on the official October 2026 calendar. Check organizer notices before travelling. The Dog House game on October 4 is excluded because a newer notice says it will not run.",
+      "text": "Selected official dated starts are listed through November 1, 2026. Check organizer notices before travelling. The October 4 Dog House cancellation remains preserved; no dates are generated from weekly recurrence.",
       "timezone": "America/Chicago",
       "endDate": null,
       "slots": [
@@ -2538,6 +2538,22 @@
           "time": "19:00",
           "timezone": "America/Chicago",
           "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-11-01-mcspub",
+          "label": "MC’s Pub",
+          "date": "2026-11-01",
+          "time": "16:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
+        },
+        {
+          "id": "straight-flush-2026-11-01-doghouse",
+          "label": "The Dog House Bar & Grill",
+          "date": "2026-11-01",
+          "time": "19:00",
+          "timezone": "America/Chicago",
+          "sourceId": "straight-flush-mn-calendar"
         }
       ]
     },
@@ -2555,8 +2571,8 @@
         "text": "An organizer notice cancels that game despite its calendar entry. Other venue starts are listed below; confirm any last-minute changes with the host."
       },
       {
-        "title": "Can anyone enter the October 17 noon tournament?",
-        "text": "The calendar lists a separate Tournament of Champions for the July–September session at The Dog House on October 17 at noon. The organizer has announced a qualifier list; do not treat it as an open weekly game. The 15:30 MC’s Pub listing is a separate ordinary game."
+        "title": "Was the October 17 noon championship open entry?",
+        "text": "That Tournament of Champions was for qualified July–September players, separate from ordinary weekly games. It has ended; the organizer now reports its result."
       }
     ],
     "officialLinks": [
@@ -2577,8 +2593,8 @@
       "straight-flush-mn-rules",
       "straight-flush-mn-calendar"
     ],
-    "checkedAt": "2026-10-11T07:15:15.792149Z",
-    "updatedAt": "2026-10-11T07:17:40.538236Z",
+    "checkedAt": "2026-10-18T06:17:04.574461Z",
+    "updatedAt": "2026-10-18T06:18:31.568937Z",
     "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
   },
   {
