@@ -1965,5 +1965,26 @@
     "url": "https://irishpokertour.com/wp-content/uploads/2026/08/Dublin-Winter-Festival-Freeroll-Satellite.pdf",
     "kind": "schedule",
     "checkedAt": "2026-10-18T06:18:57.937889Z"
+  },
+  {
+    "id": "ppc-charlotte-home",
+    "title": "Pub Poker Championship current season and weekly schedule",
+    "url": "https://pubpokerchampionship.org/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-19T07:19:00.100003Z"
+  },
+  {
+    "id": "ppc-charlotte-about",
+    "title": "Pub Poker Championship free entry and qualification",
+    "url": "https://pubpokerchampionship.org/index.php/home/about/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-19T07:19:00.100003Z"
+  },
+  {
+    "id": "ppc-charlotte-locations",
+    "title": "Pub Poker Championship Charlotte venues",
+    "url": "https://pubpokerchampionship.org/index.php/home/locations/",
+    "kind": "organizer",
+    "checkedAt": "2026-10-19T07:19:00.100003Z"
   }
 ]

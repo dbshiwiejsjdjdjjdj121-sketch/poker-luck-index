@@ -2856,5 +2856,84 @@
     "checkedAt": "2026-10-17T05:03:33.572669Z",
     "updatedAt": "2026-10-17T05:04:25.062706Z",
     "reviewNote": "The dated venue pages reuse March promotional copy. Dates and times are explicit; current prizes and bonus offers need venue confirmation."
+  },
+  {
+    "id": "pub-poker-championship-north-carolina",
+    "slug": "pub-poker-championship-north-carolina",
+    "title": "Pub Poker Championship: Free Live Poker in Charlotte, NC",
+    "brand": "Pub Poker Championship",
+    "description": "Free-entry live poker at Charlotte venues in North Carolina. Ordinary league games and season-final qualification are separate; confirm venue admission and spending policies before attending.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "North Carolina — Charlotte",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "NC"
+      ],
+      "note": "In-person games at named Charlotte venues. This is not a US-wide online offer."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "not-required",
+      "password": "unknown",
+      "requirements": [
+        "Arrive at the host venue 20 minutes before an ordinary game to register.",
+        "Ask the host about age, admission and spending policies; the league pages do not specify these.",
+        "Season finals have separate points-based qualification."
+      ],
+      "costNote": "The organizer describes free entry. Venue purchases and bonus-chip policies are not confirmed; no no-purchase claim is made."
+    },
+    "reward": {
+      "label": "League points and championship qualification",
+      "details": "Nightly top-20 finishes earn points. The top 10 at each location qualify for TOC; location season points winners also play a separate final table. Published pages do not specify a current cash prize amount."
+    },
+    "schedule": {
+      "text": "Season 66: September 25, 2026–January 29, 2027. Published weekly times: Monday DD Peckers 20:00; Tuesday and Thursday Carolina Steel 19:00; Wednesday Zee’s 19:00; Sunday Shuckin Shack 18:00. Confirm with the venue. No dated starts are inferred from this recurring timetable.",
+      "timezone": "America/New_York",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Where can I play?",
+        "text": "The official venue directory lists DD Peckers and Zee’s Tavern on Park Road, Carolina Steel on Copper Way, and Shuckin Shack on Ballantyne Commons Parkway, all in Charlotte."
+      },
+      {
+        "title": "Can I join a final immediately?",
+        "text": "Ordinary games do not promise a championship seat. TOC depends on season rankings; the Season Ending Social requires at least six games. January 29 is the announced season end, not a confirmed closure of this ongoing league."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official weekly timetable and current season",
+        "url": "https://pubpokerchampionship.org/",
+        "kind": "schedule",
+        "sourceId": "ppc-charlotte-home"
+      },
+      {
+        "label": "Official entry and qualification explanation",
+        "url": "https://pubpokerchampionship.org/index.php/home/about/",
+        "kind": "rules",
+        "sourceId": "ppc-charlotte-about"
+      },
+      {
+        "label": "Official Charlotte venue directory",
+        "url": "https://pubpokerchampionship.org/index.php/home/locations/",
+        "kind": "explanation",
+        "sourceId": "ppc-charlotte-locations"
+      }
+    ],
+    "sourceIds": [
+      "ppc-charlotte-home",
+      "ppc-charlotte-about",
+      "ppc-charlotte-locations"
+    ],
+    "checkedAt": "2026-10-19T07:19:00.100003Z",
+    "updatedAt": "2026-10-19T07:19:00.100003Z",
+    "reviewNote": "Age, venue spending requirements and current prize amounts need host confirmation. The website’s separate Registration link returned 404; ordinary-game arrival instructions remain available on About."
   }
 ]
