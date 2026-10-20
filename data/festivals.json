@@ -11042,5 +11042,76 @@
         ]
       }
     ]
+  },
+  {
+    "id": "wpt-prime-taiwan-2027",
+    "slug": "wpt-prime-taiwan-2027",
+    "name": "WPT Prime Taiwan 2027",
+    "tour": "WPT Prime",
+    "destinationId": "taiwan/taipei",
+    "startDate": "2027-01-02",
+    "endDate": "2027-01-11",
+    "dateNote": "Whole festival: January 2–11. Championship: January 7–11.",
+    "timezone": "Asia/Taipei",
+    "venue": {
+      "name": "CTP Asia Poker Arena",
+      "address": "Zhongshan District, Taipei, Taiwan",
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-prime-taiwan-season-2027"
+    },
+    "status": "scheduled",
+    "description": "January festival at CTP Asia Poker Arena in Taipei. The TWD 35,000 Championship has a TWD 30 million guarantee; detailed side events remain unpublished.",
+    "registration": "Final registration guidance and eligibility details will be announced by the organizer. Confirm admission, documents and payment requirements before booking. Online satellite dates, prices and package eligibility are not yet confirmed.",
+    "registrationUrl": "https://www.worldpokertour.com/article/special-event-presented-by-pokertalk-wpt-prime-taiwan-returns-to-ctp-in-january-2027",
+    "scheduleUrl": "https://www.worldpokertour.com/event/special-events-special-event-wpt-prime-taiwan-season-2027",
+    "scheduleCoverage": "One announced championship highlight; no side-event schedule is inferred.",
+    "sourceIds": [
+      "wpt-taiwan-2027-announcement",
+      "wpt-taiwan-2027-main"
+    ],
+    "checkedAt": "2026-10-20T05:00:05.643728Z",
+    "updatedAt": "2026-10-20T05:00:05.643728Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-20T05:00:05.643728Z",
+        "text": "Added confirmed whole-festival dates, venue and championship buy-in and guarantee."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "name": "WPT Prime Taiwan Championship",
+        "number": null,
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 35000,
+          "currency": "TWD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 30000000,
+          "currency": "TWD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-11",
+        "sessions": [
+          {
+            "id": "opening-day",
+            "label": "Championship opening day",
+            "date": "2027-01-07",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "wpt-taiwan-2027-main"
+        ]
+      }
+    ]
   }
 ]

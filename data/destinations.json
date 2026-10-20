@@ -847,9 +847,9 @@
     "city": "Taipei",
     "slug": "taipei",
     "region": "Asia",
-    "intro": "Use Red Space as the starting point for your Taipei tournament trip. This guide brings together verified arrival and accommodation information with the festivals currently listed in the city.",
+    "intro": "Taipei hosts festivals at different venues: APT Championship uses Red Space, while WPT Prime Taiwan 2027 is announced at CTP Asia Poker Arena. Check the venue on your selected festival before arranging transport or accommodation.",
     "airport": {
-      "title": "Arrival & transfer planning",
+      "title": "Red Space arrival planning",
       "detail": "Confirm the route to Red Space with the organizer before booking transport. Airport recommendations and transfer times are still being verified.",
       "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
       "sourceId": "taipei-info"
@@ -877,7 +877,7 @@
         "tw-tax"
       ]
     },
-    "updatedAt": "2026-09-06T17:56:10+00:00",
+    "updatedAt": "2026-10-20T05:00:05.643728Z",
     "indexable": false
   },
   {

@@ -1986,5 +1986,19 @@
     "url": "https://pubpokerchampionship.org/index.php/home/locations/",
     "kind": "organizer",
     "checkedAt": "2026-10-19T07:19:00.100003Z"
+  },
+  {
+    "id": "wpt-taiwan-2027-announcement",
+    "title": "WPT Prime Taiwan January 2027 festival announcement",
+    "url": "https://www.worldpokertour.com/article/special-event-presented-by-pokertalk-wpt-prime-taiwan-returns-to-ctp-in-january-2027",
+    "kind": "organizer",
+    "checkedAt": "2026-10-20T05:00:05.643728Z"
+  },
+  {
+    "id": "wpt-taiwan-2027-main",
+    "title": "WPT Prime Taiwan 2027 championship details",
+    "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-prime-taiwan-season-2027",
+    "kind": "schedule",
+    "checkedAt": "2026-10-20T05:00:05.643728Z"
   }
 ]
