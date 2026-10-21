@@ -17,7 +17,7 @@ User-requested manual product repair, separate from daily data-only maintenance.
 
 ## Validation / release
 
-Unit tests passed (55). Full validation, staged deployment and production smoke pending; release receipt to follow. Existing authenticated/private routes and crawl restrictions remain unchanged.
+Full validation passed: 55 tests, lint, build and typecheck. Staged and live smoke each passed 212 pages/routes plus filter/metadata assertions. Desktop and 400×751 mobile browser checks passed; tracking-only market sections are restored. Initial local build failed because the original checkout dependency copy lacked @vercel/analytics; npm ci restored locked dependencies without changing manifests, then all checks passed. Existing authenticated/private routes and crawl restrictions remain unchanged.
 
 ## References and limitations
 
@@ -26,3 +26,11 @@ Unit tests passed (55). Full validation, staged deployment and production smoke 
 - https://support.google.com/webmasters/answer/7440203
 
 These repairs address reproduced issues; they are not proof of the cause of clean-URL non-crawling and do not guarantee index inclusion. Avoid duplicate landing pages, fake freshness and repeated indexing requests.
+
+## Production receipt
+
+- Content commit: 73c131669291be4706675bf0aad0f6971fa6d730
+- Deployment: https://poker-luck-index-o3gmvdmck-yiwangyuai-7161s-projects.vercel.app
+- Completed: 2026-10-21T13:26:35.359Z
+- Live /freerolls?q= and tracking-only variants: index, follow; actual GB filter: noindex, follow. Directory lastmod: 2026-10-19T07:19:00.100003Z (actual catalog update).
+- Google indexing inclusion remains unconfirmed; submission and follow-up state retained in protected local cache.
