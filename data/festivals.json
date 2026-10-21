@@ -11113,5 +11113,106 @@
         ]
       }
     ]
+  },
+  {
+    "id": "merit-western-series-2027",
+    "slug": "merit-western-series-2027",
+    "name": "Merit Poker Western Series 2027",
+    "tour": "Merit Poker",
+    "destinationId": "cyprus/kyrenia",
+    "startDate": "2027-01-11",
+    "endDate": "2027-01-22",
+    "dateNote": "Whole series January 11–22; Main Event January 17–22.",
+    "timezone": "Asia/Nicosia",
+    "venue": {
+      "name": "Merit Crystal Cove Hotel Casino & Spa",
+      "address": "North Cyprus",
+      "url": "https://meritpoker.com/event/western-series-11-22-january/"
+    },
+    "status": "scheduled",
+    "description": "January series at Merit Crystal Cove with a USD 5,500 Main Event and USD 3 million Main Event guarantee. Selected paid qualifiers offer lower entry costs.",
+    "registration": "Confirm admission, ID and payment requirements with Merit Poker. Initial-entry freeroll qualifiers advertise paid rebuys/add-ons; they are not an all-costs-free route. Accommodation offers contain inconsistent hotel references and are not quoted here.",
+    "registrationUrl": "https://meritpoker.com/event/western-series-11-22-january/",
+    "scheduleUrl": "https://meritpoker.com/event/western-series-11-22-january/",
+    "scheduleCoverage": "Two selected highlights: Main Event opening flight and one paid qualifier. Use the official calendar for other flights and events.",
+    "sourceIds": [
+      "merit-western-2027-official"
+    ],
+    "checkedAt": "2026-10-21T05:02:27.823647Z",
+    "updatedAt": "2026-10-21T05:02:27.823647Z",
+    "reviewNote": "Accommodation copy refers to different hotels and promotions; confirm directly before booking.",
+    "changes": [
+      {
+        "date": "2026-10-21T05:02:27.823647Z",
+        "text": "Added verified January festival dates, venue, Main Event and selected qualifier."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main-event",
+        "slug": "main-event",
+        "name": "Main Event",
+        "number": null,
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 5500,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 3000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-22",
+        "sessions": [
+          {
+            "id": "flight-a",
+            "label": "Flight A",
+            "date": "2027-01-17",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "merit-western-2027-official"
+        ]
+      },
+      {
+        "id": "mega-qualifier",
+        "slug": "mega-qualifier",
+        "name": "MEGA Qualifier to Main Event Day 1A",
+        "number": null,
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 630,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2027-01-11",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "merit-western-2027-official"
+        ]
+      }
+    ]
   }
 ]
