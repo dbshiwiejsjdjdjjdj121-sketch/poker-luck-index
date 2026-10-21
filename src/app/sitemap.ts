@@ -7,7 +7,8 @@ import { tourGuideModified } from "@/lib/tour-guides";
 export default function sitemap():MetadataRoute.Sitemap {
  const countries=[...new Set(destinations.map(d=>d.countrySlug))];
  return [
- ...["","/freerolls","/tournaments","/destinations","/about","/privacy","/terms"].map(path=>({url:SITE_URL+path})),
+ ...["","/tournaments","/destinations","/about","/privacy","/terms"].map(path=>({url:SITE_URL+path})),
+ {url:SITE_URL+"/freerolls",lastModified:freerolls.map(f=>f.updatedAt).sort().at(-1)},
  ...freerolls.map(f=>({url:SITE_URL+"/freerolls/"+f.slug,lastModified:f.updatedAt})),
  ...festivals.map(f=>({url:SITE_URL+"/tournaments/"+f.slug,lastModified:[f.updatedAt,destinationById(f.destinationId).updatedAt].sort().at(-1)})),
  ...tourGuides.map(g=>({url:SITE_URL+"/tours/"+g.tourId,lastModified:tourGuideModified(g)})),

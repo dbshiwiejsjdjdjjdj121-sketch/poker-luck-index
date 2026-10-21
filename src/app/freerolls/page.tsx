@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { freerolls } from "@/lib/freeroll-data";
-import { filterFreerolls, listedStates } from "@/lib/freerolls";
-import type { FreerollFilters } from "@/lib/guide-types";
+import { filterFreerolls, listedStates, parseFreerollFilters } from "@/lib/freerolls";
 import { pageMeta, SITE_URL } from "@/lib/site";
 import { serializeJsonLd } from "@/lib/guide-utils";
 import { FreerollCard } from "@/components/freeroll-card";
@@ -10,9 +9,9 @@ import { FreerollQuestions } from "@/components/freeroll-questions";
 import { Breadcrumbs } from "@/components/guide-ui";
 export const revalidate=900;
 type Props={searchParams:Promise<Record<string,string|string[]|undefined>>};
-export async function generateMetadata({searchParams}:Props){const q=await searchParams;return pageMeta("Poker freerolls: US & UK entry guide","Compare US live free poker by state and UK online freeroll conditions. Filter published starts, check prizes and eligibility, then follow official rules.","/freerolls",Object.keys(q).length>0);}
+export async function generateMetadata({searchParams}:Props){const q=await searchParams;return pageMeta("Poker freerolls: US & UK entry guide","Compare US live free poker by state and UK online freeroll conditions. Filter published starts, check prizes and eligibility, then follow official rules.","/freerolls",Object.keys(parseFreerollFilters(q)).length>0);}
 export default async function Freerolls({searchParams}:Props){
- const raw=await searchParams;const filters:FreerollFilters=Object.fromEntries(Object.entries(raw).filter(([,v])=>typeof v==="string"));
+ const raw=await searchParams;const filters=parseFreerollFilters(raw);
  const items=filterFreerolls(freerolls,filters);
  return <main id="main" className="container page"><Breadcrumbs items={[{label:"Freerolls"}]}/><div className="fr-heading"><p className="eyebrow">FREE ENTRY. CLEAR CONDITIONS.</p><h1>Poker freerolls.<br/><em>Know before you enter.</em></h1><p className="lead">Compare online poker freerolls and selected live free-entry games. Filter by country, deposit requirements and confirmed starts, then open a guide for prizes, entry rules and official links.</p></div>
  <div className="fr-quick-links"><Link href="/freerolls?country=US">US live poker guides ↗</Link><Link href="/freerolls?country=GB">UK freeroll guides ↗</Link><Link href="/freerolls?when=week">Verified starts this week ↗</Link></div>

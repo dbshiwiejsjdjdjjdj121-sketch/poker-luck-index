@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import type { Freeroll,Source } from "../src/lib/guide-types";
 import { validateFreerolls } from "../src/lib/validate-guide";
-import { filterFreerolls,availableSlots,freerollStale,freerollEnded,listedStates,featuredFreerolls,relatedFreerolls } from "../src/lib/freerolls";
+import { parseFreerollFilters,filterFreerolls,availableSlots,freerollStale,freerollEnded,listedStates,featuredFreerolls,relatedFreerolls } from "../src/lib/freerolls";
 import { stageFreerolls } from "../src/lib/stage-freerolls";
 const items=JSON.parse(readFileSync("data/freerolls.json","utf8")) as Freeroll[];
 const sources=JSON.parse(readFileSync("data/sources.json","utf8")) as Source[];
@@ -75,4 +75,10 @@ test("a promotion remains active through its final venue-local date",()=>{
  const f=fixture();f.schedule.endDate="2026-09-16";f.schedule.timezone="America/Los_Angeles";
  assert.equal(freerollEnded(f,new Date("2026-09-17T03:00:00Z")),false);
  assert.equal(freerollEnded(f,new Date("2026-09-17T07:00:00Z")),true);
+});
+
+test("empty forms and tracking parameters preserve the full indexable directory",()=>{
+ assert.deepEqual(parseFreerollFilters({q:" ",mode:"",country:"",state:"",entry:"",when:"",utm_source:"newsletter"}),{});
+ assert.deepEqual(parseFreerollFilters({country:"GB",q:"  poker  ",utm_source:"newsletter"}),{q:"poker",country:"GB"});
+ assert.deepEqual(parseFreerollFilters({country:["GB","US"]}),{});
 });

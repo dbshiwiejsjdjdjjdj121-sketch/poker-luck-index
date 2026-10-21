@@ -53,3 +53,14 @@ export function relatedFreerolls(items: Freeroll[], current: Freeroll, now = new
   return filterFreerolls(items,{},now).filter(f=>f.id!==current.id && f.market.countries.some(c=>current.market.countries.includes(c)) &&
     (!current.market.countries.includes("US") || f.market.usStates.some(s=>current.market.usStates.includes(s)))).slice(0,3);
 }
+
+// Only actual directory filters affect content or indexing. Tracking parameters
+// and empty GET-form fields must not turn the full directory into a noindex page.
+export function parseFreerollFilters(raw: Record<string, string | string[] | undefined>): FreerollFilters {
+  const filters: FreerollFilters = {};
+  for (const key of ["q", "mode", "country", "state", "entry", "when"] as const) {
+    const value = raw[key];
+    if (typeof value === "string" && value.trim()) filters[key] = value.trim();
+  }
+  return filters;
+}
