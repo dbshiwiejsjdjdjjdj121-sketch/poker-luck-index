@@ -2540,5 +2540,51 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-17T05:04:25.062706Z"
+  },
+  {
+    "id": "ireland/galway",
+    "country": "Ireland",
+    "countryCode": "IE",
+    "countrySlug": "ireland",
+    "city": "Galway",
+    "slug": "galway",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "The Galmont Hotel & Spa hosts this Galway festival. Check transport and accommodation before committing to travel.",
+    "airport": {
+      "title": "Airport choices",
+      "detail": "The hotel lists Shannon, Knock and Dublin as airport options. Check current onward transport with the operator before booking.",
+      "url": "https://www.thegalmont.com/home/location/",
+      "sourceId": "galmont-directions"
+    },
+    "transport": [
+      {
+        "title": "Rail arrival and hotel parking",
+        "detail": "The hotel is a short walk from Galway Ceannt rail station and offers on-site underground parking. Confirm current parking charges directly.",
+        "url": "https://www.thegalmont.com/home/location/",
+        "sourceId": "galmont-directions"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "The Galmont Hotel & Spa",
+        "detail": "The host hotel offers rooms and an on-site car park. Check availability and booking terms directly; no festival room rate is confirmed here.",
+        "url": "https://www.thegalmont.com/",
+        "sourceId": "galmont-hotel"
+      }
+    ],
+    "dining": [
+      {
+        "title": "Hotel dining",
+        "detail": "The hotel lists Coopers Bar and Marinas Restaurant. Check opening hours directly.",
+        "url": "https://www.thegalmont.com/",
+        "sourceId": "galmont-hotel"
+      }
+    ],
+    "tax": {
+      "text": "Personal tax treatment has not been verified. Organizer prize-pool deductions are separate from personal tax obligations.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-22T05:02:38.978705Z"
   }
 ]

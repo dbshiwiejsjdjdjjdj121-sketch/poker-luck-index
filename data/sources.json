@@ -1656,14 +1656,14 @@
     "title": "Maverick Poker League: free entry, age and rewards FAQ",
     "url": "https://maverickpokerleague.com/faq/",
     "kind": "organizer",
-    "checkedAt": "2026-10-02T05:22:15Z"
+    "checkedAt": "2026-10-22T04:58:43.229668Z"
   },
   {
     "id": "maverick-mi-locations",
     "title": "Maverick Poker League: Michigan venues, timetable and league rules",
     "url": "https://maverickpokerleague.com/locations",
     "kind": "schedule",
-    "checkedAt": "2026-10-02T05:22:15Z"
+    "checkedAt": "2026-10-22T04:58:42.769406Z"
   },
   {
     "id": "apat-malta-oct-2026-schedule",
@@ -1908,14 +1908,14 @@
     "title": "Glasgow Poker Festival 2026 official schedule",
     "url": "https://irishpokertour.com/poker-festivals/glasgow-poker-festival-2026/",
     "kind": "schedule",
-    "checkedAt": "2026-10-17T05:04:25.062706Z"
+    "checkedAt": "2026-10-22T04:58:47.055396Z"
   },
   {
     "id": "glasgow-alea-contact",
     "title": "Alea Glasgow official location and admission information",
     "url": "https://www.metropolitancasinos.com/venues/glasgow/contact-us/",
     "kind": "travel",
-    "checkedAt": "2026-10-17T05:04:25.062706Z"
+    "checkedAt": "2026-10-22T04:58:47.301853Z"
   },
   {
     "id": "glasgow-airport-bus",
@@ -1971,21 +1971,21 @@
     "title": "Pub Poker Championship current season and weekly schedule",
     "url": "https://pubpokerchampionship.org/",
     "kind": "schedule",
-    "checkedAt": "2026-10-19T07:19:00.100003Z"
+    "checkedAt": "2026-10-22T04:58:48.969724Z"
   },
   {
     "id": "ppc-charlotte-about",
     "title": "Pub Poker Championship free entry and qualification",
     "url": "https://pubpokerchampionship.org/index.php/home/about/",
     "kind": "organizer",
-    "checkedAt": "2026-10-19T07:19:00.100003Z"
+    "checkedAt": "2026-10-22T04:58:47.433393Z"
   },
   {
     "id": "ppc-charlotte-locations",
     "title": "Pub Poker Championship Charlotte venues",
     "url": "https://pubpokerchampionship.org/index.php/home/locations/",
     "kind": "organizer",
-    "checkedAt": "2026-10-19T07:19:00.100003Z"
+    "checkedAt": "2026-10-22T04:58:47.966300Z"
   },
   {
     "id": "wpt-taiwan-2027-announcement",
@@ -2007,5 +2007,26 @@
     "url": "https://meritpoker.com/event/western-series-11-22-january/",
     "kind": "schedule",
     "checkedAt": "2026-10-21T05:02:27.823647Z"
+  },
+  {
+    "id": "galway-2027-official",
+    "title": "Galway Poker Festival 2027 official dates and selected entries",
+    "url": "https://irishpokertour.com/poker-festivals/galway-poker-festival-2027/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-22T05:02:38.978705Z"
+  },
+  {
+    "id": "galmont-hotel",
+    "title": "The Galmont Hotel official accommodation and facilities",
+    "url": "https://www.thegalmont.com/",
+    "kind": "travel",
+    "checkedAt": "2026-10-22T05:02:38.978705Z"
+  },
+  {
+    "id": "galmont-directions",
+    "title": "The Galmont official location and directions",
+    "url": "https://www.thegalmont.com/home/location/",
+    "kind": "travel",
+    "checkedAt": "2026-10-22T05:03:55.968183Z"
   }
 ]
