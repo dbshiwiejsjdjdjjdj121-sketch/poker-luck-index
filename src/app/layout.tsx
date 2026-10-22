@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SavedProvider } from "@/components/saved-provider";
 import { Navigation } from "@/components/navigation";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { PublicAnalytics } from "@/components/public-analytics";
 import { Suspense } from "react";
 import { destinations, festivals } from "@/lib/guide-data";
@@ -23,6 +24,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     {children}
     <footer className="site-footer"><div className="container footer-grid"><div><Link className="footer-brand" href="/">♠ ALL IN <span>POKER GUIDE</span></Link><p>Freerolls. Live festivals. Official sources.<br />Independent guides to your next poker tournament.</p></div><div className="footer-links"><Link href="/about">About & sources</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/saved">Saved</Link><Link href="/account">Account</Link></div></div><div className="container footer-bottom"><span>© {new Date().getUTCFullYear()} ALL IN Poker Guide</span><span>Independent of the tours listed. Confirm details with the organizer.</span></div></footer>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd({ "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL, inLanguage: "en", description: SITE_DESCRIPTION }) }} />
-    {process.env.VERCEL_ENV === "production" && <Suspense fallback={null}><PublicAnalytics paths={publicPaths} /></Suspense>}
+    {process.env.VERCEL_ENV === "production" && <Suspense fallback={null}><PublicAnalytics paths={publicPaths} /><GoogleAnalytics paths={publicPaths} /></Suspense>}
   </SavedProvider></body></html>;
 }
