@@ -354,14 +354,14 @@
     "title": "APT Championship Taipei 2026 — official event page",
     "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/events",
     "kind": "schedule",
-    "checkedAt": "2026-10-08T05:21:49.787588Z"
+    "checkedAt": "2026-10-24T05:04:41.327729Z"
   },
   {
     "id": "taipei-info",
     "title": "APT Championship Taipei 2026 — organizer travel and entry information",
     "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
     "kind": "organizer",
-    "checkedAt": "2026-10-08T05:21:49.676121Z"
+    "checkedAt": "2026-10-24T05:04:41.327729Z"
   },
   {
     "id": "taipei-venue",
@@ -2028,5 +2028,26 @@
     "url": "https://www.thegalmont.com/home/location/",
     "kind": "travel",
     "checkedAt": "2026-10-22T05:03:55.968183Z"
+  },
+  {
+    "id": "capt-seefeld-2027-official",
+    "title": "CAPT Seefeld 2027 official overview",
+    "url": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld",
+    "kind": "organizer",
+    "checkedAt": "2026-10-24T05:04:41.327729Z"
+  },
+  {
+    "id": "capt-seefeld-2027-schedule",
+    "title": "CAPT Seefeld 2027 selected schedule evidence",
+    "url": "https://www.casinos.at/fileadmin/00_Casinos/11_Casinos/09_Seefeld/03_Poker/2027_Poker/CAPT_012027/Turnierplan_CAPT_2027.pdf",
+    "kind": "schedule",
+    "checkedAt": "2026-10-24T05:04:41.327729Z"
+  },
+  {
+    "id": "mgm-detroit-appreciation-2026",
+    "title": "MGM Grand Detroit poker room — November appreciation freeroll",
+    "url": "https://mgmgranddetroit.mgmresorts.com/en/casino/poker-room.html",
+    "kind": "organizer",
+    "checkedAt": "2026-10-24T05:04:41.327729Z"
   }
 ]

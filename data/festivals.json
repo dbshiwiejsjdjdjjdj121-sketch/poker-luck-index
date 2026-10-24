@@ -3316,17 +3316,21 @@
       "taipei-schedule",
       "taipei-info"
     ],
-    "checkedAt": "2026-09-30T05:20:09Z",
-    "updatedAt": "2026-09-22T05:14:42Z",
+    "checkedAt": "2026-10-24T05:04:41.327729Z",
+    "updatedAt": "2026-10-24T05:04:41.327729Z",
     "reviewNote": null,
     "changes": [
       {
-        "date": "2026-09-06T17:56:10+00:00",
+        "date": "2026-09-06T17:56:10Z",
         "text": "Overview added with official dates, selected buy-ins and travel links."
       },
       {
         "date": "2026-09-22T05:14:42Z",
         "text": "Clarified the November 12 opening listing versus the November 13 series headline."
+      },
+      {
+        "date": "2026-10-24T05:04:41.327729Z",
+        "text": "Corrected National Cup registration cutoffs and the selected satellite display number; stable IDs retained."
       }
     ],
     "tournaments": [
@@ -3425,7 +3429,7 @@
             "date": "2026-11-13",
             "time": "11:00",
             "kind": "entry",
-            "registrationCloses": "6:20 PM"
+            "registrationCloses": "6:35 PM"
           },
           {
             "id": "a014b698-1abf-4b5b-a11d-883cee995aac",
@@ -3465,7 +3469,7 @@
             "date": "2026-11-15",
             "time": "11:15",
             "kind": "continuation",
-            "registrationCloses": "11:05 AM"
+            "registrationCloses": "Closed"
           }
         ],
         "sourceIds": [
@@ -3475,7 +3479,7 @@
       {
         "id": "event-71",
         "slug": "event-71",
-        "number": "71",
+        "number": "70",
         "name": "5 Seats GTD - Satellite to APT Championship Main Event (Win Your Seat @ 105,000)",
         "game": "NLH",
         "category": "satellite",
@@ -11360,6 +11364,145 @@
         ],
         "sourceIds": [
           "galway-2027-official"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "capt-seefeld-2027",
+    "slug": "capt-seefeld-2027",
+    "name": "CAPT Seefeld 2027",
+    "tour": "CAPT",
+    "destinationId": "austria/seefeld",
+    "startDate": "2027-01-11",
+    "endDate": "2027-01-24",
+    "dateNote": "Seefeld festival January 11–24. Earlier Snow Festival flights in Bregenz and Innsbruck are separate travel locations.",
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Seefeld",
+      "address": null,
+      "url": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld"
+    },
+    "status": "scheduled",
+    "description": "Winter poker in Seefeld with a EUR 2,200 Main Event and EUR 550 Snow Festival. Selected qualifiers offer lower entry costs; the organizer’s expected festival prize pool is not a guaranteed prize pool.",
+    "registration": "18+ with accepted photo identification. Tickets are sold at Casinos Austria receptions until 24 hours before a tournament, then at Casino Seefeld. Confirm availability directly.",
+    "registrationUrl": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld",
+    "scheduleUrl": "https://www.casinos.at/fileadmin/00_Casinos/11_Casinos/09_Seefeld/03_Poker/2027_Poker/CAPT_012027/Turnierplan_CAPT_2027.pdf",
+    "scheduleCoverage": "Three selected highlights; see the official schedule for remaining flights and events.",
+    "sourceIds": [
+      "capt-seefeld-2027-official",
+      "capt-seefeld-2027-schedule"
+    ],
+    "checkedAt": "2026-10-24T05:04:41.327729Z",
+    "updatedAt": "2026-10-24T05:04:41.327729Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-24T05:04:41.327729Z",
+        "text": "Added confirmed January festival dates, selected entries and arrival information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Main Event",
+        "number": "24",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 2200,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 200,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-24",
+        "sessions": [
+          {
+            "id": "main-start",
+            "label": "Selected opening flight",
+            "date": "2027-01-21",
+            "time": "13:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "capt-seefeld-2027-schedule"
+        ]
+      },
+      {
+        "id": "snow",
+        "slug": "snow",
+        "name": "Snow Festival",
+        "number": "8",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 550,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 50,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-18",
+        "sessions": [
+          {
+            "id": "snow-start",
+            "label": "Selected opening flight",
+            "date": "2027-01-14",
+            "time": "15:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "capt-seefeld-2027-schedule"
+        ]
+      },
+      {
+        "id": "satellite",
+        "slug": "satellite",
+        "name": "Main Event Satellite",
+        "number": "23",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 230,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "satellite-start",
+            "label": "Selected qualifier",
+            "date": "2027-01-20",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "capt-seefeld-2027-schedule"
         ]
       }
     ]

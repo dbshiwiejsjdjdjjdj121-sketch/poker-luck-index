@@ -2586,5 +2586,44 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-22T05:02:38.978705Z"
+  },
+  {
+    "id": "austria/seefeld",
+    "country": "Austria",
+    "countryCode": "AT",
+    "countrySlug": "austria",
+    "city": "Seefeld",
+    "slug": "seefeld",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Casino Seefeld hosts the January CAPT festival. Check winter travel and room availability before booking.",
+    "airport": {
+      "title": "Innsbruck Airport",
+      "detail": "The organizer lists Innsbruck Airport 24 km away. Onward transfer arrangements need separate confirmation.",
+      "url": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld",
+      "sourceId": "capt-seefeld-2027-official"
+    },
+    "transport": [
+      {
+        "title": "Arriving by train",
+        "detail": "The organizer describes Casino Seefeld as a two-minute walk from Seefeld station.",
+        "url": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld",
+        "sourceId": "capt-seefeld-2027-official"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Official accommodation information",
+        "detail": "Use the organizer’s hotel list for availability and booking terms. No room price is confirmed in this guide.",
+        "url": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld",
+        "sourceId": "capt-seefeld-2027-official"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Personal tax treatment has not been verified.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-24T05:04:41.327729Z"
   }
 ]

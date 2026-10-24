@@ -2935,5 +2935,75 @@
     "checkedAt": "2026-10-22T04:58:47.433393Z",
     "updatedAt": "2026-10-19T07:19:00.100003Z",
     "reviewNote": "Age, venue spending requirements and current prize amounts need host confirmation. The website’s separate Registration link returned 404; ordinary-game arrival instructions remain available on About."
+  },
+  {
+    "id": "mgm-grand-detroit-appreciation-freeroll-2026",
+    "slug": "mgm-grand-detroit-appreciation-freeroll-2026",
+    "title": "MGM Grand Detroit Appreciation Freeroll — November 2026",
+    "brand": "MGM Grand Detroit",
+    "description": "A restricted-entry Michigan poker tournament for qualifying cash-game players. Fifty rated hours and a tournament assignment are required; this is not an open, cost-free game.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "Detroit, Michigan, United States",
+      "countries": [
+        "US"
+      ],
+      "usStates": [
+        "MI"
+      ],
+      "note": "In-person at MGM Grand Detroit; not an online or nationwide offer."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "required",
+      "password": "unknown",
+      "requirements": [
+        "Among the first 130 players with at least 50 rated hours at $2–$5 No-Limit Hold’em during September 1–October 31, 2026.",
+        "Sign up for a tournament assignment during that qualifying period. Entry is non-transferable.",
+        "Ask the poker room about remaining seats, age/ID requirements and additional restrictions."
+      ],
+      "costNote": "Prior real-money cash-game play is required. Zero tournament buy-in does not mean no spending or no financial risk."
+    },
+    "reward": {
+      "label": "Advertised $40k appreciation tournament",
+      "details": "Individual payouts and reward form are not specified in the page text; confirm with the poker room."
+    },
+    "schedule": {
+      "text": "Announced for November 7, 2026; start time is not published in the page text. Confirm your assignment directly.",
+      "timezone": "America/Detroit",
+      "endDate": "2026-11-07",
+      "slots": [
+        {
+          "id": "november-7",
+          "label": "Announced tournament date",
+          "date": "2026-11-07",
+          "time": null,
+          "timezone": "America/Detroit",
+          "sourceId": "mgm-detroit-appreciation-2026"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Can anyone enter?",
+        "text": "No. The published offer requires rated play and an assigned seat; it does not promise availability to every visitor."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official poker room promotion and contact details",
+        "url": "https://mgmgranddetroit.mgmresorts.com/en/casino/poker-room.html",
+        "kind": "explanation",
+        "sourceId": "mgm-detroit-appreciation-2026"
+      }
+    ],
+    "sourceIds": [
+      "mgm-detroit-appreciation-2026"
+    ],
+    "checkedAt": "2026-10-24T05:04:41.327729Z",
+    "updatedAt": "2026-10-24T05:04:41.327729Z",
+    "reviewNote": null
   }
 ]
