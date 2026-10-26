@@ -1770,7 +1770,7 @@
       "details": "The schedule lists gift-certificate competitions and a Winners betting-voucher final. These are not guaranteed cash payments to every participant."
     },
     "schedule": {
-      "text": "Selected October finals are listed below for qualified players. Buttero’s Thursday game has moved to Friday. Ordinary weekly games remain on the official calendar; no future dates have been generated from that recurring timetable.",
+      "text": "Ordinary games follow the official weekly timetable, subject to venue notices. Buttero has announced no Friday game on October 30; its replacement Thursday notice has conflicting dates. Earlier October finals below are historical, and new final dates are currently TBA.",
       "timezone": "America/New_York",
       "endDate": null,
       "slots": [
@@ -1871,9 +1871,9 @@
       "wfp-nj-faq",
       "wfp-nj-scoring"
     ],
-    "checkedAt": "2026-10-02T05:22:15Z",
-    "updatedAt": "2026-10-01T05:19:00Z",
-    "reviewNote": "The current notice and timetable put the Winners voucher final on October 4, but a lower paragraph still headed September gives October 18. We retain the previously confirmed October 4 listing; ask the organizer to confirm before travelling."
+    "checkedAt": "2026-10-26T06:48:24.586785Z",
+    "updatedAt": "2026-10-26T06:48:24.586785Z",
+    "reviewNote": "Buttero’s notice says October 29 at 7 pm, but the October 30 cancellation line says Thursday the 28th. Confirm the replacement date with the organizer; no new dated start is added while this conflicts. The current page now marks upcoming monthly finals TBA; earlier confirmed October starts are retained as history."
   },
   {
     "id": "ggpoker-uk-freerolls",
