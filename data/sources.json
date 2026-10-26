@@ -739,7 +739,7 @@
     "title": "Casinò di Campione — official arrival directions",
     "url": "https://casinocampioneditalia.it/come-raggiungerci/",
     "kind": "travel",
-    "checkedAt": "2026-09-09T05:17:08.345Z"
+    "checkedAt": "2026-10-26T06:38:34.784432Z"
   },
   {
     "id": "campione-dining",
@@ -2049,5 +2049,26 @@
     "url": "https://mgmgranddetroit.mgmresorts.com/en/casino/poker-room.html",
     "kind": "organizer",
     "checkedAt": "2026-10-24T05:04:41.327729Z"
+  },
+  {
+    "id": "pokerstars-open-campione-2027-official",
+    "title": "PokerStars Open Campione 2027 official dates and venue",
+    "url": "https://www.pokerstarslive.com/pokerstarsopen/campione/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-26T06:38:34.784432Z"
+  },
+  {
+    "id": "apt-taipei-2027-official",
+    "title": "APT Taipei 2027 official dates and venue",
+    "url": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/events",
+    "kind": "schedule",
+    "checkedAt": "2026-10-26T06:38:34.784432Z"
+  },
+  {
+    "id": "apt-taipei-2027-info",
+    "title": "APT Taipei 2027 official entry requirements",
+    "url": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/info",
+    "kind": "organizer",
+    "checkedAt": "2026-10-26T06:38:34.784432Z"
   }
 ]

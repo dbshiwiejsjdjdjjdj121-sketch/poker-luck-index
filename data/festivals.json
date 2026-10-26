@@ -11506,5 +11506,76 @@
         ]
       }
     ]
+  },
+  {
+    "id": "pokerstars-open-campione-2027",
+    "slug": "pokerstars-open-campione-2027",
+    "name": "PokerStars Open Campione 2027",
+    "tour": "PokerStars Open",
+    "destinationId": "italy/campione-ditalia",
+    "startDate": "2027-01-08",
+    "endDate": "2027-01-17",
+    "timezone": "Europe/Rome",
+    "dateNote": null,
+    "venue": {
+      "name": "Casino di Campione",
+      "address": "Piazzale Milano 2, 22061 Campione d’Italia, Italy",
+      "url": "https://www.pokerstarslive.com/pokerstarsopen/campione/"
+    },
+    "status": "scheduled",
+    "description": "The opening 2027 PokerStars Open stop at Casino di Campione on Lake Lugano. Festival dates are confirmed; individual event dates and buy-ins are still to be announced.",
+    "registration": "Age 18+. Bring a valid government-issued passport or EU citizen ID card. Smart casual dress is required. On-site payment options and regional account restrictions are explained by the organizer.",
+    "registrationUrl": "https://www.pokerstarslive.com/pokerstarsopen/campione/",
+    "scheduleUrl": "https://www.pokerstarslive.com/pokerstarsopen/campione/",
+    "scheduleCoverage": "The organizer has confirmed the series dates. Selected event dates, buy-ins and start times will be added when officially published.",
+    "sourceIds": [
+      "pokerstars-open-campione-2027-official"
+    ],
+    "checkedAt": "2026-10-26T06:38:34.784432Z",
+    "updatedAt": "2026-10-26T06:38:34.784432Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-26T06:38:34.784432Z",
+        "text": "Added confirmed series dates, venue and entry requirements; event schedule remains unannounced."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "apt-taipei-2027",
+    "slug": "apt-taipei-2027",
+    "name": "APT Taipei 2027",
+    "tour": "APT",
+    "destinationId": "taiwan/taipei",
+    "startDate": "2027-04-21",
+    "endDate": "2027-05-03",
+    "timezone": "Asia/Taipei",
+    "dateNote": null,
+    "venue": {
+      "name": "Red Space 多元商務空間",
+      "address": null,
+      "url": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/events"
+    },
+    "status": "scheduled",
+    "description": "APT returns to Taipei for a confirmed spring series at Red Space. Individual events and buy-ins have not yet been announced; this overview records the series dates and venue.",
+    "registration": "Age 18+. Foreign players need a valid passport; local players may use a valid passport or local identification card. Consult the official key-information page for membership registration and buy-in enquiries.",
+    "registrationUrl": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/info",
+    "scheduleUrl": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/events",
+    "scheduleCoverage": "The organizer has confirmed the series dates. Selected event dates, buy-ins and start times will be added when officially published.",
+    "sourceIds": [
+      "apt-taipei-2027-official",
+      "apt-taipei-2027-info"
+    ],
+    "checkedAt": "2026-10-26T06:38:34.784432Z",
+    "updatedAt": "2026-10-26T06:38:34.784432Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-26T06:38:34.784432Z",
+        "text": "Added confirmed series dates, venue and entry requirements; event schedule remains unannounced."
+      }
+    ],
+    "tournaments": []
   }
 ]

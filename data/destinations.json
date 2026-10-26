@@ -1606,10 +1606,10 @@
     ],
     "hotels": [
       {
-        "title": "Organizer’s accommodation entry point",
-        "detail": "PokerStars links its travel service from the event page. A specific nearby hotel and festival room rate have not yet been verified for this guide.",
-        "sourceId": "sunday-million-2026-info",
-        "url": "https://www.pokerstarslive.com/sunday-million-live/"
+        "title": "PokerStars Travel accommodation service",
+        "detail": "The 2027 Campione organizer page links PokerStars Travel for accommodation. No specific room rate or hotel offer is confirmed in this guide.",
+        "sourceId": "pokerstars-open-campione-2027-official",
+        "url": "https://www.pokerstarslive.com/pokerstarsopen/campione/"
       }
     ],
     "dining": [
@@ -1624,7 +1624,7 @@
       "text": "Local treatment of tournament winnings has not yet been verified for this destination. Ask the organizer about payout documents and any withholding, then check reporting obligations in your country of tax residence.",
       "sourceIds": []
     },
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "updatedAt": "2026-10-26T06:38:34.784432Z",
     "indexable": false
   },
   {
