@@ -865,14 +865,14 @@
     "title": "The Venetian Resort — poker room location",
     "url": "https://www.venetianlasvegas.com/resort/casino/poker.html",
     "kind": "travel",
-    "checkedAt": "2026-10-07T04:21:35Z"
+    "checkedAt": "2026-10-29T06:14:05Z"
   },
   {
     "id": "venetian-poker-rates-2026",
     "title": "The Venetian Resort — 2026 poker suite rate conditions",
     "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
     "kind": "travel",
-    "checkedAt": "2026-10-02T05:22:15Z"
+    "checkedAt": "2026-10-29T06:14:05Z"
   },
   {
     "id": "cps-namur-2026-info",
@@ -1096,14 +1096,14 @@
     "title": "Dusk Till Dawn — WSOP-C UK 2026 official schedule and structures",
     "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
     "kind": "schedule",
-    "checkedAt": "2026-09-26T05:15:30Z"
+    "checkedAt": "2026-10-29T06:14:05Z"
   },
   {
     "id": "nottingham-2026-entry",
     "title": "Dusk Till Dawn — WSOP-C UK entry instructions",
     "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
     "kind": "organizer",
-    "checkedAt": "2026-10-03T05:10:54Z"
+    "checkedAt": "2026-10-29T06:14:05Z"
   },
   {
     "id": "nottingham-airport-bus",
@@ -2070,5 +2070,12 @@
     "url": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/info",
     "kind": "organizer",
     "checkedAt": "2026-10-26T06:38:34.784432Z"
+  },
+  {
+    "id": "venetian-nye-2026-schedule",
+    "title": "Venetian DeepStack Extravaganza NYE 2026–2027 official schedule",
+    "url": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament/dse-dec-2026.html",
+    "kind": "schedule",
+    "checkedAt": "2026-10-29T06:14:05Z"
   }
 ]

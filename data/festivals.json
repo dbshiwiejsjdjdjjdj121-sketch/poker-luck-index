@@ -8017,21 +8017,25 @@
       "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026"
     },
     "status": "scheduled",
-    "description": "WSOP Circuit Nottingham runs November 4–16 at Dusk Till Dawn. The published highlights are a £1,500 Main Event with a £1 million guarantee and a £300 Mini Main with a £200,000 guarantee that includes 15 Main Event seats. The latter is not an entirely cash prize pool.",
+    "description": "WSOP Circuit Nottingham runs November 4–16 at Dusk Till Dawn. The published highlights are a £1,500 Main Event with a £1 million guarantee and a £300 Mini Main with a £250,000 guarantee that includes 15 Main Event seats. The latter is not an entirely cash prize pool.",
     "registration": "WSOP+ LIVE is required. Buy in with cash at the venue or through Luxon Pay when the event appears in its merchant area. The host sets advance online entry cut-off at one hour before the start; capacity still applies.",
     "registrationUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
     "scheduleUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
-    "scheduleCoverage": "The detailed host schedule is now available. Selected Main, Mini Main and satellite starts are shown below; additional turbo flights and side events remain on the official schedule.",
+    "scheduleCoverage": "Selected Main Event and Mini Main flights only. Additional flights, satellites and side events remain on the official schedule. The series continues through November 16 after the Main Event final.",
     "sourceIds": [
       "nottingham-2026-wsop",
       "nottingham-2026-host",
       "nottingham-2026-schedule",
       "nottingham-2026-entry"
     ],
-    "checkedAt": "2026-09-26T05:15:30Z",
-    "updatedAt": "2026-09-26T05:15:30Z",
+    "checkedAt": "2026-10-29T06:14:05Z",
+    "updatedAt": "2026-10-29T06:14:05Z",
     "reviewNote": "The host’s 2026 event page includes a terms clause referring to recurring events from September 2025. Confirm the current edition’s deductions and conditions with the organizer; no deduction or fee has been inferred for a tournament.",
     "changes": [
+      {
+        "date": "2026-10-29T06:14:05Z",
+        "text": "Corrected Main Event dates and number, Mini Main guarantee and selected registration times from the current host schedule. Removed an outdated selected satellite listing; this is not a cancellation notice."
+      },
       {
         "date": "2026-09-26T05:15:30Z",
         "text": "Published main and Mini Main buy-ins, selected flights, structures and satellite entry; linked the newly available host schedule."
@@ -8046,7 +8050,7 @@
         "id": "main-event",
         "slug": "main-event",
         "name": "WSOP-C Main Event",
-        "number": "8",
+        "number": "3",
         "game": "No-Limit Hold'em",
         "category": "main",
         "buyIn": {
@@ -8062,31 +8066,31 @@
           "currency": "GBP"
         },
         "startingStack": "50,000",
-        "levels": "40 minutes for these Day 1 flights; 50 on Day 2; 60 on the final day.",
+        "levels": "40 minutes for these Day 1 flights; 60 on Day 2 and the final day.",
         "reentry": "Re-entry during late registration.",
         "lateRegistration": "Start of level 13 for these Day 1 flights.",
-        "endDate": "2026-11-16",
+        "endDate": "2026-11-15",
         "sessions": [
           {
             "id": "main-1a",
             "label": "Day 1A",
-            "date": "2026-11-12",
-            "time": "13:00",
+            "date": "2026-11-08",
+            "time": "12:00",
             "kind": "entry",
-            "registrationCloses": "22:20"
+            "registrationCloses": "21:20"
           },
           {
             "id": "main-1b",
             "label": "Day 1B",
-            "date": "2026-11-13",
-            "time": "13:00",
+            "date": "2026-11-11",
+            "time": "12:00",
             "kind": "entry",
-            "registrationCloses": "22:20"
+            "registrationCloses": "21:20"
           },
           {
             "id": "main-1c",
             "label": "Day 1C",
-            "date": "2026-11-14",
+            "date": "2026-11-12",
             "time": "12:00",
             "kind": "entry",
             "registrationCloses": "21:20"
@@ -8094,14 +8098,14 @@
           {
             "id": "main-2",
             "label": "Day 2",
-            "date": "2026-11-15",
+            "date": "2026-11-14",
             "time": "15:00",
             "kind": "continuation"
           },
           {
             "id": "main-final",
             "label": "Final day",
-            "date": "2026-11-16",
+            "date": "2026-11-15",
             "time": "13:00",
             "kind": "continuation"
           }
@@ -8126,13 +8130,13 @@
           "currency": "GBP"
         },
         "guarantee": {
-          "amount": 200000,
+          "amount": 250000,
           "currency": "GBP"
         },
         "startingStack": "30,000",
-        "levels": "30 minutes on Day 1.",
+        "levels": "30 minutes on selected Day 1A; 40 on the final day.",
         "reentry": "Re-entry during late registration.",
-        "lateRegistration": "Start of level 11.",
+        "lateRegistration": "Selected Day 1A registration closes at 16:40; confirm the level cutoff with the organizer.",
         "endDate": "2026-11-08",
         "sessions": [
           {
@@ -8141,49 +8145,14 @@
             "date": "2026-11-06",
             "time": "12:00",
             "kind": "entry",
-            "registrationCloses": "17:40"
+            "registrationCloses": "16:40"
           },
           {
             "id": "mini-2",
-            "label": "Day 2",
+            "label": "Final day",
             "date": "2026-11-08",
-            "time": "13:00",
+            "time": "15:00",
             "kind": "continuation"
-          }
-        ],
-        "sourceIds": [
-          "nottingham-2026-schedule"
-        ]
-      },
-      {
-        "id": "ring-satellite",
-        "slug": "ring-satellite",
-        "name": "Satellite — 10 £300 ring-event seats",
-        "number": "Satellite",
-        "game": "No-Limit Hold'em",
-        "category": "satellite",
-        "buyIn": {
-          "amount": 25,
-          "currency": "GBP"
-        },
-        "fee": {
-          "amount": 5,
-          "currency": "GBP"
-        },
-        "guarantee": null,
-        "startingStack": "20,000",
-        "levels": "20/15 minutes.",
-        "reentry": "Two reloads during late registration.",
-        "lateRegistration": "Start of level 9.",
-        "endDate": null,
-        "sessions": [
-          {
-            "id": "sat-nov6",
-            "label": "Selected start",
-            "date": "2026-11-06",
-            "time": "20:30",
-            "kind": "entry",
-            "registrationCloses": "23:30"
           }
         ],
         "sourceIds": [
@@ -11577,5 +11546,141 @@
       }
     ],
     "tournaments": []
+  },
+  {
+    "id": "venetian-nye-2026",
+    "slug": "venetian-deepstack-extravaganza-nye-2026",
+    "name": "Venetian DeepStack Extravaganza NYE 2026–2027",
+    "tour": "Venetian Poker",
+    "destinationId": "united-states/las-vegas",
+    "startDate": "2026-12-24",
+    "endDate": "2027-01-10",
+    "timezone": "America/Los_Angeles",
+    "dateNote": "The complete series continues through January 10, after both featured championships finish.",
+    "venue": {
+      "name": "The Venetian Resort — The Palazzo Poker Room",
+      "address": null,
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html"
+    },
+    "status": "scheduled",
+    "description": "A year-end Las Vegas festival at The Palazzo. Selected highlights include the USD 1,100 Ante Up Championship, USD 1,600 MSPT and a USD 200 satellite. Compare entry dates with the official schedule.",
+    "registration": "Ask the poker room about identification, registration availability and payment. The schedule is an information source, not a confirmed online entry service.",
+    "registrationUrl": "https://www.venetianlasvegas.com/resort/casino/poker.html",
+    "scheduleUrl": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament/dse-dec-2026.html",
+    "scheduleCoverage": "Three selected highlights; only one entry start per event is shown. See the organizer for other flights and structures.",
+    "sourceIds": [
+      "venetian-nye-2026-schedule",
+      "venetian-poker-room"
+    ],
+    "checkedAt": "2026-10-29T06:14:05Z",
+    "updatedAt": "2026-10-29T06:14:05Z",
+    "reviewNote": "The official table labels December 26 rows as 2025 despite the 2026–2027 series heading. Those conflicting rows are excluded; confirm them with the organizer.",
+    "changes": [
+      {
+        "date": "2026-10-29T06:14:05Z",
+        "text": "Added confirmed cross-year series dates, selected buy-ins and official entry points."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "ante-up",
+        "slug": "ante-up",
+        "name": "Ante Up Championship",
+        "number": "8",
+        "game": "No-Limit Hold'em",
+        "category": "side",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 300000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-12-31",
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2026-12-27",
+            "time": "11:10",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "venetian-nye-2026-schedule"
+        ]
+      },
+      {
+        "id": "mspt",
+        "slug": "mspt",
+        "name": "MSPT",
+        "number": "20",
+        "game": "No-Limit Hold'em",
+        "category": "main",
+        "buyIn": {
+          "amount": 1600,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 400000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-01-04",
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2027-01-01",
+            "time": "11:10",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "venetian-nye-2026-schedule"
+        ]
+      },
+      {
+        "id": "mspt-satellite",
+        "slug": "mspt-satellite",
+        "name": "MSPT milestone satellite",
+        "number": "18",
+        "game": "No-Limit Hold'em",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 200,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-12-31",
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2026-12-31",
+            "time": "15:10",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "venetian-nye-2026-schedule"
+        ]
+      }
+    ]
   }
 ]

@@ -667,7 +667,7 @@
     "hotels": [
       {
         "title": "The Venetian & The Palazzo — 2026 poker suite rate",
-        "detail": "The resort’s 2026 page confirms code EPOKR25. The rate has qualifying-play requirements for each night, a USD 55 nightly resort fee, availability limits and possible blackout dates. Unqualified nights revert to the prevailing rate. Confirm the complete terms and total price with the resort before booking.",
+        "detail": "The resort’s 2026 page confirms code EPOKR25. The rate has qualifying-play requirements for each night, a USD 55 nightly resort fee, availability limits and possible blackout dates. Unqualified nights revert to the prevailing rate. Confirm the complete terms and total price with the resort before booking. This is a 2026 offer; applicability to January 2027 stays is not confirmed.",
         "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
         "sourceId": "venetian-poker-rates-2026"
       },
@@ -698,7 +698,7 @@
         "us-tax"
       ]
     },
-    "updatedAt": "2026-09-16T05:14:30Z",
+    "updatedAt": "2026-10-29T06:14:05Z",
     "indexable": true
   },
   {
