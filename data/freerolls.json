@@ -2682,7 +2682,7 @@
       "password": "unknown",
       "requirements": [
         "Choose a participating venue from the official weekly listing; sign-up opens 30 minutes before its start.",
-        "Quarterly tournament eligibility requires five sessions. The October quarterly listing identifies July–September as qualifying months.",
+        "Quarterly tournaments require five prior sessions. The current fourth-quarter listing identifies October–December as qualifying months; confirm the applicable session period with the organizer.",
         "Confirm venue admission and any championship invitation with the organizer."
       ],
       "costNote": "Entry is advertised as free. Food/drink purchases, merchandise and dealer tips can provide extra chips. Do not assume equal starting chips or describe every optional activity as free."
@@ -2699,8 +2699,8 @@
     },
     "sections": [
       {
-        "title": "Is the October 10 tournament open to a first-time visitor?",
-        "text": "It is a quarterly event at Salsa Restaurant and Bar, with a published 12:30 start and July–September qualifying period. The five-session rule applies; confirm eligibility before travelling. It is not listed here as an unrestricted upcoming game."
+        "title": "Can a first-time visitor enter the special tournaments?",
+        "text": "The ShowMeChip Pineapple listing requires ten plays in 2026. Quarterly events require five sessions; the annual championship is for quarterly final-table players. These are qualification events, not unrestricted first-visit games."
       },
       {
         "title": "What do extra chips cost?",
@@ -2736,9 +2736,9 @@
       "florida-free-rules",
       "florida-free-tournaments"
     ],
-    "checkedAt": "2026-10-09T05:06:08.081322Z",
-    "updatedAt": "2026-10-09T05:06:08.081322Z",
-    "reviewNote": null
+    "checkedAt": "2026-10-30T05:10:22.107147Z",
+    "updatedAt": "2026-10-30T05:10:22.107147Z",
+    "reviewNote": "Official pages disagree on some special-event meal times, the quarterly event number and the championship start time. Conflicting details and dates without an explicit event year are not added as dated starts. Confirm with the organizer."
   },
   {
     "id": "smokenaces-wisconsin",
