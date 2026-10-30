@@ -11682,5 +11682,153 @@
         ]
       }
     ]
+  },
+  {
+    "id": "bps200-london-november-2026",
+    "slug": "bps200-london-november-2026",
+    "name": "BPS200 London November 2026",
+    "tour": "British Poker Series",
+    "destinationId": "united-kingdom/london",
+    "startDate": "2026-11-23",
+    "endDate": "2026-11-29",
+    "timezone": "Europe/London",
+    "dateNote": "Series dates include satellites. Conflicting opening-flight details are omitted.",
+    "venue": {
+      "name": "Genting Casino Stratford",
+      "address": "The Loft, Westfield Stratford City, Montfichet Road, London E20 1ET",
+      "url": "https://www.gentingcasinos.co.uk/whats-on/british-poker-series-at-genting-casino-stratford/"
+    },
+    "status": "scheduled",
+    "description": "A London festival with a GBP 235 main-event entry and GBP 100,000 guarantee. Compare a selected main-event start with the GBP 160 Big 10K and GBP 40 satellite, then check both official schedules before travelling.",
+    "registration": "Age 18+. Register at the poker desk with valid photo ID; casino membership and entry rules apply. Official links provide information, not confirmed online entry.",
+    "registrationUrl": "https://www.britishpokerseries.com/bps200/",
+    "scheduleUrl": "https://www.gentingcasinos.co.uk/whats-on/british-poker-series-at-genting-casino-stratford/",
+    "scheduleCoverage": "Three selected highlights, not the full timetable. Buy-ins shown include the separately identified fee.",
+    "sourceIds": [
+      "bps200-november-2026-organizer",
+      "bps200-november-2026-venue"
+    ],
+    "checkedAt": "2026-10-30T05:03:05.708813+00:00",
+    "updatedAt": "2026-10-30T05:03:05.708813+00:00",
+    "reviewNote": "The venue lists a November 25 opening flight; the organizer starts main-event flights on November 26. Flight labels, some satellite details and the Ladies event also differ. Conflicting entries are withheld; confirm the current timetable with the organizer.",
+    "changes": [
+      {
+        "date": "2026-10-30T05:03:05.708813+00:00",
+        "text": "Added series dates, three consistent selected entries and an official-source conflict notice."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "BPS200 Main Event",
+        "number": "",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 235,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 35,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 100000,
+          "currency": "GBP"
+        },
+        "startingStack": "25,000",
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2026-11-26",
+            "time": "13:15",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bps200-november-2026-organizer",
+          "bps200-november-2026-venue"
+        ]
+      },
+      {
+        "id": "big-10k",
+        "slug": "big-10k",
+        "name": "BPS Big 10K",
+        "number": "",
+        "game": "Poker",
+        "category": "side",
+        "buyIn": {
+          "amount": 160,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "GBP"
+        },
+        "guarantee": {
+          "amount": 10000,
+          "currency": "GBP"
+        },
+        "startingStack": "20,000",
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2026-11-24",
+            "time": "18:15",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bps200-november-2026-organizer",
+          "bps200-november-2026-venue"
+        ]
+      },
+      {
+        "id": "satellite",
+        "slug": "satellite",
+        "name": "BPS200 Super Satellite",
+        "number": "",
+        "game": "Poker",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 40,
+          "currency": "GBP"
+        },
+        "fee": {
+          "amount": 10,
+          "currency": "GBP"
+        },
+        "guarantee": null,
+        "startingStack": "15,000",
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "selected-entry",
+            "label": "Selected entry",
+            "date": "2026-11-23",
+            "time": "13:15",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "bps200-november-2026-organizer",
+          "bps200-november-2026-venue"
+        ]
+      }
+    ]
   }
 ]

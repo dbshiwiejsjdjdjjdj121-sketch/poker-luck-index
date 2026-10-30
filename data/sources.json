@@ -2077,5 +2077,19 @@
     "url": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament/dse-dec-2026.html",
     "kind": "schedule",
     "checkedAt": "2026-10-29T06:14:05Z"
+  },
+  {
+    "id": "bps200-november-2026-organizer",
+    "title": "BPS200 November 2026 — organizer schedule",
+    "url": "https://www.britishpokerseries.com/bps200/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-30T05:03:05.708813+00:00"
+  },
+  {
+    "id": "bps200-november-2026-venue",
+    "title": "Genting Stratford — British Poker Series schedule",
+    "url": "https://www.gentingcasinos.co.uk/whats-on/british-poker-series-at-genting-casino-stratford/",
+    "kind": "schedule",
+    "checkedAt": "2026-10-30T05:03:05.708813+00:00"
   }
 ]
