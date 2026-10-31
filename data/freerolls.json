@@ -2144,11 +2144,7 @@
       },
       {
         "title": "When is the next Quads tournament?",
-        "text": "The organizer announces November 7, 2026 at 13:00 at Melbourne Moose Lodge, with qualification running September 1–October 31. This is a separate qualifying event, not an unrestricted walk-in game. Ask NQV to confirm your eligibility; the ordinary venue games remain listed on its official timetable."
-      },
-      {
-        "title": "Is Pockets & Putters running on October 10?",
-        "text": "The organizer explicitly says there is no poker at Pockets & Putters on Saturday, October 10, 2026, despite its ordinary timetable. This notice applies to that venue and date, not the whole league."
+        "text": "The organizer announces November 7, 2026 at 12:00 noon at Melbourne Moose Lodge, with qualification running September 1–October 31. This is a separate qualifying event, not an unrestricted walk-in game. Ask NQV to confirm your eligibility; the ordinary venue games remain listed on its official timetable."
       }
     ],
     "officialLinks": [
@@ -2169,9 +2165,9 @@
       "nqv-florida-rules",
       "nqv-florida-home"
     ],
-    "checkedAt": "2026-10-10T05:30:16.148828Z",
-    "updatedAt": "2026-10-10T05:33:51.662089Z",
-    "reviewNote": null
+    "checkedAt": "2026-10-31T05:09:12.537230Z",
+    "updatedAt": "2026-10-31T05:09:12.537230Z",
+    "reviewNote": "The current organizer notice gives noon for the November 7 Quads tournament, replacing the previously listed 13:00."
   },
   {
     "id": "straight-flush-minnesota",
@@ -2207,7 +2203,7 @@
       "details": "Championship rewards vary. Noncash grand prizes require age 21; the rules describe a reduced cash alternative for younger eligible winners. No guaranteed cash prize per weekly game is listed here."
     },
     "schedule": {
-      "text": "Selected official dated starts are listed through November 1, 2026. Check organizer notices before travelling. The October 4 Dog House cancellation remains preserved; no dates are generated from weekly recurrence.",
+      "text": "Selected official starts are listed through November 1, 2026. The organizer has cancelled the November 1 Doghouse game; it is excluded below. Confirm notices before travelling.",
       "timezone": "America/Chicago",
       "endDate": null,
       "slots": [
@@ -2546,14 +2542,6 @@
           "time": "16:00",
           "timezone": "America/Chicago",
           "sourceId": "straight-flush-mn-calendar"
-        },
-        {
-          "id": "straight-flush-2026-11-01-doghouse",
-          "label": "The Dog House Bar & Grill",
-          "date": "2026-11-01",
-          "time": "19:00",
-          "timezone": "America/Chicago",
-          "sourceId": "straight-flush-mn-calendar"
         }
       ]
     },
@@ -2573,6 +2561,10 @@
       {
         "title": "Was the October 17 noon championship open entry?",
         "text": "That Tournament of Champions was for qualified July–September players, separate from ordinary weekly games. It has ended; the organizer now reports its result."
+      },
+      {
+        "title": "Is Doghouse running on November 1?",
+        "text": "No. The organizer announces no game at Doghouse on November 1 because of a venue event. This cancellation applies to that start, not the whole league."
       }
     ],
     "officialLinks": [
@@ -2593,9 +2585,9 @@
       "straight-flush-mn-rules",
       "straight-flush-mn-calendar"
     ],
-    "checkedAt": "2026-10-18T06:17:04.574461Z",
-    "updatedAt": "2026-10-18T06:18:31.568937Z",
-    "reviewNote": "The October 4 Dog House calendar entry conflicts with the organizer’s newer cancellation notice; that start is not listed here."
+    "checkedAt": "2026-10-31T05:09:12.537230Z",
+    "updatedAt": "2026-10-31T05:09:12.537230Z",
+    "reviewNote": "The November 1 Doghouse cancellation notice overrides the calendar entry. The earlier October 4 cancellation remains excluded."
   },
   {
     "id": "all-in-atlanta-georgia",

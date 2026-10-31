@@ -2625,5 +2625,44 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-24T05:04:41.327729Z"
+  },
+  {
+    "id": "austria/innsbruck",
+    "country": "Austria",
+    "countryCode": "AT",
+    "countrySlug": "austria",
+    "city": "Innsbruck",
+    "slug": "innsbruck",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Casino Innsbruck hosts CAPT at Salurner Straße 15. Confirm travel and accommodation availability before booking.",
+    "airport": {
+      "title": "Innsbruck Airport",
+      "detail": "The organizer lists Innsbruck Airport as an arrival option. Check the current onward bus route and timetable before travelling.",
+      "url": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck",
+      "sourceId": "capt-innsbruck-nov-2026"
+    },
+    "transport": [
+      {
+        "title": "Rail arrival",
+        "detail": "The organizer describes the casino as a three-minute walk from Innsbruck station.",
+        "url": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck",
+        "sourceId": "capt-innsbruck-nov-2026"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Accommodation information",
+        "detail": "The official event page lists nearby hotels. Ask the property for availability and current terms; no room price is confirmed here.",
+        "url": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck",
+        "sourceId": "capt-innsbruck-nov-2026"
+      }
+    ],
+    "dining": [],
+    "tax": {
+      "text": "Personal tax treatment has not been verified.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-10-31T05:06:20.698519Z"
   }
 ]

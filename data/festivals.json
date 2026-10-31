@@ -8784,7 +8784,7 @@
     "name": "Borgata Fall Poker Open 2026",
     "tour": "Borgata Poker",
     "destinationId": "united-states/atlantic-city",
-    "startDate": "2026-11-03",
+    "startDate": "2026-11-04",
     "endDate": "2026-11-17",
     "timezone": "America/New_York",
     "dateNote": null,
@@ -8794,26 +8794,129 @@
       "url": "https://borgata.mgmresorts.com/en/casino/poker.html"
     },
     "status": "scheduled",
-    "description": "Borgata’s November live poker festival in Atlantic City, New Jersey. The organizer has confirmed the festival dates. Event-by-event buy-ins, flights and registration deadlines are not yet verified in this guide.",
-    "registration": "Borgata’s general rules require players to be 21 or older, with an MGM Rewards card and valid identification. Confirm the Fall Poker Open registration method when the edition-specific schedule is released.",
-    "registrationUrl": "https://borgata.mgmresorts.com/en/casino/poker.html",
-    "scheduleUrl": "https://borgata.mgmresorts.com/en/casino/poker.html",
-    "scheduleCoverage": "Dates and venue confirmed. No individual highlights are listed until edition-specific details are verified. The official link is the host’s poker information page.",
+    "description": "Atlantic City’s Fall Poker Open features a USD 2,700 Championship, lower-cost multi-flight events and qualifiers.",
+    "registration": "21+; MGM Rewards card required, with valid ID for payment. The current schedule permits registration through the BetMGM Poker app or a designated in-person registration area. Listed totals include an optional add-on; consult individual structures.",
+    "registrationUrl": "https://roarblogs.s3.amazonaws.com/mgm/poker/en/blog/wp-content/uploads/2026/10/20172434/borgata-casino-poker-fall-open-1.pdf",
+    "scheduleUrl": "https://roarblogs.s3.amazonaws.com/mgm/poker/en/blog/wp-content/uploads/2026/10/20172434/borgata-casino-poker-fall-open-1.pdf",
+    "scheduleCoverage": "Three selected highlights from the current official schedule, not a complete event list.",
     "sourceIds": [
-      "borgata-poker",
-      "borgata-2026-opens",
-      "borgata-registration-faq"
+      "borgata-fall-2026-official",
+      "borgata-fall-2026-pdf"
     ],
-    "checkedAt": "2026-09-22T05:14:42Z",
-    "updatedAt": "2026-09-22T05:14:42Z",
-    "reviewNote": null,
+    "checkedAt": "2026-10-31T05:06:20.698519Z",
+    "updatedAt": "2026-10-31T05:06:20.698519Z",
+    "reviewNote": "The current edition announcement and schedule begin November 4, superseding the November 3 date in the earlier annual announcement.",
     "changes": [
       {
         "date": "2026-09-22T05:14:42Z",
         "text": "Added officially confirmed November festival dates and venue; detailed entry information remains unconfirmed."
+      },
+      {
+        "date": "2026-10-31T05:06:20.698519Z",
+        "text": "Updated opening date to November 4 and added current selected entries and registration details."
       }
     ],
-    "tournaments": []
+    "tournaments": [
+      {
+        "id": "championship",
+        "slug": "championship",
+        "name": "Fall Poker Open Championship",
+        "number": "22",
+        "game": "Poker",
+        "category": "main",
+        "buyIn": {
+          "amount": 2700,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-17",
+        "sessions": [
+          {
+            "id": "championship-start",
+            "label": "Selected opening start",
+            "date": "2026-11-13",
+            "time": "12:15",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "borgata-fall-2026-pdf"
+        ]
+      },
+      {
+        "id": "kickoff",
+        "slug": "kickoff",
+        "name": "Fall Deepstack Kick Off",
+        "number": "1",
+        "game": "Poker",
+        "category": "side",
+        "buyIn": {
+          "amount": 600,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 1000000,
+          "currency": "USD"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "kickoff-start",
+            "label": "Selected opening start",
+            "date": "2026-11-04",
+            "time": "11:15",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "borgata-fall-2026-pdf"
+        ]
+      },
+      {
+        "id": "satellite",
+        "slug": "satellite",
+        "name": "Championship Satellite",
+        "number": "38",
+        "game": "Poker",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 180,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "satellite-start",
+            "label": "Selected opening start",
+            "date": "2026-11-08",
+            "time": "10:15",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "borgata-fall-2026-pdf"
+        ]
+      }
+    ]
   },
   {
     "id": "gukpt-blackpool-2026",
@@ -11834,5 +11937,181 @@
         ]
       }
     ]
+  },
+  {
+    "id": "capt-innsbruck-november-2026",
+    "slug": "capt-innsbruck-november-2026",
+    "name": "CAPT Innsbruck November 2026",
+    "tour": "CAPT",
+    "destinationId": "austria/innsbruck",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-08",
+    "dateNote": "Festival November 2–8; the preceding satellite week is separate.",
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Innsbruck",
+      "address": "Salurner Straße 15, 6020 Innsbruck, Austria",
+      "url": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck"
+    },
+    "status": "scheduled",
+    "description": "A mixed-game festival with a EUR 1,100 NLH Main Event, lower-cost side events and qualifiers.",
+    "registration": "18+ with accepted official photo ID. Buy tickets at Casinos Austria receptions until 24 hours before play, then at Casino Innsbruck. Availability is not guaranteed.",
+    "registrationUrl": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck",
+    "scheduleUrl": "https://www.casinos.at/fileadmin/00_Casinos/11_Casinos/04_Innsbruck/03_Spiel/2026/Poker/CAPT/November/Turnierplan_CAPT_Innsbruck_2026.pdf",
+    "scheduleCoverage": "Three selected highlights; consult the official schedule for other games and starts.",
+    "sourceIds": [
+      "capt-innsbruck-nov-2026",
+      "capt-innsbruck-nov-2026-pdf"
+    ],
+    "checkedAt": "2026-10-31T05:06:20.698519Z",
+    "updatedAt": "2026-10-31T05:06:20.698519Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-31T05:06:20.698519Z",
+        "text": "Added November festival, selected entries and arrival guidance."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "NLH Main Event",
+        "number": "11",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 1100,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 100,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2026-11-08",
+        "sessions": [
+          {
+            "id": "main-start",
+            "label": "Selected opening start",
+            "date": "2026-11-05",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "capt-innsbruck-nov-2026-pdf"
+        ]
+      },
+      {
+        "id": "freezeout",
+        "slug": "freezeout",
+        "name": "Deepstack Freezeout",
+        "number": "7",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 230,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "freezeout-start",
+            "label": "Selected opening start",
+            "date": "2026-11-04",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "capt-innsbruck-nov-2026-pdf"
+        ]
+      },
+      {
+        "id": "satellite",
+        "slug": "satellite",
+        "name": "Main Event Satellite",
+        "number": "3",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 150,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 20,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "satellite-start",
+            "label": "Selected opening start",
+            "date": "2026-11-02",
+            "time": "20:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "capt-innsbruck-nov-2026-pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "capt-innsbruck-2027",
+    "slug": "capt-innsbruck-2027",
+    "name": "CAPT Innsbruck February 2027",
+    "tour": "CAPT",
+    "destinationId": "austria/innsbruck",
+    "startDate": "2027-02-17",
+    "endDate": "2027-02-21",
+    "dateNote": null,
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Innsbruck",
+      "address": "Salurner Straße 15, 6020 Innsbruck, Austria",
+      "url": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck"
+    },
+    "status": "scheduled",
+    "description": "The CAPT calendar confirms an Innsbruck stop on February 17–21, 2027. Edition-specific buy-ins and starts remain unconfirmed.",
+    "registration": "Check the official calendar and casino for 2027 entry arrangements. November 2026 prices and hotel offers do not apply automatically.",
+    "registrationUrl": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck",
+    "scheduleUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleCoverage": "Confirmed festival dates and location; individual entries are not yet verified.",
+    "sourceIds": [
+      "capt-calendar",
+      "capt-innsbruck-nov-2026"
+    ],
+    "checkedAt": "2026-10-31T05:06:20.698519Z",
+    "updatedAt": "2026-10-31T05:06:20.698519Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-10-31T05:06:20.698519Z",
+        "text": "Added the officially announced February 2027 edition; detailed entries remain unknown."
+      }
+    ],
+    "tournaments": [],
+    "previousEditionId": "capt-innsbruck-november-2026"
   }
 ]
