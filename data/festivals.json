@@ -12113,5 +12113,41 @@
     ],
     "tournaments": [],
     "previousEditionId": "capt-innsbruck-november-2026"
+  },
+  {
+    "id": "capt-linz-2027",
+    "slug": "capt-linz-2027",
+    "name": "CAPT Linz 2027",
+    "tour": "CAPT",
+    "destinationId": "austria/linz",
+    "startDate": "2027-03-09",
+    "endDate": "2027-03-14",
+    "dateNote": null,
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Linz",
+      "address": "Rainerstraße 2–4, 4020 Linz, Austria",
+      "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours"
+    },
+    "status": "scheduled",
+    "description": "The official CAPT calendar lists Casino Linz for March 9–14, 2027. Plan the city-centre venue and tram arrival while edition-specific buy-ins and starts await confirmation.",
+    "registration": "2027 registration arrangements have not been verified. Consult the official calendar for edition updates; past-edition entry fees do not apply automatically.",
+    "registrationUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleCoverage": "Confirmed festival dates and location; individual entries are not yet verified.",
+    "sourceIds": [
+      "capt-calendar",
+      "linz-visitor"
+    ],
+    "checkedAt": "2026-11-01T05:03:51.044609+00:00",
+    "updatedAt": "2026-11-01T05:03:51.044609+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-11-01T05:03:51.044609+00:00",
+        "text": "Added confirmed 2027 dates, venue and public-transport guidance; buy-ins remain unknown."
+      }
+    ],
+    "tournaments": []
   }
 ]

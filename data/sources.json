@@ -2111,7 +2111,7 @@
     "title": "CAPT — official tour calendar",
     "url": "https://www.casinos.at/en/games/poker/capt",
     "kind": "schedule",
-    "checkedAt": "2026-10-31T05:06:20.698519Z"
+    "checkedAt": "2026-11-01T05:03:51.044609+00:00"
   },
   {
     "id": "borgata-fall-2026-official",
@@ -2126,5 +2126,12 @@
     "url": "https://roarblogs.s3.amazonaws.com/mgm/poker/en/blog/wp-content/uploads/2026/10/20172434/borgata-casino-poker-fall-open-1.pdf",
     "kind": "schedule",
     "checkedAt": "2026-10-31T05:06:20.698519Z"
+  },
+  {
+    "id": "linz-visitor",
+    "title": "Casino Linz — contact, arrival and parking",
+    "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours",
+    "kind": "travel",
+    "checkedAt": "2026-11-01T05:03:51.044609+00:00"
   }
 ]

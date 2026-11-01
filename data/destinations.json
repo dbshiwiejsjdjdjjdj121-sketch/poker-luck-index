@@ -2664,5 +2664,43 @@
       "sourceIds": []
     },
     "updatedAt": "2026-10-31T05:06:20.698519Z"
+  },
+  {
+    "id": "austria/linz",
+    "country": "Austria",
+    "countryCode": "AT",
+    "countrySlug": "austria",
+    "city": "Linz",
+    "slug": "linz",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Casino Linz is at Rainerstraße 2–4 in the city centre. Its visitor information explains tram access and parking.",
+    "airport": {
+      "title": "Airport transfer",
+      "detail": "An airport route has not been verified for this guide. Confirm your onward journey before booking.",
+      "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours",
+      "sourceId": "linz-visitor"
+    },
+    "transport": [
+      {
+        "title": "Tram access",
+        "detail": "The casino lists Bürgerstraße stop on tram lines 1, 2, 3 and 4, about two stops from Linz Central Station.",
+        "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours",
+        "sourceId": "linz-visitor"
+      },
+      {
+        "title": "Parking entrance",
+        "detail": "The casino underground car park is entered at Langgasse 1–7. Check current charges and validation at reception.",
+        "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours",
+        "sourceId": "linz-visitor"
+      }
+    ],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Personal tax treatment has not been verified.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-11-01T05:03:51.044609+00:00"
   }
 ]
