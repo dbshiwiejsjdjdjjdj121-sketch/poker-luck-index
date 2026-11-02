@@ -12149,5 +12149,77 @@
       }
     ],
     "tournaments": []
+  },
+  {
+    "id": "capt-velden-2027",
+    "slug": "capt-velden-2027",
+    "name": "CAPT Velden 2027",
+    "tour": "CAPT",
+    "destinationId": "austria/velden",
+    "startDate": "2027-03-30",
+    "endDate": "2027-04-04",
+    "dateNote": null,
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Velden",
+      "address": "Am Corso 17, 9220 Velden, Austria",
+      "url": "https://www.casinos.at/en/casinos/velden/contact-opening-hours"
+    },
+    "status": "scheduled",
+    "description": "The official CAPT calendar confirms the 2027 Velden stop. Compare the confirmed series dates and venue access; edition-specific buy-ins and individual starts have not yet been verified.",
+    "registration": "2027 registration arrangements have not been verified. Consult the official calendar for edition updates; past-edition entry fees do not apply automatically.",
+    "registrationUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleCoverage": "Confirmed festival dates and location; individual entries are not yet verified.",
+    "sourceIds": [
+      "capt-calendar",
+      "velden-visitor"
+    ],
+    "checkedAt": "2026-11-02T05:01:05.402808+00:00",
+    "updatedAt": "2026-11-02T05:01:05.402808+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-11-02T05:01:05.402808+00:00",
+        "text": "Added confirmed 2027 festival dates and venue access; individual entries remain unconfirmed."
+      }
+    ],
+    "tournaments": []
+  },
+  {
+    "id": "capt-salzburg-2027",
+    "slug": "capt-salzburg-2027",
+    "name": "CAPT Salzburg 2027",
+    "tour": "CAPT",
+    "destinationId": "austria/salzburg",
+    "startDate": "2027-04-15",
+    "endDate": "2027-04-26",
+    "dateNote": null,
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Salzburg",
+      "address": "Schloss Klessheim, 5071 Wals-Siezenheim, Austria",
+      "url": "https://www.casinos.at/en/casinos/salzburg/contact-opening-hours"
+    },
+    "status": "scheduled",
+    "description": "The official CAPT calendar confirms the 2027 Salzburg stop. Compare the confirmed series dates and venue access; edition-specific buy-ins and individual starts have not yet been verified.",
+    "registration": "2027 registration arrangements have not been verified. Consult the official calendar for edition updates; past-edition entry fees do not apply automatically.",
+    "registrationUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleUrl": "https://www.casinos.at/en/games/poker/capt",
+    "scheduleCoverage": "Confirmed festival dates and location; individual entries are not yet verified.",
+    "sourceIds": [
+      "capt-calendar",
+      "salzburg-visitor"
+    ],
+    "checkedAt": "2026-11-02T05:01:05.402808+00:00",
+    "updatedAt": "2026-11-02T05:01:05.402808+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-11-02T05:01:05.402808+00:00",
+        "text": "Added confirmed 2027 festival dates and venue access; individual entries remain unconfirmed."
+      }
+    ],
+    "tournaments": []
   }
 ]

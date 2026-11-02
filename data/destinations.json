@@ -2702,5 +2702,69 @@
       "sourceIds": []
     },
     "updatedAt": "2026-11-01T05:03:51.044609+00:00"
+  },
+  {
+    "id": "austria/velden",
+    "country": "Austria",
+    "countryCode": "AT",
+    "countrySlug": "austria",
+    "city": "Velden",
+    "slug": "velden",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Plan your Casino Velden visit using the official arrival information. The venue address is Am Corso 17, 9220 Velden, Austria.",
+    "airport": {
+      "title": "Airport transfer",
+      "detail": "An airport route has not been verified for this guide. Confirm onward transport before booking.",
+      "url": "https://www.casinos.at/en/casinos/velden/contact-opening-hours",
+      "sourceId": "velden-visitor"
+    },
+    "transport": [
+      {
+        "title": "Public transport to the venue",
+        "detail": "The casino lists Velden am Wörthersee station on the S1 line, about 750 metres or a 10-minute walk from the venue.",
+        "url": "https://www.casinos.at/en/casinos/velden/contact-opening-hours",
+        "sourceId": "velden-visitor"
+      }
+    ],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Personal tax treatment has not been verified.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-11-02T05:01:05.402808+00:00"
+  },
+  {
+    "id": "austria/salzburg",
+    "country": "Austria",
+    "countryCode": "AT",
+    "countrySlug": "austria",
+    "city": "Salzburg",
+    "slug": "salzburg",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Plan your Casino Salzburg visit using the official arrival information. The venue address is Schloss Klessheim, 5071 Wals-Siezenheim, Austria.",
+    "airport": {
+      "title": "Airport transfer",
+      "detail": "An airport route has not been verified for this guide. Confirm onward transport before booking.",
+      "url": "https://www.casinos.at/en/casinos/salzburg/contact-opening-hours",
+      "sourceId": "salzburg-visitor"
+    },
+    "transport": [
+      {
+        "title": "Public transport to the venue",
+        "detail": "From Salzburg Central Station, use trolleybus line 1 towards Klessheim and check that the service reaches Kleßheim Kavalierhaus; not every line 1 service does. The casino is outside the city centre.",
+        "url": "https://www.casinos.at/en/casinos/salzburg/contact-opening-hours",
+        "sourceId": "salzburg-visitor"
+      }
+    ],
+    "hotels": [],
+    "dining": [],
+    "tax": {
+      "text": "Personal tax treatment has not been verified.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-11-02T05:01:05.402808+00:00"
   }
 ]

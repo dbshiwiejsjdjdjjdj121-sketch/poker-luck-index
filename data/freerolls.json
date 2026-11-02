@@ -2994,8 +2994,68 @@
     "sourceIds": [
       "mgm-detroit-appreciation-2026"
     ],
-    "checkedAt": "2026-10-24T05:04:41.327729Z",
+    "checkedAt": "2026-11-02T05:02:46.304869Z",
     "updatedAt": "2026-10-24T05:04:41.327729Z",
+    "reviewNote": null
+  },
+  {
+    "id": "partypoker-anniversary-loyalty-freeroll-2026",
+    "slug": "partypoker-anniversary-loyalty-freeroll-2026",
+    "title": "PartyPoker 25th Anniversary Freeroll — London 2026",
+    "brand": "PartyPoker",
+    "description": "Restricted live freeroll for loyalty-card qualifiers. Prior deposit and paid tour participation are required.",
+    "mode": "live",
+    "status": "published",
+    "market": {
+      "label": "London, UK · UK/Ireland tour qualification",
+      "countries": [
+        "GB",
+        "IE"
+      ],
+      "usStates": [],
+      "note": "In-person London final; eligible PartyPoker accounts only. Restricted countries are excluded."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "required",
+      "ticket": "required",
+      "password": "unknown",
+      "requirements": [
+        "Over 18, verified real-money account, first deposit, poker client and promotion eligibility.",
+        "Earn four stamps: one per distinct UK/Ireland tour stop after at least one paid buy-in.",
+        "December London cannot supply qualifying stamps. Bring the non-transferable loyalty card."
+      ],
+      "costNote": "Zero final buy-in does not remove prior deposit, paid-event or travel costs."
+    },
+    "reward": {
+      "label": "£25,000 guaranteed · cash and tickets",
+      "details": "Mixed cash and 2027 tour tickets; 100-player cap. Payout structure is announced at the venue."
+    },
+    "schedule": {
+      "text": "London, December 2026. Exact freeroll date and time await publication; no dated start is inferred.",
+      "timezone": "Europe/London",
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "Does five-stamp qualification differ?",
+        "text": "Five stamps earn a separate mystery ticket prize; four qualify for the freeroll."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Official loyalty-card rules",
+        "url": "https://www.partypoker.com/en/poker/p/party-poker-tour-2026/Loyalty-Card",
+        "kind": "rules",
+        "sourceId": "party-anniversary-2026-rules"
+      }
+    ],
+    "sourceIds": [
+      "party-anniversary-2026-rules"
+    ],
+    "checkedAt": "2026-11-02T05:02:46.304869Z",
+    "updatedAt": "2026-11-02T05:02:46.304869Z",
     "reviewNote": null
   }
 ]

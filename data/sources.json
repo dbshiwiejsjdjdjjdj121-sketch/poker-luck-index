@@ -2048,7 +2048,7 @@
     "title": "MGM Grand Detroit poker room — November appreciation freeroll",
     "url": "https://mgmgranddetroit.mgmresorts.com/en/casino/poker-room.html",
     "kind": "organizer",
-    "checkedAt": "2026-10-24T05:04:41.327729Z"
+    "checkedAt": "2026-11-02T05:02:46.304869Z"
   },
   {
     "id": "pokerstars-open-campione-2027-official",
@@ -2111,7 +2111,7 @@
     "title": "CAPT — official tour calendar",
     "url": "https://www.casinos.at/en/games/poker/capt",
     "kind": "schedule",
-    "checkedAt": "2026-11-01T05:03:51.044609+00:00"
+    "checkedAt": "2026-11-02T05:01:05.402808Z"
   },
   {
     "id": "borgata-fall-2026-official",
@@ -2133,5 +2133,26 @@
     "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours",
     "kind": "travel",
     "checkedAt": "2026-11-01T05:03:51.044609+00:00"
+  },
+  {
+    "id": "velden-visitor",
+    "title": "Casino Velden — official visitor information",
+    "url": "https://www.casinos.at/en/casinos/velden/contact-opening-hours",
+    "kind": "travel",
+    "checkedAt": "2026-11-02T05:01:05.402808Z"
+  },
+  {
+    "id": "salzburg-visitor",
+    "title": "Casino Salzburg — official visitor information",
+    "url": "https://www.casinos.at/en/casinos/salzburg/contact-opening-hours",
+    "kind": "travel",
+    "checkedAt": "2026-11-02T05:01:05.402808Z"
+  },
+  {
+    "id": "party-anniversary-2026-rules",
+    "title": "PartyPoker 2026 Loyalty Card — official promotion rules",
+    "url": "https://www.partypoker.com/en/poker/p/party-poker-tour-2026/Loyalty-Card",
+    "kind": "organizer",
+    "checkedAt": "2026-11-02T05:02:46.304869Z"
   }
 ]
