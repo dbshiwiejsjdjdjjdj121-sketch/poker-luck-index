@@ -6716,16 +6716,138 @@
     "dateNote": null,
     "registration": null,
     "reviewNote": null,
-    "scheduleCoverage": "The organizer has not yet published the tournament schedule. Buy-ins, guarantees and entry days remain unconfirmed.",
-    "checkedAt": "2026-09-30T05:20:09Z",
-    "updatedAt": "2026-09-09T05:17:08.345Z",
+    "scheduleCoverage": "Selected main-event entry flights, opener and Mini Main only. The official schedule also labels later main-event sessions 2A, 2B and 2C; those are not presented here as additional starting flights.",
+    "checkedAt": "2026-11-03T05:03:55.480038Z",
+    "updatedAt": "2026-11-03T05:03:55.480038Z",
     "changes": [
       {
         "date": "2026-09-09T05:17:08.345Z",
         "text": "Overview added with confirmed dates, venue, available highlights and official travel sources."
+      },
+      {
+        "date": "2026-11-03T05:03:55.480038Z",
+        "text": "Added published main-event buy-in, guarantee and selected entry flights, plus the opener and Mini Main."
       }
     ],
-    "tournaments": [],
+    "tournaments": [
+      {
+        "id": "event-11",
+        "slug": "event-11",
+        "number": "11",
+        "name": "Super Circuit Main Event",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 3500,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 2000000,
+          "currency": "USD"
+        },
+        "startingStack": 50000,
+        "levels": "60 minutes",
+        "reentry": "Unlimited re-entry",
+        "lateRegistration": "Level 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "11-2027-01-28-0",
+            "label": "Flight A",
+            "date": "2027-01-28",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "11-2027-01-29-1",
+            "label": "Flight B",
+            "date": "2027-01-29",
+            "time": "13:00",
+            "kind": "entry"
+          },
+          {
+            "id": "11-2027-01-30-2",
+            "label": "Flight C",
+            "date": "2027-01-30",
+            "time": "13:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "latam-super-2027-schedule"
+        ]
+      },
+      {
+        "id": "event-1",
+        "slug": "event-1",
+        "number": "1",
+        "name": "Super Circuit Kickoff",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 500,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": 25000,
+        "levels": "30 minutes",
+        "reentry": "Unlimited re-entry",
+        "lateRegistration": "Level 9",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "1-2027-01-24-0",
+            "label": "Start",
+            "date": "2027-01-24",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "latam-super-2027-schedule"
+        ]
+      },
+      {
+        "id": "event-6",
+        "slug": "event-6",
+        "number": "6",
+        "name": "Mini Main Event",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 400,
+          "currency": "USD"
+        },
+        "fee": null,
+        "guarantee": null,
+        "startingStack": 50000,
+        "levels": "30 minutes",
+        "reentry": "Unlimited re-entry",
+        "lateRegistration": "Level 13",
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "6-2027-01-26-0",
+            "label": "Flight A",
+            "date": "2027-01-26",
+            "time": "12:00",
+            "kind": "entry"
+          },
+          {
+            "id": "6-2027-01-26-1",
+            "label": "Flight B",
+            "date": "2027-01-26",
+            "time": "17:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "latam-super-2027-schedule"
+        ]
+      }
+    ],
     "id": "latam-super-2027",
     "slug": "wsop-super-circuit-latam-2027",
     "name": "WSOP Super Circuit LATAM 2027",
@@ -6739,7 +6861,7 @@
       "address": null,
       "url": "https://hotel.hardrock.com/punta-cana/"
     },
-    "description": "WSOP has confirmed a Super Circuit stop at the Hard Rock Hotel & Casino in Punta Cana for January 24–February 2. Dates and venue are available for early trip planning; tournament buy-ins and entry days have not yet been announced.",
+    "description": "The January 24–February 2 series in Punta Cana now has a published schedule. The USD 3,500 Super Circuit Main Event advertises a USD 2 million guarantee; lower-buy-in options include the USD 500 opener and USD 400 Mini Main. Follow the official schedule for current entry details.",
     "registrationUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
     "scheduleUrl": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
     "sourceIds": [
