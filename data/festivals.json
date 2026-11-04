@@ -12412,7 +12412,7 @@
         "game": "Pot Limit Omaha",
         "category": "side",
         "buyIn": {
-          "amount": 225,
+          "amount": 250,
           "currency": "EUR"
         },
         "fee": {
