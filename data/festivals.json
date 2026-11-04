@@ -12343,5 +12343,96 @@
       }
     ],
     "tournaments": []
+  },
+  {
+    "id": "banco-masters-47-2027",
+    "slug": "banco-masters-47-2027",
+    "name": "Banco Casino Masters #47 2027",
+    "tour": "Banco Casino Masters",
+    "destinationId": "slovakia/bratislava",
+    "startDate": "2027-01-11",
+    "endDate": "2027-01-18",
+    "dateNote": null,
+    "timezone": "Europe/Bratislava",
+    "venue": {
+      "name": "Banco Casino Bratislava",
+      "address": "Hodžovo námestie 2, Bratislava, Slovakia",
+      "url": "https://www.bancocasino.sk/ba/en"
+    },
+    "status": "scheduled",
+    "description": "An eight-day Bratislava series combining No-Limit Hold’em and Pot-Limit Omaha. The main event advertises €250,000 guaranteed with a €170 regular entry; opening Day 1A costs €85. Selected highlights below are not the complete schedule.",
+    "registration": "18+. Confirm entry arrangements and flight times with Banco before travelling. The linked announcement is an information page; online registration has not been verified. Main-event fee breakdown is unpublished.",
+    "registrationUrl": "https://www.bancocasino.sk/ba/en/event/banco-casino-masters-47-kicks-2027-style-eu250000-main-event-just-eu170",
+    "scheduleUrl": "https://www.bancocasino.sk/ba/en/event/banco-casino-masters-47-kicks-2027-style-eu250000-main-event-just-eu170",
+    "scheduleCoverage": "Series dates and selected buy-ins confirmed. Individual start times and late-registration deadlines remain unverified.",
+    "sourceIds": [
+      "banco-masters-47-2027"
+    ],
+    "checkedAt": "2026-11-04T05:02:45.163919+00:00",
+    "updatedAt": "2026-11-04T05:02:45.163919+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-11-04T05:02:45.163919+00:00",
+        "text": "Added confirmed January series dates, main entry and selected Omaha highlight."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "banco-masters-47-2027-main",
+        "slug": "banco-masters-47-2027-main",
+        "name": "Masters Main Event",
+        "number": "",
+        "game": "No Limit Hold’em",
+        "category": "main",
+        "buyIn": {
+          "amount": 170,
+          "currency": "EUR"
+        },
+        "fee": null,
+        "guarantee": {
+          "amount": 250000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "banco-masters-47-2027"
+        ]
+      },
+      {
+        "id": "banco-masters-47-2027-plo",
+        "slug": "banco-masters-47-2027-plo",
+        "name": "PLO Masters Main Event",
+        "number": "",
+        "game": "Pot Limit Omaha",
+        "category": "side",
+        "buyIn": {
+          "amount": 225,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 15000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "banco-masters-47-2027"
+        ]
+      }
+    ]
   }
 ]
