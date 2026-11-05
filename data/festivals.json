@@ -12434,5 +12434,70 @@
         ]
       }
     ]
+  },
+  {
+    "id": "salzburg-new-year-2027",
+    "slug": "salzburg-new-year-2027",
+    "name": "Salzburg Poker New Year's Festival 2027",
+    "tour": "Casino Salzburg",
+    "destinationId": "austria/salzburg",
+    "startDate": "2027-01-01",
+    "endDate": "2027-01-06",
+    "dateNote": null,
+    "timezone": "Europe/Vienna",
+    "venue": {
+      "name": "Casino Salzburg",
+      "address": "Schloss Klessheim, 5071 Wals-Siezenheim, Austria",
+      "url": "https://www.casinos.at/en/casinos/salzburg/contact-opening-hours"
+    },
+    "status": "scheduled",
+    "description": "Six days of poker at Schloss Klessheim open the new year. The main event has a €330 total entry (€300 + €30) and a €50,000 guarantee. The organizer also advertises a January 1–6 offer at The Passenger hotel: 10% off specified room categories with code T01; check availability and full terms through the official festival page.",
+    "registration": "No tournament reservation list. Tickets can be purchased in person at Casinos Austria casinos, or by phone/email with a credit card through the Service Center up to 15:30 on the tournament day. The center lists weekday hours and closes on public holidays, so confirm availability in advance. Bank service fees may apply.",
+    "registrationUrl": "https://www.casinos.at/en/casinos/salzburg/games/poker/poker-new-years-festival",
+    "scheduleUrl": "https://www.casinos.at/en/casinos/salzburg/games/poker/poker-new-years-festival",
+    "scheduleCoverage": "Confirmed festival dates and main buy-in. Individual tournament starts, late-registration rules and selected side entries remain unverified.",
+    "sourceIds": [
+      "salzburg-new-year-2027"
+    ],
+    "checkedAt": "2026-11-05T04:58:06.477092+00:00",
+    "updatedAt": "2026-11-05T04:58:06.477092+00:00",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-11-05T04:58:06.477092+00:00",
+        "text": "Added confirmed 2027 New Year series dates, main total entry and official ticket information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "salzburg-new-year-2027-main",
+        "slug": "salzburg-new-year-2027-main",
+        "name": "Main Event",
+        "number": "",
+        "game": "Poker — format to be confirmed",
+        "category": "main",
+        "buyIn": {
+          "amount": 330,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 50000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [],
+        "sourceIds": [
+          "salzburg-new-year-2027"
+        ]
+      }
+    ]
   }
 ]
