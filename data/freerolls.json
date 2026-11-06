@@ -3057,5 +3057,82 @@
     "checkedAt": "2026-11-02T05:02:46.304869Z",
     "updatedAt": "2026-11-02T05:02:46.304869Z",
     "reviewNote": null
+  },
+  {
+    "id": "sky-poker-rewards-freerolls",
+    "slug": "sky-poker-rewards-freerolls",
+    "title": "Sky Poker Rewards Freerolls — UK & Ireland",
+    "brand": "Sky Poker",
+    "description": "Ticket-qualified freerolls for eligible Sky Poker customers in the UK and Ireland. Entry requires prior paid play; prizes are tournament tickets, not cash.",
+    "mode": "online",
+    "status": "published",
+    "market": {
+      "label": "United Kingdom · Ireland",
+      "countries": [
+        "GB",
+        "IE"
+      ],
+      "usStates": [],
+      "note": "Sky Poker accounts only. These freerolls are not available to other network-brand accounts. US residents and people in the US are excluded by the general terms."
+    },
+    "entry": {
+      "buyIn": 0,
+      "deposit": "unknown",
+      "ticket": "required",
+      "password": "unknown",
+      "requirements": [
+        "Age 18+ with an eligible account meeting identity and location checks.",
+        "Rewards entry requires 50 Status Points in the preceding Monday–Sunday week. Sunday Major qualifier entry requires 20 points in the preceding 24 hours."
+      ],
+      "costNote": "Points come from rake paid in earlier games. Zero tournament buy-in does not make this a cost-free or verified no-deposit route."
+    },
+    "reward": {
+      "label": "£40 and £100 tournament tickets",
+      "details": "Rewards freerolls award twenty £40 main-event tickets. The Sunday Major qualifier awards three £100 seats. Tickets expire after 30 days."
+    },
+    "schedule": {
+      "text": "Recurring weekday Rewards and daily Sunday Major qualifiers; check the lobby for current starts. No dated sessions verified.",
+      "timezone": null,
+      "endDate": null,
+      "slots": []
+    },
+    "sections": [
+      {
+        "title": "How do entry tickets differ?",
+        "text": "The weekly points requirement qualifies for weekday Rewards tickets; the daily requirement qualifies for a Sunday Major freeroll ticket. Use the relevant ticket to enter."
+      },
+      {
+        "title": "Where are the official instructions?",
+        "text": "Read the programme and regional rules below, then confirm account eligibility and ticket validity in Sky Poker. These links explain the offer; they are not entry forms."
+      }
+    ],
+    "officialLinks": [
+      {
+        "label": "Sky Poker Rewards rules",
+        "url": "https://promos.skypoker.com/promotion?promoCode=POKSKYRWD120525",
+        "kind": "rules",
+        "sourceId": "sky-rewards-rules"
+      },
+      {
+        "label": "Sky Poker UK and Ireland exclusives",
+        "url": "https://promos.skypoker.com/promotion?promoCode=POKSKYEXCL070525",
+        "kind": "explanation",
+        "sourceId": "sky-uk-ireland-exclusives"
+      },
+      {
+        "label": "Sky account eligibility terms",
+        "url": "https://support.skypoker.com/app/answers/detail/sky-betting-and-gaming-general-terms-conditions/",
+        "kind": "rules",
+        "sourceId": "sky-general-terms"
+      }
+    ],
+    "sourceIds": [
+      "sky-rewards-rules",
+      "sky-uk-ireland-exclusives",
+      "sky-general-terms"
+    ],
+    "checkedAt": "2026-11-06T16:42:30.679570Z",
+    "updatedAt": "2026-11-06T16:42:30.679570Z",
+    "reviewNote": null
   }
 ]

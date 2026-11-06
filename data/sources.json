@@ -2168,5 +2168,26 @@
     "url": "https://www.casinos.at/en/casinos/salzburg/games/poker/poker-new-years-festival",
     "kind": "organizer",
     "checkedAt": "2026-11-05T04:58:06.477092+00:00"
+  },
+  {
+    "id": "sky-rewards-rules",
+    "title": "Sky Poker Rewards rules",
+    "url": "https://promos.skypoker.com/promotion?promoCode=POKSKYRWD120525",
+    "kind": "organizer",
+    "checkedAt": "2026-11-06T16:42:30.679570Z"
+  },
+  {
+    "id": "sky-uk-ireland-exclusives",
+    "title": "Sky Poker UK and Ireland exclusives",
+    "url": "https://promos.skypoker.com/promotion?promoCode=POKSKYEXCL070525",
+    "kind": "organizer",
+    "checkedAt": "2026-11-06T16:42:30.679570Z"
+  },
+  {
+    "id": "sky-general-terms",
+    "title": "Sky account eligibility terms",
+    "url": "https://support.skypoker.com/app/answers/detail/sky-betting-and-gaming-general-terms-conditions/",
+    "kind": "organizer",
+    "checkedAt": "2026-11-06T16:42:30.679570Z"
   }
 ]
