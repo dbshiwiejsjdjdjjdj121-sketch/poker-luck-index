@@ -1,0 +1,1267 @@
+{
+  "note": "Retrieval only; not a factual verification receipt. No source timestamps advanced on this basis.",
+  "results": [
+    {
+      "id": "paradise-schedule",
+      "url": "https://www.wsop.com/tournaments/2026-wsop-paradise/",
+      "attemptedAt": "2026-11-07T05:05:31.235914+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6039
+    },
+    {
+      "id": "las-vegas-schedule",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-venetian-las-vegas-fall-championship-season-2026",
+      "attemptedAt": "2026-11-07T05:05:31.236588+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "prague-schedule",
+      "url": "https://www.pokerstarslive.com/ept/prague/",
+      "attemptedAt": "2026-11-07T05:05:31.236727+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3254
+    },
+    {
+      "id": "aix-schedule",
+      "url": "https://www.pokerstarslive.com/pokerstarsopen/aixenprovence/",
+      "attemptedAt": "2026-11-07T05:05:31.236873+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3538
+    },
+    {
+      "id": "taipei-schedule",
+      "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/events",
+      "attemptedAt": "2026-11-07T05:05:31.237008+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 37314
+    },
+    {
+      "id": "taipei-info",
+      "url": "https://www.theasianpokertour.com/series/apt-championship-taipei-2026/info",
+      "attemptedAt": "2026-11-07T05:05:31.237143+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2724
+    },
+    {
+      "id": "durant-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-choctaw-durant-october-2026/",
+      "attemptedAt": "2026-11-07T05:05:31.237277+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5427
+    },
+    {
+      "id": "toledo-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-the-reserve-poker-club/",
+      "attemptedAt": "2026-11-07T05:05:31.237409+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4926
+    },
+    {
+      "id": "playground-november-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-canada-playground/",
+      "attemptedAt": "2026-11-07T05:05:31.237554+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5295
+    },
+    {
+      "id": "scottsdale-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-talking-stick/",
+      "attemptedAt": "2026-11-07T05:05:31.237687+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "elgin-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-grand-victoria/",
+      "attemptedAt": "2026-11-07T05:05:31.237817+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5507
+    },
+    {
+      "id": "panama-city-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-panama-city/",
+      "attemptedAt": "2026-11-07T05:05:31.260908+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5422
+    },
+    {
+      "id": "middelkerke-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-middelkerke/",
+      "attemptedAt": "2026-11-07T05:05:32.248819+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4080
+    },
+    {
+      "id": "new-orleans-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-caesars-new-orleans/",
+      "attemptedAt": "2026-11-07T05:05:33.354565+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4893
+    },
+    {
+      "id": "sanremo-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-casino-sanremo/",
+      "attemptedAt": "2026-11-07T05:05:33.634056+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4351
+    },
+    {
+      "id": "cherokee-november-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-harrah-s-cherokee-november-2026/",
+      "attemptedAt": "2026-11-07T05:05:35.373150+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5124
+    },
+    {
+      "id": "namur-venue",
+      "url": "https://www.circus-poker.com/en/namur/contact",
+      "attemptedAt": "2026-11-07T05:05:41.007205+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6785
+    },
+    {
+      "id": "wpt-seoul-2026-schedule",
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-seoul-season-2026",
+      "attemptedAt": "2026-11-07T05:05:43.276698+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wpt-seoul-2026-announcement",
+      "url": "https://www.worldpokertour.com/article/world-poker-tour-makes-historic-debut-at-inspire-entertainment-resort-for-wpt-seoul",
+      "attemptedAt": "2026-11-07T05:05:44.320081+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "cambodia-2027-announcement",
+      "url": "https://www.worldpokertour.com/article/world-poker-tour-season-25-set-to-begin-in-phnom-penh-with-wpt-cambodia-championship",
+      "attemptedAt": "2026-11-07T05:05:44.468522+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "cambodia-2027-main",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-cambodia-championship-season-2027",
+      "attemptedAt": "2026-11-07T05:05:45.624191+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "cambodia-2027-prime",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-cambodia-championship-season-2027",
+      "attemptedAt": "2026-11-07T05:05:45.635206+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "kings-super-2026-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-super-circuit-kings/",
+      "attemptedAt": "2026-11-07T05:05:45.781649+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5796
+    },
+    {
+      "id": "rozvadov-transport",
+      "url": "https://kings-resort.com/contact",
+      "attemptedAt": "2026-11-07T05:05:45.894107+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3816
+    },
+    {
+      "id": "latam-super-2027-schedule",
+      "url": "https://www.wsop.com/tournaments/wsop-super-circuit-latam/",
+      "attemptedAt": "2026-11-07T05:05:46.084972+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4884
+    },
+    {
+      "id": "irish-calendar",
+      "url": "https://irishpokeropen.com/",
+      "attemptedAt": "2026-11-07T05:05:46.472741+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3152
+    },
+    {
+      "id": "irish-marrakech-2026-info",
+      "url": "https://irishpokeropen.com/marrakech/",
+      "attemptedAt": "2026-11-07T05:05:46.602989+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2507
+    },
+    {
+      "id": "marrakech-location",
+      "url": "https://irishpokeropen.com/marrakech/location/",
+      "attemptedAt": "2026-11-07T05:05:47.370387+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4172
+    },
+    {
+      "id": "marrakech-hotels",
+      "url": "https://irishpokeropen.com/marrakech/2026/08/10/where-to-stay-in-marrakech-your-festival-hotel-guide/",
+      "attemptedAt": "2026-11-07T05:05:47.781259+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5733
+    },
+    {
+      "id": "bsop-calendar",
+      "url": "https://bsop.com.br/proximas-etapas/",
+      "attemptedAt": "2026-11-07T05:05:48.160093+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3204
+    },
+    {
+      "id": "bsop-millions-2026-info",
+      "url": "https://bsop.com.br/bsop-millions/",
+      "attemptedAt": "2026-11-07T05:05:48.983442+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 47252
+    },
+    {
+      "id": "bsop-summer-2027-info",
+      "url": "https://bsop.com.br/summer/",
+      "attemptedAt": "2026-11-07T05:05:49.029472+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 21516
+    },
+    {
+      "id": "triton-cyprus-2026-announcement",
+      "url": "https://tritonpokerseries.com/news/thetritontimes/2nd",
+      "attemptedAt": "2026-11-07T05:05:51.003931+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 62980
+    },
+    {
+      "id": "venetian-fall-2026-announcement",
+      "url": "https://www.worldpokertour.com/article/world-poker-tour-returns-to-the-venetian-resort-las-vegas-with-2-million-guaranteed-championship-event",
+      "attemptedAt": "2026-11-07T05:05:51.135882+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "venetian-fall-2026-guide",
+      "url": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/08/WPT-Venetian-Fall-Festival-2026-Player-Guide-low-res.pdf",
+      "attemptedAt": "2026-11-07T05:05:51.690042+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "venetian-poker-room",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker.html",
+      "attemptedAt": "2026-11-07T05:05:51.706611+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4774
+    },
+    {
+      "id": "venetian-poker-rates-2026",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker/suite-rates.html",
+      "attemptedAt": "2026-11-07T05:05:51.973456+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6745
+    },
+    {
+      "id": "cps-namur-2026-info",
+      "url": "https://www.pokerstarslive.com/circuspokerseries/",
+      "attemptedAt": "2026-11-07T05:05:52.064638+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2966
+    },
+    {
+      "id": "cps-namur-2026-host",
+      "url": "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
+      "attemptedAt": "2026-11-07T05:05:52.429357+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 8855
+    },
+    {
+      "id": "cps-namur-2026-schedule",
+      "url": "https://www.circus-poker.com/en/ticketing/festival/details/d41844ef-c203-2b20-064d-3a1e1ae61e11",
+      "attemptedAt": "2026-11-07T05:05:53.602145+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7533
+    },
+    {
+      "id": "cps-namur-2026-cup",
+      "url": "https://www.circus-poker.com/en/ticketing/ticket/details/2aa94186-3884-1c5d-2198-3a22d0df8904",
+      "attemptedAt": "2026-11-07T05:05:57.757160+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6289
+    },
+    {
+      "id": "cps-namur-2026-qualifier",
+      "url": "https://www.circus-poker.com/en/ticketing/ticket/details/3391ca34-65a3-61b9-daf7-3a2365256b7d",
+      "attemptedAt": "2026-11-07T05:05:58.972934+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7055
+    },
+    {
+      "id": "cambodia-2027-player-guide",
+      "url": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/08/WPT-Cambodia-2027-player-guide-low-res.pdf",
+      "attemptedAt": "2026-11-07T05:05:59.874152+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "freeroll-stars-fr",
+      "url": "https://www.pokerstars.fr/en/poker/free/freerolls/",
+      "attemptedAt": "2026-11-07T05:06:02.616341+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5446
+    },
+    {
+      "id": "freeroll-stars-help",
+      "url": "https://www.pokerstars.com/is/help/articles/finding-freerolls-fr/10918/?ooac=1",
+      "attemptedAt": "2026-11-07T05:06:02.756378+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 100
+    },
+    {
+      "id": "freeroll-party-offer",
+      "url": "https://www.partypoker.com/en/poker/offers/round-the-clock-freerolls",
+      "attemptedAt": "2026-11-07T05:06:04.250219+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 182
+    },
+    {
+      "id": "freeroll-party-help",
+      "url": "https://www.partypoker.com/en/poker/how-to-play/software/free-poker",
+      "attemptedAt": "2026-11-07T05:06:06.060517+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 182
+    },
+    {
+      "id": "freeroll-888-offer",
+      "url": "https://www.888poker.com/poker-promotions/24-7-freerolls-festival/",
+      "attemptedAt": "2026-11-07T05:06:07.919878+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4558
+    },
+    {
+      "id": "freeroll-888-terms",
+      "url": "https://www.888poker.com/terms/24-7-freerolls-festival/",
+      "attemptedAt": "2026-11-07T05:06:07.939252+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 16014
+    },
+    {
+      "id": "freeroll-atlanta-schedule",
+      "url": "https://www.freerollatlanta.com/schedule-2/",
+      "attemptedAt": "2026-11-07T05:06:08.235002+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3401
+    },
+    {
+      "id": "freeroll-atlanta-rules",
+      "url": "https://www.freerollatlanta.com/rules/",
+      "attemptedAt": "2026-11-07T05:06:12.478263+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6006
+    },
+    {
+      "id": "freeroll-atlanta-welcome",
+      "url": "https://www.freerollatlanta.com/welcome-to-freeroll-atlanta-poker/",
+      "attemptedAt": "2026-11-07T05:06:12.693629+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2991
+    },
+    {
+      "id": "freeroll-atlanta-prizes",
+      "url": "https://www.freerollatlanta.com/prizes/",
+      "attemptedAt": "2026-11-07T05:06:13.445241+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 1633
+    },
+    {
+      "id": "wynn-world-2026-announcement",
+      "url": "https://www.worldpokertour.com/article/wpt-world-championship-at-wynn-las-vegas-set-for-season-24-finale-with-over-85-events-and-20m-in-gte",
+      "attemptedAt": "2026-11-07T05:06:14.228669+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wynn-world-2026-main",
+      "url": "https://www.worldpokertour.com/event/main-tour-wpt-world-championship-at-wynn-las-vegas-season-2026",
+      "attemptedAt": "2026-11-07T05:06:14.426297+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wynn-world-2026-prime",
+      "url": "https://www.worldpokertour.com/event/prime-wpt-prime-championship-at-wynn-las-vegas-season-2026",
+      "attemptedAt": "2026-11-07T05:06:14.678069+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wynn-world-2026-super-gold",
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-clubwpt-gold-super-gold-million-season-2026",
+      "attemptedAt": "2026-11-07T05:06:15.447070+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wynn-world-2026-schedule",
+      "url": "https://wptmedia-mig.s3.amazonaws.com/wp-content/uploads/2026/09/WPT-World-Championship-Festival-Schedule-Season-24.pdf",
+      "attemptedAt": "2026-11-07T05:06:15.484072+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "wynn-world-2026-hotel",
+      "url": "https://book.passkey.com/go/WPT2026",
+      "attemptedAt": "2026-11-07T05:06:15.980371+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6476
+    },
+    {
+      "id": "nottingham-2026-wsop",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-dusk-till-dawn/",
+      "attemptedAt": "2026-11-07T05:06:16.679383+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5351
+    },
+    {
+      "id": "nottingham-2026-host",
+      "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026",
+      "attemptedAt": "2026-11-07T05:06:17.394002+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 36402
+    },
+    {
+      "id": "nottingham-2026-schedule",
+      "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
+      "attemptedAt": "2026-11-07T05:06:17.452992+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 30810
+    },
+    {
+      "id": "nottingham-2026-entry",
+      "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
+      "attemptedAt": "2026-11-07T05:06:17.504218+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3036
+    },
+    {
+      "id": "riverchasers-home",
+      "url": "https://www.riverchasers.com/",
+      "attemptedAt": "2026-11-07T05:06:17.527049+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 9370
+    },
+    {
+      "id": "riverchasers-bpo",
+      "url": "https://barpokeropen.com/leagues/riverchasers",
+      "attemptedAt": "2026-11-07T05:06:19.157632+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2471
+    },
+    {
+      "id": "riverchasers-season40",
+      "url": "https://www.riverchasers.com/news/season39championship-ytwhx",
+      "attemptedAt": "2026-11-07T05:06:19.379929+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5118
+    },
+    {
+      "id": "venetian-deepstack-calendar",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament.html",
+      "attemptedAt": "2026-11-07T05:06:21.454779+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6989
+    },
+    {
+      "id": "fpn-terms",
+      "url": "https://freepokernetwork.com/terms-of-services",
+      "attemptedAt": "2026-11-07T05:06:21.680191+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4112
+    },
+    {
+      "id": "fpn-regions",
+      "url": "https://freepokernetwork.com/regions",
+      "attemptedAt": "2026-11-07T05:06:22.070971+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2525
+    },
+    {
+      "id": "fpn-about",
+      "url": "https://freepokernetwork.com/about-us",
+      "attemptedAt": "2026-11-07T05:06:23.628583+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4308
+    },
+    {
+      "id": "gukpt-2026-calendar",
+      "url": "https://www.grosvenorcasinos.com/poker/live-poker/gukpt",
+      "attemptedAt": "2026-11-07T05:06:23.717340+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "blackpool-grosvenor",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/blackpool",
+      "attemptedAt": "2026-11-07T05:06:26.043031+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "london-victoria",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/london-the-victoria",
+      "attemptedAt": "2026-11-07T05:06:27.249449+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wtp-live-intro",
+      "url": "https://www.worldtavernpoker.info/poker-info-page",
+      "attemptedAt": "2026-11-07T05:06:27.450844+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2735
+    },
+    {
+      "id": "wtp-live-rules",
+      "url": "https://www.worldtavernpoker.info/world-tavern-poker-rules-guide",
+      "attemptedAt": "2026-11-07T05:06:28.419188+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 15741
+    },
+    {
+      "id": "wtp-live-complete-rules",
+      "url": "https://www.worldtavernpoker.info/complete-rule-guide",
+      "attemptedAt": "2026-11-07T05:06:28.849211+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 23464
+    },
+    {
+      "id": "wtp-live-regions",
+      "url": "https://www.worldtavernpoker.info/regional-champs",
+      "attemptedAt": "2026-11-07T05:06:29.716030+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7118
+    },
+    {
+      "id": "rosario-2026-wsop",
+      "url": "https://www.wsop.com/tournaments/wsop-circuit-city-center-rosario/",
+      "attemptedAt": "2026-11-07T05:06:29.909475+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4685
+    },
+    {
+      "id": "rosario-2026-host",
+      "url": "https://citycenterpoker.com.ar/torneo/wsopc",
+      "attemptedAt": "2026-11-07T05:06:35.137911+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 40
+    },
+    {
+      "id": "irish-dublin-2027-announcement",
+      "url": "https://irishpokeropen.com/blog/2026/09/04/ipoker-satellites-about-to-kick-off-for-2027-irish-open-monday-7th-september/",
+      "attemptedAt": "2026-11-07T05:06:37.027060+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7468
+    },
+    {
+      "id": "irish-registration",
+      "url": "https://irishpokeropen.com/registration/",
+      "attemptedAt": "2026-11-07T05:06:40.590406+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2729
+    },
+    {
+      "id": "apat-2026-calendar",
+      "url": "https://www.apat.com/apat-2026-live-tour/",
+      "attemptedAt": "2026-11-07T05:06:42.167449+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 9674
+    },
+    {
+      "id": "wfp-nj-schedule",
+      "url": "https://www.worldfreepoker.com/poker-schedule.html",
+      "attemptedAt": "2026-11-07T05:06:43.437132+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "wfp-nj-faq",
+      "url": "https://www.worldfreepoker.com/poker-faq.html",
+      "attemptedAt": "2026-11-07T05:06:44.845968+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "wfp-nj-scoring",
+      "url": "https://www.worldfreepoker.com/poker-scores-online.html",
+      "attemptedAt": "2026-11-07T05:06:46.366139+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "bicycle-calendar",
+      "url": "https://www.thebike.com/play/major_tournaments.php",
+      "attemptedAt": "2026-11-07T05:06:48.247221+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2404
+    },
+    {
+      "id": "bicycle-bpo-2026-schedule",
+      "url": "https://www.thebike.com/play/major_tournament_bpo_2026.php",
+      "attemptedAt": "2026-11-07T05:06:48.377192+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 13045
+    },
+    {
+      "id": "bicycle-bpo-2026-kickoff",
+      "url": "https://www.thebike.com/pdf/tournaments_yearly/2026-bpo/bpo_event01_2026.pdf",
+      "attemptedAt": "2026-11-07T05:06:49.047173+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "bicycle-bpo-2026-pwc",
+      "url": "https://www.thebike.com/pdf/tournaments_yearly/2026-bpo/bpo_event10_2026.pdf",
+      "attemptedAt": "2026-11-07T05:06:49.434466+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "gg-uk-daily-freeroll",
+      "url": "https://help.ggpoker.co.uk/article/Weekly-Freeroll---Daily-Freeroll-Questions-UK",
+      "attemptedAt": "2026-11-07T05:06:50.029357+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 27
+    },
+    {
+      "id": "gg-uk-weekly-freeroll",
+      "url": "https://help.ggpoker.co.uk/article/Weekly-Freeroll---Weekly-Freeroll-Questions-UK",
+      "attemptedAt": "2026-11-07T05:06:50.167097+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 27
+    },
+    {
+      "id": "gg-uk-house-rules",
+      "url": "https://ggpoker.co.uk/house-rules/",
+      "attemptedAt": "2026-11-07T05:06:52.641234+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 59770
+    },
+    {
+      "id": "redtooth-tavern-online",
+      "url": "https://www.redtoothpoker.com/online",
+      "attemptedAt": "2026-11-07T05:06:53.920539+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 8126
+    },
+    {
+      "id": "redtooth-tavern-terms",
+      "url": "https://www.redtoothpoker.com/terms",
+      "attemptedAt": "2026-11-07T05:06:55.805093+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 16514
+    },
+    {
+      "id": "irish-marrakech-2026-announcement",
+      "url": "https://irishpokeropen.com/marrakech/2026/09/28/marrakech_schedule_announced/",
+      "attemptedAt": "2026-11-07T05:06:56.849712+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6787
+    },
+    {
+      "id": "triton-one-cyprus-2026-schedule",
+      "url": "https://tritonpokerseries.com/en-US/events/Triton_ONE_N.Cyprus_2026",
+      "attemptedAt": "2026-11-07T05:06:58.385818+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 8571
+    },
+    {
+      "id": "triton-shrs-cyprus-2026-schedule",
+      "url": "https://tritonpokerseries.com/en-US/events/Triton_SHRS_N.Cyprus_S5",
+      "attemptedAt": "2026-11-07T05:06:58.761099+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 10429
+    },
+    {
+      "id": "wpt-lapc-2027-announcement",
+      "url": "https://www.worldpokertour.com/article/wpt-returns-to-the-commerce-casino-hotel-for-the-wpt-lapc-championship-in-season-25",
+      "attemptedAt": "2026-11-07T05:07:03.042961+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "commerce-contact",
+      "url": "https://commercecasino.com/contact/",
+      "attemptedAt": "2026-11-07T05:07:04.596548+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3231
+    },
+    {
+      "id": "pokerstars-manila-calendar",
+      "url": "https://www.pokerstarslivemanila.com/tournaments/",
+      "attemptedAt": "2026-11-07T05:07:06.519479+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2221
+    },
+    {
+      "id": "pokerstars-manila-venue",
+      "url": "https://www.pokerstarslivemanila.com/venue/",
+      "attemptedAt": "2026-11-07T05:07:10.576190+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 1482
+    },
+    {
+      "id": "maverick-mi-faq",
+      "url": "https://maverickpokerleague.com/faq/",
+      "attemptedAt": "2026-11-07T05:07:15.881947+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2564
+    },
+    {
+      "id": "maverick-mi-locations",
+      "url": "https://maverickpokerleague.com/locations",
+      "attemptedAt": "2026-11-07T05:07:15.891813+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 1953
+    },
+    {
+      "id": "nqv-florida-rules",
+      "url": "https://notquitevegas.net/rules",
+      "attemptedAt": "2026-11-07T05:07:16.139454+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 20216
+    },
+    {
+      "id": "nqv-florida-home",
+      "url": "https://notquitevegas.net/",
+      "attemptedAt": "2026-11-07T05:07:18.444313+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6295
+    },
+    {
+      "id": "straight-flush-mn-rules",
+      "url": "https://sfpokertour.com/rules-play/",
+      "attemptedAt": "2026-11-07T05:07:19.830722+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 19882
+    },
+    {
+      "id": "straight-flush-mn-calendar",
+      "url": "https://sfpokertour.com/",
+      "attemptedAt": "2026-11-07T05:07:20.534204+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 9316
+    },
+    {
+      "id": "apat-reading-2026-schedule",
+      "url": "https://www.apat.com/apat-reading-20-22-nov-2026/",
+      "attemptedAt": "2026-11-07T05:07:20.998107+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5328
+    },
+    {
+      "id": "reading-grosvenor-south",
+      "url": "https://www.grosvenorcasinos.com/local-casinos/reading-south",
+      "attemptedAt": "2026-11-07T05:07:21.437125+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "apat-squads-manchester-2026",
+      "url": "https://www.apat.com/poker-squads-live-27-29-nov-2026/",
+      "attemptedAt": "2026-11-07T05:07:23.244170+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 8948
+    },
+    {
+      "id": "manchester235-poker",
+      "url": "https://www.metropolitancasinos.com/venues/manchester/casino/poker/",
+      "attemptedAt": "2026-11-07T05:07:27.595486+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 16652
+    },
+    {
+      "id": "all-in-atlanta-official",
+      "url": "https://allinatlanta.com/",
+      "attemptedAt": "2026-11-07T05:07:28.568284+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 13982
+    },
+    {
+      "id": "apt-jeju-classic-2027-events",
+      "url": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/events",
+      "attemptedAt": "2026-11-07T05:07:30.471844+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2188
+    },
+    {
+      "id": "apt-jeju-classic-2027-info",
+      "url": "https://www.theasianpokertour.com/series/apt-jeju-classic-south-korea-2027/info",
+      "attemptedAt": "2026-11-07T05:07:33.293415+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2209
+    },
+    {
+      "id": "florida-free-home",
+      "url": "https://floridafreepoker.net/",
+      "attemptedAt": "2026-11-07T05:07:34.544403+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "florida-free-rules",
+      "url": "https://floridafreepoker.net/policies-rules-safety/",
+      "attemptedAt": "2026-11-07T05:07:35.319627+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "florida-free-tournaments",
+      "url": "https://floridafreepoker.net/tournament-information/",
+      "attemptedAt": "2026-11-07T05:07:35.402167+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "dpf-2027-info",
+      "url": "https://dublinpokerfestival.squarespace.com/",
+      "attemptedAt": "2026-11-07T05:07:36.709568+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3210
+    },
+    {
+      "id": "dpf-2027-schedule",
+      "url": "https://dublinpokerfestival.squarespace.com/schedule",
+      "attemptedAt": "2026-11-07T05:07:36.818984+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 1065
+    },
+    {
+      "id": "dublin-bonnington",
+      "url": "https://www.bonningtondublin.com/",
+      "attemptedAt": "2026-11-07T05:07:36.964347+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4822
+    },
+    {
+      "id": "irish-dublin-2027-about",
+      "url": "https://irishpokeropen.com/about/",
+      "attemptedAt": "2026-11-07T05:07:39.647566+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4206
+    },
+    {
+      "id": "festival-tallinn-2026",
+      "url": "https://www.thefestival.com/the-festival-series-tallinn-2026",
+      "attemptedAt": "2026-11-07T05:07:39.789301+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "tallinn-hilton",
+      "url": "https://www.hilton.com/en/hotels/tllhihi-hilton-tallinn-park/",
+      "attemptedAt": "2026-11-07T05:07:42.508840+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "tallinn-olympic",
+      "url": "https://olympic-casino.ee/en/casino/olympic-park-casino",
+      "attemptedAt": "2026-11-07T05:07:43.015596+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3616
+    },
+    {
+      "id": "smokenaces-rules",
+      "url": "https://smokenacespoker.com/rules/",
+      "attemptedAt": "2026-11-07T05:07:43.821663+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7395
+    },
+    {
+      "id": "smokenaces-locations",
+      "url": "https://smokenacespoker.com/where/",
+      "attemptedAt": "2026-11-07T05:07:44.344747+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 1127
+    },
+    {
+      "id": "smokenaces-kenosha-calendar",
+      "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-15/",
+      "attemptedAt": "2026-11-07T05:07:44.972210+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3399
+    },
+    {
+      "id": "festival-bratislava-2027",
+      "url": "https://www.thefestival.com/news/the-festival-is-coming-back-to-bratislava-in-2027",
+      "attemptedAt": "2026-11-07T05:07:45.269793+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 14181
+    },
+    {
+      "id": "bratislava-banco",
+      "url": "https://www.bancocasino.sk/ba/en",
+      "attemptedAt": "2026-11-07T05:07:45.826624+00:00",
+      "error": "HTTP Error 466: "
+    },
+    {
+      "id": "glasgow-2026-official",
+      "url": "https://irishpokertour.com/poker-festivals/glasgow-poker-festival-2026/",
+      "attemptedAt": "2026-11-07T05:07:46.416113+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 8441
+    },
+    {
+      "id": "glasgow-alea-contact",
+      "url": "https://www.metropolitancasinos.com/venues/glasgow/contact-us/",
+      "attemptedAt": "2026-11-07T05:07:48.782302+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 12921
+    },
+    {
+      "id": "smokenaces-kenosha-2026-10-29",
+      "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-10-29/",
+      "attemptedAt": "2026-11-07T05:07:51.670120+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3357
+    },
+    {
+      "id": "smokenaces-kenosha-2026-11-05",
+      "url": "https://www.58below.com/event/smoken-aces-poker-league-tournament-at-58-below/2026-11-05/",
+      "attemptedAt": "2026-11-07T05:07:53.010749+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 3375
+    },
+    {
+      "id": "dublin-winter-2026-official",
+      "url": "https://irishpokertour.com/poker-festivals/dublin-winter-festival-2026/",
+      "attemptedAt": "2026-11-07T05:07:54.445097+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6420
+    },
+    {
+      "id": "dublin-green-isle",
+      "url": "https://greenislehotel.com/",
+      "attemptedAt": "2026-11-07T05:07:56.260290+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2227
+    },
+    {
+      "id": "dublin-winter-2026-satellite-structure",
+      "url": "https://irishpokertour.com/wp-content/uploads/2026/08/Dublin-Winter-Festival-Freeroll-Satellite.pdf",
+      "attemptedAt": "2026-11-07T05:07:58.824091+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "ppc-charlotte-home",
+      "url": "https://pubpokerchampionship.org/",
+      "attemptedAt": "2026-11-07T05:07:59.435560+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 740
+    },
+    {
+      "id": "ppc-charlotte-about",
+      "url": "https://pubpokerchampionship.org/index.php/home/about/",
+      "attemptedAt": "2026-11-07T05:08:01.734356+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2085
+    },
+    {
+      "id": "ppc-charlotte-locations",
+      "url": "https://pubpokerchampionship.org/index.php/home/locations/",
+      "attemptedAt": "2026-11-07T05:08:02.471943+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 566
+    },
+    {
+      "id": "wpt-taiwan-2027-announcement",
+      "url": "https://www.worldpokertour.com/article/special-event-presented-by-pokertalk-wpt-prime-taiwan-returns-to-ctp-in-january-2027",
+      "attemptedAt": "2026-11-07T05:08:04.111337+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "wpt-taiwan-2027-main",
+      "url": "https://www.worldpokertour.com/event/special-events-special-event-wpt-prime-taiwan-season-2027",
+      "attemptedAt": "2026-11-07T05:08:04.255603+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "merit-western-2027-official",
+      "url": "https://meritpoker.com/event/western-series-11-22-january/",
+      "attemptedAt": "2026-11-07T05:08:04.287833+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 10012
+    },
+    {
+      "id": "galway-2027-official",
+      "url": "https://irishpokertour.com/poker-festivals/galway-poker-festival-2027/",
+      "attemptedAt": "2026-11-07T05:08:05.080633+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7588
+    },
+    {
+      "id": "galmont-directions",
+      "url": "https://www.thegalmont.com/home/location/",
+      "attemptedAt": "2026-11-07T05:08:05.251648+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "capt-seefeld-2027-official",
+      "url": "https://www.casinos.at/casinos/seefeld/spiel/poker/capt-seefeld",
+      "attemptedAt": "2026-11-07T05:08:06.283976+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 10553
+    },
+    {
+      "id": "capt-seefeld-2027-schedule",
+      "url": "https://www.casinos.at/fileadmin/00_Casinos/11_Casinos/09_Seefeld/03_Poker/2027_Poker/CAPT_012027/Turnierplan_CAPT_2027.pdf",
+      "attemptedAt": "2026-11-07T05:08:07.502515+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "mgm-detroit-appreciation-2026",
+      "url": "https://mgmgranddetroit.mgmresorts.com/en/casino/poker-room.html",
+      "attemptedAt": "2026-11-07T05:08:08.250048+00:00",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "pokerstars-open-campione-2027-official",
+      "url": "https://www.pokerstarslive.com/pokerstarsopen/campione/",
+      "attemptedAt": "2026-11-07T05:08:09.796431+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4378
+    },
+    {
+      "id": "apt-taipei-2027-official",
+      "url": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/events",
+      "attemptedAt": "2026-11-07T05:08:09.814716+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 811
+    },
+    {
+      "id": "apt-taipei-2027-info",
+      "url": "https://www.theasianpokertour.com/series/apt-taipei-taiwan-2027/info",
+      "attemptedAt": "2026-11-07T05:08:13.987611+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2300
+    },
+    {
+      "id": "venetian-nye-2026-schedule",
+      "url": "https://www.venetianlasvegas.com/resort/casino/poker/deepstack-extravaganza-poker-tournament/dse-dec-2026.html",
+      "attemptedAt": "2026-11-07T05:08:15.373901+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 8388
+    },
+    {
+      "id": "bps200-november-2026-organizer",
+      "url": "https://www.britishpokerseries.com/bps200/",
+      "attemptedAt": "2026-11-07T05:08:17.111503+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5548
+    },
+    {
+      "id": "bps200-november-2026-venue",
+      "url": "https://www.gentingcasinos.co.uk/whats-on/british-poker-series-at-genting-casino-stratford/",
+      "attemptedAt": "2026-11-07T05:08:19.101857+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5930
+    },
+    {
+      "id": "capt-innsbruck-nov-2026",
+      "url": "https://www.casinos.at/casinos/innsbruck/spiel/poker/capt-innsbruck",
+      "attemptedAt": "2026-11-07T05:08:19.648435+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 10634
+    },
+    {
+      "id": "capt-innsbruck-nov-2026-pdf",
+      "url": "https://www.casinos.at/fileadmin/00_Casinos/11_Casinos/04_Innsbruck/03_Spiel/2026/Poker/CAPT/November/Turnierplan_CAPT_Innsbruck_2026.pdf",
+      "attemptedAt": "2026-11-07T05:08:19.766612+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "capt-calendar",
+      "url": "https://www.casinos.at/en/games/poker/capt",
+      "attemptedAt": "2026-11-07T05:08:28.978540+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 4791
+    },
+    {
+      "id": "borgata-fall-2026-official",
+      "url": "https://poker.betmgm.com/en/blog/tournament/borgata-fall-poker-open/",
+      "attemptedAt": "2026-11-07T05:08:29.012060+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 2781
+    },
+    {
+      "id": "borgata-fall-2026-pdf",
+      "url": "https://roarblogs.s3.amazonaws.com/mgm/poker/en/blog/wp-content/uploads/2026/10/20172434/borgata-casino-poker-fall-open-1.pdf",
+      "attemptedAt": "2026-11-07T05:08:29.721704+00:00",
+      "status": 200,
+      "review": "PDF pending"
+    },
+    {
+      "id": "linz-visitor",
+      "url": "https://www.casinos.at/en/casinos/linz/contact-opening-hours",
+      "attemptedAt": "2026-11-07T05:08:32.906783+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 5991
+    },
+    {
+      "id": "velden-visitor",
+      "url": "https://www.casinos.at/en/casinos/velden/contact-opening-hours",
+      "attemptedAt": "2026-11-07T05:08:32.958464+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7341
+    },
+    {
+      "id": "salzburg-visitor",
+      "url": "https://www.casinos.at/en/casinos/salzburg/contact-opening-hours",
+      "attemptedAt": "2026-11-07T05:08:42.812806+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 7114
+    },
+    {
+      "id": "party-anniversary-2026-rules",
+      "url": "https://www.partypoker.com/en/poker/p/party-poker-tour-2026/Loyalty-Card",
+      "attemptedAt": "2026-11-07T05:08:46.095026+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 182
+    },
+    {
+      "id": "banco-masters-47-2027",
+      "url": "https://www.bancocasino.sk/ba/en/event/banco-casino-masters-47-kicks-2027-style-eu250000-main-event-just-eu170",
+      "attemptedAt": "2026-11-07T05:08:46.166902+00:00",
+      "error": "HTTP Error 466: "
+    },
+    {
+      "id": "salzburg-new-year-2027",
+      "url": "https://www.casinos.at/en/casinos/salzburg/games/poker/poker-new-years-festival",
+      "attemptedAt": "2026-11-07T05:08:49.264853+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 6018
+    },
+    {
+      "id": "sky-rewards-rules",
+      "url": "https://promos.skypoker.com/promotion?promoCode=POKSKYRWD120525",
+      "attemptedAt": "2026-11-07T05:08:52.290017+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sky-uk-ireland-exclusives",
+      "url": "https://promos.skypoker.com/promotion?promoCode=POKSKYEXCL070525",
+      "attemptedAt": "2026-11-07T05:08:54.637280+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sky-general-terms",
+      "url": "https://support.skypoker.com/app/answers/detail/sky-betting-and-gaming-general-terms-conditions/",
+      "attemptedAt": "2026-11-07T05:08:55.874127+00:00",
+      "status": 200,
+      "review": "retrieved, not fact-verified",
+      "length": 123198
+    }
+  ]
+}
