@@ -8133,31 +8133,35 @@
     "name": "WSOP Circuit Dusk Till Dawn Nottingham 2026",
     "tour": "WSOP Circuit",
     "destinationId": "united-kingdom/nottingham",
-    "startDate": "2026-11-04",
+    "startDate": "2026-11-06",
     "endDate": "2026-11-16",
     "timezone": "Europe/London",
-    "dateNote": "WSOP and the host list November 4–16; the published detailed grid begins November 6. Confirm arrangements for November 4–5 before travelling.",
+    "dateNote": "Current WSOP and venue calendars start November 6 and end November 15. The venue’s featured Main Event banner still extends to November 16. The previously confirmed November 16 end is retained pending resolution; confirm return travel with the venue.",
     "venue": {
       "name": "Dusk Till Dawn",
       "address": "Redfield Way, Lenton, Nottingham NG7 2UW, United Kingdom",
       "url": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026"
     },
     "status": "scheduled",
-    "description": "WSOP Circuit Nottingham runs November 4–16 at Dusk Till Dawn. The published highlights are a £1,500 Main Event with a £1 million guarantee and a £300 Mini Main with a £250,000 guarantee that includes 15 Main Event seats. The latter is not an entirely cash prize pool.",
+    "description": "WSOP Circuit Nottingham starts November 6 at Dusk Till Dawn. Highlights include a £1,500 Main Event with a £1 million guarantee and a £300 Mini Main whose £250,000 guarantee includes 15 Main Event seats. Check the conflicting end-date information below before arranging travel.",
     "registration": "WSOP+ LIVE is required. Buy in with cash at the venue or through Luxon Pay when the event appears in its merchant area. The host sets advance online entry cut-off at one hour before the start; capacity still applies.",
     "registrationUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/how-to-buy-in",
     "scheduleUrl": "https://www.dusktilldawnpoker.com/club/event/wsopc-2026/schedule",
-    "scheduleCoverage": "Selected Main Event and Mini Main flights only. Additional flights, satellites and side events remain on the official schedule. The series continues through November 16 after the Main Event final.",
+    "scheduleCoverage": "Selected Main Event and Mini Main flights only. Other events remain on the official schedule. The detailed grid ends November 15; the venue banner still refers to November 16.",
     "sourceIds": [
       "nottingham-2026-wsop",
       "nottingham-2026-host",
       "nottingham-2026-schedule",
       "nottingham-2026-entry"
     ],
-    "checkedAt": "2026-10-29T06:14:05Z",
-    "updatedAt": "2026-10-29T06:14:05Z",
+    "checkedAt": "2026-11-07T05:13:52.103252Z",
+    "updatedAt": "2026-11-07T05:13:52.103252Z",
     "reviewNote": "The host’s 2026 event page includes a terms clause referring to recurring events from September 2025. Confirm the current edition’s deductions and conditions with the organizer; no deduction or fee has been inferred for a tournament.",
     "changes": [
+      {
+        "date": "2026-11-07T05:13:52.103252Z",
+        "text": "Corrected the start date to November 6 and Main Event Day 2 to 15:30; clarified the unresolved November 15/16 end-date conflict."
+      },
       {
         "date": "2026-10-29T06:14:05Z",
         "text": "Corrected Main Event dates and number, Mini Main guarantee and selected registration times from the current host schedule. Removed an outdated selected satellite listing; this is not a cancellation notice."
@@ -8225,7 +8229,7 @@
             "id": "main-2",
             "label": "Day 2",
             "date": "2026-11-14",
-            "time": "15:00",
+            "time": "15:30",
             "kind": "continuation"
           },
           {
@@ -8260,9 +8264,9 @@
           "currency": "GBP"
         },
         "startingStack": "30,000",
-        "levels": "30 minutes on selected Day 1A; 40 on the final day.",
+        "levels": "30 minutes on the selected Day 1A and the final day.",
         "reentry": "Re-entry during late registration.",
-        "lateRegistration": "Selected Day 1A registration closes at 16:40; confirm the level cutoff with the organizer.",
+        "lateRegistration": "The venue pages disagree between 16:40 and 17:40 for selected Day 1A. The earlier confirmed cutoff is retained; confirm directly with the venue.",
         "endDate": "2026-11-08",
         "sessions": [
           {
