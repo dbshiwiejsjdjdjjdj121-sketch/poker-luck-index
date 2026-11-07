@@ -2766,5 +2766,57 @@
       "sourceIds": []
     },
     "updatedAt": "2026-11-02T05:01:05.402808+00:00"
+  },
+  {
+    "id": "ireland/letterkenny",
+    "country": "Ireland",
+    "countryCode": "IE",
+    "countrySlug": "ireland",
+    "city": "Letterkenny",
+    "slug": "letterkenny",
+    "region": "Europe",
+    "indexable": false,
+    "intro": "Radisson Blu Hotel, Letterkenny is the festival venue. Confirm room availability and onward travel before booking.",
+    "airport": {
+      "title": "Airport choices",
+      "detail": "The hotel lists City of Derry, Donegal, Belfast and Dublin airports. Compare current routes and arrange onward transport directly.",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny/contact",
+      "sourceId": "letterkenny-radisson-contact"
+    },
+    "transport": [
+      {
+        "title": "Driving to the hotel",
+        "detail": "The hotel estimates about 45 minutes by car from City of Derry Airport and one hour from Donegal Airport; allow for traffic and weather.",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny/contact",
+        "sourceId": "letterkenny-radisson-contact"
+      },
+      {
+        "title": "Guest parking",
+        "detail": "Free on-site parking is listed for hotel guests. Non-resident tournament visitors should confirm terms with the hotel.",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny/services",
+        "sourceId": "letterkenny-radisson-services"
+      }
+    ],
+    "hotels": [
+      {
+        "title": "Stay at the venue",
+        "detail": "The Radisson Blu offers on-site rooms. No festival room price or discount is confirmed here.",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny",
+        "sourceId": "letterkenny-radisson"
+      }
+    ],
+    "dining": [
+      {
+        "title": "On-site dining",
+        "detail": "The hotel lists The Mulberry restaurant. Check current opening hours and reservations directly.",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny",
+        "sourceId": "letterkenny-radisson"
+      }
+    ],
+    "tax": {
+      "text": "Personal tax treatment has not been verified. Organizer prize-pool deductions are separate from personal taxes.",
+      "sourceIds": []
+    },
+    "updatedAt": "2026-11-07T05:07:37.613620Z"
   }
 ]

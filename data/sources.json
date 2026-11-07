@@ -2189,5 +2189,33 @@
     "url": "https://support.skypoker.com/app/answers/detail/sky-betting-and-gaming-general-terms-conditions/",
     "kind": "organizer",
     "checkedAt": "2026-11-06T16:42:30.679570Z"
+  },
+  {
+    "id": "donegal-winter-2027-official",
+    "title": "Donegal Winter Festival official schedule",
+    "url": "https://irishpokertour.com/poker-festivals/donegal-winter-festival/",
+    "kind": "schedule",
+    "checkedAt": "2026-11-07T05:07:37.613620Z"
+  },
+  {
+    "id": "letterkenny-radisson",
+    "title": "Radisson Blu Letterkenny hotel",
+    "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny",
+    "kind": "travel",
+    "checkedAt": "2026-11-07T05:07:37.613620Z"
+  },
+  {
+    "id": "letterkenny-radisson-contact",
+    "title": "Radisson Blu Letterkenny travel",
+    "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny/contact",
+    "kind": "travel",
+    "checkedAt": "2026-11-07T05:07:37.613620Z"
+  },
+  {
+    "id": "letterkenny-radisson-services",
+    "title": "Radisson Blu Letterkenny services",
+    "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny/services",
+    "kind": "travel",
+    "checkedAt": "2026-11-07T05:07:37.613620Z"
   }
 ]

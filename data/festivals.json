@@ -12499,5 +12499,150 @@
         ]
       }
     ]
+  },
+  {
+    "id": "donegal-winter-2027",
+    "slug": "donegal-winter-festival-2027",
+    "name": "Donegal Winter Festival 2027",
+    "tour": "Irish Poker Tour",
+    "destinationId": "ireland/letterkenny",
+    "startDate": "2027-02-05",
+    "endDate": "2027-02-07",
+    "dateNote": "Whole festival February 5–7; selected highlights below.",
+    "timezone": "Europe/Dublin",
+    "venue": {
+      "name": "Radisson Blu Hotel, Letterkenny",
+      "address": "Paddy Harte Rd, F92 FK15, Letterkenny, Ireland",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-letterkenny"
+    },
+    "status": "scheduled",
+    "description": "A three-day Irish Poker Tour festival in Letterkenny with a EUR 200 Main Event and EUR 50,000 main guarantee. Compare a EUR 150 side event and a paid EUR 40 satellite before planning your trip.",
+    "registration": "Confirm admission and payment requirements with the organizer. Prize-pool deductions are 3% for staff and expenses plus 1% for the leaderboard; these are not personal tax rates.",
+    "registrationUrl": "https://irishpokertour.com/poker-festivals/donegal-winter-festival/",
+    "scheduleUrl": "https://irishpokertour.com/poker-festivals/donegal-winter-festival/",
+    "scheduleCoverage": "Three selected highlights only; other flights and events remain on the official schedule.",
+    "sourceIds": [
+      "donegal-winter-2027-official",
+      "letterkenny-radisson"
+    ],
+    "checkedAt": "2026-11-07T05:07:37.613620Z",
+    "updatedAt": "2026-11-07T05:07:37.613620Z",
+    "reviewNote": null,
+    "changes": [
+      {
+        "date": "2026-11-07T05:07:37.613620Z",
+        "text": "Added official February dates, selected entries and host-hotel travel information."
+      }
+    ],
+    "tournaments": [
+      {
+        "id": "main",
+        "slug": "main",
+        "name": "Main Event",
+        "number": "main",
+        "game": "NLH",
+        "category": "main",
+        "buyIn": {
+          "amount": 200,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 50000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": "2027-02-07",
+        "sessions": [
+          {
+            "id": "main-start",
+            "label": "Selected opening flight",
+            "date": "2027-02-05",
+            "time": "19:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "donegal-winter-2027-official"
+        ]
+      },
+      {
+        "id": "letterkenny-150",
+        "slug": "letterkenny-150",
+        "name": "Letterkenny 150",
+        "number": "letterkenny-150",
+        "game": "NLH",
+        "category": "side",
+        "buyIn": {
+          "amount": 150,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 25,
+          "currency": "EUR"
+        },
+        "guarantee": {
+          "amount": 3000,
+          "currency": "EUR"
+        },
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "letterkenny-150-start",
+            "label": "Published start",
+            "date": "2027-02-06",
+            "time": "14:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "donegal-winter-2027-official"
+        ]
+      },
+      {
+        "id": "main-satellite",
+        "slug": "main-satellite",
+        "name": "Main Event Target Satellite",
+        "number": "main-satellite",
+        "game": "NLH",
+        "category": "satellite",
+        "buyIn": {
+          "amount": 40,
+          "currency": "EUR"
+        },
+        "fee": {
+          "amount": 10,
+          "currency": "EUR"
+        },
+        "guarantee": null,
+        "startingStack": null,
+        "levels": null,
+        "reentry": null,
+        "lateRegistration": null,
+        "endDate": null,
+        "sessions": [
+          {
+            "id": "main-satellite-start",
+            "label": "Selected qualifier",
+            "date": "2027-02-06",
+            "time": "12:00",
+            "kind": "entry"
+          }
+        ],
+        "sourceIds": [
+          "donegal-winter-2027-official"
+        ]
+      }
+    ]
   }
 ]
